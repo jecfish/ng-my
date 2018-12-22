@@ -34,8 +34,11 @@
       },
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
+            "customWebpackConfig": {
+              "path": "projects/site2019/extra-webpack.config.js"
+            },
             "outputPath": "dist/site2019",
             "index": "projects/site2019/src/index.html",
             "main": "projects/site2019/src/main.ts",
