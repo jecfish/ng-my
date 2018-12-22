@@ -12,7 +12,7 @@ To start the project:
 2. run "yarn"
 3. run "yarn start"
 
-To deploy the project:
+To deploy the project manually:
 1. run "npm install -g firebase-tools"
 2. run "firebase login" then login with your google account
 3. run "yarn deploy"
