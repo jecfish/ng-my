@@ -8,6 +8,7 @@
     "build": "ng build",
     "predeploy": "yarn build --prod",
     "deploy": "firebase deploy",
+    "prepush": "yarn lint",
     "test": "ng test",
     "lint": "ng lint"
   },
@@ -35,6 +36,7 @@
     "@angular/language-service": "~7.1.0",
     "@types/node": "~8.9.4",
     "codelyzer": "^4.5.0",
+    "husky": "^1.2.1",
     "ng-packagr": "^4.2.0",
     "prerender-spa-plugin": "^3.4.0",
     "ts-node": "~7.0.0",
