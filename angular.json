@@ -13,7 +13,8 @@
           "spec": false
         },
         "@schematics/angular:component": {
-          "spec": false
+          "spec": false,
+          "styleext": "scss"
         },
         "@schematics/angular:directive": {
           "spec": false
@@ -45,7 +46,7 @@
               "projects/site2019/src/assets"
             ],
             "styles": [
-              "projects/site2019/src/styles.css"
+              "projects/site2019/src/styles.scss"
             ],
             "scripts": []
           },
@@ -101,7 +102,7 @@
             "tsConfig": "projects/site2019/tsconfig.spec.json",
             "karmaConfig": "projects/site2019/karma.conf.js",
             "styles": [
-              "projects/site2019/src/styles.css"
+              "projects/site2019/src/styles.scss"
             ],
             "scripts": [],
             "assets": [

@@ -1,0 +1,48 @@
+@import '../../assets/scss/variables.scss';
+
+.landing {
+    display: flex;
+    height: calc(100vh - #{$footer-h});
+
+    &-content {
+        margin: auto;
+        display: flex;
+        max-width: calc(100% - #{$space-xl});
+    }
+
+    &-logo {
+        width: 300px;
+        flex: 0 0 300px;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+
+        &-img {
+            transform: rotateY(20deg);
+        }
+    }
+
+    &-text {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &-title {
+        font-size: 5rem;
+        margin-bottom: $space-l;
+        margin-left: -4px;
+    }
+
+    &-background {
+        background: #d6d8d9 url('../../assets/imgs/klcc-tiny.jpg') center/cover no-repeat;
+        opacity: 0.2;
+        filter: grayscale(0.5);
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}

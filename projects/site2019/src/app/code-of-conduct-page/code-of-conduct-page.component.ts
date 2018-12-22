@@ -4,20 +4,18 @@ import { Title } from '@angular/platform-browser';
 import { environment } from '../../environments/environment.prod';
 
 @Component({
-  selector: 'my-placeholder-page',
-  templateUrl: './placeholder-page.component.html',
-  styleUrls: ['./placeholder-page.component.scss']
+  selector: 'my-code-of-conduct-page',
+  templateUrl: './code-of-conduct-page.component.html',
+  styleUrls: ['./code-of-conduct-page.component.scss']
 })
-export class PlaceholderPageComponent implements OnInit {
-  title = 'ng-MY 2019';
+export class CodeOfConductPageComponent implements OnInit {
+  title = 'ng-MY 2019 | Code of Conduct';
 
   constructor(private trackingSvc: TrackingService, private titleSvc: Title) { }
 
   ngOnInit() {
     this.titleSvc.setTitle(this.title);
 
-    if (environment.production) {
-      // this.trackingSvc.setPage({ pageTitle: this.title, pagePath: '/' });
-    }
+    if (environment.production) { }
   }
 }
