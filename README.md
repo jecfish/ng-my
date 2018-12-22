@@ -4,8 +4,8 @@
 
 Working on project:
 1. always create your own branch and work on it
-2. create a PR and merge to master
-3. Travis will triggered when PR is merged, deploy to ng-my production
+2. create a PR and merge to master only when it's ready
+3. Travis will triggered when PR is merged, auto deploy to ng-my production
 
 To start the project:
 1. Install yarn
