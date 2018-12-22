@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TrackingService } from '../services/tracking.service';
-import { Title } from '@angular/platform-browser';
-import { environment } from '../../environments/environment.prod';
+import { PageService } from '../services/page.service';
 
 @Component({
   selector: 'my-code-of-conduct-page',
@@ -9,15 +7,11 @@ import { environment } from '../../environments/environment.prod';
   styleUrls: ['./code-of-conduct-page.component.scss']
 })
 export class CodeOfConductPageComponent implements OnInit {
-  title = 'Code of Conduct | ng-MY 2019';
+  title = 'Code of Conduct';
 
-  constructor(private trackingSvc: TrackingService, private titleSvc: Title) { }
+  constructor(private pageSvc: PageService) { }
 
   ngOnInit() {
-    this.titleSvc.setTitle(this.title);
-
-    if (environment.production) {
-      this.trackingSvc.setPage({ pageTitle: this.title, pagePath: '/coc' });
-    }
+    this.pageSvc.setPage({ title: this.title, path: '/coc' });
   }
 }

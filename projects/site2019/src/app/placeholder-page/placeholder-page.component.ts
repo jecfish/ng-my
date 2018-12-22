@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TrackingService } from '../services/tracking.service';
-import { Title } from '@angular/platform-browser';
-import { environment } from '../../environments/environment.prod';
+import { PageService } from '../services/page.service';
 
 @Component({
   selector: 'my-placeholder-page',
@@ -9,15 +7,11 @@ import { environment } from '../../environments/environment.prod';
   styleUrls: ['./placeholder-page.component.scss']
 })
 export class PlaceholderPageComponent implements OnInit {
-  title = 'ng-MY 2019';
+  title = 'Home';
 
-  constructor(private trackingSvc: TrackingService, private titleSvc: Title) { }
+  constructor(private pageSvc: PageService) { }
 
   ngOnInit() {
-    this.titleSvc.setTitle(this.title);
-
-    if (environment.production) {
-      this.trackingSvc.setPage({ pageTitle: this.title, pagePath: '/' });
-    }
+    this.pageSvc.setPage({ title: this.title, path: '/' });
   }
 }

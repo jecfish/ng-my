@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- '10'
+dist: trusty
+sudo: required
+branches:
+  only:
+  - master
+before_script:
+- npm install -g @angular/cli
+script:
+- yarn build --prod
+deploy:
+  provider: firebase
+  token:
+    secure: upEXNwDG711lESG1iivXUnKrXwtOTrfhFuRAFccmTNnryF0Poq53Fwt6Adl7G+SqYMFnHEP8W8kQCU1QeKe8SywLH1t8zqWBkVqEeC/s3DBRlZOysy9jVNsorw4KhwgG7x6QuI+6IO35GV4PjqoSMcZDbZus+DsYFQ1dAg+dMtr0ryEcVNPoNYIyNLcNc0JWP7hnGolbRjE6t8hwXhKzCre7h15fQzyTuGJe8aGoWt8FVTj9b+FGB0VD2pde6V/YBWNGduR/T7Mc6b6+GXDf5V4R2UTPcFAsBuSLnji85o0BL5F8xdTzPjI8/iBDiBTKD6OaaEjUvJTLfDZzgzquegI4snJ6uwZ3mbaTeMF5wso8ODB+FKadLRUizDIlVfjca7XqXTRBf/wz2GtAi94ypacox0v7XHRU18GfPliiHZWlFPPWMHnsIuZn798ApSkoXMBrBmNJFaw0/+82lT28i7hvRkufvaAZZX149jMhssoQ+20fQo4hT1u/bajo1rbLKFdi8RQ8begZ0b+cC0+VO2INTbTg9E/O2rtIdDCHruF2bA6XBbo1Fg/ecAdBTH5TyvJSV6GOYWydQXZIdKT/2utV0CK31pS4R2rC8E2T312E4+nQ9C8XcZpbFl5CW91IGhQ0Vnz9nupXRWcrCmFIkKVoQmHbIPGhbAZyzzI5TFs=
