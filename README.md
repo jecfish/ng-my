@@ -3,8 +3,9 @@
 # ng-MY official website
 
 To start the project:
-1. run "yarn"
-2. run "yarn start"
+1. Install yarn
+2. run "yarn"
+3. run "yarn start"
 
 To deploy the project:
 1. run "npm install -g firebase-tools"
