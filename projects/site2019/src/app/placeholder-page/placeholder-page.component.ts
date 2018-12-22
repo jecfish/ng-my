@@ -17,7 +17,7 @@ export class PlaceholderPageComponent implements OnInit {
     this.titleSvc.setTitle(this.title);
 
     if (environment.production) {
-      // this.trackingSvc.setPage({ pageTitle: this.title, pagePath: '/' });
+      this.trackingSvc.setPage({ pageTitle: this.title, pagePath: '/' });
     }
   }
 }

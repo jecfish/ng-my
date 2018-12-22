@@ -11,6 +11,8 @@ export class TrackingService {
   constructor() { }
 
   setPage(config: { pageTitle: string; pagePath: string; }) {
+    if (!gtag) return;
+
     gtag('config', this.trackingID, {
       'page-title': config.pageTitle,
       'page-path': config.pagePath

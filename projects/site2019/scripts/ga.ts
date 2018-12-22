@@ -8,7 +8,7 @@ export class GoogleAnalytics {
 
         window['dataLayer'] = window['dataLayer'] || [];
         window['gtag'] = window['gtag'] || function (...args: any[]) {
-            window['dataLayer'].push(...args);
+            window['dataLayer'].push(arguments);
         };
 
         window['gtag']('js', new Date());
