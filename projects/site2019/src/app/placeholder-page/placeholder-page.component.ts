@@ -7,7 +7,7 @@ import { PageService } from '../services/page.service';
   styleUrls: ['./placeholder-page.component.scss']
 })
 export class PlaceholderPageComponent implements OnInit {
-  title = 'Home';
+  title = 'It's coming!';
 
   constructor(private pageSvc: PageService) { }
 
