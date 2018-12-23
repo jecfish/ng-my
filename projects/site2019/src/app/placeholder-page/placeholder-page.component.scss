@@ -1,4 +1,5 @@
 @import '../../assets/scss/variables.scss';
+@import '../../assets/scss/mixins.scss';
 
 .landing {
     display: flex;
@@ -8,16 +9,56 @@
         margin: auto;
         display: flex;
         max-width: calc(100% - #{$space-xl});
+
+        @include mobile {
+            flex-direction: column;
+        }
     }
 
     &-logo {
         width: 300px;
         flex: 0 0 300px;
-        transform-style: preserve-3d;
+        margin: auto;
         perspective: 1000px;
 
         &-img {
-            transform: rotateY(20deg);
+            position: relative;
+            transform: rotateY(10deg);
+            transform-style: preserve-3d;
+            perspective: 2000px;
+            perspective-origin: left;
+            animation: logo 10s cubic-bezier(0.15, 0.12, 0.14, 0.69) infinite;
+        }
+
+        .logo {
+            &-shield {
+                transform: translateZ(-25px);
+
+                &-left {
+                    fill: $ng-red;
+                }
+
+                &-right {
+                    fill: $ng-red-dark;
+                }
+            }
+
+            &-letter {
+                fill :$white;
+                transform: translateZ(25px);
+            }
+
+            &-shadow {
+                opacity: 0.2;
+                filter: blur(1px);
+            }
+
+            &-letter,
+            &-shadow {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
         }
     }
 
@@ -26,10 +67,14 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        @include mobile {
+            text-align: center;
+        }
     }
 
     &-title {
-        font-size: 5rem;
+        font-size: $font-xxxl;
         margin-bottom: $space-l;
         margin-left: -4px;
     }

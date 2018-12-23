@@ -1,6 +1,7 @@
 :root {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    --logo-perspective-y: 0;
 }
 
 a {
@@ -9,12 +10,13 @@ a {
 }
 
 p {
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .page-title {
     color: $red;
-    font-size: $font-xxxl;
+    margin-bottom: $space;
+    font-size: $font-xxl;
 }
 
 .container {
@@ -25,25 +27,16 @@ p {
 
 .main {
     padding: $space 0;
-}
-
-.page-title {
-    margin-bottom: $space;
+    min-height: calc(100vh - #{$header-h + $footer-h});
 }
 
 .article-section {
-    line-height: 1.5;
-    
     & + & {
         margin-top: $space-xl;
     }
 
     p + p {
-        margin-top: $space;
-    }
-
-    .bold {
-        font-weight: bold;
+        margin-top: $space-s;
     }
 }
 
@@ -69,19 +62,19 @@ p {
     line-height: $footer-h;
     font-size: $font-xs;
 
-    span {
+    &-item {
         display: inline-block;
         position: relative;
 
-        & + span {
+        & + & {
             margin-left: $space;
 
             &:before {
                 content: '';
                 position: absolute;
-                top: calc(50% - 7px);
+                top: calc(50% - 0.5em);
                 left: -10px;
-                height: 14px;
+                height: 1em;
                 width: 1px;
                 background: #666;
             }

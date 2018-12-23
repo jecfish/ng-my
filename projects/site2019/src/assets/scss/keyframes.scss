@@ -1,0 +1,9 @@
+@keyframes logo {
+    45%, 55% {
+        perspective-origin: right -5%;
+    }
+
+    0%, 5%, 95%, 100% {
+        perspective-origin: left;
+    }
+}
