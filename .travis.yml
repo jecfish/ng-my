@@ -9,6 +9,5 @@ branches:
   - master
 before_script:
 - npm install -g firebase-tools
-- npm install -g @angular/cli
 script:
 - yarn deploy --token $FIREBASE_TOKEN
