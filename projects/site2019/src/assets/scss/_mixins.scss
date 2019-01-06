@@ -1,0 +1,11 @@
+@mixin mobile {
+  @media all and (max-width: $mobile-breakpoint) {
+    @content;
+  }
+}
+
+@mixin mobile-xs {
+  @media all and (max-width: $mobile-xs-breakpoint) {
+    @content;
+  }
+}
