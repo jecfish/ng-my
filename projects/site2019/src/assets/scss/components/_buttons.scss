@@ -1,0 +1,36 @@
+.btn {
+  @include one-height($btn-h, 2px);
+
+  border: 1px solid transparent;
+  background: none;
+  padding: 0 $space;
+  color: $gray-darkest;
+  cursor: pointer;
+  font-size: $font-size-s;
+
+  @include btn-active {
+    outline: none;
+  }
+
+  &-primary {
+    color: $white;
+    border-color: $red;
+    background-color: $red;
+
+    @include btn-active {
+      border-color: $red-dark;
+      background-color: $red-dark;
+    }
+  }
+
+  &-secondary {
+    color: $white;
+    border-color: $blue;
+    background-color: $blue;
+
+    @include btn-active {
+      border-color: $blue-dark;
+      background-color: $blue-dark;
+    }
+  }
+}

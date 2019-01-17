@@ -1,0 +1,94 @@
+.hero {
+  &-section {
+    height: calc(100vh - #{$header-h});
+    min-height: 400px;
+
+    .container {
+      display: flex;
+      height: 100%;
+    }
+  }
+
+  &-content {
+    margin: auto 0;
+    width: 100%;
+  }
+
+  &-logo {
+    flex: 1;
+    width: 100%;
+    max-width: 500px;
+
+    &-img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &-text {
+    flex: 1;
+    display: flex;
+
+    p+p,
+    .btn {
+      margin-top: $space;
+    }
+
+    .btn {
+      flex-grow: 0;
+    }
+
+    &-container {
+      margin: auto;
+    }
+  }
+
+  &-title,
+  &-subtitle {
+    font-weight: bold;
+  }
+
+  &-title {
+    font-size: $font-size-xxxl;
+  }
+
+  &-subtitle {
+    font-size: $font-size-l;
+  }
+}
+
+.home {
+  &-section {
+    padding: $space-xl 0;
+    min-height: 50vh;
+
+    &-title {
+      font-size: $font-size-xl;
+    }
+  }
+
+  &-cta {
+    margin-top: $space;
+  }
+}
+
+.speaker {
+  &-text {
+    padding-right: $space-l;
+    text-align: right;
+    margin-right: auto;
+  }
+}
+
+.feature {
+  &-text {
+    padding-left: $space-l;
+    margin-left: auto;
+  }
+}
+
+.early {
+  &-content {
+    text-align: center;
+  }
+}

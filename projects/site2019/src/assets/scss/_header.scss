@@ -1,0 +1,43 @@
+.header {
+  height: $header-h;
+  line-height: $header-h;
+
+  &-logo {
+    display: flex;
+    align-items: center;
+    font-size: $font-size-s;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    &-img {
+      height: 40px;
+      width: 40px;
+      margin-right: $space-s;
+    }
+  }
+
+  &-container {
+    display: flex;
+  }
+
+  &-nav {
+    margin-left: auto;
+
+    &-list {
+      display: flex;
+    }
+
+    &-item {
+      &+& {
+        margin-left: $space;
+      }
+    }
+
+    &-link {
+      display: block;
+      text-transform: uppercase;
+      font-size: $font-size-s;
+      letter-spacing: 1px;
+    }
+  }
+}

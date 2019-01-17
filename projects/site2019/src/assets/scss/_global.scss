@@ -1,83 +1,85 @@
 :root {
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: $grey-darkest;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: $gray-darkest;
 }
 
 a {
-    text-decoration: none;
-    color: $red;
+  text-decoration: none;
+  color: $red;
 }
 
 p {
-    line-height: 1.6;
+  line-height: 1.6;
 }
 
 .page-title {
-    color: $red;
-    margin-bottom: $space;
-    font-size: $font-xxl;
+  color: $red;
+  margin-bottom: $space;
+  font-size: $font-size-xxl;
 }
 
 .container {
-    width: calc(100% - #{$space-xl});
-    max-width: 1000px;
-    margin: 0 auto;
+  width: calc(100% - #{$space-xl});
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .main {
-    padding: $space 0;
-    min-height: calc(100vh - #{$header-h + $footer-h});
+  padding: $space 0;
+  min-height: calc(100vh - #{$header-h + $footer-h});
+}
+
+.row {
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.col {
+  flex: 0 0 50%;
+  width: 50%;
 }
 
 .article-section {
-    & + & {
-        margin-top: $space-xl;
-    }
+  &+& {
+    margin-top: $space-xl;
+  }
 
-    p + p {
-        margin-top: $space-s;
-    }
+  p+p {
+    margin-top: $space-s;
+  }
 }
 
-.header {
-    height: $header-h;
-    line-height: $header-h;
+.ng-logo {
+  &-left {
+    fill: $ng-red;
+  }
 
-    &-logo {
-        display: flex;
-        align-items: center;
+  &-right {
+    fill: $ng-red-dark;
+  }
 
-        &-img {
-            height: 40px;
-            width: 40px;
-            margin-right: $space-s;
-        }
-    }
+  &-A {
+    fill: $white;
+  }
 }
 
-.footer {
-    text-align: center;
-    height: $footer-h;
-    line-height: $footer-h;
-    font-size: $font-xs;
+.colors {
+  margin-left: 10px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: $red-lightest;
 
-    &-item {
-        display: inline-block;
-        position: relative;
-
-        & + & {
-            margin-left: $space;
-
-            &:before {
-                content: '';
-                position: absolute;
-                top: calc(50% - 0.5em);
-                left: -10px;
-                height: 1em;
-                width: 1px;
-                background: #666;
-            }
-        }
-    }
+  box-shadow: 30px 0 $red-light, 60px 0 $red, 90px 0 $red-dark, 120px 0 $red-darkest, 150px 0 $blue-lightest, 180px 0 $blue-light, 210px 0 $blue, 240px 0 $blue-dark, 270px 0 $blue-darkest, 300px 0 $yellow-lightest, 330px 0 $yellow-light, 360px 0 $yellow, 390px 0 $yellow-dark, 420px 0 $yellow-darkest, 450px 0 $gray-lightest, 480px 0 $gray-light, 510px 0 $gray, 540px 0 $gray-dark, 570px 0 $gray-darker;
 }
+
+@import 'components/buttons';
+
+@import 'header';
+@import 'footer';
+
+@import 'pages/home';

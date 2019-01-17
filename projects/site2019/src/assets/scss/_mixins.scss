@@ -9,3 +9,39 @@
     @content;
   }
 }
+
+@mixin one-height($height: 0, $negative: 0, $nowrap: true) {
+  height: $height;
+  line-height: $height - $negative;
+
+  @if $nowrap==true {
+    @include no-text-wrap;
+  }
+}
+
+@mixin no-text-wrap {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin btn-active {
+  &:enabled {
+
+    &:hover,
+    &:focus,
+    &:active {
+      @content;
+    }
+  }
+}
+
+@mixin btn-focus {
+  &:enabled {
+
+    &:focus,
+    &:active {
+      @content;
+    }
+  }
+}

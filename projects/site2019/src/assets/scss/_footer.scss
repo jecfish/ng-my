@@ -1,0 +1,25 @@
+.footer {
+  text-align: center;
+  height: $footer-h;
+  line-height: $footer-h;
+  font-size: $font-size-xs;
+
+  &-item {
+    display: inline-block;
+    position: relative;
+
+    &+& {
+      margin-left: $space;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: calc(50% - 0.5em);
+        left: -10px;
+        height: 1em;
+        width: 1px;
+        background: #666;
+      }
+    }
+  }
+}

@@ -1,11 +1,36 @@
-$red: #e00029;
-
 $ng-red: #dd0031;
 $ng-red-dark: #c3002f;
 
-$white: #fff;
+$red: #f44336;
+$red-light: lighten($red, 10%);
+$red-lightest: lighten($red, 20%);
+$red-dark: darken($red, 10%);
+$red-darkest: darken($red, 20%);
+
+$blue: #1e88e5;
+$blue-light: lighten($blue, 10%);
+$blue-lightest: lighten($blue, 20%);
+$blue-dark: darken($blue, 10%);
+$blue-darkest: darken($blue, 20%);
+
+$yellow: #fdd835;
+$yellow-light: lighten($yellow, 10%);
+$yellow-lightest: lighten($yellow, 20%);
+$yellow-dark: darken($yellow, 10%);
+$yellow-darkest: darken($yellow, 20%);
+
+$gray: #a19696;
+$gray-light: lighten($gray, 10%);
+$gray-lightest: lighten($gray, 20%);
+$gray-dark: darken($gray, 10%);
+$gray-darker: darken($gray, 20%);
+$gray-darkest: #323232;
+
+$primary: $red;
+$secondary: $blue;
+
+$white: #fffffc;
 $black: #0e0e0e;
-$grey-darkest: #323232;
 
 $space: 20px;
 $space-s: $space / 2;
@@ -13,14 +38,16 @@ $space-xs: $space / 4;
 $space-l: $space * 2;
 $space-xl: $space * 4;
 
-$font-xs: 0.65rem;
-$font-s: 0.8rem;
-$font-l: 1.2rem;
-$font-xl: 1.5rem;
-$font-xxl: 2.25rem;
-$font-xxxl: 5rem;
+$font-size-xs: 0.65rem;
+$font-size-s: 0.8rem;
+$font-size-l: 1.2rem;
+$font-size-xl: 1.5rem;
+$font-size-xxl: 2.25rem;
+$font-size-xxxl: 5rem;
 
 $header-h: 60px;
 $footer-h: 45px;
+
+$btn-h: 36px;
 
 $mobile-breakpoint: 600px;
