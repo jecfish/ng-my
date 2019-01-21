@@ -10,6 +10,12 @@
   }
 }
 
+@mixin tablet {
+  @media all and (max-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
 @mixin one-height($height: 0, $negative: 0, $nowrap: true) {
   height: $height;
   line-height: $height - $negative;

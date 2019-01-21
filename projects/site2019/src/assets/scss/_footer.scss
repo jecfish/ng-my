@@ -3,6 +3,8 @@
   height: $footer-h;
   line-height: $footer-h;
   font-size: $font-size-xs;
+  background: $blue-darkest;
+  color: $white;
 
   &-item {
     display: inline-block;
@@ -18,7 +20,15 @@
         left: -10px;
         height: 1em;
         width: 1px;
-        background: #666;
+        background: $white;
+      }
+    }
+
+    a {
+      color: $white;
+
+      @include btn-active {
+        color: $gray-lightest;
       }
     }
   }

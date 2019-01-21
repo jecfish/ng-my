@@ -8,6 +8,10 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { CodeOfConductPageComponent } from './code-of-conduct-page/code-of-conduct-page.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { SpeakersPageComponent } from './speakers-page/speakers-page.component';
+import { TeamPageComponent } from './team-page/team-page.component';
+import { LogoPageComponent } from './logo-page/logo-page.component';
+import { SchedulePageComponent } from './schedule-page/schedule-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,13 +19,14 @@ import { FooterComponent } from './shared/footer/footer.component';
     CodeOfConductPageComponent,
     HomePageComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SpeakersPageComponent,
+    TeamPageComponent,
+    LogoPageComponent,
+    SchedulePageComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

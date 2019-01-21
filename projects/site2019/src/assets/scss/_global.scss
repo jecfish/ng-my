@@ -2,6 +2,12 @@
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   color: $gray-darkest;
+  --shadow-opacity: 0;
+}
+
+html,
+body {
+  background: $white;
 }
 
 a {
@@ -23,6 +29,10 @@ p {
   width: calc(100% - #{$space-xl});
   max-width: 1000px;
   margin: 0 auto;
+
+  @include mobile {
+    width: calc(100% - #{$space-l});
+  }
 }
 
 .main {
@@ -39,8 +49,12 @@ p {
 }
 
 .col {
-  flex: 0 0 50%;
-  width: 50%;
+  flex-grow: 1;
+  flex-basis: 0;
+
+  @include mobile {
+    width: 100%;
+  }
 }
 
 .article-section {
@@ -67,8 +81,21 @@ p {
   }
 }
 
+.icon {
+  &-left {
+    margin-right: $space-s;
+  }
+
+  &-right {
+    margin-left: $space-s;
+  }
+}
+
 .colors {
-  margin-left: 10px;
+  position: fixed;
+  z-index: 9999;
+  bottom: 10px;
+  left: 10px;
   height: 20px;
   width: 20px;
   border-radius: 50%;

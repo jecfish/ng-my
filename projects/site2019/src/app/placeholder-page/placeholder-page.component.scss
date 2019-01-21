@@ -1,6 +1,10 @@
 @import 'variables';
 @import 'mixins';
 
+:host {
+  position: relative;
+}
+
 .landing {
   display: flex;
   height: calc(100vh - #{$footer-h});
@@ -98,6 +102,20 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+  }
+}
+
+.footer {
+  background: transparent;
+  color: $gray-darkest;
+
+  &-item {
+    &:before {
+      background: $gray;
+    }
+  }
+
+  a {
+    color: $red;
   }
 }

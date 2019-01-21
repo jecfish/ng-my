@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'my-header',
@@ -6,10 +6,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  isShowMobileNav = false;
 
-  constructor() { }
+  @HostListener('window:scroll', ['$event'])
+  onScroll(e) {
+    const maxDist = 100;
+    const currentPos = window.scrollY;
+    const opacity = currentPos / maxDist;
+    const opacityCalc = opacity > 1 ? 1 : opacity;
 
-  ngOnInit() {
+    document.documentElement.style.setProperty(
+      '--shadow-opacity',
+      `${opacityCalc}`
+    );
   }
 
+  constructor() {}
+
+  toggleMobileNav() {
+    this.isShowMobileNav = !this.isShowMobileNav;
+  }
+
+  ngOnInit() {}
 }

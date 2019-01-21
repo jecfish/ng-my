@@ -1,11 +1,12 @@
 .hero {
   &-section {
-    height: calc(100vh - #{$header-h});
-    min-height: 400px;
+    min-height: calc(100vh - #{$header-h});
+    position: relative;
+    display: flex;
 
     .container {
       display: flex;
-      height: 100%;
+      margin: auto;
     }
   }
 
@@ -32,6 +33,10 @@
     p+p,
     .btn {
       margin-top: $space;
+
+      @include mobile {
+        margin-top: $space-s;
+      }
     }
 
     .btn {
@@ -40,6 +45,10 @@
 
     &-container {
       margin: auto;
+    }
+
+    @include mobile {
+      text-align: center;
     }
   }
 
@@ -50,6 +59,10 @@
 
   &-title {
     font-size: $font-size-xxxl;
+
+    @include mobile {
+      font-size: $font-size-xxl;
+    }
   }
 
   &-subtitle {
@@ -61,9 +74,14 @@
   &-section {
     padding: $space-xl 0;
     min-height: 50vh;
+    display: flex;
 
     &-title {
       font-size: $font-size-xl;
+    }
+
+    .container {
+      display: flex;
     }
   }
 
@@ -73,6 +91,10 @@
 }
 
 .speaker {
+  &-section {
+    margin-top: $space-xl;
+  }
+
   &-text {
     padding-right: $space-l;
     text-align: right;
@@ -87,8 +109,28 @@
   }
 }
 
+.speaker,
+.feature {
+  &-content {
+    margin: auto;
+    flex: 1;
+  }
+}
+
+@include mobile {
+
+  .speaker,
+  .feature {
+    &-text {
+      padding: 0 $space;
+      text-align: center;
+    }
+  }
+}
+
 .early {
   &-content {
     text-align: center;
+    margin: auto;
   }
 }

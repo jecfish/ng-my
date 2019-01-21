@@ -1,25 +1,35 @@
-<header class="header">
-  <div class="container header-container">
-    <div class="header-logo">
-      <svg xmlns="http://www.w3.org/2000/svg" class="header-logo-img" viewBox="0 0 250 250">
-        <path class="ng-logo-left" d="M125 30L31.9 63.2l14.2 123.1L125 230l78.9-43.7 14.2-123.1z" />
-        <path class="ng-logo-right" d="M125 30v22.2-.1V230l78.9-43.7 14.2-123.1L125 30z" />
-        <path class="ng-logo-A" d="M125 52.1L66.8 182.6h21.7l11.7-29.2h49.4l11.7 29.2H183L125 52.1zm17 83.3h-34l17-40.9 17 40.9z" />
-      </svg>
-      NG-MY
+<header class="header" [class.header-nav--open]="isShowMobileNav">
+  <div class="header-bar">
+    <div class="container header-container">
+      <a routerLink="/" class="header-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" class="header-logo-img" viewBox="0 0 250 250">
+          <path class="ng-logo-left" d="M125 30L31.9 63.2l14.2 123.1L125 230l78.9-43.7 14.2-123.1z" />
+          <path class="ng-logo-right" d="M125 30v22.2-.1V230l78.9-43.7 14.2-123.1L125 30z" />
+          <path class="ng-logo-A" d="M125 52.1L66.8 182.6h21.7l11.7-29.2h49.4l11.7 29.2H183L125 52.1zm17 83.3h-34l17-40.9 17 40.9z" />
+        </svg>
+        NG-MY
+      </a>
+      <button class="header-nav-toggle" (click)="toggleMobileNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-item">
+            <a routerLink="/logo" class="header-nav-link">Logo</a>
+          </li>
+          <li class="header-nav-item">
+            <a routerLink="/speakers" class="header-nav-link">Speakers</a>
+          </li>
+          <li class="header-nav-item">
+            <a routerLink="/schedule" class="header-nav-link">Schedule</a>
+          </li>
+          <li class="header-nav-item">
+            <a routerLink="/team" class="header-nav-link">Team</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="header-nav">
-      <ul class="header-nav-list">
-        <li class="header-nav-item">
-          <a routerLink="/speakers" class="header-nav-link">Speakers</a>
-        </li>
-        <li class="header-nav-item">
-          <a routerLink="/schedule" class="header-nav-link">Schedule</a>
-        </li>
-        <li class="header-nav-item">
-          <a routerLink="/team" class="header-nav-link">Team</a>
-        </li>
-      </ul>
-    </nav>
   </div>
 </header>
