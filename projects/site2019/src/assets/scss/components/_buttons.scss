@@ -1,0 +1,85 @@
+.btn {
+  @include one-height($btn-h, 2px);
+
+  border: 0;
+  background: none;
+  padding: 0 $space;
+  color: $gray-darkest;
+  font-size: $font-size-s;
+  position: relative;
+  overflow: hidden;
+  letter-spacing: 1px;
+  user-select: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+
+  @include mobile {
+    @include one-height($btn-mobile-h, 2px);
+  }
+
+  @include btn-active {
+    outline: none;
+
+    .btn-inner {
+      color: $white;
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: 100%;
+    background: $gray-darkest;
+    transform: skewX(-30deg) scaleX(0);
+    transform-origin: right;
+    transition: transform 0.2s ease;
+    will-change: transform;
+  }
+
+  @include btn-active {
+    &:before {
+      transform-origin: left;
+      transform: skewX(-30deg) scaleX(1)
+    }
+  }
+
+  &-inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  &-primary {
+    color: $white;
+    background-color: $red;
+  }
+
+  &-secondary {
+    color: $white;
+    background-color: $blue;
+  }
+
+  &-rounded {
+    border-radius: $btn-h / 2;
+  }
+
+  &-outline {
+    border: 2px solid $gray-darkest;
+    background: transparent;
+    color: $gray-darkest;
+
+    &.btn-secondary {
+      border-color: $blue;
+
+      &:before {
+        background: $blue;
+      }
+    }
+
+    @include btn-active {
+      color: $white;
+    }
+  }
+}

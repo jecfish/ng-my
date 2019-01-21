@@ -1,0 +1,35 @@
+.footer {
+  text-align: center;
+  height: $footer-h;
+  line-height: $footer-h;
+  font-size: $font-size-xs;
+  background: $blue-darkest;
+  color: $white;
+
+  &-item {
+    display: inline-block;
+    position: relative;
+
+    &+& {
+      margin-left: $space;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: calc(50% - 0.5em);
+        left: -10px;
+        height: 1em;
+        width: 1px;
+        background: $white;
+      }
+    }
+
+    a {
+      color: $white;
+
+      @include btn-active {
+        color: $gray-lightest;
+      }
+    }
+  }
+}

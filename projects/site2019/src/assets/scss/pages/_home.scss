@@ -1,0 +1,136 @@
+.hero {
+  &-section {
+    min-height: calc(100vh - #{$header-h});
+    position: relative;
+    display: flex;
+
+    .container {
+      display: flex;
+      margin: auto;
+    }
+  }
+
+  &-content {
+    margin: auto 0;
+    width: 100%;
+  }
+
+  &-logo {
+    flex: 1;
+    width: 100%;
+    max-width: 500px;
+
+    &-img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &-text {
+    flex: 1;
+    display: flex;
+
+    p+p,
+    .btn {
+      margin-top: $space;
+
+      @include mobile {
+        margin-top: $space-s;
+      }
+    }
+
+    .btn {
+      flex-grow: 0;
+    }
+
+    &-container {
+      margin: auto;
+    }
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &-title,
+  &-subtitle {
+    font-weight: bold;
+  }
+
+  &-title {
+    font-size: $font-size-xxxl;
+
+    @include mobile {
+      font-size: $font-size-xxl;
+    }
+  }
+
+  &-subtitle {
+    font-size: $font-size-l;
+  }
+}
+
+.home {
+  &-section {
+    padding: $space-xl 0;
+    min-height: 50vh;
+    display: flex;
+
+    &-title {
+      font-size: $font-size-xl;
+    }
+
+    .container {
+      display: flex;
+    }
+  }
+
+  &-cta {
+    margin-top: $space;
+  }
+}
+
+.speaker {
+  &-section {
+    margin-top: $space-xl;
+  }
+
+  &-text {
+    padding-right: $space-l;
+    text-align: right;
+    margin-right: auto;
+  }
+}
+
+.feature {
+  &-text {
+    padding-left: $space-l;
+    margin-left: auto;
+  }
+}
+
+.speaker,
+.feature {
+  &-content {
+    margin: auto;
+    flex: 1;
+  }
+}
+
+@include mobile {
+
+  .speaker,
+  .feature {
+    &-text {
+      padding: 0 $space;
+      text-align: center;
+    }
+  }
+}
+
+.early {
+  &-content {
+    text-align: center;
+    margin: auto;
+  }
+}
