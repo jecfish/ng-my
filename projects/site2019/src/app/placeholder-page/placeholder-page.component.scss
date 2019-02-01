@@ -25,7 +25,8 @@
     width: 300px;
   }
 
-  &-content {
+  &-text {
+    margin-left: 20px;
     h1 {
       font-weight: bold;
       font-size: 2.5rem;
@@ -33,6 +34,7 @@
 
     @include mobile {
       text-align: center;
+      margin-left: 0;
     }
   }
 
