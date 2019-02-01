@@ -7,7 +7,7 @@ import { PageService } from '../services/page.service';
   styleUrls: ['./placeholder-page.component.scss']
 })
 export class PlaceholderPageComponent implements OnInit {
-  title = 'Malaysia\'s first Angular Conference';
+  title = 'July 06-07';
 
   constructor(private pageSvc: PageService) { }
 

@@ -1,19 +1,20 @@
 @import 'variables';
 @import 'mixins';
 
-:host {
-  position: relative;
-}
-
 .landing {
-  display: flex;
-  height: calc(100vh - #{$footer-h});
+  height: 100vh;
+  width: 100%;
+  // background: url(../../assets/imgs/klcc-tiny.jpg) no-repeat center center fixed;
+  background: black;
+  background-size: cover;
 
   &-content {
-    margin: auto;
+    padding: 10px;
     display: flex;
-    padding: 0 $space-l;
-    max-width: 100%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 
     @include mobile {
       flex-direction: column;
@@ -22,100 +23,182 @@
 
   &-logo {
     width: 300px;
-    max-width: 100%;
-    height: 0;
-    padding-bottom: 100%;
-    margin: 0 auto;
-    perspective: 1000px;
-
-    &-img {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 100%;
-      transform: rotateY(10deg) translateY(-50%);
-      transform-style: preserve-3d;
-      perspective: 2000px;
-      perspective-origin: left;
-      animation: logo 10s cubic-bezier(0.15, 0.12, 0.14, 0.69) infinite;
-    }
-
-    .logo {
-      &-shield {
-        transform: translateZ(-25px);
-
-        &-left {
-          fill: $ng-red;
-        }
-
-        &-right {
-          fill: $ng-red-dark;
-        }
-      }
-
-      &-letter {
-        fill: $white;
-        transform: translateZ(25px);
-      }
-
-      &-shadow {
-        opacity: 0.2;
-        filter: blur(1px);
-      }
-
-      &-letter,
-      &-shadow {
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-    }
   }
 
-  &-text {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  &-content {
+    h1 {
+      font-weight: bold;
+      font-size: 2.5rem;
+    }
 
     @include mobile {
       text-align: center;
     }
   }
 
-  &-title {
-    font-size: $font-size-xxxl;
-    margin-bottom: $space-l;
-    margin-left: -4px;
+  &-social {
+    display: flex;
 
     @include mobile {
-      margin-bottom: $space;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    li {
+      padding: 10px;
+    }
+
+    li:first-child {
+      padding-left: 0;
+
+      @include mobile {
+        padding-left: 10px;
+      }
+    }
+
+    li:after {
+      content: "."
+    }
+
+    a {
+      color: white;
+      border-bottom: 1px solid $ng-red;
     }
   }
 
-  &-background {
-    background: #d6d8d9 url('../../assets/imgs/klcc-tiny.jpg') center/cover no-repeat;
-    opacity: 0.2;
-    filter: grayscale(0.5);
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
 }
+
+
 
 .footer {
-  background: transparent;
-  color: $gray-darkest;
-
-  &-item {
-    &:before {
-      background: $gray;
-    }
-  }
+  position: absolute;
+  background: black;
+  width: 100%;
+  bottom: 0;
 
   a {
-    color: $red;
+    color: $ng-red;
   }
 }
+
+// @import 'variables';
+// @import 'mixins';
+
+// :host {
+//   position: relative;
+// }
+
+// .landing {
+//   display: flex;
+//   height: calc(100vh - #{$footer-h});
+
+//   &-content {
+//     margin: auto;
+//     display: flex;
+//     padding: 0 $space-l;
+//     max-width: 100%;
+
+//     @include mobile {
+//       flex-direction: column;
+//     }
+//   }
+
+//   &-logo {
+//     width: 300px;
+//     max-width: 100%;
+//     height: 0;
+//     padding-bottom: 100%;
+//     margin: 0 auto;
+//     perspective: 1000px;
+
+//     &-img {
+//       position: absolute;
+//       top: 50%;
+//       left: 0;
+//       width: 100%;
+//       transform: rotateY(10deg) translateY(-50%);
+//       transform-style: preserve-3d;
+//       perspective: 2000px;
+//       perspective-origin: left;
+//       animation: logo 10s cubic-bezier(0.15, 0.12, 0.14, 0.69) infinite;
+//     }
+
+//     .logo {
+//       &-shield {
+//         transform: translateZ(-25px);
+
+//         &-left {
+//           fill: $ng-red;
+//         }
+
+//         &-right {
+//           fill: $ng-red-dark;
+//         }
+//       }
+
+//       &-letter {
+//         fill: $white;
+//         transform: translateZ(25px);
+//       }
+
+//       &-shadow {
+//         opacity: 0.2;
+//         filter: blur(1px);
+//       }
+
+//       &-letter,
+//       &-shadow {
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//       }
+//     }
+//   }
+
+//   &-text {
+//     flex: 1;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+
+//     @include mobile {
+//       text-align: center;
+//     }
+//   }
+
+//   &-title {
+//     font-size: $font-size-xxl;
+//     margin-bottom: $space-l;
+//     margin-left: -4px;
+
+//     @include mobile {
+//       margin-bottom: $space;
+//     }
+//   }
+
+//   &-background {
+//     background: #d6d8d9 url('../../assets/imgs/klcc-tiny.jpg') center/cover no-repeat;
+//     opacity: 0.2;
+//     filter: grayscale(0.5);
+//     width: 100vw;
+//     height: 100vh;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//   }
+// }
+
+// .footer {
+//   background: transparent;
+//   color: $gray-darkest;
+
+//   &-item {
+//     &:before {
+//       background: $gray;
+//     }
+//   }
+
+//   a {
+//     color: $red;
+//   }
+// }
