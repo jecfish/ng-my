@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { DomSanitizer } from '@angular/platform-browser';
+import { DomSanitizer, Meta } from '@angular/platform-browser';
 import { PageService } from '../services/page.service';
 
 @Component({
@@ -37,7 +37,8 @@ export class FormPageComponent implements OnInit {
     }
   };
 
-  constructor(private route: ActivatedRoute, private sanitizer: DomSanitizer, private pageSvc: PageService) { }
+  constructor(private route: ActivatedRoute, private sanitizer: DomSanitizer, 
+    private pageSvc: PageService, private meta: Meta) { }
 
   ngOnInit() {
     this.route.params.subscribe(x => {
@@ -49,6 +50,8 @@ export class FormPageComponent implements OnInit {
         title: form.name,
         path: `/form/${x.name}`
       });
+
+      this.meta.updateTag({ name: 'og:title', content: form.name + this.pageSvc.postfix });
 
       form.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.urlPattern.replace('{id}', form.id));
       this.selectedForm = form;

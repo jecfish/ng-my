@@ -7,7 +7,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class PageService {
 
-  private readonly postfix = ' | NG-MY 2019';
+  public readonly postfix = ' | NG-MY 2019';
   private trackingID = environment.gaTrackingID;
 
   constructor(private title: Title) { }
