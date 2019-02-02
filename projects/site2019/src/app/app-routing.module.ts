@@ -8,6 +8,7 @@ import { SpeakersPageComponent } from './speakers-page/speakers-page.component';
 import { SchedulePageComponent } from './schedule-page/schedule-page.component';
 import { LogoPageComponent } from './logo-page/logo-page.component';
 import { TeamPageComponent } from './team-page/team-page.component';
+import { FormPageComponent } from './form-page/form-page.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'speakers/:id',
     component: SpeakersPageComponent
+  },
+  {
+    path: 'form/:name',
+    component: FormPageComponent
   },
   {
     path: 'schedule',
