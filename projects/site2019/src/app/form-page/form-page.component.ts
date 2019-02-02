@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
+import { PageService } from '../services/page.service';
 
 @Component({
   selector: 'my-form-page',
@@ -15,24 +16,28 @@ export class FormPageComponent implements OnInit {
 
   private forms = {
     'call-for-presenters': {
+      name: 'Call for Presenters',
       id: '1FAIpQLSfUA8FNtmXeaR8l5yjMoeuzomow9nzBT_1K56IiL0EhOS1dig',
       height: 1908
     },
     'speaker-nomination': {
+      name: 'Speaker Nomination',
       id: '1FAIpQLSdHx3NHJdYZrLqLFwjWjf7jGE8dfIJH4IYtMCvcqKVPxoJSWg',
       height: 2850
     },
     'call-for-sponsors': {
+      name: 'Call for Sponsors',
       id: '1FAIpQLSdr6wRM-NPfFTdijSoozApxI5ypHJyBDnyCPdIiHkKs9DD9iw',
       height: 1633
     },
     'sponsor-intro': {
+      name: 'Sponsor Introduction',
       id: '1FAIpQLSfIxnhrW2p9E9RVBDelGiN8cp6pT3rIGxRyovmSiY5BxuuIKA',
       height: 1273
     }
   };
 
-  constructor(private route: ActivatedRoute, private sanitizer: DomSanitizer) { }
+  constructor(private route: ActivatedRoute, private sanitizer: DomSanitizer, private pageSvc: PageService) { }
 
   ngOnInit() {
     this.route.params.subscribe(x => {
@@ -40,8 +45,12 @@ export class FormPageComponent implements OnInit {
 
       if (!form.id) return;
 
+      this.pageSvc.setPage({
+        title: form.name,
+        path: `/form/${x.name}`
+      });
+
       form.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.urlPattern.replace('{id}', form.id));
-      console.log(form);
       this.selectedForm = form;
     });
   }
