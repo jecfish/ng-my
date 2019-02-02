@@ -10,7 +10,13 @@ module.exports = {
             // Required - The path to the webpack-outputted app to prerender.
             staticDir: path.join(__dirname, '../../dist/site2019'),
             // Required - Routes to render.
-            routes: ['/', '/coc'],
+            routes: [
+                '/', '/coc', 
+                '/form/call-for-presenters',
+                '/form/speaker-nomination',
+                '/form/call-for-sponsors',
+                '/form/sponsor-intro'
+            ],
         })
     ]
 }

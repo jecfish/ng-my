@@ -1,0 +1,6 @@
+<my-header></my-header>
+<div *ngIf="selectedForm.id">
+    <iframe [src]="selectedForm.url"
+    width="640" [height]="selectedForm.height" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+</div>
+<my-footer></my-footer>
