@@ -51,7 +51,7 @@ export class FormPageComponent implements OnInit {
         path: `/form/${x.name}`
       });
 
-      this.meta.updateTag({ name: 'og:title', content: form.name + this.pageSvc.postfix });
+      this.meta.updateTag({ property: 'og:title', content: form.name + this.pageSvc.postfix });
 
       form.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.urlPattern.replace('{id}', form.id));
       this.selectedForm = form;
