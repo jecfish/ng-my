@@ -37,7 +37,7 @@ export class FormPageComponent implements OnInit {
     }
   };
 
-  constructor(private route: ActivatedRoute, private sanitizer: DomSanitizer, 
+  constructor(private route: ActivatedRoute, private sanitizer: DomSanitizer,
     private pageSvc: PageService, private meta: Meta) { }
 
   ngOnInit() {
