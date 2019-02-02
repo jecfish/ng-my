@@ -52,6 +52,7 @@ export class FormPageComponent implements OnInit {
       });
 
       this.meta.updateTag({ property: 'og:title', content: form.name + this.pageSvc.postfix });
+      this.meta.updateTag({ property: 'og:url', content: window.location.href });
 
       form.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.urlPattern.replace('{id}', form.id));
       this.selectedForm = form;
