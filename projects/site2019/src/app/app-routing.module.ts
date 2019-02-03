@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PlaceholderPageComponent } from './placeholder-page/placeholder-page.component';
 import { environment } from '../environments/environment';
 import { HomePageComponent } from './home-page/home-page.component';
+import { HomeEarlyPageComponent } from './home-early-page/home-early-page.component';
 import { CodeOfConductPageComponent } from './code-of-conduct-page/code-of-conduct-page.component';
 import { SpeakersPageComponent } from './speakers-page/speakers-page.component';
 import { SchedulePageComponent } from './schedule-page/schedule-page.component';
@@ -39,7 +40,7 @@ const routes: Routes = [
     path: '',
     component: environment.featureFlag.isPlaceholder
       ? PlaceholderPageComponent
-      : HomePageComponent,
+      : HomeEarlyPageComponent,
     pathMatch: 'prefix'
   }
 ];

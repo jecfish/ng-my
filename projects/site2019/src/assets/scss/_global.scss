@@ -19,6 +19,10 @@ p {
   line-height: 1.6;
 }
 
+img {
+  max-width: 100%;
+}
+
 .page-title {
   color: $red;
   margin-bottom: $space;
@@ -27,7 +31,7 @@ p {
 
 .container {
   width: calc(100% - #{$space-xl});
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 
   @include mobile {
@@ -57,14 +61,21 @@ p {
   }
 }
 
-.article-section {
-  &+& {
-    margin-top: $space-xl;
-  }
+.article {
+  &-section {
+    &+& {
+      margin-top: $space-xl;
+    }
 
-  p+p {
-    margin-top: $space-s;
+    p+p {
+      margin-top: $space-s;
+    }
   }
+}
+
+.section-title {
+  text-align: center;
+  font-size: $font-size-xxl;
 }
 
 .ng-logo {
@@ -88,6 +99,12 @@ p {
 
   &-right {
     margin-left: $space-s;
+  }
+}
+
+.text {
+  &-primary {
+    color: $red;
   }
 }
 
