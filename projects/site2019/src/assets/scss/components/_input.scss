@@ -1,0 +1,28 @@
+.form-control {
+  @include one-height($btn-h, 2px);
+
+  border: 1px solid $blue;
+  padding: 0 $space;
+
+  &:focus {
+    border-color: $blue-light;
+    box-shadow: 0 0 4px transparentize($blue, 0.7);
+  }
+
+  @include mobile {
+    @include one-height($btn-mobile-h, 2px);
+  }
+}
+
+.input-group {
+  display: flex;
+
+  &-label {
+    font-size: $font-size-s;
+    margin-bottom: $space-s;
+  }
+
+  .form-control {
+    flex: 1;
+  }
+}

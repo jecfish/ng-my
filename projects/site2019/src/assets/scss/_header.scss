@@ -8,7 +8,7 @@
     font-weight: bold;
     letter-spacing: 1px;
     margin-right: auto;
-    color: $gray-darkest;
+    color: $font-color-root;
 
     &-img {
       height: 40px;
@@ -47,6 +47,8 @@
   }
 
   &-nav {
+    display: flex;
+
     &-list {
       display: flex;
     }
@@ -230,6 +232,58 @@
               &:last-child {
                 transform: scaleX(0);
               }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-social {
+    display: flex;
+    padding: 0 $space-s;
+
+
+    &-item {
+      &+& {
+        margin-left: $space-s;
+      }
+    }
+
+    &-link {
+      padding: 0 $space-s;
+
+      @include btn-active {
+        color: $red-dark;
+      }
+    }
+
+    @include tablet {
+      position: absolute;
+      bottom: 0;
+      right: $space;
+
+
+      &-link {
+        color: $white;
+
+        @include btn-active {
+          color: $white;
+        }
+      }
+
+      &-item {
+        opacity: 0;
+        transform: translateX(10px);
+        transition: opacity 0.2s ease, transform 0.2s ease;
+
+        @at-root .header-nav--open & {
+          opacity: 1;
+          transform: none;
+
+          @for $n from 1 through $nav-social-count {
+            &:nth-child(#{$n}) {
+              transition-delay: 0.2s + 0.05s * ($n - 1);
             }
           }
         }

@@ -28,6 +28,7 @@ $gray-darkest: #323232;
 
 $primary: $red;
 $secondary: $blue;
+$font-color-root: $gray-darkest;
 
 $white: #fffffd;
 $white-off: lighten($gray, 35%);
@@ -64,4 +65,11 @@ $tablet-breakpoint: 800px;
 $header-z: 1000;
 
 // const
+// nav item count
 $nav-item-count: 4;
+$nav-social-count: 4;
+
+// hero scroll icon
+$scroll-anim-d: 3s;
+$scroll-icon-h: 90px;
+$scroll-icon-size: 5px;

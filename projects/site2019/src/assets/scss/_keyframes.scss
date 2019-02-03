@@ -37,3 +37,39 @@
     transform: skewX(-30deg) scaleX(1);
   }
 }
+
+@keyframes scroll {
+
+  0%,
+  100%,
+  30%,
+  70% {
+    transform: none;
+  }
+
+  45%,
+  55% {
+    transform: translateY(#{$scroll-icon-h - 4px});
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 0.7;
+  }
+
+  35% {
+    transform: scale(5)
+  }
+
+  70% {
+    transform: scale(0)
+  }
+
+  35%,
+  70% {
+    opacity: 0;
+  }
+}

@@ -5,11 +5,13 @@
   border: 0;
   background: none;
   padding: 0 $space;
-  color: $gray-darkest;
+  color: $font-color-root;
   font-size: $font-size-s;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-align: center;
   position: relative;
   overflow: hidden;
-  letter-spacing: 1px;
   user-select: none;
   cursor: pointer;
   transition: color 0.2s ease;
@@ -43,7 +45,7 @@
   @include btn-active {
     &:before {
       transform-origin: left;
-      transform: skewX(-30deg) scaleX(1)
+      transform: skewX(-30deg) scaleX(1);
     }
   }
 
@@ -60,5 +62,9 @@
   &-secondary {
     color: $white;
     background-color: $blue;
+  }
+
+  &-yellow {
+    background-color: $yellow;
   }
 }

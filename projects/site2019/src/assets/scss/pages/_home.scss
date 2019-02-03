@@ -10,6 +10,45 @@
     }
   }
 
+  &-scroll {
+    border: 0;
+    background: none;
+    padding: 0;
+    width: $scroll-icon-size;
+    height: $scroll-icon-h;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      width: $scroll-icon-size;
+      height: $scroll-icon-size;
+      border-radius: 50%;
+      background: $red;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &:before {
+      animation: scroll $scroll-anim-d cubic-bezier(0.31, 0.32, 0.1, 1.48) infinite;
+    }
+
+    &:after {
+      opacity: 0;
+      animation: pulse $scroll-anim-d cubic-bezier(0, 0.59, 0.16, 0.76) infinite;
+    }
+  }
+
+  &-btns {
+    display: flex;
+
+    .btn+.btn {
+      margin-left: $space;
+    }
+  }
+
   &-content {
     margin: auto 0;
     width: 100%;
@@ -77,6 +116,14 @@
     .section-title {
       margin-bottom: $space-l;
     }
+
+    @include mobile {
+      padding: $space-l 0;
+
+      .section-title {
+        margin-bottom: $space;
+      }
+    }
   }
 
   &-article {
@@ -93,13 +140,21 @@
 
       .btn {
         margin-top: $space;
+
+        @include mobile {
+          width: 100%;
+        }
       }
 
       &.--primary {
         background: $white;
-        color: $gray-darkest;
+        color: $font-color-root;
         padding: 5% $space;
         box-shadow: 8px 8px rgba(0, 0, 0, 0.3);
+
+        @include mobile {
+          margin-bottom: $space-l;
+        }
       }
     }
   }
@@ -108,9 +163,24 @@
 .stats {
   padding: $space-xl 0;
 
-  &-section {}
+  &-section {
+    .container {
+      position: relative;
+    }
+  }
+
+  &-scroll {
+    position: absolute;
+    bottom: calc(100% - 55px);
+    left: $space;
+
+    @include mobile {
+      display: none;
+    }
+  }
 
   &-arrow {
+    margin-top: $space-xl;
     position: relative;
     overflow: hidden;
     background: $blue-darkest;
@@ -125,25 +195,65 @@
       position: relative;
       z-index: 1;
     }
+
+    @include mobile {
+      margin-top: $space-l;
+
+      &:before {
+        border-top-width: 50px;
+      }
+    }
   }
 
   &-block {
     padding: 0 $space;
 
     &:first-child {
-      transform: translateY(-50px);
+      transform: translateY(-40px);
     }
 
     &:last-child {
-      transform: translateY(50px);
+      transform: translateY(40px);
+    }
+
+    @for $n from 1 through 3 {
+      &:nth-child(#{$n}) {
+        .stats-item:before {
+          transition-delay: 0.25s * ($n - 1);
+          transition-duration: 0.3s + (0.075s * $n - 1);
+        }
+      }
     }
   }
 
   &-item {
     text-align: center;
-    background: $red;
     color: $white;
-    padding: 20% 0;
+    padding: $space-l 0;
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(100% + 50px);
+      height: 100%;
+      background: $red;
+      z-index: 0;
+      pointer-events: none;
+      transform: skewX(-10deg) scaleX(0);
+      transform-origin: top left;
+      transition: transform 0.4s cubic-bezier(0.04, 0.18, 0.46, 0.99);
+      will-change: transform;
+    }
+  }
+
+  &-number,
+  &-metrics {
+    position: relative;
+    z-index: 1;
   }
 
   &-number {
@@ -152,6 +262,17 @@
 
   &-metrics {
     font-size: $font-size-xxl;
+  }
+
+  &-map {
+    height: 500px;
+    background: $gray-lightest;
+  }
+
+  &.--show {
+    .stats-item:before {
+      transform: skewX(-10deg) scaleX(1);
+    }
   }
 }
 
@@ -167,6 +288,14 @@
 .sponsoring {
   &-section {
     background: $yellow;
+
+    .col:first-child {
+      order: 1;
+
+      @include mobile {
+        order: 0;
+      }
+    }
   }
 
   &-block {
@@ -181,7 +310,6 @@
 }
 
 .sponsors {
-
   &-block {
     &+& {
       margin-top: $space;
@@ -191,7 +319,7 @@
       .sponsors {
         &-title {
           background: $yellow;
-          color: $gray-darkest;
+          color: $font-color-root;
           position: relative;
           overflow: hidden;
 
@@ -219,9 +347,11 @@
   }
 
   &-title {
+    @include one-height(30px);
+
     display: inline-block;
     font-weight: bold;
-    padding: $space-s;
+    padding: 0 $space-s;
     background: $gray-darkest;
     color: $white;
     margin-bottom: $space;
@@ -231,10 +361,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include mobile {
+      flex-wrap: wrap;
+    }
   }
 
   &-title {}
-
 
   &-item {
     width: 120px;
@@ -243,7 +376,26 @@
     &+& {
       margin-left: $space-l;
     }
+
+    @include mobile {
+      width: 100px;
+      margin: $space;
+
+      &+& {
+        margin-left: $space;
+      }
+    }
   }
 
   &-img {}
+}
+
+.mailing {
+  max-width: 300px;
+
+  &-section {
+    padding: $space-l 0;
+    background: $blue-darkest;
+    color: $white;
+  }
 }
