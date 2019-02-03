@@ -43,6 +43,7 @@
 
   &-btns {
     display: flex;
+    margin-top: $space;
 
     .btn+.btn {
       margin-left: $space;
@@ -69,8 +70,7 @@
     flex: 1;
     display: flex;
 
-    p+p,
-    .btn {
+    p+p {
       margin-top: $space;
 
       @include mobile {
@@ -106,6 +106,10 @@
 
   &-subtitle {
     font-size: $font-size-l;
+
+    @include mobile {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -166,6 +170,7 @@
   &-section {
     .container {
       position: relative;
+      z-index: 1;
     }
   }
 
@@ -267,6 +272,36 @@
   &-map {
     height: 500px;
     background: $gray-lightest;
+
+    &-bg {
+      height: 250px;
+      overflow: hidden;
+      position: relative;
+      opacity: 0.7;
+
+      &:before {
+        @include full-size-pseudo;
+
+        pointer-events: none;
+        transform-origin: bottom right;
+        background: linear-gradient(to right, transparent, $white 50%);
+        transform: skewX(-30deg);
+        z-index: 1;
+      }
+
+      img {
+        height: 100%;
+        max-width: none;
+      }
+
+      @include mobile {
+        height: 150px;
+
+        &:before {
+          background: linear-gradient(to right, transparent, $white 80%);
+        }
+      }
+    }
   }
 
   &.--show {
@@ -278,16 +313,49 @@
 
 .speakers {
   &-section {
-    background: $blue-darkest;
     color: $white;
+    background: $blue-darkest;
+    position: relative;
+    padding-bottom: 100px;
   }
 
-  &-block {}
+  &-bg {
+    position: absolute;
+    height: 300px;
+    bottom: 0;
+    right: 0;
+    opacity: 0.7;
+
+    img {
+      height: 100%;
+      max-width: none;
+    }
+
+    &:before {
+      @include full-size-pseudo;
+
+      transform: skewX(30deg);
+      pointer-events: none;
+      transform-origin: bottom left;
+      background: linear-gradient(to left, transparent, $blue-darkest 70%);
+    }
+
+    @include mobile {
+      height: 200px;
+    }
+  }
+
+  &-content {
+    position: relative;
+    z-index: 2;
+  }
 }
 
 .sponsoring {
   &-section {
     background: $yellow;
+    padding-bottom: 100px;
+    position: relative;
 
     .col:first-child {
       order: 1;
@@ -296,6 +364,39 @@
         order: 0;
       }
     }
+  }
+
+  &-bg {
+    position: absolute;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+    opacity: 0.7;
+    max-width: 100%;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+      max-width: none;
+    }
+
+    &:before {
+      @include full-size-pseudo;
+
+      transform: skewX(-30deg);
+      pointer-events: none;
+      transform-origin: bottom right;
+      background: linear-gradient(to right, transparent, $yellow 70%);
+    }
+
+    @include mobile {
+      height: 200px;
+    }
+  }
+
+  &-content {
+    position: relative;
+    z-index: 2;
   }
 
   &-block {
@@ -330,6 +431,7 @@
             left: -10px;
             width: calc(100% + 20px);
             height: 100%;
+            pointer-events: none;
             background: transparentize($white, 0.7);
             animation: shine 2s cubic-bezier(0.42, 0, 0, 0.64) infinite;
           }
@@ -367,8 +469,6 @@
     }
   }
 
-  &-title {}
-
   &-item {
     width: 120px;
     position: relative;
@@ -386,8 +486,6 @@
       }
     }
   }
-
-  &-img {}
 }
 
 .mailing {
@@ -399,9 +497,6 @@
     color: $white;
   }
 
-  &-title {}
-
-
   &-item {
     width: 120px;
     position: relative;
@@ -410,6 +505,4 @@
       margin-left: $space-l;
     }
   }
-
-  &-img {}
 }
