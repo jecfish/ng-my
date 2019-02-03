@@ -1,6 +1,7 @@
 .btn {
   @include one-height($btn-h, 2px);
 
+  display: inline-block;
   border: 0;
   background: none;
   padding: 0 $space;
@@ -32,7 +33,7 @@
     left: -10px;
     width: calc(100% + 20px);
     height: 100%;
-    background: $gray-darkest;
+    background: transparentize($black, 0.7);
     transform: skewX(-30deg) scaleX(0);
     transform-origin: right;
     transition: transform 0.2s ease;
@@ -59,27 +60,5 @@
   &-secondary {
     color: $white;
     background-color: $blue;
-  }
-
-  &-rounded {
-    border-radius: $btn-h / 2;
-  }
-
-  &-outline {
-    border: 2px solid $gray-darkest;
-    background: transparent;
-    color: $gray-darkest;
-
-    &.btn-secondary {
-      border-color: $blue;
-
-      &:before {
-        background: $blue;
-      }
-    }
-
-    @include btn-active {
-      color: $white;
-    }
   }
 }

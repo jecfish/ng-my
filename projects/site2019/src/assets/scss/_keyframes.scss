@@ -1,9 +1,39 @@
 @keyframes logo {
-    45%, 55% {
-        perspective-origin: left;
-    }
 
-    0%, 5%, 95%, 100% {
-        perspective-origin: right -5%;
-    }
+  45%,
+  55% {
+    perspective-origin: left;
+  }
+
+  0%,
+  5%,
+  95%,
+  100% {
+    perspective-origin: right -5%;
+  }
+}
+
+@keyframes shine {
+
+  0%,
+  100%,
+  25% {
+    transform-origin: left;
+  }
+
+  25.1%,
+  99.99% {
+    transform-origin: right;
+  }
+
+  0%,
+  10%,
+  100%,
+  50% {
+    transform: skewX(-30deg) scaleX(0);
+  }
+
+  25% {
+    transform: skewX(-30deg) scaleX(1);
+  }
 }
