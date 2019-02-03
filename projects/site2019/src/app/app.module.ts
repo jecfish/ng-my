@@ -13,6 +13,7 @@ import { TeamPageComponent } from './team-page/team-page.component';
 import { LogoPageComponent } from './logo-page/logo-page.component';
 import { SchedulePageComponent } from './schedule-page/schedule-page.component';
 import { HomeEarlyPageComponent } from './home-early-page/home-early-page.component';
+import { FormPageComponent } from './form-page/form-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { HomeEarlyPageComponent } from './home-early-page/home-early-page.compon
     TeamPageComponent,
     LogoPageComponent,
     SchedulePageComponent,
-    HomeEarlyPageComponent
+    HomeEarlyPageComponent,
+    FormPageComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
