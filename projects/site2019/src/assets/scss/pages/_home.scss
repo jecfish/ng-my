@@ -116,13 +116,13 @@
     .section-title {
       margin-bottom: $space-l;
     }
+  }
 
-    @include mobile {
-      padding: $space-l 0;
+  @include mobile {
+    padding: $space-l 0;
 
-      .section-title {
-        margin-bottom: $space;
-      }
+    .section-title {
+      margin-bottom: $space;
     }
   }
 
@@ -398,4 +398,18 @@
     background: $blue-darkest;
     color: $white;
   }
+
+  &-title {}
+
+
+  &-item {
+    width: 120px;
+    position: relative;
+
+    &+& {
+      margin-left: $space-l;
+    }
+  }
+
+  &-img {}
 }
