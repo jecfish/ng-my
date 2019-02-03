@@ -1,7 +1,7 @@
 :root {
   font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: $gray-darkest;
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  color: $font-color-root;
   --shadow-opacity: 0;
 }
 
@@ -76,6 +76,15 @@ img {
 .section-title {
   text-align: center;
   font-size: $font-size-xxl;
+
+  @include mobile {
+    font-size: $font-size-xl;
+  }
+}
+
+.section-title {
+  text-align: center;
+  font-size: $font-size-xxl;
 }
 
 .ng-logo {
@@ -122,6 +131,7 @@ img {
 }
 
 @import 'components/buttons';
+@import 'components/input';
 
 @import 'header';
 @import 'footer';
