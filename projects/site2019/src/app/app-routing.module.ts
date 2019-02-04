@@ -17,7 +17,7 @@ const getHomePageComponent = (id) => {
       return PlaceholderPageComponent;
     case 1:
       return HomeEarlyPageComponent;
-    case 2: 
+    case 2:
       return HomePageComponent;
   }
 }
@@ -63,4 +63,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

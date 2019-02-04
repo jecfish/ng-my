@@ -29,7 +29,7 @@ export class HomeEarlyPageComponent implements OnInit {
 
   ultimateList = [
     { image: 'sunwayuniversity.jpg', name: 'sunway university', url: 'https://university.sunway.edu.my/' },
-  ]
+  ];
 
   communityList = [
     { image: 'nestjs.svg', name: 'nestjs', url: 'https://nestjs.com/' },
@@ -37,7 +37,7 @@ export class HomeEarlyPageComponent implements OnInit {
     { image: 'sunway_tech_club.jpg', name: 'stc', url: 'https://www.facebook.com/sunwaytechclub/' },
     { image: 'gdgkl.svg', name: 'gdgkl', url: 'https://www.facebook.com/GDGKualaLumpur/' },
     { image: 'thefrontendmalaysia.jpg', name: 'tfmy', url: 'https://www.facebook.com/frontendmalaysia/' },
-  ]
+  ];
 
   @HostListener('window:scroll', ['$event'])
   doSomething(event) {
