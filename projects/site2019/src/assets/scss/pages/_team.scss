@@ -1,0 +1,128 @@
+.team-highlight {
+  &-section {
+    width: 100%;
+    padding: $space-l $space;
+    background: $blue-darkest;
+    color: $white;
+    position: fixed;
+    top: $header-h;
+    left: 0;
+    z-index: $header-z;
+    display: none;
+  }
+
+  &-info {
+    flex: 0 0 300px;
+    width: 300px;
+    padding: $space;
+
+    &-container {
+      display: flex;
+      max-width: 800px;
+      margin: auto;
+    }
+  }
+
+  &-pic {
+    margin: 0 auto $space;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid $black;
+    box-shadow: 4px 4px $black;
+    overflow: hidden;
+  }
+
+  &-img {
+    object-fit: cover;
+  }
+
+  &-misc {
+    display: flex;
+    justify-content: center;
+
+    &-item {
+      &+& {
+        margin-left: $space;
+      }
+    }
+
+    &-link {
+      color: $white;
+    }
+  }
+
+  &-description {
+    flex: 1;
+    padding: $space;
+  }
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: -$space;
+
+  &-section {
+    padding: $space-l 0;
+    min-height: calc(100vh - #{$header-h + $footer-h});
+  }
+
+  &-item {
+    flex: 1;
+    max-width: 300px;
+    margin: $space;
+  }
+}
+
+.team-card {
+  width: 200px;
+  max-width: 100%;
+  margin: auto;
+  background: $gray;
+  padding: $space 0;
+  border: 2px solid $black;
+  box-shadow: 4px 4px $black;
+
+  &.--boy {
+    background: $red;
+  }
+
+  &.--girl {
+    background: $blue;
+  }
+
+  &.--selected {
+    background: $yellow;
+  }
+
+  &-pic {
+    margin: 0 auto $space;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid $black;
+    box-shadow: 4px 4px $black;
+    overflow: hidden;
+  }
+
+  &-img {
+    object-fit: cover;
+  }
+
+  &-misc {
+    display: flex;
+    justify-content: center;
+
+    &-item {
+      &+& {
+        margin-left: $space;
+      }
+    }
+
+    &-link {
+      color: $white;
+    }
+  }
+}

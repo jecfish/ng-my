@@ -11,22 +11,22 @@ import { LogoPageComponent } from './logo-page/logo-page.component';
 import { TeamPageComponent } from './team-page/team-page.component';
 import { FormPageComponent } from './form-page/form-page.component';
 
-const getHomePageComponent = (id) => {
-  switch (id) {
-    case 0:
-      return PlaceholderPageComponent;
-    case 1:
-      return HomeEarlyPageComponent;
-    case 2:
-      return HomePageComponent;
-  }
-};
+const getHomePageComponent = id =>
+  [PlaceholderPageComponent, HomeEarlyPageComponent, HomePageComponent][id];
 
 const routes: Routes = [
   {
     path: 'coc',
     component: CodeOfConductPageComponent,
     pathMatch: 'full'
+  },
+  {
+    path: 'team',
+    component: TeamPageComponent
+  },
+  {
+    path: 'team/:id',
+    component: TeamPageComponent
   },
   {
     path: 'logo',
@@ -47,10 +47,6 @@ const routes: Routes = [
   {
     path: 'schedule',
     component: SchedulePageComponent
-  },
-  {
-    path: 'team',
-    component: TeamPageComponent
   },
   {
     path: '',
