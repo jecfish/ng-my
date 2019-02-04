@@ -12,15 +12,6 @@
       </button>
       <nav class="header-nav">
         <ul class="header-nav-list">
-          <!-- <li class="header-nav-item">
-            <a routerLink="/logo" class="header-nav-link">Logo</a>
-          </li>
-          <li class="header-nav-item">
-            <a routerLink="/speakers" class="header-nav-link">Speakers</a>
-          </li>
-          <li class="header-nav-item">
-            <a routerLink="/schedule" class="header-nav-link">Schedule</a>
-          </li> -->
           <li class="header-nav-item" *ngFor="let n of navList">
             <a [routerLink]="n.link" class="header-nav-link">{{ n.name }}</a>
           </li>
