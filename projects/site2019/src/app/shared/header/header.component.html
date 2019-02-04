@@ -21,29 +21,14 @@
           <li class="header-nav-item">
             <a routerLink="/schedule" class="header-nav-link">Schedule</a>
           </li> -->
-          <li class="header-nav-item">
-            <a routerLink="/team" class="header-nav-link">Team</a>
+          <li class="header-nav-item" *ngFor="let n of navList">
+            <a [routerLink]="n.link" class="header-nav-link">{{ n.name }}</a>
           </li>
         </ul>
         <ul class="header-social">
-          <li class="header-social-item">
-            <a href="https://twitter.com/ngmyconf" class="header-social-link">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li class="header-social-item">
-            <a href="https://www.facebook.com/ngmyconf/" class="header-social-link">
-              <i class="fab fa-facebook"></i>
-            </a>
-          </li>
-          <li class="header-social-item">
-            <a href="https://www.instagram.com/ngmyconf/" class="header-social-link">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li class="header-social-item">
-            <a href="https://www.linkedin.com/company/ngmyconf/" class="header-social-link">
-              <i class="fab fa-linkedin"></i>
+          <li class="header-social-item" *ngFor="let s of socialMediaList">
+            <a target="_blank" rel="noopener noreferer" [href]="s.url" class="header-social-link">
+              <i class="fab fa-{{ s.icon }}"></i>
             </a>
           </li>
         </ul>

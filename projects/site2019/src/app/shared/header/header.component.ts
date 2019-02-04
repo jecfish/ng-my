@@ -8,6 +8,20 @@ import { Component, OnInit, HostListener } from '@angular/core';
 export class HeaderComponent implements OnInit {
   isShowMobileNav = false;
 
+  navList= [
+    // { link: '/logo', name: 'Logo' },
+    // { link: '/speakers', name: 'Speakers' },
+    // { link: '/schedule', name: 'Schedule' },
+    { link: '/team', name: 'Team' }
+  ]
+
+  socialMediaList = [
+    { icon: 'twitter', url: 'https://twitter.com/ngmyconf' },
+    { icon: 'facebook', url: 'https://www.facebook.com/ngmyconf/' },
+    { icon: 'instagram', url: 'https://www.instagram.com/ngmyconf/' },
+    { icon: 'linkedin', url: 'https://www.linkedin.com/company/ngmyconf/' }
+  ]
+
   @HostListener('window:scroll', ['$event'])
   onScroll(e) {
     const maxDist = 100;
@@ -21,11 +35,11 @@ export class HeaderComponent implements OnInit {
     );
   }
 
-  constructor() {}
+  constructor() { }
 
   toggleMobileNav() {
     this.isShowMobileNav = !this.isShowMobileNav;
   }
 
-  ngOnInit() {}
+  ngOnInit() { }
 }

@@ -42,13 +42,13 @@ export class HomeEarlyPageComponent implements OnInit {
     }
   }
 
-  constructor(private pageSvc: PageService) {}
+  constructor(private pageSvc: PageService) { }
 
   ngOnInit() {
     this.pageSvc.setPage({ title: this.title, path: '/' });
 
     const mapProp = {
-      center: new google.maps.LatLng(18.5793, 73.8143),
+      center: new google.maps.LatLng(3.0669168, 101.6014116),
       zoom: 15,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
