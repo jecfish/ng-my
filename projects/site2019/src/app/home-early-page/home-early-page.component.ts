@@ -36,7 +36,7 @@ export class HomeEarlyPageComponent implements OnInit {
     { image: 'WWCode_Kuala Lumpur_Binary.jpg', name: 'wwcodekl', url: 'https://www.facebook.com/womenwhocodekl/' },
     { image: 'sunway_tech_club.jpg', name: 'stc', url: 'https://www.facebook.com/sunwaytechclub/' },
     { image: 'gdgkl.svg', name: 'gdgkl', url: 'https://www.facebook.com/GDGKualaLumpur/' },
-    { image: 'angular-malaysia.jpg', name: 'angular malaysia', url: 'https://www.facebook.com/groups/959601730804414/' },
+    { image: 'angular-malaysia.png', name: 'angular malaysia', url: 'https://www.facebook.com/groups/959601730804414/' },
     { image: 'thefrontendmalaysia.jpg', name: 'tfmy', url: 'https://www.facebook.com/frontendmalaysia/' },
   ];
 
