@@ -27,6 +27,18 @@ export class HomeEarlyPageComponent implements OnInit {
     shouldShowStats: false
   };
 
+  ultimateList = [
+    { image: 'sunwayuniversity.jpg', name: 'sunway university', url: 'https://university.sunway.edu.my/' },
+  ];
+
+  communityList = [
+    { image: 'nestjs.svg', name: 'nestjs', url: 'https://nestjs.com/' },
+    { image: 'WWCode_Kuala Lumpur_Binary.jpg', name: 'wwcodekl', url: 'https://www.facebook.com/womenwhocodekl/' },
+    { image: 'sunway_tech_club.jpg', name: 'stc', url: 'https://www.facebook.com/sunwaytechclub/' },
+    { image: 'gdgkl.svg', name: 'gdgkl', url: 'https://www.facebook.com/GDGKualaLumpur/' },
+    { image: 'thefrontendmalaysia.jpg', name: 'tfmy', url: 'https://www.facebook.com/frontendmalaysia/' },
+  ];
+
   @HostListener('window:scroll', ['$event'])
   doSomething(event) {
     if (this.model.shouldShowStats) {
@@ -42,13 +54,13 @@ export class HomeEarlyPageComponent implements OnInit {
     }
   }
 
-  constructor(private pageSvc: PageService) {}
+  constructor(private pageSvc: PageService) { }
 
   ngOnInit() {
     this.pageSvc.setPage({ title: this.title, path: '/' });
 
     const mapProp = {
-      center: new google.maps.LatLng(18.5793, 73.8143),
+      center: new google.maps.LatLng(3.0669168, 101.6014116),
       zoom: 15,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
