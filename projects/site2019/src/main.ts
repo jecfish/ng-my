@@ -14,7 +14,7 @@ if (environment.production) {
   window['gtag'] = function () {
     console.log('gtag called');
     return null;
-  }
+  };
 }
 
 platformBrowserDynamic().bootstrapModule(AppModule)
