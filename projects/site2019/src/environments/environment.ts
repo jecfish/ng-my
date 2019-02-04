@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   gaTrackingID: 'UA-131325956-1',
   featureFlag: {
-    isPlaceholder: true
+    isPlaceholder: false
   }
 };
 

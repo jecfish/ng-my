@@ -8,7 +8,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 export class HeaderComponent implements OnInit {
   isShowMobileNav = false;
 
-  navList= [
+  navList = [
     // { link: '/logo', name: 'Logo' },
     // { link: '/speakers', name: 'Speakers' },
     // { link: '/schedule', name: 'Schedule' },
