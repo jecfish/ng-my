@@ -14,10 +14,16 @@
   overflow: hidden;
   user-select: none;
   cursor: pointer;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease, box-shadow 0.1s ease, transform 0.1s ease;
 
   @include mobile {
     @include one-height($btn-mobile-h, 2px);
+  }
+
+  &:disabled,
+  &[disabled],
+  &:not(:enabled) {
+    opacity: 0.7;
   }
 
   @include btn-active {
@@ -39,6 +45,7 @@
     transform: skewX(-30deg) scaleX(0);
     transform-origin: right;
     transition: transform 0.2s ease;
+    pointer-events: none;
     will-change: transform;
   }
 
@@ -52,6 +59,17 @@
   &-inner {
     position: relative;
     z-index: 1;
+  }
+
+  &-primary,
+  &-secondary,
+  &-yellow {
+    box-shadow: 4px 4px $black;
+
+    @include btn-focus {
+      box-shadow: 0 0 $black;
+      transform: translateY(2px);
+    }
   }
 
   &-primary {

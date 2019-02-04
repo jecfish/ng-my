@@ -213,7 +213,7 @@
           }
 
           &-toggle {
-            transform: rotate(225deg);
+            transform: rotate(225deg) scale(0.9);
             transition-delay: 0s;
 
             &:before {
@@ -251,6 +251,7 @@
     }
 
     &-link {
+      display: block;
       padding: 0 $space-s;
 
       @include btn-active {
@@ -260,7 +261,7 @@
 
     @include tablet {
       position: absolute;
-      bottom: 0;
+      bottom: $space-s;
       right: $space;
 
 
@@ -276,6 +277,10 @@
         opacity: 0;
         transform: translateX(10px);
         transition: opacity 0.2s ease, transform 0.2s ease;
+
+        &+& {
+          margin-left: $space;
+        }
 
         @at-root .header-nav--open & {
           opacity: 1;

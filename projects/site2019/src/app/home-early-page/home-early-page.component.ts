@@ -28,16 +28,40 @@ export class HomeEarlyPageComponent implements OnInit {
   };
 
   ultimateList = [
-    { image: 'sunwayuniversity.jpg', name: 'sunway university', url: 'https://university.sunway.edu.my/' },
+    {
+      image: 'sunwayuniversity.jpg',
+      name: 'sunway university',
+      url: 'https://university.sunway.edu.my/'
+    }
   ];
 
   communityList = [
     { image: 'nestjs.svg', name: 'nestjs', url: 'https://nestjs.com/' },
-    { image: 'WWCode_Kuala Lumpur_Binary.jpg', name: 'wwcodekl', url: 'https://www.facebook.com/womenwhocodekl/' },
-    { image: 'sunway_tech_club.jpg', name: 'stc', url: 'https://www.facebook.com/sunwaytechclub/' },
-    { image: 'gdgkl.svg', name: 'gdgkl', url: 'https://www.facebook.com/GDGKualaLumpur/' },
-    { image: 'angular-malaysia.png', name: 'angular malaysia', url: 'https://www.facebook.com/groups/959601730804414/' },
-    { image: 'thefrontendmalaysia.jpg', name: 'tfmy', url: 'https://www.facebook.com/frontendmalaysia/' },
+    {
+      image: 'WWCode_Kuala Lumpur_Binary.jpg',
+      name: 'wwcodekl',
+      url: 'https://www.facebook.com/womenwhocodekl/'
+    },
+    {
+      image: 'sunway_tech_club.jpg',
+      name: 'stc',
+      url: 'https://www.facebook.com/sunwaytechclub/'
+    },
+    {
+      image: 'gdgkl.svg',
+      name: 'gdgkl',
+      url: 'https://www.facebook.com/GDGKualaLumpur/'
+    },
+    {
+      image: 'angular-malaysia.png',
+      name: 'angular malaysia',
+      url: 'https://www.facebook.com/groups/959601730804414/'
+    },
+    {
+      image: 'thefrontendmalaysia.jpg',
+      name: 'tfmy',
+      url: 'https://www.facebook.com/frontendmalaysia/'
+    }
   ];
 
   @HostListener('window:scroll', ['$event'])
@@ -55,7 +79,7 @@ export class HomeEarlyPageComponent implements OnInit {
     }
   }
 
-  constructor(private pageSvc: PageService) { }
+  constructor(private pageSvc: PageService) {}
 
   ngOnInit() {
     this.pageSvc.setPage({ title: this.title, path: '/' });
@@ -64,6 +88,7 @@ export class HomeEarlyPageComponent implements OnInit {
   scrollTo(location) {
     const getTop = e => e.getBoundingClientRect().top;
     const elModel = {
+      stats: this.statsElement.nativeElement,
       speakers: this.speakersElement.nativeElement,
       sponsoring: this.sponsoringElement.nativeElement
     };
@@ -76,9 +101,9 @@ export class HomeEarlyPageComponent implements OnInit {
     const target = getTop(elModel[location]) - window.scrollY - headerHeight;
 
     gtag('event', location, {
-      'event_category': 'hero',
-      'event_label': location,
-      'value': location
+      event_category: 'hero',
+      event_label: location,
+      value: location
     });
 
     this.pageSvc.scrollWindowTo(target, 1000);

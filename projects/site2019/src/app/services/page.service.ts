@@ -37,15 +37,14 @@ export class PageService {
     };
 
     const animateScroll = () => {
-      console.log('TCL: animateScroll -> animateScroll', current);
+      if (current >= duration) return;
+
       current += steps;
       const pos = transitionTiming(current, start, dist, duration);
 
       window.scrollTo(0, pos);
 
-      if (current < duration) {
-        requestAnimationFrame(animateScroll);
-      }
+      requestAnimationFrame(animateScroll);
     };
 
     animateScroll();

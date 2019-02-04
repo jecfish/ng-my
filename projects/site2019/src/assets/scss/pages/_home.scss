@@ -1,6 +1,7 @@
 .hero {
   &-section {
     min-height: calc(100vh - #{$header-h});
+    padding-bottom: $space-l;
     position: relative;
     display: flex;
 
@@ -10,43 +11,21 @@
     }
   }
 
-  &-scroll {
-    border: 0;
-    background: none;
-    padding: 0;
-    width: $scroll-icon-size;
-    height: $scroll-icon-h;
-    position: relative;
-
-    &:before,
-    &:after {
-      content: '';
-      display: block;
-      width: $scroll-icon-size;
-      height: $scroll-icon-size;
-      border-radius: 50%;
-      background: $red;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    &:before {
-      animation: scroll $scroll-anim-d cubic-bezier(0.31, 0.32, 0.1, 1.48) infinite;
-    }
-
-    &:after {
-      opacity: 0;
-      animation: pulse $scroll-anim-d cubic-bezier(0, 0.59, 0.16, 0.76) infinite;
-    }
-  }
-
   &-btns {
     display: flex;
     margin-top: $space;
 
     .btn+.btn {
       margin-left: $space;
+    }
+
+    @include mobile {
+      flex-direction: column;
+
+      .btn+.btn {
+        margin-top: $space;
+        margin-left: 0;
+      }
     }
   }
 
@@ -99,6 +78,10 @@
   &-title {
     font-size: $font-size-xxxl;
 
+    .text-primary {
+      text-shadow: 0.05em 0.05em $black;
+    }
+
     @include mobile {
       font-size: $font-size-xxl;
     }
@@ -109,6 +92,44 @@
 
     @include mobile {
       font-size: 1rem;
+    }
+  }
+
+  &-scroll {
+    border: 0;
+    background: none;
+    padding: 0;
+    position: absolute;
+    left: calc(50% - 12px);
+    bottom: $space;
+    width: 24px;
+    height: 24px;
+    transform: translateY(-10px);
+    animation: bounce 1s cubic-bezier(0.43, 0.2, 0.31, 1.12) infinite;
+    cursor: pointer;
+    will-change: transform;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:before {
+      content: '';
+
+      border: {
+        width: 8px 4px;
+        style: solid;
+        color: transparent;
+      }
+
+      border-top-color: $white;
+      position: absolute;
+      left: calc(50% - 4px);
+      top: calc(50% - 2px);
+    }
+
+    &-img {
+      fill: $red;
     }
   }
 }
@@ -168,45 +189,13 @@
   padding: $space-xl 0;
 
   &-section {
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 8px rgba(0, 0, 0, 0.3);
+
     .container {
       position: relative;
       z-index: 1;
-    }
-  }
-
-  &-scroll {
-    position: absolute;
-    bottom: calc(100% - 55px);
-    left: $space;
-
-    @include mobile {
-      display: none;
-    }
-  }
-
-  &-arrow {
-    margin-top: $space-xl;
-    position: relative;
-    overflow: hidden;
-    background: $blue-darkest;
-
-    &:before {
-      content: '';
-      display: block;
-      border-width: 100px 50vw 0;
-      border-style: solid;
-      border-color: transparent;
-      border-top-color: $white;
-      position: relative;
-      z-index: 1;
-    }
-
-    @include mobile {
-      margin-top: $space-l;
-
-      &:before {
-        border-top-width: 50px;
-      }
     }
   }
 
@@ -237,6 +226,7 @@
     padding: $space-l 0;
     position: relative;
     overflow: hidden;
+    box-shadow: 8px 8px $black;
 
     &:before {
       content: '';
@@ -270,8 +260,18 @@
   }
 
   &-map {
-    height: 500px;
+    position: relative;
     background: $gray-lightest;
+    height: 0;
+    padding-bottom: 35%;
+
+    @include tablet {
+      padding-bottom: 55%;
+    }
+
+    @include mobile {
+      padding-bottom: 70%;
+    }
 
     &-bg {
       height: 250px;
