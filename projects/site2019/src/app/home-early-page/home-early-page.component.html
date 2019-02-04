@@ -59,7 +59,10 @@
     <div class="stats-map-bg">
       <img src="../../assets/imgs/sunway-campus.png" alt="">
     </div>
-    <div class="stats-map" #map></div>
+    <div class="stats-map" #map>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.103821654366!2d101.60140624938633!3d3.0669167544992697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c8f5912644b%3A0x77612fa0225cad69!2sSunway+University!5e0!3m2!1sen!2ssg!4v1549244700195"
+        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
     <div class="stats-arrow"></div>
   </section>
   <section class="home-section speakers-section" #speakers>
@@ -72,7 +75,7 @@
             <p>NG-MY is the first Angular Conference in Malaysia &amp; Southeast Asia. Come join us this July 6th &amp;
               7th in Kuala Lumpur, Malaysia.</p>
             <p>Call for Presenters (CFP) are open till <strong>March 17th</strong>.</p>
-            <a href="https://ng-my.org/form/call-for-presenters" class="btn btn-primary">
+            <a routerLink="/form/call-for-presenters" class="btn btn-primary">
               <span class="btn-inner">Speak at NG-MY</span>
             </a>
           </article>
@@ -84,7 +87,7 @@
             <p>We all know those people who are beyond brilliant. And many times those
               people haven't considered submitting ideas to conferences.</p>
             <p>Let us reach out to them!</p>
-            <a href="https://ng-my.org/form/speaker-nomination" class="btn btn-secondary">
+            <a routerLink="/form/speaker-nomination" class="btn btn-secondary">
               <span class="btn-inner">Nominate a Speaker</span>
             </a>
           </article>
@@ -104,7 +107,7 @@
             <i class="fas fa-money-check home-article-icon"></i>
             <p>Great conference, especially 100% community driven ones are not possible without the support of generous
               sponsors &amp; partners.</p>
-            <a href="https://ng-my.org/form/call-for-sponsors" class="btn btn-primary">
+            <a routerLink="/form/call-for-sponsors" class="btn btn-primary">
               <span class="btn-inner">Sponsor NG-MY</span>
             </a>
           </article>
@@ -113,7 +116,7 @@
           <article class="home-article-block article-section">
             <p>If you know companies we should reach out to for sponsoring <strong>#ngMY2019</strong></p>
             <p>We would like to hear from you!</p>
-            <a href="https://ng-my.org/form/sponsor-intro" class="btn btn-secondary">
+            <a rounterLink="/form/sponsor-intro" class="btn btn-secondary">
               <span class="btn-inner">Intro a Sponsor</span>
             </a>
           </article>
@@ -130,9 +133,9 @@
       <div class="sponsors-block --ultimate">
         <h3 class="sponsors-title">Ultimate sponsor</h3>
         <ul class="sponsors-list">
-          <li class="sponsors-item" *ngFor="let sponsor of model.sponsors.ultimate">
-            <a [href]="sponsor.url">
-              <img [src]="sponsor.image" class="sponsors-img" alt="">
+          <li class="sponsors-item" *ngFor="let u of ultimateList">
+            <a [href]="u.url" target="_blank" rel="noopener noreferer">
+              <img src="{{ '../../assets/imgs/sponsors/' + u.image }}" class="sponsors-img" [alt]="u.name">
             </a>
           </li>
         </ul>
@@ -140,9 +143,9 @@
       <div class="sponsors-block">
         <h3 class="sponsors-title">Community partners</h3>
         <ul class="sponsors-list">
-          <li class="sponsors-item" *ngFor="let partner of model.partners">
-            <a [href]="partner.url">
-              <img [src]="partner.image" class="sponsors-img" alt="">
+          <li class="sponsors-item" *ngFor="let c of communityList">
+            <a [href]="c.url" target="_blank" rel="noopener noreferer">
+              <img src="{{ '../../assets/imgs/sponsors/' + c.image }}" class="sponsors-img" [alt]="c.name">
             </a>
           </li>
         </ul>

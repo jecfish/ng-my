@@ -57,6 +57,19 @@ export class HomeEarlyPageComponent implements OnInit {
     ]
   };
 
+  ultimateList = [
+    { image: 'sunwayuniversity.jpg', name: 'sunway university', url: 'https://university.sunway.edu.my/' },
+  ];
+
+  communityList = [
+    { image: 'nestjs.svg', name: 'nestjs', url: 'https://nestjs.com/' },
+    { image: 'WWCode_Kuala Lumpur_Binary.jpg', name: 'wwcodekl', url: 'https://www.facebook.com/womenwhocodekl/' },
+    { image: 'sunway_tech_club.jpg', name: 'stc', url: 'https://www.facebook.com/sunwaytechclub/' },
+    { image: 'gdgkl.svg', name: 'gdgkl', url: 'https://www.facebook.com/GDGKualaLumpur/' },
+    { image: 'angular-malaysia.png', name: 'angular malaysia', url: 'https://www.facebook.com/groups/959601730804414/' },
+    { image: 'thefrontendmalaysia.jpg', name: 'tfmy', url: 'https://www.facebook.com/frontendmalaysia/' },
+  ];
+
   @HostListener('window:scroll', ['$event'])
   doSomething(event) {
     if (this.model.shouldShowStats) {
@@ -72,18 +85,10 @@ export class HomeEarlyPageComponent implements OnInit {
     }
   }
 
-  constructor(private pageSvc: PageService) {}
+  constructor(private pageSvc: PageService) { }
 
   ngOnInit() {
     this.pageSvc.setPage({ title: this.title, path: '/' });
-
-    const mapProp = {
-      center: new google.maps.LatLng(18.5793, 73.8143),
-      zoom: 15,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-
-    this.map = new google.maps.Map(this.mapElement.nativeElement, mapProp);
   }
 
   scrollTo(location) {
@@ -99,6 +104,12 @@ export class HomeEarlyPageComponent implements OnInit {
 
     const headerHeight = 60;
     const target = getTop(elModel[location]) - window.scrollY - headerHeight;
+
+    gtag('event', location, {
+      'event_category': 'hero',
+      'event_label': location,
+      'value': location
+    });
 
     this.pageSvc.scrollWindowTo(target, 1000);
   }

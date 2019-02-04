@@ -11,6 +11,17 @@ import { LogoPageComponent } from './logo-page/logo-page.component';
 import { TeamPageComponent } from './team-page/team-page.component';
 import { FormPageComponent } from './form-page/form-page.component';
 
+const getHomePageComponent = (id) => {
+  switch (id) {
+    case 0:
+      return PlaceholderPageComponent;
+    case 1:
+      return HomeEarlyPageComponent;
+    case 2:
+      return HomePageComponent;
+  }
+};
+
 const routes: Routes = [
   {
     path: 'coc',
@@ -43,15 +54,13 @@ const routes: Routes = [
   },
   {
     path: '',
-    component: environment.featureFlag.isPlaceholder
-      ? PlaceholderPageComponent
-      : HomeEarlyPageComponent,
+    component: getHomePageComponent(environment.featureFlag.homePageStage),
     pathMatch: 'prefix'
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
