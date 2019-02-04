@@ -13,14 +13,14 @@ export class HeaderComponent implements OnInit {
     // { link: '/speakers', name: 'Speakers' },
     // { link: '/schedule', name: 'Schedule' },
     { link: '/team', name: 'Team' }
-  ]
+  ];
 
   socialMediaList = [
     { icon: 'twitter', url: 'https://twitter.com/ngmyconf' },
     { icon: 'facebook', url: 'https://www.facebook.com/ngmyconf/' },
     { icon: 'instagram', url: 'https://www.instagram.com/ngmyconf/' },
     { icon: 'linkedin', url: 'https://www.linkedin.com/company/ngmyconf/' }
-  ]
+  ];
 
   @HostListener('window:scroll', ['$event'])
   onScroll(e) {
