@@ -130,28 +130,20 @@
       <div class="sponsors-block --ultimate">
         <h3 class="sponsors-title">Ultimate sponsor</h3>
         <ul class="sponsors-list">
-          <li class="sponsors-item">
-            <img src="../../assets/imgs/sponsors/sunwayuniversity.jpg" class="sponsors-img" alt="">
+          <li class="sponsors-item" *ngFor="let u of ultimateList">
+            <a [href]="u.url" target="_blank" rel="noopener noreferer">
+              <img src="{{ '../../assets/imgs/sponsors/' + u.image }}" class="sponsors-img" [alt]="u.name">
+            </a>
           </li>
         </ul>
       </div>
       <div class="sponsors-block">
         <h3 class="sponsors-title">Community partners</h3>
         <ul class="sponsors-list">
-          <li class="sponsors-item">
-            <img src="../../assets/imgs/sponsors/nestjs.svg" class="sponsors-img" alt="">
-          </li>
-          <li class="sponsors-item">
-            <img src="../../assets/imgs/sponsors/WWCode_Kuala Lumpur_Binary.jpg" class="sponsors-img" alt="">
-          </li>
-          <li class="sponsors-item">
-            <img src="../../assets/imgs/sponsors/sunway_tech_club.jpg" class="sponsors-img" alt="">
-          </li>
-          <li class="sponsors-item">
-            <img src="../../assets/imgs/sponsors/gdgkl.svg" class="sponsors-img" alt="">
-          </li>
-          <li class="sponsors-item">
-            <img src="../../assets/imgs/sponsors/thefrontendmalaysia.jpg" class="sponsors-img" alt="">
+          <li class="sponsors-item" *ngFor="let c of communityList">
+            <a [href]="c.url" target="_blank" rel="noopener noreferer">
+              <img src="{{ '../../assets/imgs/sponsors/' + c.image }}" class="sponsors-img" [alt]="c.name">
+            </a>
           </li>
         </ul>
       </div>
