@@ -36,6 +36,7 @@ export class HomeEarlyPageComponent implements OnInit {
     { image: 'WWCode_Kuala Lumpur_Binary.jpg', name: 'wwcodekl', url: 'https://www.facebook.com/womenwhocodekl/' },
     { image: 'sunway_tech_club.jpg', name: 'stc', url: 'https://www.facebook.com/sunwaytechclub/' },
     { image: 'gdgkl.svg', name: 'gdgkl', url: 'https://www.facebook.com/GDGKualaLumpur/' },
+    { image: 'angular-malaysia.jpg', name: 'angular malaysia', url: 'https://www.facebook.com/groups/959601730804414/' },
     { image: 'thefrontendmalaysia.jpg', name: 'tfmy', url: 'https://www.facebook.com/frontendmalaysia/' },
   ];
 
@@ -58,14 +59,6 @@ export class HomeEarlyPageComponent implements OnInit {
 
   ngOnInit() {
     this.pageSvc.setPage({ title: this.title, path: '/' });
-
-    const mapProp = {
-      center: new google.maps.LatLng(3.0669168, 101.6014116),
-      zoom: 15,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-
-    this.map = new google.maps.Map(this.mapElement.nativeElement, mapProp);
   }
 
   scrollTo(location) {
@@ -81,6 +74,12 @@ export class HomeEarlyPageComponent implements OnInit {
 
     const headerHeight = 60;
     const target = getTop(elModel[location]) - window.scrollY - headerHeight;
+
+    gtag('event', location, {
+      'event_category': 'hero',
+      'event_label': location,
+      'value': location
+    });
 
     this.pageSvc.scrollWindowTo(target, 1000);
   }

@@ -9,6 +9,12 @@ import { GoogleAnalytics } from '../scripts';
 if (environment.production) {
   enableProdMode();
   GoogleAnalytics.run({ trackingID: environment.gaTrackingID });
+} else {
+  // mock gtag
+  window['gtag'] = function () {
+    console.log('gtag called');
+    return null;
+  }
 }
 
 platformBrowserDynamic().bootstrapModule(AppModule)
