@@ -20,7 +20,7 @@ const getHomePageComponent = (id) => {
     case 2:
       return HomePageComponent;
   }
-}
+};
 
 const routes: Routes = [
   {
