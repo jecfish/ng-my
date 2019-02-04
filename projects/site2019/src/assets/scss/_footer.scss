@@ -1,10 +1,35 @@
 .footer {
   text-align: center;
-  height: $footer-h;
-  line-height: $footer-h;
   font-size: $font-size-xs;
   background: $blue-darkest;
   color: $white;
+
+  &-lower {
+    height: $footer-h;
+    line-height: $footer-h;
+  }
+
+  &-social {
+    padding: $space-s 0;
+    font-size: 1rem;
+
+    &-list {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-item {
+      &+& {
+        margin-left: $space;
+      }
+    }
+
+    &-link {
+      display: block;
+      padding: 0 $space-s;
+      color: $white;
+    }
+  }
 
   &-item {
     display: inline-block;

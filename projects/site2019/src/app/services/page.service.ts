@@ -49,4 +49,13 @@ export class PageService {
 
     animateScroll();
   }
+
+  getSocialMediaList() {
+    return [
+      { icon: 'twitter', url: 'https://twitter.com/ngmyconf' },
+      { icon: 'facebook', url: 'https://www.facebook.com/ngmyconf/' },
+      { icon: 'instagram', url: 'https://www.instagram.com/ngmyconf/' },
+      { icon: 'linkedin', url: 'https://www.linkedin.com/company/ngmyconf/' }
+    ];
+  }
 }

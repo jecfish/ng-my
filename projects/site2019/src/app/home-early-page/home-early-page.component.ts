@@ -24,37 +24,7 @@ export class HomeEarlyPageComponent implements OnInit {
   sponsoring: any;
 
   model = {
-    shouldShowStats: false,
-    sponsors: {
-      ultimate: [
-        {
-          image: '../../assets/imgs/sponsors/sunwayuniversity.jpg',
-          url: 'https://university.sunway.edu.my/'
-        }
-      ]
-    },
-    partners: [
-      {
-        image: '../../assets/imgs/sponsors/nestjs.svg',
-        url: 'https://nestjs.com/'
-      },
-      {
-        image: '../../assets/imgs/sponsors/WWCode_Kuala Lumpur_Binary.jpg',
-        url: 'https://www.facebook.com/womenwhocodekl/'
-      },
-      {
-        image: '../../assets/imgs/sponsors/sunway_tech_club.jpg',
-        url: 'https://www.facebook.com/sunwaytechclub/'
-      },
-      {
-        image: '../../assets/imgs/sponsors/gdgkl.svg',
-        url: 'https://www.facebook.com/GDGKualaLumpur/'
-      },
-      {
-        image: '../../assets/imgs/sponsors/thefrontendmalaysia.jpg',
-        url: 'https://www.facebook.com/frontendmalaysia/'
-      }
-    ]
+    shouldShowStats: false
   };
 
   ultimateList = [

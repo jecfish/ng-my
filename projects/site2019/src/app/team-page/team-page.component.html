@@ -1,61 +1,43 @@
 <my-header></my-header>
 <main id="team">
-  <section class="team-highlight-section">
+  <section class="team-highlight-section" *ngIf="selectedMember">
+    <button class="team-highlight-close" (click)="unselectMember()"></button>
     <div class="container">
       <div class="team-highlight-info-container">
         <div class="team-highlight-info">
-          <div class="team-highlight-pic">
-            <img
-              src="../../assets/imgs/team/jecelyn_yeen-fun.jpg"
-              alt=""
-              class="team-highlight-img"
-            />
+          <figure class="team-highlight-pic">
+            <img src="../../assets/imgs/team/{{ selectedMember.photo.fun || selectedMember.photo.normal }}" alt=""
+              class="team-highlight-img" />
+          </figure>
+          <div class="team-highlight-name">
+            {{ selectedMember.name }}
           </div>
           <ul class="team-highlight-misc">
             <li class="team-highlight-misc-item">
-              <a href="" class="team-highlight-misc-link">
-                Profile
+              <a [href]="selectedMember.profile.url" class="team-highlight-misc-link">
+                <i class="{{ profileIconsModel[selectedMember.profile.type] }}"></i>
               </a>
-            </li>
-            <li class="team-highlight-misc-item">
-              <i class="fas fa-hamburger"></i>
             </li>
           </ul>
         </div>
-        <div class="team-highlight-description article-section">
-          <p>
-            Jecelyn speaks English, Mandarin, C#, JavaScript and Angular. She is
-            a Google Developer Expert in Angular & director of Women Who Code
-            KL. She funnels her passion in tech into publishing articles as well
-            as sharing her knowledge via workshops and conferences and meet-ups.
-          </p>
-          <p>
-            Ironically her favourite past time away from work involves
-            travelling to remote islands without WiFi for deep sea diving
-            expeditions and reading books with tangible covers.
-          </p>
+        <div class="team-highlight-description article-section" [innerHTML]="selectedMember.description">
         </div>
       </div>
     </div>
   </section>
 
+  <div class="page-header">
+    <h1 class="page-title">NG-MY TEAM</h1>
+  </div>
   <section class="team-list-section">
     <div class="container">
       <div class="team-list">
-        <div class="team-list-item">
-          <article class="team-card --girl">
+        <div class="team-list-item" *ngFor="let m of memberList; index as id">
+          <article class="team-card --{{ m.gender }}" [class.--selected]="selectedMemberId === id" (click)="selectMember(id)">
             <figure class="team-card-pic">
-              <img
-                src="../../assets/imgs/team/jecelyn_yeen-normal.JPG "
-                alt=""
-                class="team-card-img"
-              />
+              <img src="../../assets/imgs/team/{{ m.photo.normal }}" alt="{{ m.name }}" class="team-card-img" />
             </figure>
-            <ul class="team-card-misc">
-              <li class="team-card-misc-item">
-                <a href="" class="team-card-misc-link">Profile</a>
-              </li>
-            </ul>
+            <div class="team-card-name">{{ m.name }}</div>
           </article>
         </div>
       </div>
