@@ -6,7 +6,11 @@ export const environment = {
   production: false,
   gaTrackingID: 'UA-131325956-1',
   featureFlag: {
-    isPlaceholder: false
+    // home page stage
+    // 0 = placeholder
+    // 1 = no mamak
+    // 2 = mamak
+    homePageStage: 1
   }
 };
 
