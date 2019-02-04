@@ -1,6 +1,7 @@
 .hero {
   &-section {
     min-height: calc(100vh - #{$header-h});
+    padding-bottom: $space-xl;
     position: relative;
     display: flex;
 
@@ -10,43 +11,21 @@
     }
   }
 
-  &-scroll {
-    border: 0;
-    background: none;
-    padding: 0;
-    width: $scroll-icon-size;
-    height: $scroll-icon-h;
-    position: relative;
-
-    &:before,
-    &:after {
-      content: '';
-      display: block;
-      width: $scroll-icon-size;
-      height: $scroll-icon-size;
-      border-radius: 50%;
-      background: $red;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    &:before {
-      animation: scroll $scroll-anim-d cubic-bezier(0.31, 0.32, 0.1, 1.48) infinite;
-    }
-
-    &:after {
-      opacity: 0;
-      animation: pulse $scroll-anim-d cubic-bezier(0, 0.59, 0.16, 0.76) infinite;
-    }
-  }
-
   &-btns {
     display: flex;
     margin-top: $space;
 
     .btn+.btn {
       margin-left: $space;
+    }
+
+    @include mobile {
+      flex-direction: column;
+
+      .btn+.btn {
+        margin-top: $space;
+        margin-left: 0;
+      }
     }
   }
 
@@ -99,6 +78,10 @@
   &-title {
     font-size: $font-size-xxxl;
 
+    .text-primary {
+      text-shadow: 0.05em 0.05em $black;
+    }
+
     @include mobile {
       font-size: $font-size-xxl;
     }
@@ -109,6 +92,51 @@
 
     @include mobile {
       font-size: 1rem;
+    }
+  }
+
+  &-scroll {
+    border: 0;
+    background: none;
+    padding: 0;
+    position: absolute;
+    left: calc(50% - 12px);
+    bottom: 30px;
+    width: 24px;
+    height: 24px;
+    transform: translateY(-10px);
+    animation: bounce 1s cubic-bezier(0.43, 0.2, 0.31, 1.12) infinite;
+    cursor: pointer;
+    will-change: transform;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:before,
+    &:after {
+      content: '';
+
+      border: {
+        width: 12px 8px;
+        style: solid;
+        color: transparent;
+      }
+
+      position: absolute;
+    }
+
+    &:before {
+      border-top-color: $red;
+      left: calc(50% - 8px);
+      top: calc(50% - 3px);
+      z-index: 1;
+    }
+
+    &:after {
+      border-top-color: $black;
+      left: calc(50% - 6px);
+      top: 50%;
     }
   }
 }
@@ -154,7 +182,7 @@
         background: $white;
         color: $font-color-root;
         padding: 5% $space;
-        box-shadow: 8px 8px rgba(0, 0, 0, 0.3);
+        box-shadow: 8px 8px $black;
 
         @include mobile {
           margin-bottom: $space-l;
@@ -168,45 +196,13 @@
   padding: $space-xl 0;
 
   &-section {
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 8px rgba(0, 0, 0, 0.3);
+
     .container {
       position: relative;
       z-index: 1;
-    }
-  }
-
-  &-scroll {
-    position: absolute;
-    bottom: calc(100% - 55px);
-    left: $space;
-
-    @include mobile {
-      display: none;
-    }
-  }
-
-  &-arrow {
-    margin-top: $space-xl;
-    position: relative;
-    overflow: hidden;
-    background: $blue-darkest;
-
-    &:before {
-      content: '';
-      display: block;
-      border-width: 100px 50vw 0;
-      border-style: solid;
-      border-color: transparent;
-      border-top-color: $white;
-      position: relative;
-      z-index: 1;
-    }
-
-    @include mobile {
-      margin-top: $space-l;
-
-      &:before {
-        border-top-width: 50px;
-      }
     }
   }
 
@@ -223,9 +219,15 @@
 
     @for $n from 1 through 3 {
       &:nth-child(#{$n}) {
-        .stats-item:before {
-          transition-delay: 0.25s * ($n - 1);
-          transition-duration: 0.3s + (0.075s * $n - 1);
+        $delay: 0.25s * ($n - 1);
+
+        .stats-item {
+          transition-delay: $delay + 0.2s;
+
+          &:before {
+            transition-delay: $delay;
+            transition-duration: 0.3s + (0.075s * $n - 1);
+          }
         }
       }
     }
@@ -237,6 +239,8 @@
     padding: $space-l 0;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 0 $black;
+    transition: box-shadow 0.4s ease;
 
     &:before {
       content: '';
@@ -250,7 +254,7 @@
       pointer-events: none;
       transform: skewX(-10deg) scaleX(0);
       transform-origin: top left;
-      transition: transform 0.4s cubic-bezier(0.04, 0.18, 0.46, 0.99);
+      transition: transform 0.4s cubic-bezier(0, 0.66, 0.46, 0.99);
       will-change: transform;
     }
   }
@@ -270,8 +274,18 @@
   }
 
   &-map {
-    height: 500px;
+    position: relative;
     background: $gray-lightest;
+    height: 0;
+    padding-bottom: 35%;
+
+    @include tablet {
+      padding-bottom: 55%;
+    }
+
+    @include mobile {
+      padding-bottom: 70%;
+    }
 
     &-bg {
       height: 250px;
@@ -305,8 +319,12 @@
   }
 
   &.--show {
-    .stats-item:before {
-      transform: skewX(-10deg) scaleX(1);
+    .stats-item {
+      box-shadow: 8px 8px $black;
+
+      &:before {
+        transform: skewX(-10deg) scaleX(1);
+      }
     }
   }
 }
@@ -449,7 +467,7 @@
   }
 
   &-title {
-    @include one-height(30px);
+    @include one-height(34px, 4px);
 
     display: inline-block;
     font-weight: bold;
@@ -457,6 +475,8 @@
     background: $gray-darkest;
     color: $white;
     margin-bottom: $space;
+    border: 2px solid $black;
+    box-shadow: 4px 4px $black;
   }
 
   &-list {
@@ -492,7 +512,7 @@
   max-width: 300px;
 
   &-section {
-    padding: $space-l 0;
+    padding: $space-l 0 $space;
     background: $blue-darkest;
     color: $white;
   }

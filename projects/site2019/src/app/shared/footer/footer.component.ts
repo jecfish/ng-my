@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PageService } from '../../services/page.service';
 
 @Component({
   selector: 'my-footer',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
+  socialMediaList = [];
 
-  constructor() { }
+  constructor(private pageSvc: PageService) {}
 
   ngOnInit() {
+    this.socialMediaList = this.pageSvc.getSocialMediaList();
   }
-
 }

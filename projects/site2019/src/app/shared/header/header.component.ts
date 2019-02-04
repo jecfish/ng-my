@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { PageService } from '../../services/page.service';
 
 @Component({
   selector: 'my-header',
@@ -15,12 +16,7 @@ export class HeaderComponent implements OnInit {
     { link: '/team', name: 'Team' }
   ];
 
-  socialMediaList = [
-    { icon: 'twitter', url: 'https://twitter.com/ngmyconf' },
-    { icon: 'facebook', url: 'https://www.facebook.com/ngmyconf/' },
-    { icon: 'instagram', url: 'https://www.instagram.com/ngmyconf/' },
-    { icon: 'linkedin', url: 'https://www.linkedin.com/company/ngmyconf/' }
-  ];
+  socialMediaList = [];
 
   @HostListener('window:scroll', ['$event'])
   onScroll(e) {
@@ -35,11 +31,13 @@ export class HeaderComponent implements OnInit {
     );
   }
 
-  constructor() { }
+  constructor(private pageSvc: PageService) {}
 
   toggleMobileNav() {
     this.isShowMobileNav = !this.isShowMobileNav;
   }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.socialMediaList = this.pageSvc.getSocialMediaList();
+  }
 }

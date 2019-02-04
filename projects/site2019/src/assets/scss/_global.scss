@@ -23,19 +23,18 @@ img {
   max-width: 100%;
 }
 
-.page-title {
-  color: $red;
-  margin-bottom: $space;
-  font-size: $font-size-xxl;
-}
-
 .container {
-  width: calc(100% - #{$space-xl});
+  width: 100%;
+  padding: 0 $space-xl;
   max-width: 1200px;
   margin: 0 auto;
 
+  @include tablet {
+    padding: 0 $space-l;
+  }
+
   @include mobile {
-    width: calc(100% - #{$space-l});
+    padding: 0 $space;
   }
 }
 
@@ -69,6 +68,29 @@ img {
 
     p+p {
       margin-top: $space-s;
+    }
+  }
+}
+
+.page {
+  &-header {
+    padding: $space 0;
+
+    @include mobile {
+      padding: $space-s 0;
+    }
+  }
+
+  &-title {
+    text-align: center;
+    margin: 0;
+    color: $red;
+    font-size: $font-size-xxxl;
+    font-weight: bold;
+    text-shadow: 0.05em 0.05em $black;
+
+    @include mobile {
+      font-size: $font-size-xxl;
     }
   }
 }

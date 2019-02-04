@@ -1,6 +1,17 @@
 <footer class="footer">
-  <span class="footer-item">NG-MY &copy; 2019</span>
-  <span class="footer-item">We adhere to our <a href="/coc">code of
-      conduct</a>.</span>
-  <span class="footer-item"><a href="/terms">Terms</a></span>
+  <div class="footer-social">
+    <ul class="footer-social-list">
+      <li class="footer-social-item" *ngFor="let s of socialMediaList">
+        <a target="_blank" rel="noopener noreferer" [href]="s.url" class="footer-social-link">
+          <i class="fab fa-{{ s.icon }}"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="footer-lower">
+    <span class="footer-item">NG-MY &copy; 2019</span>
+    <span class="footer-item">We adhere to our <a href="/coc">code of
+        conduct</a>.</span>
+    <span class="footer-item"><a href="/terms">Terms</a></span>
+  </div>
 </footer>

@@ -37,17 +37,25 @@ export class PageService {
     };
 
     const animateScroll = () => {
-      console.log('TCL: animateScroll -> animateScroll', current);
+      if (current >= duration) return;
+
       current += steps;
       const pos = transitionTiming(current, start, dist, duration);
 
       window.scrollTo(0, pos);
 
-      if (current < duration) {
-        requestAnimationFrame(animateScroll);
-      }
+      requestAnimationFrame(animateScroll);
     };
 
     animateScroll();
+  }
+
+  getSocialMediaList() {
+    return [
+      { icon: 'twitter', url: 'https://twitter.com/ngmyconf' },
+      { icon: 'facebook', url: 'https://www.facebook.com/ngmyconf/' },
+      { icon: 'instagram', url: 'https://www.instagram.com/ngmyconf/' },
+      { icon: 'linkedin', url: 'https://www.linkedin.com/company/ngmyconf/' }
+    ];
   }
 }

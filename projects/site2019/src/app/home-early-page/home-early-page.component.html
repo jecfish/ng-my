@@ -16,7 +16,8 @@
             <p class="hero-subtitle">A 2 day conference in Kuala Lumpur, Malaysia</p>
             <p><strong class="text-primary">#ngMY2019</strong> is the first Angular conference in Southeast Asia. 100%
               community driven.</p>
-            <p><strong>July 6th & 7th, <span class="text-primary">Sunway University</span></strong></p>
+            <p><strong><i class="fas fa-calendar-alt icon-left text-primary"></i>July 6th & 7th <i class="fas fa-map-marker-alt icon-right icon-left text-primary"></i>
+                Sunway University</strong></p>
             <div class="hero-btns">
               <button class="btn btn-secondary" (click)="scrollTo('speakers')">
                 <span class="btn-inner">Call for speakers</span>
@@ -29,12 +30,11 @@
         </article>
       </div>
     </div>
+    <button class="hero-scroll" (click)="scrollTo('stats')">
+    </button>
   </section>
   <section class="stats-section">
     <div class="container">
-      <div class="stats-scroll">
-        <button class="hero-scroll"></button>
-      </div>
       <div class="row stats" [class.--show]="model.shouldShowStats">
         <div class="col stats-block">
           <div class="stats-item" #stats>
@@ -63,7 +63,6 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.103821654366!2d101.60140624938633!3d3.0669167544992697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c8f5912644b%3A0x77612fa0225cad69!2sSunway+University!5e0!3m2!1sen!2ssg!4v1549244700195"
         width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
-    <div class="stats-arrow"></div>
   </section>
   <section class="home-section speakers-section" #speakers>
     <div class="container speakers-content">

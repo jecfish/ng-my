@@ -49,9 +49,15 @@ $font-size-xl: 1.5rem;
 $font-size-xxl: 2.75rem;
 $font-size-xxxl: 5rem;
 
+// bold
+$bold-l: 900;
+$bold-m: 600;
+
 // height
 $header-h: 60px;
 $footer-h: 45px;
+$footer-social-h: 36px;
+$footer-h-total: $footer-h+$footer-social-h;
 
 $btn-h: 40px;
 $btn-mobile-h: 48px;

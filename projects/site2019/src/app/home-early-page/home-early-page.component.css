@@ -1,14 +1,7 @@
-.stats-map {
-    position: relative;
-    padding-bottom: 75%; 
-    height: 0;
-    overflow: hidden;
-}
-
 .stats-map iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
 }

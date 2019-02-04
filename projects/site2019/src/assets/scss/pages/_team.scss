@@ -1,40 +1,95 @@
 .team-highlight {
   &-section {
+    min-height: 300px;
     width: 100%;
     padding: $space-l $space;
-    background: $blue-darkest;
-    color: $white;
+    background: $yellow;
+    color: $font-color-root;
     position: fixed;
-    top: $header-h;
+    top: 50%;
     left: 0;
+    transform: translateY(-50%);
+    box-shadow: 8px 8px $black;
     z-index: $header-z;
-    display: none;
+  }
+
+  &-close {
+    border: 0;
+    background: none;
+    padding: 0;
+    position: absolute;
+    top: $space;
+    right: $space;
+    width: $btn-h;
+    height: $btn-h;
+    transform: rotate(45deg);
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+
+      &:before,
+      &:after {
+        background: $red;
+      }
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      width: 50%;
+      height: 4px;
+      position: absolute;
+      top: calc(50% - 2px);
+      left: 25%;
+      background: currentColor;
+      transition: background 0.2s ease;
+    }
+
+    &:after {
+      transform: rotate(90deg);
+    }
   }
 
   &-info {
-    flex: 0 0 300px;
+    flex-grow: 0;
+    flex-shrink: 0;
     width: 300px;
     padding: $space;
 
     &-container {
       display: flex;
+      align-items: center;
       max-width: 800px;
       margin: auto;
+
+      @include mobile {
+        flex-direction: column;
+        justify-content: center;
+      }
     }
   }
 
+  &-name {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: $space-s;
+  }
+
   &-pic {
-    margin: 0 auto $space;
+    margin: 0 auto $space-s;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 2px solid $black;
-    box-shadow: 4px 4px $black;
     overflow: hidden;
   }
 
   &-img {
     object-fit: cover;
+    width: 100%;
   }
 
   &-misc {
@@ -48,30 +103,58 @@
     }
 
     &-link {
-      color: $white;
+      color: currentColor;
+      font-size: $font-size-xl;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: $white;
+      }
     }
   }
 
   &-description {
     flex: 1;
     padding: $space;
+    max-height: calc(100vh - 350px);
+    overflow: hidden;
+  }
+
+  @include mobile {
+    &-section {
+      padding: $space 0;
+    }
+
+    &-info,
+    &-description {
+      padding: $space-s;
+    }
+
+    &-pic {
+      width: 150px;
+      height: 150px;
+    }
   }
 }
 
 .team-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin: -$space;
 
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
   &-section {
-    padding: $space-l 0;
-    min-height: calc(100vh - #{$header-h + $footer-h});
+    padding: $space-l 0 $space-xl;
+    min-height: calc(100vh - #{$header-h + $footer-h-total});
   }
 
   &-item {
     flex: 1;
-    max-width: 300px;
     margin: $space;
   }
 }
@@ -81,20 +164,35 @@
   max-width: 100%;
   margin: auto;
   background: $gray;
+  color: $white;
   padding: $space 0;
-  border: 2px solid $black;
-  box-shadow: 4px 4px $black;
+  box-shadow: 8px 8px $black;
+  cursor: pointer;
+  transition: background 0.1s ease;
 
   &.--boy {
     background: $red;
+
+    &:hover {
+      background: $red-dark;
+    }
   }
 
   &.--girl {
     background: $blue;
+
+    &:hover {
+      background: $blue-dark;
+    }
   }
 
   &.--selected {
     background: $yellow;
+    color: $black;
+
+    &:hover {
+      background: $yellow;
+    }
   }
 
   &-pic {
@@ -102,27 +200,17 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 2px solid $black;
-    box-shadow: 4px 4px $black;
     overflow: hidden;
   }
 
   &-img {
     object-fit: cover;
+    width: 100%;
   }
 
-  &-misc {
-    display: flex;
-    justify-content: center;
-
-    &-item {
-      &+& {
-        margin-left: $space;
-      }
-    }
-
-    &-link {
-      color: $white;
-    }
+  &-name {
+    text-align: center;
+    margin-bottom: $space-s;
+    font-weight: bold;
   }
 }
