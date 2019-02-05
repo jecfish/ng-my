@@ -142,7 +142,7 @@
         transform-origin: left bottom;
         transform: translateX(100%);
         transition: transform 0.2s ease 0.2s;
-        box-shadow: inset 4px 0 8px rgba(0, 0, 0, 0.2);
+        box-shadow: inset 8px 0 $black;
       }
 
       &-list {

@@ -180,7 +180,7 @@ export const memberList = [{
     }
   },
   {
-    id: 'jennning',
+    id: 'jen-ning',
     name: 'Ho Jen Ning',
     gender: 'boy',
     description: '<p>Jen Ning has been in the web dev industry for a few years, and is primarily a Front-end developer despite dabbled in both front and back stack. He is a perfectionist when it comes to UI development.</p><p>He performs CSS wizardry daily in his job.</p>',
