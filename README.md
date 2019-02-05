@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.com/chybie/ng-my.svg?branch=master)](https://travis-ci.com/chybie/ng-my)
 
-# ng-MY official website
+# NG-MY official website
 
 Working on project:
 1. always create your own branch and work on it
