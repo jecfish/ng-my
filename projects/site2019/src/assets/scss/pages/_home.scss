@@ -9,6 +9,10 @@
       display: flex;
       margin: auto;
     }
+
+    @include mobile {
+      padding-bottom: $space-l;
+    }
   }
 
   &-btns {
@@ -138,6 +142,10 @@
       left: calc(50% - 6px);
       top: 50%;
     }
+
+    @include mobile {
+      display: none;
+    }
   }
 }
 
@@ -147,6 +155,10 @@
 
     .section-title {
       margin-bottom: $space-l;
+    }
+
+    @include mobile {
+      padding: $space-l 0;
     }
   }
 
