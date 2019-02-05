@@ -1,3 +1,4 @@
+/* tslint:disable */
 export const memberList = [{
     id: 'jecelyn-yeen',
     name: 'Jecelyn Yeen',
@@ -197,3 +198,4 @@ export const memberList = [{
     }
   }
 ];
+/* tslint:enable */
