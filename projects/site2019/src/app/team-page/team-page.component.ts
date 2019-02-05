@@ -33,7 +33,7 @@ export class TeamPageComponent implements OnInit {
     this.route.params.subscribe(({ id }) => {
       this.selectedMemberId = id;
 
-      const title = id ? this.selectedMember.name + this.pageSvc.postfix.replace('|', '| Team') : `Team${this.pageSvc.postfix}`
+      const title = id ? this.selectedMember.name + this.pageSvc.postfix.replace('|', '| Team') : `Team${this.pageSvc.postfix}`;
       this.pageSvc.setPage({
         title,
         path: id ? `/team/${id}` : '/team',
