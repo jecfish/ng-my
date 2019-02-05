@@ -64,6 +64,8 @@ export class HomeEarlyPageComponent implements OnInit {
     }
   ];
 
+  notificationMessage = '';
+
   @HostListener('window:scroll', ['$event'])
   doSomething(event) {
     if (this.model.shouldShowStats) {

@@ -154,6 +154,8 @@
       }
 
       &-item {
+        @include one-height($btn-h);
+
         transform: translateX(#{$space});
         opacity: 0;
 

@@ -11,7 +11,7 @@
     }
 
     @include mobile {
-      padding-bottom: $space-l;
+      padding-bottom: $space;
     }
   }
 
@@ -42,6 +42,7 @@
     flex: 1;
     width: 100%;
     max-width: 500px;
+    padding: 0 $space;
 
     &-img {
       height: 100%;
@@ -96,6 +97,28 @@
 
     @include mobile {
       font-size: 1rem;
+    }
+  }
+
+  &-misc {
+    margin-top: $space-s;
+    display: flex;
+    font-weight: bold;
+
+    &-item {
+      &+& {
+        margin-left: $space;
+      }
+    }
+
+    @include mobile {
+      flex-direction: column;
+
+      &-item {
+        &+& {
+          margin-left: 0;
+        }
+      }
     }
   }
 
