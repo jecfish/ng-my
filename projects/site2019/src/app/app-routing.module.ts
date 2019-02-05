@@ -11,8 +11,8 @@ import { LogoPageComponent } from './logo-page/logo-page.component';
 import { TeamPageComponent } from './team-page/team-page.component';
 import { FormPageComponent } from './form-page/form-page.component';
 
-const getHomePageComponent = id =>
-  [PlaceholderPageComponent, HomeEarlyPageComponent, HomePageComponent][id];
+// stage: 0, 1, 2
+const HOMEPAGE_LIST = [PlaceholderPageComponent, HomeEarlyPageComponent, HomePageComponent];
 
 const routes: Routes = [
   {
@@ -54,7 +54,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    component: getHomePageComponent(environment.featureFlag.homePageStage),
+    component: HOMEPAGE_LIST[environment.featureFlag.homePageStage],
     pathMatch: 'prefix'
   }
 ];
