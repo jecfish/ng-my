@@ -15,7 +15,9 @@ module.exports = {
                 '/form/call-for-presenters',
                 '/form/speaker-nomination',
                 '/form/call-for-sponsors',
-                '/form/sponsor-intro'
+                '/form/sponsor-intro',
+                '/team',
+                
             ],
         })
     ]

@@ -32,8 +32,8 @@
   <section class="team-list-section">
     <div class="container">
       <div class="team-list">
-        <div class="team-list-item" *ngFor="let m of memberList; index as id">
-          <article class="team-card --{{ m.gender }}" [class.--selected]="selectedMemberId === id" (click)="selectMember(id)">
+        <div class="team-list-item" *ngFor="let m of memberList">
+          <article class="team-card --{{ m.gender }}" [class.--selected]="selectedMemberId === m.id" (click)="selectMember(m.id)">
             <figure class="team-card-pic">
               <img src="../../assets/imgs/team/{{ m.photo.normal }}" alt="{{ m.name }}" class="team-card-img" />
             </figure>

@@ -1,4 +1,5 @@
 export const memberList = [{
+    id: 'jecelyn-yeen',
     name: 'Jecelyn Yeen',
     gender: 'girl',
     description: '<p>Jecelyn speaks English, Mandarin, C#, JavaScript and Angular. She is a Google Developer Expert in Angular & director of Women Who Code KL. She funnels her passion in tech into publishing articles as well as sharing her knowledge via workshops and conferences and meet-ups.</p><p>Ironically her favourite past time away from work involves travelling to remote islands without WiFi for deep sea diving expeditions and reading books with tangible covers.</p>',
@@ -16,6 +17,7 @@ export const memberList = [{
     }
   },
   {
+    id: 'chris-ng',
     name: 'Chris Ng',
     gender: 'boy',
     description: '<p>Chris is passionate about solving problems through technology. He fell in love with coding since his first web application, and has been working in the tech scene for more than 10 years.</p><p>A cup of coffee will always brighten up his day.</p>',
@@ -33,6 +35,7 @@ export const memberList = [{
     }
   },
   {
+    id: 'adrian-yeong',
     name: 'Adrian Yeong',
     gender: 'boy',
     description: '<p>Adrian is a front end developer who does Angular web application and mobile application. He is always passionate about making great products.</p><p>He regularly joins and contributes to the tech community, which enables him to meet new people, share knowledge and have fun. He is also one of the community organising members of Google Cloud Developer Community Kuala Lumpur.</p>',
@@ -50,6 +53,7 @@ export const memberList = [{
     }
   },
   {
+    id: 'jenna-tan',
     name: 'Jenna Tan',
     gender: 'girl',
     description: 'Jenna is a graphic designer who believe simplicity is the key of elegance in a world saturated with garish colour.',
@@ -67,6 +71,7 @@ export const memberList = [{
     }
   },
   {
+    id: 'eric-ngu',
     name: 'Eric Ngu',
     gender: 'boy',
     description: 'Eric is a Computer Science student from Sunway University, loves coffee, food (mamak food 😍) and 💻 code. Involved in a few ✨ communities - Sunway Tech Club, GDG KL, and now NG-MY.',
@@ -84,7 +89,8 @@ export const memberList = [{
     }
   },
   {
-    name: 'Lydia',
+    id: 'lydia-lim',
+    name: 'Lydia Lim',
     gender: 'girl',
     description: 'Lydia is a big fan of mobile, automation and cloud related services/applications. I am also intrigued (or distracted) by a lot of things - travel, hiking, photography, IoT.',
     photo: {
@@ -101,6 +107,7 @@ export const memberList = [{
     }
   },
   {
+    id: 'liyana',
     name: 'Liyana Sulaiman',
     gender: 'girl',
     description: 'Liyana is a serial entrepreneur who loves building tech products, and at other times making a mess in the kitchen. ',
@@ -118,6 +125,7 @@ export const memberList = [{
     }
   },
   {
+    id: 'hong-tat',
     name: 'Yew Hong Tat',
     gender: 'boy',
     description: 'Hong Tat has been working with angular and c# in the past. A man with spec, and someone who loves marathon.',
@@ -135,6 +143,7 @@ export const memberList = [{
     }
   },
   {
+    id: 'jam-long',
     name: 'Jam Long',
     gender: 'boy',
     description: 'Jam works in UI/UX and is based in Malaysia, Kuala Lumpur. Love doing design with code.',
@@ -152,6 +161,7 @@ export const memberList = [{
     }
   },
   {
+    id:'edelyn-seah',
     name: 'Edelyn Seah',
     gender: 'girl',
     description: 'Edelyn is a beginner coder at 17. She is young but ready to learn.',
@@ -169,6 +179,7 @@ export const memberList = [{
     }
   },
   {
+    id: 'jennning',
     name: 'Ho Jen Ning',
     gender: 'boy',
     description: '<p>Jen Ning has been in the web dev industry for a few years, and is primarily a Front-end developer despite dabbled in both front and back stack. He is a perfectionist when it comes to UI development.</p><p>He performs CSS wizardry daily in his job.</p>',

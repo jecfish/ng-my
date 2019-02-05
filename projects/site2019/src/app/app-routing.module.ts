@@ -45,6 +45,10 @@ const routes: Routes = [
     component: FormPageComponent
   },
   {
+    path: 'beta',
+    component: HomeEarlyPageComponent
+  },
+  {
     path: 'schedule',
     component: SchedulePageComponent
   },
