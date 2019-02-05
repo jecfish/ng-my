@@ -134,6 +134,57 @@ img {
   }
 }
 
+.notification {
+  position: fixed;
+  top: $header-h + $space;
+  left: $space;
+  padding: $space-s $space-l $space-s $space;
+  background: $red;
+  color: $white;
+  border: 2px solid $black;
+  box-shadow: 4px 4px $black;
+  max-width: calc(100% - #{$space-l});
+  z-index: $notification-z;
+
+  &-close {
+    border: 0;
+    background: none;
+    padding: 0;
+    position: absolute;
+    top: $space-xs;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    z-index: 2;
+    color: inherit;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      width: 50%;
+      height: 3px;
+      position: absolute;
+      top: calc(50% - 1.5px);
+      left: 25%;
+      background: currentColor;
+    }
+
+    &:after {
+      transform: rotate(90deg);
+    }
+  }
+}
+
 .colors {
   position: fixed;
   z-index: 9999;

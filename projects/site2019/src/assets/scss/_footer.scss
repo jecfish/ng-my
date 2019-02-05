@@ -28,6 +28,10 @@
       display: block;
       padding: 0 $space-s;
       color: $white;
+
+      @include btn-active {
+        color: $yellow;
+      }
     }
   }
 
@@ -50,10 +54,10 @@
     }
 
     a {
-      color: $white;
+      color: $yellow;
 
       @include btn-active {
-        color: $gray-lightest;
+        color: $yellow-dark;
       }
     }
   }

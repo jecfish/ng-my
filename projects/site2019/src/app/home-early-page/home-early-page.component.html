@@ -16,8 +16,14 @@
             <p class="hero-subtitle">A 2 day conference in Kuala Lumpur, Malaysia</p>
             <p><strong class="text-primary">#ngMY2019</strong> is the first Angular conference in Southeast Asia. 100%
               community driven.</p>
-            <p><strong><i class="fas fa-calendar-alt icon-left text-primary"></i>July 6th & 7th <i class="fas fa-map-marker-alt icon-right icon-left text-primary"></i>
-                Sunway University</strong></p>
+            <ul class="hero-misc">
+              <li class="hero-misc-item">
+                <i class="fas fa-calendar-alt icon-left text-primary"></i>July 6th & 7th
+              </li>
+              <li class="hero-misc-item">
+                <i class="fas fa-map-marker-alt icon-left text-primary"></i>Sunway University
+              </li>
+            </ul>
             <div class="hero-btns">
               <button class="btn btn-secondary" (click)="scrollTo('speakers')">
                 <span class="btn-inner">Call for speakers</span>
@@ -178,3 +184,5 @@
 </main>
 
 <my-footer></my-footer>
+
+<my-notification [message]="notificationMessage" *ngIf="notificationMessage !== ''"></my-notification>

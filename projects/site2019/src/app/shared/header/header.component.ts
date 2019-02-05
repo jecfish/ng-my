@@ -13,7 +13,8 @@ export class HeaderComponent implements OnInit {
     // { link: '/logo', name: 'Logo' },
     // { link: '/speakers', name: 'Speakers' },
     // { link: '/schedule', name: 'Schedule' },
-    { link: '/team', name: 'Team' }
+    { link: '/team', name: 'Team' },
+    { link: '/coc', name: 'Code of Conduct' }
   ];
 
   socialMediaList = [];
