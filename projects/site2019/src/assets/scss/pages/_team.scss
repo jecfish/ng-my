@@ -24,6 +24,7 @@
   }
 
   @include mobile {
+    margin: 0;
     height: calc(100% - #{$header-h});
     padding: $space;
   }
