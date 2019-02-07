@@ -234,6 +234,20 @@
     align-items: center;
   }
 
+  &-description {
+    text-align: center;
+    padding: $space-s $space-xxl;
+    
+    p {
+      padding-bottom: $space-s;
+    }
+
+
+    @include mobile {
+      padding: $space-l;
+    }
+  }
+
   &-section {
     padding: $space-l 0 $space-xl;
     min-height: calc(100vh - #{$header-h + $footer-h-total});
@@ -245,7 +259,7 @@
 
   &-item {
     flex: 1;
-    margin: $space;
+    margin: $space-l;
   }
 }
 

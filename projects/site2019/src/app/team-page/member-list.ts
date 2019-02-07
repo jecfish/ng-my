@@ -20,22 +20,41 @@ export const memberList = [
     }
   },
   {
-    id: 'chris-ng',
-    name: 'Chris Ng',
+    id: 'eric-ngu',
+    name: 'Eric Ngu',
     gender: 'boy',
     description:
-      '<p>Chris is passionate about solving problems through technology. He fell in love with coding since his first web application, and has been working in the tech scene for more than 10 years.</p><p>A cup of coffee will always brighten up his day.</p>',
+      'Eric is a Computer Science student from Sunway University, loves coffee, food (mamak food 😍) and 💻 code. Involved in a few ✨ communities - Sunway Tech Club, GDG KL, and now NG-MY.',
     photo: {
-      normal: 'chris_ng-normal.jpg',
-      fun: 'chirs_ng-fun.jpg'
+      normal: 'eric_ngu-normal.jpg',
+      fun: ''
     },
     profile: {
-      url: 'https://www.linkedin.com/in/chrisngwz/',
-      type: 'linkedin'
+      url: 'https://www.potateros.xyz',
+      type: 'website'
     },
     favourite: {
       icon: '',
       name: 'Cendol'
+    }
+  },
+  {
+    id: 'lydia-lim',
+    name: 'Lydia Lim',
+    gender: 'girl',
+    description:
+      'Lydia is a big fan of mobile, automation and cloud related services/applications. I am also intrigued (or distracted) by a lot of things - travel, hiking, photography, IoT.',
+    photo: {
+      normal: 'lydia_lim-normal.jpg',
+      fun: ''
+    },
+    profile: {
+      url: 'https://www.linkedin.com/in/lydialim/',
+      type: 'linkedin'
+    },
+    favourite: {
+      icon: '',
+      name: 'Maggie Goreng Tambah Telur Mata'
     }
   },
   {
@@ -96,25 +115,6 @@ export const memberList = [
     }
   },
   {
-    id: 'lydia-lim',
-    name: 'Lydia Lim',
-    gender: 'girl',
-    description:
-      'Lydia is a big fan of mobile, automation and cloud related services/applications. I am also intrigued (or distracted) by a lot of things - travel, hiking, photography, IoT.',
-    photo: {
-      normal: 'lydia_lim-normal.jpg',
-      fun: ''
-    },
-    profile: {
-      url: 'https://www.linkedin.com/in/lydialim/',
-      type: 'linkedin'
-    },
-    favourite: {
-      icon: '',
-      name: 'Maggie Goreng Tambah Telur Mata'
-    }
-  },
-  {
     id: 'liyana',
     name: 'Liyana Sulaiman',
     gender: 'girl',
@@ -133,42 +133,24 @@ export const memberList = [
       name: 'Nasi Lemak'
     }
   },
+
   {
-    id: 'hong-tat',
-    name: 'Yew Hong Tat',
+    id: 'chris-ng',
+    name: 'Chris Ng',
     gender: 'boy',
     description:
-      'Hong Tat has been working with angular and c# in the past. A man with spec, and someone who loves marathon.',
+      '<p>Chris is passionate about solving problems through technology. He fell in love with coding since his first web application, and has been working in the tech scene for more than 10 years.</p><p>A cup of coffee will always brighten up his day.</p>',
     photo: {
-      normal: 'hong_tat-normal.jpg',
-      fun: ''
+      normal: 'chris_ng-normal.jpg',
+      fun: 'chirs_ng-fun.jpg'
     },
     profile: {
-      url: 'https://www.linkedin.com/in/hongtatyew',
+      url: 'https://www.linkedin.com/in/chrisngwz/',
       type: 'linkedin'
     },
     favourite: {
       icon: '',
-      name: 'Nasi Lemak'
-    }
-  },
-  {
-    id: 'jam-long',
-    name: 'Jam Long',
-    gender: 'boy',
-    description:
-      'Jam works in UI/UX and is based in Malaysia, Kuala Lumpur. Love doing design with code.',
-    photo: {
-      normal: 'jam_long-normal.jpg',
-      fun: ''
-    },
-    profile: {
-      url: 'http://jaminpie.me',
-      type: 'website'
-    },
-    favourite: {
-      icon: '',
-      name: 'Roti Canai'
+      name: 'Cendol'
     }
   },
   {
@@ -191,23 +173,42 @@ export const memberList = [
     }
   },
   {
-    id: 'eric-ngu',
-    name: 'Eric Ngu',
+    id: 'jam-long',
+    name: 'Jam Long',
     gender: 'boy',
     description:
-      'Eric is a Computer Science student from Sunway University, loves coffee, food (mamak food 😍) and 💻 code. Involved in a few ✨ communities - Sunway Tech Club, GDG KL, and now NG-MY.',
+      'Jam works in UI/UX and is based in Malaysia, Kuala Lumpur. Love doing design with code.',
     photo: {
-      normal: 'eric_ngu-normal.jpg',
+      normal: 'jam_long-normal.jpg',
       fun: ''
     },
     profile: {
-      url: 'https://www.potateros.xyz',
+      url: 'http://jaminpie.me',
       type: 'website'
     },
     favourite: {
       icon: '',
-      name: 'Cendol'
+      name: 'Roti Canai'
     }
-  }
+  },
+  {
+    id: 'hong-tat',
+    name: 'Yew Hong Tat',
+    gender: 'boy',
+    description:
+      'Hong Tat has been working with angular and c# in the past. A man with spec, and someone who loves marathon.',
+    photo: {
+      normal: 'hong_tat-normal.jpg',
+      fun: ''
+    },
+    profile: {
+      url: 'https://www.linkedin.com/in/hongtatyew',
+      type: 'linkedin'
+    },
+    favourite: {
+      icon: '',
+      name: 'Nasi Lemak'
+    }
+  },
 ];
 /* tslint:enable */
