@@ -554,6 +554,10 @@
     padding: $space-l 0 $space;
     background: $blue-darkest;
     color: $white;
+
+    h2 {
+      padding: $space-s 0;
+    }
   }
 
   &-item {

@@ -30,8 +30,8 @@ export class FormPageComponent implements OnInit {
       id: '1FAIpQLSdr6wRM-NPfFTdijSoozApxI5ypHJyBDnyCPdIiHkKs9DD9iw',
       height: 1633
     },
-    'sponsor-intro': {
-      name: 'Sponsor Introduction',
+    'sponsor-connect': {
+      name: 'Sponsor Connect',
       id: '1FAIpQLSfIxnhrW2p9E9RVBDelGiN8cp6pT3rIGxRyovmSiY5BxuuIKA',
       height: 1273
     }
