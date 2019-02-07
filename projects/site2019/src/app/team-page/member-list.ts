@@ -100,7 +100,7 @@ export const memberList = [
     name: 'Ho Jen Ning',
     gender: 'boy',
     description:
-      '<p>Jen Ning has been in the web dev industry for a few years, and is primarily a Front-end developer despite dabbled in both front and back stack. He is a perfectionist when it comes to UI development.</p><p>He performs CSS wizardry daily in his job.</p>',
+      '<p>Jen Ning is a web developer that primarily works in the front-end, and has been in the industry for more than 5 years. He enjoys developing product that delights its users.</p><p>He performs CSS wizardry daily in his work to achieve that.</p>',
     photo: {
       normal: 'jen_ning-normal.jpg',
       fun: ''
@@ -209,6 +209,6 @@ export const memberList = [
       icon: '',
       name: 'Nasi Lemak'
     }
-  },
+  }
 ];
 /* tslint:enable */

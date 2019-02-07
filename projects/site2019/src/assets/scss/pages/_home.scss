@@ -178,7 +178,7 @@
 
 .home {
   &-section {
-    padding: $space-xxl 0;
+    padding: calc(2% + #{$space-xxl}) 0;
 
     .section-title {
       margin-bottom: $space-l;
@@ -237,7 +237,6 @@
   &-section {
     position: relative;
     z-index: 1;
-    box-shadow: 0 8px rgba(0, 0, 0, 0.3);
 
     .container {
       position: relative;
@@ -326,19 +325,24 @@
       padding-bottom: 70%;
     }
 
-    &-bg {
+    &-banner {
+      display: flex;
+      justify-content: flex-start;
       height: 250px;
       overflow: hidden;
-      position: relative;
       opacity: 0.7;
+    }
+
+    &-bg {
+      position: relative;
 
       &:before {
         @include full-size-pseudo;
 
+        transform: skewX(-30deg);
         pointer-events: none;
         transform-origin: bottom right;
-        background: linear-gradient(to right, transparent, $white 50%);
-        transform: skewX(-30deg);
+        background: linear-gradient(to right, transparent, $white 70%);
         z-index: 1;
       }
 
@@ -349,10 +353,6 @@
 
       @include mobile {
         height: 150px;
-
-        &:before {
-          background: linear-gradient(to right, transparent, $white 80%);
-        }
       }
     }
   }
@@ -368,12 +368,54 @@
   }
 }
 
+.mailing {
+  &-section {
+    padding: $space-l 0 0;
+    text-align: center;
+
+    .mailing-label {
+      font-size: $font-size-xl;
+    }
+
+    &-arrow {
+      margin-top: $space;
+      position: relative;
+      overflow: hidden;
+      background: $blue-darkest;
+
+      &:before,
+      &:after {
+        content: '';
+        display: block;
+
+        border: {
+          width: 70px 50vw 0;
+          style: solid;
+          color: transparent;
+        }
+      }
+
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        border-top-color: $white;
+      }
+
+      &:after {
+        border-top-width: 78px;
+        border-top-color: $gray-darkest;
+      }
+    }
+  }
+}
+
 .speakers {
   &-section {
     color: $white;
     background: $blue-darkest;
     position: relative;
-    padding-bottom: 160px;
   }
 
   &-bg {
@@ -411,7 +453,6 @@
 .sponsoring {
   &-section {
     background: $yellow;
-    padding-bottom: 160px;
     position: relative;
 
     .col:first-child {

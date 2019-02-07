@@ -93,6 +93,12 @@ img {
       font-size: $font-size-xxl;
     }
   }
+
+  &-description {
+    margin: $space auto 0;
+    text-align: center;
+    padding: 0 $space;
+  }
 }
 
 .section-title {
@@ -131,6 +137,15 @@ img {
 .text {
   &-primary {
     color: $red;
+  }
+}
+
+.mailing {
+  max-width: 300px;
+  margin: $space-s auto 0;
+
+  &-label {
+    font-weight: bold;
   }
 }
 

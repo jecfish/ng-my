@@ -1,62 +1,45 @@
-.mailing {
-  max-width: 300px;
-
-  &-section {
-    padding: $space-l 0;
-    background: $blue-darkest;
-    color: $white;
-
-    h2 {
-      padding: $space-s 0;
-      text-align: center;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    &--yellow {
-      padding: $space-xl 0;
-      background: $yellow;
-      color: initial;
-
-      @include mobile {
-        padding: $space-l 0;
-      }
-    }
-  }
-
-  &-item {
-    width: 120px;
-    position: relative;
-
-    &+& {
-      margin-left: $space-l;
-    }
-  }
-}
-
-
 .footer {
-  text-align: center;
-  font-size: $font-size-xs;
   background: $blue-darkest;
   color: $white;
+
+  &-intro {
+    display: flex;
+    align-items: center;
+    max-width: 350px;
+
+    &-img {
+      width: 120px;
+      margin-right: $space;
+    }
+  }
+
+  &-description {
+    letter-spacing: 0.3px;
+  }
+
+  &-upper {
+    padding: $space-l 0 $space;
+    font-size: $font-size-s;
+  }
 
   &-lower {
     height: $footer-h;
     line-height: $footer-h;
+    text-align: center;
+    font-size: $font-size-xs;
   }
 
   &-social {
+    margin-top: $space;
     padding: $space-s 0;
-    font-size: 1rem;
 
     &-list {
       display: flex;
-      justify-content: center;
+      font-size: 1rem;
+
+      @include mobile {
+        justify-content: center;
+      }
     }
 
     &-item {
@@ -99,6 +82,33 @@
 
       @include btn-active {
         color: $yellow-dark;
+      }
+    }
+  }
+
+  &-mailing {
+    margin: auto;
+    margin-right: 0;
+
+    &-container {
+      display: flex;
+    }
+
+    &-item {
+      width: 120px;
+      position: relative;
+
+      &+& {
+        margin-left: $space-l;
+      }
+    }
+
+    @include mobile {
+      margin-right: auto;
+      text-align: center;
+
+      &-container {
+        margin-top: $space;
       }
     }
   }
