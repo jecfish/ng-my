@@ -331,6 +331,10 @@
       height: 250px;
       overflow: hidden;
       opacity: 0.7;
+
+      @include mobile {
+        height: 150px;
+      }
     }
 
     &-bg {
@@ -349,10 +353,6 @@
       img {
         height: 100%;
         max-width: none;
-      }
-
-      @include mobile {
-        height: 150px;
       }
     }
   }
