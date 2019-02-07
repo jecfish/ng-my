@@ -53,12 +53,12 @@ export class HomeEarlyPageComponent implements OnInit {
       url: 'https://www.facebook.com/GDGKualaLumpur/'
     },
     {
-      image: 'kljs.png',
+      image: 'kljs.jpg',
       name: 'Kuala Lumpur JS',
       url: 'https://www.facebook.com/groups/kualalumpurjs/'
     },
     {
-      image: 'angular-malaysia.png',
+      image: 'angular-malaysia.jpg',
       name: 'Angular Malaysia',
       url: 'https://www.facebook.com/groups/angular.malaysia/'
     },
