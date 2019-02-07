@@ -39,27 +39,32 @@ export class HomeEarlyPageComponent implements OnInit {
     { image: 'nestjs.svg', name: 'nestjs', url: 'https://nestjs.com/' },
     {
       image: 'WWCode_Kuala Lumpur_Binary.jpg',
-      name: 'wwcodekl',
+      name: 'Women Who Code KL',
       url: 'https://www.facebook.com/womenwhocodekl/'
     },
     {
       image: 'sunway_tech_club.jpg',
-      name: 'stc',
+      name: 'Sunway Tech Club',
       url: 'https://www.facebook.com/sunwaytechclub/'
     },
     {
       image: 'gdgkl.svg',
-      name: 'gdgkl',
+      name: 'Google Developers Group KL',
       url: 'https://www.facebook.com/GDGKualaLumpur/'
     },
     {
+      image: 'kljs.png',
+      name: 'Kuala Lumpur JS',
+      url: 'https://www.facebook.com/groups/kualalumpurjs/'
+    },
+    {
       image: 'angular-malaysia.png',
-      name: 'angular malaysia',
-      url: 'https://www.facebook.com/groups/959601730804414/'
+      name: 'Angular Malaysia',
+      url: 'https://www.facebook.com/groups/angular.malaysia/'
     },
     {
       image: 'thefrontendmalaysia.jpg',
-      name: 'tfmy',
+      name: 'the Frontend Malaysia',
       url: 'https://www.facebook.com/frontendmalaysia/'
     }
   ];
