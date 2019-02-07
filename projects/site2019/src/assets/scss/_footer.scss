@@ -18,8 +18,13 @@
     }
 
     &--yellow {
+      padding: $space-xl 0;
       background: $yellow;
       color: initial;
+
+      @include mobile {
+        padding: $space-l 0;
+      }
     }
   }
 
