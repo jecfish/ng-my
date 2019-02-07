@@ -74,6 +74,11 @@
         &-description {
           transition-delay: 0.2s;
         }
+
+        &-close {
+          opacity: 1;
+          transform: rotate(45deg);
+        }
       }
     }
   }
@@ -94,9 +99,16 @@
     right: $space;
     width: $btn-h;
     height: $btn-h;
-    transform: rotate(45deg);
     cursor: pointer;
     z-index: 2;
+    transform: none;
+    opacity: 0;
+
+    transition: {
+      property: opacity, transform;
+      duration: 0.2s;
+      timing-function: ease;
+    }
 
     &:focus {
       outline: none;
@@ -232,20 +244,6 @@
   @include mobile {
     flex-direction: column;
     align-items: center;
-  }
-
-  &-description {
-    text-align: center;
-    padding: $space-s $space-xxl;
-    
-    p {
-      padding-bottom: $space-s;
-    }
-
-
-    @include mobile {
-      padding: $space-l;
-    }
   }
 
   &-section {
