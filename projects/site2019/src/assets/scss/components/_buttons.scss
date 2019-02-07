@@ -15,6 +15,7 @@
   user-select: none;
   cursor: pointer;
   transition: color 0.2s ease, box-shadow 0.1s ease, transform 0.1s ease;
+  -webkit-appearance: none;
 
   @include mobile {
     @include one-height($btn-mobile-h, 2px);
