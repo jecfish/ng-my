@@ -178,7 +178,7 @@
 
 .home {
   &-section {
-    padding: $space-xl 0;
+    padding: $space-xxl 0;
 
     .section-title {
       margin-bottom: $space-l;
@@ -373,7 +373,7 @@
     color: $white;
     background: $blue-darkest;
     position: relative;
-    padding-bottom: 100px;
+    padding-bottom: 160px;
   }
 
   &-bg {
@@ -411,7 +411,7 @@
 .sponsoring {
   &-section {
     background: $yellow;
-    padding-bottom: 100px;
+    padding-bottom: 160px;
     position: relative;
 
     .col:first-child {
@@ -543,29 +543,6 @@
       &+& {
         margin-left: $space;
       }
-    }
-  }
-}
-
-.mailing {
-  max-width: 300px;
-
-  &-section {
-    padding: $space-l 0 $space;
-    background: $blue-darkest;
-    color: $white;
-
-    h2 {
-      padding: $space-s 0;
-    }
-  }
-
-  &-item {
-    width: 120px;
-    position: relative;
-
-    &+& {
-      margin-left: $space-l;
     }
   }
 }
