@@ -5,7 +5,7 @@ export const memberList = [
     name: 'Jecelyn Yeen',
     gender: 'girl',
     description:
-      '<p>Jecelyn speaks English, Mandarin, C#, JavaScript and Angular. She is a Google Developer Expert in Angular & director of Women Who Code KL. She funnels her passion in tech into publishing articles as well as sharing her knowledge via workshops and conferences and meet-ups.</p><p>Ironically her favourite past time away from work involves travelling to remote islands without WiFi for deep sea diving expeditions and reading books with tangible covers.</p>',
+      '<p>Jecelyn speaks English, Mandarin, C#, JavaScript and Angular. She blogs & speaks tech, enjoys organizing community events.</p><p>Ironically her favourite past time away from work involves travelling to remote islands without WiFi for deep sea diving expeditions and reading books with tangible covers.</p>',
     photo: {
       normal: 'jecelyn_yeen-normal.jpg',
       fun: 'jecelyn_yeen-fun.jpg'
