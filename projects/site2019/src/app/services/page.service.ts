@@ -10,7 +10,7 @@ export class PageService {
   public readonly postfix = ' | NG-MY 2019';
   private trackingID = environment.gaTrackingID;
 
-  constructor(private title: Title, private router: Router, private meta: Meta) {}
+  constructor(private title: Title, private router: Router, private meta: Meta) { }
 
   setPage(config: { title?: string; skipTitlePostfix?: boolean; metaDesc?: string; metaImg?: string }) {
     const postfix = config.skipTitlePostfix ? '' : this.postfix;
@@ -24,17 +24,12 @@ export class PageService {
     }
 
     if (config.metaDesc) {
-      this.meta.updateTag({
-        name: 'description',
-        content: config.metaDesc
-      });
+      this.meta.updateTag({ name: 'description', content: config.metaDesc });
+      this.meta.updateTag({ name: 'og:description', content: config.metaDesc });
     }
 
     if (config.metaImg) {
-      this.meta.updateTag({
-        property: 'og:image',
-        content: config.metaImg
-      });
+      this.meta.updateTag({ property: 'og:image', content: config.metaImg });
     }
 
     if (!environment.production || !window['gtag']) return;
