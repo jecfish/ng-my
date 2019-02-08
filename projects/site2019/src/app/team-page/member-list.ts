@@ -7,7 +7,7 @@ export const memberList = [
     description:
       '<p>Jecelyn speaks English, Mandarin, C#, JavaScript and Angular. She is a Google Developer Expert in Angular & director of Women Who Code KL. She funnels her passion in tech into publishing articles as well as sharing her knowledge via workshops and conferences and meet-ups.</p><p>Ironically her favourite past time away from work involves travelling to remote islands without WiFi for deep sea diving expeditions and reading books with tangible covers.</p>',
     photo: {
-      normal: 'jecelyn_yeen-normal.JPG',
+      normal: 'jecelyn_yeen-normal.jpg',
       fun: 'jecelyn_yeen-fun.jpg'
     },
     profile: {
@@ -83,7 +83,7 @@ export const memberList = [
     description:
       'Jenna is a graphic designer who believe simplicity is the key of elegance in a world saturated with garish colour.',
     photo: {
-      normal: 'jenna_tan-normal.jpeg',
+      normal: 'jenna_tan-normal.jpg',
       fun: 'jenna_tan-fun.jpg'
     },
     profile: {
@@ -103,7 +103,7 @@ export const memberList = [
       '<p>Jen Ning is a web developer that primarily works in the front-end, and has been in the industry for more than 5 years. He enjoys developing product that delights its users.</p><p>He performs CSS wizardry daily in his work to achieve that.</p>',
     photo: {
       normal: 'jen_ning-normal.jpg',
-      fun: ''
+      fun: 'jen_ning-fun.jpg'
     },
     profile: {
       url: 'https://www.linkedin.com/in/jenning-ho/',
