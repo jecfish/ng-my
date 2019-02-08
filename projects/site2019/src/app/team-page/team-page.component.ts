@@ -61,7 +61,7 @@ export class TeamPageComponent implements OnInit {
     this.pageSvc.setPage({
       title,
       metaDesc: 'The team behind NG-MY 2019.',
-      metaImg: id ? environment.baseUrl + '/imgs/team/' + this.selectedMember.photo.normal : '',
+      metaImg: id ? environment.baseUrl + '/assets/imgs/team/' + this.selectedMember.photo.normal : '',
       skipTitlePostfix: true
     });
   }
