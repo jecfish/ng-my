@@ -20,6 +20,7 @@ module.exports = {
                 // forms
                 ...formRouteList,
                 // team members
+                '/team',
                 ...teamRouteList,
             ],
         })
