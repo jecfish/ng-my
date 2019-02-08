@@ -12,6 +12,6 @@ export class PlaceholderPageComponent implements OnInit {
   constructor(private pageSvc: PageService) { }
 
   ngOnInit() {
-    this.pageSvc.setPage({ title: this.title, path: '/' });
+    this.pageSvc.setPage({ title: this.title });
   }
 }

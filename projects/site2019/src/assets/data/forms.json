@@ -1,0 +1,22 @@
+{
+    "call-for-presenters": {
+        "name": "Call for Presenters",
+        "id": "1FAIpQLSfUA8FNtmXeaR8l5yjMoeuzomow9nzBT_1K56IiL0EhOS1dig",
+        "height": 1908
+    },
+    "speaker-nomination": {
+        "name": "Speaker Nomination",
+        "id": "1FAIpQLSdHx3NHJdYZrLqLFwjWjf7jGE8dfIJH4IYtMCvcqKVPxoJSWg",
+        "height": 2850
+    },
+    "call-for-sponsors": {
+        "name": "Call for Sponsors",
+        "id": "1FAIpQLSdr6wRM-NPfFTdijSoozApxI5ypHJyBDnyCPdIiHkKs9DD9iw",
+        "height": 1633
+    },
+    "sponsor-connect": {
+        "name": "Sponsor Connect",
+        "id": "1FAIpQLSfIxnhrW2p9E9RVBDelGiN8cp6pT3rIGxRyovmSiY5BxuuIKA",
+        "height": 1273
+    }
+}

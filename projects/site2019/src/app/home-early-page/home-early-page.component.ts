@@ -1,6 +1,9 @@
 import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
 import { PageService } from '../services/page.service';
 
+import communities from '../../assets/data/community-partners.json';
+import ultimates from '../../assets/data/sponsors-ultimate.json';
+
 declare var google: any;
 
 @Component({
@@ -9,8 +12,6 @@ declare var google: any;
   styleUrls: ['./home-early-page.component.css']
 })
 export class HomeEarlyPageComponent implements OnInit {
-  title = 'July 06-07';
-
   @ViewChild('map') mapElement: any;
   map: any;
 
@@ -27,47 +28,9 @@ export class HomeEarlyPageComponent implements OnInit {
     shouldShowStats: false
   };
 
-  ultimateList = [
-    {
-      image: 'sunwayuniversity.jpg',
-      name: 'sunway university',
-      url: 'https://university.sunway.edu.my/'
-    }
-  ];
+  ultimateList = ultimates;
 
-  communityList = [
-    { image: 'nestjs.svg', name: 'nestjs', url: 'https://nestjs.com/' },
-    {
-      image: 'WWCode_Kuala Lumpur_Binary.jpg',
-      name: 'Women Who Code KL',
-      url: 'https://www.facebook.com/womenwhocodekl/'
-    },
-    {
-      image: 'sunway_tech_club.jpg',
-      name: 'Sunway Tech Club',
-      url: 'https://www.facebook.com/sunwaytechclub/'
-    },
-    {
-      image: 'gdgkl.svg',
-      name: 'Google Developers Group KL',
-      url: 'https://www.facebook.com/GDGKualaLumpur/'
-    },
-    {
-      image: 'kljs.jpg',
-      name: 'Kuala Lumpur JS',
-      url: 'https://www.facebook.com/groups/kualalumpurjs/'
-    },
-    {
-      image: 'angular-malaysia.jpg',
-      name: 'Angular Malaysia',
-      url: 'https://www.facebook.com/groups/angular.malaysia/'
-    },
-    {
-      image: 'thefrontendmalaysia.jpg',
-      name: 'the Frontend Malaysia',
-      url: 'https://www.facebook.com/frontendmalaysia/'
-    }
-  ];
+  communityList = communities;
 
   notificationMessage = '';
 
@@ -86,10 +49,11 @@ export class HomeEarlyPageComponent implements OnInit {
     }
   }
 
-  constructor(private pageSvc: PageService) {}
+  constructor(private pageSvc: PageService) { }
 
   ngOnInit() {
-    this.pageSvc.setPage({ title: this.title, path: '/' });
+    const title = 'July 06-07';
+    this.pageSvc.setPage({ title: title });
   }
 
   scrollTo(location) {

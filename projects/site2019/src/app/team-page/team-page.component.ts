@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { memberList } from './member-list';
+import memberList from '../../assets/data/members.json';
 import { ActivatedRoute } from '@angular/router';
 import { PageService } from '../services/page.service';
 import { Meta } from '@angular/platform-browser';
 import { Location } from '@angular/common';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'my-team-page',
@@ -39,7 +40,7 @@ export class TeamPageComponent implements OnInit {
     private meta: Meta,
     private pageSvc: PageService,
     private location: Location
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.memberList = memberList;
@@ -56,18 +57,13 @@ export class TeamPageComponent implements OnInit {
     const title = id
       ? this.selectedMember.name + this.pageSvc.postfix.replace('|', '| Team')
       : `Team${this.pageSvc.postfix}`;
+
     this.pageSvc.setPage({
       title,
-      path,
+      metaDesc: 'The team behind NG-MY 2019.',
+      metaImg: id ? environment.baseUrl + '/imgs/team/' + this.selectedMember.photo.normal : '',
       skipTitlePostfix: true
     });
-
-    this.meta.updateTag({ property: 'og:title', content: title });
-    this.meta.updateTag({
-      name: 'description',
-      content: 'The team behind NG-MY 2019.'
-    });
-    this.meta.updateTag({ property: 'og:url', content: window.location.href });
   }
 
   unselectMember() {

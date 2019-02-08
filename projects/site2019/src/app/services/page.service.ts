@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment';
-import { Title } from '@angular/platform-browser';
+import { Title, Meta } from '@angular/platform-browser';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -9,18 +10,44 @@ export class PageService {
   public readonly postfix = ' | NG-MY 2019';
   private trackingID = environment.gaTrackingID;
 
-  constructor(private title: Title) {}
+  constructor(private title: Title, private router: Router, private meta: Meta) {}
 
-  setPage(config: { title: string; path: string; skipTitlePostfix?: boolean }) {
+  setPage(config: { title?: string; skipTitlePostfix?: boolean; metaDesc?: string; metaImg?: string }) {
     const postfix = config.skipTitlePostfix ? '' : this.postfix;
-    this.title.setTitle(config.title + postfix);
+
+    this.meta.updateTag({ property: 'og:url', content: this.getCurrentPath() });
+
+    if (config.title) {
+      const title = config.title + postfix;
+      this.title.setTitle(title);
+      this.meta.updateTag({ property: 'og:title', content: title });
+    }
+
+    if (config.metaDesc) {
+      this.meta.updateTag({
+        name: 'description',
+        content: config.metaDesc
+      });
+    }
+
+    if (config.metaImg) {
+      this.meta.updateTag({
+        property: 'og:image',
+        content: config.metaImg
+      });
+    }
 
     if (!environment.production || !window['gtag']) return;
 
     gtag('config', this.trackingID, {
       'page-title': config.title,
-      'page-path': config.path
+      'page-path': this.getCurrentPath(false)
     });
+  }
+
+  getCurrentPath(includeBaseUrl = true) {
+    const prefix = (includeBaseUrl ? environment.baseUrl : '');
+    return prefix + this.router.url;
   }
 
   scrollWindowTo(target, duration) {
