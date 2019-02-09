@@ -14,7 +14,7 @@
               </span>
               2019
             </h1>
-            <p>
+            <p class="hero-subtitle">
               For the first time ever, the biggest Southeast Asia Angular
               Conference is taking place at
               <strong class="text-primary">#ngMY2019</strong>.
@@ -28,17 +28,17 @@
                 <i class="fas fa-map-marker-alt icon-left text-primary"></i>Sunway University
               </li>
             </ul>
-            <small>
-              Early bird tickets will be on sale at
-              <span class="text-highlight">March 30th</span>
-            </small>
+            <p>
+              Tickets will be on sale at
+              <span class="text-highlight">March 4th</span>
+            </p>
             <div class="hero-btns">
               <a class="btn btn-primary" href="https://calendar.google.com/calendar/r/eventedit?amp;tmeid=MjVwY21xZjZwZmk2bWwxaGwwMjk0bWp1Nm8gaGVsbG8ubmcubXlAbQ&amp;tmsrc=hello.ng.my@gmail.com&sf=true"
                 target="_blank" rel="noreferer">
-                <span class="btn-inner">Save the date!</span>
+                <span class="btn-inner">Save the date, be an early bird!</span>
               </a>
-              <button class="btn btn-secondary" (click)="scrollTo('speakers')">
-                <span class="btn-inner">Call for speakers</span>
+              <button class="btn btn-secondary" (click)="scrollTo('subscribe')">
+                <span class="btn-inner">Subscribe &amp; stay up to date</span>
               </button>
             </div>
           </div>
@@ -78,12 +78,12 @@
         width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </section>
-  <section id="mc_embed_signup" class="mailing-section">
+  <section id="mc_embed_signup" class="mailing-section" #subscribe>
     <div class="container">
       <form action="https://ng-my.us20.list-manage.com/subscribe/post?u=18c8aa300b78c9a24177d5215&amp;id=eccdbe44f7"
         method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
         novalidate>
-        <label for="mce-EMAIL" class="mailing-label">STAY UP TO DATE & SIGN UP TO WIN A FREE TICKET</label>
+        <label for="mce-EMAIL" class="mailing-label">SUBSCRIBE &amp; STAY UP TO DATE SIGN UP TO WIN A FREE TICKET</label>
         <div id="mc_embed_signup_scroll" class="mailing">
           <div class="input-group">
             <input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL" placeholder="Enter Your Email" />
@@ -106,7 +106,7 @@
     </div>
     <div class="mailing-section-arrow"></div>
   </section>
-  <section class="home-section speakers-section" #speakers>
+  <section class="home-section speakers-section" id="speakers">
     <div class="container speakers-content">
       <h2 class="section-title">We are looking for speakers!</h2>
       <div class="row">
@@ -146,7 +146,7 @@
       <img src="../../assets/imgs/crowd.jpg" alt="" />
     </div>
   </section>
-  <section class="home-section sponsoring-section" #sponsoring>
+  <section class="home-section sponsoring-section" id="sponsoring">
     <div class="container sponsoring-content">
       <h2 class="section-title">Sponsoring the event</h2>
       <div class="row">
