@@ -10,9 +10,18 @@ export class PageService {
   public readonly postfix = ' | NG-MY 2019';
   private trackingID = environment.gaTrackingID;
 
-  constructor(private title: Title, private router: Router, private meta: Meta) { }
+  constructor(
+    private title: Title,
+    private router: Router,
+    private meta: Meta
+  ) {}
 
-  setPage(config: { title?: string; skipTitlePostfix?: boolean; metaDesc?: string; metaImg?: string }) {
+  setPage(config: {
+    title?: string;
+    skipTitlePostfix?: boolean;
+    metaDesc?: string;
+    metaImg?: string;
+  }) {
     const postfix = config.skipTitlePostfix ? '' : this.postfix;
 
     this.meta.updateTag({ property: 'og:url', content: this.getCurrentPath() });
@@ -41,7 +50,7 @@ export class PageService {
   }
 
   getCurrentPath(includeBaseUrl = true) {
-    const prefix = (includeBaseUrl ? environment.baseUrl : '');
+    const prefix = includeBaseUrl ? environment.baseUrl : '';
     return prefix + this.router.url;
   }
 
@@ -77,7 +86,8 @@ export class PageService {
       { icon: 'twitter', url: 'https://twitter.com/ngmyconf' },
       { icon: 'facebook', url: 'https://www.facebook.com/ngmyconf/' },
       { icon: 'instagram', url: 'https://www.instagram.com/ngmyconf/' },
-      { icon: 'linkedin', url: 'https://www.linkedin.com/company/ngmyconf/' }
+      { icon: 'linkedin', url: 'https://www.linkedin.com/company/ngmyconf/' },
+      { icon: 'youtube', url: 'https://www.linkedin.com/company/ngmyconf/' }
     ];
   }
 }
