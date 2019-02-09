@@ -72,10 +72,6 @@
 
     &-container {
       margin: auto;
-
-      p {
-        font-size: $font-size-l;
-      }
     }
 
     @include mobile {
@@ -83,12 +79,8 @@
     }
   }
 
-  &-title,
-  &-subtitle {
-    font-weight: bold;
-  }
-
   &-title {
+    font-weight: bold;
     font-size: $font-size-xxxl;
 
     .text-primary {

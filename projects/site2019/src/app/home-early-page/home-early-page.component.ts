@@ -18,11 +18,8 @@ export class HomeEarlyPageComponent implements OnInit {
   @ViewChild('stats') statsElement: any;
   stats: any;
 
-  @ViewChild('speakers') speakersElement: any;
-  speakers: any;
-
-  @ViewChild('sponsoring') sponsoringElement: any;
-  sponsoring: any;
+  @ViewChild('subscribe') subscribeElement: any;
+  subscribe: any;
 
   model = {
     shouldShowStats: false
@@ -60,8 +57,7 @@ export class HomeEarlyPageComponent implements OnInit {
     const getTop = e => e.getBoundingClientRect().top;
     const elModel = {
       stats: this.statsElement.nativeElement,
-      speakers: this.speakersElement.nativeElement,
-      sponsoring: this.sponsoringElement.nativeElement
+      subscribe: this.subscribeElement.nativeElement
     };
 
     if (!elModel[location]) {
@@ -69,7 +65,7 @@ export class HomeEarlyPageComponent implements OnInit {
     }
 
     const headerHeight = 60;
-    const target = getTop(elModel[location]) - window.scrollY - headerHeight;
+    const target = getTop(elModel[location]) + window.scrollY - headerHeight;
 
     gtag('event', location, {
       event_category: 'hero',
