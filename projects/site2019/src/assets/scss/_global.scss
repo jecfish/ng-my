@@ -39,8 +39,12 @@ img {
 }
 
 .main {
-  padding: $space 0;
-  min-height: calc(100vh - #{$header-h + $footer-h});
+  padding: $space-l 0 $space-xl;
+  min-height: calc(100vh - #{$header-h + $footer-h-total});
+
+  @include mobile {
+    padding-bottom: $space-l;
+  }
 }
 
 .row {
@@ -57,13 +61,18 @@ img {
 
   @include mobile {
     width: 100%;
+    flex-basis: auto;
   }
 }
 
 .article {
   &-section {
     &+& {
-      margin-top: $space-xl;
+      margin-top: $space-l;
+
+      @include mobile {
+        margin-top: $space;
+      }
     }
 
     p+p {
