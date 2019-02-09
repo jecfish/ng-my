@@ -247,9 +247,6 @@
   }
 
   &-section {
-    padding: $space-l 0 $space-xl;
-    min-height: calc(100vh - #{$header-h + $footer-h-total});
-
     .container+.container {
       margin-top: $space-l;
     }

@@ -316,6 +316,7 @@
     background: $gray-lightest;
     height: 0;
     padding-bottom: 35%;
+    margin-top: 250px;
 
     @include tablet {
       padding-bottom: 55%;
@@ -323,11 +324,13 @@
 
     @include mobile {
       padding-bottom: 70%;
+      margin-top: 150px;
     }
 
-    &-banner {
-      display: flex;
-      justify-content: flex-start;
+    &-bg {
+      position: absolute;
+      bottom: 100%;
+      left: 0;
       height: 250px;
       overflow: hidden;
       opacity: 0.7;
@@ -335,10 +338,6 @@
       @include mobile {
         height: 150px;
       }
-    }
-
-    &-bg {
-      position: relative;
 
       &:before {
         @include full-size-pseudo;
