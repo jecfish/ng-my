@@ -49,7 +49,7 @@ export class HomeEarlyPageComponent implements OnInit {
     }
   }
 
-  constructor(private pageSvc: PageService) { }
+  constructor(private pageSvc: PageService) {}
 
   ngOnInit() {
     const title = 'July 06-07';
@@ -79,6 +79,4 @@ export class HomeEarlyPageComponent implements OnInit {
 
     this.pageSvc.scrollWindowTo(target, 1000);
   }
-
-  saveDate() {}
 }
