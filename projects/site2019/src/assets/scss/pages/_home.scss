@@ -112,6 +112,11 @@
       }
     }
 
+    &-sale {
+      display: flex;
+      align-items: center;
+    }
+
     @include mobile {
       flex-direction: column;
 
@@ -119,6 +124,10 @@
         &+& {
           margin-left: 0;
         }
+      }
+
+      &-sale {
+        flex-direction: column;
       }
     }
   }
@@ -313,7 +322,7 @@
     background: $gray-lightest;
     height: 0;
     padding-bottom: 35%;
-    margin-top: 250px;
+    // margin-top: 250px;
 
     @include tablet {
       padding-bottom: 55%;
@@ -321,7 +330,7 @@
 
     @include mobile {
       padding-bottom: 70%;
-      margin-top: 150px;
+      // margin-top: 150px;
     }
 
     &-bg {

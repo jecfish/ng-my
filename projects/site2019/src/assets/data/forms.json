@@ -1,21 +1,25 @@
 {
     "call-for-presenters": {
         "name": "Call for Presenters",
+        "desc": "We're gearing up for the first South-East Asia Angular conference and you can help make it a memorable one by participating as a speaker. Be part of the Angular community today!",
         "id": "1FAIpQLSfUA8FNtmXeaR8l5yjMoeuzomow9nzBT_1K56IiL0EhOS1dig",
         "height": 1908
     },
     "speaker-nomination": {
-        "name": "Speaker Nomination",
+        "name": "Nominate a Speaker",
+        "desc": "There will always be that few talented and brilliant people we look up to. Why not take this chance to get them to share their knowledge with the bigger community at NG-MY 2019?",
         "id": "1FAIpQLSdHx3NHJdYZrLqLFwjWjf7jGE8dfIJH4IYtMCvcqKVPxoJSWg",
         "height": 2850
     },
     "call-for-sponsors": {
         "name": "Call for Sponsors",
+        "desc": "Interested to become one of the sponsors for the very first South-East Asia Angular conference? Contact us today and be part of this vibrant community in making NG-MY 2019 a success.",
         "id": "1FAIpQLSdr6wRM-NPfFTdijSoozApxI5ypHJyBDnyCPdIiHkKs9DD9iw",
         "height": 1633
     },
-    "sponsor-connect": {
-        "name": "Sponsor Connect",
+    "sponsor-referral": {
+        "name": "Refer a Sponsor",
+        "desc": "We love to increase our network with companies and you definitely can help us with that. Refer a sponsor to us, win a free ticket and make NG-MY 2019 a success.",
         "id": "1FAIpQLSfIxnhrW2p9E9RVBDelGiN8cp6pT3rIGxRyovmSiY5BxuuIKA",
         "height": 1273
     }

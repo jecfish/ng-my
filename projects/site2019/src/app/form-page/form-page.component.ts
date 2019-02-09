@@ -25,6 +25,7 @@ export class FormPageComponent implements OnInit {
 
       this.pageSvc.setPage({
         title: form.name,
+        metaDesc: form.desc,
       });
 
       form.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.urlPattern.replace('{id}', form.id));
