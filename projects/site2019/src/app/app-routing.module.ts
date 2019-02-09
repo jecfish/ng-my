@@ -44,10 +44,10 @@ const routes: Routes = [
     path: 'form/:name',
     component: FormPageComponent
   },
-  {
-    path: 'beta',
-    component: HomeEarlyPageComponent
-  },
+  // {
+  //   path: 'beta',
+  //   component: HomeEarlyPageComponent
+  // },
   {
     path: 'schedule',
     component: SchedulePageComponent
