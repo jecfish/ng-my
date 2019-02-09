@@ -38,6 +38,10 @@ img {
   }
 }
 
+small {
+  font-size: 0.8em;
+}
+
 .main {
   padding: $space-l 0 $space-xl;
   min-height: calc(100vh - #{$header-h + $footer-h-total});
@@ -61,7 +65,6 @@ img {
 
   @include mobile {
     width: 100%;
-    flex-basis: auto;
   }
 }
 
@@ -146,6 +149,15 @@ img {
 .text {
   &-primary {
     color: $red;
+  }
+
+  &-highlight {
+    padding: 0 $space-xs;
+    background: $yellow;
+    font-weight: bold;
+    border: 2px solid $black;
+    box-shadow: 2px 2px $black;
+    margin-left: $space-xs;
   }
 }
 
