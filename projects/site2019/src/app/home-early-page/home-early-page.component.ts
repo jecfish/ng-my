@@ -79,4 +79,6 @@ export class HomeEarlyPageComponent implements OnInit {
 
     this.pageSvc.scrollWindowTo(target, 1000);
   }
+
+  saveDate() {}
 }
