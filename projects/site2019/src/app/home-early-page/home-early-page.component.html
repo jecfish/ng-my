@@ -25,7 +25,8 @@
                 6th & 7th
               </li>
               <li class="hero-misc-item">
-                <i class="fas fa-map-marker-alt icon-left text-primary"></i>Sunway University
+                <i class="fas fa-map-marker-alt icon-left text-primary"></i
+                >Sunway University
               </li>
             </ul>
             <p>
@@ -33,8 +34,12 @@
               <span class="text-highlight">March 4th</span>
             </p>
             <div class="hero-btns">
-              <a class="btn btn-primary" href="https://calendar.google.com/calendar/r/eventedit?amp;tmeid=MjVwY21xZjZwZmk2bWwxaGwwMjk0bWp1Nm8gaGVsbG8ubmcubXlAbQ&amp;tmsrc=hello.ng.my@gmail.com&sf=true"
-                target="_blank" rel="noreferer">
+              <a
+                class="btn btn-primary"
+                href="https://calendar.google.com/calendar/r/eventedit?amp;tmeid=MjVwY21xZjZwZmk2bWwxaGwwMjk0bWp1Nm8gaGVsbG8ubmcubXlAbQ&amp;tmsrc=hello.ng.my@gmail.com&sf=true"
+                target="_blank"
+                rel="noreferer"
+              >
                 <span class="btn-inner">Save the date, be an early bird!</span>
               </a>
               <button class="btn btn-secondary" (click)="scrollTo('subscribe')">
@@ -74,32 +79,71 @@
       <div class="stats-map-bg">
         <img src="../../assets/imgs/sunway-campus.jpg" alt="" />
       </div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.103821654366!2d101.60140624938633!3d3.0669167544992697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c8f5912644b%3A0x77612fa0225cad69!2sSunway+University!5e0!3m2!1sen!2smy!4v1549557724218"
-        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.103821654366!2d101.60140624938633!3d3.0669167544992697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c8f5912644b%3A0x77612fa0225cad69!2sSunway+University!5e0!3m2!1sen!2smy!4v1549557724218"
+        width="600"
+        height="450"
+        frameborder="0"
+        style="border:0"
+        allowfullscreen
+      ></iframe>
     </div>
   </section>
   <section id="mc_embed_signup" class="mailing-section" #subscribe>
     <div class="container">
-      <form action="https://ng-my.us20.list-manage.com/subscribe/post?u=18c8aa300b78c9a24177d5215&amp;id=eccdbe44f7"
-        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
-        novalidate>
-        <label for="mce-EMAIL" class="mailing-label">SUBSCRIBE &amp; STAY UP TO DATE SIGN UP TO WIN A FREE TICKET</label>
+      <form
+        action="https://ng-my.us20.list-manage.com/subscribe/post?u=18c8aa300b78c9a24177d5215&amp;id=eccdbe44f7"
+        method="post"
+        id="mc-embedded-subscribe-form"
+        name="mc-embedded-subscribe-form"
+        class="validate"
+        target="_blank"
+        novalidate
+      >
+        <label for="mce-EMAIL" class="mailing-label"
+          >SUBSCRIBE &amp; STAY UP TO DATE TO WIN A FREE TICKET</label
+        >
         <div id="mc_embed_signup_scroll" class="mailing">
           <div class="input-group">
-            <input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL" placeholder="Enter Your Email" />
+            <input
+              type="email"
+              value=""
+              name="EMAIL"
+              class="form-control required email"
+              id="mce-EMAIL"
+              placeholder="Enter Your Email"
+            />
             <div class="input-group-append">
-              <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-secondary">
+              <button
+                type="submit"
+                name="subscribe"
+                id="mc-embedded-subscribe"
+                class="btn btn-secondary"
+              >
                 <span class="btn-inner">Get updates</span>
               </button>
             </div>
           </div>
           <div id="mce-responses" class="clear">
-            <div class="response" id="mce-error-response" style="display:none"></div>
-            <div class="response" id="mce-success-response" style="display:none"></div>
+            <div
+              class="response"
+              id="mce-error-response"
+              style="display:none"
+            ></div>
+            <div
+              class="response"
+              id="mce-success-response"
+              style="display:none"
+            ></div>
           </div>
           <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
           <div style="position: absolute; left: -5000px;" aria-hidden="true">
-            <input type="text" name="b_18c8aa300b78c9a24177d5215_eccdbe44f7" tabindex="-1" value="" />
+            <input
+              type="text"
+              name="b_18c8aa300b78c9a24177d5215_eccdbe44f7"
+              tabindex="-1"
+              value=""
+            />
           </div>
         </div>
       </form>
@@ -192,7 +236,11 @@
       <ul class="sponsors-list">
         <li class="sponsors-item" *ngFor="let u of ultimateList">
           <a [href]="u.url" target="_blank" rel="noreferer">
-            <img src="{{ '../../assets/imgs/sponsors/' + u.image }}" class="sponsors-img" [alt]="u.name" />
+            <img
+              src="{{ '../../assets/imgs/sponsors/' + u.image }}"
+              class="sponsors-img"
+              [alt]="u.name"
+            />
           </a>
         </li>
       </ul>
@@ -204,7 +252,11 @@
       <ul class="sponsors-list">
         <li class="sponsors-item" *ngFor="let c of communityList">
           <a [href]="c.url" target="_blank" rel="noreferer">
-            <img src="{{ '../../assets/imgs/sponsors/' + c.image }}" class="sponsors-img" [alt]="c.name" />
+            <img
+              src="{{ '../../assets/imgs/sponsors/' + c.image }}"
+              class="sponsors-img"
+              [alt]="c.name"
+            />
           </a>
         </li>
       </ul>
@@ -214,4 +266,7 @@
 
 <my-footer></my-footer>
 
-<my-notification [message]="notificationMessage" *ngIf="notificationMessage !== ''"></my-notification>
+<my-notification
+  [message]="notificationMessage"
+  *ngIf="notificationMessage !== ''"
+></my-notification>
