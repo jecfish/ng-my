@@ -11,6 +11,12 @@
         "id": "1FAIpQLSdHx3NHJdYZrLqLFwjWjf7jGE8dfIJH4IYtMCvcqKVPxoJSWg",
         "height": 2850
     },
+    "speaker-training": {
+        "name": "23-Feb | Speaker Training",
+        "desc": "Together with GDGKL and WWCODEKL, we are having a one day event to get you prepared for submitting CFP and speak on stage.", 
+        "id": "1FAIpQLSezW3DKXzz9HmlAtGoOZVN-r6VpmhnFeNdZfNtKQR7LUi3_gw",
+        "height": 1800
+    },
     "call-for-sponsors": {
         "name": "Call for Sponsors",
         "desc": "Interested to become one of the sponsors for the very first South-East Asia Angular conference? Contact us today and be part of this vibrant community in making NG-MY 2019 a success.",
