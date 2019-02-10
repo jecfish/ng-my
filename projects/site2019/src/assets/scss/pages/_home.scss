@@ -322,7 +322,7 @@
     background: $gray-lightest;
     height: 0;
     padding-bottom: 35%;
-    // margin-top: 250px;
+    margin-top: $space-l;
 
     @include tablet {
       padding-bottom: 55%;
@@ -330,36 +330,6 @@
 
     @include mobile {
       padding-bottom: 70%;
-      // margin-top: 150px;
-    }
-
-    &-bg {
-      position: absolute;
-      bottom: 100%;
-      left: 0;
-      height: 250px;
-      max-width: 100%;
-      overflow: hidden;
-      opacity: 0.7;
-
-      @include mobile {
-        height: 150px;
-      }
-
-      &:before {
-        @include full-size-pseudo;
-
-        transform: skewX(-30deg);
-        pointer-events: none;
-        transform-origin: bottom right;
-        background: linear-gradient(to right, transparent, $white 70%);
-        z-index: 1;
-      }
-
-      img {
-        height: 100%;
-        max-width: none;
-      }
     }
   }
 
@@ -423,37 +393,6 @@
     background: $blue-darkest;
     position: relative;
   }
-
-  &-bg {
-    position: absolute;
-    height: 300px;
-    bottom: 0;
-    right: 0;
-    opacity: 0.7;
-
-    img {
-      height: 100%;
-      max-width: none;
-    }
-
-    &:before {
-      @include full-size-pseudo;
-
-      transform: skewX(30deg);
-      pointer-events: none;
-      transform-origin: bottom left;
-      background: linear-gradient(to left, transparent, $blue-darkest 70%);
-    }
-
-    @include mobile {
-      height: 200px;
-    }
-  }
-
-  &-content {
-    position: relative;
-    z-index: 2;
-  }
 }
 
 .sponsoring {
@@ -468,39 +407,6 @@
         order: 0;
       }
     }
-  }
-
-  &-bg {
-    position: absolute;
-    height: 200px;
-    bottom: 0;
-    left: 0;
-    opacity: 0.7;
-    max-width: 100%;
-    overflow: hidden;
-
-    img {
-      height: 100%;
-      max-width: none;
-    }
-
-    &:before {
-      @include full-size-pseudo;
-
-      transform: skewX(-30deg);
-      pointer-events: none;
-      transform-origin: bottom right;
-      background: linear-gradient(to right, transparent, $yellow 70%);
-    }
-
-    @include mobile {
-      height: 200px;
-    }
-  }
-
-  &-content {
-    position: relative;
-    z-index: 2;
   }
 
   &-block {
