@@ -73,7 +73,7 @@ export class HomeEarlyPageComponent implements OnInit {
   }
 
   trackEvent(event: string) {
-    gtag('event', location, {
+    gtag('event', event, {
       event_category: event,
       event_label: event,
       value: event

@@ -166,7 +166,7 @@
               Call for Presenters (CFP) is open till
               <strong>March 17th</strong>.
             </p>
-            <a routerLink="/form/call-for-presenters" class="btn btn-primary">
+            <a routerLink="/form/call-for-presenters" class="btn btn-primary" (click)="trackEvent('Speak at NG-MY')">
               <span class="btn-inner">Speak at NG-MY</span>
             </a>
           </article>
@@ -181,7 +181,7 @@
               people haven't considered submitting ideas to conferences.</p> -->
             <p>Let us reach out to them!</p>
             <a routerLink="/form/speaker-nomination" class="btn btn-secondary">
-              <span class="btn-inner">Nominate a Speaker</span>
+              <span class="btn-inner" (click)="trackEvent('Nominate a Speaker')">Nominate a Speaker</span>
             </a>
           </article>
         </div>
@@ -204,7 +204,7 @@
               awesome and welcoming event.
             </p>
             <a routerLink="/form/call-for-sponsors" class="btn btn-primary">
-              <span class="btn-inner">I want to sponsor the first SEA Angular conference</span>
+              <span class="btn-inner" (click)="trackEvent('I want to sponsor')">I want to sponsor the first SEA Angular conference</span>
             </a>
           </article>
         </div>
@@ -216,7 +216,7 @@
             </p>
             <p>As an appreciation from us, you will be given a <strong>free ticket</strong> to <strong>#ngMY2019</strong> for every company that has committed to sponsor us.</p>
             <a routerLink="/form/sponsor-referral" class="btn btn-secondary">
-              <span class="btn-inner">I want to refer a sponsor</span>
+              <span class="btn-inner"(click)="trackEvent('I want to refer a sponsor')" >I want to refer a sponsor</span>
             </a>
           </article>
         </div>
