@@ -108,21 +108,21 @@
         }
     },
     {
-        "id": "liyana",
-        "name": "Liyana Sulaiman",
+        "id": "edelyn-seah",
+        "name": "Edelyn Seah",
         "gender": "girl",
-        "description": "Liyana is a serial entrepreneur who loves building tech products, and at other times making a mess in the kitchen. ",
+        "description": "Edelyn is a beginner coder at 17. She is young but ready to learn.",
         "photo": {
-            "normal": "liyana-normal.jpg",
+            "normal": "edelyn_seah-normal.jpg",
             "fun": ""
         },
         "profile": {
-            "url": "https://sg.linkedin.com/in/liyanasulaiman",
+            "url": "https://www.linkedin.com/in/edelyn-seah/",
             "type": "linkedin"
         },
         "favourite": {
             "icon": "",
-            "name": "Nasi Lemak"
+            "name": "Indo mee"
         }
     },
     {
@@ -141,24 +141,6 @@
         "favourite": {
             "icon": "",
             "name": "Cendol"
-        }
-    },
-    {
-        "id": "edelyn-seah",
-        "name": "Edelyn Seah",
-        "gender": "girl",
-        "description": "Edelyn is a beginner coder at 17. She is young but ready to learn.",
-        "photo": {
-            "normal": "edelyn_seah-normal.jpg",
-            "fun": ""
-        },
-        "profile": {
-            "url": "https://www.linkedin.com/in/edelyn-seah/",
-            "type": "linkedin"
-        },
-        "favourite": {
-            "icon": "",
-            "name": "Indo mee"
         }
     },
     {
