@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
     // { link: '/logo', name: 'Logo' },
     // { link: '/speakers', name: 'Speakers' },
     // { link: '/schedule', name: 'Schedule' },
-    { link: '/form/speaker-training', name: 'Speaking Up!' },
+    // { link: '/form/speaker-training', name: 'Speaking Up!' },
     { link: '/form/call-for-presenters', name: 'Submit CFP' },
     { link: '/team', name: 'Team' },
     { link: '/coc', name: 'Code of Conduct' }
