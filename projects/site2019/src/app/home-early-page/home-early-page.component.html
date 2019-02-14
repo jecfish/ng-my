@@ -187,79 +187,20 @@
     <div class="container">
       <h2 class="section-title">Our sponsors</h2>
     </div>
-    <div class="sponsors-block --ultimate">
+    <div class="sponsors-block --{{ sponsor.level }}" *ngFor="let sponsor of sponsors">
       <div class="container">
-        <h3 class="sponsors-title">Ultimate sponsor</h3>
+        <h3 class="sponsors-title">{{ sponsor.title }}</h3>
       </div>
       <ul class="sponsors-list">
-        <li class="sponsors-item" *ngFor="let u of ultimateList">
-          <a [href]="u.url" target="_blank" rel="noreferer">
-            <img src="{{ '../../assets/imgs/sponsors/ultimate/' + u.image }}" class="sponsors-img" [alt]="u.name" />
+        <li class="sponsors-item" *ngFor="let s of sponsor.list" [class.--background]="hasBackgroundSponsors.includes(s.name)">
+          <a [href]="s.url" target="_blank" rel="noreferer">
+            <img src="{{ '../../assets/imgs/sponsors/'+ sponsor.level +'/' + s.image }}" class="sponsors-img" [alt]="s.name"
+              title="s.name" />
           </a>
-        </li>
-      </ul>
-    </div>
-    <!-- <div class="sponsors-block --gold" *ngIf="goldList">
-      <div class="container">
-        <h3 class="sponsors-title">Gold sponsors</h3>
-      </div>
-      <ul class="sponsors-list">
-        <li class="sponsors-item" *ngFor="let g of goldList">
-          <a [href]="c.url" target="_blank" rel="noreferer">
-            <img src="{{ '../../assets/imgs/sponsors/gold/' + g.image }}" class="sponsors-img" [alt]="g.name" />
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="sponsors-block --silver">
-      <div class="container">
-        <h3 class="sponsors-title">Silver sponsors</h3>
-      </div>
-      <ul class="sponsors-list">
-        <li class="sponsors-item" *ngFor="let s of silverList">
-          <a [href]="c.url" target="_blank" rel="noreferer">
-            <img src="{{ '../../assets/imgs/sponsors/silver/' + s.image }}" class="sponsors-img" [alt]="s.name" />
-          </a>
-        </li>
-      </ul>
-    </div> -->
-    <div class="sponsors-block --misc">
-      <div class="container">
-        <h3 class="sponsors-title">Meal sponsors</h3>
-      </div>
-      <ul class="sponsors-list">
-        <li class="sponsors-item" *ngFor="let m of miscList" [class.--background]="hasBackgroundSponsors.includes(m.name)">
-          <a [href]="m.url" target="_blank" rel="noreferer">
-            <img src="{{ '../../assets/imgs/sponsors/misc/' + m.image }}" class="sponsors-img" [alt]="m.name" />
-          </a>
-          <!-- <div class="sponsors-type" *ngIf="m.type" ngClass="{
-            --meal: m.type === 'meal'
+          <!-- <div class="sponsors-type" *ngIf="s.type" ngClass="{
+            --meal: s.type === 'meal'
           }">{{
             m.type }}</div> -->
-        </li>
-      </ul>
-    </div>
-    <div class="sponsors-block --bronze">
-      <div class="container">
-        <h3 class="sponsors-title">Bronze sponsors</h3>
-      </div>
-      <ul class="sponsors-list">
-        <li class="sponsors-item" *ngFor="let b of bronzeList">
-          <a [href]="b.url" target="_blank" rel="noreferer">
-            <img src="{{ '../../assets/imgs/sponsors/bronze/' + b.image }}" class="sponsors-img" [alt]="b.name" />
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="sponsors-block">
-      <div class="container">
-        <h3 class="sponsors-title">Community partners</h3>
-      </div>
-      <ul class="sponsors-list">
-        <li class="sponsors-item" *ngFor="let c of communityList">
-          <a [href]="c.url" target="_blank" rel="noreferer">
-            <img src="{{ '../../assets/imgs/sponsors/community/' + c.image }}" class="sponsors-img" [alt]="c.name" />
-          </a>
         </li>
       </ul>
     </div>

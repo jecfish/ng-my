@@ -29,12 +29,38 @@ export class HomeEarlyPageComponent implements OnInit {
     shouldShowStats: false
   };
 
-  ultimateList = ultimates;
-  // goldList = golds;
-  // silverList = silvers;
-  miscList = miscs;
-  bronzeList = bronzes;
-  communityList = communities;
+  sponsors = [
+    {
+      level: 'ultimate',
+      title: 'Ultimate sponsor',
+      list: ultimates
+    },
+    // {
+    //   level: 'gold',
+    //   title: 'Ultimate sponsor',
+    //   list: golds
+    // },
+    // {
+    //   level: 'silver',
+    //   title: 'Ultimate sponsor',
+    //   list: silvers
+    // },
+    {
+      level: 'misc',
+      title: 'Misc sponsor',
+      list: miscs
+    },
+    {
+      level: 'bronze',
+      title: 'Bronze sponsor',
+      list: bronzes
+    },
+    {
+      level: 'community',
+      title: 'Community partner',
+      list: communities
+    }
+  ];
 
   notificationMessage = '';
 
