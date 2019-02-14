@@ -159,7 +159,8 @@
               awesome and welcoming event.
             </p>
             <a routerLink="/form/call-for-sponsors" class="btn btn-primary">
-              <span class="btn-inner" (click)="trackEvent('I want to sponsor')">I want to sponsor the first SEA Angular conference</span>
+              <span class="btn-inner" (click)="trackEvent('I want to sponsor')">I want to sponsor the first SEA Angular
+                conference</span>
             </a>
           </article>
         </div>
@@ -172,7 +173,7 @@
             <p>As an appreciation from us, you will be given a <strong>free ticket</strong> to <strong>#ngMY2019</strong>
               for every company that has committed to sponsor us.</p>
             <a routerLink="/form/sponsor-referral" class="btn btn-secondary">
-              <span class="btn-inner"(click)="trackEvent('I want to refer a sponsor')" >I want to refer a sponsor</span>
+              <span class="btn-inner" (click)="trackEvent('I want to refer a sponsor')">I want to refer a sponsor</span>
             </a>
           </article>
         </div>
@@ -224,31 +225,31 @@
     </div> -->
     <div class="sponsors-block --misc">
       <div class="container">
-        <h3 class="sponsors-title">Misc sponsors</h3>
-        <ul class="sponsors-list">
-          <li class="sponsors-item" *ngFor="let m of miscList" [class.--background]="hasBackgroundSponsors.includes(m.name)">
-            <a [href]="m.url" target="_blank" rel="noreferer">
-              <img src="{{ '../../assets/imgs/sponsors/misc/' + m.image }}" class="sponsors-img" [alt]="m.name" />
-            </a>
-            <div class="sponsors-type" *ngIf="m.type" ngClass="{
-              --meal: m.type === 'meal'
-            }">{{
-              m.type }}</div>
-          </li>
-        </ul>
+        <h3 class="sponsors-title">Meal sponsors</h3>
       </div>
+      <ul class="sponsors-list">
+        <li class="sponsors-item" *ngFor="let m of miscList" [class.--background]="hasBackgroundSponsors.includes(m.name)">
+          <a [href]="m.url" target="_blank" rel="noreferer">
+            <img src="{{ '../../assets/imgs/sponsors/misc/' + m.image }}" class="sponsors-img" [alt]="m.name" />
+          </a>
+          <!-- <div class="sponsors-type" *ngIf="m.type" ngClass="{
+            --meal: m.type === 'meal'
+          }">{{
+            m.type }}</div> -->
+        </li>
+      </ul>
     </div>
     <div class="sponsors-block --bronze">
       <div class="container">
         <h3 class="sponsors-title">Bronze sponsors</h3>
-        <ul class="sponsors-list">
-          <li class="sponsors-item" *ngFor="let b of bronzeList">
-            <a [href]="b.url" target="_blank" rel="noreferer">
-              <img src="{{ '../../assets/imgs/sponsors/bronze/' + b.image }}" class="sponsors-img" [alt]="b.name" />
-            </a>
-          </li>
-        </ul>
       </div>
+      <ul class="sponsors-list">
+        <li class="sponsors-item" *ngFor="let b of bronzeList">
+          <a [href]="b.url" target="_blank" rel="noreferer">
+            <img src="{{ '../../assets/imgs/sponsors/bronze/' + b.image }}" class="sponsors-img" [alt]="b.name" />
+          </a>
+        </li>
+      </ul>
     </div>
     <div class="sponsors-block">
       <div class="container">

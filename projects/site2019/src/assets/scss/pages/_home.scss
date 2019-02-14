@@ -423,7 +423,7 @@
 .sponsors {
   &-block {
     &+& {
-      margin-top: $space;
+      margin-top: $space-l;
     }
 
     &.--ultimate {
@@ -485,10 +485,6 @@
           background: $gray-light;
           color: $font-color-root;
         }
-
-        &-list {
-          justify-content: flex-start;
-        }
       }
     }
 
@@ -496,10 +492,6 @@
       .sponsors {
         &-title {
           background: $gray-dark;
-        }
-
-        &-list {
-          justify-content: flex-start;
         }
       }
     }
