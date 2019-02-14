@@ -32,32 +32,32 @@ export class HomeEarlyPageComponent implements OnInit {
   sponsors = [
     {
       level: 'ultimate',
-      title: 'Ultimate sponsor',
+      title: 'Ultimate sponsors',
       list: ultimates
     },
     // {
     //   level: 'gold',
-    //   title: 'Ultimate sponsor',
+    //   title: 'Ultimate sponsors',
     //   list: golds
     // },
     // {
     //   level: 'silver',
-    //   title: 'Ultimate sponsor',
+    //   title: 'Ultimate sponsors',
     //   list: silvers
     // },
     {
       level: 'misc',
-      title: 'Misc sponsor',
+      title: 'Meal sponsors',
       list: miscs
     },
     {
       level: 'bronze',
-      title: 'Bronze sponsor',
+      title: 'Bronze sponsors',
       list: bronzes
     },
     {
       level: 'community',
-      title: 'Community partner',
+      title: 'Community partners',
       list: communities
     }
   ];
