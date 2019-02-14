@@ -429,7 +429,7 @@
     &.--ultimate {
       .sponsors {
         &-title {
-          background: $yellow;
+          background: $yellow-light;
           color: $font-color-root;
           position: relative;
           overflow: hidden;
@@ -447,12 +447,59 @@
           }
         }
 
-        &-list {
-          justify-content: center;
+        &-item {
+          width: 500px;
+        }
+      }
+    }
+
+    &.--gold {
+      .sponsors {
+        &-title {
+          background: $yellow;
+          color: $font-color-root;
         }
 
         &-item {
-          width: 500px;
+          width: 250px;
+        }
+      }
+    }
+
+    &.--silver {
+      .sponsors {
+        &-title {
+          background: $gray-lightest;
+          color: $font-color-root;
+        }
+
+        &-item {
+          width: 150px;
+        }
+      }
+    }
+
+    &.--misc {
+      .sponsors {
+        &-title {
+          background: $gray-light;
+          color: $font-color-root;
+        }
+
+        &-list {
+          justify-content: flex-start;
+        }
+      }
+    }
+
+    &.--bronze {
+      .sponsors {
+        &-title {
+          background: $gray-dark;
+        }
+
+        &-list {
+          justify-content: flex-start;
         }
       }
     }
@@ -475,6 +522,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 120px;
 
     @include mobile {
       flex-wrap: wrap;
@@ -497,5 +545,27 @@
         margin-left: $space;
       }
     }
+
+    &.--background {
+      background: $gray-darkest;
+      padding: $space;
+      border-radius: 50%;
+    }
+  }
+
+  &-type {
+    @include one-height(20px);
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 $space;
+    font-size: $font-size-s;
+    font-weight: bold;
+    background: $red;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    box-shadow: 4px 4px $black;
   }
 }

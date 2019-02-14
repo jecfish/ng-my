@@ -1,7 +1,5 @@
-[
-    {
-      "image": "sunwayuniversity.jpg",
-      "name": "sunway university",
-      "url": "https://university.sunway.edu.my/"
-    }
-  ]
+[{
+  "image": "sunwayuniversity.jpg",
+  "name": "sunway university",
+  "url": "https://university.sunway.edu.my/"
+}]

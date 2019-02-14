@@ -3,6 +3,10 @@ import { PageService } from '../services/page.service';
 
 import communities from '../../assets/data/community-partners.json';
 import ultimates from '../../assets/data/sponsors-ultimate.json';
+// import golds from '../../assets/data/sponsors-gold.json';
+// import silvers from '../../assets/data/sponsors-silver.json';
+import miscs from '../../assets/data/sponsors-misc.json';
+import bronzes from '../../assets/data/sponsors-bronze.json';
 
 declare var google: any;
 
@@ -26,10 +30,17 @@ export class HomeEarlyPageComponent implements OnInit {
   };
 
   ultimateList = ultimates;
-
+  // goldList = golds;
+  // silverList = silvers;
+  miscList = miscs;
+  bronzeList = bronzes;
   communityList = communities;
 
   notificationMessage = '';
+
+  get hasBackgroundSponsors() {
+    return ['scotch'];
+  }
 
   @HostListener('window:scroll', ['$event'])
   doSomething(event) {

@@ -172,7 +172,7 @@
 
         @for $n from 1 through $nav-item-count {
           &:nth-child(#{$n}) {
-            padding-left: $space-s + $space-s * ($nav-item-count - $n);
+            padding-left: $space-s + 13 * ($nav-item-count - $n);
           }
 
           &:nth-child(#{$nav-item-count - $n}) {
@@ -210,7 +210,7 @@
 
             @for $n from 1 through $nav-item-count {
               &:nth-child(#{$n}) {
-                transition-delay: 0.2s + 0.025s * ($n - 1) + 0.01 * ($n - 1);
+                transition-delay: 0.2s + 0.035s * ($n - 1);
               }
             }
           }
