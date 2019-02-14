@@ -1,5 +1,9 @@
 [{
-  "image": "pulsifi.png",
+  "image": "pulsifi.jpg",
   "name": "pulsifi",
   "url": "https://pulsifi.me/"
+},{
+  "image": "nativescript.jpg",
+  "name": "nativescript",
+  "url": "https://www.nativescript.org/"
 }]
