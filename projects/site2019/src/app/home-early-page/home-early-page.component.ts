@@ -64,10 +64,6 @@ export class HomeEarlyPageComponent implements OnInit {
 
   notificationMessage = '';
 
-  get hasBackgroundSponsors() {
-    return ['scotch'];
-  }
-
   @HostListener('window:scroll', ['$event'])
   doSomething(event) {
     if (this.model.shouldShowStats) {

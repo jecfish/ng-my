@@ -192,10 +192,10 @@
         <h3 class="sponsors-title">{{ sponsor.title }}</h3>
       </div>
       <ul class="sponsors-list">
-        <li class="sponsors-item" *ngFor="let s of sponsor.list" [class.--background]="hasBackgroundSponsors.includes(s.name)">
+        <li class="sponsors-item" *ngFor="let s of sponsor.list">
           <a [href]="s.url" target="_blank" rel="noreferer">
             <img src="{{ '../../assets/imgs/sponsors/'+ sponsor.level +'/' + s.image }}" class="sponsors-img" [alt]="s.name"
-              title="s.name" />
+              [title]="s.name" />
           </a>
           <!-- <div class="sponsors-type" *ngIf="s.type" ngClass="{
             --meal: s.type === 'meal'
