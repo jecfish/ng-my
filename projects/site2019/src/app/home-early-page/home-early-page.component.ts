@@ -78,12 +78,16 @@ export class HomeEarlyPageComponent implements OnInit {
     const headerHeight = 60;
     const target = getTop(elModel[location]) + window.scrollY - headerHeight;
 
-    gtag('event', location, {
-      event_category: 'hero',
-      event_label: location,
-      value: location
-    });
+    this.trackEvent(location);
 
     this.pageSvc.scrollWindowTo(target, 1000);
+  }
+
+  trackEvent(event: string) {
+    gtag('event', event, {
+      event_category: event,
+      event_label: event,
+      value: event
+    });
   }
 }

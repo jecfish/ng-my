@@ -2,7 +2,7 @@
   <div class="header-bar">
     <div class="container header-container">
       <a routerLink="/" class="header-logo">
-        <img src="../../../assets/imgs/logo.svg" alt="" class="header-logo-img">
+        <img src="../../../assets/imgs/logo.svg" alt="NG-MY logo" class="header-logo-img">
         NG-MY
       </a>
       <button class="header-nav-toggle" (click)="toggleMobileNav()">
@@ -13,12 +13,13 @@
       <nav class="header-nav">
         <ul class="header-nav-list">
           <li class="header-nav-item" *ngFor="let n of navList">
-            <a [routerLink]="n.link" class="header-nav-link">{{ n.name }}</a>
+            <a [routerLink]="n.link" class="header-nav-link" (click)="trackEvent(n.name)">{{ n.name }}</a>
           </li>
         </ul>
         <ul class="header-social">
           <li class="header-social-item" *ngFor="let s of socialMediaList">
-            <a target="_blank" rel="noreferer" [href]="s.url" class="header-social-link">
+            <a target="_blank" rel="noreferer" [href]="s.url" class="header-social-link"
+            (click)="trackEvent(s.icon)">
               <i class="fab fa-{{ s.icon }}"></i>
             </a>
           </li>
