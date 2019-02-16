@@ -448,7 +448,7 @@
         }
 
         &-item {
-          width: 500px;
+          width: 400px;
         }
       }
     }
@@ -474,7 +474,7 @@
         }
 
         &-item {
-          width: 150px;
+          width: 200px;
         }
       }
     }
@@ -485,6 +485,10 @@
           background: $gray-light;
           color: $font-color-root;
         }
+
+        &-item {
+          width: 180px;
+        }
       }
     }
 
@@ -492,6 +496,10 @@
       .sponsors {
         &-title {
           background: $gray-dark;
+        }
+
+        &-item {
+          width: 120px;
         }
       }
     }
@@ -522,7 +530,7 @@
   }
 
   &-item {
-    width: 120px;
+    width: 100px;
     position: relative;
 
     &+& {
