@@ -41,6 +41,8 @@ export class PageService {
       this.meta.updateTag({ property: 'og:image', content: config.metaImg });
     }
 
+    document.dispatchEvent(new Event('prerender-ready'));
+
     if (!environment.production || !window['gtag']) return;
 
     gtag('config', this.trackingID, {
