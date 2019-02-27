@@ -27,8 +27,7 @@ export class PostPageComponent implements OnInit {
 
       const result = await this.http
         .get<any>(`/assets/posts/${x.name}.txt`, { responseType: 'text' as any }).toPromise();
-      
-        console.log(result);
+
       this.selectedPost = {
         title: post.title,
         desc: post.desc,
