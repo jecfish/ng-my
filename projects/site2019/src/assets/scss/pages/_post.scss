@@ -1,0 +1,12 @@
+.post-page {
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+
+        @include mobile {
+            width: 90%;
+        }
+    }
+}
