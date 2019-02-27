@@ -10,6 +10,7 @@ import { SchedulePageComponent } from './schedule-page/schedule-page.component';
 import { LogoPageComponent } from './logo-page/logo-page.component';
 import { TeamPageComponent } from './team-page/team-page.component';
 import { FormPageComponent } from './form-page/form-page.component';
+import { PostPageComponent } from './post-page/post-page.component';
 
 // stage: 0, 1, 2
 const HOMEPAGE_LIST = [PlaceholderPageComponent, HomeEarlyPageComponent, HomePageComponent];
@@ -51,6 +52,10 @@ const routes: Routes = [
   {
     path: 'schedule',
     component: SchedulePageComponent
+  },
+  {
+    path: 'post/:name',
+    component: PostPageComponent
   },
   {
     path: '',

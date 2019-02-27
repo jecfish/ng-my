@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { SchedulePageComponent } from './schedule-page/schedule-page.component';
 import { HomeEarlyPageComponent } from './home-early-page/home-early-page.component';
 import { FormPageComponent } from './form-page/form-page.component';
 import { NotificationComponent } from './notification/notification.component';
+import { PostPageComponent } from './post-page/post-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,9 +31,10 @@ import { NotificationComponent } from './notification/notification.component';
     SchedulePageComponent,
     HomeEarlyPageComponent,
     FormPageComponent,
-    NotificationComponent
+    NotificationComponent,
+    PostPageComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent]
 })
