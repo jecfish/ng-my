@@ -25,11 +25,13 @@ export class PostPageComponent implements OnInit {
         metaDesc: post.desc,
       });
 
-      const result = await this.http.get<any>(`/assets/posts/${x.name}.json`).toPromise();
+      const result = await this.http
+        .get<any>(`/assets/posts/${x.name}.txt`, { responseType: 'text' as any }).toPromise();
+
       this.selectedPost = {
         title: post.title,
         desc: post.desc,
-        content: marked.parse(result.data) as any
+        content: marked.parse(result) as any
       };
     });
   }
