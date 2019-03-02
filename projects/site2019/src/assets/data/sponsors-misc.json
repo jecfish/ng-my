@@ -3,4 +3,10 @@
   "name": "scotch",
   "url": "https://scotch.io/",
   "type": "meal"
+},
+{
+  "image": "nrwl.jpg",
+  "name": "nrwl",
+  "url": "https://nrwl.io/",
+  "type": "meal"
 }]
