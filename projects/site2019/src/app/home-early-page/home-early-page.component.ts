@@ -3,8 +3,8 @@ import { PageService } from '../services/page.service';
 
 import communities from '../../assets/data/community-partners.json';
 import ultimates from '../../assets/data/sponsors-ultimate.json';
-// import golds from '../../assets/data/sponsors-gold.json';
-// import silvers from '../../assets/data/sponsors-silver.json';
+import golds from '../../assets/data/sponsors-gold.json';
+import silvers from '../../assets/data/sponsors-silver.json';
 import miscs from '../../assets/data/sponsors-misc.json';
 import bronzes from '../../assets/data/sponsors-bronze.json';
 
@@ -35,16 +35,16 @@ export class HomeEarlyPageComponent implements OnInit {
       title: 'Ultimate sponsors',
       list: ultimates
     },
-    // {
-    //   level: 'gold',
-    //   title: 'Ultimate sponsors',
-    //   list: golds
-    // },
-    // {
-    //   level: 'silver',
-    //   title: 'Ultimate sponsors',
-    //   list: silvers
-    // },
+    {
+      level: 'gold',
+      title: 'Gold sponsors',
+      list: golds
+    },
+    {
+      level: 'silver',
+      title: 'Silver sponsors',
+      list: silvers
+    },
     {
       level: 'misc',
       title: 'Meal sponsors',

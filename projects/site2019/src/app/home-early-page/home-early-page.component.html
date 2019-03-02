@@ -33,7 +33,8 @@
               <span class="text-highlight">March 5th, 12pm (UTC+8)</span>
             </p>
             <div class="hero-btns">
-              <a class="btn btn-primary" href="https://calendar.google.com/calendar/r/eventedit?dates=20190305T040000Z/20190305T040000Z&text=NG-MY+OnInit+Ticket+Sales&location=https://ng-my.org&details=NG-MY+OnInit+Ticket+Sales&sf=true"
+              <a class="btn btn-primary"
+                href="https://calendar.google.com/calendar/r/eventedit?dates=20190305T040000Z/20190305T040000Z&text=NG-MY+OnInit+Ticket+Sales&location=https://ng-my.org&details=NG-MY+OnInit+Ticket+Sales&sf=true"
                 target="_blank" rel="noreferer">
                 <span class="btn-inner">Save the date, be an early bird!</span>
               </a>
@@ -74,7 +75,8 @@
       <!-- <div class="stats-map-bg">
         <img src="../../assets/imgs/sunway-campus.jpg" alt="" />
       </div> -->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.103821654366!2d101.60140624938633!3d3.0669167544992697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c8f5912644b%3A0x77612fa0225cad69!2sSunway+University!5e0!3m2!1sen!2smy!4v1549557724218"
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.103821654366!2d101.60140624938633!3d3.0669167544992697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c8f5912644b%3A0x77612fa0225cad69!2sSunway+University!5e0!3m2!1sen!2smy!4v1549557724218"
         width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </section>
@@ -86,7 +88,8 @@
         <label for="mce-EMAIL" class="mailing-label">SUBSCRIBE &amp; STAY UP TO DATE TO WIN A FREE TICKET</label>
         <div id="mc_embed_signup_scroll" class="mailing">
           <div class="input-group">
-            <input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL" placeholder="Enter Your Email" />
+            <input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL"
+              placeholder="Enter Your Email" />
             <div class="input-group-append">
               <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-secondary">
                 <span class="btn-inner">Get updates</span>
@@ -170,7 +173,8 @@
               Alone, we can do so little; Refer companies to us so that we can reach out to them to sponsor
               <strong>#ngMY2019</strong>.
             </p>
-            <p>As an appreciation from us, you will be given a <strong>free ticket</strong> to <strong>#ngMY2019</strong>
+            <p>As an appreciation from us, you will be given a <strong>free ticket</strong> to
+              <strong>#ngMY2019</strong>
               for every company that has committed to sponsor us.</p>
             <a routerLink="/form/sponsor-referral" class="btn btn-secondary">
               <span class="btn-inner" (click)="trackEvent('I want to refer a sponsor')">I want to refer a sponsor</span>
@@ -187,22 +191,26 @@
     <div class="container">
       <h2 class="section-title">Our sponsors</h2>
     </div>
-    <div class="sponsors-block --{{ sponsor.level }}" *ngFor="let sponsor of sponsors">
-      <div class="container">
-        <h3 class="sponsors-title">{{ sponsor.title }}</h3>
-      </div>
-      <ul class="sponsors-list">
-        <li class="sponsors-item" *ngFor="let s of sponsor.list">
-          <a [href]="s.url" target="_blank" rel="noreferer">
-            <img src="{{ '../../assets/imgs/sponsors/'+ sponsor.level +'/' + s.image }}" class="sponsors-img" [alt]="s.name"
-              [title]="s.name" />
-          </a>
-          <!-- <div class="sponsors-type" *ngIf="s.type" ngClass="{
+    <div *ngFor="let sponsor of sponsors">
+
+      <div class="sponsors-block --{{ sponsor.level }}" *ngIf="sponsor.list.length">
+        <div class="container">
+          <h3 class="sponsors-title">{{ sponsor.title }}</h3>
+        </div>
+        <ul class="sponsors-list">
+          <li class="sponsors-item" *ngFor="let s of sponsor.list">
+            <a [href]="s.url" target="_blank" rel="noreferer">
+              <img src="{{ '../../assets/imgs/sponsors/'+ sponsor.level +'/' + s.image }}" class="sponsors-img"
+                [alt]="s.name" [title]="s.name" />
+            </a>
+            <!-- <div class="sponsors-type" *ngIf="s.type" ngClass="{
             --meal: s.type === 'meal'
           }">{{
             m.type }}</div> -->
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
+
     </div>
   </section>
 </main>
