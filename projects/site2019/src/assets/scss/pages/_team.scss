@@ -220,11 +220,14 @@
   &-description {
     flex: 1;
     padding: $space;
+    max-height: calc(100% - 50px);
+    overflow: auto;
 
     &-container {
       display: flex;
       flex-direction: column;
       flex: 1;
+      max-height: 100%;
     }
   }
 
@@ -241,11 +244,6 @@
     &-info,
     &-description {
       padding: $space-s 0;
-    }
-
-    &-description {
-      max-height: calc(100% - 50px);
-      overflow: auto;
     }
 
     &-title {
