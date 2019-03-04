@@ -56,7 +56,8 @@ export class SpeakersPageComponent implements OnInit {
     this.pageSvc.setPage({
       title,
       metaDesc: 'Featured Speakers NG-MY 2019.',
-      metaImg: id ? environment.baseUrl + '/assets/imgs/speakers/' + this.selectedMember.id + '.jpg' : '',
+      metaImg: id ? environment.baseUrl + '/assets/imgs/speakers/' + this.selectedMember.id + '.jpg' :
+        environment.baseUrl + '/ assets/imgs/speakers/_featured-speakers.jpg',
       skipTitlePostfix: true
     });
   }
