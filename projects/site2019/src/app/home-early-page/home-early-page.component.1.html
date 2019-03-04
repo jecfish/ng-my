@@ -26,19 +26,27 @@
                 <i class="fas fa-map-marker-alt icon-left text-primary"></i><a href="https://goo.gl/maps/aWtc7L7J3yN2" target="_blank" rel="noreferer" style="color: initial">Sunway University</a>
               </li>
             </ul>
-            <p class="hero-misc-sale">
+            <!-- <p class="hero-misc-sale">
               <span>Tickets will be on sale at</span>
               <span class="text-highlight">March 5th, 12pm (UTC+8)</span>
-            </p>
+            </p> -->
             <div class="hero-btns">
-              <a class="btn btn-primary"
+              <!-- <a class="btn btn-primary"
                 href="https://calendar.google.com/calendar/r/eventedit?dates=20190305T040000Z/20190305T040000Z&text=NG-MY+OnInit+Ticket+Sales&location=https://ng-my.org&details=NG-MY+OnInit+Ticket+Sales&sf=true"
                 target="_blank" rel="noreferer">
                 <span class="btn-inner">Save the date, be an early bird!</span>
+              </a> -->
+              <a class="btn btn-primary"
+                href="https://ti.to/ng-my/ng-my-2019"
+                target="_blank" rel="noreferer">
+                <span class="btn-inner">Buy tickets now</span>
               </a>
-              <a class="btn btn-secondary" routerLink="/speakers">
+              <!-- <a class="btn btn-secondary" routerLink="/speakers">
                 <span class="btn-inner">View all featured speakers</span>
-              </a>
+              </a> -->
+              <button class="btn btn-secondary" (click)="scrollTo('subscribe')">
+                <span class="btn-inner">Subscribe &amp; stay up to date</span>
+              </button>
             </div>
           </div>
         </article>
