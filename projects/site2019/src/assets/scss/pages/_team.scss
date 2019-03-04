@@ -213,6 +213,11 @@
     padding: $space;
   }
 
+  &-title {
+    padding: 0 $space;
+    font-weight: bold;
+  }
+
   @include mobile {
     &-section {
       padding: $space 0;
@@ -224,8 +229,12 @@
     }
 
     &-description {
-      max-height: calc(100% - 250px);
+      max-height: calc(100% - 100px);
       overflow: auto;
+    }
+
+    &-title {
+      text-align: center;
     }
 
     &-pic {
@@ -268,8 +277,9 @@
   box-shadow: 8px 8px $black;
   cursor: pointer;
   transition: background 0.1s ease;
+  height: 100%;;
 
-  &.--boy {
+  &.--red, &.--boy {
     background: $red;
 
     &:hover {
@@ -277,7 +287,7 @@
     }
   }
 
-  &.--girl {
+  &.--blue, &.--girl {
     background: $blue;
 
     &:hover {
@@ -312,5 +322,11 @@
     text-align: center;
     margin-bottom: $space-s;
     font-weight: bold;
+  }
+
+  &-desc {
+    text-align: center;
+    padding: 0 10px;
+    font-size: 0.9rem;
   }
 }

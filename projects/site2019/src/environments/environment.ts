@@ -10,7 +10,8 @@ export const environment = {
     // home page stage
     // 0 = placeholder
     // 1 = no mamak
-    // 2 = mamak
+    // 2 = with speakers, no mamak
+    // 3 = mamak
     homePageStage: 1
   }
 };

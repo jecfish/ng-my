@@ -12,7 +12,7 @@ declare var google: any;
 
 @Component({
   selector: 'my-home-early-page',
-  templateUrl: './home-early-page.component.html',
+  templateUrl: './home-early-page.component.1.html',
   styleUrls: ['./home-early-page.component.css']
 })
 export class HomeEarlyPageComponent implements OnInit {
