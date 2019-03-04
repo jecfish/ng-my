@@ -154,7 +154,7 @@
         "name": "Tomas Trajan",
         "title": "Software Architect @ Schaltstelle, GDE",
         "color": "red",
-        "description": "<p>Tomas Trajan (@tomastrajan) - I am Google Developer Expert for Angular, writing and speaking mostly about Angular, RxJS and many exciting frontend technologies.</p><p>I love sharing know-how and working on open source with most popular project being Angular NgRx Material Starter (1200+ Stars on GitHub), Release Butler - a Twitter bot that tweets change logs of popular frameworks and libraries and Medium Enhanced Stats a Chrome extension which enhances Medium stats screen</p>",
+        "description": "<p>Tomas Trajan (@tomastrajan) - I am Google Developer Expert for Angular, writing and speaking mostly about Angular, RxJS and many exciting frontend technologies.</p><p>I love sharing know-how and working on open source with most popular project being Angular NgRx Material Starter (1200+ Stars on GitHub), Release Butler - a Twitter bot that tweets change logs of popular frameworks and libraries and Medium Enhanced Stats a Chrome extension which enhances Medium stats screen.</p><p>Professionally I am currently living and working in the lovely Switzerland and company Die Mobiliar as a Frontend Architect where we are trying to help improve more than 40 Angular SPAs and a whole universe of libraries by introducing best practices, maintainable architecture, coaching other developers, and building tool to help us achieve this goals.</p><p>Stay tuned for an upcoming release of a Code Butler - a node CLI tool to automate code transformations to multiple projects in enterprise environment.</p>",
         "profile": {
             "url": "https://twitter.com/tomastrajan",
             "type": "twitter"
