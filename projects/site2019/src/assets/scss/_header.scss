@@ -243,7 +243,7 @@
   }
 
   &-social {
-    display: flex;
+    display: none;
     padding: 0 $space-s;
 
 
@@ -263,6 +263,7 @@
     }
 
     @include tablet {
+      display: flex;
       position: absolute;
       bottom: $space-s;
       right: $space;
