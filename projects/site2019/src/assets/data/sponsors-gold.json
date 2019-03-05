@@ -3,5 +3,10 @@
         "image": "firebase.jpg",
         "name": "firebase",
         "url": "https://firebase.google.com/"
+    },
+    {
+        "image": "apigate.jpg",
+        "name": "apigate",
+        "url": "https://www.apigate.com"
     }
 ]
