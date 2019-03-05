@@ -14,5 +14,9 @@
      "email-sponsorship-temp-employee": {
         "title": "Justify your trip",
         "desc": "Request for sponsorship to attend NG-MY 2019 in KL"
+    },
+       "email-sponsorship-temp-ng-my": {
+        "title": "Justify your trip (from ng-my)",
+        "desc": "Request for sponsorship to attend NG-MY 2019 in KL (from ng-my)"
     }
 }
