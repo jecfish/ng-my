@@ -8,26 +8,17 @@ import silvers from '../../assets/data/sponsors-silver.json';
 import miscs from '../../assets/data/sponsors-misc.json';
 import bronzes from '../../assets/data/sponsors-bronze.json';
 
-declare var google: any;
-
 @Component({
-  selector: 'my-home-early-page',
-  templateUrl: './home-early-page.component.1.html',
-  styleUrls: ['./home-early-page.component.scss']
+  selector: 'my-home-ticket-page',
+  templateUrl: './home-ticket-page.component.html',
+  styleUrls: ['./home-ticket-page.component.scss']
 })
-export class HomeEarlyPageComponent implements OnInit {
-  @ViewChild('map') mapElement: any;
-  map: any;
-
+export class HomeTicketPageComponent implements OnInit {
   @ViewChild('stats') statsElement: any;
   stats: any;
 
   @ViewChild('subscribe') subscribeElement: any;
   subscribe: any;
-
-  model = {
-    shouldShowStats: false
-  };
 
   sponsors = [
     {
@@ -61,23 +52,6 @@ export class HomeEarlyPageComponent implements OnInit {
       list: communities
     }
   ];
-
-  notificationMessage = '';
-
-  @HostListener('window:scroll', ['$event'])
-  doSomething(event) {
-    if (this.model.shouldShowStats) {
-      return;
-    }
-
-    const { top } = this.statsElement.nativeElement.getBoundingClientRect();
-    const { innerHeight } = window;
-    const trigger = top - innerHeight / 2;
-
-    if (trigger <= 0) {
-      this.model.shouldShowStats = true;
-    }
-  }
 
   constructor(private pageSvc: PageService) {}
 

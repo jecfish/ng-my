@@ -1,3 +1,6 @@
+@import 'variables';
+@import 'mixins';
+
 .header {
   padding-top: $header-h;
 
@@ -63,7 +66,7 @@
       display: block;
       text-transform: uppercase;
       font-size: $font-size-s;
-      font-weight: $bold-m;
+      font-weight: bold;
       letter-spacing: 1px;
       transition: color 0.2s ease;
 

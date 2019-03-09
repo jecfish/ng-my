@@ -17,6 +17,7 @@ import { HomeEarlyPageComponent } from './home-early-page/home-early-page.compon
 import { FormPageComponent } from './form-page/form-page.component';
 import { NotificationComponent } from './notification/notification.component';
 import { PostPageComponent } from './post-page/post-page.component';
+import { HomeTicketPageComponent } from './home-ticket-page/home-ticket-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +34,7 @@ import { PostPageComponent } from './post-page/post-page.component';
     FormPageComponent,
     NotificationComponent,
     PostPageComponent,
+    HomeTicketPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

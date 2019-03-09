@@ -1,3 +1,6 @@
+@import 'early/variables';
+@import 'mixins';
+
 .hero {
   &-section {
     min-height: calc(100vh - #{$header-h});
@@ -420,152 +423,10 @@
   }
 }
 
-.sponsors {
-  &-block {
-    &+& {
-      margin-top: $space-l;
-    }
-
-    &.--ultimate {
-      .sponsors {
-        &-title {
-          background: $yellow-light;
-          color: $font-color-root;
-          position: relative;
-          overflow: hidden;
-
-          &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -10px;
-            width: calc(100% + 20px);
-            height: 100%;
-            pointer-events: none;
-            background: transparentize($white, 0.7);
-            animation: shine 2s cubic-bezier(0.42, 0, 0, 0.64) infinite;
-          }
-        }
-
-        &-item {
-          width: 400px;
-        }
-      }
-    }
-
-    &.--gold {
-      .sponsors {
-        &-title {
-          background: $yellow;
-          color: $font-color-root;
-        }
-
-        &-item {
-          width: 250px;
-        }
-      }
-    }
-
-    &.--silver {
-      .sponsors {
-        &-title {
-          background: $gray-lightest;
-          color: $font-color-root;
-        }
-
-        &-item {
-          width: 200px;
-        }
-      }
-    }
-
-    &.--misc {
-      .sponsors {
-        &-title {
-          background: $gray-light;
-          color: $font-color-root;
-        }
-
-        &-item {
-          width: 180px;
-        }
-      }
-    }
-
-    &.--bronze {
-      .sponsors {
-        &-title {
-          background: $gray-dark;
-        }
-
-        &-item {
-          width: 120px;
-        }
-      }
-    }
-  }
-
-  &-title {
-    @include one-height(34px, 4px);
-
-    display: inline-block;
-    font-weight: bold;
-    padding: 0 $space-s;
-    background: $gray-darkest;
-    color: $white;
-    margin-bottom: $space;
-    border: 2px solid $black;
-    box-shadow: 4px 4px $black;
-  }
-
-  &-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 120px;
-
-    @include mobile {
-      flex-wrap: wrap;
-    }
-  }
-
-  &-item {
-    width: 100px;
-    position: relative;
-
-    &+& {
-      margin-left: $space-l;
-    }
-
-    @include mobile {
-      width: 100px;
-      margin: $space;
-
-      &+& {
-        margin-left: $space;
-      }
-    }
-
-    // &.--background {
-    //   background: $gray-darkest;
-    //   padding: $space;
-    //   border-radius: 50%;
-    // }
-  }
-
-  &-type {
-    @include one-height(20px);
-
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 0 $space;
-    font-size: $font-size-s;
-    font-weight: bold;
-    background: $red;
-    color: $white;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-    box-shadow: 4px 4px $black;
-  }
+.stats-map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
 }

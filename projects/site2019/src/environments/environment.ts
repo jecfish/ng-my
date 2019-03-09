@@ -12,7 +12,7 @@ export const environment = {
     // 1 = no mamak
     // 2 = with speakers, no mamak
     // 3 = mamak
-    homePageStage: 1
+    homePageStage: 3
   }
 };
 
