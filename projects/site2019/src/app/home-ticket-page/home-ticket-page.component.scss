@@ -38,6 +38,7 @@
   &-content {
     margin: auto 0;
     width: 100%;
+    padding-bottom: $space;
   }
 
   &-logo {
@@ -181,28 +182,21 @@
   }
 
   &-deco {
-    position: relative;
-    height: 200px;
     overflow: hidden;
-    z-index: 1;
-    padding-top: 24vw;
-    margin-top: -12vw;
+    padding-top: 32vw;
+    margin-top: -16vw;
+    pointer-events: none;
 
     &-teh {
       position: absolute;
       right: 0;
       top: 0;
-      height: 24vw;
+      height: 32vw;
       z-index: 1;
     }
 
     &:before {
-      content: '';
-      position: absolute;
-      top: 12vw;
-      width: 100%;
-      height: 100%;
-      z-index: 2;
+      top: 16vw;
       transform-origin: top left;
       transform: skewY(5deg);
       background: $white;
@@ -216,6 +210,11 @@
   font-family: $font-family-sans;
   font-weight: bold;
   margin-bottom: $space-l;
+
+  @include mobile {
+    font-size: $font-size-xl;
+    margin-bottom: $space;
+  }
 }
 
 .main {
@@ -235,6 +234,11 @@
 }
 
 .stats {
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
   &-list {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
@@ -273,6 +277,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: $space 0;
+
+    @include mobile {
+      margin-top: $space;
+    }
   }
 
   &-number {
@@ -285,6 +294,7 @@
 }
 
 .mailing {
+  margin-top: $space-l;
 
   &-section {
     background: $gray-lightest;
@@ -301,18 +311,10 @@
   }
 
   &-deco {
-    position: relative;
-    height: 200px;
-
     &:before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
       background: $gray-lightest;
       top: 0;
       left: 0;
-      z-index: 1;
     }
 
     &-up:before {
@@ -335,10 +337,25 @@
 
   &-section {
     background: $yellow;
-    padding: $space 0;
+    padding: $space 0 $space-xxl;
 
     .home-section-title {
       text-align: center;
+      position: relative;
+
+      &:before {
+        content: '';
+        height: 20px;
+        width: 300px;
+        position: absolute;
+        top: 100%;
+        left: calc(50% - 150px);
+        background: url('/assets/imgs/home/white-pattern.svg') left/contain repeat-x;
+      }
+    }
+
+    @include mobile {
+      padding-bottom: $space-l;
     }
   }
 
@@ -347,7 +364,9 @@
     margin-top: $space-l;
   }
 
-  &-carousel {}
+  &-carousel {
+    padding-bottom: $space-s;
+  }
 
   &-card {
     display: flex;
@@ -357,6 +376,7 @@
 
     @include mobile {
       flex-direction: column;
+      padding: $space;
     }
   }
 
@@ -364,11 +384,25 @@
     flex: 0 0 200px;
     width: 200px;
     text-align: center;
+    margin: auto;
 
     &-img {
       border-radius: 50%;
       width: 90%;
       margin: $space auto;
+      border: 4px solid $black;
+    }
+
+    &-pic {
+      position: relative;
+    }
+
+    &-food {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100px;
+      z-index: 1;
     }
   }
 
@@ -416,23 +450,18 @@
     flex-direction: column;
     justify-content: center;
     padding: $space;
+
+    @include mobile {
+      text-align: center;
+    }
   }
 
   &-deco {
-    height: 200px;
-    position: relative;
-    z-index: 1;
-
     &:before {
-      content: '';
-      position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
       background: $yellow;
       box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
-      z-index: 1;
       transform-origin: bottom right;
       transform: skewY(5deg);
     }
@@ -442,7 +471,11 @@
       position: absolute;
       top: 0;
       left: -12vw;
-      height: 24vw;
+      height: 32vw;
+
+      @include mobile {
+        top: 50px;
+      }
     }
   }
 }
@@ -450,7 +483,6 @@
 .carousel {
   position: relative;
   overflow: hidden;
-  padding: $space-s 0;
 
   &-inner {
     min-width: 100%;
@@ -461,6 +493,7 @@
   }
 
   &-item {
+    flex-shrink: 0;
     width: 100%;
     display: flex;
   }
@@ -499,6 +532,14 @@
       pointer-events: auto;
       cursor: pointer;
     }
+
+    @include mobile {
+      top: 20%;
+
+      &-list {
+        padding: 0 5vw;
+      }
+    }
   }
 
   &-dots {
@@ -522,6 +563,7 @@
     &.--active {
       background: $white;
       box-shadow: 2px 2px $black;
+      transform: scale(1.2);
     }
   }
 }
@@ -529,29 +571,53 @@
 
 .sponsors {
   &-section {
+    margin-top: $space-l;
+
     .home-section-title {
       text-align: center;
     }
   }
 
   &-block {
-    position: relative;
 
     &+& {
       margin-top: $space-l;
     }
 
+    .container {
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: -100px;
+        left: -50px;
+
+        background: {
+          position: center;
+          size: contain;
+          repeat: no-repeat;
+        }
+
+        @include mobile {
+          width: 120px;
+          height: 120px;
+          top: -60px;
+          left: -30px;
+        }
+      }
+    }
+
     &.--ultimate {
 
-      // &:before {
-      //   content: '';
-      //   position: absolute;
-      //   width: 20vw;
-      //   height: 20vw;
-      //   top: 0;
-      //   left: 0;
-      //   background: url('/assets/imgs/home/Sponsor_Gold.png') center/contain no-repeat;
-      // }
+      .container {
+        &:before {
+          background-image: url('/assets/imgs/home/sponsor-ultimate.png');
+          transform: rotate(-10deg);
+        }
+      }
 
       .sponsors {
 
@@ -580,6 +646,14 @@
     }
 
     &.--gold {
+
+      .container {
+        &:before {
+          background-image: url('/assets/imgs/home/sponsor-gold.png');
+          transform: rotate(10deg) scale(0.9);
+        }
+      }
+
       .sponsors {
         &-title {
           background: $yellow;
@@ -593,6 +667,14 @@
     }
 
     &.--silver {
+
+      .container {
+        &:before {
+          background-image: url('/assets/imgs/home/sponsor-silver.png');
+          transform: rotate(-15deg) scale(0.8);
+        }
+      }
+
       .sponsors {
         &-title {
           background: $gray-lightest;
@@ -673,6 +755,56 @@
       &+& {
         margin-left: $space;
       }
+    }
+  }
+}
+
+.food {
+  &-roti-canai {
+    position: absolute;
+    width: 24vw;
+    left: -8vw;
+    top: -8vw;
+
+    @include mobile {
+      width: 32vw;
+    }
+  }
+
+  &-nasi-lemak {
+    position: absolute;
+    width: 24vw;
+    left: -8vw;
+    top: -8vw;
+
+    @include mobile {
+      width: 32vw;
+      top: -24vw;
+    }
+  }
+
+  &-teh-ais-limau {
+    position: absolute;
+    width: 24vw;
+    right: 0;
+    bottom: -24vw;
+
+    @include mobile {
+      width: 32vw;
+      bottom: -16vw;
+    }
+  }
+
+  &-teh-tarik {
+    position: absolute;
+    width: 18vw;
+    left: 4vw;
+    top: -8vw;
+    transform: rotate(-5deg);
+
+    @include mobile {
+      width: 26vw;
+      top: -20vw;
     }
   }
 }

@@ -46,11 +46,12 @@
   </div>
   <button class="hero-scroll" (click)="scrollTo('stats')"></button>
 </section>
-<div class="hero-deco">
+<div class="hero-deco slant">
   <img class="hero-deco-teh" src="../../assets/imgs/home/teh-tarik-top.png" alt="">
 </div>
 <main class="main">
   <section class="stats" #stats>
+    <img src="../../assets/imgs/home/roti-canai.png" class="food-roti-canai" alt="">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -91,8 +92,11 @@
       </div>
     </div>
   </section>
-  <div class="mailing-deco mailing-deco-up"></div>
+  <div class="mailing-deco mailing-deco-up slant"></div>
   <section id="mc_embed_signup" class="mailing-section" #subscribe>
+    <img src="../../assets/imgs/home/nasilemak.png" class="food-nasi-lemak" alt="">
+    <img src="../../assets/imgs/home/tehaislimau.png" class="food-teh-ais-limau" alt="">
+    <img src="../../assets/imgs/home/tehtarik.png" class="food-teh-tarik" alt="">
     <div class="container">
       <form action="https://ng-my.us20.list-manage.com/subscribe/post?u=18c8aa300b78c9a24177d5215&amp;id=eccdbe44f7"
         method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
@@ -119,59 +123,36 @@
       </form>
     </div>
   </section>
-  <div class="mailing-deco mailing-deco-down"></div>
+  <div class="mailing-deco mailing-deco-down slant"></div>
   <section class="speakers-section">
     <h2 class="home-section-title">
-      Our <span class="text-primary text-shadow">Featured</span> Speakers
+      Our <span class="text-primary text-shadow">Featured</span> Speaker
     </h2>
     <div class="carousel speakers-carousel">
-      <ul class="carousel-inner" #carousel>
+      <ul class="carousel-inner">
         <li class="carousel-item">
           <div class="speakers-card">
             <div class="speakers-profile">
-              <img class="speakers-profile-img" src="../../assets/imgs/speakers/mike-ryan.jpg" alt="">
-              <p class="speakers-name">Mike Ryan</p>
+              <div class="speakers-profile-pic">
+                <img class="speakers-profile-img" src="../../assets/imgs/speakers/{{ speaker.id }}.jpg" alt="">
+                <div class="speakers-profile-food">
+                  <img src="../../assets/imgs/speaker-food/curry-pup.png" alt="">
+                </div>
+              </div>
+              <p class="speakers-name">{{ speaker.name }}</p>
               <ul class="speakers-links">
                 <li class="speakers-links-item">
-                  <a href="" class="speakers-links-url">
-                    <i class="fab fa-twitter"></i></a>
-                </li>
-                <li class="speakers-links-item">
-                  <a href="" class="speakers-links-url">
-                    <i class="fab fa-linkedin"></i></a>
+                  <a [href]="speaker.profile?.url" class="speakers-links-url">
+                    <i class="fab fa-{{ speaker.profile?.type }}"></i></a>
                 </li>
               </ul>
             </div>
             <div class="speakers-description">
-              <div class="speakers-title">GDE, Builder of NgRx, Staff Software Engineer @ Synapse</div>
-              <article class="article-section">
-                <p>Mike is a software engineer at Synapse building user interfaces for industrial Internet of Things
-                  applications. </p>
-                <p>He is a Google Developer Expert and a core team member of NgRx, an open source organization building
-                  high quality reactive libraries for Angular.<p>
-              </article>
+              <div class="speakers-title">{{ speaker.title }}</div>
+              <article class="article-section" [innerHTML]="speaker?.description"></article>
             </div>
           </div>
         </li>
-      </ul>
-      <nav class="carousel-nav">
-        <ul class="carousel-nav-list">
-          <li class="carousel-nav-item">
-            <button class="carousel-nav-btn">
-              <i class="fas fa-angle-left"></i>
-            </button>
-          </li>
-          <li class="carousel-nav-item">
-            <button class="carousel-nav-btn">
-              <i class="fas fa-angle-right"></i>
-            </button>
-          </li>
-        </ul>
-      </nav>
-      <ul class="carousel-dots">
-        <li class="carousel-dot --active"></li>
-        <li class="carousel-dot"></li>
-        <li class="carousel-dot"></li>
       </ul>
     </div>
     <div class="speakers-more">
@@ -182,7 +163,7 @@
       </a>
     </div>
   </section>
-  <div class="speakers-deco">
+  <div class="speakers-deco slant">
     <img src="../../assets/imgs/home/teh-tarik-bottom.png" alt="" class="speakers-deco-img">
   </div>
   <section class="sponsors-section">

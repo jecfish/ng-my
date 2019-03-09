@@ -34,7 +34,7 @@ import { HomeTicketPageComponent } from './home-ticket-page/home-ticket-page.com
     FormPageComponent,
     NotificationComponent,
     PostPageComponent,
-    HomeTicketPageComponent,
+    HomeTicketPageComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

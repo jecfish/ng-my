@@ -8,6 +8,8 @@ import silvers from '../../assets/data/sponsors-silver.json';
 import miscs from '../../assets/data/sponsors-misc.json';
 import bronzes from '../../assets/data/sponsors-bronze.json';
 
+import speakerList from '../../assets/data/speakers.json';
+
 @Component({
   selector: 'my-home-ticket-page',
   templateUrl: './home-ticket-page.component.html',
@@ -19,6 +21,9 @@ export class HomeTicketPageComponent implements OnInit {
 
   @ViewChild('subscribe') subscribeElement: any;
   subscribe: any;
+
+  @ViewChild('carousel') carouselElement: any;
+  carousel: any;
 
   sponsors = [
     {
@@ -53,11 +58,22 @@ export class HomeTicketPageComponent implements OnInit {
     }
   ];
 
+  speakers = [];
+
+  currentSpeaker = 0;
+
+  get speaker() {
+    return this.speakers[this.currentSpeaker] || {};
+  }
+
   constructor(private pageSvc: PageService) {}
 
   ngOnInit() {
     const title = 'July 06-07';
     this.pageSvc.setPage({ title: title });
+    this.speakers = speakerList;
+
+    this.randomSpeaker();
   }
 
   scrollTo(location) {
@@ -85,5 +101,15 @@ export class HomeTicketPageComponent implements OnInit {
       event_label: event,
       value: event
     });
+  }
+
+  randomSpeaker() {
+    this.currentSpeaker = Math.floor(
+      Math.random() * Math.floor(this.speakers.length)
+    );
+    console.log(
+      'TCL: HomeTicketPageComponent -> randomSpeaker -> this.currentSpeaker',
+      this.currentSpeaker
+    );
   }
 }
