@@ -22,9 +22,6 @@ export class HomeTicketPageComponent implements OnInit {
   @ViewChild('subscribe') subscribeElement: any;
   subscribe: any;
 
-  @ViewChild('carousel') carouselElement: any;
-  carousel: any;
-
   sponsors = [
     {
       level: 'ultimate',
@@ -55,6 +52,63 @@ export class HomeTicketPageComponent implements OnInit {
       level: 'community',
       title: 'Community partners',
       list: communities
+    }
+  ];
+
+  agenda = [
+    {
+      name: 'Day 1 (Jul 6)',
+      events: [
+        {
+          time: '08.00 - 09.00',
+          event: 'Registration & ng-breakfast'
+        },
+        {
+          time: '09.00 - 12.00',
+          event: 'ng-talks'
+        },
+        {
+          time: '12.00 - 13.00',
+          event: 'ng-eat'
+        },
+        {
+          time: '13.00 - 15.00',
+          event: 'ng-talks'
+        },
+        {
+          time: '15.00 - 15.30',
+          event: 'ng-tea-time'
+        },
+        {
+          time: '15.30 - 18.30',
+          event: 'ng-workshops (2-3 hours, vary by workshops)'
+        }
+      ]
+    },
+    {
+      name: 'Day 2 (Jul 7)',
+      events: [
+        {
+          time: '08.00 - 09.00',
+          event: 'ng-breakfast'
+        },
+        {
+          time: '09.00 - 12.00',
+          event: 'ng-talks'
+        },
+        {
+          time: '12.00 - 13.00',
+          event: 'ng-eat'
+        },
+        {
+          time: '13.00 - 15.00',
+          event: 'ng-talks'
+        },
+        {
+          time: '15.00 - 15.30',
+          event: 'ng-closing'
+        }
+      ]
     }
   ];
 
@@ -106,10 +160,6 @@ export class HomeTicketPageComponent implements OnInit {
   randomSpeaker() {
     this.currentSpeaker = Math.floor(
       Math.random() * Math.floor(this.speakers.length)
-    );
-    console.log(
-      'TCL: HomeTicketPageComponent -> randomSpeaker -> this.currentSpeaker',
-      this.currentSpeaker
     );
   }
 }

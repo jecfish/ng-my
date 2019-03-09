@@ -78,6 +78,10 @@ small {
       }
     }
 
+    p {
+      letter-spacing: 0.3px;
+    }
+
     p+p {
       margin-top: $space-s;
     }
