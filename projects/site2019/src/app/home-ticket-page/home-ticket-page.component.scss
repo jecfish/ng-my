@@ -51,7 +51,7 @@
       width: 100%;
       height: 100%;
       background: radial-gradient(circle at center, $white, transparent);
-      opacity: calc(1 - 1 * var(--shadow-opacity));
+      opacity: calc(1 - 1 * var(--hero-scroll));
     }
   }
 
@@ -214,6 +214,20 @@
     font-size: $font-size-xl;
     margin-bottom: $space;
   }
+
+  &.--decorated {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: calc(50% - 100px);
+      height: 20px;
+      width: 200px;
+      background: url('/assets/imgs/home/white-pattern.svg') left/contain repeat-x;
+    }
+  }
 }
 
 .main {
@@ -228,7 +242,7 @@
     background: url('/assets/imgs/home/hero-bg.png') center/cover no-repeat;
     width: 100%;
     height: 100%;
-    opacity: calc(0.3 + 0.4 * var(--shadow-opacity));
+    opacity: calc(0.3 + 0.4 * var(--hero-scroll));
   }
 }
 
@@ -340,17 +354,6 @@
 
     .home-section-title {
       text-align: center;
-      position: relative;
-
-      &:before {
-        content: '';
-        height: 20px;
-        width: 300px;
-        position: absolute;
-        top: 100%;
-        left: calc(50% - 150px);
-        background: url('/assets/imgs/home/white-pattern.svg') left/contain repeat-x;
-      }
     }
 
     @include mobile {
@@ -472,56 +475,37 @@
   background: $gray-lightest;
   padding: $space-xxl 0;
   text-align: center;
+  overflow: hidden;
 
   &-deco {
+    background: $yellow;
+
     &:before {
       top: 0;
       left: 0;
       background: $gray-lightest;
-      box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
       transform-origin: bottom right;
       transform: skewY(5deg);
-    }
-
-    &-img {
-      z-index: 0;
-      position: absolute;
-      top: 0;
-      left: -12vw;
-      height: 32vw;
-
-      @include mobile {
-        top: 50px;
-      }
     }
   }
 }
 
 .agenda {
   padding: $space;
-  width: 100%;
-  max-width: 800px;
+  width: 800px;
+  max-width: calc(100% - #{$space});
   margin: $space-l auto;
-  background: $yellow;
+  background: $white;
   font-family: $font-family-sans;
   box-shadow: 8px 8px $black;
   position: relative;
+  z-index: 2;
 
-  &-title {
-    font-size: $font-size-xl;
-    font-weight: $font-weight-l;
-    margin-bottom: $space-l;
-    position: relative;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 100%;
-      left: calc(50% - 100px);
-      height: 20px;
-      width: 200px;
-      background: url('/assets/imgs/home/white-pattern.svg') left/contain repeat-x;
-    }
+  &-section {
+    text-align: center;
+    padding: $space-xl 0;
+    background: $yellow;
+    overflow: hidden;
   }
 
   &-note {
@@ -550,7 +534,7 @@
     }
   }
 
-  &-deco {
+  &-food {
     position: absolute;
     top: calc(100% - 100px);
     left: 0;
@@ -579,6 +563,44 @@
 
       &:last-child {
         right: -60px;
+      }
+
+      @include mobile {
+        height: 80px;
+
+        &:first-child {
+          left: -40px;
+        }
+
+        &:last-child {
+          right: -40px;
+        }
+      }
+    }
+
+    @include mobile {
+      top: calc(100% - 40px);
+    }
+  }
+
+  &-deco {
+
+    &:before {
+      background: $yellow;
+      transform-origin: top right;
+      transform: skewY(5deg);
+      box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    &-img {
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: -12vw;
+      height: 32vw;
+
+      @include mobile {
+        top: 50px;
       }
     }
   }

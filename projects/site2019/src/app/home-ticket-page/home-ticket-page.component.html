@@ -122,10 +122,10 @@
   </section>
   <div class="mailing-deco mailing-deco-down slant"></div>
   <section class="speakers-section">
-    <h2 class="home-section-title">
+    <h2 class="home-section-title --decorated">
       Our <span class="text-primary text-shadow">Featured</span> Speaker
     </h2>
-    <div class="carousel speakers-carousel">
+    <div class="speakers-carousel">
       <ul class="carousel-inner">
         <li class="carousel-item">
           <div class="speakers-card">
@@ -133,7 +133,7 @@
               <div class="speakers-profile-pic">
                 <img class="speakers-profile-img" src="../../assets/imgs/speakers/{{ speaker.id }}.jpg" alt="">
                 <div class="speakers-profile-food">
-                  <img src="../../assets/imgs/speaker-food/curry-pup.png" alt="">
+                  <img src="../../assets/imgs/speaker-food/{{ speaker.food }}.png" [alt]="speaker.food">
                 </div>
               </div>
               <p class="speakers-name">{{ speaker.name }}</p>
@@ -169,31 +169,34 @@
           View all available sessions
         </div>
       </a>
-      <div class="agenda">
-        <h3 class="agenda-title">
-          <span class="text-primary text-shadow">NG-MY</span> 2019 Agenda
-        </h3>
-        <p class="agenda-note">Time is subject to change</p>
-        <div class="agenda-block" *ngFor="let a of agenda">
-          <h5 class="agenda-table-title">{{ a.name }}</h5>
-          <table class="agenda-table">
-            <tr *ngFor="let e of a.events">
-              <td>{{ e.time }}</td>
-              <td>{{ e.event }}</td>
-            </tr>
-          </table>
-        </div>
-        <div class="agenda-deco">
-          <img src="../../assets/imgs/home/tehtarik.png" alt="">
-          <img src="../../assets/imgs/home/aiskacang.png" alt="">
-          <img src="../../assets/imgs/home/nasilemak.png" alt="">
-          <img src="../../assets/imgs/home/tehaislimau.png" alt="">
-        </div>
+    </div>
+  </section>
+  <div class="sessions-deco slant"></div>
+  <section class="agenda-section">
+    <h2 class="home-section-title --decorated">
+      <span class="text-primary text-shadow">NG-MY</span> 2019 Agenda
+    </h2>
+    <div class="agenda">
+      <p class="agenda-note">Time is subject to change</p>
+      <div class="agenda-block" *ngFor="let a of agenda">
+        <h5 class="agenda-table-title">{{ a.name }}</h5>
+        <table class="agenda-table">
+          <tr *ngFor="let e of a.events">
+            <td>{{ e.time }}</td>
+            <td>{{ e.event }}</td>
+          </tr>
+        </table>
+      </div>
+      <div class="agenda-food">
+        <img src="../../assets/imgs/home/tehtarik.png" alt="">
+        <img src="../../assets/imgs/home/aiskacang.png" alt="">
+        <img src="../../assets/imgs/home/nasilemak.png" alt="">
+        <img src="../../assets/imgs/home/tehaislimau.png" alt="">
       </div>
     </div>
   </section>
-  <div class="sessions-deco slant">
-    <img src="../../assets/imgs/home/teh-tarik-bottom.png" alt="" class="sessions-deco-img">
+  <div class="agenda-deco slant">
+    <img src="../../assets/imgs/home/teh-tarik-bottom.png" alt="" class="agenda-deco-img">
   </div>
   <section class="sponsors-section">
     <div class="container">

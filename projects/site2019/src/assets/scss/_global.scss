@@ -2,7 +2,7 @@
   font-size: 16px;
   font-family: $font-family-serif;
   color: $font-color-root;
-  --shadow-opacity: 0;
+  --hero-scroll: 0;
 }
 
 html,
@@ -28,6 +28,11 @@ img {
   padding: 0 $space-xl;
   max-width: 1200px;
   margin: 0 auto;
+
+  @include laptop {
+    max-width: 900px;
+    padding: 0 $space-xl;
+  }
 
   @include tablet {
     padding: 0 $space-l;
@@ -104,6 +109,7 @@ small {
     font-size: $font-size-xxxl;
     font-weight: bold;
     text-shadow: 0.05em 0.05em $black;
+    font-family: $font-family-sans;
 
     @include mobile {
       font-size: $font-size-xxl;

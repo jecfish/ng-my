@@ -30,7 +30,7 @@ export class HeaderComponent implements OnInit {
     const opacityCalc = opacity > 1 ? 1 : opacity;
 
     document.documentElement.style.setProperty(
-      '--shadow-opacity',
+      '--hero-scroll',
       `${opacityCalc}`
     );
 

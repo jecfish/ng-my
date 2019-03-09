@@ -51,9 +51,7 @@ Helvetica,
 sans-serif;
 
 // height
-$header-upper-h: 40px;
-$header-lower-h: 60px;
-$header-h: $header-upper-h+$header-lower-h;
+$header-h: 60px;
 $footer-h: 60px;
 
 $btn-h: 40px;
@@ -63,6 +61,7 @@ $btn-mobile-h: 48px;
 $mobile-xs-breakpoint: 350px;
 $mobile-breakpoint: 600px;
 $tablet-breakpoint: 800px;
+$laptop-breakpoint: 1400px;
 
 // z-indexes
 $header-z: 1000;

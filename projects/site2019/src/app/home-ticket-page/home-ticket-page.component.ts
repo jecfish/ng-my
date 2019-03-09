@@ -114,7 +114,9 @@ export class HomeTicketPageComponent implements OnInit {
 
   speakers = [];
 
-  currentSpeaker = 0;
+  currentSpeaker = 10;
+
+  foodIconsModel = [];
 
   get speaker() {
     return this.speakers[this.currentSpeaker] || {};
@@ -123,11 +125,22 @@ export class HomeTicketPageComponent implements OnInit {
   constructor(private pageSvc: PageService) {}
 
   ngOnInit() {
+    this.foodIconsModel = this.pageSvc.initFoodIconsModel();
+
     const title = 'July 06-07';
     this.pageSvc.setPage({ title: title });
-    this.speakers = speakerList;
+    this.speakers = speakerList.map(x => ({
+      ...x,
+      ...{
+        description: `${x.description.substr(0, 460)}${x.description.length >
+          460 && '...'}`,
+        food: this.foodIconsModel[
+          Math.floor(Math.random() * (this.foodIconsModel.length - 1))
+        ]
+      }
+    }));
 
-    this.randomSpeaker();
+    // this.randomSpeaker();
   }
 
   scrollTo(location) {

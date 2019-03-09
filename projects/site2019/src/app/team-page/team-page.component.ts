@@ -23,6 +23,8 @@ export class TeamPageComponent implements OnInit {
     twitter: 'fab fa-twitter'
   };
 
+  foodIconsModel = [];
+
   get organizerMembers() {
     return this.memberList.filter(x => this.organizers.includes(x.id));
   }
@@ -40,10 +42,20 @@ export class TeamPageComponent implements OnInit {
     private meta: Meta,
     private pageSvc: PageService,
     private location: Location
-  ) { }
+  ) {}
 
   ngOnInit() {
-    this.memberList = memberList;
+    this.foodIconsModel = this.pageSvc.initFoodIconsModel();
+
+    this.memberList = memberList.map(x => ({
+      ...x,
+      ...{
+        food: this.foodIconsModel[
+          Math.floor(Math.random() * (this.foodIconsModel.length - 1))
+        ]
+      }
+    }));
+
     const selectedMemberId = this.route.snapshot.paramMap.get('id');
     this.selectMember(selectedMemberId);
   }
@@ -61,7 +73,11 @@ export class TeamPageComponent implements OnInit {
     this.pageSvc.setPage({
       title,
       metaDesc: 'The team behind NG-MY 2019.',
-      metaImg: id ? environment.baseUrl + '/assets/imgs/team/' + this.selectedMember.photo.normal : '',
+      metaImg: id
+        ? environment.baseUrl +
+          '/assets/imgs/team/' +
+          this.selectedMember.photo.normal
+        : '',
       skipTitlePostfix: true
     });
   }
