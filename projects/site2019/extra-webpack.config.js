@@ -31,6 +31,7 @@ module.exports = {
                 ...postRouteList,
                 '/speakers',
                 ...speakerRouteList,
+                '/sessions'
             ],
         })
     ]
