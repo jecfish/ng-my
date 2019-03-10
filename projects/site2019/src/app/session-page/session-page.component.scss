@@ -30,10 +30,12 @@
     }
 
     &-item-col {
+        margin-right: 20px;
+
         .speaker-pic {
             margin: 0 auto 20px;
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             background: #9a999b;
             overflow: hidden;
@@ -60,7 +62,9 @@
         }
 
         &:nth-child(1) {
-            width: 20%;
+            min-width: 120px;
+            max-width: 120px;
+
             @include mobile {
                 width: 100%;
                 margin-top: 15px;
@@ -68,7 +72,9 @@
         }
     
         &:nth-child(2) {
-            width: 20%;
+            min-width: 160px;
+            max-width: 160px;
+
             @include mobile {
                 width: 100%;
                 margin-top: 15px;
@@ -76,7 +82,8 @@
         }
     
         &:nth-child(3) {
-            width: 10%;
+            min-width: 60px;
+            max-width: 60px;
 
             @include mobile {
                 width: 100%;
@@ -85,12 +92,15 @@
         }    
     
         &:nth-child(4) {
-            width: 50%;
+            width: 100%;
 
             @include mobile {
-                width: 100%;
                 margin-top: 15px;
             }
+        }
+
+        &:last-child {
+            margin-right: 0px;
         }
     } 
 }
