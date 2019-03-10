@@ -324,7 +324,6 @@
           transition-delay: $delay + 0.2s;
 
           &:before {
-            @debug($n);
             transition-delay: $delay;
           }
         }

@@ -83,6 +83,12 @@ export class PageService {
     animateScroll();
   }
 
+  randomNumber(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+
   getSocialMediaList() {
     return [
       { icon: 'twitter', url: 'https://twitter.com/ngmyconf' },

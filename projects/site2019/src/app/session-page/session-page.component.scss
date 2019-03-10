@@ -2,95 +2,98 @@
 @import 'mixins';
 
 .session-date {
-    &-btns {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 50px;
-    }
+  &-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 
-    &-btn {
-        font-size: 24px;
-        margin: 0 0 0 36px;
-    }
+  &-btn {
+    font-size: 24px;
+    margin: 0 0 0 36px;
+  }
 }
 
-.session{
+.session {
 
-    &-item {
-        margin: 0 0 30px 0;
-    }
+  &-item {
+    margin: 0 0 $space-l 0;
 
-    &-item-row {
-        display: flex;
+    .col {
+      &:nth-child(1) {
+        flex: 0 0 20%;
+        width: 20%;
 
         @include mobile {
-            flex-wrap: wrap;
+          width: 100%;
         }
+      }
+
+      &:nth-child(2) {
+        flex: 0 0 20%;
+        width: 20%;
+
+        @include mobile {
+          width: 100%;
+          margin-top: $space-s;
+        }
+      }
+
+      &:nth-child(3) {
+        flex: 0 0 10%;
+        width: 10%;
+
+        @include mobile {
+          width: 100%;
+          margin-top: $space-s;
+        }
+      }
+
+      &:nth-child(4) {
+        flex: 0 0 50%;
+        width: 50%;
+
+        @include mobile {
+          width: 100%;
+          margin-top: $space;
+        }
+      }
     }
 
-    &-item-col {
-        .speaker-pic {
-            margin: 0 auto 20px;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            background: #9a999b;
-            overflow: hidden;
-            &-img {
-                object-fit: cover;
-                width: 100%;
-                max-width: 100%;
-            }
-        }
-        .speaker-name {
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        
-        .session-topic {
-            font-weight: bold;
-            margin-bottom: 10px;
+    @include mobile {
+      .btn {
+        width: 100%;
+      }
+    }
+  }
 
-        }
+  &-topic {
+    font-weight: bold;
+    margin-bottom: $space-s;
+  }
 
-        .session-desc {
-            overflow-y: hidden;
-            height: 80px;
-        }
+  &-desc {
+    margin-bottom: $space;
+  }
+}
 
-        &:nth-child(1) {
-            width: 20%;
-            @include mobile {
-                width: 100%;
-                margin-top: 15px;
-            }
-        }
-    
-        &:nth-child(2) {
-            width: 20%;
-            @include mobile {
-                width: 100%;
-                margin-top: 15px;
-            }
-        }
-    
-        &:nth-child(3) {
-            width: 10%;
+.speaker-pic {
+  margin: 0 auto $space;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #9a999b;
+  overflow: hidden;
 
-            @include mobile {
-                width: 100%;
-                margin-top: 15px;
-            }
-        }    
-    
-        &:nth-child(4) {
-            width: 50%;
+  &-img {
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+  }
+}
 
-            @include mobile {
-                width: 100%;
-                margin-top: 15px;
-            }
-        }
-    } 
+.speaker-name {
+  font-weight: bold;
+  margin-bottom: $space-s;
 }

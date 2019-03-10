@@ -46,7 +46,7 @@ export class SpeakersPageComponent implements OnInit {
       ...x,
       ...{
         food: this.foodIconsModel[
-          Math.floor(Math.random() * (this.foodIconsModel.length - 1))
+          this.pageSvc.randomNumber(this.foodIconsModel.length, 0)
         ]
       }
     }));

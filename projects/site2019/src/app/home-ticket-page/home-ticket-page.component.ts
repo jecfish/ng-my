@@ -114,7 +114,7 @@ export class HomeTicketPageComponent implements OnInit {
 
   speakers = [];
 
-  currentSpeaker = 10;
+  currentSpeaker = 0;
 
   foodIconsModel = [];
 
@@ -153,12 +153,12 @@ export class HomeTicketPageComponent implements OnInit {
           x.description.length > 300 ? '...' : ''
         }`,
         food: this.foodIconsModel[
-          Math.floor(Math.random() * (this.foodIconsModel.length - 1))
+          this.pageSvc.randomNumber(this.foodIconsModel.length, 0)
         ]
       }
     }));
 
-    // this.randomSpeaker();
+    this.randomSpeaker();
   }
 
   scrollTo(location) {
@@ -190,7 +190,7 @@ export class HomeTicketPageComponent implements OnInit {
 
   randomSpeaker() {
     this.currentSpeaker = Math.floor(
-      Math.random() * Math.floor(this.speakers.length)
+      this.pageSvc.randomNumber(this.speakers.length, 0)
     );
   }
 }
