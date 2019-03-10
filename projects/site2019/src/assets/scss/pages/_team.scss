@@ -367,14 +367,3 @@
     font-size: 0.9rem;
   }
 }
-
-.team-banner {
-  margin: 0 0 $space-l;
-  height: 600px;
-  background: url('/assets/imgs/team/team.jpg') bottom -200px center/cover no-repeat;
-
-  @include mobile {
-    height: 300px;
-    background-position: bottom center;
-  }
-}

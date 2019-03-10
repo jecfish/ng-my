@@ -298,11 +298,22 @@
   }
 
   &-number {
-    font-size: $font-size-xxl;
+    font-size: 2.3vmax;
   }
 
   &-metrics {
-    font-size: $font-size-xl;
+    font-size: 1.25vmax;
+  }
+
+  @include mobile {
+
+    &-number {
+      font-size: 4.6vmax;
+    }
+
+    &-metrics {
+      font-size: 2.5vmax;
+    }
   }
 }
 
@@ -477,6 +488,15 @@
   text-align: center;
   overflow: hidden;
 
+  .container {
+    position: relative;
+  }
+
+  &-text {
+    max-width: 800px;
+    margin: 0 auto $space-l;
+  }
+
   &-deco {
     background: $yellow;
 
@@ -486,6 +506,64 @@
       background: $gray-lightest;
       transform-origin: bottom right;
       transform: skewY(5deg);
+    }
+  }
+
+  &-food {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+
+    img {
+      position: absolute;
+      width: 120px;
+
+      &:first-child {
+        top: -60px;
+        left: -60px;
+        transform: rotate(15deg);
+      }
+
+      &:nth-child(2) {
+        top: -80px;
+        right: -50px;
+      }
+
+      &:nth-child(3) {
+        top: -20px;
+        right: -70px;
+      }
+
+      &:nth-child(4) {
+        bottom: -80px;
+        right: -40px;
+        transform: rotate(-15deg);
+      }
+
+      &:nth-child(5) {
+        bottom: -40px;
+        left: -60px;
+      }
+
+      &:nth-child(6) {
+        bottom: -80px;
+        left: -60px;
+      }
+
+      &:nth-child(7) {
+        bottom: -120px;
+        right: 0px;
+        transform: rotate(15deg);
+      }
+
+      &:nth-child(8) {
+        top: -20px;
+        left: -40px;
+      }
     }
   }
 }
@@ -628,22 +706,15 @@
       &:before {
         content: '';
         position: absolute;
-        width: 200px;
-        height: 200px;
-        top: -100px;
-        left: -50px;
+        width: 120px;
+        height: 120px;
+        top: -60px;
+        left: -10px;
 
         background: {
           position: center;
           size: contain;
           repeat: no-repeat;
-        }
-
-        @include mobile {
-          width: 120px;
-          height: 120px;
-          top: -60px;
-          left: -30px;
         }
       }
     }
@@ -688,7 +759,7 @@
       .container {
         &:before {
           background-image: url('/assets/imgs/home/sponsor-gold.png');
-          transform: rotate(10deg) scale(0.9);
+          transform: rotate(10deg);
         }
       }
 
@@ -709,7 +780,7 @@
       .container {
         &:before {
           background-image: url('/assets/imgs/home/sponsor-silver.png');
-          transform: rotate(-15deg) scale(0.8);
+          transform: rotate(-15deg);
         }
       }
 
