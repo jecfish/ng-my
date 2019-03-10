@@ -18,24 +18,23 @@
 .session{
 
     &-item {
-        margin: 0 0 40px 0;
-    }
-
-    &-item-row {
-        display: flex;
-
-        @include mobile {
-            flex-wrap: wrap;
-        }
+        margin: 0 0 50px 0;
     }
 
     &-item-col {
         margin-right: 20px;
+        width: 100%;
+
+        .session-speaker {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
 
         .speaker-pic {
-            margin: 0 auto 20px;
-            width: 120px;
-            height: 120px;
+            margin-right: 10px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             background: #9a999b;
             overflow: hidden;
@@ -47,57 +46,18 @@
         }
         .speaker-name {
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         
         .session-topic {
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
 
         }
 
         .session-desc {
             overflow-y: hidden;
             height: 80px;
-        }
-
-        &:nth-child(1) {
-            min-width: 120px;
-            max-width: 120px;
-
-            @include mobile {
-                width: 100%;
-                margin-top: 15px;
-            }
-        }
-    
-        &:nth-child(2) {
-            min-width: 160px;
-            max-width: 160px;
-            margin-right: 50px;
-
-            @include mobile {
-                width: 100%;
-                margin-top: 15px;
-            }
-        }
-    
-        &:nth-child(3) {
-            min-width: 60px;
-            max-width: 60px;
-
-            @include mobile {
-                width: 100%;
-                margin-top: 15px;
-            }
-        }    
-    
-        &:nth-child(4) {
-            width: 100%;
-
-            @include mobile {
-                margin-top: 15px;
-            }
         }
 
         &:last-child {

@@ -2,7 +2,13 @@
 <main class="main">
   <article class="container">
     <div class="page-header">
-      <h1 class="page-title">Sessions</h1>
+      <h1 class="page-title">SESSIONS</h1>
+      <div class="page-description article-section">
+        <p>
+          Learn about the latest trends in Angular and frontend web technologies in an inspiring, open meet and connect
+          with our speakers and other like-minded, passionate developers.
+        </p>
+      </div>
     </div>
     <section class="team-highlight-section" [class.--show]="selectedSession">
       <div class="team-highlight">
@@ -34,42 +40,42 @@
           </div>
         </div>
       </div>
-    </section>    
-    <section class="session-section">
-      <!-- <div class="session-date-btns">
-        <a class="session-date-btn active" [routerLink]="" (click)="day = 1">Sat, July 6</a>
-        <a class="session-date-btn" [routerLink]="" (click)="day = 2">Sun, July 7</a>
-      </div> -->
-      <section class="session-list">
-        <div *ngFor="let s of sessionList">
+    </section>
+    <div class="main">
+      <section class="session-section">
+        <!-- <div class="session-date-btns">
+              <a class="session-date-btn active" [routerLink]="" (click)="day = 1">Sat, July 6</a>
+              <a class="session-date-btn" [routerLink]="" (click)="day = 2">Sun, July 7</a>
+            </div> -->
+        <section class="session-list">
+          <div *ngFor="let s of sessionList">
             <div *ngIf="day === 1" class="session-item">
-                <div class="session-item-row">
-                    <div class="session-item-col">
-                        <div class="speaker-pic">
-                          <img class="speaker-pic-img" src="../../assets/imgs/speakers/{{ s.speaker.id }}.jpg" alt="{{ s.speaker.name }}" />
-                        </div>
-                    </div>
-                    <div class="session-item-col">
-                        <div class="speaker-name">{{ s.speaker.name }}</div>
-                        <div class="speaker-title">{{ s.speaker.title }}</div>
-                    </div>              
-                    <div class="session-item-col">
-                        <div class="session-duration">{{s.duration}}</div>
-                    </div>              
-                    <div class="session-item-col">
-                        <div class="session-topic">{{ s.title }}</div>
-                        <p class="session-desc" [innerHTML]="s.description"></p>
-                        <a class="session-more-desc" (click)="selectSession(s.id)" [routerLink]="" (click)="day = 1">show more</a>
-                    </div>
+              <div class="session-item-row">
+                <div class="session-item-col">
+                  <div class="session-topic">{{ s.title }}</div>
+                  <div class="session-speaker">
+                    <a [routerLink]="'/speakers/'+s.id">
+                      <div class="speaker-pic">
+                        <img class="speaker-pic-img" src="../../assets/imgs/speakers/{{ s.speaker.id }}.jpg"
+                          alt="{{ s.speaker.name }}" />
+                      </div>
+                    </a>
+                    <div class="speaker-title">{{ s.speaker.name }}</div>
+                  </div>
+                  <p class="session-desc" [innerHTML]="s.description"></p>
+                  <a class="session-more-desc" (click)="selectSession(s.id)" [routerLink]="" (click)="day = 1">show
+                    more</a>
                 </div>
               </div>
-              <div *ngIf="day === 2" class="session-item">
-                day 2
-              </div>
-        </div>
+            </div>
+            <div *ngIf="day === 2" class="session-item">
+              day 2
+            </div>
+          </div>
 
+        </section>
       </section>
-    </section>
+    </div>
   </article>
 </main>
 
