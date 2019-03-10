@@ -24,8 +24,6 @@ export class SessionPageComponent implements OnInit {
     twitter: 'fab fa-twitter'
   };
 
-  foodIconsModel = [];
-
   constructor(
     private route: ActivatedRoute,
     private meta: Meta,
@@ -42,8 +40,6 @@ export class SessionPageComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.foodIconsModel = this.pageSvc.initFoodIconsModel();
-
     this.sessionList = [
       sessionList
         .map(x => ({
@@ -63,9 +59,7 @@ export class SessionPageComponent implements OnInit {
             .map(x => ({
               ...x,
               ...{
-                food: this.foodIconsModel[
-                  this.pageSvc.randomNumber(this.foodIconsModel.length, 0)
-                ]
+                food: this.pageSvc.randomFoodIcon()
               }
             }))
             .find(x => x.id === id) || {

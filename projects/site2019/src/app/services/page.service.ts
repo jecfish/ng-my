@@ -102,8 +102,8 @@ export class PageService {
     ];
   }
 
-  initFoodIconsModel() {
-    return [
+  randomFoodIcon() {
+    const foodIconsModel = [
       'abc',
       'bandung',
       'cendol',
@@ -116,6 +116,10 @@ export class PageService {
       'teh-tarik',
       'ikat-semua',
       'tosai'
+    ];
+
+    return foodIconsModel[
+      this.randomNumber(foodIconsModel.length, 0)
     ];
   }
 }

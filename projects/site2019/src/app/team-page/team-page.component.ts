@@ -23,8 +23,6 @@ export class TeamPageComponent implements OnInit {
     twitter: 'fab fa-twitter'
   };
 
-  foodIconsModel = [];
-
   get organizerMembers() {
     return this.memberList.filter(x => this.organizers.includes(x.id));
   }
@@ -45,14 +43,10 @@ export class TeamPageComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.foodIconsModel = this.pageSvc.initFoodIconsModel();
-
     this.memberList = memberList.map(x => ({
       ...x,
       ...{
-        food: this.foodIconsModel[
-          this.pageSvc.randomNumber(this.foodIconsModel.length, 0)
-        ]
+        food: this.pageSvc.randomFoodIcon()
       }
     }));
 

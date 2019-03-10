@@ -22,8 +22,6 @@ export class SpeakersPageComponent implements OnInit {
     twitter: 'fab fa-twitter'
   };
 
-  foodIconsModel = [];
-
   get teamMembers() {
     return this.memberList;
   }
@@ -40,14 +38,10 @@ export class SpeakersPageComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.foodIconsModel = this.pageSvc.initFoodIconsModel();
-
     this.memberList = speakerList.map(x => ({
       ...x,
       ...{
-        food: this.foodIconsModel[
-          this.pageSvc.randomNumber(this.foodIconsModel.length, 0)
-        ]
+        food: this.pageSvc.randomFoodIcon()
       }
     }));
     const selectedMemberId = this.route.snapshot.paramMap.get('id');
