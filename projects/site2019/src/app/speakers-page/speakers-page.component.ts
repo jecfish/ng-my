@@ -22,6 +22,8 @@ export class SpeakersPageComponent implements OnInit {
     twitter: 'fab fa-twitter'
   };
 
+  foodIconsModel = [];
+
   get teamMembers() {
     return this.memberList;
   }
@@ -35,10 +37,19 @@ export class SpeakersPageComponent implements OnInit {
     private meta: Meta,
     private pageSvc: PageService,
     private location: Location
-  ) { }
+  ) {}
 
   ngOnInit() {
-    this.memberList = speakerList;
+    this.foodIconsModel = this.pageSvc.initFoodIconsModel();
+
+    this.memberList = speakerList.map(x => ({
+      ...x,
+      ...{
+        food: this.foodIconsModel[
+          Math.floor(Math.random() * (this.foodIconsModel.length - 1))
+        ]
+      }
+    }));
     const selectedMemberId = this.route.snapshot.paramMap.get('id');
     this.selectMember(selectedMemberId);
   }
@@ -50,14 +61,19 @@ export class SpeakersPageComponent implements OnInit {
     this.location.go(path);
 
     const title = id
-      ? this.selectedMember.name + this.pageSvc.postfix.replace('|', '| Speaker')
+      ? this.selectedMember.name +
+        this.pageSvc.postfix.replace('|', '| Speaker')
       : `Featured Speakers${this.pageSvc.postfix}`;
 
     this.pageSvc.setPage({
       title,
       metaDesc: 'Featured Speakers NG-MY 2019.',
-      metaImg: id ? environment.baseUrl + '/assets/imgs/speakers/' + this.selectedMember.id + '.jpg' :
-        environment.baseUrl + '/assets/imgs/speakers/_featured-speakers.jpg',
+      metaImg: id
+        ? environment.baseUrl +
+          '/assets/imgs/speakers/' +
+          this.selectedMember.id +
+          '.jpg'
+        : environment.baseUrl + '/assets/imgs/speakers/_featured-speakers.jpg',
       skipTitlePostfix: true
     });
   }

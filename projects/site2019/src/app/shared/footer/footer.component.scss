@@ -142,5 +142,9 @@
       transform: skewY(-5deg);
       top: 0;
     }
+
+    @include mobile {
+      height: 50px;
+    }
   }
 }

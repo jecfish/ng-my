@@ -8,6 +8,8 @@ import silvers from '../../assets/data/sponsors-silver.json';
 import miscs from '../../assets/data/sponsors-misc.json';
 import bronzes from '../../assets/data/sponsors-bronze.json';
 
+import speakerList from '../../assets/data/speakers.json';
+
 @Component({
   selector: 'my-home-ticket-page',
   templateUrl: './home-ticket-page.component.html',
@@ -53,11 +55,110 @@ export class HomeTicketPageComponent implements OnInit {
     }
   ];
 
+  agenda = [
+    {
+      name: 'Day 1 (Jul 6)',
+      events: [
+        {
+          time: '08.00 - 09.00',
+          event: 'Registration & ng-breakfast'
+        },
+        {
+          time: '09.00 - 12.00',
+          event: 'ng-talks (2 tracks)'
+        },
+        {
+          time: '12.00 - 13.00',
+          event: 'ng-eat'
+        },
+        {
+          time: '13.00 - 15.00',
+          event: 'ng-talks (2 tracks)'
+        },
+        {
+          time: '15.00 - 15.30',
+          event: 'ng-tea-time'
+        },
+        {
+          time: '15.30 - 18.30',
+          event: 'ng-workshops (2-3 hours, vary by workshops)'
+        }
+      ]
+    },
+    {
+      name: 'Day 2 (Jul 7)',
+      events: [
+        {
+          time: '08.00 - 09.00',
+          event: 'ng-breakfast'
+        },
+        {
+          time: '09.00 - 12.00',
+          event: 'ng-talks (2 tracks)'
+        },
+        {
+          time: '12.00 - 13.00',
+          event: 'ng-eat'
+        },
+        {
+          time: '13.00 - 15.00',
+          event: 'ng-talks (2 tracks)'
+        },
+        {
+          time: '15.00 - 15.30',
+          event: 'ng-closing'
+        }
+      ]
+    }
+  ];
+
+  speakers = [];
+
+  currentSpeaker = 10;
+
+  foodIconsModel = [];
+
+  shouldShowStats = false;
+
+  get speaker() {
+    return this.speakers[this.currentSpeaker] || {};
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  doSomething(event) {
+    if (this.shouldShowStats) {
+      return;
+    }
+
+    const { top } = this.statsElement.nativeElement.getBoundingClientRect();
+    const { innerHeight } = window;
+    const trigger = top - innerHeight / 2;
+
+    if (trigger <= 0) {
+      this.shouldShowStats = true;
+    }
+  }
+
   constructor(private pageSvc: PageService) {}
 
   ngOnInit() {
+    this.foodIconsModel = this.pageSvc.initFoodIconsModel();
+
     const title = 'July 06-07';
     this.pageSvc.setPage({ title: title });
+    this.speakers = speakerList.map(x => ({
+      ...x,
+      ...{
+        description: `${x.description.substr(0, 300)}${
+          x.description.length > 300 ? '...' : ''
+        }`,
+        food: this.foodIconsModel[
+          Math.floor(Math.random() * (this.foodIconsModel.length - 1))
+        ]
+      }
+    }));
+
+    // this.randomSpeaker();
   }
 
   scrollTo(location) {
@@ -85,5 +186,11 @@ export class HomeTicketPageComponent implements OnInit {
       event_label: event,
       value: event
     });
+  }
+
+  randomSpeaker() {
+    this.currentSpeaker = Math.floor(
+      Math.random() * Math.floor(this.speakers.length)
+    );
   }
 }

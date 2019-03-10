@@ -1,16 +1,5 @@
-<header class="header" [class.--open]="isShowMobileNav" [class.--fixed]="isAnchored">
-  <div class="header-upper">
-    <div class="container">
-      <ul class="header-social">
-        <li class="header-social-item" *ngFor="let s of socialMediaList">
-          <a target="_blank" rel="noreferer" [href]="s.url" class="header-social-link" (click)="trackEvent(s.icon)">
-            <i class="fab fa-{{ s.icon }}"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="header-lower">
+<header class="header" [class.--open]="isShowMobileNav">
+  <div class="header-bar">
     <div class="container">
       <a routerLink="/" class="header-logo">
         <img src="../../../assets/imgs/logo.svg" alt="NG-MY logo" class="header-logo-img">
@@ -25,6 +14,14 @@
         <ul class="header-nav-list">
           <li class="header-nav-item" *ngFor="let n of navList">
             <a [routerLink]="n.link" class="header-nav-link" (click)="trackEvent(n.name)">{{ n.name }}</a>
+          </li>
+        </ul>
+
+        <ul class="header-social">
+          <li class="header-social-item" *ngFor="let s of socialMediaList">
+            <a target="_blank" rel="noreferer" [href]="s.url" class="header-social-link" (click)="trackEvent(s.icon)">
+              <i class="fab fa-{{ s.icon }}"></i>
+            </a>
           </li>
         </ul>
       </nav>

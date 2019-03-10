@@ -2,59 +2,56 @@
 <div class="main-bg"></div>
 <section class="hero">
   <div class="container">
-    <div class="hero-content row">
-      <div class="hero-logo">
-        <img class="hero-logo-img" src="../../assets/imgs/logo.svg" alt="" />
-      </div>
+    <div class="hero-content">
       <article class="hero-text">
-        <div class="hero-text-container">
-          <h1 class="hero-title">
-            <span class="text-primary text-shadow">
-              NG-MY
-            </span>
-            2019
-          </h1>
-          <p class="hero-subtitle">
-            <strong class="text-primary">#ngMY2019</strong> is the labour-of-love conference for the Angular
-            community
-            in Malaysia. The is the very <strong class="text-primary">first</strong> Angular conference in <strong
-              class="text-primary">Southeast Asia</strong>!
-          </p>
-          <ul class="hero-misc">
-            <li class="hero-misc-item">
-              <i class="fas fa-calendar-alt icon-left text-primary"></i>July
-              6th & 7th
-            </li>
-            <li class="hero-misc-item">
-              <i class="fas fa-map-marker-alt icon-left text-primary"></i>Sunway University
-            </li>
-          </ul>
-          <div class="hero-btns">
-            <a class="btn btn-primary" href="https://calendar.google.com/calendar/r/eventedit?dates=20190305T040000Z/20190305T040000Z&text=NG-MY+OnInit+Ticket+Sales&location=https://ng-my.org&details=NG-MY+OnInit+Ticket+Sales&sf=true"
-              target="_blank" rel="noreferer">
-              <span class="btn-inner">
-                <i class="fas fa-ticket-alt icon-left"></i>
-                Get your tickets!</span>
-            </a>
-            <button class="btn btn-secondary" (click)="scrollTo('subscribe')">
-              <span class="btn-inner">Subscribe &amp; stay up to date</span>
-            </button>
-          </div>
+        <h1 class="hero-title">
+          <span class="text-primary text-shadow">
+            NG-MY
+          </span>
+          2019
+        </h1>
+        <p class="hero-subtitle">
+          <strong class="text-primary">#ngMY2019</strong> is the labour-of-love conference for the Angular
+          community
+          in Malaysia. The is the very <strong class="text-primary">first</strong> Angular conference in <strong class="text-primary">Southeast
+            Asia</strong>!
+        </p>
+        <ul class="hero-misc">
+          <li class="hero-misc-item">
+            <i class="fas fa-calendar-alt icon-left text-primary"></i>July
+            6th & 7th
+          </li>
+          <li class="hero-misc-item">
+            <i class="fas fa-map-marker-alt icon-left text-primary"></i>Sunway University
+          </li>
+        </ul>
+        <div class="hero-btns">
+          <a class="btn btn-primary" href="https://ti.to/ng-my/ng-my-2019" target="_blank" rel="noreferer">
+            <span class="btn-inner">
+              <i class="fas fa-ticket-alt icon-left"></i>
+              Get your tickets!</span>
+          </a>
+          <button class="btn btn-secondary" (click)="scrollTo('subscribe')">
+            <span class="btn-inner">
+              <i class="fas fa-envelope icon-left"></i>
+              Subscribe &amp; stay up to date</span>
+          </button>
         </div>
       </article>
     </div>
   </div>
   <button class="hero-scroll" (click)="scrollTo('stats')"></button>
 </section>
-<div class="hero-deco">
+<div class="hero-deco slant">
   <img class="hero-deco-teh" src="../../assets/imgs/home/teh-tarik-top.png" alt="">
 </div>
 <main class="main">
   <section class="stats" #stats>
+    <img src="../../assets/imgs/home/roti-canai.png" class="food-roti-canai" alt="">
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="stats-list">
+          <div class="stats-list" [class.--show]="shouldShowStats">
             <div class="stats-item">
               <div class="stats-number">2</div>
               <div class="stats-metrics">days</div>
@@ -78,11 +75,6 @@
             <h2 class="home-section-title">
               What's up in <span class="text-primary text-shadow">NG-MY</span> 2019?
             </h2>
-            <p>
-              Learn about the latest trends in <strong class="text-primary">Angular</strong> and frontend web
-              technologies in an inspiring, open meet and
-              connect with our speakers and other like-minded, passionate developers.
-            </p>
             <p>With Angular team members and legendary international speakers onboard, <strong class="text-primary">NG-MY
                 2019</strong>
               guarantees an excellent program, technically in-depth and 100% useful.</p>
@@ -91,8 +83,11 @@
       </div>
     </div>
   </section>
-  <div class="mailing-deco mailing-deco-up"></div>
+  <div class="mailing-deco mailing-deco-up slant"></div>
   <section id="mc_embed_signup" class="mailing-section" #subscribe>
+    <img src="../../assets/imgs/home/nasilemak.png" class="food-nasi-lemak" alt="">
+    <img src="../../assets/imgs/home/tehaislimau.png" class="food-teh-ais-limau" alt="">
+    <img src="../../assets/imgs/home/tehtarik.png" class="food-teh-tarik" alt="">
     <div class="container">
       <form action="https://ng-my.us20.list-manage.com/subscribe/post?u=18c8aa300b78c9a24177d5215&amp;id=eccdbe44f7"
         method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
@@ -119,71 +114,98 @@
       </form>
     </div>
   </section>
-  <div class="mailing-deco mailing-deco-down"></div>
+  <div class="mailing-deco mailing-deco-down slant"></div>
   <section class="speakers-section">
-    <h2 class="home-section-title">
-      Our <span class="text-primary text-shadow">Featured</span> Speakers
+    <h2 class="home-section-title --decorated">
+      Our <span class="text-primary text-shadow">Featured</span> Speaker
     </h2>
-    <div class="carousel speakers-carousel">
-      <ul class="carousel-inner" #carousel>
+    <div class="speakers-carousel">
+      <ul class="carousel-inner">
         <li class="carousel-item">
           <div class="speakers-card">
             <div class="speakers-profile">
-              <img class="speakers-profile-img" src="../../assets/imgs/speakers/mike-ryan.jpg" alt="">
-              <p class="speakers-name">Mike Ryan</p>
+              <div class="speakers-profile-pic">
+                <img class="speakers-profile-img" src="../../assets/imgs/speakers/{{ speaker.id }}.jpg" alt="">
+                <div class="speakers-profile-food">
+                  <img src="../../assets/imgs/speaker-food/{{ speaker.food }}.png" [alt]="speaker.food">
+                </div>
+              </div>
+              <p class="speakers-name">{{ speaker.name }}</p>
               <ul class="speakers-links">
                 <li class="speakers-links-item">
-                  <a href="" class="speakers-links-url">
-                    <i class="fab fa-twitter"></i></a>
-                </li>
-                <li class="speakers-links-item">
-                  <a href="" class="speakers-links-url">
-                    <i class="fab fa-linkedin"></i></a>
+                  <a [href]="speaker.profile?.url" class="speakers-links-url">
+                    <i class="fab fa-{{ speaker.profile?.type }}"></i></a>
                 </li>
               </ul>
             </div>
             <div class="speakers-description">
-              <div class="speakers-title">GDE, Builder of NgRx, Staff Software Engineer @ Synapse</div>
-              <article class="article-section">
-                <p>Mike is a software engineer at Synapse building user interfaces for industrial Internet of Things
-                  applications. </p>
-                <p>He is a Google Developer Expert and a core team member of NgRx, an open source organization building
-                  high quality reactive libraries for Angular.<p>
-              </article>
+              <div class="speakers-title">{{ speaker.title }}</div>
+              <article class="article-section" [innerHTML]="speaker?.description"></article>
             </div>
           </div>
         </li>
       </ul>
-      <nav class="carousel-nav">
-        <ul class="carousel-nav-list">
-          <li class="carousel-nav-item">
-            <button class="carousel-nav-btn">
-              <i class="fas fa-angle-left"></i>
-            </button>
-          </li>
-          <li class="carousel-nav-item">
-            <button class="carousel-nav-btn">
-              <i class="fas fa-angle-right"></i>
-            </button>
-          </li>
-        </ul>
-      </nav>
-      <ul class="carousel-dots">
-        <li class="carousel-dot --active"></li>
-        <li class="carousel-dot"></li>
-        <li class="carousel-dot"></li>
-      </ul>
     </div>
     <div class="speakers-more">
-      <a href="/speakers" class="btn btn-secondary">
+      <a routerLink="/speakers" class="btn btn-secondary">
         <div class="btn-inner">
-          Read more about our speakers
+          View all featured speakers
         </div>
       </a>
     </div>
   </section>
-  <div class="speakers-deco">
-    <img src="../../assets/imgs/home/teh-tarik-bottom.png" alt="" class="speakers-deco-img">
+  <div class="speakers-deco slant"></div>
+  <section class="sessions">
+    <div class="container">
+      <h2 class="home-section-title">Check out the <span class="text-primary text-shadow">sessions</span> of #ngMY2019!</h2>
+      <p class="sessions-text">
+        Learn about the latest trends in <strong class="text-primary">Angular</strong> and frontend web
+        technologies in an inspiring, open meet and
+        connect with our speakers and other like-minded, passionate developers.
+      </p>
+      <a href="/sessions" class="btn btn-primary">
+        <div class="btn-inner">
+          View all available sessions
+        </div>
+      </a>
+      <div class="sessions-food">
+        <img src="../../assets/imgs/speaker-food/bandung.png" alt="">
+        <img src="../../assets/imgs/speaker-food/kopi-o.png" alt="">
+        <img src="../../assets/imgs/speaker-food/nasi-lemak.png" alt="">
+        <img src="../../assets/imgs/speaker-food/cendol.png" alt="">
+        <img src="../../assets/imgs/speaker-food/curry-pup.png" alt="">
+        <img src="../../assets/imgs/speaker-food/ikat-semua.png" alt="">
+        <img src="../../assets/imgs/speaker-food/roti-canai.png" alt="">
+        <img src="../../assets/imgs/speaker-food/tosai.png" alt="">
+      </div>
+    </div>
+  </section>
+  <div class="sessions-deco slant"></div>
+  <section class="agenda-section">
+    <h2 class="home-section-title --decorated">
+      <span class="text-primary text-shadow">NG-MY</span> 2019 Agenda
+    </h2>
+    <div class="agenda">
+      <p class="agenda-note">Time is subject to change</p>
+      <div class="agenda-block" *ngFor="let a of agenda">
+        <h5 class="agenda-table-title">{{ a.name }}</h5>
+        <table class="agenda-table">
+          <tr *ngFor="let e of a.events">
+            <td>{{ e.time }}</td>
+            <td>{{ e.event }}</td>
+          </tr>
+        </table>
+      </div>
+      <div class="agenda-food">
+        <img src="../../assets/imgs/home/tehtarik.png" alt="">
+        <img src="../../assets/imgs/home/aiskacang.png" alt="">
+        <img src="../../assets/imgs/home/nasilemak.png" alt="">
+        <img src="../../assets/imgs/home/tehaislimau.png" alt="">
+      </div>
+    </div>
+  </section>
+  <div class="agenda-deco slant">
+    <img src="../../assets/imgs/home/teh-tarik-bottom.png" alt="" class="agenda-deco-img">
   </div>
   <section class="sponsors-section">
     <div class="container">

@@ -1,5 +1,64 @@
 <my-header></my-header>
+<img src="../../assets/imgs/team/team.png" alt="NG-MY team photo" title="NG-MY 2019 team">
 <main id="team">
+  <div class="page-header">
+    <div class="container">
+      <h1 class="page-title">CORE TEAM</h1>
+      <div class="page-description article-section">
+        <p>
+          NG-MY would not be possible without the help of its fantastic Core Team.
+        </p>
+        <p>
+          Every Core Team member is always stand-by to help out where needed. If you require special assistance of any
+          kind, please don't hesitate to reach out for help. If you notice somebody not following our code of conduct,
+          please let us know immediately so we can take appropriate action.
+        </p>
+      </div>
+    </div>
+  </div>
+  <section class="main">
+    <div class="container">
+      <div class="team-list">
+        <div class="team-list-item" *ngFor="let m of teamMembers; let i = index">
+          <article class="team-card --{{ m.gender }}" [class.--selected]="selectedMemberId === m.id" (click)="selectMember(m.id)">
+            <div class="team-card-profile">
+              <figure class="team-card-pic">
+                <img src="../../assets/imgs/team/{{ m.photo.normal }}" alt="{{ m.name }}" class="team-card-img" />
+              </figure>
+              <img class="team-card-food" src="../../assets/imgs/speaker-food/{{ m.food }}.png" [alt]="m.food">
+            </div>
+            <div class="team-card-name">{{ m.name }}</div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="page-header">
+        <div class="container">
+          <h2 class="page-title">ORGANIZER</h2>
+          <div class="page-description">
+            <p>
+              NG-MY is organized by Jecelyn Yeen, with the incredible help and support of the entire NG-MY Core Team!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="team-list">
+        <div class="team-list-item" *ngFor="let m of organizerMembers;">
+          <article class="team-card --{{ m.gender }}" [class.--selected]="selectedMemberId === m.id" (click)="selectMember(m.id)">
+            <div class="team-card-profile">
+              <figure class="team-card-pic">
+                <img src="../../assets/imgs/team/{{ m.photo.normal }}" alt="{{ m.name }}" class="team-card-img" />
+              </figure>
+              <img class="team-card-food" src="../../assets/imgs/speaker-food/{{ m.food }}.png" alt="">
+            </div>
+            <div class="team-card-name">{{ m.name }}</div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="team-highlight-section" [class.--show]="selectedMember">
     <div class="team-highlight">
       <button class="team-highlight-close" (click)="unselectMember()"></button>
@@ -25,58 +84,6 @@
             <div class="team-highlight-description article-section" [innerHTML]="selectedMember?.description">
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="page-header">
-    <div class="container">
-      <h1 class="page-title">CORE TEAM</h1>
-      <div class="page-description article-section">
-        <p>
-          NG-MY would not be possible without the help of its fantastic Core Team.
-        </p>
-        <p>
-          Every Core Team member is always stand-by to help out where needed. If you require special assistance of any
-          kind, please don't hesitate to reach out for help. If you notice somebody not following our code of conduct,
-          please let us know immediately so we can take appropriate action.
-        </p>
-      </div>
-    </div>
-  </div>
-  <section class="main">
-    <div class="container">
-      <div class="team-list">
-        <div class="team-list-item" *ngFor="let m of teamMembers">
-          <article class="team-card --{{ m.gender }}" [class.--selected]="selectedMemberId === m.id" (click)="selectMember(m.id)">
-            <figure class="team-card-pic">
-              <img src="../../assets/imgs/team/{{ m.photo.normal }}" alt="{{ m.name }}" class="team-card-img" />
-            </figure>
-            <div class="team-card-name">{{ m.name }}</div>
-          </article>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="page-header">
-        <div class="container">
-          <h2 class="page-title">ORGANIZER</h2>
-          <div class="page-description">
-            <p>
-              NG-MY is organized by Jecelyn Yeen, with the incredible help and support of the entire NG-MY Core Team!
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="team-list">
-        <div class="team-list-item" *ngFor="let m of organizerMembers">
-          <article class="team-card --{{ m.gender }}" [class.--selected]="selectedMemberId === m.id" (click)="selectMember(m.id)">
-            <figure class="team-card-pic">
-              <img src="../../assets/imgs/team/{{ m.photo.normal }}" alt="{{ m.name }}" class="team-card-img" />
-            </figure>
-            <div class="team-card-name">{{ m.name }}</div>
-          </article>
         </div>
       </div>
     </div>

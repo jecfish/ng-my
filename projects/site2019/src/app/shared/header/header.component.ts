@@ -8,7 +8,6 @@ import { PageService } from '../../services/page.service';
 })
 export class HeaderComponent implements OnInit {
   isShowMobileNav = false;
-  isAnchored = false;
 
   navList = [
     // { link: '/logo', name: 'Logo' },
@@ -25,17 +24,15 @@ export class HeaderComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   onScroll(e) {
-    const maxDist = 200;
+    const maxDist = 100;
     const currentPos = window.scrollY;
     const opacity = currentPos / maxDist;
     const opacityCalc = opacity > 1 ? 1 : opacity;
 
     document.documentElement.style.setProperty(
-      '--shadow-opacity',
+      '--hero-scroll',
       `${opacityCalc}`
     );
-
-    this.isAnchored = currentPos > 40;
   }
 
   constructor(private pageSvc: PageService) {}

@@ -2,6 +2,7 @@
 @import 'mixins';
 
 .header {
+  height: $header-h;
   position: relative;
   z-index: $header-z;
   font-family: $font-family-sans;
@@ -20,24 +21,16 @@
       width: 40px;
       margin-right: $space-s;
       position: relative;
-      z-index: 1
+      z-index: $header-z + 1;
     }
   }
 
-  &.--fixed {
-    margin-bottom: $header-lower-h;
+  &-bar {
+    @include one-height($header-h, $nowrap: false);
 
-    .header-lower {
-      position: fixed;
-      top: 0;
-      left: 0;
-    }
-  }
-
-  &-lower {
-    @include one-height($header-lower-h, $nowrap: false);
-
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 0;
 
@@ -50,7 +43,7 @@
       height: 100%;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       background: $white;
-      opacity: var(--shadow-opacity);
+      opacity: var(--hero-scroll);
       pointer-events: none;
       z-index: 0;
     }
@@ -59,31 +52,6 @@
       display: flex;
       position: relative;
       z-index: 1;
-    }
-  }
-
-  &-upper {
-    @include one-height($header-upper-h);
-  }
-
-  &-social {
-    display: flex;
-    justify-content: flex-end;
-
-    &-item {
-      padding: 0 $space-xs;
-
-      &+& {
-        margin-left: $space;
-      }
-    }
-
-    &-link {
-      color: $black;
-
-      @include btn-active {
-        color: $red;
-      }
     }
   }
 
@@ -115,8 +83,8 @@
     }
 
     &-toggle {
-      width: $header-lower-h;
-      height: $header-lower-h;
+      width: $header-h;
+      height: $header-h;
       background: none;
       border: 0;
       padding: 0 20px;
@@ -277,6 +245,66 @@
               &:last-child {
                 transform: scaleX(0);
               }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+  &-social {
+    display: none;
+    padding: 0 $space-s;
+
+
+    &-item {
+      &+& {
+        margin-left: $space-s;
+      }
+    }
+
+    &-link {
+      display: block;
+      padding: 0 $space-s;
+
+      @include btn-active {
+        color: $red-dark;
+      }
+    }
+
+    @include tablet {
+      display: flex;
+      position: absolute;
+      bottom: $space-s;
+      right: $space;
+
+
+      &-link {
+        color: $white;
+
+        @include btn-active {
+          color: $white;
+        }
+      }
+
+      &-item {
+        opacity: 0;
+        transform: translateX(10px);
+        transition: opacity 0.2s ease, transform 0.2s ease;
+
+        &+& {
+          margin-left: $space;
+        }
+
+        @at-root .--open & {
+          opacity: 1;
+          transform: none;
+
+          @for $n from 1 through $nav-social-count {
+            &:nth-child(#{$n}) {
+              transition-delay: 0.2s + 0.025s * ($n - 1) + 0.01s * ($n - 1);
             }
           }
         }
