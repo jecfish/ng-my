@@ -30,7 +30,7 @@
         "title": "Leverage Angular Schematics to empower developers of Frontend App & libraries"
     },
     {
-        "id": "jecelyn-yeen-jenning-adrianyeong",
+        "id": "",
         "duration": "30 min",
         "description": "<p>In this talk, we will share about some tecniques we apply in buildling NG-MY website, you can easily apply these techiniques in your website too! Here is what we will cover: </p> <p> - Making Angualr website performant & SEO friendly<br> - Customize Angular CLI Build prerender website<br> - Apply Angular Animation to make your site cooler<br> - Modern CSS with CSS Variables<br> - Feature Flagging & Continuous Integration / Deployment (CI/CD)<br> </p>",
         "title": "How We Build NG-MY Webiste: Performance, SEO, Angular Animation, Modern CSS"
