@@ -65,7 +65,7 @@ export class HomeTicketPageComponent implements OnInit {
         },
         {
           time: '09.00 - 12.00',
-          event: 'ng-talks'
+          event: 'ng-talks (2 tracks)'
         },
         {
           time: '12.00 - 13.00',
@@ -73,7 +73,7 @@ export class HomeTicketPageComponent implements OnInit {
         },
         {
           time: '13.00 - 15.00',
-          event: 'ng-talks'
+          event: 'ng-talks (2 tracks)'
         },
         {
           time: '15.00 - 15.30',
@@ -94,7 +94,7 @@ export class HomeTicketPageComponent implements OnInit {
         },
         {
           time: '09.00 - 12.00',
-          event: 'ng-talks'
+          event: 'ng-talks (2 tracks)'
         },
         {
           time: '12.00 - 13.00',
@@ -102,7 +102,7 @@ export class HomeTicketPageComponent implements OnInit {
         },
         {
           time: '13.00 - 15.00',
-          event: 'ng-talks'
+          event: 'ng-talks (2 tracks)'
         },
         {
           time: '15.00 - 15.30',
@@ -132,8 +132,8 @@ export class HomeTicketPageComponent implements OnInit {
     this.speakers = speakerList.map(x => ({
       ...x,
       ...{
-        description: `${x.description.substr(0, 460)}${x.description.length >
-          460 && '...'}`,
+        description: `${x.description.substr(0, 300)}${x.description.length >
+          300 ? '...' : ''}`,
         food: this.foodIconsModel[
           Math.floor(Math.random() * (this.foodIconsModel.length - 1))
         ]
