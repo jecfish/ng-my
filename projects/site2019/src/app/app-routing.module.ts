@@ -51,11 +51,11 @@ const routes: Routes = [
   {
     path: 'sessions',
     component: SessionPageComponent
-  },  
+  },
   {
     path: 'sessions/:id',
     component: SessionPageComponent
-  },    
+  },
   {
     path: 'form/:name',
     component: FormPageComponent
@@ -85,4 +85,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

@@ -36,11 +36,11 @@ export class SessionPageComponent implements OnInit {
   }
 
   ngOnInit() {
-    const sessionDetailList = sessionList.map(x => {
-      const { id } = x;
+    const sessionDetailList = sessionList.map(session => {
+      const { id } = session;
       const speaker = speakerList.find(x => x.id === id) || { id: '', name: '', title: '' };
-      return { ...x, speaker };
-    })
+      return { ...session, speaker };
+    });
     this.sessionList = sessionDetailList;
   }
 
@@ -52,9 +52,9 @@ export class SessionPageComponent implements OnInit {
     this.location.go(path);
 
     const title = id
-    ? this.selectedSession.title + this.pageSvc.postfix.replace('|', '| Sessions')
-    : `Sessions${this.pageSvc.postfix}`;
-    
+      ? this.selectedSession.title + this.pageSvc.postfix.replace('|', '| Sessions')
+      : `Sessions${this.pageSvc.postfix}`;
+
     console.log('title: ', title);
     this.pageSvc.setPage({
       title,
