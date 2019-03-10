@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
 
   navList = [
     // { link: '/logo', name: 'Logo' },
-    { link: '/speakers', name: 'Featured Speakers' },
+    { link: '/speakers', name: 'Speakers' },
     { link: '/sessions', name: 'Sessions' },
     // { link: '/schedule', name: 'Schedule' },
     // { link: '/form/speaker-training', name: 'Speaking Up!' },

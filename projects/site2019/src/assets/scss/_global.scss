@@ -30,7 +30,7 @@ img {
   margin: 0 auto;
 
   @include laptop {
-    max-width: 900px;
+    max-width: 960px;
     padding: 0 $space-xl;
   }
 
