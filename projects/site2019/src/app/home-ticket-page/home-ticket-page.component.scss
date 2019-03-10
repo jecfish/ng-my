@@ -266,23 +266,69 @@
       grid-row: 1 / 1;
       grid-column: 1 / 1;
     }
+
+    &.--show {
+      .stats-item {
+        box-shadow: 8px 8px $black;
+
+        &:before {
+          transform: skewX(-10deg) scaleX(1);
+        }
+      }
+    }
   }
 
   &-item {
     text-align: center;
-    color: $black;
-    background: $yellow;
-    box-shadow: 8px 8px $black;
+    color: $white;
+    box-shadow: 0px 0px $black;
     font-family: $font-family-sans;
     font-weight: bold;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.4s ease;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(100% + 50px);
+      height: 100%;
+      background: $red;
+      z-index: 0;
+      pointer-events: none;
+      transform: skewX(-10deg) scaleX(0);
+      transform-origin: top left;
+      transition: transform 0.4s cubic-bezier(0, 0.66, 0.46, 0.99);
+      will-change: transform;
+    }
 
     &:first-child {
       grid-row: 1 / 1;
       grid-column: 1 / 1;
+    }
+
+    $n: 0;
+
+    @for $i from 1 through 2 {
+      @for $j from 1 through 2 {
+        $n: $n + 1;
+        $delay: ($i + $j - 2) * 0.15s;
+
+        &:nth-child(#{$n}) {
+          transition-delay: $delay + 0.2s;
+
+          &:before {
+            @debug($n);
+            transition-delay: $delay;
+          }
+        }
+      }
     }
   }
 
@@ -295,6 +341,12 @@
     @include mobile {
       margin-top: $space;
     }
+  }
+
+  &-number,
+  &-metrics {
+    position: relative;
+    z-index: 1;
   }
 
   &-number {

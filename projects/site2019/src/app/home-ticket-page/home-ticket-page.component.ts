@@ -118,8 +118,25 @@ export class HomeTicketPageComponent implements OnInit {
 
   foodIconsModel = [];
 
+  shouldShowStats = false;
+
   get speaker() {
     return this.speakers[this.currentSpeaker] || {};
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  doSomething(event) {
+    if (this.shouldShowStats) {
+      return;
+    }
+
+    const { top } = this.statsElement.nativeElement.getBoundingClientRect();
+    const { innerHeight } = window;
+    const trigger = top - innerHeight / 2;
+
+    if (trigger <= 0) {
+      this.shouldShowStats = true;
+    }
   }
 
   constructor(private pageSvc: PageService) {}
@@ -132,8 +149,9 @@ export class HomeTicketPageComponent implements OnInit {
     this.speakers = speakerList.map(x => ({
       ...x,
       ...{
-        description: `${x.description.substr(0, 300)}${x.description.length >
-          300 ? '...' : ''}`,
+        description: `${x.description.substr(0, 300)}${
+          x.description.length > 300 ? '...' : ''
+        }`,
         food: this.foodIconsModel[
           Math.floor(Math.random() * (this.foodIconsModel.length - 1))
         ]
