@@ -1,0 +1,150 @@
+@import 'variables';
+@import 'mixins';
+
+.session-date {
+  &-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  &-btn {
+    font-size: 24px;
+    margin: 0 0 0 36px;
+  }
+}
+
+.session {
+
+  &-section {
+    margin-top: $space-l;
+  }
+
+  &-duration {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-family-sans;
+    font-size: $font-size-xl;
+    font-weight: bold;
+    padding: 0 $space-s;
+  }
+
+  &-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &-item {
+    padding: $space;
+    background: $gray-lightest;
+    box-shadow: 8px 8px $black;
+
+
+    &+& {
+      margin-top: $space-l;
+    }
+
+    .col {
+      flex: 0 0 100%;
+      // &:nth-child(1) {
+      //   font-family: $font-family-sans;
+      //   flex: 0 0 20%;
+      // }
+
+      // &:nth-child(2) {
+      //   flex: 0 0 20%;
+
+      //   @include mobile {
+      //     margin-top: $space-s;
+      //   }
+      // }
+
+      // &:nth-child(3) {
+      //   flex: 0 0 60%;
+      // }
+    }
+
+    @include mobile {
+      .btn {
+        width: 100%;
+      }
+    }
+
+    &:nth-child(odd) {
+      .speaker-card {
+        background: $red;
+      }
+    }
+
+    &:nth-child(even) {
+      .speaker-card {
+        background: $blue;
+      }
+    }
+
+    &.--selected {
+      .speaker-card {
+        background: $yellow;
+      }
+    }
+  }
+
+  &-topic {
+    font-family: $font-family-sans;
+    font-weight: bold;
+    margin-bottom: $space-s;
+  }
+
+  &-desc {
+    margin-bottom: $space;
+  }
+}
+
+.speaker {
+  &-card {
+    text-align: center;
+    padding: $space;
+    margin: -$space;
+    color: $white;
+
+    @include mobile {
+      margin-bottom: 0;
+    }
+  }
+
+  &-profile {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+  }
+
+  &-pic {
+    margin: 0 auto $space;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid $black;
+    background: #9a999b;
+    overflow: hidden;
+
+    &-img {
+      object-fit: cover;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  &-name {
+    font-weight: bold;
+    margin-bottom: $space-s;
+  }
+
+  &-title {
+    font-size: $font-size-s;
+  }
+}

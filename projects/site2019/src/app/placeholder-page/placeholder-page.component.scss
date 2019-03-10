@@ -1,6 +1,9 @@
 @import 'variables';
 @import 'mixins';
 
+$ng-red: #dd0031;
+$ng-red-dark: #c3002f;
+
 .landing {
   height: 100vh;
   width: 100%;
@@ -78,5 +81,19 @@
 
   a {
     color: $ng-red;
+  }
+}
+
+.ng-logo {
+  &-left {
+    fill: $ng-red;
+  }
+
+  &-right {
+    fill: $ng-red-dark;
+  }
+
+  &-A {
+    fill: $white;
   }
 }

@@ -1,0 +1,83 @@
+$ng-red: #dd0031;
+$ng-red-dark: #c3002f;
+
+$red: #f44336;
+$red-light: lighten($red, 15%);
+$red-lightest: lighten($red, 30%);
+$red-dark: darken($red, 15%);
+$red-darkest: darken($red, 30%);
+
+$blue: #1e88e5;
+$blue-light: lighten($blue, 15%);
+$blue-lightest: lighten($blue, 30%);
+$blue-dark: darken($blue, 15%);
+$blue-darkest: darken($blue, 30%);
+
+$yellow: #fdd835;
+$yellow-light: lighten($yellow, 15%);
+$yellow-lightest: lighten($yellow, 30%);
+$yellow-dark: darken($yellow, 15%);
+$yellow-darkest: darken($yellow, 30%);
+
+$gray: #a19696;
+$gray-light: lighten($gray, 15%);
+$gray-lightest: lighten($gray, 30%);
+$gray-dark: darken($gray, 15%);
+$gray-darker: darken($gray, 30%);
+$gray-darkest: #323232;
+
+$primary: $red;
+$secondary: $blue;
+$font-color-root: $gray-darkest;
+
+$white: #fffffd;
+$white-off: lighten($gray, 35%);
+$black: #0e0e0e;
+
+// space for margin or padding
+$space: 20px;
+$space-s: $space / 2;
+$space-xs: $space / 4;
+$space-l: $space * 2;
+$space-xl: $space * 4;
+$space-xxl: $space * 6;
+
+// font-sizes
+$font-size-xs: 0.65rem;
+$font-size-s: 0.8rem;
+$font-size-l: 1.2rem;
+$font-size-xl: 1.5rem;
+$font-size-xxl: 2.75rem;
+$font-size-xxxl: 5rem;
+
+// bold
+$font-weight-l: 900;
+$bold: 600;
+
+// height
+$header-h: 60px;
+$footer-h: 45px;
+$footer-social-h: 36px;
+$footer-h-total: $footer-h+$footer-social-h;
+
+$btn-h: 40px;
+$btn-mobile-h: 48px;
+
+// breakpoints
+$mobile-xs-breakpoint: 350px;
+$mobile-breakpoint: 600px;
+$tablet-breakpoint: 800px;
+
+// z-indexes
+$header-z: 1000;
+$notification-z: 1100;
+
+// const
+// nav item count
+$nav-item-count: 5;
+$nav-social-count: 5;
+
+// hero scroll icon
+$scroll-anim-d: 3s;
+$scroll-icon-h: 90px;
+$scroll-icon-size: 5px;

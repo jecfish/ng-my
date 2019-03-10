@@ -83,13 +83,43 @@ export class PageService {
     animateScroll();
   }
 
+  randomNumber(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+
   getSocialMediaList() {
     return [
       { icon: 'twitter', url: 'https://twitter.com/ngmyconf' },
       { icon: 'facebook', url: 'https://www.facebook.com/ngmyconf/' },
       { icon: 'instagram', url: 'https://www.instagram.com/ngmyconf/' },
       { icon: 'linkedin', url: 'https://www.linkedin.com/company/ngmyconf/' },
-      { icon: 'youtube', url: 'https://www.youtube.com/channel/UCbL5knlP-lZN5O3KxLDHoOA' }
+      {
+        icon: 'youtube',
+        url: 'https://www.youtube.com/channel/UCbL5knlP-lZN5O3KxLDHoOA'
+      }
+    ];
+  }
+
+  randomFoodIcon() {
+    const foodIconsModel = [
+      'abc',
+      'bandung',
+      'cendol',
+      'curry-pup',
+      'nasi-lemak-ikan',
+      'kopi-o',
+      'limao-ice-ikat-tepi',
+      'nasi-lemak',
+      'roti-canai',
+      'teh-tarik',
+      'ikat-semua',
+      'tosai'
+    ];
+
+    return foodIconsModel[
+      this.randomNumber(foodIconsModel.length, 0)
     ];
   }
 }

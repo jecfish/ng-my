@@ -11,12 +11,13 @@ export class HeaderComponent implements OnInit {
 
   navList = [
     // { link: '/logo', name: 'Logo' },
-    { link: '/speakers', name: 'Featured Speakers' },
+    { link: '/speakers', name: 'Speakers' },
+    { link: '/sessions', name: 'Sessions' },
     // { link: '/schedule', name: 'Schedule' },
     // { link: '/form/speaker-training', name: 'Speaking Up!' },
     { link: '/form/call-for-presenters', name: 'Submit CFP' },
     { link: '/coc', name: 'Code of Conduct' },
-    { link: '/team', name: 'Team' },
+    { link: '/team', name: 'Team' }
   ];
 
   socialMediaList = [];
@@ -29,7 +30,7 @@ export class HeaderComponent implements OnInit {
     const opacityCalc = opacity > 1 ? 1 : opacity;
 
     document.documentElement.style.setProperty(
-      '--shadow-opacity',
+      '--hero-scroll',
       `${opacityCalc}`
     );
   }

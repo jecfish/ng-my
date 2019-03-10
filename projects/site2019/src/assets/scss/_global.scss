@@ -1,8 +1,8 @@
 :root {
   font-size: 16px;
-  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  font-family: $font-family-sans;
   color: $font-color-root;
-  --shadow-opacity: 0;
+  --hero-scroll: 0;
 }
 
 html,
@@ -29,6 +29,11 @@ img {
   max-width: 1200px;
   margin: 0 auto;
 
+  @include laptop {
+    max-width: 960px;
+    padding: 0 $space-xl;
+  }
+
   @include tablet {
     padding: 0 $space-l;
   }
@@ -44,7 +49,6 @@ small {
 
 .main {
   padding: $space-l 0 $space-xl;
-  min-height: calc(100vh - #{$header-h + $footer-h-total});
 
   @include mobile {
     padding-bottom: $space-l;
@@ -65,6 +69,7 @@ small {
 
   @include mobile {
     width: 100%;
+    flex-basis: 100%;
   }
 }
 
@@ -76,6 +81,10 @@ small {
       @include mobile {
         margin-top: $space;
       }
+    }
+
+    p {
+      letter-spacing: 0.3px;
     }
 
     p+p {
@@ -100,6 +109,7 @@ small {
     font-size: $font-size-xxxl;
     font-weight: bold;
     text-shadow: 0.05em 0.05em $black;
+    font-family: $font-family-sans;
 
     @include mobile {
       font-size: $font-size-xxl;
@@ -122,20 +132,6 @@ small {
   }
 }
 
-.ng-logo {
-  &-left {
-    fill: $ng-red;
-  }
-
-  &-right {
-    fill: $ng-red-dark;
-  }
-
-  &-A {
-    fill: $white;
-  }
-}
-
 .icon {
   &-left {
     margin-right: $space-s;
@@ -149,6 +145,10 @@ small {
 .text {
   &-primary {
     color: $red;
+  }
+
+  &-shadow {
+    text-shadow: 0.05em 0.05em $black;
   }
 
   &-highlight {
@@ -221,25 +221,26 @@ small {
   }
 }
 
-.colors {
-  position: fixed;
-  z-index: 9999;
-  bottom: 10px;
-  left: 10px;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  background: $red-lightest;
+.slant {
+  position: relative;
+  height: 200px;
+  z-index: 1;
 
-  box-shadow: 30px 0 $red-light, 60px 0 $red, 90px 0 $red-dark, 120px 0 $red-darkest, 150px 0 $blue-lightest, 180px 0 $blue-light, 210px 0 $blue, 240px 0 $blue-dark, 270px 0 $blue-darkest, 300px 0 $yellow-lightest, 330px 0 $yellow-light, 360px 0 $yellow, 390px 0 $yellow-dark, 420px 0 $yellow-darkest, 450px 0 $gray-lightest, 480px 0 $gray-light, 510px 0 $gray, 540px 0 $gray-dark, 570px 0 $gray-darker;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  @include mobile {
+    height: 100px;
+  }
 }
 
 @import 'components/buttons';
 @import 'components/input';
 
-@import 'header';
-@import 'footer';
-
-@import 'pages/home';
 @import 'pages/team';
 @import 'pages/post';

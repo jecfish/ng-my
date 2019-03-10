@@ -181,11 +181,16 @@
     margin-bottom: $space-s;
   }
 
+  &-title {
+    font-family: $font-family-sans;
+  }
+
   &-pic {
     margin: 0 auto $space-s;
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    border: 4px solid $black;
     background: $gray;
     overflow: hidden;
   }
@@ -234,6 +239,7 @@
   &-title {
     padding: 0 $space;
     font-weight: bold;
+    font-family: $font-family-sans;
   }
 
   @include mobile {
@@ -291,9 +297,11 @@
   box-shadow: 8px 8px $black;
   cursor: pointer;
   transition: background 0.1s ease;
-  height: 100%;;
+  height: 100%;
+  font-family: $font-family-sans;
 
-  &.--red, &.--boy {
+  &.--red,
+  &.--boy {
     background: $red;
 
     &:hover {
@@ -301,7 +309,8 @@
     }
   }
 
-  &.--blue, &.--girl {
+  &.--blue,
+  &.--girl {
     background: $blue;
 
     &:hover {
@@ -323,8 +332,22 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    border: 4px solid $black;
     background: $gray;
     overflow: hidden;
+  }
+
+  &-profile {
+    position: relative;
+  }
+
+  &-food {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 0; // $space-s;
+    right: 0; // $space-s;
+    z-index: 1;
   }
 
   &-img {

@@ -1,39 +1,31 @@
-$ng-red: #dd0031;
-$ng-red-dark: #c3002f;
+$red-lightest: #FFCAC6;
+$red-light: #FF7C71;
+$red: #F44436;
+$red-dark: #B5170B;
+$red-darkest: #510600;
 
-$red: #f44336;
-$red-light: lighten($red, 15%);
-$red-lightest: lighten($red, 30%);
-$red-dark: darken($red, 15%);
-$red-darkest: darken($red, 30%);
+$blue-lightest: #C9C2F1;
+$blue-light: #7667C8;
+$blue: #4836A9;
+$blue-dark: #26177E;
+$blue-darkest: #0C0438;
 
-$blue: #1e88e5;
-$blue-light: lighten($blue, 15%);
-$blue-lightest: lighten($blue, 30%);
-$blue-dark: darken($blue, 15%);
-$blue-darkest: darken($blue, 30%);
+$yellow-lightest: #FFF9C6;
+$yellow-light: #FFF071;
+$yellow: #F4E036;
+$yellow-dark: #B5A30B;
+$yellow-darkest: #514800;
 
-$yellow: #fdd835;
-$yellow-light: lighten($yellow, 15%);
-$yellow-lightest: lighten($yellow, 30%);
-$yellow-dark: darken($yellow, 15%);
-$yellow-darkest: darken($yellow, 30%);
+$white: #fff;
+$black: #232323;
 
-$gray: #a19696;
-$gray-light: lighten($gray, 15%);
-$gray-lightest: lighten($gray, 30%);
-$gray-dark: darken($gray, 15%);
-$gray-darker: darken($gray, 30%);
-$gray-darkest: #323232;
+$gray-lightest: #f1f0f6;
+$gray-light: #dddce2;
+$gray: #9a999b;
+$gray-dark: #666468;
+$gray-darkest: #403f41;
 
-$primary: $red;
-$secondary: $blue;
-$font-color-root: $gray-darkest;
-
-$white: #fffffd;
-$white-off: lighten($gray, 35%);
-$black: #0e0e0e;
-
+$font-color-root: $black;
 // space for margin or padding
 $space: 20px;
 $space-s: $space / 2;
@@ -50,15 +42,17 @@ $font-size-xl: 1.5rem;
 $font-size-xxl: 2.75rem;
 $font-size-xxxl: 5rem;
 
-// bold
-$bold-l: 900;
-$bold-m: 600;
+$font-weight-l: 900;
+$font-family-serif: 'Merriweather',
+serif;
+$font-family-sans: 'Source Sans Pro',
+Arial,
+Helvetica,
+sans-serif;
 
 // height
 $header-h: 60px;
-$footer-h: 45px;
-$footer-social-h: 36px;
-$footer-h-total: $footer-h+$footer-social-h;
+$footer-h: 60px;
 
 $btn-h: 40px;
 $btn-mobile-h: 48px;
@@ -67,6 +61,7 @@ $btn-mobile-h: 48px;
 $mobile-xs-breakpoint: 350px;
 $mobile-breakpoint: 600px;
 $tablet-breakpoint: 800px;
+$laptop-breakpoint: 1400px;
 
 // z-indexes
 $header-z: 1000;
@@ -76,8 +71,3 @@ $notification-z: 1100;
 // nav item count
 $nav-item-count: 5;
 $nav-social-count: 5;
-
-// hero scroll icon
-$scroll-anim-d: 3s;
-$scroll-icon-h: 90px;
-$scroll-icon-size: 5px;

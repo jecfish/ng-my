@@ -1,40 +1,8 @@
 <my-header></my-header>
 <main id="team">
-  <section class="team-highlight-section" [class.--show]="selectedMember">
-    <div class="team-highlight">
-      <button class="team-highlight-close" (click)="unselectMember()"></button>
-      <div class="container">
-        <div class="team-highlight-info-container">
-          <div class="team-highlight-info">
-            <figure class="team-highlight-pic">
-              <img src="../../assets/imgs/speakers/{{ selectedMember.id }}.jpg" [alt]="selectedMember.id"
-                class="team-highlight-img" *ngIf="selectedMember" />
-            </figure>
-            <div class="team-highlight-name">
-              {{ selectedMember?.name }}
-            </div>
-            <ul class="team-highlight-misc">
-              <li class="team-highlight-misc-item">
-                <a [href]="selectedMember?.profile?.url" target="_blank" rel="noreferrer"
-                  class="team-highlight-misc-link">
-                  <i class="{{ profileIconsModel[selectedMember?.profile?.type] }}"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="team-highlight-description-container">
-            <div class="team-highlight-title">{{ selectedMember?.title }}</div>
-            <div class="team-highlight-description article-section" [innerHTML]="selectedMember?.description">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <div class="page-header">
     <div class="container">
-      <h1 class="page-title">FEATURED SPEAKERS</h1>
+      <h1 class="page-title">SPEAKERS</h1>
       <div class="page-description article-section">
         <p>
           Get inspired by our passionate speakers and learn about the latest trends in Angular and frontend web
@@ -45,21 +13,60 @@
           legendary international speakers onboard, NG-MY 2019 Conference guarantees an excellent program - technically
           in-depth and 100% useful.
         </p>
+        <p>
+          More speakers will be announced after Call For Proposals (CFP) closed.
+        </p>
       </div>
     </div>
   </div>
   <section class="main">
     <div class="container">
       <div class="team-list">
-        <div class="team-list-item" *ngFor="let m of teamMembers">
-          <article class="team-card --{{ m.color }}" [class.--selected]="selectedMemberId === m.id"
-            (click)="selectMember(m.id)">
-            <figure class="team-card-pic">
-              <img src="../../assets/imgs/speakers/{{ m.id }}.jpg" alt="{{ m.name }}" class="team-card-img" />
-            </figure>
+        <div class="team-list-item" *ngFor="let m of teamMembers; let i = index">
+          <article class="team-card --{{ m.color }}" [class.--selected]="selectedMemberId === m.id" (click)="selectMember(m.id)">
+            <div class="team-card-profile">
+              <figure class="team-card-pic">
+                <img src="../../assets/imgs/speakers/{{ m.id }}.jpg" alt="{{ m.name }}" class="team-card-img" />
+              </figure>
+              <picture class="team-card-food">
+                  <source srcset='../../assets/imgs/speaker-food/{{ m.food }}.webp' type='image/webp'>
+                  <img src="../../assets/imgs/speaker-food/{{ m.food }}.png" [alt]="m.food">
+              </picture>
+            </div>
             <div class="team-card-name">{{ m.name }}</div>
             <div class="team-card-desc">{{ m.title }}</div>
           </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team-highlight-section" [class.--show]="selectedMember">
+    <div class="team-highlight">
+      <button class="team-highlight-close" (click)="unselectMember()"></button>
+      <div class="container">
+        <div class="team-highlight-info-container">
+          <div class="team-highlight-info">
+            <figure class="team-highlight-pic">
+              <img src="../../assets/imgs/speakers/{{ selectedMember.id }}.jpg" [alt]="selectedMember.id" class="team-highlight-img"
+                *ngIf="selectedMember" />
+            </figure>
+            <div class="team-highlight-name">
+              {{ selectedMember?.name }}
+            </div>
+            <ul class="team-highlight-misc">
+              <li class="team-highlight-misc-item">
+                <a [href]="selectedMember?.profile?.url" target="_blank" rel="noreferrer" class="team-highlight-misc-link">
+                  <i class="{{ profileIconsModel[selectedMember?.profile?.type] }}"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="team-highlight-description-container">
+            <div class="team-highlight-title">{{ selectedMember?.title }}</div>
+            <div class="team-highlight-description article-section" [innerHTML]="selectedMember?.description">
+            </div>
+          </div>
         </div>
       </div>
     </div>

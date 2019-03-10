@@ -1,18 +1,32 @@
 .post-page {
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 60%;
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
 
-        @include mobile {
-            width: 90%;
-        }
+    @include mobile {
+      width: 90%;
     }
+  }
 
-    h3 {
-        font-size: 1.4rem;
-        padding-top: 20px;
-        padding-bottom: 10px;
+  h3 {
+    font-size: $font-size-xl;
+    margin: $space 0 $space-s;
+  }
+
+  .container {
+    padding: $space-l;
+    max-width: 800px;
+
+    @include mobile {
+      padding: 0 $space;
     }
+  }
+
+  .section-title {
+    font-family: $font-family-sans;
+    font-weight: $font-weight-l;
+    margin-bottom: $space;
+  }
 }
