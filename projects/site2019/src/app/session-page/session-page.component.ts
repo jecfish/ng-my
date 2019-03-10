@@ -13,7 +13,7 @@ import { environment } from '../../environments/environment';
   styleUrls: ['./session-page.component.scss']
 })
 export class SessionPageComponent implements OnInit {
-  day = 0;
+  day = 1;
   sessionList = [];
   selectedSessionId = null;
 
@@ -32,41 +32,31 @@ export class SessionPageComponent implements OnInit {
   ) {}
 
   get selectedSession() {
-    console.log(
-      'TCL: SessionPageComponent -> getselectedSession -> this.currentDaySessions',
-      this.currentDaySessions
-    );
-    return this.currentDaySessions.find(x => x.id === this.selectedSessionId);
-  }
-
-  get currentDaySessions() {
-    return sessionList[this.day];
+    return this.sessionList.find(x => x.id === this.selectedSessionId);
   }
 
   ngOnInit() {
-    this.sessionList = [
-      sessionList
-        .map(x => ({
-          ...x,
-          ...{
-            description: {
-              short: `${x.description.substr(0, 160)}${
-                x.description.length > 160 ? '...' : ''
-              }`,
-              full: x.description
-            }
+    this.sessionList = sessionList
+      .map(x => ({
+        ...x,
+        ...{
+          description: {
+            short: `${x.description.substr(0, 160)}${
+              x.description.length > 160 ? '...' : ''
+            }`,
+            full: x.description
           }
-        }))
-        .map(session => {
-          const { id } = session;
-          const speaker = speakerList.find(x => x.id === id) || {
-            id: '',
-            name: '',
-            title: ''
-          };
-          return { ...session, speaker };
-        })
-    ];
+        }
+      }))
+      .map(session => {
+        const { id } = session;
+        const speaker = speakerList.find(x => x.id === id) || {
+          id: '',
+          name: '',
+          title: ''
+        };
+        return { ...session, speaker };
+      });
   }
 
   selectSession(id) {

@@ -6,12 +6,12 @@
     </div>
     <section class="session-section">
       <!-- <div class="session-date-btns">
-        <a class="session-date-btn active" [routerLink]="" (click)="day = 0">Sat, July 6</a>
-        <a class="session-date-btn" [routerLink]="" (click)="day = 1">Sun, July 7</a>
+        <a class="session-date-btn active" [routerLink]="" (click)="day = 1">Sat, July 6</a>
+        <a class="session-date-btn" [routerLink]="" (click)="day = 2">Sun, July 7</a>
       </div> -->
       <section class="session-list">
         <div *ngFor="let s of sessionList">
-          <div class="session-item">
+          <div *ngIf="day === 1" class="session-item">
             <div class="row">
               <div class="col">
                 <div class="speaker-pic">
@@ -28,11 +28,14 @@
               <div class="col">
                 <div class="session-topic">{{ s.title }}</div>
                 <p class="session-desc" [innerHTML]="s.description.short"></p>
-                <button class="btn btn-secondary" (click)="selectSession(s.id)">
+                <button class="btn btn-secondary" (click)="selectSession(s.id)" (click)="day = 1">
                   <div class="btn-inner">show more</div>
                 </button>
               </div>
             </div>
+          </div>
+          <div *ngIf="day === 2" class="session-item">
+            day 2
           </div>
         </div>
       </section>
