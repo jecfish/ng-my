@@ -89,19 +89,6 @@ export class PageService {
     return Math.floor(Math.random() * (max - min + 1) + min);
   }
 
-  getSocialMediaList() {
-    return [
-      { icon: 'twitter', url: 'https://twitter.com/ngmyconf' },
-      { icon: 'facebook', url: 'https://www.facebook.com/ngmyconf/' },
-      { icon: 'instagram', url: 'https://www.instagram.com/ngmyconf/' },
-      { icon: 'linkedin', url: 'https://www.linkedin.com/company/ngmyconf/' },
-      {
-        icon: 'youtube',
-        url: 'https://www.youtube.com/channel/UCbL5knlP-lZN5O3KxLDHoOA'
-      }
-    ];
-  }
-
   randomFoodIcon() {
     const foodIconsModel = [
       'abc',
@@ -118,8 +105,6 @@ export class PageService {
       'tosai'
     ];
 
-    return foodIconsModel[
-      this.randomNumber(foodIconsModel.length, 0)
-    ];
+    return foodIconsModel[this.randomNumber(foodIconsModel.length, 0)];
   }
 }

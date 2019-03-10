@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { PageService } from '../../services/page.service';
+import socialMediaList from '../../../assets/data/social-media.json';
 
 @Component({
   selector: 'my-header',
@@ -42,7 +43,7 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.socialMediaList = this.pageSvc.getSocialMediaList();
+    this.socialMediaList = socialMediaList;
   }
 
   trackEvent(event: string) {

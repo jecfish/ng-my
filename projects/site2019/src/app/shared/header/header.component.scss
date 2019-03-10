@@ -13,6 +13,7 @@
     font-size: $font-size-s;
     font-weight: $font-weight-l;
     letter-spacing: 1px;
+    white-space: nowrap;
     margin-right: auto;
     color: $font-color-root;
 
@@ -22,6 +23,11 @@
       margin-right: $space-s;
       position: relative;
       z-index: $header-z + 1;
+    }
+
+    @include mobile {
+      width: 40px;
+      overflow: hidden;
     }
   }
 
@@ -59,11 +65,7 @@
     margin: auto -#{$space} auto $space;
 
     @include tablet {
-      margin-right: $space-s;
-    }
-
-    @include mobile {
-      display: none;
+      margin-right: $space-xs;
     }
   }
 
@@ -100,6 +102,7 @@
       background: none;
       border: 0;
       padding: 0 20px;
+      margin-right: -$space;
       position: relative;
       z-index: $header-z + 1;
       transition: transform 0.4s ease 0.2s;
