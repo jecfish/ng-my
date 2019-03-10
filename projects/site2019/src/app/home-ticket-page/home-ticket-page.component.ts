@@ -114,9 +114,7 @@ export class HomeTicketPageComponent implements OnInit {
 
   speakers = [];
 
-  currentSpeaker = 10;
-
-  foodIconsModel = [];
+  currentSpeaker = 0;
 
   shouldShowStats = false;
 
@@ -142,8 +140,6 @@ export class HomeTicketPageComponent implements OnInit {
   constructor(private pageSvc: PageService) {}
 
   ngOnInit() {
-    this.foodIconsModel = this.pageSvc.initFoodIconsModel();
-
     const title = 'July 06-07';
     this.pageSvc.setPage({ title: title });
     this.speakers = speakerList.map(x => ({
@@ -152,9 +148,7 @@ export class HomeTicketPageComponent implements OnInit {
         description: `${x.description.substr(0, 300)}${
           x.description.length > 300 ? '...' : ''
         }`,
-        food: this.foodIconsModel[
-          Math.floor(Math.random() * (this.foodIconsModel.length - 1))
-        ]
+        food: this.pageSvc.randomFoodIcon()
       }
     }));
 
@@ -189,8 +183,6 @@ export class HomeTicketPageComponent implements OnInit {
   }
 
   randomSpeaker() {
-    this.currentSpeaker = Math.floor(
-      Math.random() * Math.floor(this.speakers.length)
-    );
+    this.currentSpeaker = this.pageSvc.randomNumber(this.speakers.length, 0);
   }
 }

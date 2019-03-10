@@ -13,7 +13,7 @@ import { environment } from '../../environments/environment';
   styleUrls: ['./session-page.component.scss']
 })
 export class SessionPageComponent implements OnInit {
-  day = 1;
+  day = 0;
   sessionList = [];
   selectedSessionId = null;
 
@@ -29,21 +29,48 @@ export class SessionPageComponent implements OnInit {
     private meta: Meta,
     private pageSvc: PageService,
     private location: Location
-  ) { }
+  ) {}
 
   get selectedSession() {
-    return this.sessionList.find(x => x.id === this.selectedSessionId);
+    return this.currentDaySession.find(x => x.id === this.selectedSessionId);
+  }
+
+  get currentDaySession() {
+    return this.sessionList[this.day];
   }
 
   ngOnInit() {
-    const sessionDetailList = sessionList.map(session => {
-      const { id } = session;
-      const speaker = speakerList.find(x => x.id === id) || { id: '', name: '', title: '' };
-      return { ...session, speaker };
-    });
-    this.sessionList = sessionDetailList;
+    this.sessionList = [
+      sessionList
+        .map(x => ({
+          ...x,
+          ...{
+            description: {
+              short: `${x.description.substr(0, 160)}${
+                x.description.length > 160 ? '...' : ''
+              }`,
+              full: x.description
+            }
+          }
+        }))
+        .map(session => {
+          const { id } = session;
+          const speaker = speakerList
+            .map(x => ({
+              ...x,
+              ...{
+                food: this.pageSvc.randomFoodIcon()
+              }
+            }))
+            .find(x => x.id === id) || {
+            id: '',
+            name: '',
+            title: ''
+          };
+          return { ...session, speaker };
+        })
+    ];
   }
-
 
   selectSession(id) {
     this.selectedSessionId = id;
@@ -52,15 +79,19 @@ export class SessionPageComponent implements OnInit {
     this.location.go(path);
 
     const title = id
-      ? this.selectedSession.title + this.pageSvc.postfix.replace('|', '| Sessions')
+      ? this.selectedSession.title +
+        this.pageSvc.postfix.replace('|', '| Sessions')
       : `Sessions${this.pageSvc.postfix}`;
 
-    console.log('title: ', title);
     this.pageSvc.setPage({
       title,
       metaDesc: 'Sessions NG-MY 2019.',
-      metaImg: id ? environment.baseUrl + '/assets/imgs/speakers/' + this.selectedSession.id + '.jpg' :
-        environment.baseUrl + '/assets/imgs/speakers/_featured-speakers.jpg',
+      metaImg: id
+        ? environment.baseUrl +
+          '/assets/imgs/speakers/' +
+          this.selectedSession.id +
+          '.jpg'
+        : environment.baseUrl + '/assets/imgs/speakers/_featured-speakers.jpg',
       skipTitlePostfix: true
     });
   }
