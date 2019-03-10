@@ -49,22 +49,23 @@
     }
 
     .col {
-      &:nth-child(1) {
-        font-family: $font-family-sans;
-        flex: 0 0 20%;
-      }
+      flex: 0 0 100%;
+      // &:nth-child(1) {
+      //   font-family: $font-family-sans;
+      //   flex: 0 0 20%;
+      // }
 
-      &:nth-child(2) {
-        flex: 0 0 20%;
+      // &:nth-child(2) {
+      //   flex: 0 0 20%;
 
-        @include mobile {
-          margin-top: $space-s;
-        }
-      }
+      //   @include mobile {
+      //     margin-top: $space-s;
+      //   }
+      // }
 
-      &:nth-child(3) {
-        flex: 0 0 60%;
-      }
+      // &:nth-child(3) {
+      //   flex: 0 0 60%;
+      // }
     }
 
     @include mobile {

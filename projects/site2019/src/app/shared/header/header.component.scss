@@ -61,6 +61,10 @@
     @include tablet {
       margin-right: $space-s;
     }
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &-nav {

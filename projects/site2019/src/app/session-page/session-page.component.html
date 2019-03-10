@@ -18,7 +18,7 @@
       <ul class="session-list">
         <li class="session-item" *ngFor="let s of currentDaySession" [class.--selected]="selectedSession?.id === s.id">
           <div class="row">
-            <div class="col">
+            <!-- <div class="col">
               <div class="speaker-card">
                 <div class="speaker-profile">
                   <div class="speaker-pic">
@@ -34,7 +34,7 @@
             </div>
             <div class="col">
               <div class="session-duration">{{s.duration}}</div>
-            </div>
+            </div> -->
             <div class="col">
               <div class="session-topic">{{ s.title }}</div>
               <p class="session-desc" [innerHTML]="s.description.short"></p>
