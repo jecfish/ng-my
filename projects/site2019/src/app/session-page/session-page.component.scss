@@ -17,47 +17,53 @@
 
 .session {
 
+  &-section {
+    margin-top: $space-l;
+  }
+
+  &-duration {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-family-sans;
+    font-size: $font-size-xl;
+    font-weight: bold;
+    padding: 0 $space-s;
+  }
+
+  &-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
   &-item {
-    margin: 0 0 $space-l 0;
+    padding: $space;
+    background: $gray-lightest;
+    box-shadow: 8px 8px $black;
+
+
+    &+& {
+      margin-top: $space-l;
+    }
 
     .col {
       &:nth-child(1) {
+        font-family: $font-family-sans;
         flex: 0 0 20%;
-        width: 20%;
-
-        @include mobile {
-          width: 100%;
-        }
       }
 
       &:nth-child(2) {
         flex: 0 0 20%;
-        width: 20%;
 
         @include mobile {
-          width: 100%;
           margin-top: $space-s;
         }
       }
 
       &:nth-child(3) {
-        flex: 0 0 10%;
-        width: 10%;
-
-        @include mobile {
-          width: 100%;
-          margin-top: $space-s;
-        }
-      }
-
-      &:nth-child(4) {
-        flex: 0 0 50%;
-        width: 50%;
-
-        @include mobile {
-          width: 100%;
-          margin-top: $space;
-        }
+        flex: 0 0 60%;
       }
     }
 
@@ -66,9 +72,28 @@
         width: 100%;
       }
     }
+
+    &:nth-child(odd) {
+      .speaker-card {
+        background: $red;
+      }
+    }
+
+    &:nth-child(even) {
+      .speaker-card {
+        background: $blue;
+      }
+    }
+
+    &.--selected {
+      .speaker-card {
+        background: $yellow;
+      }
+    }
   }
 
   &-topic {
+    font-family: $font-family-sans;
     font-weight: bold;
     margin-bottom: $space-s;
   }
@@ -78,22 +103,47 @@
   }
 }
 
-.speaker-pic {
-  margin: 0 auto $space;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background: #9a999b;
-  overflow: hidden;
+.speaker {
+  &-card {
+    text-align: center;
+    padding: $space;
+    margin: -$space;
+    color: $white;
 
-  &-img {
-    object-fit: cover;
-    width: 100%;
-    max-width: 100%;
+    @include mobile {
+      margin-bottom: 0;
+    }
   }
-}
 
-.speaker-name {
-  font-weight: bold;
-  margin-bottom: $space-s;
+  &-profile {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+  }
+
+  &-pic {
+    margin: 0 auto $space;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid $black;
+    background: #9a999b;
+    overflow: hidden;
+
+    &-img {
+      object-fit: cover;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  &-name {
+    font-weight: bold;
+    margin-bottom: $space-s;
+  }
+
+  &-title {
+    font-size: $font-size-s;
+  }
 }

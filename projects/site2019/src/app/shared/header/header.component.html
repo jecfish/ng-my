@@ -5,11 +5,6 @@
         <img src="../../../assets/imgs/logo.svg" alt="NG-MY logo" class="header-logo-img">
         NG-MY
       </a>
-      <button class="header-nav-toggle" (click)="toggleMobileNav()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
       <nav class="header-nav">
         <ul class="header-nav-list">
           <li class="header-nav-item" *ngFor="let n of navList">
@@ -25,6 +20,16 @@
           </li>
         </ul>
       </nav>
+      <a class="btn btn-primary header-ticket" href="https://ti.to/ng-my/ng-my-2019" target="_blank" rel="noreferer">
+        <span class="btn-inner">
+          <i class="fas fa-ticket-alt icon-left"></i>
+          Buy ticket</span>
+      </a>
+      <button class="header-nav-toggle" (click)="toggleMobileNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </div>
 </header>

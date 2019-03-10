@@ -55,6 +55,14 @@
     }
   }
 
+  &-ticket {
+    margin: auto -#{$space} auto $space;
+
+    @include tablet {
+      margin-right: $space-s;
+    }
+  }
+
   &-nav {
     display: flex;
 

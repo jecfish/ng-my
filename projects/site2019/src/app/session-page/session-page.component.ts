@@ -13,7 +13,7 @@ import { environment } from '../../environments/environment';
   styleUrls: ['./session-page.component.scss']
 })
 export class SessionPageComponent implements OnInit {
-  day = 1;
+  day = 0;
   sessionList = [];
   selectedSessionId = null;
 
@@ -24,6 +24,8 @@ export class SessionPageComponent implements OnInit {
     twitter: 'fab fa-twitter'
   };
 
+  foodIconsModel = [];
+
   constructor(
     private route: ActivatedRoute,
     private meta: Meta,
@@ -32,31 +34,48 @@ export class SessionPageComponent implements OnInit {
   ) {}
 
   get selectedSession() {
-    return this.sessionList.find(x => x.id === this.selectedSessionId);
+    return this.currentDaySession.find(x => x.id === this.selectedSessionId);
+  }
+
+  get currentDaySession() {
+    return this.sessionList[this.day];
   }
 
   ngOnInit() {
-    this.sessionList = sessionList
-      .map(x => ({
-        ...x,
-        ...{
-          description: {
-            short: `${x.description.substr(0, 160)}${
-              x.description.length > 160 ? '...' : ''
-            }`,
-            full: x.description
+    this.foodIconsModel = this.pageSvc.initFoodIconsModel();
+
+    this.sessionList = [
+      sessionList
+        .map(x => ({
+          ...x,
+          ...{
+            description: {
+              short: `${x.description.substr(0, 160)}${
+                x.description.length > 160 ? '...' : ''
+              }`,
+              full: x.description
+            }
           }
-        }
-      }))
-      .map(session => {
-        const { id } = session;
-        const speaker = speakerList.find(x => x.id === id) || {
-          id: '',
-          name: '',
-          title: ''
-        };
-        return { ...session, speaker };
-      });
+        }))
+        .map(session => {
+          const { id } = session;
+          const speaker = speakerList
+            .map(x => ({
+              ...x,
+              ...{
+                food: this.foodIconsModel[
+                  this.pageSvc.randomNumber(this.foodIconsModel.length, 0)
+                ]
+              }
+            }))
+            .find(x => x.id === id) || {
+            id: '',
+            name: '',
+            title: ''
+          };
+          return { ...session, speaker };
+        })
+    ];
   }
 
   selectSession(id) {
