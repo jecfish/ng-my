@@ -1,11 +1,11 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { PageService } from '../../services/page.service';
 
-@Component({
-  selector: 'my-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
-})
+// @Component({
+//   selector: 'my-header',
+//   templateUrl: './header.component.html',
+//   styleUrls: ['./header.component.scss']
+// })
 export class HeaderComponent implements OnInit {
   isShowMobileNav = false;
   isAnchored = false;
