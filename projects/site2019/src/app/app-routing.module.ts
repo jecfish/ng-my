@@ -12,6 +12,7 @@ import { LogoPageComponent } from './logo-page/logo-page.component';
 import { TeamPageComponent } from './team-page/team-page.component';
 import { FormPageComponent } from './form-page/form-page.component';
 import { PostPageComponent } from './post-page/post-page.component';
+import { SessionPageComponent } from './session-page/session-page.component';
 
 // stage: 0, 1, 2
 const HOMEPAGE_LIST = [
@@ -47,6 +48,14 @@ const routes: Routes = [
     path: 'speakers/:id',
     component: SpeakersPageComponent
   },
+  {
+    path: 'sessions',
+    component: SessionPageComponent
+  },  
+  {
+    path: 'sessions/:id',
+    component: SessionPageComponent
+  },    
   {
     path: 'form/:name',
     component: FormPageComponent

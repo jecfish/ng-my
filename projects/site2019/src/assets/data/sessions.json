@@ -1,0 +1,38 @@
+[
+    {
+        "id": "alex-okrushko",
+        "duration": "30 min",
+        "description": "<p>The responsiveness of the apps is one of the critical factors of how the users perceive them. Some of the sources of slowness are waiting for API responses and unhandled errors when they fail.</p> <p>NgRx is the state management solution, and because of the way it is designed, it can help to improve User Experience in many such areas. In particular, I’ll talk about: error handling, store as a cache, and optimistic updates.</p>",
+        "title": "5 Tips to Improve User Experience with NgRx"
+    },
+    {
+        "id": "mashhood-rastgar",
+        "duration": "30 min",
+        "description": "As Single Page Applications take over the world, we are introduced with yet another complexity: their size. Over time we have created patterns to manage complexity on our backends, one of the popular ones being microservices. This pattern is now being adopted by frontends under the name of micro-frontends.  In this talk I will introduce the concept and dive into how does one get about implementing a micro-frontend architecture for their project.",
+        "title": "Scaling Frontend Development using Micro-frontends"
+    },
+    {
+        "id": "jia-li",
+        "duration": "30 min",
+        "description": "<p>State Management is very important in Angular development, ngrx is one of the most used libraries. By using ngrx, there are a lot of advantages in development/test, but we also need to pay the learning cost for several new concepts (Store/Selector/Effect/Action/...), we also need to write a lot of boilerplate code for those extra layers. </p> <p> In this talk, we will use sample application to introduce how to use<br> 1. ngrx <br> 2. ngrx-enitty<br> 3. ngrx-data<br> to implement it, through that, I will introduce the mechanism of ngrx-entity and ngrx-data. I will also like to share my thought when I am using ngrx-data in practical project. </p>",
+        "title": "From ngrx to ngrx-entity to ngrx-data"
+    },
+    {
+        "id": "sebastian-witalec",
+        "duration": "30 min",
+        "description": "<p>NativeScript is a free and open source JavaScript framework for building native iOS and Android apps. Add to that Angular with TypeScript and you will get a truly amazing combination. But I know what you’re thinking: another way of building apps? What makes NativeScript special? Here are a few cool things: </p> <p> · Direct access to native APIs—no plugins required. Want to create a file on Android? Run new java.io.File()—in JavaScript!<br> · Completely native performance through the use of a JavaScript bridge natively available on all three mobile platforms.<br> · Cross-platform libraries for common use cases. Need to call a JSON API? Run http.getJSON<br> · Style native apps using CSS. Yep, that’s actually a thing.<br> </p> <p> Curious about how it all works? Come learn! Architectures will be explained; apps will be built; and fun will be had by all. </p>",
+        "title": "Building Mobile Apps with Angular and NativeScript"
+    },
+    {
+        "id": "tomas-trajan",
+        "duration": "30 min",
+        "description": "<p>In development, we often want to extract reusable parts of logic into self contained libraries. Modern tooling provided by Angular CLI enables us to provide amazing developer experience for the users of our libraries. </p> <p> Libraries can be added seamlessly, while automating all the necessary setup work. </p> <p> More so, providing built-in library specific schematics enables us to cut on the learning curve that is needed to get developers productive straight from the start by generating code which follows intentioned patterns and best practices. </p> <p> In this talk, we're going to explore: <br> 1. What are Angular Schematics<br> 2. Why and how to use them<br> 3. Best practices and tips for using default Angular schematics<br> 4. How to build simple schematics for our custom library<br> 5. How to make our library \"ng add\" - able to make it seamless for the consumers<br> </p>",
+        "title": "Leverage Angular Schematics to empower developers of Frontend App & libraries"
+    },
+    {
+        "id": "jecelyn-yeen-jenning-adrianyeong",
+        "duration": "30 min",
+        "description": "<p>In this talk, we will share about some tecniques we apply in buildling NG-MY website, you can easily apply these techiniques in your website too! Here is what we will cover: </p> <p> - Making Angualr website performant & SEO friendly<br> - Customize Angular CLI Build prerender website<br> - Apply Angular Animation to make your site cooler<br> - Modern CSS with CSS Variables<br> - Feature Flagging & Continuous Integration / Deployment (CI/CD)<br> </p>",
+        "title": "How We Build NG-MY Webiste: Performance, SEO, Angular Animation, Modern CSS"
+    }
+]

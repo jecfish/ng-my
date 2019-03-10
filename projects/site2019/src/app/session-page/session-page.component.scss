@@ -1,0 +1,99 @@
+@import 'variables';
+@import 'mixins';
+
+.session-date {
+    &-btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    &-btn {
+        font-size: 24px;
+        margin: 0 0 0 36px;
+    }
+}
+
+.session{
+
+    &-item {
+        margin: 0 0 30px 0;
+    }
+
+    &-item-row {
+        display: flex;
+
+        @include mobile {
+            flex-wrap: wrap;
+        }
+    }
+
+    &-item-col {
+        .speaker-pic {
+            margin: 0 auto 20px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: #9a999b;
+            overflow: hidden;
+            &-img {
+                object-fit: cover;
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+        .speaker-name {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .session-topic {
+            font-weight: bold;
+            margin-bottom: 10px;
+
+        }
+
+        .session-desc {
+            overflow-y: hidden;
+            height: 80px;
+        }
+
+        .session-more-desc{
+        }
+
+        &:nth-child(1) {
+            width: 20%;
+            @include mobile {
+                width: 100%;
+                margin-top: 15px;
+            }
+        }
+    
+        &:nth-child(2) {
+            width: 20%;
+            @include mobile {
+                width: 100%;
+                margin-top: 15px;
+            }
+        }
+    
+        &:nth-child(3) {
+            width: 10%;
+
+            @include mobile {
+                width: 100%;
+                margin-top: 15px;
+            }
+        }    
+    
+        &:nth-child(4) {
+            width: 50%;
+
+            @include mobile {
+                width: 100%;
+                margin-top: 15px;
+            }
+        }
+    } 
+}
