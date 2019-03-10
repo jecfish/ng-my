@@ -51,11 +51,19 @@
   <button class="hero-scroll" (click)="scrollTo('stats')"></button>
 </section>
 <div class="hero-deco slant">
-  <img class="hero-deco-teh" src="../../assets/imgs/home/teh-tarik-top.png" alt="">
+    <picture>
+        <source srcset='../../assets/imgs/home/teh-tarik-top.webp' type='image/webp'>
+        <img src="../../assets/imgs/home/teh-tarik-top.png" class="hero-deco-teh" alt="mamak">
+    </picture>
+  <!-- <img class="hero-deco-teh" src="../../assets/imgs/home/teh-tarik-top.png" alt=""> -->
 </div>
 <main class="main">
   <section class="stats" #stats>
-    <img src="../../assets/imgs/home/roti-canai.png" class="food-roti-canai" alt="">
+      <picture class="food-roti-canai">
+          <source srcset='../../assets/imgs/home/roti-canai.webp' type='image/webp'>
+          <img src="../../assets/imgs/home/roti-canai.png" alt="mamak">
+      </picture>
+    <!-- <img src="../../assets/imgs/home/roti-canai.png" class="food-roti-canai" alt=""> -->
     <div class="container">
       <div class="row">
         <div class="col">
@@ -94,9 +102,22 @@
   </section>
   <div class="mailing-deco mailing-deco-up slant"></div>
   <section id="mc_embed_signup" class="mailing-section" #subscribe>
-    <img src="../../assets/imgs/home/nasilemak.png" class="food-nasi-lemak" alt="">
+    <picture class="food-nasi-lemak">
+      <source srcset='../../assets/imgs/home/nasilemak.webp' type='image/webp'>
+      <img src="../../assets/imgs/home/nasilemak.png" alt="mamak">
+    </picture>
+    <picture class="food-teh-ais-limau">
+        <source srcset='../../assets/imgs/home/tehaislimau.webp' type='image/webp'>
+        <img src="../../assets/imgs/home/tehaislimau.png" alt="mamak">
+    </picture>
+    <picture class="food-teh-tarik">
+        <source srcset='../../assets/imgs/home/tehtarik.webp' type='image/webp'>
+        <img src="../../assets/imgs/home/tehtarik.png" alt="mamak">
+    </picture>
+
+    <!-- <img src="../../assets/imgs/home/nasilemak.png" class="food-nasi-lemak" alt="">
     <img src="../../assets/imgs/home/tehaislimau.png" class="food-teh-ais-limau" alt="">
-    <img src="../../assets/imgs/home/tehtarik.png" class="food-teh-tarik" alt="">
+    <img src="../../assets/imgs/home/tehtarik.png" class="food-teh-tarik" alt=""> -->
     <div class="container">
       <form action="https://ng-my.us20.list-manage.com/subscribe/post?u=18c8aa300b78c9a24177d5215&amp;id=eccdbe44f7"
         method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
@@ -137,7 +158,10 @@
               <div class="speakers-profile-pic">
                 <img class="speakers-profile-img" src="../../assets/imgs/speakers/{{ speaker.id }}.jpg" alt="">
                 <div class="speakers-profile-food">
-                  <img src="../../assets/imgs/speaker-food/{{ speaker.food }}.png" [alt]="speaker.food">
+                    <picture>
+                        <source srcset='../../assets/imgs/speaker-food/{{ speaker.food }}.webp' type='image/webp'>
+                        <img src="../../assets/imgs/speaker-food/{{ speaker.food }}.png" [alt]="speaker.food">
+                    </picture>
                 </div>
               </div>
               <p class="speakers-name">{{ speaker.name }}</p>
@@ -180,14 +204,46 @@
         </div>
       </a>
       <div class="sessions-food">
-        <img src="../../assets/imgs/speaker-food/bandung.png" alt="">
+          <picture>
+              <source srcset='../../assets/imgs/speaker-food/bandung.webp' type='image/webp'>
+              <img src="../../assets/imgs/speaker-food/bandung.png" alt="mamak">
+          </picture>
+          <picture>
+              <source srcset='../../assets/imgs/speaker-food/kopi-o.webp' type='image/webp'>
+              <img src="../../assets/imgs/speaker-food/kopi-o.png" alt="mamak">
+          </picture>
+          <picture>
+              <source srcset='../../assets/imgs/speaker-food/nasi-lemak.webp' type='image/webp'>
+              <img src="../../assets/imgs/speaker-food/bandung.png" alt="mamak">
+          </picture>
+          <picture>
+              <source srcset='../../assets/imgs/speaker-food/cendol.webp' type='image/webp'>
+              <img src="../../assets/imgs/speaker-food/cendol.png" alt="mamak">
+          </picture>
+          <picture>
+              <source srcset='../../assets/imgs/speaker-food/curry-pup.webp' type='image/webp'>
+              <img src="../../assets/imgs/speaker-food/curry-pup.png" alt="mamak">
+          </picture>
+          <picture>
+              <source srcset='../../assets/imgs/speaker-food/ikat-semua.webp' type='image/webp'>
+              <img src="../../assets/imgs/speaker-food/ikat-semua.png" alt="mamak">
+          </picture>
+          <picture>
+              <source srcset='../../assets/imgs/speaker-food/roti-canai.webp' type='image/webp'>
+              <img src="../../assets/imgs/speaker-food/roti-canai.png" alt="mamak">
+          </picture>
+          <picture>
+              <source srcset='../../assets/imgs/speaker-food/tosai.webp' type='image/webp'>
+              <img src="../../assets/imgs/speaker-food/tosai.png" alt="mamak">
+          </picture>
+        <!-- <img src="../../assets/imgs/speaker-food/bandung.png" alt="">
         <img src="../../assets/imgs/speaker-food/kopi-o.png" alt="">
         <img src="../../assets/imgs/speaker-food/nasi-lemak.png" alt="">
         <img src="../../assets/imgs/speaker-food/cendol.png" alt="">
         <img src="../../assets/imgs/speaker-food/curry-pup.png" alt="">
         <img src="../../assets/imgs/speaker-food/ikat-semua.png" alt="">
         <img src="../../assets/imgs/speaker-food/roti-canai.png" alt="">
-        <img src="../../assets/imgs/speaker-food/tosai.png" alt="">
+        <img src="../../assets/imgs/speaker-food/tosai.png" alt=""> -->
       </div>
     </div>
   </section>
@@ -208,15 +264,35 @@
         </table>
       </div>
       <div class="agenda-food">
-        <img src="../../assets/imgs/home/tehtarik.png" alt="">
+          <picture>
+              <source srcset='../../assets/imgs/home/tehtarik.webp' type='image/webp'>
+              <img src="../../assets/imgs/home/tehtarik.png" alt="mamak">
+          </picture>
+          <picture>
+              <source srcset='../../assets/imgs/home/aiskacang.webp' type='image/webp'>
+              <img src="../../assets/imgs/home/aiskacang.png" alt="mamak">
+          </picture>
+          <picture>
+              <source srcset='../../assets/imgs/home/nasilemak.webp' type='image/webp'>
+              <img src="../../assets/imgs/home/nasilemak.png" alt="mamak">
+          </picture>
+          <picture>
+              <source srcset='../../assets/imgs/home/tehaislimau.webp' type='image/webp'>
+              <img src="../../assets/imgs/home/tehaislimau.png" alt="mamak">
+          </picture>
+        <!-- <img src="../../assets/imgs/home/tehtarik.png" alt="">
         <img src="../../assets/imgs/home/aiskacang.png" alt="">
         <img src="../../assets/imgs/home/nasilemak.png" alt="">
-        <img src="../../assets/imgs/home/tehaislimau.png" alt="">
+        <img src="../../assets/imgs/home/tehaislimau.png" alt=""> -->
       </div>
     </div>
   </section>
   <div class="agenda-deco slant">
-    <img src="../../assets/imgs/home/teh-tarik-bottom.png" alt="" class="agenda-deco-img">
+      <picture>
+          <source srcset='../../assets/imgs/home/teh-tarik-bottom.webp' type='image/webp'>
+          <img src="../../assets/imgs/home/teh-tarik-bottom.png" class="agenda-deco-img" alt="mamak">
+      </picture>
+    <!-- <img src="../../assets/imgs/home/teh-tarik-bottom.png" alt="" class="agenda-deco-img"> -->
   </div>
   <section class="sponsors-section">
     <div class="container">

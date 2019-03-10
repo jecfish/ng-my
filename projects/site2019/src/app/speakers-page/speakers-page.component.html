@@ -28,7 +28,10 @@
               <figure class="team-card-pic">
                 <img src="../../assets/imgs/speakers/{{ m.id }}.jpg" alt="{{ m.name }}" class="team-card-img" />
               </figure>
-              <img class="team-card-food" src="../../assets/imgs/speaker-food/{{ m.food }}.png" [alt]="m.food">
+              <picture class="team-card-food">
+                  <source srcset='../../assets/imgs/speaker-food/{{ m.food }}.webp' type='image/webp'>
+                  <img src="../../assets/imgs/speaker-food/{{ m.food }}.png" [alt]="m.food">
+              </picture>
             </div>
             <div class="team-card-name">{{ m.name }}</div>
             <div class="team-card-desc">{{ m.title }}</div>

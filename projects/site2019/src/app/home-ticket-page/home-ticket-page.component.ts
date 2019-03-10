@@ -158,7 +158,7 @@ export class HomeTicketPageComponent implements OnInit {
       }
     }));
 
-    // this.randomSpeaker();
+    this.randomSpeaker();
   }
 
   scrollTo(location) {
