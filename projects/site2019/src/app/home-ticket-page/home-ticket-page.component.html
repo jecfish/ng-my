@@ -13,16 +13,24 @@
         <p class="hero-subtitle">
           <strong class="text-primary">#ngMY2019</strong> is the labour-of-love conference for the Angular
           community
-          in Malaysia. The is the very <strong class="text-primary">first</strong> Angular conference in <strong class="text-primary">Southeast
+          in Malaysia. The is the very <strong class="text-primary">first</strong> Angular conference in <strong
+            class="text-primary">Southeast
             Asia</strong>!
         </p>
         <ul class="hero-misc">
           <li class="hero-misc-item">
-            <i class="fas fa-calendar-alt icon-left text-primary"></i>July
-            6th & 7th
+            <a
+              href="http://www.google.com/calendar/event?action=TEMPLATE&dates=20190706T000000Z%2F20190707T100000Z&text=NG-MY%202019&location=Sunway%20University&details=Refer%20to%20website%20for%20agenda%20https%3A%2F%2Fng-my.org"
+              target="_blank" rel="noreferer">
+              <i class="fas fa-calendar-alt icon-left text-primary"></i>July
+              6th & 7th
+            </a>
+
           </li>
           <li class="hero-misc-item">
-            <i class="fas fa-map-marker-alt icon-left text-primary"></i>Sunway University
+            <a href="https://goo.gl/maps/aWtc7L7J3yN2" target="_blank" rel="noreferer">
+              <i class="fas fa-map-marker-alt icon-left text-primary"></i>Sunway University
+            </a>
           </li>
         </ul>
         <div class="hero-btns">
@@ -57,16 +65,16 @@
               <div class="stats-metrics">days</div>
             </div>
             <div class="stats-item">
-              <div class="stats-number">18+</div>
-              <div class="stats-metrics">speakers</div>
+              <div class="stats-number">300+</div>
+              <div class="stats-metrics">attendees</div>
             </div>
             <div class="stats-item">
-              <div class="stats-number">20+</div>
+              <div class="stats-number">25+</div>
               <div class="stats-metrics">sessions</div>
             </div>
             <div class="stats-item">
-              <div class="stats-number">300+</div>
-              <div class="stats-metrics">attendees</div>
+              <div class="stats-number">2</div>
+              <div class="stats-metrics">tracks</div>
             </div>
           </div>
         </div>
@@ -75,7 +83,8 @@
             <h2 class="home-section-title">
               What's up in <span class="text-primary text-shadow">NG-MY</span> 2019?
             </h2>
-            <p>With Angular team members and legendary international speakers onboard, <strong class="text-primary">NG-MY
+            <p>With Angular team members and legendary international speakers onboard, <strong
+                class="text-primary">NG-MY
                 2019</strong>
               guarantees an excellent program, technically in-depth and 100% useful.</p>
           </article>
@@ -95,7 +104,8 @@
         <label for="mce-EMAIL" class="mailing-label">SUBSCRIBE &amp; STAY UP TO DATE TO WIN A FREE TICKET</label>
         <div id="mc_embed_signup_scroll" class="mailing">
           <div class="input-group">
-            <input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL" placeholder="Enter Your Email" />
+            <input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL"
+              placeholder="Enter Your Email" />
             <div class="input-group-append">
               <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-secondary">
                 <span class="btn-inner">Get updates</span>
@@ -157,7 +167,8 @@
   <div class="speakers-deco slant"></div>
   <section class="sessions">
     <div class="container">
-      <h2 class="home-section-title">Check out the <span class="text-primary text-shadow">sessions</span> of #ngMY2019!</h2>
+      <h2 class="home-section-title">Check out the <span class="text-primary text-shadow">sessions</span> of #ngMY2019!
+      </h2>
       <p class="sessions-text">
         Learn about the latest trends in <strong class="text-primary">Angular</strong> and frontend web
         technologies in an inspiring, open meet and
@@ -220,8 +231,8 @@
         <ul class="sponsors-list">
           <li class="sponsors-item" *ngFor="let s of sponsor.list">
             <a [href]="s.url" target="_blank" rel="noreferer">
-              <img src="{{ '../../assets/imgs/sponsors/'+ sponsor.level +'/' + s.image }}" class="sponsors-img" [alt]="s.name"
-                [title]="s.name" />
+              <img src="{{ '../../assets/imgs/sponsors/'+ sponsor.level +'/' + s.image }}" class="sponsors-img"
+                [alt]="s.name" [title]="s.name" />
             </a>
           </li>
         </ul>
