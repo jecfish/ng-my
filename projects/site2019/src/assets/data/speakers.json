@@ -199,5 +199,20 @@
             "icon": "",
             "name": "Nasi Lemak"
         }
+    },
+    {
+        "id": "jerry-kurata",
+        "name": "Jerry Kurata",
+        "title": "Machine Learning GDE, Pluralsight author",
+        "color": "red",
+        "description": "<p>Jerry is a Consultant at InStep Technologies and any author on Pluralsight.com. On Pluralsight he has a number courses including Understanding Machine Learning with Python, TensorFlow:Getting Started, and Deep Learning with Keras.</p>",
+        "profile": {
+            "url": "https://twitter.com/jerrykur",
+            "type": "twitter"
+        },
+        "favourite": {
+            "icon": "",
+            "name": "Maggie Goreng Tambah Telur Mata"
+        }
     }
 ]
