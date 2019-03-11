@@ -81,7 +81,7 @@ export class SessionPageComponent implements OnInit {
 
     const title = id
       ? this.selectedSession.title +
-        this.pageSvc.postfix.replace('|', '| Sessions')
+        this.pageSvc.postfix.replace('|', '| Session')
       : `Sessions${this.pageSvc.postfix}`;
 
     this.pageSvc.setPage({
