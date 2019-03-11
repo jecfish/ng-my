@@ -109,7 +109,6 @@ small {
     font-size: $font-size-xxxl;
     font-weight: bold;
     text-shadow: 0.05em 0.05em $black;
-    font-family: $font-family-sans;
 
     @include mobile {
       font-size: $font-size-xxl;

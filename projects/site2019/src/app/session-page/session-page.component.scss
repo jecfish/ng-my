@@ -26,7 +26,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: $font-family-sans;
     font-size: $font-size-xl;
     font-weight: bold;
     padding: 0 $space-s;
@@ -51,7 +50,6 @@
     .col {
       flex: 0 0 100%;
       // &:nth-child(1) {
-      //   font-family: $font-family-sans;
       //   flex: 0 0 20%;
       // }
 
@@ -94,7 +92,6 @@
   }
 
   &-topic {
-    font-family: $font-family-sans;
     font-weight: bold;
     margin-bottom: $space-s;
   }
