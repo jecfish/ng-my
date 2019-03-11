@@ -55,9 +55,9 @@
               {{ selectedMember?.name }}
             </div>
             <ul class="team-highlight-misc">
-              <li class="team-highlight-misc-item">
-                <a [href]="selectedMember?.profile?.url" target="_blank" rel="noreferrer" class="team-highlight-misc-link">
-                  <i class="{{ profileIconsModel[selectedMember?.profile?.type] }}"></i>
+              <li class="team-highlight-misc-item" *ngFor="let p of selectedMember?.profile">
+                <a [href]="p.url" target="_blank" rel="noreferrer" class="team-highlight-misc-link">
+                  <i class="{{ profileIconsModel[p.type] }}"></i>
                 </a>
               </li>
             </ul>

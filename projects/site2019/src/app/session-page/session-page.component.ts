@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import speakerList from '../../assets/data/speakers.json';
 import sessionList from '../../assets/data/sessions.json';
+import profileIcons from '../../assets/data/profile-url-icons.json';
+
 import { ActivatedRoute } from '@angular/router';
 import { PageService } from '../services/page.service';
 import { Meta } from '@angular/platform-browser';
@@ -17,12 +19,7 @@ export class SessionPageComponent implements OnInit {
   sessionList = [];
   selectedSessionId = null;
 
-  profileIconsModel = {
-    website: 'fas fa-globe-asia',
-    linkedin: 'fab fa-linkedin',
-    facebook: 'fab fa-facebook',
-    twitter: 'fab fa-twitter'
-  };
+  profileIconsModel = null;
 
   constructor(
     private route: ActivatedRoute,
@@ -70,6 +67,8 @@ export class SessionPageComponent implements OnInit {
           return { ...session, speaker };
         })
     ];
+
+    this.profileIconsModel = profileIcons;
   }
 
   selectSession(id) {
