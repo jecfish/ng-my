@@ -14,7 +14,7 @@
     "id": "jia-li",
     "duration": "30 min",
     "description": "<p>State Management is very important in Angular development, ngrx is one of the most used libraries. By using ngrx, there are a lot of advantages in development/test, but we also need to pay the learning cost for several new concepts (Store/Selector/Effect/Action/...), we also need to write a lot of boilerplate code for those extra layers. </p> <p> In this talk, we will use sample application to introduce how to use<br> 1. ngrx <br> 2. ngrx-enitty<br> 3. ngrx-data<br> to implement it, through that, I will introduce the mechanism of ngrx-entity and ngrx-data. I will also like to share my thought when I am using ngrx-data in practical project. </p>",
-    "title": "From ngrx to ngrx-entity to ngrx-data"
+    "title": "From NgRx to NgRx-entity to NgRx-data"
   },
   {
     "id": "sebastian-witalec",
@@ -41,14 +41,20 @@
     "title": "Machine Learning and AI for Angular Developers"
   },
   {
+    "id": "kevin-yang",
+    "duration": "30 min",
+    "description": "<p>(TBD)</p>",
+    "title": "Why should We Care about Functional Reactive Programming?"
+  },
+  {
     "id": "mike-ryan",
     "duration": "30 min",
     "description": "<p>(TBD)</p>",
-    "title": "NgRx (TBD)"
+    "title": "NgRx - Mike Ryan (TBD)"
   },{
     "id": "kamil-mysliwiec",
     "duration": "30 min",
     "description": "<p>(TBD)</p>",
-    "title": "Nestjs (TBD)"
+    "title": "Nestjs - Kamil Mysliwiec (TBD)"
   }
 ]
