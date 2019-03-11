@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import memberList from '../../assets/data/members.json';
 import { ActivatedRoute } from '@angular/router';
 import { PageService } from '../services/page.service';
-import { Meta } from '@angular/platform-browser';
 import { Location } from '@angular/common';
 import { environment } from '../../environments/environment';
 
@@ -37,7 +36,6 @@ export class TeamPageComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private meta: Meta,
     private pageSvc: PageService,
     private location: Location
   ) { }
