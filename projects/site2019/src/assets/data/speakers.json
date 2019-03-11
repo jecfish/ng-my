@@ -5,10 +5,12 @@
         "color": "red",
         "description": "Keen is a member of the Angular Tooling team. He has worked on Universal (server-side rendering) for Google Shopping Express, Angular language service, and most recently Bazel + CLI.",
         "title": "Software Engineer, Angular team @ Google",
-        "profile": [{
-            "url": "https://twitter.com/liauky",
-            "type": "twitter"
-        }],
+        "profile": [
+            {
+                "url": "https://twitter.com/liauky",
+                "type": "twitter"
+            }
+        ],
         "favourite": {
             "icon": "",
             "name": "Tosai"
@@ -20,13 +22,16 @@
         "title": "GDE, Builder of NgRx, Staff Software Engineer @ Synapse",
         "color": "blue",
         "description": "<p>Mike is a software engineer at Synapse building user interfaces for industrial Internet of Things applications. </p><p>He is a Google Developer Expert and a core team member of NgRx, an open source organization building high quality reactive libraries for Angular.<p>",
-        "profile": [{
-            "url": "https://twitter.com/MikeRyanDev",
-            "type": "twitter"
-        }, {
-            "url": "https://github.com/mikeryandev",
-            "type": "github"
-        }],
+        "profile": [
+            {
+                "url": "https://twitter.com/MikeRyanDev",
+                "type": "twitter"
+            },
+            {
+                "url": "https://github.com/mikeryandev",
+                "type": "github"
+            }
+        ],
         "favourite": {
             "icon": "",
             "name": "Maggie Goreng Tambah Telur Mata"
@@ -38,10 +43,12 @@
         "title": "Pluralsight author, GDE, MVP",
         "color": "red",
         "description": "<p>Deborah Kurata is a software developer, consultant, conference speaker, and Pluralsight author. Her courses include: \"Angular: Getting Started\", “Angular Routing”, and “Angular Reactive Forms”. </p><p>For her work in support of software developers, she has been recognized with the Microsoft Most Valuable Professional (MVP) award and is a Google Developer Expert (GDE). She enjoys talking to other developers about Angular!</p>",
-        "profile": [{
-            "url": "https://twitter.com/deborahkurata",
-            "type": "twitter"
-        }],
+        "profile": [
+            {
+                "url": "https://twitter.com/deborahkurata",
+                "type": "twitter"
+            }
+        ],
         "favourite": {
             "icon": "",
             "name": "Roti Canai Banjir"
@@ -53,13 +60,16 @@
         "title": "Nestjs Creator",
         "color": "blue",
         "description": "Kamil Mysliwiec is an enthusiastic software engineer truly passionate about the web technologies. Creator of NestJS, open source evangelist, currently working as a Full-Stack developer with variety of languages, mainly focused on the web-related things.",
-        "profile": [{
-            "url": "https://twitter.com/kammysliwiec",
-            "type": "twitter"
-        },{
-            "url": "https://github.com/kamilmysliwiec",
-            "type": "github"
-        }],
+        "profile": [
+            {
+                "url": "https://twitter.com/kammysliwiec",
+                "type": "twitter"
+            },
+            {
+                "url": "https://github.com/kamilmysliwiec",
+                "type": "github"
+            }
+        ],
         "favourite": {
             "icon": "",
             "name": "Roti Telur, Bandung Ais"
@@ -71,10 +81,16 @@
         "title": "CTO @ Duotify, GDE, MVP",
         "color": "red",
         "description": "<p>Will is a teacher, book author, blogger, speaker, youtuber, Microsoft MVP from 2008, Angular/Web GDE (Google Developer Expert) from 2018. </p><p>He likes to share knowledge in many area such as Angular, JavaScript, .NET Core, ASP.NET MVC, Entity Framework, Docker and Kubernetes.  He is always a approachable person. You can find him and talk to him anytime.</p>",
-        "profile": [{
-            "url": "https://www.facebook.com/will.fans/",
-            "type": "facebook"
-        }],
+        "profile": [
+            {
+                "url": "https://www.facebook.com/will.fans/",
+                "type": "facebook"
+            },
+            {
+                "url": "https://twitter.com/Will_Huang",
+                "type": "twitter"
+            }
+        ],
         "favourite": {
             "icon": "",
             "name": "Indo Mee"
@@ -86,10 +102,12 @@
         "title": "Sr. Developer Advocate, NativeScript @ Progress",
         "color": "blue",
         "description": "<p>Sebastian Witalec is a Senior Developer Advocate for Progress who specialises in Angular and NativeScript. He loves working on both serious and fun projects and one day he will use his robot army to conquer the world.</p> <p>He is always happy to learn about the new stuff and to pass the knowledge as far as his voice (or the wire) can take him. Sebastian is based in London actively working with various Dev communities in Europe. When not acting techie he is a massive football fan/player (probably bigger at heart than skills).</p>",
-        "profile": [{
-            "url": "https://twitter.com/sebawita",
-            "type": "twitter"
-        }],
+        "profile": [
+            {
+                "url": "https://twitter.com/sebawita",
+                "type": "twitter"
+            }
+        ],
         "favourite": {
             "icon": "",
             "name": "Cendol"
@@ -101,10 +119,16 @@
         "title": "Software Architect, GDE",
         "color": "red",
         "description": "<p>Jecelyn speaks English, Mandarin, C#, Typescript, JavaScript and Angular. She is a Google Developer Expert (GDE) in Angular & director of Women Who Code KL.</p><p>She funnels her passion in tech into publishing articles as well as sharing her knowledge via workshops and conferences and meet-ups. </p><p>Ironically her favourite past time away from work involves travelling to remote islands without WiFi for deep sea diving expeditions and reading books with tangible covers.</p>",
-        "profile": [{
-            "url": "https://twitter.com/jecelynyeen",
-            "type": "twitter"
-        }],
+        "profile": [
+            {
+                "url": "https://twitter.com/jecelynyeen",
+                "type": "twitter"
+            },
+            {
+                "url": "https://www.facebook.com/jecelyn",
+                "type": "facebook"
+            }
+        ],
         "favourite": {
             "icon": "",
             "name": "Indo mee"
@@ -116,10 +140,12 @@
         "title": "Software Engineer, Firebase @ Google",
         "color": "blue",
         "description": "<p>Alex is a software engineer at Google working on Firebase Console. He is also a contributor to NgRx and a passionate maintainer of this library at Google. </p><p>At his free time, he contributes and reviews articles at blog.angularindepth.com and provides NgRx workshops. Alex is from Toronto where enjoys his weekends with his wife and 3 little kids.</p>",
-        "profile": [{
-            "url": "https://twitter.com/AlexOkrushko",
-            "type": "twitter"
-        }],
+        "profile": [
+            {
+                "url": "https://twitter.com/AlexOkrushko",
+                "type": "twitter"
+            }
+        ],
         "favourite": {
             "icon": "",
             "name": "Cendol"
@@ -131,16 +157,20 @@
         "title": "CTO @ Sastaticket.pk, GDE",
         "color": "red",
         "description": "Mashhood leads the engineering team at Sastaticket.pk. He specializes in using the latest web technologies available to develop the best travel platform in the country. He is also an active developer community member, is currently serving as a Google Developer Expert and is speaking at several international conferences during the year.",
-        "profile": [{
-            "url": "https://twitter.com/mashhoodr",
-            "type": "twitter"
-        }, {
-            "url": "https://github.com/mashhoodr",
-            "type": "github"
-        }, {
-            "url": "https://facebook.com/mashhoodr",
-            "type": "facebook"
-        }],
+        "profile": [
+            {
+                "url": "https://twitter.com/mashhoodr",
+                "type": "twitter"
+            },
+            {
+                "url": "https://github.com/mashhoodr",
+                "type": "github"
+            },
+            {
+                "url": "https://facebook.com/mashhoodr",
+                "type": "facebook"
+            }
+        ],
         "favourite": {
             "icon": "",
             "name": "Roti Canai"
@@ -152,13 +182,16 @@
         "title": "Angular collaborator, angular/zone.js core contributor",
         "color": "blue",
         "description": "Jia Li is a frontend developer with passion, he is the collaborator of angular/zone.js, now he basically take care of everything of zone.js. He love Angular and now developer Angular enterprise application, also write articles for Angular in Depth. ",
-        "profile": [{
-            "url": "https://twitter.com/Jialipassion",
-            "type": "twitter"
-        }, {
-            "url": "https://github.com/JiaLiPassion",
-            "type": "github"
-        }],
+        "profile": [
+            {
+                "url": "https://twitter.com/Jialipassion",
+                "type": "twitter"
+            },
+            {
+                "url": "https://github.com/JiaLiPassion",
+                "type": "github"
+            }
+        ],
         "favourite": {
             "icon": "",
             "name": "Nasi Lemak"
@@ -170,16 +203,20 @@
         "title": "Software Architect @ Schaltstelle, GDE",
         "color": "red",
         "description": "<p>Tomas Trajan (@tomastrajan) - I am Google Developer Expert for Angular, writing and speaking mostly about Angular, RxJS and many exciting frontend technologies.</p><p>I love sharing know-how and working on open source with most popular project being Angular NgRx Material Starter (1200+ Stars on GitHub), Release Butler - a Twitter bot that tweets change logs of popular frameworks and libraries and Medium Enhanced Stats a Chrome extension which enhances Medium stats screen.</p><p>Professionally I am currently living and working in the lovely Switzerland and company Die Mobiliar as a Frontend Architect where we are trying to help improve more than 40 Angular SPAs and a whole universe of libraries by introducing best practices, maintainable architecture, coaching other developers, and building tool to help us achieve this goals.</p><p>Stay tuned for an upcoming release of a Code Butler - a node CLI tool to automate code transformations to multiple projects in enterprise environment.</p>",
-        "profile": [{
-            "url": "https://twitter.com/tomastrajan",
-            "type": "twitter"
-        }, {
-            "url": "https://github.com/tomastrajan",
-            "type": "github"
-        }, {
-            "url": "https://medium.com/@tomastrajan",
-            "type": "medium"
-        }],
+        "profile": [
+            {
+                "url": "https://twitter.com/tomastrajan",
+                "type": "twitter"
+            },
+            {
+                "url": "https://github.com/tomastrajan",
+                "type": "github"
+            },
+            {
+                "url": "https://medium.com/@tomastrajan",
+                "type": "medium"
+            }
+        ],
         "favourite": {
             "icon": "",
             "name": "Nasi Lemak"
@@ -191,10 +228,16 @@
         "title": "GDE, MVP",
         "color": "blue",
         "description": "Kevin Yang is an Angular/Web GDE, Microsoft MVP, Angular Taiwan community organizer, GDG Taichung co-organizer. He loves to talk and share about anything related to Angular.",
-        "profile": [{
-            "url": "https://www.facebook.com/CKNotepad/",
-            "type": "facebook"
-        }],
+        "profile": [
+            {
+                "url": "https://www.facebook.com/CKNotepad/",
+                "type": "facebook"
+            },
+            {
+                "url": "https://twitter.com/yoKevinYang",
+                "type": "twitter"
+            }
+        ],
         "favourite": {
             "icon": "",
             "name": "Nasi Lemak"
