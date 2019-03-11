@@ -89,12 +89,12 @@ export class SessionPageComponent implements OnInit {
     this.pageSvc.setPage({
       title,
       metaDesc: 'Sessions NG-MY 2019.',
-      metaImg: id
-        ? environment.baseUrl +
-          '/assets/imgs/speakers/' +
-          this.selectedSession.id +
-          '.jpg'
-        : environment.baseUrl + '/assets/imgs/speakers/_featured-speakers.jpg',
+      // metaImg: id
+      //   ? environment.baseUrl +
+      //     '/assets/imgs/speakers/' +
+      //     this.selectedSession.id +
+      //     '.jpg'
+      //   : environment.baseUrl + '/assets/imgs/speakers/_featured-speakers.jpg',
       skipTitlePostfix: true
     });
   }
