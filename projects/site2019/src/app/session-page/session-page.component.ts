@@ -69,6 +69,8 @@ export class SessionPageComponent implements OnInit {
     ];
 
     this.profileIconsModel = profileIcons;
+    const selectedId = this.route.snapshot.paramMap.get('id');
+    this.selectSession(selectedId);
   }
 
   selectSession(id) {

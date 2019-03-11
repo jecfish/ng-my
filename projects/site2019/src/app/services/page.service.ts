@@ -39,6 +39,7 @@ export class PageService {
 
     if (config.metaImg) {
       this.meta.updateTag({ property: 'og:image', content: config.metaImg });
+      this.meta.updateTag({ property: 'twitter:image', content: config.metaImg });
     }
 
     document.dispatchEvent(new Event('prerender-ready'));
