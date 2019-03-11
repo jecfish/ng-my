@@ -181,10 +181,6 @@
     margin-bottom: $space-s;
   }
 
-  &-title {
-    font-family: $font-family-sans;
-  }
-
   &-pic {
     margin: 0 auto $space-s;
     width: 200px;
@@ -239,7 +235,6 @@
   &-title {
     padding: 0 $space;
     font-weight: bold;
-    font-family: $font-family-sans;
   }
 
   @include mobile {
@@ -298,7 +293,6 @@
   cursor: pointer;
   transition: background 0.1s ease;
   height: 100%;
-  font-family: $font-family-sans;
 
   &.--red,
   &.--boy {
