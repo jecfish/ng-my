@@ -70,6 +70,9 @@ export class SessionPageComponent implements OnInit {
           return { ...session, speaker };
         })
     ];
+
+    const selectedId = this.route.snapshot.paramMap.get('id');
+    this.selectSession(selectedId);
   }
 
   selectSession(id) {
