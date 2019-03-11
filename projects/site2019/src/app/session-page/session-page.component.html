@@ -39,7 +39,7 @@
               <div class="session-topic">{{ s.title }}</div>
               <p class="session-desc" [innerHTML]="s.description.short"></p>
               <button class="btn btn-secondary" (click)="selectSession(s.id)">
-                <div class="btn-inner">show more</div>
+                <div class="btn-inner">More info</div>
               </button>
             </div>
           </div>
@@ -61,9 +61,9 @@
                 {{ selectedSession?.speaker.name }}
               </div>
               <ul class="team-highlight-misc">
-                <li class="team-highlight-misc-item">
-                  <a [href]="selectedSession?.speaker.profile?.url" target="_blank" rel="noreferrer" class="team-highlight-misc-link">
-                    <i class="{{ profileIconsModel[selectedSession?.speaker.profile?.type] }}"></i>
+                <li class="team-highlight-misc-item" *ngFor="let p of selectedSession?.speaker.profile">
+                  <a [href]="p.url" target="_blank" rel="noreferrer" class="team-highlight-misc-link">
+                    <i class="{{ profileIconsModel[p.type] }}"></i>
                   </a>
                 </li>
               </ul>

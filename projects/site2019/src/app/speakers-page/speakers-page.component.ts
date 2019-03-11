@@ -5,6 +5,7 @@ import { PageService } from '../services/page.service';
 import { Meta } from '@angular/platform-browser';
 import { Location } from '@angular/common';
 import { environment } from '../../environments/environment';
+import profileIcons from '../../assets/data/profile-url-icons.json';
 
 @Component({
   selector: 'my-speakers-page',
@@ -15,12 +16,7 @@ export class SpeakersPageComponent implements OnInit {
   memberList = [];
   selectedMemberId = null;
 
-  profileIconsModel = {
-    website: 'fas fa-globe-asia',
-    linkedin: 'fab fa-linkedin',
-    facebook: 'fab fa-facebook',
-    twitter: 'fab fa-twitter'
-  };
+  profileIconsModel = null;
 
   get teamMembers() {
     return this.memberList;
@@ -70,6 +66,8 @@ export class SpeakersPageComponent implements OnInit {
         : environment.baseUrl + '/assets/imgs/speakers/_featured-speakers.jpg',
       skipTitlePostfix: true
     });
+
+    this.profileIconsModel = profileIcons;
   }
 
   unselectMember() {
