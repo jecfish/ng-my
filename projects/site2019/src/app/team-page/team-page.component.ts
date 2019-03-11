@@ -40,7 +40,7 @@ export class TeamPageComponent implements OnInit {
     private meta: Meta,
     private pageSvc: PageService,
     private location: Location
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.memberList = memberList.map(x => ({
@@ -67,11 +67,7 @@ export class TeamPageComponent implements OnInit {
     this.pageSvc.setPage({
       title,
       metaDesc: 'The team behind NG-MY 2019.',
-      metaImg: id
-        ? environment.baseUrl +
-          '/assets/imgs/team/' +
-          this.selectedMember.photo.normal
-        : '',
+      metaImg: `${environment.baseUrl}/assets/imgs/team/${id ? this.selectedMember.photo.normal : 'team-meta.jpg'}`,
       skipTitlePostfix: true
     });
   }
