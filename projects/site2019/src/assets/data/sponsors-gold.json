@@ -8,5 +8,10 @@
         "image": "apigate.jpg",
         "name": "apigate",
         "url": "https://www.apigate.com"
+    },
+    {
+        "image": "airasia.jpg",
+        "name": "airasia",
+        "url": "https://www.airasia.com"
     }
 ]
