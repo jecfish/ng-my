@@ -49,8 +49,8 @@
   {
     "id": "mike-ryan",
     "duration": "30 min",
-    "description": "<p>(TBD)</p>",
-    "title": "NgRx - Mike Ryan (TBD)"
+    "description": "<p>One of the biggest challenges building out large Angular applications is the management of complexity, but where does this complexity come from? Both state management and control flow are some of the largest contributors to unwieldy, hard-to-maintain code. Learn how the design of NgRx helps you manage this complexity by exploring the architectural underpinnings of functional, reactive Angular applications.</p>",
+    "title": "Complexity Management with NgRx"
   },{
     "id": "kamil-mysliwiec",
     "duration": "30 min",
