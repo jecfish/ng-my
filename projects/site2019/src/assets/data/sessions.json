@@ -43,8 +43,8 @@
   {
     "id": "kevin-yang",
     "duration": "30 min",
-    "description": "<p>(TBD)</p>",
-    "title": "Why should We Care about Functional Reactive Programming?"
+    "description": "<p>Functional reactive programming has been around for many years. There are so many reasons make people keep talking about it.</p><p>In this talk, we are going to talk about<br>1. What is functional reactive programming good at?<br>2. Why should you care about it and adopt it?<br>3. How can we use it with RxJS in Angular?<br>4. How about Ramda?</p>",
+    "title": "Why should you care about functional reactive programming?"
   },
   {
     "id": "mike-ryan",
