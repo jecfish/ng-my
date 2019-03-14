@@ -37,7 +37,7 @@
   {
     "id": "jerry-kurata",
     "duration": "30 min",
-    "description": "<p>(TBD)</p>",
+    "description": "<p>You have no doubt heard about the wonders of Machine Learning. Thanks to Machine Learning we now have algorithms that let programs detect objects in images, translate text and speech from one language to another, make recommendations of products someone might purchase, and detect diseases from a person’s picture.</p><p>These capabilities have previously been the realm of Data Scientists working with rooms full of hardware.  But now this power is available to us to use in our Angular applications.</p><p>In this talk you will learn how Machine Learning works, and how we can use machine learning in our code to enhance the capabilities of our applications.</p>",
     "title": "Machine Learning and AI for Angular Developers"
   },
   {
