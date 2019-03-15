@@ -54,7 +54,7 @@
   },{
     "id": "kamil-mysliwiec",
     "duration": "30 min",
-    "description": "<p>(TBD)</p>",
-    "title": "Nestjs - Kamil Mysliwiec (TBD)"
+    "description": "<p>Dependency Injection framework is a core and inherent feature of both Nest and Angular. DI simplifies creating scalable, testable, and maintainable applications by giving us flexible and efficient abstractions. However, did we ever think how this mechanism works underneath? In this talk, we’ll compare how Nest and Angular DI systems differ from each other as well as dive into the basics of the metadata reflection API in TypeScript.</p>",
+    "title": "Beyond TypeScript Metadata: Dependency Injection in Angular and Nest"
   }
 ]
