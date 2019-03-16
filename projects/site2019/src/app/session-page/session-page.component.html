@@ -53,10 +53,12 @@
         <div class="container">
           <div class="team-highlight-info-container">
             <div class="team-highlight-info">
-              <figure class="team-highlight-pic">
-                <img src="../../assets/imgs/speakers/{{ selectedSession.id }}.jpg" [alt]="selectedSession.id" class="team-highlight-img"
-                  *ngIf="selectedSession" />
-              </figure>
+              <a routerLink="/speakers/{{selectedSession?.speaker?.id}}">
+                <figure class="team-highlight-pic">
+                  <img src="../../assets/imgs/speakers/{{ selectedSession?.speaker?.id }}.jpg" [alt]="selectedSession.id"
+                    class="team-highlight-img" *ngIf="selectedSession" />
+                </figure>
+              </a>
               <div class="team-highlight-name">
                 {{ selectedSession?.speaker.name }}
               </div>

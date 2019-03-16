@@ -51,7 +51,7 @@ export class SessionPageComponent implements OnInit {
           }
         }))
         .map(session => {
-          const { id } = session;
+          const [ id ] = session.speakers;
           const speaker = speakerList
             .map(x => ({
               ...x,
