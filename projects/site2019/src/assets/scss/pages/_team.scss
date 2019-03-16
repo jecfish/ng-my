@@ -264,6 +264,9 @@
     }
 
     &-item {
+      display: flex;
+      align-items: center;
+
       &+& {
         margin-top: $space;
       }
@@ -285,8 +288,6 @@
     }
 
     &-link {
-      display: flex;
-      align-items: center;
       color: $black;
       font-weight: bold;
     }
@@ -297,6 +298,25 @@
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+    }
+
+    &-misc {
+      display: flex;
+
+      &-item {
+        &+& {
+          margin-left: $space-s;
+        }
+      }
+
+      &-link {
+        color: $black;
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: $white;
+        }
+      }
     }
   }
 }
