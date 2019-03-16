@@ -4,7 +4,7 @@
     "duration": "30 min",
     "description": "<p>The responsiveness of the apps is one of the critical factors of how the users perceive them. Some of the sources of slowness are waiting for API responses and unhandled errors when they fail.</p> <p>NgRx is the state management solution, and because of the way it is designed, it can help to improve User Experience in many such areas. In particular, I’ll talk about: error handling, store as a cache, and optimistic updates.</p>",
     "title": "5 Tips to Improve User Experience with NgRx",
-    "speakers": ["alex-okrushko", "mashhood-rastgar"]
+    "speakers": ["alex-okrushko"]
   },
   {
     "id": "mashhood-rastgar",
