@@ -75,5 +75,12 @@
     "description": "<p>RxJS is one of those technologies we use every day, but there is always a bit more to learn. In this session, we focus on specific use cases:</p><p>- Collecting data from a backend server<br/>- Combining data streams with other data streams to handle foreign key and aggregate relationships<br/>- Caching the streams in a service so they can be readily reused<br/>- And producing user-friendly data for display<br/>- All without a single subscription</p><p>Join me for this talk as we get to know another side of RxJS.</p>",
     "title": "Collect, Combine, and Cache RxJS Streams for User-Friendly Results... Without a Subscription",
     "speakers": ["deborah-kurata"]
+  },
+  {
+    "id": "gerard-sans",
+    "duration": "30 min",
+    "description": "<p>What is exactly Ivy Renderer? What features will affect the way we build apps? How can we benefit for this technology? In this presentation I will cover these and other fundamental questions while demonstrating all the features available today!</p>",
+    "title": "Ivy Renderer for Dummies",
+    "speakers": ["gerard-sans"]
   }
 ]
