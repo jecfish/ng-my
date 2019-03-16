@@ -6,6 +6,7 @@ import ultimates from '../../assets/data/sponsors-ultimate.json';
 import golds from '../../assets/data/sponsors-gold.json';
 import silvers from '../../assets/data/sponsors-silver.json';
 import miscs from '../../assets/data/sponsors-misc.json';
+import medias from '../../assets/data/sponsors-media.json';
 import bronzes from '../../assets/data/sponsors-bronze.json';
 
 import speakerList from '../../assets/data/speakers.json';
@@ -47,6 +48,11 @@ export class HomeTicketPageComponent implements OnInit {
       level: 'bronze',
       title: 'Bronze sponsors',
       list: bronzes
+    },
+    {
+      level: 'misc',
+      title: 'Media partners',
+      list: medias
     },
     {
       level: 'community',

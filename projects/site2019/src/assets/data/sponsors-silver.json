@@ -3,5 +3,10 @@
         "image": "seek-asia.jpg",
         "name": "seek asia",
         "url": "https://www.seekasia.com/"
+    },
+    {
+        "image": "ambition.jpg",
+        "name": "ambition",
+        "url": "http://www.ambition.com.my/"
     }
 ]

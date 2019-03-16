@@ -37,24 +37,24 @@
   {
     "id": "jerry-kurata",
     "duration": "30 min",
-    "description": "<p>(TBD)</p>",
+    "description": "<p>You have no doubt heard about the wonders of Machine Learning. Thanks to Machine Learning we now have algorithms that let programs detect objects in images, translate text and speech from one language to another, make recommendations of products someone might purchase, and detect diseases from a person’s picture.</p><p>These capabilities have previously been the realm of Data Scientists working with rooms full of hardware.  But now this power is available to us to use in our Angular applications.</p><p>In this talk you will learn how Machine Learning works, and how we can use machine learning in our code to enhance the capabilities of our applications.</p>",
     "title": "Machine Learning and AI for Angular Developers"
   },
   {
     "id": "kevin-yang",
     "duration": "30 min",
-    "description": "<p>(TBD)</p>",
-    "title": "Why should We Care about Functional Reactive Programming?"
+    "description": "<p>Functional reactive programming has been around for many years. There are so many reasons make people keep talking about it.</p><p>In this talk, we are going to talk about<br>1. What is functional reactive programming good at?<br>2. Why should you care about it and adopt it?<br>3. How can we use it with RxJS in Angular?<br>4. How about Ramda?</p>",
+    "title": "Why should you care about functional reactive programming?"
   },
   {
     "id": "mike-ryan",
     "duration": "30 min",
-    "description": "<p>(TBD)</p>",
-    "title": "NgRx - Mike Ryan (TBD)"
+    "description": "<p>One of the biggest challenges building out large Angular applications is the management of complexity, but where does this complexity come from? Both state management and control flow are some of the largest contributors to unwieldy, hard-to-maintain code. Learn how the design of NgRx helps you manage this complexity by exploring the architectural underpinnings of functional, reactive Angular applications.</p>",
+    "title": "Complexity Management with NgRx"
   },{
     "id": "kamil-mysliwiec",
     "duration": "30 min",
-    "description": "<p>(TBD)</p>",
-    "title": "Nestjs - Kamil Mysliwiec (TBD)"
+    "description": "<p>Dependency Injection framework is a core and inherent feature of both Nest and Angular. DI simplifies creating scalable, testable, and maintainable applications by giving us flexible and efficient abstractions. However, did we ever think how this mechanism works underneath? In this talk, we’ll compare how Nest and Angular DI systems differ from each other as well as dive into the basics of the metadata reflection API in TypeScript.</p>",
+    "title": "Beyond TypeScript Metadata: Dependency Injection in Angular and Nest"
   }
 ]
