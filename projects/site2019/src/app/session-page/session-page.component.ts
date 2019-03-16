@@ -32,6 +32,14 @@ export class SessionPageComponent implements OnInit {
     return this.currentDaySession.find(x => x.id === this.selectedSessionId);
   }
 
+  get selectedSessionSpeakers() {
+    return (this.selectedSession || {}).speakers || [];
+  }
+
+  get onlySpeaker() {
+    return this.selectedSessionSpeakers[0] || {};
+  }
+
   get currentDaySession() {
     return this.sessionList[this.day];
   }
@@ -51,20 +59,15 @@ export class SessionPageComponent implements OnInit {
           }
         }))
         .map(session => {
-          const [ id ] = session.speakers;
-          const speaker = speakerList
+          const speakers = speakerList
             .map(x => ({
               ...x,
               ...{
                 food: this.pageSvc.randomFoodIcon()
               }
             }))
-            .find(x => x.id === id) || {
-            id: '',
-            name: '',
-            title: ''
-          };
-          return { ...session, speaker };
+            .filter(x => session.speakers.includes(x.id));
+          return { ...session, speakers };
         })
     ];
 
