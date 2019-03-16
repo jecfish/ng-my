@@ -263,7 +263,7 @@
         "name": "Gerard Sans",
         "title": "Senior Developer Advocate @ AWS, GDE",
         "color": "red",
-        "description": "<p>Gerard is very excited about the future of the Web and JavaScript. Always happy Computer Science Engineer and humble Google Developer Expert. He loves to share his learnings by giving talks, trainings and blogging about cool technologies. He loves running AngularZone and GraphQL London, mentoring students and giving back to the community.</p>",
+        "description": "<p>Gerard is very excited about the future of the Web and JavaScript. Always happy Computer Science Engineer and humble Google Developer Expert (GDE). He loves to share his learnings by giving talks, trainings and blogging about cool technologies. He loves running AngularZone and GraphQL London, mentoring students and giving back to the community.</p>",
         "profile": [{
             "url": "https://twitter.com/gerardsans",
             "type": "twitter"
