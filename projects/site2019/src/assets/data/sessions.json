@@ -68,5 +68,12 @@
     "description": "<p>Dependency Injection framework is a core and inherent feature of both Nest and Angular. DI simplifies creating scalable, testable, and maintainable applications by giving us flexible and efficient abstractions. However, did we ever think how this mechanism works underneath? In this talk, we’ll compare how Nest and Angular DI systems differ from each other as well as dive into the basics of the metadata reflection API in TypeScript.</p>",
     "title": "Beyond TypeScript Metadata: Dependency Injection in Angular and Nest",
     "speakers": ["kamil-mysliwiec"]
+  },
+  {
+    "id": "deborah-kurata",
+    "duration": "30 min",
+    "description": "<p>RxJS is one of those technologies we use every day, but there is always a bit more to learn. In this session, we focus on specific use cases:</p><p>- Collecting data from a backend server<br/>- Combining data streams with other data streams to handle foreign key and aggregate relationships<br/>- Caching the streams in a service so they can be readily reused<br/>- And producing user-friendly data for display<br/>- All without a single subscription</p><p>Join me for this talk as we get to know another side of RxJS.</p>",
+    "title": "Collect, Combine, and Cache RxJS Streams for User-Friendly Results... Without a Subscription",
+    "speakers": ["deborah-kurata"]
   }
 ]
