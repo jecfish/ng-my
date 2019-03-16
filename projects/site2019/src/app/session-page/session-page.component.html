@@ -59,10 +59,18 @@
                     <figure class="team-highlight-speakers-pic">
                       <img src="../../assets//imgs/speakers/{{ s.id }}.jpg" class="team-highlight-speakers-img" [alt]="s.name">
                     </figure>
-                    <div class="team-highlight-speakers-name">
-                      {{ s.name }}
-                    </div>
                   </a>
+                  <div class="team-highlight-speakers-text">
+                    {{ s.name }}
+
+                    <ul class="team-highlight-speakers-misc">
+                      <li class="team-highlight-speakers-misc-item" *ngFor="let p of s.profile">
+                        <a [href]="p.url" target="_blank" rel="noreferrer" class="team-highlight-speakers-misc-link">
+                          <i class="{{ profileIconsModel[p.type] }}"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
               <ng-container *ngIf="selectedSessionSpeakers.length === 1">
