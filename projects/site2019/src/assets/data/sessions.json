@@ -3,7 +3,7 @@
     "duration": "30 min",
     "description": "<p>The responsiveness of the apps is one of the critical factors of how the users perceive them. Some of the sources of slowness are waiting for API responses and unhandled errors when they fail.</p> <p>NgRx is the state management solution, and because of the way it is designed, it can help to improve User Experience in many such areas. In particular, I’ll talk about: error handling, store as a cache, and optimistic updates.</p>",
     "title": "5 Tips to Improve User Experience with NgRx",
-    "speakers": ["alex-okrushko"]
+    "speakers": ["alex-okrushko", "jia-li"]
   },
   {
     "id": "mashhood-rastgar",
@@ -60,7 +60,7 @@
     "description": "<p>One of the biggest challenges building out large Angular applications is the management of complexity, but where does this complexity come from? Both state management and control flow are some of the largest contributors to unwieldy, hard-to-maintain code. Learn how the design of NgRx helps you manage this complexity by exploring the architectural underpinnings of functional, reactive Angular applications.</p>",
     "title": "Complexity Management with NgRx",
     "speakers": ["mike-ryan"]
-  },{
+  }, {
     "id": "kamil-mysliwiec",
     "duration": "30 min",
     "description": "<p>Dependency Injection framework is a core and inherent feature of both Nest and Angular. DI simplifies creating scalable, testable, and maintainable applications by giving us flexible and efficient abstractions. However, did we ever think how this mechanism works underneath? In this talk, we’ll compare how Nest and Angular DI systems differ from each other as well as dive into the basics of the metadata reflection API in TypeScript.</p>",
