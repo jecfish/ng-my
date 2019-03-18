@@ -34,7 +34,7 @@ export class PageService {
 
     if (config.metaDesc) {
       this.meta.updateTag({ name: 'description', content: config.metaDesc });
-      this.meta.updateTag({ name: 'og:description', content: config.metaDesc });
+      this.meta.updateTag({ property: 'og:description', content: config.metaDesc });
     }
 
     if (config.metaImg) {
