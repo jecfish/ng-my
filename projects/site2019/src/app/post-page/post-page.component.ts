@@ -4,6 +4,7 @@ import { PageService } from '../services/page.service';
 import posts from '../../assets/data/posts.json';
 import marked from 'marked';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'my-post-page',
@@ -23,6 +24,7 @@ export class PostPageComponent implements OnInit {
       this.pageSvc.setPage({
         title: post.title,
         metaDesc: post.desc,
+        metaImg: `${environment.baseUrl}/assets/imgs/posts/${post.img}`
       });
 
       const result = await this.http
