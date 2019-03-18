@@ -11,7 +11,7 @@ const teamRouteList = team.map(x => '/team/' + x.id);
 const speakerRouteList = speakers.map(x => '/speakers/' + x.id);
 const formRouteList = Object.keys(forms).map(x => '/form/' + x);
 const postRouteList = Object.keys(posts).map(x => '/post/' + x);
-const sessionRouteList = speakers.map(x => '/sessions/' + x.id);
+const sessionRouteList = sessions.map(x => '/sessions/' + x.id);
 
 // ... add in your webpack plugins
 module.exports = {
