@@ -262,11 +262,122 @@
         "id": "gerard-sans",
         "name": "Gerard Sans",
         "title": "Senior Developer Advocate @ AWS, GDE",
-        "color": "red",
+        "color": "blue",
         "description": "<p>Gerard is very excited about the future of the Web and JavaScript. Always happy Computer Science Engineer and humble Google Developer Expert (GDE). He loves to share his learnings by giving talks, trainings and blogging about cool technologies. He loves running AngularZone and GraphQL London, mentoring students and giving back to the community.</p>",
         "profile": [{
             "url": "https://twitter.com/gerardsans",
             "type": "twitter"
+        }],
+        "favourite": {
+            "icon": "",
+            "name": "Maggie Goreng Tambah Telur Mata"
+        }
+    },
+    {
+        "id": "hongtat-yew",
+        "name": "HongTat Yew",
+        "title": "Senior Software Engineer @ ViewPoint Software for Business",
+        "color": "red",
+        "description": "<p>HongTat is a happy developer who is very excited about web development from backend using C# to frontend Angular.</p><p>He is a senior software enginner @ ViewPoint Software for Business working on a web application.</p>",
+        "profile": [{
+            "url": "https://www.linkedin.com/in/hongtatyew",
+            "type": "linkedin"
+        }, {
+            "url": "https://twitter.com/hongtat88",
+            "type": "twitter"
+        }],
+        "favourite": {
+            "icon": "",
+            "name": "Maggie Goreng Tambah Telur Mata"
+        }
+    },
+    {
+        "id": "wendy-kong",
+        "name": "Wendy Kong",
+        "title": "Software Engineer @ Pulsifi",
+        "color": "blue",
+        "description": "<p>Wendy is a banker-turned-software engineer who develops web products. She’s also on the community organising team of Women Who Code KL. In her spare time she lurks around Twitter and Slack communities and finds any excuse to draw something.</p>",
+        "profile": [{
+            "url": "https://www.linkedin.com/in/wendykongmy",
+            "type": "linkedin"
+        }],
+        "favourite": {
+            "icon": "",
+            "name": "Maggie Goreng Tambah Telur Mata"
+        }
+    },
+    {
+        "id": "azizi-yazit",
+        "name": "Azizi Yazit",
+        "title": "Senior Web Developer @ Esri Malaysia",
+        "color": "red",
+        "description": "<p>Azizi is an experienced UI developer who love developing web and love the web technologies. Azizi started his career in UI development as Junior UI developer at Hewlett Packard Malaysia. He accepting senior role at British Telecom and provide solution for UI in Portal based application. Currently worked in WebMap and developing UI libraries at Esri Malaysia.</p>",
+        "profile": [{
+            "url": "https://twitter.com/aziziyazit",
+            "type": "twitter"
+        }, {
+            "url": "https://www.facebook.com/abu.hafs.ibnu.yazit",
+            "type": "facebook"
+        }, {
+            "url": "https://my.linkedin.com/in/aziziyazit",
+            "type": "linkedin"
+        }],
+        "favourite": {
+            "icon": "",
+            "name": "Maggie Goreng Tambah Telur Mata"
+        }
+    },
+    {
+        "id": "sujono",
+        "name": "Sujono",
+        "title": "Senior Front End Engineer @ Hong Leong Bank Berhad",
+        "color": "blue",
+        "description": "<p>Jack of all trades before, but now specialized in front-end development. Angular and React is my specialization, and also passionate in hybrid dev (Ionic and RN). DevOps is my new interest recently.</p>",
+        "profile": [{
+            "url": "https://www.facebook.com/starcokz",
+            "type": "facebook"
+        }],
+        "favourite": {
+            "icon": "",
+            "name": "Maggie Goreng Tambah Telur Mata"
+        }
+    },
+    {
+        "id": "siwat-kaolueng",
+        "name": "JaMe",
+        "title": "Angular Developer @ 7 Peaks Software",
+        "color": "red",
+        "description": "<p>Siwat is the Angular & Web enthusiast who passionating front-end architecture. He has experienced in enterprise softwares such as bank and energy companies. He does open source the project who-use-angular-in-thailand - https://angularthailand.github.io/who-use-angular-in-thailand. He  is also Angular Thailand speaker and organizer.</p>",
+        "profile": [{
+            "url": "https://twitter.com/perjerz3434",
+            "type": "twitter"
+        }, {
+            "url": "https://www.facebook.com/perjerz.thailand",
+            "type": "facebook"
+        }, {
+            "url": "https://www.linkedin.com/in/siwatkaolueng",
+            "type": "linkedin"
+        }, {
+            "url": "https://github.com/perjerz3434",
+            "type": "github"
+        }],
+        "favourite": {
+            "icon": "",
+            "name": "Maggie Goreng Tambah Telur Mata"
+        }
+    },
+    {
+        "id": "zac",
+        "name": "Zac",
+        "title": "Software Engineer @ Pulsifi",
+        "color": "blue",
+        "description": "<p>Zac is a born-again software engineer at Pulsifi. He came from a finance background 2 years ago and can now masterfully center a div in another div. He in an enthusiast of meaningful UX and Serverless architecture, and together with his team and the platform they’ve built, has helped empower thousands of fresh grads with careers that inspire them. On the side, he's loves video games and his 2 cats. </p>",
+        "profile": [{
+            "url": "https://www.facebook.com/zackngweiyao",
+            "type": "facebook"
+        }, {
+            "url": "https://www.linkedin.com/in/zachary-ng",
+            "type": "linkedin"
         }],
         "favourite": {
             "icon": "",
