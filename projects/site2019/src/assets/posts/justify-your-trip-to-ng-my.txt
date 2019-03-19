@@ -1,6 +1,9 @@
-## Justify your trip
-##### Sponsorship to attend NG-MY 2019 in Kuala Lumpur
-\
+Here is an email template to help you justify your NG-MY trip to your company. Copy, modify and send it! ✉️ 
+
+### Email
+
+Subject: Sponsorship to attend NG-MY 2019 in Kuala Lumpur
+
 Dear {NAME},
 
 I would like to request for a sponsorship to attend the upcoming event, NG-MY, a two-day conference specially designed to enhance the knowledge of professional {frontend, JavaScript / web / Angular} developers.
