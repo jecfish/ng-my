@@ -82,5 +82,12 @@
     "description": "<p>What is exactly Ivy Renderer? What features will affect the way we build apps? How can we benefit for this technology? In this presentation I will cover these and other fundamental questions while demonstrating all the features available today!</p>",
     "title": "Ivy Renderer for Dummies",
     "speakers": ["gerard-sans"]
+  },
+  {
+    "id": "kamil-kisiela",
+    "duration": "30 min",
+    "description": "<p>After a very short introduction about GraphQL, we’re going to dive deep into how it’s being used today and what me and The Guild have learnt from all those years of having GraphQL as a main part of our stack. We will also rethink current most used solutions and see how they compare to GraphQL.</p>",
+    "title": "GraphQL at Any Level of Your Stack",
+    "speakers": ["kamil-kisiela"]
   }
 ]
