@@ -249,10 +249,33 @@
         "title": "Machine Learning GDE, Pluralsight author",
         "color": "red",
         "description": "<p>Jerry is a Consultant at InStep Technologies and any author on Pluralsight.com. On Pluralsight he has a number courses including Understanding Machine Learning with Python, TensorFlow:Getting Started, and Deep Learning with Keras.</p>",
-        "profile": [{
-            "url": "https://twitter.com/jerrykur",
-            "type": "twitter"
-        }],
+        "profile": [
+            {
+                "url": "https://twitter.com/jerrykur",
+                "type": "twitter"
+            }
+        ],
+        "favourite": {
+            "icon": "",
+            "name": "Maggie Goreng Tambah Telur Mata"
+        }
+    },
+    {
+        "id": "kamil-kisiela",
+        "name": "Kamil Kisiela",
+        "title": "Apollo-Angular Author, Developer @ The Guild, GraphQL Contributor",
+        "color": "blue",
+        "description": "<p>Member of The Guild, author of Apollo-Angular library that brings GraphQL into Angular and many other open source libraries. He calls himself an Open Source enthusiast and actively contributes to the GraphQL and the Meteor Communities. Kamil is passionate about cycling and other outdoor activities.</p>",
+        "profile": [
+            {
+                "url": "http://twitter.com/kamilkisiela",
+                "type": "twitter"
+            },
+            {
+                "url": "http://github.com/kamilkisiela",
+                "type": "github"
+            }
+        ],
         "favourite": {
             "icon": "",
             "name": "Maggie Goreng Tambah Telur Mata"
@@ -264,10 +287,12 @@
         "title": "Senior Developer Advocate @ AWS, GDE",
         "color": "red",
         "description": "<p>Gerard is very excited about the future of the Web and JavaScript. Always happy Computer Science Engineer and humble Google Developer Expert (GDE). He loves to share his learnings by giving talks, trainings and blogging about cool technologies. He loves running AngularZone and GraphQL London, mentoring students and giving back to the community.</p>",
-        "profile": [{
-            "url": "https://twitter.com/gerardsans",
-            "type": "twitter"
-        }],
+        "profile": [
+            {
+                "url": "https://twitter.com/gerardsans",
+                "type": "twitter"
+            }
+        ],
         "favourite": {
             "icon": "",
             "name": "Maggie Goreng Tambah Telur Mata"
