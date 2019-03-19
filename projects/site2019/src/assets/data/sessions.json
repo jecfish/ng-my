@@ -84,6 +84,13 @@
     "speakers": ["gerard-sans"]
   },
   {
+    "id": "kamil-kisiela",
+    "duration": "30 min",
+    "description": "<p>After a very short introduction about GraphQL, we’re going to dive deep into how it’s being used today and what me and The Guild have learnt from all those years of having GraphQL as a main part of our stack. We will also rethink current most used solutions and see how they compare to GraphQL.</p>",
+    "title": "GraphQL at Any Level of Your Stack",
+    "speakers": ["kamil-kisiela"]
+  },
+  {
     "id": "hongtat-yew",
     "duration": "10 min",
     "description": "<p>Knocking your head against unexpected issues while building your projects on Angular? We all did at some point!</p><p>In this talk, I will share about a few common mistakes that I've made (probably you as well!) when working in Angular and how to resolve or avoid them!</p>",
