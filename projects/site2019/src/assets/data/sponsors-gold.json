@@ -8,5 +8,10 @@
         "image": "apigate.jpg",
         "name": "apigate",
         "url": "https://www.apigate.com"
+    },
+    {
+        "image": "nintex.jpg",
+        "name": "nintex",
+        "url": "https://www.nintex.com/"
     }
 ]
