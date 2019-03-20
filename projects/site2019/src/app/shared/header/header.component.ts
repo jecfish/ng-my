@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
     { link: '/sessions', name: 'Sessions' },
     // { link: '/schedule', name: 'Schedule' },
     // { link: '/form/speaker-training', name: 'Speaking Up!' },
-    { link: '/form/call-for-presenters', name: 'Submit CFP' },
+    // { link: '/form/call-for-presenters', name: 'Submit CFP' },
     { link: '/coc', name: 'Code of Conduct' },
     { link: '/team', name: 'Team' }
   ];

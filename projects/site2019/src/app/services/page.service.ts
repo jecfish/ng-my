@@ -34,12 +34,12 @@ export class PageService {
 
     if (config.metaDesc) {
       this.meta.updateTag({ name: 'description', content: config.metaDesc });
-      this.meta.updateTag({ name: 'og:description', content: config.metaDesc });
+      this.meta.updateTag({ property: 'og:description', content: config.metaDesc });
     }
 
     if (config.metaImg) {
       this.meta.updateTag({ property: 'og:image', content: config.metaImg });
-      this.meta.updateTag({ property: 'twitter:image', content: config.metaImg });
+      this.meta.updateTag({ name: 'twitter:image', content: config.metaImg });
     }
 
     document.dispatchEvent(new Event('prerender-ready'));

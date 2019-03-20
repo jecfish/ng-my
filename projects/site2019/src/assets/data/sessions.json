@@ -1,60 +1,93 @@
-[{
+[
+  {
     "id": "alex-okrushko",
     "duration": "30 min",
     "description": "<p>The responsiveness of the apps is one of the critical factors of how the users perceive them. Some of the sources of slowness are waiting for API responses and unhandled errors when they fail.</p> <p>NgRx is the state management solution, and because of the way it is designed, it can help to improve User Experience in many such areas. In particular, I’ll talk about: error handling, store as a cache, and optimistic updates.</p>",
-    "title": "5 Tips to Improve User Experience with NgRx"
+    "title": "5 Tips to Improve User Experience with NgRx",
+    "speakers": ["alex-okrushko"]
   },
   {
     "id": "mashhood-rastgar",
     "duration": "30 min",
     "description": "As Single Page Applications take over the world, we are introduced with yet another complexity: their size. Over time we have created patterns to manage complexity on our backends, one of the popular ones being microservices. This pattern is now being adopted by frontends under the name of micro-frontends.  In this talk I will introduce the concept and dive into how does one get about implementing a micro-frontend architecture for their project.",
-    "title": "Scaling Frontend Development using Micro-frontends"
+    "title": "Scaling Frontend Development using Micro-frontends",
+    "speakers": ["mashhood-rastgar"]
   },
   {
     "id": "jia-li",
     "duration": "30 min",
     "description": "<p>State Management is very important in Angular development, ngrx is one of the most used libraries. By using ngrx, there are a lot of advantages in development/test, but we also need to pay the learning cost for several new concepts (Store/Selector/Effect/Action/...), we also need to write a lot of boilerplate code for those extra layers. </p> <p> In this talk, we will use sample application to introduce how to use<br> 1. ngrx <br> 2. ngrx-enitty<br> 3. ngrx-data<br> to implement it, through that, I will introduce the mechanism of ngrx-entity and ngrx-data. I will also like to share my thought when I am using ngrx-data in practical project. </p>",
-    "title": "From NgRx to NgRx-entity to NgRx-data"
+    "title": "From NgRx to NgRx-entity to NgRx-data",
+    "speakers": ["jia-li"]
   },
   {
     "id": "sebastian-witalec",
     "duration": "30 min",
     "description": "<p>NativeScript is a free and open source JavaScript framework for building native iOS and Android apps. Add to that Angular with TypeScript and you will get a truly amazing combination. But I know what you’re thinking: another way of building apps? What makes NativeScript special? Here are a few cool things: </p> <p> · Direct access to native APIs—no plugins required. Want to create a file on Android? Run new java.io.File()—in JavaScript!<br> · Completely native performance through the use of a JavaScript bridge natively available on all three mobile platforms.<br> · Cross-platform libraries for common use cases. Need to call a JSON API? Run http.getJSON<br> · Style native apps using CSS. Yep, that’s actually a thing.<br> </p> <p> Curious about how it all works? Come learn! Architectures will be explained; apps will be built; and fun will be had by all. </p>",
-    "title": "Building Mobile Apps with Angular and NativeScript"
+    "title": "Building Mobile Apps with Angular and NativeScript",
+    "speakers": ["sebastian-witalec"]
   },
   {
     "id": "tomas-trajan",
     "duration": "30 min",
     "description": "<p>In development, we often want to extract reusable parts of logic into self contained libraries. Modern tooling provided by Angular CLI enables us to provide amazing developer experience for the users of our libraries. </p> <p> Libraries can be added seamlessly, while automating all the necessary setup work. </p> <p> More so, providing built-in library specific schematics enables us to cut on the learning curve that is needed to get developers productive straight from the start by generating code which follows intentioned patterns and best practices. </p> <p> In this talk, we're going to explore: <br> 1. What are Angular Schematics<br> 2. Why and how to use them<br> 3. Best practices and tips for using default Angular schematics<br> 4. How to build simple schematics for our custom library<br> 5. How to make our library \"ng add\" - able to make it seamless for the consumers<br> </p>",
-    "title": "Leverage Angular Schematics to empower developers of Frontend App & libraries"
+    "title": "Leverage Angular Schematics to empower developers of Frontend App & libraries",
+    "speakers": ["tomas-trajan"]
   },
   {
-    "id": "jecelyn-yeen",
+    "id": "how-we-build-ng-my-website",
     "duration": "30 min",
     "description": "<p>In this talk, we will share about some techniques we apply in building NG-MY website, so you can easily apply these techniques in your website too! Here is what we will cover: </p> <p> - Making Angular website performant & SEO friendly<br> - Customize Angular CLI Build prerender website<br> - Apply Animation to make your site cooler<br> - Modern CSS with CSS Variables<br> - Feature Flagging & Continuous Integration / Deployment (CI/CD)<br> </p>",
-    "title": "How We Build NG-MY Website: Performance, SEO, Customized CLI Build, Animation, Modern CSS"
+    "title": "How We Build NG-MY Website: Performance, SEO, Customized CLI Build, Animation, Modern CSS",
+    "speakers": ["jecelyn-yeen"]
   },
   {
     "id": "jerry-kurata",
     "duration": "30 min",
     "description": "<p>You have no doubt heard about the wonders of Machine Learning. Thanks to Machine Learning we now have algorithms that let programs detect objects in images, translate text and speech from one language to another, make recommendations of products someone might purchase, and detect diseases from a person’s picture.</p><p>These capabilities have previously been the realm of Data Scientists working with rooms full of hardware.  But now this power is available to us to use in our Angular applications.</p><p>In this talk you will learn how Machine Learning works, and how we can use machine learning in our code to enhance the capabilities of our applications.</p>",
-    "title": "Machine Learning and AI for Angular Developers"
+    "title": "Machine Learning and AI for Angular Developers",
+    "speakers": ["jerry-kurata"]
   },
   {
     "id": "kevin-yang",
     "duration": "30 min",
     "description": "<p>Functional reactive programming has been around for many years. There are so many reasons make people keep talking about it.</p><p>In this talk, we are going to talk about<br>1. What is functional reactive programming good at?<br>2. Why should you care about it and adopt it?<br>3. How can we use it with RxJS in Angular?<br>4. How about Ramda?</p>",
-    "title": "Why should you care about functional reactive programming?"
+    "title": "Why should you care about functional reactive programming?",
+    "speakers": ["kevin-yang"]
   },
   {
     "id": "mike-ryan",
     "duration": "30 min",
     "description": "<p>One of the biggest challenges building out large Angular applications is the management of complexity, but where does this complexity come from? Both state management and control flow are some of the largest contributors to unwieldy, hard-to-maintain code. Learn how the design of NgRx helps you manage this complexity by exploring the architectural underpinnings of functional, reactive Angular applications.</p>",
-    "title": "Complexity Management with NgRx"
-  },{
+    "title": "Complexity Management with NgRx",
+    "speakers": ["mike-ryan"]
+  },
+  {
     "id": "kamil-mysliwiec",
     "duration": "30 min",
     "description": "<p>Dependency Injection framework is a core and inherent feature of both Nest and Angular. DI simplifies creating scalable, testable, and maintainable applications by giving us flexible and efficient abstractions. However, did we ever think how this mechanism works underneath? In this talk, we’ll compare how Nest and Angular DI systems differ from each other as well as dive into the basics of the metadata reflection API in TypeScript.</p>",
-    "title": "Beyond TypeScript Metadata: Dependency Injection in Angular and Nest"
+    "title": "Beyond TypeScript Metadata: Dependency Injection in Angular and Nest",
+    "speakers": ["kamil-mysliwiec"]
+  },
+  {
+    "id": "deborah-kurata",
+    "duration": "30 min",
+    "description": "<p>RxJS is one of those technologies we use every day, but there is always a bit more to learn. In this session, we focus on specific use cases:</p><p>- Collecting data from a backend server<br/>- Combining data streams with other data streams to handle foreign key and aggregate relationships<br/>- Caching the streams in a service so they can be readily reused<br/>- And producing user-friendly data for display<br/>- All without a single subscription</p><p>Join me for this talk as we get to know another side of RxJS.</p>",
+    "title": "Collect, Combine, and Cache RxJS Streams for User-Friendly Results... Without a Subscription",
+    "speakers": ["deborah-kurata"]
+  },
+  {
+    "id": "gerard-sans",
+    "duration": "30 min",
+    "description": "<p>What is exactly Ivy Renderer? What features will affect the way we build apps? How can we benefit for this technology? In this presentation I will cover these and other fundamental questions while demonstrating all the features available today!</p>",
+    "title": "Ivy Renderer for Dummies",
+    "speakers": ["gerard-sans"]
+  },
+  {
+    "id": "kamil-kisiela",
+    "duration": "30 min",
+    "description": "<p>After a very short introduction about GraphQL, we’re going to dive deep into how it’s being used today and what me and The Guild have learnt from all those years of having GraphQL as a main part of our stack. We will also rethink current most used solutions and see how they compare to GraphQL.</p>",
+    "title": "GraphQL at Any Level of Your Stack",
+    "speakers": ["kamil-kisiela"]
   }
 ]

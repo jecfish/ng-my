@@ -53,20 +53,44 @@
         <div class="container">
           <div class="team-highlight-info-container">
             <div class="team-highlight-info">
-              <figure class="team-highlight-pic">
-                <img src="../../assets/imgs/speakers/{{ selectedSession.id }}.jpg" [alt]="selectedSession.id" class="team-highlight-img"
-                  *ngIf="selectedSession" />
-              </figure>
-              <div class="team-highlight-name">
-                {{ selectedSession?.speaker.name }}
-              </div>
-              <ul class="team-highlight-misc">
-                <li class="team-highlight-misc-item" *ngFor="let p of selectedSession?.speaker.profile">
-                  <a [href]="p.url" target="_blank" rel="noreferrer" class="team-highlight-misc-link">
-                    <i class="{{ profileIconsModel[p.type] }}"></i>
+              <ul class="team-highlight-speakers-list" *ngIf="selectedSessionSpeakers.length > 1">
+                <li class="team-highlight-speakers-item" *ngFor="let s of selectedSession?.speakers">
+                  <a routerLink="/speakers/{{ s.id }}" class="team-highlight-speakers-link">
+                    <figure class="team-highlight-speakers-pic">
+                      <img src="../../assets//imgs/speakers/{{ s.id }}.jpg" class="team-highlight-speakers-img" [alt]="s.name">
+                    </figure>
                   </a>
+                  <div class="team-highlight-speakers-text">
+                    {{ s.name }}
+
+                    <ul class="team-highlight-speakers-misc">
+                      <li class="team-highlight-speakers-misc-item" *ngFor="let p of s.profile">
+                        <a [href]="p.url" target="_blank" rel="noreferrer" class="team-highlight-speakers-misc-link">
+                          <i class="{{ profileIconsModel[p.type] }}"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
+              <ng-container *ngIf="selectedSessionSpeakers.length === 1">
+                <a routerLink="/speakers/{{onlySpeaker.id}}">
+                  <figure class="team-highlight-pic">
+                    <img src="../../assets/imgs/speakers/{{ onlySpeaker.id }}.jpg" [alt]="selectedSession.id" class="team-highlight-img"
+                      *ngIf="selectedSession" />
+                  </figure>
+                </a>
+                <div class="team-highlight-name">
+                  {{ onlySpeaker.name }}
+                </div>
+                <ul class="team-highlight-misc">
+                  <li class="team-highlight-misc-item" *ngFor="let p of onlySpeaker.profile">
+                    <a [href]="p.url" target="_blank" rel="noreferrer" class="team-highlight-misc-link">
+                      <i class="{{ profileIconsModel[p.type] }}"></i>
+                    </a>
+                  </li>
+                </ul>
+              </ng-container>
             </div>
             <div class="team-highlight-description-container">
               <div class="team-highlight-title">{{ selectedSession?.title }}</div>
