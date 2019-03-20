@@ -299,11 +299,11 @@
         }
     },
     {
-        "id": "hongtat-yew",
-        "name": "HongTat Yew",
-        "title": "Senior Software Engineer @ ViewPoint Software for Business",
+        "id": "yew-hong-tat",
+        "name": "Yew Hong Tat",
+        "title": "Senior Software Engineer @ ViewPoint",
         "color": "blue",
-        "description": "<p>HongTat is a happy developer who is very excited about web development from backend using C# to frontend Angular.</p><p>He is a senior software enginner @ ViewPoint Software for Business working on a web application.</p>",
+        "description": "<p>HongTat is a happy developer who is very excited about web development from backend using C# to frontend Angular.</p><p>He is a senior software engineer @ ViewPoint working on a web application.</p>",
         "profile": [{
             "url": "https://www.linkedin.com/in/hongtatyew",
             "type": "linkedin"
@@ -319,7 +319,7 @@
     {
         "id": "wendy-kong",
         "name": "Wendy Kong",
-        "title": "Software Engineer @ Pulsifi",
+        "title": "Women Who Code KL Lead, Software Engineer",
         "color": "red",
         "description": "<p>Wendy is a banker-turned-software engineer who develops web products. She’s also on the community organising team of Women Who Code KL. In her spare time she lurks around Twitter and Slack communities and finds any excuse to draw something.</p>",
         "profile": [{
@@ -334,7 +334,7 @@
     {
         "id": "azizi-yazit",
         "name": "Azizi Yazit",
-        "title": "Senior Web Developer @ Esri Malaysia",
+        "title": "Senior Web Developer @ Esri",
         "color": "blue",
         "description": "<p>Azizi is an experienced UI developer who love developing web and love the web technologies. Azizi started his career in UI development as Junior UI developer at Hewlett Packard Malaysia. He accepting senior role at British Telecom and provide solution for UI in Portal based application. Currently worked in WebMap and developing UI libraries at Esri Malaysia.</p>",
         "profile": [{
@@ -355,7 +355,7 @@
     {
         "id": "sujono",
         "name": "Sujono",
-        "title": "Senior Front End Engineer @ Hong Leong Bank Berhad",
+        "title": "Senior Front End Engineer @ Hong Leong Bank",
         "color": "red",
         "description": "<p>Jack of all trades before, but now specialized in front-end development. Angular and React is my specialization, and also passionate in hybrid dev (Ionic and RN). DevOps is my new interest recently.</p>",
         "profile": [{
@@ -369,8 +369,8 @@
     },
     {
         "id": "siwat-kaolueng",
-        "name": "JaMe",
-        "title": "Angular Developer @ 7 Peaks Software",
+        "name": "Siwat Kaolueng",
+        "title": "Developer @ 7 Peaks Software",
         "color": "blue",
         "description": "<p>Siwat is the Angular & Web enthusiast who passionating front-end architecture. He has experienced in enterprise softwares such as bank and energy companies. He does open source the project who-use-angular-in-thailand - https://angularthailand.github.io/who-use-angular-in-thailand. He  is also Angular Thailand speaker and organizer.</p>",
         "profile": [{
@@ -392,8 +392,8 @@
         }
     },
     {
-        "id": "zac",
-        "name": "Zac",
+        "id": "zachary-ng",
+        "name": "Zachary Ng",
         "title": "Software Engineer @ Pulsifi",
         "color": "red",
         "description": "<p>Zac is a born-again software engineer at Pulsifi. He came from a finance background 2 years ago and can now masterfully center a div in another div. He in an enthusiast of meaningful UX and Serverless architecture, and together with his team and the platform they’ve built, has helped empower thousands of fresh grads with careers that inspire them. On the side, he's loves video games and his 2 cats. </p>",

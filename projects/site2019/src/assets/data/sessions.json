@@ -91,11 +91,11 @@
     "speakers": ["kamil-kisiela"]
   },
   {
-    "id": "hongtat-yew",
+    "id": "yew-hong-tat",
     "duration": "10 min",
     "description": "<p>Knocking your head against unexpected issues while building your projects on Angular? We all did at some point!</p><p>In this talk, I will share about a few common mistakes that I've made (probably you as well!) when working in Angular and how to resolve or avoid them!</p>",
     "title": "Common Angular Gotchas",
-    "speakers": ["hongtat-yew"]
+    "speakers": ["yew-hong-tat"]
   },
   {
     "id": "wendy-kong",
@@ -126,10 +126,10 @@
     "speakers": ["siwat-kaolueng"]
   },
   {
-    "id": "zac",
+    "id": "zachary-ng",
     "duration": "10 min",
     "description": "<p>My web app is looking a little dull… When and how can I give it a little pop of life? We’ll be exploring how to create animations and micro-interactions that will wow (or at least subtly amuse) your users. Our toolkit will include CSS animations, Angular animations, and external animation libraries.</p>",
     "title": "Bringing Angular to Life with Animations",
-    "speakers": ["zac"]
+    "speakers": ["zachary-ng"]
   }
 ]
