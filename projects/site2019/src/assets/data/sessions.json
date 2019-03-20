@@ -89,5 +89,26 @@
     "description": "<p>After a very short introduction about GraphQL, we’re going to dive deep into how it’s being used today and what me and The Guild have learnt from all those years of having GraphQL as a main part of our stack. We will also rethink current most used solutions and see how they compare to GraphQL.</p>",
     "title": "GraphQL at Any Level of Your Stack",
     "speakers": ["kamil-kisiela"]
+  },
+  {
+    "id": "jennifer-shehane",
+    "duration": "30 min",
+    "description": "<p>End-to-end tests are a crucial part of the testing pyramid, yet they are often overlooked entirely. They are notorious for being hard to set up, flaky when they run, and slow to debug.</p><p>Why is running end-to-end tests so unreliable? Is there a way to write useful end-to-end tests quickly without the hair-pulling frustration?</p><p>In this talk, we'll delve into Cypress.io - a new, refreshing approach to testing web applications. We’ll examine Cypress’ anatomy and show what makes it a better fit for testing modern, Angular web applications. Using this new tool, your tests can react to your application’s events in real time, read or alter web traffic on the fly, and programmatically interact and control your application while testing. You will walk away with the means to have your tests reliably run and quickly execute, giving you the ability to test your applications while you develop for the first time.</p>",
+    "title": "Automated Testing for the Modern Web",
+    "speakers": ["jennifer-shehane"]
+  },
+  {
+    "id": "amadou-sall",
+    "duration": "30 min",
+    "description": "<p>Angular Material AND Bootstrap for your next Angular application? It doesn't make sense, does it? The first time I talked to my colleagues about combining the two, they laughed at me. But now, they love the approach because it works like a charm.</p><p>In this session, we will see how we can leverage the best parts of both libraries to build beautiful, maintainable, and responsive Angular applications with very little CSS.</p>",
+    "title": "Angular Material or Bootstrap? Stop asking the question!",
+    "speakers": ["amadou-sall"]
+  },
+  {
+    "id": "tom-suijkerbuijk-mart-ganzevles",
+    "duration": "30 min",
+    "description": "<p>On the BlueWeb project, which is a project to completely rewrite the B2C web applications of Air France  and  KLM, we have been using Angular since the early days. We started our project on Angular 2.0.0-rc.2. We are using this in combination with GraphQL on the server side, quite an interesting setup. Since AirFrance-KLM is one of the biggest airlines groups in the world, it is quite an important and big platform for the company.</p><p>There’s multiple ways to split a big Angular project, we’ve tried multiple different solutions within Air France KLM and over the years the project has changed and evolved in the set-up.<br />- Single App (single repo)<br />- Micro Front End Architecture (multi repo)<br />- Monorepo</p><p>With our story we want to show you what we have learned and show the multiple options there are and what to consider when building a large scale Angular app and not to make the same mistakes as we have made.</p><p>In a talk we gave at GraphQL Summit San Francisco in 2017 you can see where we started (https://www.youtube.com/watch?v=T2njjXHdKqw). Also we recently shared a blogpost on medium on how we deal with upgrades in Angular. This blogpost was shared by all the big Angular contributers and also mentioned by Brad Green during NgAtlanta. You can read the post here: https://medium.com/airfrance-klm/how-we-upgraded-a-website-with-half-a-billion-annual-users-to-angular-7-in-less-then-a-day-71de33a1108e</p><p>As you can see we can’t stretch enough on how important it is to stay with the latest Angular release. And also why it doesn’t have to be scary for big companies to work with these new technologies and how it enables you to roll out a new version of your application on a daily basis as long as your mindset and set-up is correct. We can talk about why companies should be releasing smaller chunks but more regularly and how to get there:<br />- Branching strategies<br />- Automated Testing<br />- Mobile Device Testing</p>",
+    "title": "Large Scale Angular Applications",
+    "speakers": ["tom-suijkerbuijk", "mart-ganzevles"]
   }
 ]

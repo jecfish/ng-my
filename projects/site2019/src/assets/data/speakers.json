@@ -297,5 +297,89 @@
             "icon": "",
             "name": "Maggie Goreng Tambah Telur Mata"
         }
+    },
+    {
+        "id": "jennifer-shehane",
+        "name": "Jennifer Shehane",
+        "title": "Software Developer @ Cypress",
+        "color": "blue",
+        "description": "<p>Jennifer is a self-taught, front-end developer. After starting her career in web and print design in Atlanta, she moved into web development where she became a passionate advocate of test driven development. She currently wears many hats at Cypress.io where she codes and tests in JavaScript, writes documentation, manages their open source projects, and designs user interfaces. In her free time, she travels and explores Myanmar, her current home.</p>",
+        "profile": [
+            {
+                "url": "https://twitter.com/jennifershehane",
+                "type": "twitter"
+            },
+            {
+                "url": "https://www.facebook.com/shehane.jennifer",
+                "type": "facebook"
+            },
+            {
+                "url": "https://github.com/jennifer-shehane",
+                "type": "github"
+            },
+            {
+                "url": "https://www.linkedin.com/in/jennifer-shehane",
+                "type": "linkedin"
+            }
+        ],
+        "favourite": {
+            "icon": "",
+            "name": "Maggie Goreng Tambah Telur Mata"
+        }
+    },
+    {
+        "id": "amadou-sall",
+        "name": "Amadou Sall",
+        "title": "Frontend Software Engineer @ Air France KLM",
+        "color": "red",
+        "description": "<p>Amadou Sall is a Frontend Software Engineer from Senegal 🇸🇳 based in Toulouse, France 🇫🇷. He's passionate about web, and mobile technologies, and currently specializes in Angular. Amadou works for Air France KLM where he helps developers build better Angular applications. He regularly speaks, presents, and writes about Angular and its ecosystem. You can find his blog at www.amadousall.com, and follow him on Twitter at @ahasall.</p>",
+        "profile": [
+            {
+                "url": "https://twitter.com/ahasall",
+                "type": "twitter"
+            },
+            {
+                "url": "https://www.linkedin.com/in/ahasall",
+                "type": "linkedin"
+            }
+        ],
+        "favourite": {
+            "icon": "",
+            "name": "Maggie Goreng Tambah Telur Mata"
+        }
+    },
+    {
+        "id": "tom-suijkerbuijk",
+        "name": "Tom Suijkerbuijk",
+        "title": "Software Engineer @ KLM Royal Dutch Airlines",
+        "color": "blue",
+        "description": "<p>Tom is an airplane enthusiast and works as a front-end engineer at KLM Royal Dutch Airlines in Amsterdam. He's always been interested in technology and web-development but wanted to become a pilot. Becoming a software engineer in aviation was the best of both worlds.</p>",
+        "profile": [
+            {
+                "url": "https://twitter.com/tomsuykerbuyk",
+                "type": "twitter"
+            }
+        ],
+        "favourite": {
+            "icon": "",
+            "name": "Maggie Goreng Tambah Telur Mata"
+        }
+    },
+    {
+        "id": "mart-ganzevles",
+        "name": "Mart Ganzevles",
+        "title": "Software Engineer @ KLM Royal Dutch Airlines",
+        "color": "red",
+        "description": "<p>Mart is a 24 year old front-end engineer at KLM Royal Dutch Airlines in Amsterdam by day. He’s passionate about web technologies and tech in general. By night you can find him behind the decks of a DJ set.</p>",
+        "profile": [
+            {
+                "url": "https://twitter.com/martyganz",
+                "type": "twitter"
+            }
+        ],
+        "favourite": {
+            "icon": "",
+            "name": "Maggie Goreng Tambah Telur Mata"
+        }
     }
 ]
