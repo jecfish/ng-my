@@ -328,6 +328,40 @@
         }
     },
     {
+        "id": "tom-suijkerbuijk",
+        "name": "Tom Suijkerbuijk",
+        "title": "Software Engineer @ KLM Royal Dutch Airlines",
+        "color": "red",
+        "description": "<p>Tom is an airplane enthusiast and works as a front-end engineer at KLM Royal Dutch Airlines in Amsterdam. He's always been interested in technology and web-development but wanted to become a pilot. Becoming a software engineer in aviation was the best of both worlds.</p>",
+        "profile": [
+            {
+                "url": "https://twitter.com/tomsuykerbuyk",
+                "type": "twitter"
+            }
+        ],
+        "favourite": {
+            "icon": "",
+            "name": "Maggie Goreng Tambah Telur Mata"
+        }
+    },
+    {
+        "id": "adrian-yeong",
+        "name": "Adrian Yeong",
+        "title": "Senior Software Developer",
+        "color": "blue",
+        "description": "<p>Adrian is a front end developer who does Angular web application and mobile application. He is always passionate about making great products.</p><p>He regularly joins and contributes to the tech community, which enables him to meet new people, share knowledge and have fun. He is also one of the community organising members of Google Cloud Developer Community Kuala Lumpur.</p>",
+        "profile": [
+            {
+                "url": "https://web.facebook.com/wwyeong",
+                "type": "twitter"
+            }
+        ],
+        "favourite": {
+            "icon": "",
+            "name": "Maggie Goreng Tambah Telur Mata"
+        }
+    },
+    {
         "id": "amadou-sall",
         "name": "Amadou Sall",
         "title": "Frontend Software Engineer @ Air France KLM",
@@ -349,15 +383,32 @@
         }
     },
     {
-        "id": "tom-suijkerbuijk",
-        "name": "Tom Suijkerbuijk",
-        "title": "Software Engineer @ KLM Royal Dutch Airlines",
+        "id": "michael-hladky",
+        "name": "Michael Hladky",
+        "title": "GDE, Trainer/Consultant",
         "color": "blue",
-        "description": "<p>Tom is an airplane enthusiast and works as a front-end engineer at KLM Royal Dutch Airlines in Amsterdam. He's always been interested in technology and web-development but wanted to become a pilot. Becoming a software engineer in aviation was the best of both worlds.</p>",
+        "description": "<p>Angular by heart and code. Michael is a full-stack developer located in Vienna, Austria. He is a Google Developer Expert (GDE) and an active part of the community. As founder of the Angular-Austria association, organizer of Angular-Vienna and NestJS-Vienna Meetup he grows the Austrian community. He is a developer, trainer and consultant with the focus on Angular as well as ionic and surrounding technologies, and gives workshops on Angular, RxJs and Typescript. He regularly speaks at conferences and meetups and enjoys participating in the dev community and OSS.</p>",
         "profile": [
             {
-                "url": "https://twitter.com/tomsuykerbuyk",
+                "url": "https://twitter.com/Michael_Hladky",
                 "type": "twitter"
+            }
+        ],
+        "favourite": {
+            "icon": "",
+            "name": "Maggie Goreng Tambah Telur Mata"
+        }
+    },
+    {
+        "id": "ho-jen-ning",
+        "name": "Ho Jen Ning",
+        "title": "GDE, Trainer/Consultant",
+        "color": "red",
+        "description": "<p>Jen Ning is a web developer that primarily works in the front-end, and has been in the industry for more than 5 years. He enjoys developing product that delights its users.</p><p>He performs CSS wizardry daily in his work to achieve that.</p>",
+        "profile": [
+            {
+                "url": "https://www.linkedin.com/in/jenning-ho/",
+                "type": "linkedin"
             }
         ],
         "favourite": {
@@ -369,7 +420,7 @@
         "id": "mart-ganzevles",
         "name": "Mart Ganzevles",
         "title": "Software Engineer @ KLM Royal Dutch Airlines",
-        "color": "red",
+        "color": "blue",
         "description": "<p>Mart is a 24 year old front-end engineer at KLM Royal Dutch Airlines in Amsterdam by day. He’s passionate about web technologies and tech in general. By night you can find him behind the decks of a DJ set.</p>",
         "profile": [
             {
