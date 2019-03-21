@@ -39,7 +39,7 @@
     "duration": "30 min",
     "description": "<p>In this talk, we will share about some techniques we apply in building NG-MY website, so you can easily apply these techniques in your website too! Here is what we will cover: </p> <p> - Making Angular website performant & SEO friendly<br> - Customize Angular CLI Build prerender website<br> - Apply Animation to make your site cooler<br> - Modern CSS with CSS Variables<br> - Feature Flagging & Continuous Integration / Deployment (CI/CD)<br> </p>",
     "title": "How We Build NG-MY Website: Performance, SEO, Customized CLI Build, Animation, Modern CSS",
-    "speakers": ["jecelyn-yeen"]
+    "speakers": ["jecelyn-yeen", "adrian-yeong", "ho-jen-ning"]
   },
   {
     "id": "jerry-kurata",
