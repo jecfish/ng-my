@@ -89,5 +89,26 @@
     "description": "<p>After a very short introduction about GraphQL, we’re going to dive deep into how it’s being used today and what me and The Guild have learnt from all those years of having GraphQL as a main part of our stack. We will also rethink current most used solutions and see how they compare to GraphQL.</p>",
     "title": "GraphQL at Any Level of Your Stack",
     "speakers": ["kamil-kisiela"]
+  },
+  {
+    "id": "arjay-elbore",
+    "duration": "30 min",
+    "description": "<p>Angular provides awesome features to develop scalable enterprise applications with re-usable components.  Sharing re-usable components between different teams or projects that uses  different libraries or frameworks becomes painful.  In order to solve this problem Angular Elements allows you to write custom elements a web standard specification in Angular way. This enables you to reuse existing Angular Components inside React, Vue, Ember and vanilla js.</p>",
+    "title": "Build Web Components with Angular Elements",
+    "speakers": ["arjay-elbore"]
+  },
+  {
+    "id": "erin-zimmer",
+    "duration": "30 min",
+    "description": "<p>Many of us eagerly awaited the release of Angular 2. We updated our apps to Angular 1.6. We wrote components. And, when the time came, we wrapped our apps in ng-upgrade, and everything worked fine, and we all started writing Angular 2. We were all happy.</p><p>But what about everyone else? What about the people who are still running Angular 1.4? In ES5? With… JSPs? Fear not! There absolutely is hope. Using a real app as an example, we're going to take a look at the steps involved in preparing your app, the actual upgrade process, and strategies for improving the app in the future. We're going to take that dusty old Maven app and turn it into a shining example of modern web development!</p>",
+    "title": "Upgrading your AngularJS app, without the tears",
+    "speakers": ["erin-zimmer"]
+  },
+  {
+    "id": "ng-tong-sheng",
+    "duration": "30 min",
+    "description": "<p>Angular Material and the CDK were built to make it easy to build great looking and great feeling applications more quickly. Watch me live-code an application using CDK and schematics.</p>",
+    "title": "Cool interaction made simple with Angular material CDK",
+    "speakers": ["ng-tong-sheng"]
   }
 ]

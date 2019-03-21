@@ -297,5 +297,56 @@
             "icon": "",
             "name": "Maggie Goreng Tambah Telur Mata"
         }
+    },
+    {
+        "id": "arjay-elbore",
+        "name": "Arjay Elbore",
+        "title": "Frontend Developer @ DBS Bank Singapore",
+        "color": "blue",
+        "description": "<p>Jay is a Frontend Developer in a Bank, who has experience on building large scale applications. He likes to code and contributing to open source projects. </p>",
+        "profile": [
+            {
+                "url": "https://twitter.com/VirtualOverride",
+                "type": "twitter"
+            }
+        ],
+        "favourite": {
+            "icon": "",
+            "name": "Maggie Goreng Tambah Telur Mata"
+        }
+    },
+    {
+        "id": "erin-zimmer",
+        "name": "Erin Zimmer",
+        "title": "Senior Developer & Thought Leader @ Shine Solutions",
+        "color": "red",
+        "description": "<p>Erin is a software developer with over ten years experience in a variety of languages, from JavaScript to Model204. She is currently a senior web developer at Shine Solutions. She is an active member of the Melbourne JavaScript and Angular communities, and has spoken at conferences around the world. If you see her at a conference, she'll be the one knitting.</p>",
+        "profile": [
+            {
+                "url": "https://twitter.com/erinjzimmer",
+                "type": "twitter"
+            }
+        ],
+        "favourite": {
+            "icon": "",
+            "name": "Maggie Goreng Tambah Telur Mata"
+        }
+    },
+    {
+        "id": "ng-tong-sheng",
+        "name": "Ng Tong Sheng",
+        "title": "Principal Engineer @ Cheetah Digital",
+        "color": "blue",
+        "description": "<p>Tong Sheng is a front end developer for years, but with a real passion for design and UX. He is also the organiser for Google Cloud Developer Community Kuala Lumpur.</p>",
+        "profile": [
+            {
+                "url": "https://www.facebook.com/ngtongsheng",
+                "type": "facebook"
+            }
+        ],
+        "favourite": {
+            "icon": "",
+            "name": "Maggie Goreng Tambah Telur Mata"
+        }
     }
 ]
