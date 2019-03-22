@@ -377,7 +377,7 @@
     background: $gray-lightest;
     padding: $space-l 0;
     position: relative;
-    z-index: 2;
+    z-index: 3;
     color: $black;
     text-align: center;
   }
@@ -413,7 +413,9 @@
 
   &-section {
     background: $yellow;
-    padding: $space 0 $space-xxl;
+    padding: $space 0 $space-xl;
+    position: relative;
+    z-index: 2;
 
     .home-section-title {
       text-align: center;
@@ -454,12 +456,12 @@
     &-img {
       border-radius: 50%;
       width: 90%;
-      margin: $space auto;
       border: 4px solid $black;
     }
 
     &-pic {
       position: relative;
+      margin: $space auto;
     }
 
     &-food {
@@ -520,7 +522,7 @@
   }
 
   &-deco {
-    background: $gray-lightest;
+    background: $white;
 
     &:before {
       top: 0;
@@ -533,10 +535,12 @@
 }
 
 .sessions {
-  background: $gray-lightest;
+  background: $white;
   padding: $space-xxl 0;
   text-align: center;
   overflow: hidden;
+  position: relative;
+  z-index: 2;
 
   .container {
     position: relative;
@@ -553,9 +557,9 @@
     &:before {
       top: 0;
       left: 0;
-      background: $gray-lightest;
-      transform-origin: bottom right;
-      transform: skewY(5deg);
+      background: $white;
+      transform-origin: bottom left;
+      transform: skewY(-5deg);
     }
   }
 
@@ -715,9 +719,30 @@
   }
 
   &-deco {
+    background: $white;
 
     &:before {
       background: $yellow;
+      transform-origin: top right;
+      transform: skewY(5deg);
+    }
+  }
+}
+
+
+.posts {
+  &-section {
+    background: $white;
+    padding-bottom: $space-l;
+
+    .home-section-title {
+      text-align: center;
+    }
+  }
+
+  &-deco {
+    &:before {
+      background: $white;
       transform-origin: top right;
       transform: skewY(5deg);
       box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
@@ -737,6 +762,70 @@
   }
 }
 
+.post {
+
+  &-list {
+    position: relative;
+    z-index: 2;
+
+    .row {
+      margin: 0 -#{$space-s};
+    }
+
+    .col {
+      padding: 0 $space-s;
+
+      @include mobile {
+        &+.col {
+          margin-top: $space;
+        }
+      }
+    }
+  }
+
+  &-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 $space $space;
+    background: $gray-lightest;
+    box-shadow: 8px 8px $black;
+
+    .btn {
+      margin-top: auto;
+
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+
+  &-body {
+    padding: 0 $space-s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &-title {
+    font-weight: bold;
+    font-size: $font-size-l;
+    margin-bottom: $space-s;
+  }
+
+  &-pic {
+    margin: 0 -#{$space} $space-s;
+  }
+
+  &-img {
+    object-fit: cover;
+  }
+
+  &-desc {
+    margin-bottom: $space-s;
+  }
+}
 
 .sponsors {
   &-section {
@@ -966,6 +1055,57 @@
     @include mobile {
       width: 26vw;
       top: -20vw;
+    }
+  }
+
+  &-nasi-bungkus {
+    position: absolute;
+    top: -50px;
+    left: -60px;
+    z-index: 3;
+
+    @include mobile {
+      width: 20vw;
+      top: 0;
+      left: -5vw;
+    }
+  }
+
+  &-cendol {
+    position: absolute;
+    top: -120px;
+    left: -30px;
+    z-index: 2;
+
+    @include mobile {
+      width: 20vw;
+      top: -8vw;
+      left: -5vw;
+    }
+  }
+
+  &-tosai {
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    z-index: 3;
+
+    @include mobile {
+      width: 20vw;
+      top: 15vw
+    }
+  }
+
+  &-bandung {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    transform: rotate(-5deg);
+    z-index: 2;
+
+    @include mobile {
+      width: 20vw;
+      top: 10vw;
     }
   }
 }

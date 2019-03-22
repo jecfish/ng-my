@@ -125,6 +125,7 @@ small {
 .section-title {
   text-align: center;
   font-size: $font-size-xxl;
+  font-weight: $font-weight-l;
 
   @include mobile {
     font-size: $font-size-xl;
@@ -224,6 +225,7 @@ small {
   position: relative;
   height: 200px;
   z-index: 1;
+  pointer-events: none;
 
   &:before {
     content: '';

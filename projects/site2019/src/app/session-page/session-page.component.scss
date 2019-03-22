@@ -93,11 +93,57 @@
 
   &-topic {
     font-weight: bold;
-    margin-bottom: $space-s;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   &-desc {
     margin-bottom: $space;
+  }
+
+  &-speaker {
+    &-list {
+      display: flex;
+      margin: $space-s;
+
+      @include mobile {
+        width: 100%;
+        margin: $space-s 0;
+      }
+    }
+
+    &-item {
+      &+& {
+        margin-left: $space-s;
+      }
+    }
+
+    &-icon {
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      border: 2px solid $black;
+    }
+  }
+
+  &-tag {
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: $space-xs -#{$space-xs};
+    }
+
+    &-item {
+      @include one-height(24px, 4px);
+
+      padding: 0 $space-s;
+      border: 2px solid $black;
+      font-size: $font-size-s;
+      background: $yellow;
+      letter-spacing: 0.3px;
+      margin: $space-xs;
+    }
   }
 }
 
