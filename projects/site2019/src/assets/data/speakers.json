@@ -34,7 +34,7 @@
         ],
         "favourite": {
             "icon": "",
-            "name": "Maggie Goreng Tambah Telur Mata"
+            "name": "Nasi Lemak"
         }
     },
     {
@@ -194,7 +194,7 @@
         ],
         "favourite": {
             "icon": "",
-            "name": "Nasi Lemak"
+            "name": "Roti Canai"
         }
     },
     {
@@ -257,7 +257,7 @@
         ],
         "favourite": {
             "icon": "",
-            "name": "Maggie Goreng Tambah Telur Mata"
+            "name": "Roti Canai"
         }
     },
     {
@@ -278,7 +278,7 @@
         ],
         "favourite": {
             "icon": "",
-            "name": "Maggie Goreng Tambah Telur Mata"
+            "name": "Nasi Lemak"
         }
     },
     {
@@ -295,41 +295,7 @@
         ],
         "favourite": {
             "icon": "",
-            "name": "Maggie Goreng Tambah Telur Mata"
-        }
-    },
-    {
-        "id": "arjay-elbore",
-        "name": "Arjay Elbore",
-        "title": "Frontend Developer @ DBS Bank Singapore",
-        "color": "blue",
-        "description": "<p>Jay is a Frontend Developer in a Bank, who has experience on building large scale applications. He likes to code and contributing to open source projects. </p>",
-        "profile": [
-            {
-                "url": "https://twitter.com/VirtualOverride",
-                "type": "twitter"
-            }
-        ],
-        "favourite": {
-            "icon": "",
-            "name": "Maggie Goreng Tambah Telur Mata"
-        }
-    },
-    {
-        "id": "erin-zimmer",
-        "name": "Erin Zimmer",
-        "title": "Senior Developer & Thought Leader @ Shine Solutions",
-        "color": "red",
-        "description": "<p>Erin is a software developer with over ten years experience in a variety of languages, from JavaScript to Model204. She is currently a senior web developer at Shine Solutions. She is an active member of the Melbourne JavaScript and Angular communities, and has spoken at conferences around the world. If you see her at a conference, she'll be the one knitting.</p>",
-        "profile": [
-            {
-                "url": "https://twitter.com/erinjzimmer",
-                "type": "twitter"
-            }
-        ],
-        "favourite": {
-            "icon": "",
-            "name": "Maggie Goreng Tambah Telur Mata"
+            "name": "Nasi Lemak"
         }
     },
     {
@@ -346,7 +312,171 @@
         ],
         "favourite": {
             "icon": "",
-            "name": "Maggie Goreng Tambah Telur Mata"
+            "name": "Nasi Lemak"
+        }
+    },
+    {
+        "id": "erin-zimmer",
+        "name": "Erin Zimmer",
+        "title": "Senior Developer & Thought Leader @ Shine Solutions",
+        "color": "red",
+        "description": "<p>Erin is a software developer with over ten years experience in a variety of languages, from JavaScript to Model204. She is currently a senior web developer at Shine Solutions. She is an active member of the Melbourne JavaScript and Angular communities, and has spoken at conferences around the world. If you see her at a conference, she'll be the one knitting.</p>",
+        "profile": [
+            {
+                "url": "https://twitter.com/erinjzimmer",
+                "type": "twitter"
+            }
+        ],
+        "favourite": {
+            "icon": "",
+            "name": "Nasi Lemak"
+        }
+    },
+    {
+        "id": "arjay-elbore",
+        "name": "Arjay Elbore",
+        "title": "Frontend Developer @ DBS Bank Singapore",
+        "color": "blue",
+        "description": "<p>Jay is a Frontend Developer in a Bank, who has experience on building large scale applications. He likes to code and contributing to open source projects. </p>",
+        "profile": [
+            {
+                "url": "https://twitter.com/VirtualOverride",
+                "type": "twitter"
+            }
+        ],
+        "favourite": {
+            "icon": "",
+            "name": "Nasi Lemak"
+        }
+    },
+    {
+        "id": "yew-hong-tat",
+        "name": "Yew Hong Tat",
+        "title": "Senior Software Engineer @ ViewPoint",
+        "color": "red",
+        "description": "<p>HongTat is a happy developer who is very excited about web development from backend using C# to frontend Angular.</p><p>He is a senior software engineer @ ViewPoint working on a web application.</p>",
+        "profile": [
+            {
+                "url": "https://www.linkedin.com/in/hongtatyew",
+                "type": "linkedin"
+            },
+            {
+                "url": "https://twitter.com/hongtat88",
+                "type": "twitter"
+            }
+        ],
+        "favourite": {
+            "icon": "",
+            "name": "Nasi Lemak"
+        }
+    },
+    {
+        "id": "wendy-kong",
+        "name": "Wendy Kong",
+        "title": "Women Who Code KL Lead, Software Engineer",
+        "color": "blue",
+        "description": "<p>Wendy is a banker-turned-software engineer who develops web products. She’s also on the community organising team of Women Who Code KL. In her spare time she lurks around Twitter and Slack communities and finds any excuse to draw something.</p>",
+        "profile": [
+            {
+                "url": "https://www.linkedin.com/in/wendykongmy",
+                "type": "linkedin"
+            }
+        ],
+        "favourite": {
+            "icon": "",
+            "name": "Nasi Lemak"
+        }
+    },
+    {
+        "id": "azizi-yazit",
+        "name": "Azizi Yazit",
+        "title": "Senior Web Developer @ Esri",
+        "color": "red",
+        "description": "<p>Azizi is an experienced UI developer who love developing web and love the web technologies. Azizi started his career in UI development as Junior UI developer at Hewlett Packard Malaysia. He accepting senior role at British Telecom and provide solution for UI in Portal based application. Currently worked in WebMap and developing UI libraries at Esri Malaysia.</p>",
+        "profile": [
+            {
+                "url": "https://twitter.com/aziziyazit",
+                "type": "twitter"
+            },
+            {
+                "url": "https://www.facebook.com/abu.hafs.ibnu.yazit",
+                "type": "facebook"
+            },
+            {
+                "url": "https://my.linkedin.com/in/aziziyazit",
+                "type": "linkedin"
+            }
+        ],
+        "favourite": {
+            "icon": "",
+            "name": "Nasi Lemak"
+        }
+    },
+    {
+        "id": "sujono",
+        "name": "Sujono",
+        "title": "Front End Engineer @ Dathena",
+        "color": "blue",
+        "description": "<p>Jack of all trades before, but now specialized in front-end development. Angular and React is my specialization, and also passionate in hybrid dev (Ionic and RN). DevOps is my new interest recently.</p>",
+        "profile": [
+            {
+                "url": "https://www.facebook.com/starcokz",
+                "type": "facebook"
+            }
+        ],
+        "favourite": {
+            "icon": "",
+            "name": "Nasi Lemak"
+        }
+    },
+    {
+        "id": "siwat-kaolueng",
+        "name": "Siwat Kaolueng",
+        "title": "Developer @ 7 Peaks Software",
+        "color": "red",
+        "description": "<p>Siwat is the Angular & Web enthusiast who passionating front-end architecture. He has experienced in enterprise softwares such as bank and energy companies. He does open source the project who-use-angular-in-thailand - https://angularthailand.github.io/who-use-angular-in-thailand. He  is also Angular Thailand speaker and organizer.</p>",
+        "profile": [
+            {
+                "url": "https://twitter.com/perjerz3434",
+                "type": "twitter"
+            },
+            {
+                "url": "https://www.facebook.com/perjerz.thailand",
+                "type": "facebook"
+            },
+            {
+                "url": "https://www.linkedin.com/in/siwatkaolueng",
+                "type": "linkedin"
+            },
+            {
+                "url": "https://github.com/perjerz3434",
+                "type": "github"
+            }
+        ],
+        "favourite": {
+            "icon": "",
+            "name": "Nasi Lemak"
+        }
+    },
+    {
+        "id": "zachary-ng",
+        "name": "Zachary Ng",
+        "title": "Software Engineer @ Pulsifi",
+        "color": "blue",
+        "description": "<p>Zac is a born-again software engineer at Pulsifi. He came from a finance background 2 years ago and can now masterfully center a div in another div. He in an enthusiast of meaningful UX and Serverless architecture, and together with his team and the platform they’ve built, has helped empower thousands of fresh grads with careers that inspire them. On the side, he's loves video games and his 2 cats. </p>",
+        "profile": [
+            {
+                "url": "https://www.facebook.com/zackngweiyao",
+                "type": "facebook"
+            },
+            {
+                "url": "https://www.linkedin.com/in/zachary-ng",
+                "type": "linkedin"
+            }
+        ],
+        "favourite": {
+            "icon": "",
+            "name": "Nasi Lemak"
         }
     }
 ]

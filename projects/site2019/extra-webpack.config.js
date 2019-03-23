@@ -25,16 +25,16 @@ module.exports = {
                 '/', 
                 '/coc', 
                 // forms
-                ...formRouteList,
+                // ...formRouteList,
                 // team members
                 '/team',
                 ...teamRouteList,
                 // posts
                 ...postRouteList,
                 '/speakers',
-                ...speakerRouteList,
+                // ...speakerRouteList,
                 '/sessions',
-                ...sessionRouteList,
+                // ...sessionRouteList,
             ],
         })
     ]
