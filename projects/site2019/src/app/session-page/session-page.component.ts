@@ -16,7 +16,7 @@ import { environment } from '../../environments/environment';
 })
 export class SessionPageComponent implements OnInit {
   day = 0;
-  sessionList = [];
+  sessions = [];
   selectedSessionId = null;
 
   profileIconsModel = null;
@@ -41,11 +41,23 @@ export class SessionPageComponent implements OnInit {
   }
 
   get currentDaySession() {
-    return this.sessionList[this.day];
+    return this.sessions[this.day];
+  }
+
+  get mainSession() {
+    return this.currentDaySession.filter(x => x.type === 'main');
+  }
+
+  get lightningSession() {
+    return this.currentDaySession.filter(x => x.type === 'lightning');
+  }
+
+  get workshopSession() {
+    return this.currentDaySession.filter(x => x.type === 'workshop');
   }
 
   ngOnInit() {
-    this.sessionList = [
+    this.sessions = [
       sessionList
         .map(x => ({
           ...x,

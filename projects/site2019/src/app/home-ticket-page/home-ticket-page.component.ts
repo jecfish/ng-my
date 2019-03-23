@@ -10,6 +10,7 @@ import medias from '../../assets/data/sponsors-media.json';
 import bronzes from '../../assets/data/sponsors-bronze.json';
 
 import speakerList from '../../assets/data/speakers.json';
+import postList from '../../assets/data/posts.json';
 
 @Component({
   selector: 'my-home-ticket-page',
@@ -118,6 +119,8 @@ export class HomeTicketPageComponent implements OnInit {
     }
   ];
 
+  posts = [];
+
   speakers = [];
 
   currentSpeaker = 0;
@@ -126,6 +129,10 @@ export class HomeTicketPageComponent implements OnInit {
 
   get speaker() {
     return this.speakers[this.currentSpeaker] || {};
+  }
+
+  get fewPosts() {
+    return this.posts.slice(0, 3);
   }
 
   @HostListener('window:scroll', ['$event'])
@@ -159,6 +166,16 @@ export class HomeTicketPageComponent implements OnInit {
     }));
 
     this.randomSpeaker();
+    this.posts = Object.keys(postList).reduce(
+      (list, url) => [
+        ...list,
+        {
+          url,
+          ...postList[url]
+        }
+      ],
+      []
+    );
   }
 
   scrollTo(location) {

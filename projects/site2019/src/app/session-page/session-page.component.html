@@ -11,12 +11,15 @@
       </div>
     </div>
     <section class="session-section">
+      <div class="page-header">
+        <h2 class="section-title">Presentations</h2>
+      </div>
       <!-- <div class="session-date-btns">
         <a class="session-date-btn active" [routerLink]="" (click)="day = 1">Sat, July 6</a>
         <a class="session-date-btn" [routerLink]="" (click)="day = 2">Sun, July 7</a>
       </div> -->
       <ul class="session-list">
-        <li class="session-item" *ngFor="let s of currentDaySession" [class.--selected]="selectedSession?.id === s.id">
+        <li class="session-item" *ngFor="let s of mainSession" [class.--selected]="selectedSession?.id === s.id">
           <div class="row">
             <!-- <div class="col">
               <div class="speaker-card">
@@ -36,8 +39,73 @@
               <div class="session-duration">{{s.duration}}</div>
             </div> -->
             <div class="col">
-              <div class="session-topic">{{ s.title }}</div>
+              <h5 class="session-topic">{{ s.title }}
+                <div class="session-speaker-list">
+                  <a routerLink="/speakers/{{ p.id }}" class="session-speaker-item" *ngFor="let p of s.speakers">
+                    <img src="../../assets/imgs/speakers/{{ p.id }}.jpg" [alt]="p.name" [title]="p.name"
+                      class="session-speaker-icon"></a>
+                </div>
+              </h5>
               <p class="session-desc" [innerHTML]="s.description.short"></p>
+              <div class="session-tag-list" *ngIf="!!s.tags.length">
+                <div class="session-tag-item" *ngFor="let t of s.tags">{{ t }}</div>
+              </div>
+              <button class="btn btn-secondary" (click)="selectSession(s.id)">
+                <div class="btn-inner">More info</div>
+              </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="session-section" *ngIf="lightningSession.length">
+      <div class="page-header">
+        <h2 class="section-title">Lightning talks</h2>
+      </div>
+      <ul class="session-list">
+        <li class="session-item" *ngFor="let s of lightningSession" [class.--selected]="selectedSession?.id === s.id">
+          <div class="row">
+            <div class="col">
+              <h5 class="session-topic">{{ s.title }}
+                <div class="session-speaker-list">
+                  <a routerLink="/speakers/{{ p.id }}" class="session-speaker-item" *ngFor="let p of s.speakers">
+                    <img src="../../assets/imgs/speakers/{{ p.id }}.jpg" [alt]="p.name" [title]="p.name"
+                      class="session-speaker-icon"></a>
+                </div>
+              </h5>
+              <p class="session-desc" [innerHTML]="s.description.short"></p>
+              <div class="session-tag-list" *ngIf="!!s.tags.length">
+                <div class="session-tag-item" *ngFor="let t of s.tags">{{ t }}</div>
+              </div>
+              <button class="btn btn-secondary" (click)="selectSession(s.id)">
+                <div class="btn-inner">More info</div>
+              </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="session-section" *ngIf="workshopSession.length">
+      <div class="page-header">
+        <h2 class="section-title">Workshops</h2>
+      </div>
+      <ul class="session-list">
+        <li class="session-item" *ngFor="let s of workshopSession" [class.--selected]="selectedSession?.id === s.id">
+          <div class="row">
+            <div class="col">
+              <h5 class="session-topic">{{ s.title }}
+                <div class="session-speaker-list">
+                  <a routerLink="/speakers/{{ p.id }}" class="session-speaker-item" *ngFor="let p of s.speakers">
+                    <img src="../../assets/imgs/speakers/{{ p.id }}.jpg" [alt]="p.name" [title]="p.name"
+                      class="session-speaker-icon"></a>
+                </div>
+              </h5>
+              <p class="session-desc" [innerHTML]="s.description.short"></p>
+              <div class="session-tag-list" *ngIf="!!s.tags.length">
+                <div class="session-tag-item" *ngFor="let t of s.tags">{{ t }}</div>
+              </div>
               <button class="btn btn-secondary" (click)="selectSession(s.id)">
                 <div class="btn-inner">More info</div>
               </button>
@@ -57,7 +125,8 @@
                 <li class="team-highlight-speakers-item" *ngFor="let s of selectedSession?.speakers">
                   <a routerLink="/speakers/{{ s.id }}" class="team-highlight-speakers-link">
                     <figure class="team-highlight-speakers-pic">
-                      <img src="../../assets//imgs/speakers/{{ s.id }}.jpg" class="team-highlight-speakers-img" [alt]="s.name">
+                      <img src="../../assets//imgs/speakers/{{ s.id }}.jpg" class="team-highlight-speakers-img"
+                        [alt]="s.name">
                     </figure>
                   </a>
                   <div class="team-highlight-speakers-text">
@@ -76,8 +145,8 @@
               <ng-container *ngIf="selectedSessionSpeakers.length === 1">
                 <a routerLink="/speakers/{{onlySpeaker.id}}">
                   <figure class="team-highlight-pic">
-                    <img src="../../assets/imgs/speakers/{{ onlySpeaker.id }}.jpg" [alt]="selectedSession.id" class="team-highlight-img"
-                      *ngIf="selectedSession" />
+                    <img src="../../assets/imgs/speakers/{{ onlySpeaker.id }}.jpg" [alt]="selectedSession.id"
+                      class="team-highlight-img" *ngIf="selectedSession" />
                   </figure>
                 </a>
                 <div class="team-highlight-name">
