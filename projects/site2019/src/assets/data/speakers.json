@@ -505,7 +505,7 @@
         ],
         "favourite": {
             "icon": "",
-            "name": "Maggie Goreng Tambah Telur Mata"
+            "name": "Nasi Lemak"
         }
     },
     {
@@ -522,7 +522,7 @@
         ],
         "favourite": {
             "icon": "",
-            "name": "Maggie Goreng Tambah Telur Mata"
+            "name": "Nasi Lemak"
         }
     },
     {
@@ -539,7 +539,7 @@
         ],
         "favourite": {
             "icon": "",
-            "name": "Maggie Goreng Tambah Telur Mata"
+            "name": "Nasi Lemak"
         }
     },
     {
@@ -560,7 +560,7 @@
         ],
         "favourite": {
             "icon": "",
-            "name": "Maggie Goreng Tambah Telur Mata"
+            "name": "Nasi Lemak"
         }
     },
     {
@@ -577,7 +577,7 @@
         ],
         "favourite": {
             "icon": "",
-            "name": "Maggie Goreng Tambah Telur Mata"
+            "name": "Nasi Lemak"
         }
     },
     {
@@ -594,7 +594,7 @@
         ],
         "favourite": {
             "icon": "",
-            "name": "Maggie Goreng Tambah Telur Mata"
+            "name": "Nasi Lemak"
         }
     },
     {
@@ -611,7 +611,24 @@
         ],
         "favourite": {
             "icon": "",
-            "name": "Maggie Goreng Tambah Telur Mata"
+            "name": "Nasi Lemak"
+        }
+    },
+    {
+        "id": "alex-lakatos",
+        "name": "Alex Lakatos",
+        "title": "Developer Advocate @ Nexmo",
+        "color": "blue",
+        "description": "<p>Alex Lakatos is a JavaScript Developer Advocate for Nexmo based in London. In his spare time, he is a Mozilla Tech Speaker and has been a contributor to the Mozilla project for the past six years. As a JavaScript developer building on the open web, he has been pushing its boundaries every day. You can check out his GitHub profile or get in touch on Twitter. When he’s not programming, Alex likes to travel the world, so it’s likely you’ll bump into him in an airport lounge.</p>",
+        "profile": [
+            {
+                "url": "https://twitter.com/lakatos88",
+                "type": "twitter"
+            }
+        ],
+        "favourite": {
+            "icon": "",
+            "name": "Nasi Lemak"
         }
     }
 ]
