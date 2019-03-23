@@ -12,7 +12,7 @@
     </div>
     <section class="session-section">
       <div class="page-header">
-        <h2 class="section-title">Main sessions</h2>
+        <h2 class="section-title">Presentations</h2>
       </div>
       <!-- <div class="session-date-btns">
         <a class="session-date-btn active" [routerLink]="" (click)="day = 1">Sat, July 6</a>
@@ -59,9 +59,9 @@
       </ul>
     </section>
 
-    <section class="session-section">
+    <section class="session-section" *ngIf="lightningSession.length">
       <div class="page-header">
-        <h2 class="section-title">Lightning sessions</h2>
+        <h2 class="section-title">Lightning talks</h2>
       </div>
       <ul class="session-list">
         <li class="session-item" *ngFor="let s of lightningSession" [class.--selected]="selectedSession?.id === s.id">
@@ -87,9 +87,9 @@
       </ul>
     </section>
 
-    <section class="session-section">
+    <section class="session-section" *ngIf="workshopSession.length">
       <div class="page-header">
-        <h2 class="section-title">Workshop sessions</h2>
+        <h2 class="section-title">Workshops</h2>
       </div>
       <ul class="session-list">
         <li class="session-item" *ngFor="let s of workshopSession" [class.--selected]="selectedSession?.id === s.id">

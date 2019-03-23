@@ -5,7 +5,7 @@
     "description": "<p>The responsiveness of the apps is one of the critical factors of how the users perceive them. Some of the sources of slowness are waiting for API responses and unhandled errors when they fail.</p> <p>NgRx is the state management solution, and because of the way it is designed, it can help to improve User Experience in many such areas. In particular, I’ll talk about: error handling, store as a cache, and optimistic updates.</p>",
     "title": "5 Tips to Improve User Experience with NgRx",
     "speakers": ["alex-okrushko"],
-    "tags": ["api", "ux", "performance"]
+    "tags": []
   },
   {
     "id": "mashhood-rastgar",
@@ -14,7 +14,7 @@
     "description": "As Single Page Applications take over the world, we are introduced with yet another complexity: their size. Over time we have created patterns to manage complexity on our backends, one of the popular ones being microservices. This pattern is now being adopted by frontends under the name of micro-frontends.  In this talk I will introduce the concept and dive into how does one get about implementing a micro-frontend architecture for their project.",
     "title": "Scaling Frontend Development using Micro-frontends",
     "speakers": ["mashhood-rastgar"],
-    "tags": ["spa", "micro-frontend", "architecture"]
+    "tags": []
   },
   {
     "id": "jia-li",
@@ -23,7 +23,7 @@
     "description": "<p>State Management is very important in Angular development, ngrx is one of the most used libraries. By using ngrx, there are a lot of advantages in development/test, but we also need to pay the learning cost for several new concepts (Store/Selector/Effect/Action/...), we also need to write a lot of boilerplate code for those extra layers. </p> <p> In this talk, we will use sample application to introduce how to use<br> 1. ngrx <br> 2. ngrx-enitty<br> 3. ngrx-data<br> to implement it, through that, I will introduce the mechanism of ngrx-entity and ngrx-data. I will also like to share my thought when I am using ngrx-data in practical project. </p>",
     "title": "From NgRx to NgRx-entity to NgRx-data",
     "speakers": ["jia-li"],
-    "tags": ["ngrx", "state-management", "data"]
+    "tags": []
   },
   {
     "id": "sebastian-witalec",
@@ -31,7 +31,7 @@
     "duration": "30 min",
     "description": "<p>NativeScript is a free and open source JavaScript framework for building native iOS and Android apps. Add to that Angular with TypeScript and you will get a truly amazing combination. But I know what you’re thinking: another way of building apps? What makes NativeScript special? Here are a few cool things: </p> <p> · Direct access to native APIs—no plugins required. Want to create a file on Android? Run new java.io.File()—in JavaScript!<br> · Completely native performance through the use of a JavaScript bridge natively available on all three mobile platforms.<br> · Cross-platform libraries for common use cases. Need to call a JSON API? Run http.getJSON<br> · Style native apps using CSS. Yep, that’s actually a thing.<br> </p> <p> Curious about how it all works? Come learn! Architectures will be explained; apps will be built; and fun will be had by all. </p>",
     "title": "Building Mobile Apps with Angular and NativeScript",
-    "speakers": ["sebastian-witalec", "mashhood-rastgar", "jia-li"],
+    "speakers": ["sebastian-witalec"],
     "tags": []
   },
   {
@@ -126,7 +126,7 @@
   },
   {
     "id": "erin-zimmer",
-    "type": "lightning",
+    "type": "main",
     "duration": "30 min",
     "description": "<p>Many of us eagerly awaited the release of Angular 2. We updated our apps to Angular 1.6. We wrote components. And, when the time came, we wrapped our apps in ng-upgrade, and everything worked fine, and we all started writing Angular 2. We were all happy.</p><p>But what about everyone else? What about the people who are still running Angular 1.4? In ES5? With… JSPs? Fear not! There absolutely is hope. Using a real app as an example, we're going to take a look at the steps involved in preparing your app, the actual upgrade process, and strategies for improving the app in the future. We're going to take that dusty old Maven app and turn it into a shining example of modern web development!</p>",
     "title": "Upgrading your AngularJS app, without the tears",
@@ -135,7 +135,7 @@
   },
   {
     "id": "ng-tong-sheng",
-    "type": "workshop",
+    "type": "main",
     "duration": "30 min",
     "description": "<p>Angular Material and the CDK were built to make it easy to build great looking and great feeling applications more quickly. Watch me live-code an application using CDK and schematics.</p>",
     "title": "Cool interaction made simple with Angular material CDK",
