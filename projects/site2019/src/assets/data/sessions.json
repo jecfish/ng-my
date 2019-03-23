@@ -141,5 +141,71 @@
     "title": "Cool interaction made simple with Angular material CDK",
     "speakers": ["ng-tong-sheng"],
     "tags": []
+  },
+  {
+    "id": "yew-hong-tat",
+    "type": "lightning",
+    "duration": "10 min",
+    "description": "<p>Knocking your head against unexpected issues while building your projects on Angular? We all did at some point!</p><p>In this talk, I will share about a few common mistakes that I've made (probably you as well!) when working in Angular and how to resolve or avoid them!</p>",
+    "title": "Common Angular Gotchas",
+    "speakers": [
+      "yew-hong-tat"
+    ],
+    "tags": []
+  },
+  {
+    "id": "wendy-kong",
+    "type": "lightning",
+    "duration": "10 min",
+    "description": "<p>Angular is great for developing enterprise software. Does it always have to be about business though? If we are comfortable with the framework, maybe we can apply our knowledge on something a little more goofy every once in a while. Let's go for a spin and explore how we can use the tools that we're familiar with to develop some simple games in the browser. As it were, Angular is powerful enough to support games that are not so resource-intensive. In this lightning talk, we will look at how games can be created with Angular, including a short demo.</p>",
+    "title": "Fun and Games with Angular",
+    "speakers": [
+      "wendy-kong"
+    ],
+    "tags": []
+  },
+  {
+    "id": "azizi-yazit",
+    "type": "lightning",
+    "duration": "10 min",
+    "description": "<p>Compound components is an advance technique to which components are used together such that they share an implicit state that let’s them communicate with each other in the background. In this talk, I will show you how to apply this technique in Angular.</p><p>Quoted by Kent C. Dodds - \"Think of compound components like the <select> and <option> elements in HTML. Apart they don't do too much, but together they allow you to create the complete experience. The way they do this is by sharing implicit state between the components.\"</p>",
+    "title": "Writing Compound Components in Angular",
+    "speakers": [
+      "azizi-yazit"
+    ],
+    "tags": []
+  },
+  {
+    "id": "sujono",
+    "type": "lightning",
+    "duration": "10 min",
+    "description": "<p>The Continuous integration and continuous delivery (CI/CD) pipeline is one of the best practices for delivering code changes more frequently and reliably.</p><p>In this talk, I will share about:<br />- how to automate deployment<br />- how to setup and running automated testing across different browsers<br />- tips on setting up Angular deployment workflow</p>",
+    "title": "Release Confidently: Automate Angular Deployment Workflow",
+    "speakers": [
+      "sujono"
+    ],
+    "tags": []
+  },
+  {
+    "id": "siwat-kaolueng",
+    "type": "lightning",
+    "duration": "10 min",
+    "description": "<p>Nx is an open source toolkit for building ambitious enterprise applications. Nx fully integrates with modern tools (Angular, React, Cypress, Jest, Prettier, Nest, etc) you already use and love. Nx sets up these tools, allows you to use them seamlessly, at the same time help you enforce your organization’s standards and community best practices.</p><p>In this talk, we will give a short overview about:<br />- What is Nx?<br />- How Nx provides can help you scale your enterprise development</p>",
+    "title": "Using Nx: Angular CLI power-ups for modern development",
+    "speakers": [
+      "siwat-kaolueng"
+    ],
+    "tags": []
+  },
+  {
+    "id": "zachary-ng",
+    "type": "lightning",
+    "duration": "10 min",
+    "description": "<p>My web app is looking a little dull… When and how can I give it a little pop of life? We’ll be exploring how to create animations and micro-interactions that will wow (or at least subtly amuse) your users. Our toolkit will include CSS animations, Angular animations, and external animation libraries.</p>",
+    "title": "Bringing Angular to Life with Animations",
+    "speakers": [
+      "zachary-ng"
+    ],
+    "tags": []
   }
 ]
