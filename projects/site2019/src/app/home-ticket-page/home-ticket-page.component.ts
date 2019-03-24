@@ -108,11 +108,11 @@ export class HomeTicketPageComponent implements OnInit {
           event: 'ng-eat'
         },
         {
-          time: '13.00 - 15.00',
+          time: '13.00 - 15.30',
           event: 'ng-talks (2 tracks)'
         },
         {
-          time: '15.00 - 15.30',
+          time: '15.30 - 16.00',
           event: 'ng-closing'
         }
       ]
