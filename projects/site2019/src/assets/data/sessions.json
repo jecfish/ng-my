@@ -48,7 +48,7 @@
     "type": "main",
     "duration": "30 min",
     "description": "<p>In development, we often want to extract reusable parts of logic into self contained libraries. Modern tooling provided by Angular CLI enables us to provide amazing developer experience for the users of our libraries. </p> <p> Libraries can be added seamlessly, while automating all the necessary setup work. </p> <p> More so, providing built-in library specific schematics enables us to cut on the learning curve that is needed to get developers productive straight from the start by generating code which follows intentioned patterns and best practices. </p> <p> In this talk, we're going to explore: <br> 1. What are Angular Schematics<br> 2. Why and how to use them<br> 3. Best practices and tips for using default Angular schematics<br> 4. How to build simple schematics for our custom library<br> 5. How to make our library \"ng add\" - able to make it seamless for the consumers<br> </p>",
-    "title": "Leverage Angular Schematics to empower developers of Frontend App & libraries",
+    "title": "Leverage Angular Schematics to Empower Developers of Frontend App & Libraries",
     "speakers": [
       "tomas-trajan"
     ],
@@ -83,7 +83,7 @@
     "type": "main",
     "duration": "30 min",
     "description": "<p>Functional reactive programming has been around for many years. There are so many reasons make people keep talking about it.</p><p>In this talk, we are going to talk about<br>1. What is functional reactive programming good at?<br>2. Why should you care about it and adopt it?<br>3. How can we use it with RxJS in Angular?<br>4. How about Ramda?</p>",
-    "title": "Why should you care about functional reactive programming?",
+    "title": "Why should You Care about Functional Reactive Programming",
     "speakers": [
       "kevin-yang"
     ],
@@ -160,7 +160,7 @@
     "type": "main",
     "duration": "30 min",
     "description": "<p>Many of us eagerly awaited the release of Angular 2. We updated our apps to Angular 1.6. We wrote components. And, when the time came, we wrapped our apps in ng-upgrade, and everything worked fine, and we all started writing Angular 2. We were all happy.</p><p>But what about everyone else? What about the people who are still running Angular 1.4? In ES5? With… JSPs? Fear not! There absolutely is hope. Using a real app as an example, we're going to take a look at the steps involved in preparing your app, the actual upgrade process, and strategies for improving the app in the future. We're going to take that dusty old Maven app and turn it into a shining example of modern web development!</p>",
-    "title": "Upgrading your AngularJS app, without the tears",
+    "title": "Upgrading your AngularJS App, Without the Tears",
     "speakers": [
       "erin-zimmer"
     ],
@@ -171,7 +171,7 @@
     "type": "main",
     "duration": "30 min",
     "description": "<p>Angular Material and the CDK were built to make it easy to build great looking and great feeling applications more quickly. Watch me live-code an application using CDK and schematics.</p>",
-    "title": "Cool interaction made simple with Angular material CDK",
+    "title": "Cool interaction made Simple with Angular Material CDK",
     "speakers": [
       "ng-tong-sheng"
     ],
@@ -226,7 +226,7 @@
     "type": "lightning",
     "duration": "10 min",
     "description": "<p>Nx is an open source toolkit for building ambitious enterprise applications. Nx fully integrates with modern tools (Angular, React, Cypress, Jest, Prettier, Nest, etc) you already use and love. Nx sets up these tools, allows you to use them seamlessly, at the same time help you enforce your organization’s standards and community best practices.</p><p>In this talk, we will give a short overview about:<br />- What is Nx?<br />- How Nx provides can help you scale your enterprise development</p>",
-    "title": "Using Nx: Angular CLI power-ups for modern development",
+    "title": "Using Nx: Angular CLI Power-ups for Modern Development",
     "speakers": [
       "siwat-kaolueng"
     ],
