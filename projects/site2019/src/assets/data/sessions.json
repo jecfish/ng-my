@@ -276,5 +276,16 @@
       "mart-ganzevles"
     ],
     "tags": []
+  },
+  {
+    "id": "alex-lakatos",
+    "type": "main",
+    "duration": "30 min",
+    "description": "<p>Forms are probably the most sensitive part of your web app. They are the main way we get data from the user. They seem simple enough, you just add an ngForm to your template, user clicks Submit and you have data. But there's more to them than that, and we're going to talk about that in this session. We'll try building forms in multiple ways, comparing the way they do validations, development and change detection, while coding it all.</p>",
+    "title": "Comparing Angular Forms",
+    "speakers": [
+      "alex-lakatos"
+    ],
+    "tags": []
   }
 ]
