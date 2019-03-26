@@ -54,7 +54,7 @@
             "scripts": [],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "projects/site2019/src/assets/scss"
+                "projects/site2019/src/scss"
               ]
             }
           },

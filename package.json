@@ -10,7 +10,8 @@
     "deploy": "firebase deploy",
     "prepush": "yarn lint",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "stats": "webpack-bundle-analyzer dist/site2019/stats.json"
   },
   "private": true,
   "dependencies": {
@@ -46,6 +47,7 @@
     "tsickle": "0.34.2",
     "tslib": "^1.9.0",
     "tslint": "~5.12.1",
-    "typescript": "^3.2.4"
+    "typescript": "^3.2.4",
+    "webpack-bundle-analyzer": "^3.1.0"
   }
 }
