@@ -1,7 +1,15 @@
 language: node_js
 node_js:
 - '10'
-cache: yarn
+dist: trusty
+addons:
+  chrome: stable
+before_install:
+  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
+cache: 
+  yarn: true
+  directories:
+    - node_modules
 dist: trusty
 sudo: required
 branches:
