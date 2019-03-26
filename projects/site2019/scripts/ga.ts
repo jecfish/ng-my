@@ -1,3 +1,4 @@
+/* tslint:disable */
 export class GoogleAnalytics {
     static run(config: { trackingID: string }) {
         const tag = document.createElement('script');

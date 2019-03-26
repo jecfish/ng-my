@@ -154,7 +154,7 @@ export class HomeTicketPageComponent implements OnInit {
 
   ngOnInit() {
     const title = 'July 06-07';
-    this.pageSvc.setPage({ title: title });
+    this.pageSvc.setPage({ title });
     this.speakers = speakerList.map(x => ({
       ...x,
       ...{

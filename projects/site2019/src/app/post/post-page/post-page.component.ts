@@ -15,8 +15,7 @@ export class PostPageComponent implements OnInit {
 
   selectedPost: { title: '', desc: '', content: '' };
 
-  constructor(private route: ActivatedRoute, private http: HttpClient,
-    private pageSvc: PageService) { }
+  constructor(private route: ActivatedRoute, private http: HttpClient, private pageSvc: PageService) { }
 
   ngOnInit() {
     this.route.params.subscribe(async x => {

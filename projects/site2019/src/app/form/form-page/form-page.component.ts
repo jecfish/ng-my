@@ -15,8 +15,7 @@ export class FormPageComponent implements OnInit {
 
   private urlPattern = 'https://docs.google.com/forms/d/e/{id}/viewform?embedded=true';
 
-  constructor(private route: ActivatedRoute, private sanitizer: DomSanitizer,
-    private pageSvc: PageService) { }
+  constructor(private route: ActivatedRoute, private sanitizer: DomSanitizer, private pageSvc: PageService) { }
 
   ngOnInit() {
     this.route.params.subscribe(x => {

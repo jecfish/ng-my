@@ -16,35 +16,43 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: 'coc',
-    loadChildren: './coc/coc.module#CocModule'
+    // loadChildren: './coc/coc.module#CocModule'
+    loadChildren: () => import('./coc/coc.module').then(m => m.CocModule)
   },
   {
     path: 'speakers',
-    loadChildren: './speakers/speakers.module#SpeakersModule'
+    // loadChildren: './speakers/speakers.module#SpeakersModule'
+    loadChildren: () => import('./speakers/speakers.module').then(m => m.SpeakersModule)
   },
   {
     path: 'sessions',
-    loadChildren: './sessions/sessions.module#SessionsModule'
+    // loadChildren: './sessions/sessions.module#SessionsModule'
+    loadChildren: () => import('./sessions/sessions.module').then(m => m.SessionsModule)
   },
   {
     path: 'team',
-    loadChildren: './team/team.module#TeamModule'
+    // loadChildren: './team/team.module#TeamModule'
+    loadChildren: () => import('./team/team.module').then(m => m.TeamModule)
   },
   {
     path: 'form',
-    loadChildren: './form/form.module#FormModule'
+    // loadChildren: './form/form.module#FormModule'
+    loadChildren: () => import('./form/form.module').then(m => m.FormModule)
   },
   {
     path: 'schedule',
-    loadChildren: './schedule/schedule.module#ScheduleModule'
+    // loadChildren: './schedule/schedule.module#ScheduleModule'
+    loadChildren: () => import('./schedule/schedule.module').then(m => m.ScheduleModule)
   },
   {
     path: 'post',
-    loadChildren: './post/post.module#PostModule'
+    // loadChildren: './post/post.module#PostModule'
+    loadChildren: () => import('./post/post.module').then(m => m.PostModule)
   },
   {
     path: '',
-    loadChildren: './home/home.module#HomeModule',
+    // loadChildren: './home/home.module#HomeModule',
+    loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
     pathMatch: 'prefix'
   },
   // {
