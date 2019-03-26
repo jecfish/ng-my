@@ -11,7 +11,8 @@ if (environment.production) {
   GoogleAnalytics.run({ trackingID: environment.gaTrackingID });
 } else {
   // mock gtag
-  window['gtag'] = function () {
+  // tslint:disable-next-line
+  window['gtag'] = () => {
     console.log('gtag called');
     return null;
   };

@@ -81,7 +81,7 @@ export class HomeEarlyPageComponent implements OnInit {
 
   ngOnInit() {
     const title = 'July 06-07';
-    this.pageSvc.setPage({ title: title });
+    this.pageSvc.setPage({ title });
   }
 
   scrollTo(location) {

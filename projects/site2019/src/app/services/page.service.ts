@@ -44,6 +44,7 @@ export class PageService {
 
     document.dispatchEvent(new Event('prerender-ready'));
 
+    // tslint:disable-next-line
     if (!environment.production || !window['gtag']) return;
 
     gtag('config', this.trackingID, {
