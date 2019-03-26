@@ -10,11 +10,11 @@ import bronzes from '../../assets/data/sponsors-bronze.json';
 
 declare var google: any;
 
-@Component({
-  selector: 'my-home-early-page',
-  templateUrl: './home-early-page.component.1.html',
-  styleUrls: ['./home-early-page.component.scss']
-})
+// @Component({
+//   selector: 'my-home-early-page',
+//   templateUrl: './home-early-page.component.1.html',
+//   styleUrls: ['./home-early-page.component.scss']
+// })
 export class HomeEarlyPageComponent implements OnInit {
   @ViewChild('map') mapElement: any;
   map: any;
@@ -61,8 +61,6 @@ export class HomeEarlyPageComponent implements OnInit {
       list: communities
     }
   ];
-
-  notificationMessage = '';
 
   @HostListener('window:scroll', ['$event'])
   doSomething(event) {

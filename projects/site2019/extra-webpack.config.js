@@ -23,7 +23,7 @@ module.exports = {
             maxConcurrentRoutes: 2,
             skipThirdPartyRequests: true,
             // addtional puppeteer options
-            dumpio: true,
+            // dumpio: true,
             args: ['--disable-setuid-sandbox', '--no-sandbox'],
             // Required - Routes to render.
             routes: [
