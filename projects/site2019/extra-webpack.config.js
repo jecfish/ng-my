@@ -23,18 +23,19 @@ module.exports = {
             // Required - Routes to render.
             routes: [
                 '/', 
-                '/coc', 
-                // forms
-                // ...formRouteList,
-                // team members
-                '/team',
-                ...teamRouteList,
+                '/coc',
                 // posts
                 ...postRouteList,
                 '/speakers',
-                // ...speakerRouteList,
+                ...speakerRouteList,
                 '/sessions',
-                // ...sessionRouteList,
+                ...sessionRouteList,
+                '/schedule',
+                // forms
+                ...formRouteList,
+                // team members
+                '/team',
+                ...teamRouteList,
             ],
         })
     ]

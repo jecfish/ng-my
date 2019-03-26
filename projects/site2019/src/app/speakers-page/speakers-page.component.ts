@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import speakerList from '../../assets/data/speakers.json';
 import { ActivatedRoute } from '@angular/router';
 import { PageService } from '../services/page.service';
-import { Meta } from '@angular/platform-browser';
 import { Location } from '@angular/common';
 import { environment } from '../../environments/environment';
 import profileIcons from '../../assets/data/profile-url-icons.json';
@@ -28,7 +27,6 @@ export class SpeakersPageComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private meta: Meta,
     private pageSvc: PageService,
     private location: Location
   ) {}
