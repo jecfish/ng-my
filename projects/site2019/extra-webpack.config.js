@@ -19,7 +19,7 @@ module.exports = {
         new PrerenderSPAPlugin({
             // Required - The path to the webpack-outputted app to prerender.
             staticDir: path.join(__dirname, '../../dist/site2019'),
-            renderAfterDocumentEvent: 'seo-ready',
+            renderAfterDocumentEvent: 'prerender-ready',
             maxConcurrentRoutes: 2,
             skipThirdPartyRequests: true,
             // addtional puppeteer options
