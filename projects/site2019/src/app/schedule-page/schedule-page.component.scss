@@ -1,0 +1,26 @@
+.schedule {
+    &-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 10px;
+
+        h2 {
+            font-size: larger;
+            font-weight: bold;
+        }
+    }
+    &-item {
+        display: grid;
+        grid-template-columns: 100px auto auto;
+        grid-gap: 6px;
+        padding: 8px 10px;
+
+        h5 {
+            font-weight: 600;
+        }
+
+        h6 {
+            font-style: italic;
+        }
+    }
+}
