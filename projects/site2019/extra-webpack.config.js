@@ -21,6 +21,7 @@ module.exports = {
             staticDir: path.join(__dirname, '../../dist/site2019'),
             renderAfterDocumentEvent: 'seo-ready',
             maxConcurrentRoutes: 4,
+            skipThirdPartyRequests: true,
             // Required - Routes to render.
             routes: [
                 '/', 
