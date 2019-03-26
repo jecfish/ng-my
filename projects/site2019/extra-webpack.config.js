@@ -20,7 +20,7 @@ module.exports = {
             // Required - The path to the webpack-outputted app to prerender.
             staticDir: path.join(__dirname, '../../dist/site2019'),
             renderAfterDocumentEvent: 'seo-ready',
-            maxConcurrentRoutes: 4,
+            maxConcurrentRoutes: 2,
             skipThirdPartyRequests: true,
             // Required - Routes to render.
             routes: [
