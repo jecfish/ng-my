@@ -8,5 +8,10 @@
         "image": "ambition.jpg",
         "name": "ambition",
         "url": "http://www.ambition.com.my/"
+    },
+    {
+        "image": "microsoft.jpg",
+        "name": "microsoft",
+        "url": "https://www.microsoft.com/"
     }
 ]
