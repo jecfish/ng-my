@@ -1,217 +1,206 @@
 {
-    "one": {
-        "0815 - 0900": [
-            {
-                "title": "Arrival, Registration, Breakfast"
-            }
-        ],
-        "0900 - 0910": [
-            {
-                "title": "Opening Remarks"
-            }
-        ],
-        "0910 - 0950": [
-            {
-                "title": "Keynote",
-                "speakers": ["Keen Yee"]
-            }
-        ],
-        "1000 - 1030": [
-            {
-                "title": "Complexity Management with NgRx",
-                "speakers": ["Mike Ryan"]
-            },
-            {
-                "title": "Machine Learning and AI for Angular Developers",
-                "speakers": ["Jerry Kurata"]
-            }
-        ],
-        "1040 - 1110": [
-            {
-                "title": "Cool interaction made Simple with Angular Material CDK",
-                "speakers": ["Ng Tong Sheng"]
-            },
-            {
-                "title": "Why should You Care about Functional Reactive Programming",
-                "speakers": ["Kevin Yang"]
-            }
-        ],
-        "1120 - 1150": [
-            {
-                "title": "Beyond TypeScript Metadata: Dependency Injection in Angular and Nest",
-                "speakers": ["Kamil Mysliwiec"]
-            },
-            {
-                "title": "Collect, Combine, and Cache RxJS Streams for User-Friendly Results... Without a Subscription",
-                "speakers": ["Deborah Kurata"]
-            }
-        ],
-        "1200 - 1300": [
-            {
-                "title": "Lunch"
-            }
-        ],
-        "1300 - 1330": [
-            {
-                "title": "From NgRx to NgRx-entity to NgRx-data",
-                "speakers": ["Jia Li"]
-            },
-            {
-                "title": "Leverage Angular Schematics to Empower Developers of Frontend App & Libraries",
-                "speakers": ["Tomas Trajan"]
-            }
-        ],
-        "1340 - 1410": [
-            {
-                "title": "Building Mobile Apps with Angular and NativeScript",
-                "speakers": ["Sebastian Witalec"]
-            },
-            {
-                "title": "How We Build NG-MY Website: Performance, SEO, Customized CLI Build, Animation, Modern CSS",
-                "speakers": ["Jecelyn Yeen", "Adrian Yeong", "Jenning Ho"]
-            }
-        ],
-        "1420 - 1450": [
-            {
-                "title": "Automated Testing for the Modern Web",
-                "speakers": ["Jennifer Shehane"]
-            },
-            {
-                "title": "GraphQL at Any Level of Your Stack",
-                "speakers": ["Kamil Kisiela"]
-            }
-        ],
-        "1500 - 1530": [
-            {
-                "title": "Tea time"
-            }
-        ],
-        "1530 - 1800": [
-            {
-                "title": "Workshop A (TBC)"
-            },
-            {
-                "title": "Workshop B (TBC)"
-            },
-            {
-                "title": "Workshop C (TBC)"
-            },
-            {
-                "title": "Workshop D (TBC)"
-            }
-        ]
-    },
-    "two": {
-        "0815 - 0900": [
-            {
-                "title": "Arrival, Breakfast"
-            }
-        ],
-        "0900 - 0910": [
-            {
-                "title": "Opening Remarks"
-            }
-        ],
-        "0910 - 0950": [
-            {
-                "title": "(TBC)",
-                "speakers": ["Michael Hladky"]
-            }
-        ],
-        "1000 - 1030": [
-            {
-                "title": "Build Web Components with Angular Elements",
-                "speakers": ["Arjay Elbore"]
-            },
-            {
-                "title": "Angular Material or Bootstrap? Stop asking the question!",
-                "speakers": ["Amadou Sall"]
-            }
-        ],
-        "1040 - 1110": [
-            {
-                "title": "(TBC)",
-                "speakers": ["Will Huang"]
-            },
-            {
-                "title": "Upgrading your AngularJS App, Without the Tears",
-                "speakers": ["Erin Zimmer"]
-            }
-        ],
-        "1120 - 1150": [
-            {
-                "title": "Comparing Angular Forms",
-                "speakers": ["Alex Lakatos"]
-            },
-            {
-                "title": "5 Tips to Improve User Experience with NgRx",
-                "speakers": ["Alex Okrushko"]
-            }
-        ],
-        "1200 - 1300": [
-            {
-                "title": "Lunch"
-            }
-        ],
-        "1300 - 1310": [
-            {
-                "title": "Writing Compound Components in Angular",
-                "speakers": ["Azizi Yazit"]
-            },
-            {
-                "title": "Bringing Angular to Life with Animations",
-                "speakers": ["Zachary Ng"]
-            }
-        ],
-        "1310 - 1320": [
-            {
-                "title": "Fun and Games with Angular",
-                "speakers": ["Wendy Kong"]
-            },
-            {
-                "title": "Common Angular Gotchas",
-                "speakers": ["Yew Hong Tat"]
-            }
-        ],
-        "1320 - 1330": [
-            {
-                "title": "Using Nx: Angular CLI Power-ups for Modern Development",
-                "speakers": ["Siwat Kaoleung"]
-            },
-            {
-                "title": "Release Confidently: Automate Angular Deployment Workflow",
-                "speakers": ["Sujono"]
-            }
-        ],
-        "1340 - 1410": [
-            {
-                "title": "Large Scale Angular Applications",
-                "speakers": ["Tom Suijkerbuijk", "Mart Ganzevles"]
-            },
-            {
-                "title": "Scaling Frontend Development using Micro-frontends",
-                "speakers": ["Mashhood Rastgar"]
-            }
-        ],
-        "1420 - 1450": [
-            {
-                "title": "Ivy Renderer for Dummies",
-                "speakers": ["Gerard Sans"]
-            },
-            {
-                "title": "(TBC)",
-                "speakers": ["Keen Yee"]
-            }
-        ],
-        "1500 - 1545": [
-            {
-                "title": "AMA - Ask Me Anything"
-            }
-        ],
-        "1545 - 1600": [
-            {
-                "title": "Closing"
-            }
-        ]
-    }
+  "one": {
+    "0815 - 0900": [{
+      "title": "Arrival, Registration, Breakfast"
+    }],
+    "0900 - 0910": [{
+      "title": "Opening Remarks"
+    }],
+    "0910 - 0950": [{
+      "title": "Keynote",
+      "speakers": ["Keen Yee"]
+    }],
+    "1000 - 1030": [{
+        "title": "Complexity Management with NgRx",
+        "speakers": ["Mike Ryan"],
+        "session": "complexity-management-with-ngrx"
+      },
+      {
+        "title": "Machine Learning and AI for Angular Developers",
+        "speakers": ["Jerry Kurata"],
+        "session": "machine-learning-and-ai-for-angular-developers"
+      }
+    ],
+    "1040 - 1110": [{
+        "title": "Cool Interaction Made Simple with Angular Material CDK",
+        "speakers": ["Ng Tong Sheng"],
+        "session": "cool-interaction-made-simple-with-angular-material-cdk"
+      },
+      {
+        "title": "Why Should You Care About Functional Reactive Programming",
+        "speakers": ["Kevin Yang"],
+        "session": "why-should-you-care-about-functional-reactive-programming"
+      }
+    ],
+    "1120 - 1150": [{
+        "title": "Beyond TypeScript Metadata: Dependency Injection in Angular and Nest",
+        "speakers": ["Kamil Mysliwiec"],
+        "session": "beyond-typescript-metadata-dependency-injection-in-angular-and-nest"
+      },
+      {
+        "title": "Collect, Combine, and Cache RxJS Streams for User-Friendly Results... Without a Subscription",
+        "speakers": ["Deborah Kurata"],
+        "session": "collect-combine-and-cache-rxjs-streams-for-user-friendly-results"
+      }
+    ],
+    "1200 - 1300": [{
+      "title": "Lunch"
+    }],
+    "1300 - 1330": [{
+        "title": "From NgRx to NgRx-entity to NgRx-data",
+        "speakers": ["Jia Li"],
+        "session": "from-ngrx-to-ngrx-entity-to-ngrx-data"
+      },
+      {
+        "title": "Leverage Angular Schematics to Empower Developers of Frontend App & Libraries",
+        "speakers": ["Tomas Trajan"],
+        "session": "leverage-angular-schematics-to-empower-developers-of-frontend-app-libraries"
+      }
+    ],
+    "1340 - 1410": [{
+        "title": "Building Mobile Apps with Angular and NativeScript",
+        "speakers": ["Sebastian Witalec"],
+        "session": "building-mobile-apps-with-angular-and-nativescript"
+      },
+      {
+        "title": "How We Build NG-MY Website: Performance, SEO, Customized CLI Build, Animation, Modern CSS",
+        "speakers": ["Jecelyn Yeen", "Adrian Yeong", "Jenning Ho"],
+        "session": "how-we-build-ng-my-website"
+      }
+    ],
+    "1420 - 1450": [{
+        "title": "Automated Testing for the Modern Web",
+        "speakers": ["Jennifer Shehane"],
+        "session": "automated-testing-for-the-modern-web"
+      },
+      {
+        "title": "GraphQL at Any Level of Your Stack",
+        "speakers": ["Kamil Kisiela"],
+        "session": "graphql-at-any-level-of-your-stack"
+      }
+    ],
+    "1500 - 1530": [{
+      "title": "Tea time"
+    }],
+    "1530 - 1800": [{
+        "title": "Workshop A (TBC)"
+      },
+      {
+        "title": "Workshop B (TBC)"
+      },
+      {
+        "title": "Workshop C (TBC)"
+      },
+      {
+        "title": "Workshop D (TBC)"
+      }
+    ]
+  },
+  "two": {
+    "0815 - 0900": [{
+      "title": "Arrival, Breakfast"
+    }],
+    "0900 - 0910": [{
+      "title": "Opening Remarks"
+    }],
+    "0910 - 0950": [{
+      "title": "(TBC)",
+      "speakers": ["Michael Hladky"]
+    }],
+    "1000 - 1030": [{
+        "title": "Build Web Components with Angular Elements",
+        "speakers": ["Arjay Elbore"],
+        "session": "build-web-components-with-angular-elements"
+      },
+      {
+        "title": "Angular Material or Bootstrap? Stop asking the question!",
+        "speakers": ["Amadou Sall"],
+        "session": "angular-material-or-bootstrap"
+      }
+    ],
+    "1040 - 1110": [{
+        "title": "(TBC)",
+        "speakers": ["Will Huang"]
+      },
+      {
+        "title": "Upgrading your AngularJS App, Without the Tears",
+        "speakers": ["Erin Zimmer"],
+        "session": "upgrading-your-angularjs-app"
+      }
+    ],
+    "1120 - 1150": [{
+        "title": "Comparing Angular Forms",
+        "speakers": ["Alex Lakatos"],
+        "session": "comparing-angular-forms"
+      },
+      {
+        "title": "5 Tips to Improve User Experience with NgRx",
+        "speakers": ["Alex Okrushko"],
+        "session": "5-tips-to-improve-user-experience-with-ngrx"
+      }
+    ],
+    "1200 - 1300": [{
+      "title": "Lunch"
+    }],
+    "1300 - 1310": [{
+        "title": "Writing Compound Components in Angular",
+        "speakers": ["Azizi Yazit"],
+        "session": "writing-compound-components-in-angular"
+      },
+      {
+        "title": "Bringing Angular to Life with Animations",
+        "speakers": ["Zachary Ng"],
+        "session": "bringing-angular-to-life-with-animations"
+      }
+    ],
+    "1310 - 1320": [{
+        "title": "Fun and Games with Angular",
+        "speakers": ["Wendy Kong"],
+        "session": "fun-and-games-with-angular"
+      },
+      {
+        "title": "Common Angular Gotchas",
+        "speakers": ["Yew Hong Tat"],
+        "session": "common-angular-gotchas"
+      }
+    ],
+    "1320 - 1330": [{
+        "title": "Using Nx: Angular CLI Power-ups for Modern Development",
+        "speakers": ["Siwat Kaoleung"],
+        "session": "using-nx-angular-cli-power-ups-for-modern-development"
+      },
+      {
+        "title": "Release Confidently: Automate Angular Deployment Workflow",
+        "speakers": ["Sujono"],
+        "session": "release-confidently-automate-angular-deployment-workflow"
+      }
+    ],
+    "1340 - 1410": [{
+        "title": "Large Scale Angular Applications",
+        "speakers": ["Tom Suijkerbuijk", "Mart Ganzevles"],
+        "session": "large-scale-angular-applications"
+      },
+      {
+        "title": "Scaling Frontend Development using Micro-frontends",
+        "speakers": ["Mashhood Rastgar"],
+        "session": "scaling-frontend-development-using-micro-frontends"
+      }
+    ],
+    "1420 - 1450": [{
+        "title": "Ivy Renderer for Dummies",
+        "speakers": ["Gerard Sans"],
+        "session": "ivy-renderer-for-dummies"
+      },
+      {
+        "title": "(TBC)",
+        "speakers": ["Keen Yee"]
+      }
+    ],
+    "1500 - 1545": [{
+      "title": "AMA - Ask Me Anything"
+    }],
+    "1545 - 1600": [{
+      "title": "Closing"
+    }]
+  }
 }

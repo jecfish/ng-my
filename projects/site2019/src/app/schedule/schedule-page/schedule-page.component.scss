@@ -1,26 +1,132 @@
+@import 'variables';
+@import 'mixins';
+
+.page-title {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 100px);
+    height: 20px;
+    width: 200px;
+    background: url('/assets/imgs/home/white-pattern.svg') left/contain repeat-x;
+  }
+}
+
+.page-description {
+  font-size: $font-size-s;
+}
+
 .schedule {
-    &-container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 10px;
+  &-container {
+    width: 1000px;
+    max-width: calc(100% - #{$space});
+    background: $white;
+    box-shadow: 8px 8px $black;
+    padding-top: $space-l;
+    padding-bottom: $space-l;
+    position: relative;
 
-        h2 {
-            font-size: larger;
-            font-weight: bold;
-        }
+    &+& {
+      margin-top: $space-xl;
     }
-    &-item {
-        display: grid;
-        grid-template-columns: 100px auto auto;
-        grid-gap: 6px;
-        padding: 8px 10px;
+  }
 
-        h5 {
-            font-weight: 600;
-        }
+  &-item {
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-gap: $space-s;
+    padding: $space-s $space;
 
-        h6 {
-            font-style: italic;
-        }
+    h5 {
+      font-weight: 600;
     }
+
+    h6 {
+      font-style: italic;
+    }
+  }
+
+  &-title {
+    font-size: $font-size-l;
+    font-weight: bold;
+    padding-left: $space;
+  }
+
+  &-main {
+    margin-top: -$header-h;
+    padding-top: $space-l + $header-h;
+    background: $yellow;
+    padding-bottom: 200px + $space-l;
+    margin-bottom: -200px;
+  }
+
+  &-talk {
+    padding-right: 70px;
+    position: relative;
+
+    &:before {
+      @include one-height(20px, 4px);
+
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50px;
+      text-align: center;
+      border: 2px solid $black;
+      font-size: $font-size-xs;
+      letter-spacing: 1px;
+      font-weight: bold;
+      color: $white;
+    }
+
+    &:last-child:before {
+      content: 'HALL B';
+      background: $blue;
+    }
+
+    &:first-child:before {
+      content: 'HALL A';
+      background: $red;
+    }
+  }
+}
+
+.food {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+
+  picture {
+    img {
+      height: 120px;
+      position: absolute;
+      top: 0;
+    }
+
+    &:first-child img {
+      left: -60px;
+      transform: rotate(15deg);
+    }
+
+    &:nth-child(2) img {
+      left: 0;
+      transform: rotate(-15deg);
+    }
+
+    &:nth-child(3) img {
+      right: 0;
+    }
+
+    &:last-child img {
+      right: -60px;
+    }
+  }
 }

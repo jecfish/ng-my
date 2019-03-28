@@ -1,6 +1,5 @@
-[
-  {
-    "id": "alex-okrushko",
+[{
+    "id": "5-tips-to-improve-user-experience-with-ngrx",
     "type": "main",
     "duration": "30 min",
     "description": "<p>The responsiveness of the apps is one of the critical factors of how the users perceive them. Some of the sources of slowness are waiting for API responses and unhandled errors when they fail.</p> <p>NgRx is the state management solution, and because of the way it is designed, it can help to improve User Experience in many such areas. In particular, I’ll talk about: error handling, store as a cache, and optimistic updates.</p>",
@@ -11,7 +10,7 @@
     "tags": []
   },
   {
-    "id": "mashhood-rastgar",
+    "id": "scaling-frontend-development-using-micro-frontends",
     "type": "main",
     "duration": "30 min",
     "description": "As Single Page Applications take over the world, we are introduced with yet another complexity: their size. Over time we have created patterns to manage complexity on our backends, one of the popular ones being microservices. This pattern is now being adopted by frontends under the name of micro-frontends.  In this talk I will introduce the concept and dive into how does one get about implementing a micro-frontend architecture for their project.",
@@ -22,7 +21,7 @@
     "tags": []
   },
   {
-    "id": "jia-li",
+    "id": "from-ngrx-to-ngrx-entity-to-ngrx-data",
     "type": "main",
     "duration": "30 min",
     "description": "<p>State Management is very important in Angular development, ngrx is one of the most used libraries. By using ngrx, there are a lot of advantages in development/test, but we also need to pay the learning cost for several new concepts (Store/Selector/Effect/Action/...), we also need to write a lot of boilerplate code for those extra layers. </p> <p> In this talk, we will use sample application to introduce how to use<br> 1. ngrx <br> 2. ngrx-enitty<br> 3. ngrx-data<br> to implement it, through that, I will introduce the mechanism of ngrx-entity and ngrx-data. I will also like to share my thought when I am using ngrx-data in practical project. </p>",
@@ -33,7 +32,7 @@
     "tags": []
   },
   {
-    "id": "sebastian-witalec",
+    "id": "leverage-angular-schematics-to-empower-developers-of-frontend-app-libraries",
     "type": "main",
     "duration": "30 min",
     "description": "<p>NativeScript is a free and open source JavaScript framework for building native iOS and Android apps. Add to that Angular with TypeScript and you will get a truly amazing combination. But I know what you’re thinking: another way of building apps? What makes NativeScript special? Here are a few cool things: </p> <p> · Direct access to native APIs—no plugins required. Want to create a file on Android? Run new java.io.File()—in JavaScript!<br> · Completely native performance through the use of a JavaScript bridge natively available on all three mobile platforms.<br> · Cross-platform libraries for common use cases. Need to call a JSON API? Run http.getJSON<br> · Style native apps using CSS. Yep, that’s actually a thing.<br> </p> <p> Curious about how it all works? Come learn! Architectures will be explained; apps will be built; and fun will be had by all. </p>",
