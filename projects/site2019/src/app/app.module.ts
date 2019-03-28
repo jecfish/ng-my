@@ -6,9 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
-// import { PlaceholderPageComponent } from './placeholder-page/placeholder-page.component';
-// import { HomePageComponent } from './home-page/home-page.component';
-// import { HomeEarlyPageComponent } from './home-early-page/home-early-page.component';
+
 @NgModule({
   declarations: [
     AppComponent,
