@@ -24,11 +24,11 @@
         "description": "Eric is a Computer Science student from Sunway University, loves coffee, food (mamak food 😍) and 💻 code. Involved in a few ✨ communities - Sunway Tech Club, GDG KL, and now NG-MY.",
         "photo": {
             "normal": "eric_ngu-normal.jpg",
-            "fun": ""
+            "fun": "eric_ngu-fun.jpg"
         },
         "profile": {
-            "url": "https://www.potateros.xyz",
-            "type": "website"
+            "url": "https://www.linkedin.com/in/cheehongngu",
+            "type": "linkedin"
         },
         "favourite": {
             "icon": "",
