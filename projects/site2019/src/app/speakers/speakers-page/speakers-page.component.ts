@@ -39,14 +39,15 @@ export class SpeakersPageComponent implements OnInit {
       }
     }));
     const selectedMemberId = this.route.snapshot.paramMap.get('id');
-    this.selectMember(selectedMemberId);
+    this.selectMember(selectedMemberId, false);
   }
 
-  selectMember(id) {
+  selectMember(id, shouldRedirect = true) {
     this.selectedMemberId = id;
 
     const path = id ? `/speakers/${id}` : '/speakers';
-    this.location.go(path);
+    console.log(shouldRedirect);
+    if (shouldRedirect) this.location.go(path);
 
     const title = id
       ? this.selectedMember.name +

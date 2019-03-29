@@ -32,7 +32,7 @@
     "tags": []
   },
   {
-    "id": "leverage-angular-schematics-to-empower-developers-of-frontend-app-libraries",
+    "id": "sebastian-witalec",
     "type": "main",
     "duration": "30 min",
     "description": "<p>NativeScript is a free and open source JavaScript framework for building native iOS and Android apps. Add to that Angular with TypeScript and you will get a truly amazing combination. But I know what you’re thinking: another way of building apps? What makes NativeScript special? Here are a few cool things: </p> <p> · Direct access to native APIs—no plugins required. Want to create a file on Android? Run new java.io.File()—in JavaScript!<br> · Completely native performance through the use of a JavaScript bridge natively available on all three mobile platforms.<br> · Cross-platform libraries for common use cases. Need to call a JSON API? Run http.getJSON<br> · Style native apps using CSS. Yep, that’s actually a thing.<br> </p> <p> Curious about how it all works? Come learn! Architectures will be explained; apps will be built; and fun will be had by all. </p>",
@@ -265,7 +265,7 @@
     "tags": []
   },
   {
-    "id": "tom-suijkerbuijk-mart-ganzevles",
+    "id": "large-scale-angular-applications",
     "type": "main",
     "duration": "30 min",
     "description": "<p>On the BlueWeb project, which is a project to completely rewrite the B2C web applications of Air France  and  KLM, we have been using Angular since the early days. We started our project on Angular 2.0.0-rc.2. We are using this in combination with GraphQL on the server side, quite an interesting setup. Since AirFrance-KLM is one of the biggest airlines groups in the world, it is quite an important and big platform for the company.</p><p>There’s multiple ways to split a big Angular project, we’ve tried multiple different solutions within Air France KLM and over the years the project has changed and evolved in the set-up.<br />- Single App (single repo)<br />- Micro Front End Architecture (multi repo)<br />- Monorepo</p><p>With our story we want to show you what we have learned and show the multiple options there are and what to consider when building a large scale Angular app and not to make the same mistakes as we have made.</p><p>In a talk we gave at GraphQL Summit San Francisco in 2017 you can see where we started (https://www.youtube.com/watch?v=T2njjXHdKqw). Also we recently shared a blogpost on medium on how we deal with upgrades in Angular. This blogpost was shared by all the big Angular contributers and also mentioned by Brad Green during NgAtlanta. You can read the post here: https://medium.com/airfrance-klm/how-we-upgraded-a-website-with-half-a-billion-annual-users-to-angular-7-in-less-then-a-day-71de33a1108e</p><p>As you can see we can’t stretch enough on how important it is to stay with the latest Angular release. And also why it doesn’t have to be scary for big companies to work with these new technologies and how it enables you to roll out a new version of your application on a daily basis as long as your mindset and set-up is correct. We can talk about why companies should be releasing smaller chunks but more regularly and how to get there:<br />- Branching strategies<br />- Automated Testing<br />- Mobile Device Testing</p>",

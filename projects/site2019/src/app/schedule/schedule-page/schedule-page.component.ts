@@ -20,7 +20,7 @@ export class SchedulePageComponent implements OnInit {
   ngOnInit() {
     this.pageSvc.setPage({
       title: this.title,
-      metaDesc: 'Schedule'
+      metaDesc: 'Agenda of the days.'
     });
   }
 

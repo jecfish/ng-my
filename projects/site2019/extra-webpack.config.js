@@ -35,6 +35,7 @@ module.exports = {
                 ...speakerRouteList,
                 '/sessions',
                 ...sessionRouteList,
+                '/agenda',
                 '/schedule',
                 // forms
                 ...formRouteList,

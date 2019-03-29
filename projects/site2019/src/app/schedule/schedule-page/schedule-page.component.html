@@ -53,7 +53,11 @@
       </div>
       <div>
         <div [class.schedule-talk]="i.speakers?.length" *ngFor="let i of s.items">
-          <h5>{{i.title}}</h5>
+          <h5>{{i.title}}
+            <a class="icon-right" routerLink="/sessions/{{ i.session }}" *ngIf="i.hasSessionInfo" title="Session info">
+              <i class="fas fa-info-circle"></i>
+            </a>
+          </h5>
           <h6 *ngIf="i.speakers">{{i.speakers.join(", ")}}</h6>
         </div>
       </div>
