@@ -11,8 +11,7 @@ export class HeaderComponent implements OnInit {
   isShowMobileNav = false;
 
   navList = [
-    // { link: '/logo', name: 'Logo' },
-    // { link: '/schedule', name: 'Schedule' },
+    { link: '/schedule', name: 'Schedule' },
     { link: '/speakers', name: 'Speakers' },
     { link: '/sessions', name: 'Sessions' },
     // { link: '/form/speaker-training', name: 'Speaking Up!' },
