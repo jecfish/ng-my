@@ -28,6 +28,7 @@ module.exports = {
             // Required - Routes to render.
             routes: [
                 '/', 
+                '/home',
                 '/coc',
                 // posts
                 ...postRouteList,
