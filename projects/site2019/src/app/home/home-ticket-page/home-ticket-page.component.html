@@ -31,7 +31,7 @@
             </a>
           </li>
         </ul>
-        <div class="hero-btns">
+        <div class="btn-group hero-btns">
           <a class="btn btn-primary" href="https://ti.to/ng-my/ng-my-2019" target="_blank" rel="noreferer">
             <span class="btn-inner">
               <i class="fas fa-ticket-alt icon-left"></i>
@@ -202,11 +202,18 @@
           technologies in an inspiring, open meet and
           connect with our speakers and other like-minded, passionate developers.
         </p>
-        <a href="/sessions" class="btn btn-primary">
-          <div class="btn-inner">
-            View all available sessions
-          </div>
-        </a>
+        <div class="btn-group">
+          <a routerLink="/sessions" class="btn btn-primary">
+            <div class="btn-inner">
+              View all available sessions
+            </div>
+          </a>
+          <a routerLink="/schedule" class="btn btn-secondary">
+            <div class="btn-inner">
+              View NG-MY schedule
+            </div>
+          </a>
+        </div>
         <div class="sessions-food">
           <picture>
             <source srcset='../../assets/imgs/speaker-food/bandung.webp' type='image/webp'>

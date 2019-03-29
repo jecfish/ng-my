@@ -92,17 +92,34 @@
       content: 'HALL A';
       background: $red;
     }
+
+    @include mobile {
+      padding-right: 0;
+      padding-bottom: 30px;
+
+      &:before {
+        top: auto;
+        right: auto;
+        left: 0;
+        bottom: 5px;
+      }
+    }
   }
 }
 
 .food {
-  position: absolute;
-  bottom: 60px;
-  left: 0;
-  width: 100%;
+  position: relative;
   pointer-events: none;
   user-select: none;
   z-index: 1;
+  background: none;
+  box-shadow: none;
+
+  &-section {
+    height: 120px;
+    margin: -100px 0 $space-l;
+    overflow: hidden;
+  }
 
   picture {
     img {

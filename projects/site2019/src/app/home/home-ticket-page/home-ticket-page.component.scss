@@ -18,22 +18,7 @@
   }
 
   &-btns {
-    display: flex;
-    justify-content: center;
     margin-top: $space;
-
-    .btn+.btn {
-      margin-left: $space;
-    }
-
-    @include mobile {
-      flex-direction: column;
-
-      .btn+.btn {
-        margin-top: $space;
-        margin-left: 0;
-      }
-    }
   }
 
   &-misc-item {
