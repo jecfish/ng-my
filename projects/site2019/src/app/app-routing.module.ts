@@ -45,9 +45,19 @@ const routes: Routes = [
     loadChildren: () => import('./schedule/schedule.module').then(m => m.ScheduleModule)
   },
   {
+    path: 'agenda',
+    // loadChildren: './schedule/schedule.module#ScheduleModule'
+    loadChildren: () => import('./schedule/schedule.module').then(m => m.ScheduleModule)
+  },
+  {
     path: 'post',
     // loadChildren: './post/post.module#PostModule'
     loadChildren: () => import('./post/post.module').then(m => m.PostModule)
+  },
+  {
+    path: 'home',
+    // loadChildren: './home/home.module#HomeModule',
+    loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
   },
   {
     path: '',

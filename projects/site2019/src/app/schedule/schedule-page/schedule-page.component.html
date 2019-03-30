@@ -1,40 +1,68 @@
-<main class="main">
-    <article class="container">
-        <div class="page-header">
-            <h1 class="page-title">{{ title | uppercase }}</h1>
-            <div class="page-description article-section">
-                <p>
-                    (time is subject to change)
-                </p>
-            </div>
+<main class="main schedule-main">
+  <article class="container">
+    <div class="page-header">
+      <h1 class="page-title">{{ title | uppercase }}</h1>
+      <div class="page-description article-section">
+        <p>
+          (time is subject to change)
+        </p>
+      </div>
+    </div>
+  </article>
+  <section class="container schedule-container">
+    <h2 class="schedule-title">Day 1</h2>
+    <div class="schedule-item" *ngFor="let s of day1">
+      <div>
+        {{ s.time }}
+      </div>
+      <div>
+        <div [class.schedule-talk]="i.speakers?.length" *ngFor="let i of s.items">
+          <h5>{{i.title}}
+            <a class="icon-right" routerLink="/sessions/{{ i.session }}" *ngIf="i.hasSessionInfo" title="Session info">
+              <i class="fas fa-info-circle"></i>
+            </a>
+          </h5>
+          <h6 *ngIf="i.speakers">{{i.speakers.join(", ")}}</h6>
         </div>
-    </article>
-    <section class="schedule-container">
-        <h2>Day 1</h2>
-        <div class="schedule-item" *ngFor="let s of day1">
-            <div>
-                {{ s.time }}
-            </div>
-            <div>
-                <div *ngFor="let i of s.items">
-                    <h5>{{i.title}}</h5>
-                    <h6 *ngIf="i.speakers">{{i.speakers.join(", ")}}</h6>
-                </div>
-            </div>
+      </div>
+    </div>
+  </section>
+  <div class="food-section">
+    <div class="food container schedule-container">
+      <picture>
+        <source srcset='../../../assets/imgs/home/tehtarik.webp' type='image/webp'>
+        <img src="../../../assets/imgs/home/tehtarik.png" alt="mamak">
+      </picture>
+      <picture>
+        <source srcset='../../../assets/imgs/home/aiskacang.webp' type='image/webp'>
+        <img src="../../../assets/imgs/home/aiskacang.png" alt="mamak">
+      </picture>
+      <picture>
+        <source srcset='../../../assets/imgs/home/nasilemak.webp' type='image/webp'>
+        <img src="../../../assets/imgs/home/nasilemak.png" alt="mamak">
+      </picture>
+      <picture>
+        <source srcset='../../../assets/imgs/home/tehaislimau.webp' type='image/webp'>
+        <img src="../../../assets/imgs/home/tehaislimau.png" alt="mamak">
+      </picture>
+    </div>
+  </div>
+  <section class="container schedule-container">
+    <h2 class="schedule-title">Day 2</h2>
+    <div class="schedule-item" *ngFor="let s of day2">
+      <div>
+        {{ s.time }}
+      </div>
+      <div>
+        <div [class.schedule-talk]="i.speakers?.length" *ngFor="let i of s.items">
+          <h5>{{i.title}}
+            <a class="icon-right" routerLink="/sessions/{{ i.session }}" *ngIf="i.hasSessionInfo" title="Session info">
+              <i class="fas fa-info-circle"></i>
+            </a>
+          </h5>
+          <h6 *ngIf="i.speakers">{{i.speakers.join(", ")}}</h6>
         </div>
-    </section>
-    <section class="schedule-container">
-        <h2>Day 2</h2>
-        <div class="schedule-item" *ngFor="let s of day2">
-            <div>
-                {{ s.time }}
-            </div>
-            <div>
-                <div *ngFor="let i of s.items">
-                    <h5>{{i.title}}</h5>
-                    <h6 *ngIf="i.speakers">{{i.speakers.join(", ")}}</h6>
-                </div>
-            </div>
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </main>

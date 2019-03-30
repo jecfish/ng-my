@@ -1,6 +1,5 @@
-[
-  {
-    "id": "alex-okrushko",
+[{
+    "id": "5-tips-to-improve-user-experience-with-ngrx",
     "type": "main",
     "duration": "30 min",
     "description": "<p>The responsiveness of the apps is one of the critical factors of how the users perceive them. Some of the sources of slowness are waiting for API responses and unhandled errors when they fail.</p> <p>NgRx is the state management solution, and because of the way it is designed, it can help to improve User Experience in many such areas. In particular, I’ll talk about: error handling, store as a cache, and optimistic updates.</p>",
@@ -11,7 +10,7 @@
     "tags": []
   },
   {
-    "id": "mashhood-rastgar",
+    "id": "scaling-frontend-development-using-micro-frontends",
     "type": "main",
     "duration": "30 min",
     "description": "As Single Page Applications take over the world, we are introduced with yet another complexity: their size. Over time we have created patterns to manage complexity on our backends, one of the popular ones being microservices. This pattern is now being adopted by frontends under the name of micro-frontends.  In this talk I will introduce the concept and dive into how does one get about implementing a micro-frontend architecture for their project.",
@@ -22,7 +21,7 @@
     "tags": []
   },
   {
-    "id": "jia-li",
+    "id": "from-ngrx-to-ngrx-entity-to-ngrx-data",
     "type": "main",
     "duration": "30 min",
     "description": "<p>State Management is very important in Angular development, ngrx is one of the most used libraries. By using ngrx, there are a lot of advantages in development/test, but we also need to pay the learning cost for several new concepts (Store/Selector/Effect/Action/...), we also need to write a lot of boilerplate code for those extra layers. </p> <p> In this talk, we will use sample application to introduce how to use<br> 1. ngrx <br> 2. ngrx-enitty<br> 3. ngrx-data<br> to implement it, through that, I will introduce the mechanism of ngrx-entity and ngrx-data. I will also like to share my thought when I am using ngrx-data in practical project. </p>",
@@ -266,7 +265,7 @@
     "tags": []
   },
   {
-    "id": "tom-suijkerbuijk-mart-ganzevles",
+    "id": "large-scale-angular-applications",
     "type": "main",
     "duration": "30 min",
     "description": "<p>On the BlueWeb project, which is a project to completely rewrite the B2C web applications of Air France  and  KLM, we have been using Angular since the early days. We started our project on Angular 2.0.0-rc.2. We are using this in combination with GraphQL on the server side, quite an interesting setup. Since AirFrance-KLM is one of the biggest airlines groups in the world, it is quite an important and big platform for the company.</p><p>There’s multiple ways to split a big Angular project, we’ve tried multiple different solutions within Air France KLM and over the years the project has changed and evolved in the set-up.<br />- Single App (single repo)<br />- Micro Front End Architecture (multi repo)<br />- Monorepo</p><p>With our story we want to show you what we have learned and show the multiple options there are and what to consider when building a large scale Angular app and not to make the same mistakes as we have made.</p><p>In a talk we gave at GraphQL Summit San Francisco in 2017 you can see where we started (https://www.youtube.com/watch?v=T2njjXHdKqw). Also we recently shared a blogpost on medium on how we deal with upgrades in Angular. This blogpost was shared by all the big Angular contributers and also mentioned by Brad Green during NgAtlanta. You can read the post here: https://medium.com/airfrance-klm/how-we-upgraded-a-website-with-half-a-billion-annual-users-to-angular-7-in-less-then-a-day-71de33a1108e</p><p>As you can see we can’t stretch enough on how important it is to stay with the latest Angular release. And also why it doesn’t have to be scary for big companies to work with these new technologies and how it enables you to roll out a new version of your application on a daily basis as long as your mindset and set-up is correct. We can talk about why companies should be releasing smaller chunks but more regularly and how to get there:<br />- Branching strategies<br />- Automated Testing<br />- Mobile Device Testing</p>",
@@ -285,6 +284,28 @@
     "title": "Comparing Angular Forms",
     "speakers": [
       "alex-lakatos"
+    ],
+    "tags": []
+  },
+  {
+    "id": "will-huang",
+    "type": "main",
+    "duration": "30 min",
+    "description": "<p>This talk will bring you the dark secret of the Protractor end-to-end test framework and share the tips and tricks to fill your hacker's mind.</p>",
+    "title": "Protractor: The Hacker Way",
+    "speakers": [
+      "will-huang"
+    ],
+    "tags": []
+  },
+  {
+    "id": "keen-yee",
+    "type": "main",
+    "duration": "30 min",
+    "description": "<p>Angular has been used for very large projects (>100 engineers) inside Google, and the development workflow is very different from the external CLI solution.</p><p>As part of the convergence effort, ABC aims to leverage the powerful features of Bazel and deliver the same kind of performance for massive parallelism and scalability to Angular users.</p>",
+    "title": "ABC: Angular, Bazel, CLI",
+    "speakers": [
+      "keen-yee"
     ],
     "tags": []
   }

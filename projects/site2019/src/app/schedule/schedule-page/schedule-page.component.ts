@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import schedule from '../../../assets/data/schedule.json';
+import session from '../../../assets/data/sessions.json';
 import { PageService } from '../../services/page.service.js';
 
 @Component({
@@ -8,22 +9,33 @@ import { PageService } from '../../services/page.service.js';
   styleUrls: ['./schedule-page.component.scss']
 })
 export class SchedulePageComponent implements OnInit {
-
   title = 'Schedule';
 
-  day1 = Object.entries(schedule.one)
-    .map(([time, items]) => ({ time, items }));
+  day1 = this.getSchedule(schedule.one);
 
-  day2 = Object.entries(schedule.two)
-  .map(([time, items]) => ({ time, items }));
+  day2 = this.getSchedule(schedule.two);
 
-  constructor(private pageSvc: PageService) { }
+  constructor(private pageSvc: PageService) {}
 
   ngOnInit() {
     this.pageSvc.setPage({
       title: this.title,
-      metaDesc: 'Schedule'
+      metaDesc: 'Agenda of the days.'
     });
   }
 
+  getSchedule(item) {
+    const sessionIds = session.map(x => x.id);
+    return Object.entries(item).map(([time, items = [] as any]) => ({
+      time,
+      items: items.map(x =>
+        !x.speakers
+          ? x
+          : {
+              ...x,
+              hasSessionInfo: sessionIds.includes(x.session)
+            }
+      )
+    }));
+  }
 }

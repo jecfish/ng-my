@@ -28,6 +28,7 @@ module.exports = {
             // Required - Routes to render.
             routes: [
                 '/', 
+                '/home',
                 '/coc',
                 // posts
                 ...postRouteList,
@@ -35,6 +36,7 @@ module.exports = {
                 ...speakerRouteList,
                 '/sessions',
                 ...sessionRouteList,
+                '/agenda',
                 '/schedule',
                 // forms
                 ...formRouteList,

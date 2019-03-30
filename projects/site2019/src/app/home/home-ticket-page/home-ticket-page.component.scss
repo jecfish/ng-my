@@ -18,22 +18,7 @@
   }
 
   &-btns {
-    display: flex;
-    justify-content: center;
     margin-top: $space;
-
-    .btn+.btn {
-      margin-left: $space;
-    }
-
-    @include mobile {
-      flex-direction: column;
-
-      .btn+.btn {
-        margin-top: $space;
-        margin-left: 0;
-      }
-    }
   }
 
   &-misc-item {
@@ -206,6 +191,11 @@
       box-shadow: 0 -10px 10px 0 rgba(0, 0, 0, 0.3);
     }
   }
+}
+
+.home-main {
+  margin-bottom: -200px;
+  padding-bottom: 200px + $space-l;
 }
 
 .home-section-title {
@@ -558,8 +548,8 @@
       top: 0;
       left: 0;
       background: $white;
-      transform-origin: bottom left;
-      transform: skewY(-5deg);
+      transform-origin: bottom right;
+      transform: skewY(5deg);
     }
   }
 
@@ -732,8 +722,8 @@
 
 .posts {
   &-section {
-    background: $white;
-    padding-bottom: $space-l;
+    background: $yellow;
+    padding: $space-xl 0;
 
     .home-section-title {
       text-align: center;
@@ -742,7 +732,7 @@
 
   &-deco {
     &:before {
-      background: $white;
+      background: $yellow;
       transform-origin: top right;
       transform: skewY(5deg);
       box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
@@ -789,7 +779,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 0 $space $space;
-    background: $gray-lightest;
+    background: $white;
     box-shadow: 8px 8px $black;
 
     .btn {

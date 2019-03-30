@@ -86,3 +86,21 @@
     background-color: $yellow;
   }
 }
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+
+  .btn+.btn {
+    margin-left: $space;
+  }
+
+  @include mobile {
+    flex-direction: column;
+
+    .btn+.btn {
+      margin-top: $space;
+      margin-left: 0;
+    }
+  }
+}
