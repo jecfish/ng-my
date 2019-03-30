@@ -286,5 +286,27 @@
       "alex-lakatos"
     ],
     "tags": []
+  },
+  {
+    "id": "will-huang",
+    "type": "main",
+    "duration": "30 min",
+    "description": "<p>This talk will bring you the dark secret of the Protractor end-to-end test framework and share the tips and tricks to fill your hacker's mind.</p>",
+    "title": "Protractor: The Hacker Way",
+    "speakers": [
+      "will-huang"
+    ],
+    "tags": []
+  },
+  {
+    "id": "keen-yee",
+    "type": "main",
+    "duration": "30 min",
+    "description": "<p>Angular has been used for very large projects (>100 engineers) inside Google, and the development workflow is very different from the external CLI solution.</p><p>As part of the convergence effort, ABC aims to leverage the powerful features of Bazel and deliver the same kind of performance for massive parallelism and scalability to Angular users.</p>",
+    "title": "ABC: Angular, Bazel, CLI",
+    "speakers": [
+      "keen-yee"
+    ],
+    "tags": []
   }
 ]
