@@ -121,7 +121,7 @@
       }
     ],
     "1040 - 1110": [{
-        "title": "(TBC)",
+        "title": "Protractor: The Hacker Way",
         "speakers": ["Will Huang"]
       },
       {
@@ -194,8 +194,9 @@
         "session": "gerard-sans"
       },
       {
-        "title": "(TBC)",
-        "speakers": ["Keen Yee"]
+        "title": "ABC: Angular, Bazel, CLI",
+        "speakers": ["Keen Yee"],
+        "session": "keen-yee"
       }
     ],
     "1500 - 1545": [{
