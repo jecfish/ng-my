@@ -28,5 +28,11 @@
         "desc": "We love to increase our network with companies and you definitely can help us with that. Refer a sponsor to us, win a free ticket and make NG-MY 2019 a success.",
         "id": "1FAIpQLSfIxnhrW2p9E9RVBDelGiN8cp6pT3rIGxRyovmSiY5BxuuIKA",
         "height": 1273
+    },
+    "scholarship": {
+        "name": "Scholarship",
+        "desc": "Scholarship application open now till April 30.",
+        "id": "1FAIpQLScCumBp_rwb0q_C6F1tFqPH_gRPBsMeIDQSGCM5EvzCVvJv8A",
+        "height": 640
     }
 }
