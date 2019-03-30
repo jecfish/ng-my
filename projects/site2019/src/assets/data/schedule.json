@@ -195,7 +195,8 @@
       },
       {
         "title": "ABC: Angular, Bazel, CLI",
-        "speakers": ["Keen Yee"]
+        "speakers": ["Keen Yee"],
+        "session": "keen-yee"
       }
     ],
     "1500 - 1545": [{
