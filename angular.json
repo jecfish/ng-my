@@ -46,7 +46,9 @@
             "tsConfig": "projects/site2019/tsconfig.app.json",
             "assets": [
               "projects/site2019/src/favicon.ico",
-              "projects/site2019/src/assets"
+              "projects/site2019/src/assets",
+              "projects/site2019/src/sitemap.xml",
+              "projects/site2019/src/robots.txt"
             ],
             "styles": [
               "projects/site2019/src/styles.scss"
@@ -63,6 +65,10 @@
               "fileReplacements": [{
                 "replace": "projects/site2019/src/environments/environment.ts",
                 "with": "projects/site2019/src/environments/environment.prod.ts"
+              },
+              {
+                "replace": "projects/site2019/src/robots.txt",
+                "with": "projects/site2019/src/robots/robots.prod.txt"
               }],
               "optimization": true,
               "outputHashing": "all",
