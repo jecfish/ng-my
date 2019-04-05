@@ -308,5 +308,17 @@
       "keen-yee"
     ],
     "tags": []
+  },
+  {
+    "id": "michael-hladky",
+    "type": "main",
+    "duration": "30 min",
+    "description": "<p>The web changed a lot in the past years, more and more applications provide UI's that are heavily interactive and often also include some background tasks.</p><p>RxJS serves a very elegant way to compose events and async actions, make your code more robust and extensible.</p><p>Let's explore advanced techniques with RxJS!</p>",
+    "title": "Advanced patterns in RxJS - Operating heavily dynamic UI’s with RxJS",
+    "speakers": [
+      "michael-hladky"
+    ],
+    "tags": []
   }
 ]
+
