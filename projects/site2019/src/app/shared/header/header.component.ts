@@ -51,5 +51,7 @@ export class HeaderComponent implements OnInit {
       event_label: event,
       value: event
     });
+
+    this.isShowMobileNav = false;
   }
 }
