@@ -106,8 +106,9 @@
       "speakers": ["Emcees"]
     }],
     "0910 - 0950": [{
-      "title": "(TBC)",
-      "speakers": ["Michael Hladky"]
+      "title": "Advanced patterns in RxJS - Operating heavily dynamic UI’s with RxJS",
+      "speakers": ["Michael Hladky"],
+      "session": "michael-hladky"
     }],
     "1000 - 1030": [{
         "title": "Build Web Components with Angular Elements",
