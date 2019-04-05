@@ -48,7 +48,8 @@
               "projects/site2019/src/favicon.ico",
               "projects/site2019/src/assets",
               "projects/site2019/src/sitemap.xml",
-              "projects/site2019/src/robots.txt"
+              "projects/site2019/src/robots.txt",
+              "projects/site2019/src/BingSiteAuth.xml"
             ],
             "styles": [
               "projects/site2019/src/styles.scss"
