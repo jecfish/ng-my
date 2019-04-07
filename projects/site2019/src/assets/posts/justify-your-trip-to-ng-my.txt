@@ -6,19 +6,19 @@ Subject: Sponsorship to attend NG-MY 2019 in Kuala Lumpur
 
 Dear {NAME},
 
-I would like to request for a sponsorship to attend the upcoming event, NG-MY, a two-day conference specially designed to enhance the knowledge of professional {frontend, JavaScript / web / Angular} developers.
+I would like to request for a sponsorship to attend the upcoming event, NG-MY. It is a two-day conference specially designed to enhance the knowledge of professional {frontend, JavaScript / web / Angular} developers.
 
-Below are some details about the event and its fees for your consideration.
-Date: 6th & 7th July 2019
-Venue: Sunway University, Kuala Lumpur
-Fees: MYR{$ HERE} including accomodation, travel, registration
-Event Site: <https://2019.ng-my.org/>
+Below are some details about the event and its fees for your consideration.  
+Date: 6th & 7th July 2019  
+Venue: Sunway University, Kuala Lumpur  
+Fees: MYR{$ HERE} including {accomodation, travel, registration}
+Event Site: <https://2019.ng-my.org/>  
  
 The conference features talks from Angular team members, Google Developer Experts (GDE), Microsoft Most Valuable Professionals (MVP) and legendary international speakers that could widen my knowledge regarding Angular. Not only will I receive solutions to my problems directly from experts, but also able to keep up to date with the latest changes in the Angular scene. It is also a place for me to actively connect and engage with potential collaborative partnerships. 
 
-I am confident you would see this as a worthwhile investment. I envisage the return of both valuable—and actionable—insight on the latest trend and best practices in Angular which I can pass onto the team.
+I am confident that you would see this as a worthwhile investment. I envisage the return of both valuable and actionable insights on the latest trend and best practices in Angular which I can pass onto the team.
   
-I would appreciate your kind consideration and support for my professional development. Your early approval would help secure me an early bird discount. May I have your approval by {DATE}?
+I would appreciate your kind consideration and support for my professional development. Your early approval would help secure me a ticket which is selling out fast. May I have your approval by {DATE}?
  
 Thank you.
  
