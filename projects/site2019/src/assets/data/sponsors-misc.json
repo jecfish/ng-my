@@ -1,12 +1,26 @@
-[{
-  "image": "scotch.jpg",
-  "name": "scotch",
-  "url": "https://scotch.io/",
-  "type": "meal"
-},
-{
-  "image": "nrwl.jpg",
-  "name": "nrwl",
-  "url": "https://nrwl.io/",
-  "type": "meal"
-}]
+[
+  {
+    "image": "jp-associates.jpg",
+    "name": "jp associates",
+    "url": "https://www.jp-associates.asia",
+    "type": "coffee"
+  },
+  {
+    "image": "scotch.jpg",
+    "name": "scotch",
+    "url": "https://scotch.io/",
+    "type": "meal"
+  },
+  {
+    "image": "nrwl.jpg",
+    "name": "nrwl",
+    "url": "https://nrwl.io/",
+    "type": "meal"
+  },
+  {
+    "image": "cypress.jpg",
+    "name": "cypress",
+    "url": "https://cypress.io/",
+    "type": "meal"
+  }
+]
