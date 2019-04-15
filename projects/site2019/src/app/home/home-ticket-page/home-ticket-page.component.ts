@@ -51,8 +51,13 @@ export class HomeTicketPageComponent implements OnInit {
     },
     {
       level: 'misc',
+      title: 'Coffee sponsors',
+      list: miscs.filter(x => x.type === 'coffee')
+    },
+    {
+      level: 'misc',
       title: 'Meal sponsors',
-      list: miscs
+      list: miscs.filter(x => x.type === 'meal')
     },
     {
       level: 'bronze',
@@ -68,63 +73,6 @@ export class HomeTicketPageComponent implements OnInit {
       level: 'community',
       title: 'Community partners',
       list: communities
-    }
-  ];
-
-  agenda = [
-    {
-      name: 'Day 1 (Jul 6)',
-      events: [
-        {
-          time: '08.00 - 09.00',
-          event: 'Registration & ng-breakfast'
-        },
-        {
-          time: '09.00 - 12.00',
-          event: 'ng-talks (2 tracks)'
-        },
-        {
-          time: '12.00 - 13.00',
-          event: 'ng-eat'
-        },
-        {
-          time: '13.00 - 15.00',
-          event: 'ng-talks (2 tracks)'
-        },
-        {
-          time: '15.00 - 15.30',
-          event: 'ng-tea-time'
-        },
-        {
-          time: '15.30 - 18.30',
-          event: 'ng-workshops (2-3 hours, vary by workshops)'
-        }
-      ]
-    },
-    {
-      name: 'Day 2 (Jul 7)',
-      events: [
-        {
-          time: '08.00 - 09.00',
-          event: 'ng-breakfast'
-        },
-        {
-          time: '09.00 - 12.00',
-          event: 'ng-talks (2 tracks)'
-        },
-        {
-          time: '12.00 - 13.00',
-          event: 'ng-eat'
-        },
-        {
-          time: '13.00 - 15.30',
-          event: 'ng-talks (2 tracks)'
-        },
-        {
-          time: '15.30 - 16.00',
-          event: 'ng-closing'
-        }
-      ]
     }
   ];
 
