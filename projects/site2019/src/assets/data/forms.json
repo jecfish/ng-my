@@ -34,5 +34,11 @@
         "desc": "Scholarship application open now till April 30.",
         "id": "1FAIpQLScCumBp_rwb0q_C6F1tFqPH_gRPBsMeIDQSGCM5EvzCVvJv8A",
         "height": 1665
+    },
+    "ticket-giveaways": {
+        "name": "Guess the logo contest",
+        "desc": "Scholarship application open now till April 30.",
+        "id": "1FAIpQLSdJeqA0seSMY1IlSV3UbyUQjztjPxOfydEeezSO1EiHx5gyEA",
+        "height": 2185
     }
 }
