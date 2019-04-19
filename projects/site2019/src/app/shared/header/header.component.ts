@@ -14,11 +14,12 @@ export class HeaderComponent implements OnInit {
     { link: '/schedule', name: 'Schedule' },
     { link: '/speakers', name: 'Speakers' },
     { link: '/sessions', name: 'Sessions' },
+    { link: '/articles', name: 'Articles' },
     // { link: '/form/speaker-training', name: 'Speaking Up!' },
     // { link: '/form/call-for-presenters', name: 'Submit CFP' },
-    { link: '/coc', name: 'Code of Conduct' },
+    // { link: '/coc', name: 'Code of Conduct' },
     { link: '/team', name: 'Team' },
-    { link: '/form/scholarship', name: 'Scholarship' },
+    { link: '/form/scholarship', name: 'Scholarship' }
   ];
 
   socialMediaList = [];

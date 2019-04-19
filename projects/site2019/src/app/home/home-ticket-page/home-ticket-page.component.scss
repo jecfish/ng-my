@@ -220,6 +220,10 @@
       width: 200px;
       background: url('/assets/imgs/home/white-pattern.svg') left/contain repeat-x;
     }
+
+    @include mobile {
+      margin-bottom: $space-l;
+    }
   }
 }
 
@@ -512,7 +516,7 @@
   }
 
   &-deco {
-    background: $white;
+    background: $gray-lightest;
 
     &:before {
       top: 0;
@@ -525,7 +529,7 @@
 }
 
 .sessions {
-  background: $white;
+  background: $gray-lightest;
   padding: $space-xxl 0;
   text-align: center;
   overflow: hidden;
@@ -542,12 +546,12 @@
   }
 
   &-deco {
-    background: $yellow;
+    background: $blue-darkest;
 
     &:before {
       top: 0;
       left: 0;
-      background: $white;
+      background: $gray-lightest;
       transform-origin: bottom right;
       transform: skewY(5deg);
     }
@@ -712,7 +716,7 @@
     background: $white;
 
     &:before {
-      background: $yellow;
+      background: $blue-darkest;
       transform-origin: top right;
       transform: skewY(5deg);
     }
@@ -722,17 +726,32 @@
 
 .posts {
   &-section {
-    background: $yellow;
+    min-height: 100vh;
+    background: $blue-darkest;
     padding: $space-xl 0;
+    display: flex;
+
+    .container {
+      margin: auto;
+    }
 
     .home-section-title {
+      color: $white;
       text-align: center;
+    }
+
+    .btn {
+      margin-top: $space-l;
+
+      @include mobile {
+        display: block;
+      }
     }
   }
 
   &-deco {
     &:before {
-      background: $yellow;
+      background: $blue-darkest;
       transform-origin: top right;
       transform: skewY(5deg);
       box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
@@ -758,16 +777,34 @@
     position: relative;
     z-index: 2;
 
-    .row {
-      margin: 0 -#{$space-s};
+    &.row {
+      margin: 0 -#{$space};
     }
 
     .col {
-      padding: 0 $space-s;
+      padding: 0 $space;
 
       @include mobile {
         &+.col {
           margin-top: $space;
+        }
+      }
+
+      &:nth-child(2) {
+        transform: translateY(#{$space-l});
+      }
+
+      &:nth-child(3) {
+        transform: translateY(#{$space-xl});
+      }
+
+      @include mobile {
+        &:nth-child(2) {
+          transform: none;
+        }
+
+        &:nth-child(3) {
+          transform: none;
         }
       }
     }

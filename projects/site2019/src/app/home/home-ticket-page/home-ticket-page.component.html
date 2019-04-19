@@ -257,7 +257,9 @@
   <ng-container>
     <div class="posts-section">
       <div class="container">
-        <h2 class="home-section-title --decorated"><span class="text-primary text-shadow">NG-MY</span> articles</h2>
+        <h2 class="home-section-title --decorated">
+          Articles to read before NG-MY!
+        </h2>
         <div class="row post-list">
           <div class="col" *ngFor="let p of fewPosts">
             <article class="post-card">
@@ -272,6 +274,11 @@
             </article>
           </div>
         </div>
+        <a routerLink="/articles" class="btn btn-primary">
+          <div class="btn-inner">
+            Read all the articles
+          </div>
+        </a>
       </div>
     </div>
     <div class="posts-deco slant">

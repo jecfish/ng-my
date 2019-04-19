@@ -1,0 +1,23 @@
+<main id="team">
+  <div class="page-header">
+    <div class="container">
+      <h1 class="page-title">ARTICLES</h1>
+    </div>
+  </div>
+  <section class="main">
+    <div class="container">
+      <div class="post-list">
+        <article class="post-card" *ngFor="let p of posts">
+          <figure class="post-pic">
+            <img src="../../assets/imgs/posts/{{ p.img }}" [alt]="p.title" [title]="p.title" class="post-img">
+          </figure>
+          <h5 class="post-title">{{ p.title }}</h5>
+          <p class="post-desc">{{ p.desc }}</p>
+          <a routerLink="/post/{{ p.url }}" class="btn btn-secondary">
+            <span class="btn-inner">Read more</span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
