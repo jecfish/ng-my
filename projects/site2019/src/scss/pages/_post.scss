@@ -28,4 +28,9 @@
     font-weight: $font-weight-l;
     margin-bottom: $space;
   }
+
+  ul {
+    padding: $space-s $space-l;
+    list-style: disc;
+  }
 }
