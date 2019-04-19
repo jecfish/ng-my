@@ -2,25 +2,26 @@
   "why-should-you-attend-ng-my": {
     "title": "The 5 +1 reasons of why you should attend NG-MY",
     "desc": "Awesome speakers, tons of knowledge, making friends, creative swags... ",
-    "img": "01-meta-tag.png"
+    "img": "01-meta.jpg"
   },
   "why-sponsor-employees-to-ng-my": {
     "title": "Why should you sponsor your employees to NG-MY?",
     "desc": "The answer is obvious. Happy employee, happy boss. Here is an infographic.",
-    "img": "02-meta-tag.png"
+    "img": "02-meta.jpg"
   },
   "justify-your-trip-to-ng-my": {
     "title": "Justify your trip",
     "desc": "Here is an email template to help you justify your NG-MY trip to your boss.",
-    "img": "04-meta-tag-1.png"
+    "img": "03-meta.jpg"
   },
   "two-half-days-with-orangutan": {
     "title": "2 half days with orangutan (& foods to try!)",
     "desc": "Not sure how to spend the rest of your precious days in KL? Orangutan has some recommendations for you!",
-    "img": "03-meta-tag.png"
+    "img": "05-meta.jpg"
   },
     "good-nights-rest-with-orangutan": {
     "title": "Good night's rest with orangutan",
-    "desc": "Here are some places to crash for the night."
+    "desc": "Here are some places to stay for the night in KL.",
+    "img": "04-meta.jpg"
   }
 }
