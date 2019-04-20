@@ -31,6 +31,7 @@ module.exports = {
                 '/home',
                 '/coc',
                 // posts
+                '/posts',
                 ...postRouteList,
                 '/speakers',
                 ...speakerRouteList,

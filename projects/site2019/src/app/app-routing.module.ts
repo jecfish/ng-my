@@ -54,7 +54,7 @@ const routes: Routes = [
       import('./schedule/schedule.module').then(m => m.ScheduleModule)
   },
   {
-    path: 'articles',
+    path: 'posts',
     loadChildren: () =>
       import('./articles/articles.module').then(m => m.ArticlesModule)
   },
