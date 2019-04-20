@@ -22,12 +22,14 @@ const routes: Routes = [
   {
     path: 'speakers',
     // loadChildren: './speakers/speakers.module#SpeakersModule'
-    loadChildren: () => import('./speakers/speakers.module').then(m => m.SpeakersModule)
+    loadChildren: () =>
+      import('./speakers/speakers.module').then(m => m.SpeakersModule)
   },
   {
     path: 'sessions',
     // loadChildren: './sessions/sessions.module#SessionsModule'
-    loadChildren: () => import('./sessions/sessions.module').then(m => m.SessionsModule)
+    loadChildren: () =>
+      import('./sessions/sessions.module').then(m => m.SessionsModule)
   },
   {
     path: 'team',
@@ -42,12 +44,19 @@ const routes: Routes = [
   {
     path: 'schedule',
     // loadChildren: './schedule/schedule.module#ScheduleModule'
-    loadChildren: () => import('./schedule/schedule.module').then(m => m.ScheduleModule)
+    loadChildren: () =>
+      import('./schedule/schedule.module').then(m => m.ScheduleModule)
   },
   {
     path: 'agenda',
     // loadChildren: './schedule/schedule.module#ScheduleModule'
-    loadChildren: () => import('./schedule/schedule.module').then(m => m.ScheduleModule)
+    loadChildren: () =>
+      import('./schedule/schedule.module').then(m => m.ScheduleModule)
+  },
+  {
+    path: 'articles',
+    loadChildren: () =>
+      import('./articles/articles.module').then(m => m.ArticlesModule)
   },
   {
     path: 'post',
@@ -64,7 +73,7 @@ const routes: Routes = [
     // loadChildren: './home/home.module#HomeModule',
     loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
     pathMatch: 'prefix'
-  },
+  }
   // {
   //   path: '',
   //   component: HOMEPAGE_LIST[environment.featureFlag.homePageStage],
@@ -78,4 +87,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
