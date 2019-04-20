@@ -12,17 +12,9 @@ export class ArticlesPageComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    this.posts = Object.keys(postList).reduce(
-      (list, url) => [
-        ...list,
-        {
-          url,
-          ...postList[url]
-        }
-      ],
-      []
-    );
-
-    console.log(this.posts);
+    this.posts = Object.keys(postList).map(url => ({
+      url,
+      ...postList[url]
+    }));
   }
 }
