@@ -5,7 +5,7 @@ const speakers = require('./src/assets/data/speakers.json');
 const forms = require('./src/assets/data/forms.json');
 const posts = require('./src/assets/data/posts.json');
 const sessions = require('./src/assets/data/sessions.json');
-// const Renderer = PrerenderSPAPlugin.PuppeteerRenderer;
+ const Renderer = PrerenderSPAPlugin.PuppeteerRenderer;
 
 const teamRouteList = team.map(x => '/team/' + x.id);
 const speakerRouteList = speakers.map(x => '/speakers/' + x.id);
@@ -20,11 +20,17 @@ module.exports = {
             // Required - The path to the webpack-outputted app to prerender.
             staticDir: path.join(__dirname, '../../dist/site2019'),
             renderAfterDocumentEvent: 'prerender-ready',
-            maxConcurrentRoutes: 2,
             skipThirdPartyRequests: true,
             // addtional puppeteer options
             // dumpio: true,
             args: ['--disable-setuid-sandbox', '--no-sandbox'],
+            renderer: new Renderer({
+                timeout: 0,
+                maxConcurrentRoutes: 1,
+                navigationParams: {
+                  timeout: 0
+                }
+              }),
             // Required - Routes to render.
             routes: [
                 '/', 
@@ -36,11 +42,11 @@ module.exports = {
                 '/speakers',
                 ...speakerRouteList,
                 '/sessions',
-                ...sessionRouteList,
-                '/agenda',
-                '/schedule',
-                // forms
-                ...formRouteList,
+                 ...sessionRouteList,
+                 '/agenda',
+                 '/schedule',
+                 // forms
+                 ...formRouteList,
                 // team members
                 '/team',
                 ...teamRouteList,
