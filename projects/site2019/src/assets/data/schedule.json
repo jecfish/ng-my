@@ -145,7 +145,7 @@
         "session": "rxjs-level-up"
       },
       {
-        "title": "Workshop D: Building your First Custom Angular Schematicsh",
+        "title": "Workshop D: Building your First Custom Angular Schematics",
         "speakers": ["Tomas Trajan"],
         "session": "custom-angular-schematics"
       }
