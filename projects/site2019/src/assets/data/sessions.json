@@ -354,11 +354,11 @@
     "tags": []
   },
   {
-    "id": "angular-schematics-in-depth",
+    "id": "custom-angular-schematics",
     "type": "workshop",
     "duration": "180 min",
     "description": "<p>In development, we often want to extract reusable parts of logic into self contained libraries. Modern tooling provided by Angular CLI enables us to provide amazing developer experience for the users of our libraries. </p> <p> Libraries can be added seamlessly, while automating all the necessary setup work. </p> <p> More so, providing built-in library specific schematics enables us to cut on the learning curve that is needed to get developers productive straight from the start by generating code which follows intentioned patterns and best practices. </p> <p> In this workshop, we're going to explore: <br> 1. What are Angular Schematics<br> 2. Why and how to use them<br> 3. Best practices and tips for using default Angular schematics<br> 4. How to build simple schematics for our custom library<br> 5. How to make our library \"ng add\" - able to make it seamless for the consumers<br> </p>",
-    "title": "Angular Schematics In Depth",
+    "title": "Building your First Custom Angular Schematics",
     "speakers": [
       "tomas-trajan"
     ],
