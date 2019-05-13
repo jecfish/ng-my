@@ -3,7 +3,6 @@ import { ActivatedRoute } from '@angular/router';
 import { PageService } from '../../services/page.service';
 import posts from '../../../assets/data/posts.json';
 import marked from 'marked';
-import { HttpClient } from '@angular/common/http';
 import { environment } from '../../../environments/environment';
 
 @Component({
@@ -15,7 +14,7 @@ export class PostPageComponent implements OnInit {
 
   selectedPost: { title: '', desc: '', content: '' };
 
-  constructor(private route: ActivatedRoute, private http: HttpClient, private pageSvc: PageService) { }
+  constructor(private route: ActivatedRoute, private pageSvc: PageService) { }
 
   ngOnInit() {
     this.route.params.subscribe(async x => {
@@ -26,8 +25,7 @@ export class PostPageComponent implements OnInit {
         metaImg: `${environment.baseUrl}/assets/imgs/posts/${post.img}`
       });
 
-      const result = await this.http
-        .get<any>(`/assets/posts/${x.name}.txt`, { responseType: 'text' as any }).toPromise();
+      const result = await fetch(`/assets/posts/${x.name}.txt`).then(res => res.text());
 
       this.selectedPost = {
         title: post.title,

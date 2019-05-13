@@ -5,6 +5,7 @@ import { PageService } from '../../services/page.service';
 import { Location } from '@angular/common';
 import { environment } from '../../../environments/environment';
 import profileIcons from '../../../assets/data/profile-url-icons.json';
+import { IModal } from '../../shared/modal/modal.component.js';
 
 @Component({
   selector: 'my-speakers-page',
@@ -12,17 +13,34 @@ import profileIcons from '../../../assets/data/profile-url-icons.json';
   styleUrls: ['./speakers-page.component.css']
 })
 export class SpeakersPageComponent implements OnInit {
-  memberList = [];
-  selectedMemberId = null;
+  speakerList = [];
+  selectedSpeakerId = null;
 
   profileIconsModel = null;
 
-  get teamMembers() {
-    return this.memberList;
-  }
+  get selectedItem() {
+    const speaker = this.speakerList.find(x => x.id === this.selectedSpeakerId);
 
-  get selectedMember() {
-    return this.memberList.find(x => x.id === this.selectedMemberId);
+    if (!speaker) return null;
+
+    const item: IModal = {
+      thumbnails: [
+        {
+          url: `/speakers/${speaker.id}`,
+          img: `../../assets/imgs/speakers/${speaker.id}.jpg`,
+          name: speaker.name,
+          links: speaker.profile.map(p => {
+            return {
+              url: p.url,
+              type: this.profileIconsModel[p.type]
+            };
+          })
+        }
+      ],
+      title: speaker.title,
+      desc: speaker.description
+    };
+    return item;
   }
 
   constructor(
@@ -32,25 +50,25 @@ export class SpeakersPageComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.memberList = speakerList.map(x => ({
+    this.profileIconsModel = profileIcons;
+    this.speakerList = speakerList.map(x => ({
       ...x,
       ...{
         food: this.pageSvc.randomFoodIcon()
       }
     }));
-    const selectedMemberId = this.route.snapshot.paramMap.get('id');
-    this.selectMember(selectedMemberId, false);
+    const selected = this.route.snapshot.paramMap.get('id');
+    this.selectSpeaker(selected, false);
   }
 
-  selectMember(id, shouldRedirect = true) {
-    this.selectedMemberId = id;
+  selectSpeaker(id, shouldRedirect = true) {
+    this.selectedSpeakerId = id;
 
     const path = id ? `/speakers/${id}` : '/speakers';
-    console.log(shouldRedirect);
     if (shouldRedirect) this.location.go(path);
 
     const title = id
-      ? this.selectedMember.name +
+      ? this.selectedItem.thumbnails[0].name +
         this.pageSvc.postfix.replace('|', '| Speaker')
       : `Featured Speakers${this.pageSvc.postfix}`;
 
@@ -60,16 +78,14 @@ export class SpeakersPageComponent implements OnInit {
       metaImg: id
         ? environment.baseUrl +
           '/assets/imgs/speakers/' +
-          this.selectedMember.id +
+          this.selectedSpeakerId.id +
           '.jpg'
         : environment.baseUrl + '/assets/imgs/speakers/_featured-speakers.jpg',
       skipTitlePostfix: true
     });
-
-    this.profileIconsModel = profileIcons;
   }
 
-  unselectMember() {
-    this.selectMember(null);
+  unselectSpeaker() {
+    this.selectSpeaker(null);
   }
 }

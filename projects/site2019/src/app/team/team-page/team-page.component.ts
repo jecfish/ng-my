@@ -4,6 +4,8 @@ import { ActivatedRoute } from '@angular/router';
 import { PageService } from '../../services/page.service';
 import { Location } from '@angular/common';
 import { environment } from '../../../environments/environment';
+import { IModal } from '../../shared/modal/modal.component.js';
+import profileIcons from '../../../assets/data/profile-url-icons.json';
 
 @Component({
   selector: 'my-team-page',
@@ -15,12 +17,7 @@ export class TeamPageComponent implements OnInit {
   organizers = ['jecelyn-yeen'];
   selectedMemberId = null;
 
-  profileIconsModel = {
-    website: 'fas fa-globe-asia',
-    linkedin: 'fab fa-linkedin',
-    facebook: 'fab fa-facebook',
-    twitter: 'fab fa-twitter'
-  };
+  profileIconsModel = profileIcons;
 
   get organizerMembers() {
     return this.memberList.filter(x => this.organizers.includes(x.id));
@@ -32,6 +29,31 @@ export class TeamPageComponent implements OnInit {
 
   get selectedMember() {
     return this.memberList.find(x => x.id === this.selectedMemberId);
+  }
+
+  get selectedItem() {
+    const member = this.selectedMember;
+
+    if (!member) return null;
+
+    const item: IModal = {
+      thumbnails: [
+        {
+          url: `/team/${member.id}`,
+          img: `../../assets/imgs/team/${member.photo.fun || member.photo.normal }`,
+          name: member.name,
+          links: [member.profile].map(p => {
+            return {
+              url: p.url,
+              type: this.profileIconsModel[p.type]
+            };
+          })
+        }
+      ],
+      title: '',
+      desc: member.description
+    };
+    return item;
   }
 
   constructor(
@@ -59,7 +81,7 @@ export class TeamPageComponent implements OnInit {
     this.location.go(path);
 
     const title = id
-      ? this.selectedMember.name + this.pageSvc.postfix.replace('|', '| Team')
+      ? this.selectMember.name + this.pageSvc.postfix.replace('|', '| Team')
       : `Team${this.pageSvc.postfix}`;
 
     this.pageSvc.setPage({
