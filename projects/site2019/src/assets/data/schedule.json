@@ -128,18 +128,26 @@
         "title": "NG-Teatime"
       }
     ],
-    "1530 - 1800": [
+    "1530 - 1830": [
       {
-        "title": "Workshop A (TBC)"
+        "title": "Workshop A: Deploy Dockerized Angular Application to Azure",
+        "speakers": ["Anil Kumar Menon"],
+        "session": "docker-azure-angular"
       },
       {
-        "title": "Workshop B (TBC)"
+        "title": "Workshop B: Building your first Fullstack Serverless App with Angular",
+        "speakers": ["Gerard Sans"],
+        "session": "serverless-angular"
       },
       {
-        "title": "Workshop C (TBC)"
+        "title": "Workshop C: RxJS Level UP - Essentials in reactive programming with RxJS",
+        "speakers": ["Michael Hladky"],
+        "session": "rxjs-level-up"
       },
       {
-        "title": "Workshop D (TBC)"
+        "title": "Workshop D: Angular Schematics In Depth",
+        "speakers": ["Tomas Trajan"],
+        "session": "angular-schematics-in-depth"
       }
     ]
   },
