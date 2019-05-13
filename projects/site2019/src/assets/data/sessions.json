@@ -319,6 +319,50 @@
       "michael-hladky"
     ],
     "tags": []
+  },
+  {
+    "id": "docker-azure-angular",
+    "type": "workshop",
+    "duration": "180 min",
+    "description": "<p>In this hands-on lab, you will learn how to implement a solution with a combination of Azure Resource Manager templates and Azure DevOps to enable continuous delivery with several Azure PaaS services.</p><p>At the end of this workshop, you will be better able to implement solutions for continuous delivery with Azure DevOps in Azure, as well create an Azure Resource Manager (ARM) template to provision Azure resources, configure continuous delivery with Azure DevOps, configure Application Insights into an application, and create an Azure DevOps project and Git repository.</p>",
+    "title": "Deploy Dockerized Angular Application to Azure",
+    "speakers": [
+      "anil-kumar-menon"
+    ],
+    "tags": []
+  },
+  {
+    "id": "serverless-angular",
+    "type": "workshop",
+    "duration": "180 min",
+    "description": "<p>In this workshop we will be introducing <a href=\"https:\/\/aws-amplify.github.io\" target=\"_blank\">AWS Amplify</a> a modern toolchain, libraries and UI components to build Fullstack Serverless Apps. You will be building a fully featured Application from development to production.</p><p><strong>Topics we will be covering:</strong><ul><li>- Introduction to AWS Amplify</li><li>- Designing a GraphQL API</li><li>- Building the client and running queries and mutations</li><li>- Adding real-time subscriptions and handling notifications</li><li>- Adding off-line support</li></p><p><strong>Target Audience</strong><br>You already know some GraphQL and are curious about Fullstack Serverless Applications. You are also curious about learning new features and tooling.</p><p><strong>Requirements</strong><br>Basic to Intermediate understanding of GraphQL and JavaScript. Bring your own laptop, fully charged, and a rested mind.</p>",
+    "title": "Building your first Fullstack Serverless App with Angular",
+    "speakers": [
+      "gerard-sans"
+    ],
+    "tags": []
+  },
+  {
+    "id": "rxjs-level-up",
+    "type": "workshop",
+    "duration": "180 min",
+    "description": "<p>This training will improve your RxJS skills!</p><p>RxJS is more popular than ever. It is backed into the Angular core and also used in frameworks like React, Vue, and others! This doesn't surprise as it leverages a powerful and elegant way to work with sync as well as async collections.</p><p>In this workshop, you will bring your basic knowledge to the next level. We will learn about the patterns, operator combinations, and concept in RxJS!</p><p>This workshop is provided by <a href=\"angular-college.com\">angular-college.com</a>. You'll learn:<br><ul><li>- Promise vs Observables</li><li>- Execution context and observables</li><li>- Subscription handling, explicit, implicit and single subscription management</li><li>- Error handling and tricks to encapsulate errors</li><li>- Custom configurable pipes</li><li>- Patterns and examples of operator combinations</li><li>- The most important Higher order operators in comparison</li><li>- Best usage of higher order operators</li></ul></p><p>As the last exercises, we will solve several examples in the Rx-way.</p>",
+    "title": "RxJS Level UP - Essentials in reactive programming with RxJS",
+    "speakers": [
+      "michael-hladky"
+    ],
+    "tags": []
+  },
+  {
+    "id": "angular-schematics-in-depth",
+    "type": "workshop",
+    "duration": "180 min",
+    "description": "<p>In development, we often want to extract reusable parts of logic into self contained libraries. Modern tooling provided by Angular CLI enables us to provide amazing developer experience for the users of our libraries. </p> <p> Libraries can be added seamlessly, while automating all the necessary setup work. </p> <p> More so, providing built-in library specific schematics enables us to cut on the learning curve that is needed to get developers productive straight from the start by generating code which follows intentioned patterns and best practices. </p> <p> In this workshop, we're going to explore: <br> 1. What are Angular Schematics<br> 2. Why and how to use them<br> 3. Best practices and tips for using default Angular schematics<br> 4. How to build simple schematics for our custom library<br> 5. How to make our library \"ng add\" - able to make it seamless for the consumers<br> </p>",
+    "title": "Angular Schematics In Depth",
+    "speakers": [
+      "tomas-trajan"
+    ],
+    "tags": []
   }
 ]
 

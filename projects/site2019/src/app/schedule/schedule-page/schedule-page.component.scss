@@ -83,14 +83,29 @@
       color: $white;
     }
 
-    &:last-child:before {
-      content: 'HALL B';
-      background: $blue;
-    }
+    // &:last-child:before {
+    //   content: 'HALL B';
+    //   background: $blue;
+    // }
 
     &:first-child:before {
       content: 'HALL A';
       background: $red;
+    }
+
+    &:nth-child(2):before {
+      content: 'HALL B';
+      background: $blue;
+    }
+
+    &:nth-child(3):before {
+      content: 'HALL C';
+      background: $black;
+    }
+
+    &:nth-child(4):before {
+      content: 'HALL D';
+      background: $gray;
     }
 
     @include mobile {

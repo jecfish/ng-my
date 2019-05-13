@@ -502,5 +502,19 @@
                 "type": "twitter"
             }
         ]
+    },
+    {
+        "id": "anil-kumar-menon",
+        "name": "Anil Kumar Menon",
+        "title": "Solution Specialist for Data and AI @ Microsoft",
+        "color": "red",
+        "description": "<p>Anil is a Solution Sales Specialist for Data and AI at Microsoft, helping customers implement Data and AI solutions using the Microsoft stack.</p>",
+        "profile": [
+            {
+                "url": "https://linkedin.com/in/anil-kumar-menon",
+                "type": "linkedin"
+            }
+        ]
+
     }
 ]
