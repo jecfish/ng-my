@@ -7,7 +7,7 @@ import { ActivatedRoute } from '@angular/router';
 import { PageService } from '../../services/page.service';
 import { Meta } from '@angular/platform-browser';
 import { Location } from '@angular/common';
-import { environment } from '../../../environments/environment';
+import { IModal } from '../../shared/modal/modal.component.js';
 
 @Component({
   selector: 'my-session-page',
@@ -15,7 +15,6 @@ import { environment } from '../../../environments/environment';
   styleUrls: ['./session-page.component.scss']
 })
 export class SessionPageComponent implements OnInit {
-  day = 0;
   sessions = [];
   selectedSessionId = null;
 
@@ -28,37 +27,45 @@ export class SessionPageComponent implements OnInit {
     private location: Location
   ) {}
 
-  get selectedSession() {
-    return this.currentDaySession.find(x => x.id === this.selectedSessionId);
-  }
+  get selectedItem() {
+    const session = this.sessions.find(x => x.id === this.selectedSessionId);
 
-  get selectedSessionSpeakers() {
-    return (this.selectedSession || {}).speakers || [];
-  }
+    if (!session) return null;
 
-  get onlySpeaker() {
-    return this.selectedSessionSpeakers[0] || {};
-  }
-
-  get currentDaySession() {
-    return this.sessions[this.day];
+    const item: IModal = {
+      thumbnails: session.speakers.map(x => {
+        return {
+          url: `/speakers/${x.id}`,
+          img: `../../assets/imgs/speakers/${x.id}.jpg`,
+          name: x.name,
+          links: x.profile.map(p => {
+            return {
+              url: p.url,
+              type: this.profileIconsModel[p.type]
+            };
+          })
+        };
+      }),
+      title: session.title,
+      desc: session.description.full
+    };
+    return item;
   }
 
   get mainSession() {
-    return this.currentDaySession.filter(x => x.type === 'main');
+    return this.sessions.filter(x => x.type === 'main');
   }
 
   get lightningSession() {
-    return this.currentDaySession.filter(x => x.type === 'lightning');
+    return this.sessions.filter(x => x.type === 'lightning');
   }
 
   get workshopSession() {
-    return this.currentDaySession.filter(x => x.type === 'workshop');
+    return this.sessions.filter(x => x.type === 'workshop');
   }
 
   ngOnInit() {
-    this.sessions = [
-      sessionList
+    this.sessions = sessionList
         .map(x => ({
           ...x,
           ...{
@@ -81,42 +88,32 @@ export class SessionPageComponent implements OnInit {
             .filter(x => session.speakers.includes(x.id));
           return { ...session, speakers };
         })
-    ];
+    ;
 
     this.profileIconsModel = profileIcons;
     const selectedId = this.route.snapshot.paramMap.get('id');
     this.selectSession(selectedId);
   }
 
-  selectSession(id) {
+  selectSession(id: any) {
     this.selectedSessionId = id;
 
     const path = id ? `/sessions/${id}` : '/sessions';
     this.location.go(path);
 
     const title = id
-      ? this.selectedSession.title +
+      ? this.selectedItem.title +
         this.pageSvc.postfix.replace('|', '| Session')
       : `Sessions${this.pageSvc.postfix}`;
 
     this.pageSvc.setPage({
       title,
       metaDesc: 'Sessions NG-MY 2019.',
-      // metaImg: id
-      //   ? environment.baseUrl +
-      //     '/assets/imgs/speakers/' +
-      //     this.selectedSession.id +
-      //     '.jpg'
-      //   : environment.baseUrl + '/assets/imgs/speakers/_featured-speakers.jpg',
       skipTitlePostfix: true
     });
   }
 
   unselectSession() {
     this.selectSession(null);
-  }
-
-  setSessionDay(day) {
-    this.day = day;
   }
 }

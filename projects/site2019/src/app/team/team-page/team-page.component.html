@@ -61,8 +61,8 @@
       </div>
     </div>
   </section>
-
-  <section class="team-highlight-section" [class.--show]="selectedMember">
+  <my-modal *ngIf="selectedItem" [item]="selectedItem" (unselect)="unselectMember()"></my-modal>
+  <!-- <section class="team-highlight-section" [class.--show]="selectedMember">
     <div class="team-highlight">
       <button class="team-highlight-close" (click)="unselectMember()"></button>
       <div class="container">
@@ -90,5 +90,5 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 </main>
