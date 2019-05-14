@@ -60,6 +60,11 @@ export class HomeTicketPageComponent implements OnInit {
       list: miscs.filter(x => x.type === 'meal')
     },
     {
+      level: 'misc',
+      title: 'Scholarship sponsors',
+      list: miscs.filter(x => x.type === 'scholarship')
+    },
+    {
       level: 'bronze',
       title: 'Bronze sponsors',
       list: bronzes
