@@ -22,5 +22,11 @@
     "name": "cypress",
     "url": "https://cypress.io/",
     "type": "scholarship"
+  },
+  {
+    "image": "egghead.jpg",
+    "name": "egghead.io",
+    "url": "https://egghead.io/",
+    "type": "gift"
   }
 ]
