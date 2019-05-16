@@ -302,6 +302,9 @@
           </div>
           <ul class="sponsors-list">
             <li class="sponsors-item" *ngFor="let s of sponsor.list">
+              <p *ngIf="sponsor.level === 'misc' && sponsor.title !== 'Media partners'">
+                <span class="sponsors-item-label">{{ s.type }}</span>
+              </p>
               <a [href]="s.url" target="_blank" rel="noreferer">
                 <img src="{{ '../../assets/imgs/sponsors/'+ sponsor.level +'/' + s.image }}" class="sponsors-img"
                   [alt]="s.name" [title]="s.name" />
