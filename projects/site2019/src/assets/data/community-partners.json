@@ -1,16 +1,16 @@
 [
     {
-      "image": "nestjs.svg",
+      "image": "nestjs.jpg",
       "name": "nestjs",
       "url": "https://nestjs.com/"
     },
     {
-      "image": "WWCode_Kuala Lumpur_Binary.jpg",
+      "image": "wwcodekl.jpg",
       "name": "Women Who Code KL",
       "url": "https://www.facebook.com/womenwhocodekl/"
     },
     {
-      "image": "sunway_tech_club.png",
+      "image": "stc.jpg",
       "name": "Sunway Tech Club",
       "url": "https://www.facebook.com/sunwaytechclub/"
     },
@@ -20,7 +20,7 @@
       "url": "https://acatpenang.com/"
     },
     {
-      "image": "gdgkl.svg",
+      "image": "gdgkl.jpg",
       "name": "Google Developers Group KL",
       "url": "https://www.facebook.com/GDGKualaLumpur/"
     },
@@ -35,7 +35,7 @@
       "url": "https://www.facebook.com/groups/angular.malaysia/"
     },
     {
-      "image": "thefrontendmalaysia.jpg",
+      "image": "tfmy.jpg",
       "name": "the Frontend Malaysia",
       "url": "https://www.facebook.com/frontendmalaysia/"
     }
