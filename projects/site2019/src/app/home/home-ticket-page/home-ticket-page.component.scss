@@ -971,10 +971,6 @@
           background: $gray-light;
           color: $font-color-root;
         }
-
-        &-item {
-          width: 160px;
-        }
       }
     }
 
@@ -982,10 +978,6 @@
       .sponsors {
         &-title {
           background: $gray-dark;
-        }
-
-        &-item {
-          width: 160px; // 120px;
         }
       }
     }
@@ -1021,9 +1013,12 @@
   &-item {
     width: 160px;
     position: relative;
+    border: 2px solid $black;
+    padding: 0 $space;
+    box-shadow: 4px 4px $black;
 
     &+& {
-      margin-left: $space-l;
+      margin-left: $space;
     }
 
     @include mobile {
@@ -1036,9 +1031,19 @@
     }
 
     &-label {
-      border-bottom: 2px dashed $gray-dark;
-      font-weight: 600;
-      padding: 2px;
+      @include one-height(20px, 4px);
+
+      padding: 0 $space-s;
+      font-weight: bold;
+      background: $red;
+      color: $white;
+      border-width: 0 2px 2px 0;
+      border-style: solid;
+      border-color: $black;
+      margin-left: -$space;
+      display: inline-block;
+      font-size: $font-size-s;
+      letter-spacing: 1px;
     }
   }
 }
