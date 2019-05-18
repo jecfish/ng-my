@@ -236,7 +236,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: url('/assets/imgs/home/hero-bg.jpg') center/cover no-repeat;
+    background: url('/assets/imgs/home/hero-bg.webp') center/cover no-repeat;
     width: 100%;
     height: 100%;
     opacity: calc(0.3 + 0.4 * var(--hero-scroll));
@@ -863,6 +863,10 @@
     }
   }
 
+  &-img {
+    vertical-align: middle;
+  }
+
   &-block {
 
     &+& {
@@ -892,7 +896,7 @@
 
       .container {
         &:before {
-          background-image: url('/assets/imgs/home/sponsor-ultimate.png');
+          background-image: url('/assets/imgs/home/sponsor-ultimate.webp');
           transform: rotate(-10deg);
         }
       }
@@ -927,7 +931,7 @@
 
       .container {
         &:before {
-          background-image: url('/assets/imgs/home/sponsor-gold.png');
+          background-image: url('/assets/imgs/home/sponsor-gold.webp');
           transform: rotate(10deg);
         }
       }
@@ -948,7 +952,7 @@
 
       .container {
         &:before {
-          background-image: url('/assets/imgs/home/sponsor-silver.png');
+          background-image: url('/assets/imgs/home/sponsor-silver.webp');
           transform: rotate(-15deg);
         }
       }
