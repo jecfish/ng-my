@@ -1,21 +1,21 @@
 [
   {
-    "image": "pulsifi.jpg",
+    "image": "pulsifi",
     "name": "pulsifi",
     "url": "https://pulsifi.me/"
   },
   {
-    "image": "nativescript.jpg",
+    "image": "nativescript",
     "name": "nativescript",
     "url": "https://www.nativescript.org/"
   },
   {
-    "image": "appspace.jpg",
+    "image": "appspace",
     "name": "appspace",
     "url": "https://www.appspace.com/"
   },
   {
-    "image": "exxonmobil.jpg",
+    "image": "exxonmobil",
     "name": "ExxonMobil",
     "url": "https://corporate.exxonmobil.com/"
   }

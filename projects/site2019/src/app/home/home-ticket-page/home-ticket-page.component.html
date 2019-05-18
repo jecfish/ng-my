@@ -50,7 +50,7 @@
 </section>
 <div class="hero-deco slant">
   <picture>
-    <source srcset='../../assets/imgs/home/teh-tarik-top.webp' type='image/webp'>
+    <source srcset="../../assets/imgs/home/teh-tarik-top.webp" type="image/webp">
     <img src="../../assets/imgs/home/teh-tarik-top.png" class="hero-deco-teh" alt="mamak">
   </picture>
 </div>
@@ -60,7 +60,7 @@
   <ng-container>
     <section class="stats" #stats>
       <picture class="food-roti-canai">
-        <source srcset='../../assets/imgs/home/roti-canai.webp' type='image/webp'>
+        <source srcset="../../assets/imgs/home/roti-canai.webp" type="image/webp">
         <img src="../../assets/imgs/home/roti-canai.png" alt="mamak">
       </picture>
       <div class="container">
@@ -106,15 +106,15 @@
     <div class="mailing-deco mailing-deco-up slant"></div>
     <section id="mc_embed_signup" class="mailing-section" #subscribe>
       <picture class="food-nasi-lemak">
-        <source srcset='../../assets/imgs/home/nasilemak.webp' type='image/webp'>
+        <source srcset="../../assets/imgs/home/nasilemak.webp" type="image/webp">
         <img src="../../assets/imgs/home/nasilemak.png" alt="mamak">
       </picture>
       <picture class="food-teh-ais-limau">
-        <source srcset='../../assets/imgs/home/tehaislimau.webp' type='image/webp'>
+        <source srcset="../../assets/imgs/home/tehaislimau.webp" type="image/webp">
         <img src="../../assets/imgs/home/tehaislimau.png" alt="mamak">
       </picture>
       <picture class="food-teh-tarik">
-        <source srcset='../../assets/imgs/home/tehtarik.webp' type='image/webp'>
+        <source srcset="../../assets/imgs/home/tehtarik.webp" type="image/webp">
         <img src="../../assets/imgs/home/tehtarik.png" alt="mamak">
       </picture>
       <div class="container">
@@ -162,7 +162,7 @@
                   <img class="speakers-profile-img" src="../../assets/imgs/speakers/{{ speaker.id }}.jpg" alt="">
                   <div class="speakers-profile-food">
                     <picture>
-                      <source srcset='../../assets/imgs/speaker-food/{{ speaker.food }}.webp' type='image/webp'>
+                      <source srcset="../../assets/imgs/speaker-food/{{ speaker.food }}.webp" type="image/webp">
                       <img src="../../assets/imgs/speaker-food/{{ speaker.food }}.png" [alt]="speaker.food">
                     </picture>
                   </div>
@@ -216,35 +216,35 @@
         </div>
         <div class="sessions-food">
           <picture>
-            <source srcset='../../assets/imgs/speaker-food/bandung.webp' type='image/webp'>
+            <source srcset="../../assets/imgs/speaker-food/bandung.webp" type="image/webp">
             <img src="../../assets/imgs/speaker-food/bandung.png" alt="mamak">
           </picture>
           <picture>
-            <source srcset='../../assets/imgs/speaker-food/kopi-o.webp' type='image/webp'>
+            <source srcset="../../assets/imgs/speaker-food/kopi-o.webp" type="image/webp">
             <img src="../../assets/imgs/speaker-food/kopi-o.png" alt="mamak">
           </picture>
           <picture>
-            <source srcset='../../assets/imgs/speaker-food/nasi-lemak.webp' type='image/webp'>
+            <source srcset="../../assets/imgs/speaker-food/nasi-lemak.webp" type="image/webp">
             <img src="../../assets/imgs/speaker-food/bandung.png" alt="mamak">
           </picture>
           <picture>
-            <source srcset='../../assets/imgs/speaker-food/cendol.webp' type='image/webp'>
+            <source srcset="../../assets/imgs/speaker-food/cendol.webp" type="image/webp">
             <img src="../../assets/imgs/speaker-food/cendol.png" alt="mamak">
           </picture>
           <picture>
-            <source srcset='../../assets/imgs/speaker-food/curry-pup.webp' type='image/webp'>
+            <source srcset="../../assets/imgs/speaker-food/curry-pup.webp" type="image/webp">
             <img src="../../assets/imgs/speaker-food/curry-pup.png" alt="mamak">
           </picture>
           <picture>
-            <source srcset='../../assets/imgs/speaker-food/ikat-semua.webp' type='image/webp'>
+            <source srcset="../../assets/imgs/speaker-food/ikat-semua.webp" type="image/webp">
             <img src="../../assets/imgs/speaker-food/ikat-semua.png" alt="mamak">
           </picture>
           <picture>
-            <source srcset='../../assets/imgs/speaker-food/roti-canai.webp' type='image/webp'>
+            <source srcset="../../assets/imgs/speaker-food/roti-canai.webp" type="image/webp">
             <img src="../../assets/imgs/speaker-food/roti-canai.png" alt="mamak">
           </picture>
           <picture>
-            <source srcset='../../assets/imgs/speaker-food/tosai.webp' type='image/webp'>
+            <source srcset="../../assets/imgs/speaker-food/tosai.webp" type="image/webp">
             <img src="../../assets/imgs/speaker-food/tosai.png" alt="mamak">
           </picture>
         </div>
@@ -264,7 +264,10 @@
           <div class="col" *ngFor="let p of fewPosts">
             <article class="post-card">
               <figure class="post-pic">
-                <img src="../../assets/imgs/posts/{{ p.img }}" [alt]="p.title" [title]="p.title" class="post-img">
+                <picture>
+                  <source srcset="../../assets/imgs/posts/{{ p.img }}.webp" type="image/webp">
+                  <img src="../../assets/imgs/posts/{{ p.img }}.jpg" [alt]="p.title">
+                </picture>
               </figure>
               <h5 class="post-title">{{ p.title }}</h5>
               <p class="post-desc">{{ p.desc }}</p>
@@ -283,7 +286,7 @@
     </div>
     <div class="posts-deco slant">
       <picture>
-        <source srcset='../../assets/imgs/home/teh-tarik-bottom.webp' type='image/webp'>
+        <source srcset="../../assets/imgs/home/teh-tarik-bottom.webp" type="image/webp">
         <img src="../../assets/imgs/home/teh-tarik-bottom.png" class="posts-deco-img" alt="mamak">
       </picture>
     </div>
@@ -306,8 +309,12 @@
                 {{ s.type }}
               </p>
               <a [href]="s.url" target="_blank" rel="noreferer">
-                <img src="{{ '../../assets/imgs/sponsors/'+ sponsor.level +'/' + s.image }}" class="sponsors-img"
-                  [alt]="s.name" [title]="s.name" />
+                <picture>
+                  <source srcset="{{ '../../assets/imgs/sponsors/'+ sponsor.level +'/' + s.image }}.webp"
+                    type='image/webp'>
+                  <img src="{{ '../../assets/imgs/sponsors/'+ sponsor.level +'/' + s.image }}.jpg" class="sponsors-img"
+                    [alt]="s.name" [title]="s.name" />
+                </picture>
               </a>
             </li>
           </ul>

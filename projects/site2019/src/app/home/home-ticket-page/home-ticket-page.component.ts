@@ -54,26 +54,6 @@ export class HomeTicketPageComponent implements OnInit {
       title: 'Special sponsors',
       list: miscs
     },
-    // {
-    //   level: 'misc',
-    //   title: 'Coffee sponsors',
-    //   list: miscs.filter(x => x.type === 'coffee')
-    // },
-    // {
-    //   level: 'misc',
-    //   title: 'Meal sponsors',
-    //   list: miscs.filter(x => x.type === 'meal')
-    // },
-    // {
-    //   level: 'misc',
-    //   title: 'Gift sponsors',
-    //   list: miscs.filter(x => x.type === 'gift')
-    // },
-    // {
-    //   level: 'misc',
-    //   title: 'Scholarship sponsors',
-    //   list: miscs.filter(x => x.type === 'scholarship')
-    // },
     {
       level: 'bronze',
       title: 'Bronze sponsors',

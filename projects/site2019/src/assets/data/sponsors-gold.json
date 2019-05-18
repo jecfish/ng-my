@@ -1,21 +1,21 @@
 [
     {
-        "image": "firebase.jpg",
+        "image": "firebase",
         "name": "firebase",
         "url": "https://firebase.google.com/"
     },
     {
-        "image": "apigate.jpg",
+        "image": "apigate",
         "name": "apigate",
         "url": "https://www.apigate.com"
     },
     {
-        "image": "nintex.jpg",
+        "image": "nintex",
         "name": "nintex",
         "url": "https://www.nintex.com/"
     },
     {
-        "image": "airasia.jpg",
+        "image": "airasia",
         "name": "airasia",
         "url": "https://careers.airasia.com/"
     }

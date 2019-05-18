@@ -22,7 +22,7 @@ export class PostPageComponent implements OnInit {
       this.pageSvc.setPage({
         title: post.title,
         metaDesc: post.desc,
-        metaImg: `${environment.baseUrl}/assets/imgs/posts/${post.img}`
+        metaImg: `${environment.baseUrl}/assets/imgs/posts/${post.img}.jpg`
       });
 
       const result = await fetch(`/assets/posts/${x.name}.txt`).then(res => res.text());
