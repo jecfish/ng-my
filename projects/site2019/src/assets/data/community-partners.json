@@ -1,41 +1,41 @@
 [
     {
-      "image": "nestjs.jpg",
+      "image": "nestjs",
       "name": "nestjs",
       "url": "https://nestjs.com/"
     },
     {
-      "image": "wwcodekl.jpg",
+      "image": "wwcodekl",
       "name": "Women Who Code KL",
       "url": "https://www.facebook.com/womenwhocodekl/"
     },
     {
-      "image": "stc.jpg",
+      "image": "stc",
       "name": "Sunway Tech Club",
       "url": "https://www.facebook.com/sunwaytechclub/"
     },
     {
-      "image": "acat.jpg",
+      "image": "acat",
       "name": "acat penang",
       "url": "https://acatpenang.com/"
     },
     {
-      "image": "gdgkl.jpg",
+      "image": "gdgkl",
       "name": "Google Developers Group KL",
       "url": "https://www.facebook.com/GDGKualaLumpur/"
     },
     {
-      "image": "kljs.jpg",
+      "image": "kljs",
       "name": "Kuala Lumpur JS",
       "url": "https://www.facebook.com/groups/kualalumpurjs/"
     },
     {
-      "image": "angular-malaysia.jpg",
+      "image": "angular-malaysia",
       "name": "Angular Malaysia",
       "url": "https://www.facebook.com/groups/angular.malaysia/"
     },
     {
-      "image": "tfmy.jpg",
+      "image": "tfmy",
       "name": "the Frontend Malaysia",
       "url": "https://www.facebook.com/frontendmalaysia/"
     }

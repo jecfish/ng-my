@@ -1,30 +1,30 @@
 [
   {
-    "image": "jp-associates.jpg",
+    "image": "jp-associates",
     "name": "jp associates",
     "url": "https://www.jp-associates.asia",
     "type": "coffee"
   },
   {
-    "image": "scotch.jpg",
+    "image": "scotch",
     "name": "scotch",
     "url": "https://scotch.io/",
     "type": "meal"
   },
   {
-    "image": "nrwl.jpg",
+    "image": "nrwl",
     "name": "nrwl",
     "url": "https://nrwl.io/",
     "type": "meal"
   },
   {
-    "image": "cypress.jpg",
+    "image": "cypress",
     "name": "cypress",
     "url": "https://cypress.io/",
     "type": "scholarship"
   },
   {
-    "image": "egghead.jpg",
+    "image": "egghead",
     "name": "egghead.io",
     "url": "https://egghead.io/",
     "type": "gift"

@@ -1,16 +1,16 @@
 [
     {
-        "image": "seek-asia.jpg",
+        "image": "seek-asia",
         "name": "seek asia",
         "url": "https://www.seekasia.com/"
     },
     {
-        "image": "ambition.jpg",
+        "image": "ambition",
         "name": "ambition",
         "url": "http://www.ambition.com.my/"
     },
     {
-        "image": "microsoft.jpg",
+        "image": "microsoft",
         "name": "microsoft",
         "url": "https://www.microsoft.com/"
     }
