@@ -742,6 +742,7 @@
 
     .btn {
       margin-top: $space-l;
+      z-index: 2;
 
       @include mobile {
         display: block;

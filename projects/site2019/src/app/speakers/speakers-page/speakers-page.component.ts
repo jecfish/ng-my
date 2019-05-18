@@ -10,7 +10,7 @@ import { IModal } from '../../shared/modal/modal.component.js';
 @Component({
   selector: 'my-speakers-page',
   templateUrl: './speakers-page.component.html',
-  styleUrls: ['./speakers-page.component.css']
+  styleUrls: ['./speakers-page.component.scss']
 })
 export class SpeakersPageComponent implements OnInit {
   speakerList = [];
