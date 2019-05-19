@@ -159,7 +159,10 @@
             <div class="speakers-card">
               <div class="speakers-profile">
                 <div class="speakers-profile-pic">
-                  <img class="speakers-profile-img" src="../../assets/imgs/speakers/{{ speaker.id }}.jpg" alt="">
+                  <picture>
+                    <source srcset="../../assets/imgs/speakers/{{ speaker.id }}.webp" type="image/webp">
+                    <img class="speakers-profile-img" src="../../assets/imgs/speakers/{{ speaker.id }}.jpg" alt="">
+                  </picture>
                   <div class="speakers-profile-food">
                     <picture>
                       <source srcset="../../assets/imgs/speaker-food/{{ speaker.food }}.webp" type="image/webp">
