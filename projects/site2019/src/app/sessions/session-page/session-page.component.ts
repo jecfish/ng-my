@@ -36,7 +36,7 @@ export class SessionPageComponent implements OnInit {
       thumbnails: session.speakers.map(x => {
         return {
           url: `/speakers/${x.id}`,
-          img: `../../assets/imgs/speakers/${x.id}.jpg`,
+          img: `../../assets/imgs/speakers/${x.id}`,
           name: x.name,
           links: x.profile.map(p => {
             return {

@@ -1,4 +1,7 @@
-<img src="../../assets/imgs/team/team.jpg" alt="NG-MY team photo" title="NG-MY 2019 team">
+<picture>
+    <source srcset="./../assets/imgs/team/team.webp" type="image/webp">
+    <img src="../../assets/imgs/team/team.jpg" alt="NG-MY team photo" title="NG-MY 2019 team">
+</picture>
 <main id="team">
   <div class="page-header">
     <div class="container">
@@ -22,7 +25,10 @@
           <article class="team-card --{{ m.gender }}" [class.--selected]="selectedMemberId === m.id" (click)="selectMember(m.id)">
             <div class="team-card-profile">
               <figure class="team-card-pic">
-                <img src="../../assets/imgs/team/{{ m.photo.normal }}" alt="{{ m.name }}" class="team-card-img" />
+                <picture>
+                    <source srcset="../../assets/imgs/team/{{ m.photo.normal }}.webp" type="image/webp">
+                    <img src="../../assets/imgs/team/{{ m.photo.normal }}.jpg" alt="{{ m.name }}" class="team-card-img" />
+                </picture>
               </figure>
               <picture class="team-card-food">
                   <source srcset="../../assets/imgs/speaker-food/{{ m.food }}.webp" type='image/webp'>
@@ -50,7 +56,8 @@
           <article class="team-card --{{ m.gender }}" [class.--selected]="selectedMemberId === m.id" (click)="selectMember(m.id)">
             <div class="team-card-profile">
               <figure class="team-card-pic">
-                <img src="../../assets/imgs/team/{{ m.photo.normal }}" alt="{{ m.name }}" class="team-card-img" />
+                <source srcset="../../assets/imgs/team/{{ m.photo.normal }}.webp" type="image/webp">
+                <img src="../../assets/imgs/team/{{ m.photo.normal }}.jpg" alt="{{ m.name }}" class="team-card-img" />
               </figure>
               
               <img class="team-card-food" src="../../assets/imgs/speaker-food/{{ m.food }}.png" alt="">
@@ -62,33 +69,4 @@
     </div>
   </section>
   <my-modal *ngIf="selectedItem" [item]="selectedItem" (unselect)="unselectMember()"></my-modal>
-  <!-- <section class="team-highlight-section" [class.--show]="selectedMember">
-    <div class="team-highlight">
-      <button class="team-highlight-close" (click)="unselectMember()"></button>
-      <div class="container">
-        <div class="team-highlight-info-container">
-          <div class="team-highlight-info">
-            <figure class="team-highlight-pic">
-              <img src="../../assets/imgs/team/{{ selectedMember.photo?.fun || selectedMember.photo?.normal }}" alt=""
-                class="team-highlight-img" *ngIf="selectedMember" />
-            </figure>
-            <div class="team-highlight-name">
-              {{ selectedMember?.name }}
-            </div>
-            <ul class="team-highlight-misc">
-              <li class="team-highlight-misc-item">
-                <a [href]="selectedMember?.profile?.url" target="_blank" rel="noreferrer" class="team-highlight-misc-link">
-                  <i class="{{ profileIconsModel[selectedMember?.profile?.type] }}"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="team-highlight-description-container">
-            <div class="team-highlight-description article-section" [innerHTML]="selectedMember?.description">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
 </main>

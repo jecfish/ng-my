@@ -8,8 +8,10 @@
             <li class="team-highlight-speakers-item" *ngFor="let s of item.thumbnails">
               <!-- <a [routerLink]="s.url" class="team-highlight-speakers-link"> -->
                 <figure class="team-highlight-speakers-pic">
-                  <img [src]="s.img" class="team-highlight-speakers-img"
-                    [alt]="s.name">
+                  <picture>
+                    <source srcset="{{s.img}}.webp" type="image/webp">
+                    <img src="{{s.img}}.jpg" class="team-highlight-speakers-img" [alt]="s.name">
+                  </picture>
                 </figure>
               <!-- </a> -->
               <div class="team-highlight-speakers-text">
@@ -29,8 +31,10 @@
             <ng-container *ngFor="let s of item.thumbnails">
               <!-- <a [routerLink]="s.url"> -->
                 <figure class="team-highlight-pic">
-                  <img [src]="s.img" [alt]="s.name"
-                    class="team-highlight-img" />
+                  <picture>
+                      <source srcset="{{s.img}}.webp" type="image/webp">
+                      <img src="{{s.img}}.jpg" [alt]="s.name" class="team-highlight-img" />
+                    </picture>
                 </figure>
               <!-- </a> -->
               <div class="team-highlight-name">
