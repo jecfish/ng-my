@@ -1,6 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import { PageService } from '../../services/page.service';
 import socialMediaList from '../../../assets/data/social-media.json';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'my-header',
@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
     // { link: '/form/speaker-training', name: 'Speaking Up!' },
     // { link: '/form/call-for-presenters', name: 'Submit CFP' },
     // { link: '/coc', name: 'Code of Conduct' },
-    { link: '/team', name: 'Team' },
+    { link: '/team', name: 'Team' }
     // { link: '/form/scholarship', name: 'Scholarship' }
   ];
 
@@ -37,7 +37,7 @@ export class HeaderComponent implements OnInit {
     );
   }
 
-  constructor(private pageSvc: PageService) {}
+  constructor(private router: Router) {}
 
   toggleMobileNav() {
     this.isShowMobileNav = !this.isShowMobileNav;
@@ -45,6 +45,10 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     this.socialMediaList = socialMediaList;
+
+    // this.router.events.subscribe(
+    //   e => e instanceof NavigationEnd && (this.isShowMobileNav = false)
+    // );
   }
 
   trackEvent(event: string) {
@@ -53,7 +57,5 @@ export class HeaderComponent implements OnInit {
       event_label: event,
       value: event
     });
-
-    this.isShowMobileNav = false;
   }
 }

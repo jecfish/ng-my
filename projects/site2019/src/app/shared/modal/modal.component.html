@@ -1,18 +1,19 @@
-<section class="team-highlight-section" [class.--show]="item?.desc">
+<section class="team-highlight-section" [class.--show]="item?.desc" [@modalAnim]="modalAnimState"
+  (@modalAnim.done)="handleAnimDone($event)">
   <div class="team-highlight">
-    <button class="team-highlight-close" (click)="unselectItem()"></button>
+    <button class="team-highlight-close" [@closeBtnAnim]="modalAnimState" (click)="hideModal()"></button>
     <div class="container">
       <div class="team-highlight-info-container">
         <div class="team-highlight-info">
           <ul class="team-highlight-speakers-list" *ngIf="item.thumbnails.length > 1">
             <li class="team-highlight-speakers-item" *ngFor="let s of item.thumbnails">
               <!-- <a [routerLink]="s.url" class="team-highlight-speakers-link"> -->
-                <figure class="team-highlight-speakers-pic">
-                  <picture>
-                    <source srcset="{{s.img}}.webp" type="image/webp">
-                    <img src="{{s.img}}.jpg" class="team-highlight-speakers-img" [alt]="s.name">
-                  </picture>
-                </figure>
+              <figure class="team-highlight-speakers-pic">
+                <picture>
+                  <source srcset="{{s.img}}.webp" type="image/webp">
+                  <img src="{{s.img}}.jpg" class="team-highlight-speakers-img" [alt]="s.name">
+                </picture>
+              </figure>
               <!-- </a> -->
               <div class="team-highlight-speakers-text">
                 {{ s.name }}
@@ -30,12 +31,12 @@
           <ng-container *ngIf="item.thumbnails.length === 1">
             <ng-container *ngFor="let s of item.thumbnails">
               <!-- <a [routerLink]="s.url"> -->
-                <figure class="team-highlight-pic">
-                  <picture>
-                      <source srcset="{{s.img}}.webp" type="image/webp">
-                      <img src="{{s.img}}.jpg" [alt]="s.name" class="team-highlight-img" />
-                    </picture>
-                </figure>
+              <figure class="team-highlight-pic">
+                <picture>
+                  <source srcset="{{s.img}}.webp" type="image/webp">
+                  <img src="{{s.img}}.jpg" [alt]="s.name" class="team-highlight-img" />
+                </picture>
+              </figure>
               <!-- </a> -->
               <div class="team-highlight-name">
                 {{ s.name }}
