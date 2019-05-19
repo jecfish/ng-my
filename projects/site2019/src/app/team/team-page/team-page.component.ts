@@ -40,7 +40,7 @@ export class TeamPageComponent implements OnInit {
       thumbnails: [
         {
           url: `/team/${member.id}`,
-          img: `../../assets/imgs/team/${member.photo.fun || member.photo.normal }`,
+          img: `../../assets/imgs/team/${member.photo.normal }`,
           name: member.name,
           links: [member.profile].map(p => {
             return {

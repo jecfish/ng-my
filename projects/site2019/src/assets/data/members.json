@@ -5,8 +5,8 @@
         "gender": "girl",
         "description": "<p>Jecelyn speaks English, Mandarin, C#, JavaScript and Angular. She blogs & speaks tech, enjoys organizing community events.</p><p>Ironically her favourite past time away from work involves travelling to remote islands without WiFi for deep sea diving expeditions and reading books with tangible covers.</p>",
         "photo": {
-            "normal": "jecelyn_yeen-normal.jpg",
-            "fun": "jecelyn_yeen-fun.jpg"
+            "normal": "jecelyn_yeen-normal",
+            "fun": "jecelyn_yeen-fun"
         },
         "profile": {
             "url": "https://twitter.com/jecelynyeen",
@@ -23,8 +23,8 @@
         "gender": "boy",
         "description": "Eric is a Computer Science student from Sunway University, loves coffee, food (mamak food 😍) and 💻 code. Involved in a few ✨ communities - Sunway Tech Club, GDG KL, and now NG-MY.",
         "photo": {
-            "normal": "eric_ngu-normal.jpg",
-            "fun": "eric_ngu-fun.jpg"
+            "normal": "eric_ngu-normal",
+            "fun": "eric_ngu-fun"
         },
         "profile": {
             "url": "https://www.linkedin.com/in/cheehongngu",
@@ -41,7 +41,7 @@
         "gender": "girl",
         "description": "Lydia is a big fan of mobile, automation and cloud related services/applications. I am also intrigued (or distracted) by a lot of things - travel, hiking, photography, IoT.",
         "photo": {
-            "normal": "lydia_lim-normal.jpg",
+            "normal": "lydia_lim-normal",
             "fun": ""
         },
         "profile": {
@@ -59,8 +59,8 @@
         "gender": "boy",
         "description": "<p>Adrian is a front end developer who does Angular web application and mobile application. He is always passionate about making great products.</p><p>He regularly joins and contributes to the tech community, which enables him to meet new people, share knowledge and have fun. He is also one of the community organising members of Google Cloud Developer Community Kuala Lumpur.</p>",
         "photo": {
-            "normal": "adrian_yeong-normal.jpg",
-            "fun": "adrian_yeong-fun.jpg"
+            "normal": "adrian_yeong-normal",
+            "fun": "adrian_yeong-fun"
         },
         "profile": {
             "url": "https://web.facebook.com/wwyeong",
@@ -77,8 +77,8 @@
         "gender": "girl",
         "description": "Jenna is a graphic designer who believe simplicity is the key of elegance in a world saturated with garish colour.",
         "photo": {
-            "normal": "jenna_tan-normal.jpg",
-            "fun": "jenna_tan-fun.jpg"
+            "normal": "jenna_tan-normal",
+            "fun": "jenna_tan-fun"
         },
         "profile": {
             "url": "https://web.facebook.com/jaeyentan",
@@ -95,8 +95,8 @@
         "gender": "boy",
         "description": "<p>Jen Ning is a web developer that primarily works in the front-end, and has been in the industry for more than 5 years. He enjoys developing product that delights its users.</p><p>He performs CSS wizardry daily in his work to achieve that.</p>",
         "photo": {
-            "normal": "jen_ning-normal.jpg",
-            "fun": "jen_ning-fun.jpg"
+            "normal": "jen_ning-normal",
+            "fun": "jen_ning-fun"
         },
         "profile": {
             "url": "https://www.linkedin.com/in/jenning-ho/",
@@ -113,7 +113,7 @@
         "gender": "girl",
         "description": "<p>Edelyn is an enthusiastic teen currently active in the tech scene. Besides NG-MY, she is part of the organizing team for Rails Girls MY and Women Who Code KL. She is also an AI intern at Pulsifi.</p><p>Edelyn self-learns via the all-mighty YouTube and loves to paint sceneries during her free time.</p>",
         "photo": {
-            "normal": "edelyn_seah-normal.jpg",
+            "normal": "edelyn_seah-normal",
             "fun": ""
         },
         "profile": {
@@ -131,8 +131,8 @@
         "gender": "boy",
         "description": "<p>Chris is passionate about solving problems through technology. He fell in love with coding since his first web application, and has been working in the tech scene for more than 10 years.</p><p>A cup of coffee will always brighten up his day.</p>",
         "photo": {
-            "normal": "chris_ng-normal.jpg",
-            "fun": "chirs_ng-fun.jpg"
+            "normal": "chris_ng-normal",
+            "fun": "chirs_ng-fun"
         },
         "profile": {
             "url": "https://www.linkedin.com/in/chrisngwz/",
@@ -149,7 +149,7 @@
         "gender": "boy",
         "description": "Jam works in UI/UX and is based in Malaysia, Kuala Lumpur. Love doing design with code.",
         "photo": {
-            "normal": "jam_long-normal.jpg",
+            "normal": "jam_long-normal",
             "fun": ""
         },
         "profile": {
@@ -167,7 +167,7 @@
         "gender": "boy",
         "description": "Hong Tat has been working with angular and c# in the past. A man with spec, and someone who loves marathon.",
         "photo": {
-            "normal": "hong_tat-normal.jpg",
+            "normal": "hong_tat-normal",
             "fun": ""
         },
         "profile": {

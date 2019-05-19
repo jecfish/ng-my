@@ -22,7 +22,10 @@
           <article class="team-card --{{ m.color }}" [class.--selected]="selectedSpeakerId === m.id" (click)="selectSpeaker(m.id)">
             <div class="team-card-profile">
               <figure class="team-card-pic">
-                <img src="../../assets/imgs/speakers/{{ m.id }}.jpg" alt="{{ m.name }}" class="team-card-img" />
+                <picture>
+                  <source srcset="../../assets/imgs/speakers/{{ m.id }}.webp" type="image/webp">
+                  <img src="../../assets/imgs/speakers/{{ m.id }}.jpg" alt="{{ m.name }}" class="team-card-img" />
+                </picture>
               </figure>
               <picture class="team-card-food">
                   <source srcset="../../assets/imgs/speaker-food/{{ m.food }}.webp" type='image/webp'>

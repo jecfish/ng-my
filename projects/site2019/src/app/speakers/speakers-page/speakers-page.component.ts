@@ -27,7 +27,7 @@ export class SpeakersPageComponent implements OnInit {
       thumbnails: [
         {
           url: `/speakers/${speaker.id}`,
-          img: `../../assets/imgs/speakers/${speaker.id}.jpg`,
+          img: `../../assets/imgs/speakers/${speaker.id}`,
           name: speaker.name,
           links: speaker.profile.map(p => {
             return {
