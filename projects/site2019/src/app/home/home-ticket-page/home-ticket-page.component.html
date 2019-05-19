@@ -72,7 +72,7 @@
                 <div class="stats-metrics">days</div>
               </div>
               <div class="stats-item">
-                <div class="stats-number">300+</div>
+                <div class="stats-number">350+</div>
                 <div class="stats-metrics">attendees</div>
               </div>
               <div class="stats-item">
@@ -151,7 +151,8 @@
   <ng-container>
     <section class="speakers-section">
       <h2 class="home-section-title --decorated">
-        Our <span class="text-primary text-shadow">FEATURED</span> speaker
+        <!-- Our <span class="text-primary text-shadow">FEATURED</span> speaker -->
+        Our <span class="text-primary text-shadow">Speakers</span>
       </h2>
       <div class="speakers-carousel">
         <ul class="carousel-inner">
@@ -171,12 +172,12 @@
                   </div>
                 </div>
                 <p class="speakers-name">{{ speaker.name }}</p>
-                <ul class="speakers-links">
+                <!-- <ul class="speakers-links">
                   <li class="speakers-links-item">
                     <a [href]="speaker.profile?.url" class="speakers-links-url">
                       <i class="fab fa-{{ speaker.profile?.type }}"></i></a>
                   </li>
-                </ul>
+                </ul> -->
               </div>
               <div class="speakers-description">
                 <div class="speakers-title">{{ speaker.title }}</div>
@@ -189,7 +190,7 @@
       <div class="speakers-more">
         <a routerLink="/speakers" class="btn btn-secondary">
           <div class="btn-inner">
-            View all featured speakers
+            View all speakers
           </div>
         </a>
       </div>
@@ -197,18 +198,16 @@
     <div class="speakers-deco slant"></div>
     <section class="sessions">
       <div class="container">
-        <h2 class="home-section-title">Check out the <span class="text-primary text-shadow">sessions</span> of
-          #ngMY2019!
+        <h2 class="home-section-title">Our <span class="text-primary text-shadow">Sessions</span>
         </h2>
         <p class="sessions-text">
-          Learn about the latest trends in <strong class="text-primary">Angular</strong> and frontend web
-          technologies in an inspiring, open meet and
-          connect with our speakers and other like-minded, passionate developers.
+          Learn about the latest trends in Angular and frontend web
+          technologies, meet and connect with our speakers and other like-minded, passionate developers.
         </p>
         <div class="btn-group">
           <a routerLink="/sessions" class="btn btn-primary">
             <div class="btn-inner">
-              View all available sessions
+              View all sessions
             </div>
           </a>
           <a routerLink="/schedule" class="btn btn-secondary">

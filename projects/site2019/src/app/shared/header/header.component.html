@@ -14,7 +14,7 @@
 
         <ul class="header-social">
           <li class="header-social-item" *ngFor="let s of socialMediaList">
-            <a target="_blank" rel="noreferer" [href]="s.url" class="header-social-link" (click)="trackEvent(s.icon)">
+            <a target="_blank" rel="noreferer" [href]="s.url" class="header-social-link" [attr.aria-label]="s.icon" (click)="trackEvent(s.icon)">
               <i class="fab fa-{{ s.icon }}"></i>
             </a>
           </li>
@@ -25,7 +25,7 @@
           <i class="fas fa-ticket-alt icon-left"></i>
           Buy ticket</span>
       </a>
-      <button class="header-nav-toggle" (click)="toggleMobileNav()">
+      <button class="header-nav-toggle" aria-label="nav" (click)="toggleMobileNav()">
         <span></span>
         <span></span>
         <span></span>
