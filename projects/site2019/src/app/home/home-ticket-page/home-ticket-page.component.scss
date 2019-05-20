@@ -924,6 +924,10 @@
 
         &-item {
           width: 400px;
+
+          @include mobile {
+            padding: 0 $space;
+          }
         }
       }
     }
@@ -945,6 +949,10 @@
 
         &-item {
           width: 220px;
+
+          @include mobile {
+            padding: 0 $space-s;
+          }
         }
       }
     }
@@ -1029,10 +1037,7 @@
     @include mobile {
       width: 100px;
       margin: $space;
-
-      &+& {
-        margin-left: $space;
-      }
+      padding: 0 $space-xs;
     }
 
     &-label {
