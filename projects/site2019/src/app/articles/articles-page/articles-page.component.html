@@ -9,7 +9,10 @@
       <div class="post-list">
         <article class="post-card" *ngFor="let p of posts">
           <figure class="post-pic">
-            <img src="../../assets/imgs/posts/{{ p.img }}" [alt]="p.title" [title]="p.title" class="post-img">
+            <picture>
+              <source srcset="../../assets/imgs/posts/{{ p.img }}.webp" type='image/webp'>
+              <img src="../../assets/imgs/posts/{{ p.img }}.jpg" [alt]="p.title" [title]="p.title" class="post-img">
+            </picture>
           </figure>
           <h5 class="post-title">{{ p.title }}</h5>
           <p class="post-desc">{{ p.desc }}</p>
