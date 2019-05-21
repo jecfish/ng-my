@@ -46,9 +46,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
     this.socialMediaList = socialMediaList;
 
-    // this.router.events.subscribe(
-    //   e => e instanceof NavigationEnd && (this.isShowMobileNav = false)
-    // );
+    this.router.events.subscribe(
+      e => e instanceof NavigationEnd && (this.isShowMobileNav = false)
+    );
   }
 
   trackEvent(event: string) {
