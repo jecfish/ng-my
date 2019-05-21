@@ -15,14 +15,16 @@
         <ul class="header-social">
           <li class="header-social-item" *ngFor="let s of socialMediaList">
             <a target="_blank" rel="noreferer" [href]="s.url" class="header-social-link" [attr.aria-label]="s.icon" (click)="trackEvent(s.icon)">
-              <i class="fab fa-{{ s.icon }}"></i>
+              <!-- <i class="fab fa-{{ s.icon }}"></i> -->
+              <span class="icon-{{ s.icon }}"></span>
             </a>
           </li>
         </ul>
       </nav>
       <a class="btn btn-primary header-ticket" href="https://ti.to/ng-my/ng-my-2019" target="_blank" rel="noreferer">
         <span class="btn-inner">
-          <i class="fas fa-ticket-alt icon-left"></i>
+          <!-- <i class="fas fa-ticket-alt icon-left"></i> -->
+          <span class="icon-ticket icon-left"></span>
           Buy ticket</span>
       </a>
       <button class="header-nav-toggle" aria-label="nav" (click)="toggleMobileNav()">
