@@ -31,7 +31,7 @@ export class SchedulePageComponent implements OnInit {
       thumbnails: session.speakers.map(x => {
         return {
           url: '',
-          img: `../../assets/imgs/speakers/${x.id}.jpg`,
+          img: `../../assets/imgs/speakers/${x.id}`,
           name: x.name,
           links: x.profile.map(p => {
             return {
