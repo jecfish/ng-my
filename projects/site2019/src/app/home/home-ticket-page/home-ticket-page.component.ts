@@ -11,9 +11,9 @@ import postList from '../../../assets/data/posts.json';
   styleUrls: ['./home-ticket-page.component.scss']
 })
 export class HomeTicketPageComponent implements OnInit {
-  @ViewChild('stats') private statsEl: any;
+  @ViewChild('stats') statsEl: any;
 
-  @ViewChild('subscribe') private subscribeEl: any;
+  @ViewChild('subscribe') subscribeEl: any;
 
   sponsors = sponsors;
   posts = postList;
@@ -31,19 +31,12 @@ export class HomeTicketPageComponent implements OnInit {
     this.randomSpeaker();
   }
 
-  scrollTo(location) {
-    const getTop = e => e.getBoundingClientRect().top;
-    const elModel = {
-      statsEl: this.statsEl.nativeElement,
-      subscribeEl: this.subscribeEl.nativeElement
-    };
+  scrollTo(location: string) {
+    const getTop = (e: any) => e.getBoundingClientRect().top;
 
-    if (!elModel[location]) {
-      return;
-    }
-
+    const el = (this[location] as any).nativeElement;
     const headerHeight = 60;
-    const target = getTop(elModel[location]) + window.scrollY - headerHeight;
+    const target = getTop(el) + window.scrollY - headerHeight;
 
     this.trackEvent(location);
     this.pageSvc.scrollWindowTo(target, 1000);
