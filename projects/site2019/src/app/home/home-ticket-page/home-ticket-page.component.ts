@@ -1,30 +1,24 @@
-import { Component, OnInit, ViewChild, HostListener, OnDestroy } from '@angular/core';
+import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
 import { PageService } from '../../services/page.service';
 
 import sponsors from '../../../assets/data/sponsors.json';
 import speakerList from '../../../assets/data/speakers.json';
 import postList from '../../../assets/data/posts.json';
-import { fromEvent, Subscription } from 'rxjs';
-import { takeWhile } from 'rxjs/operators';
-
 
 @Component({
   selector: 'my-home-ticket-page',
   templateUrl: './home-ticket-page.component.html',
   styleUrls: ['./home-ticket-page.component.scss']
 })
-export class HomeTicketPageComponent implements OnInit, OnDestroy {
-  @ViewChild('stats') statsElement: any;
-  stats: any;
+export class HomeTicketPageComponent implements OnInit {
+  @ViewChild('stats') statsEl: any;
 
-  @ViewChild('subscribe') subscribeElement: any;
-  subscribe: any;
+  @ViewChild('subscribe') subscribeEl: any;
 
   sponsors = sponsors;
   posts = postList;
   speaker: any;
   shouldShowStats = false;
-  windowScrollSub: Subscription;
 
   readonly TOTAL_SPEAKER = 33;
 
@@ -35,25 +29,14 @@ export class HomeTicketPageComponent implements OnInit, OnDestroy {
     this.pageSvc.setPage({ title });
 
     this.randomSpeaker();
-
-    this.windowScrollSub = fromEvent(window, 'scroll').pipe(
-      takeWhile(() => !this.shouldShowStats)
-    ).subscribe(() => this.animateStats());
   }
 
-  scrollTo(location) {
-    const getTop = e => e.getBoundingClientRect().top;
-    const elModel = {
-      stats: this.statsElement.nativeElement,
-      subscribe: this.subscribeElement.nativeElement
-    };
+  scrollTo(location: string) {
+    const getTop = (e: any) => e.getBoundingClientRect().top;
 
-    if (!elModel[location]) {
-      return;
-    }
-
+    const el = (this[location] as any).nativeElement;
     const headerHeight = 60;
-    const target = getTop(elModel[location]) + window.scrollY - headerHeight;
+    const target = getTop(el) + window.scrollY - headerHeight;
 
     this.trackEvent(location);
     this.pageSvc.scrollWindowTo(target, 1000);
@@ -67,7 +50,7 @@ export class HomeTicketPageComponent implements OnInit, OnDestroy {
     });
   }
 
-  randomSpeaker() {
+  private randomSpeaker() {
     const num = this.pageSvc.randomNumber(this.TOTAL_SPEAKER, 0);
     const selected = speakerList[num];
     const description = `${selected.description.substr(0, 300)}${
@@ -81,15 +64,14 @@ export class HomeTicketPageComponent implements OnInit, OnDestroy {
     };
   }
 
-  private animateStats() {
-    const { top } = this.statsElement.nativeElement.getBoundingClientRect();
+  @HostListener('window:scroll', [])
+  animateStats() {
+    if (this.shouldShowStats) return;
+
+    const { top } = this.statsEl.nativeElement.getBoundingClientRect();
     const { innerHeight } = window;
     const trigger = top - innerHeight / 2;
 
     if (trigger <= 0) this.shouldShowStats = true;
-  }
-
-  ngOnDestroy(): void {
-    this.windowScrollSub.unsubscribe();
   }
 }
