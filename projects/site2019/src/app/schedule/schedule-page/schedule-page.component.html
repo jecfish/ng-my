@@ -19,7 +19,8 @@
         <div [class.schedule-talk]="i.speakers?.length" *ngFor="let i of s.items">
           <h5>{{i.title}}
             <a class="icon-right" (click)="selectSession(i.session)" *ngIf="i.hasSessionInfo" title="Session info">
-              <i class="fas fa-info-circle"></i>
+              <!-- <i class="fas fa-info-circle"></i> -->
+              <span class="icon-info-circle"></span>
             </a>
           </h5>
           <h6 *ngIf="i.speakers">{{i.speakers.join(", ")}}</h6>
@@ -57,7 +58,8 @@
         <div [class.schedule-talk]="i.speakers?.length" *ngFor="let i of s.items">
           <h5>{{i.title}}
             <a class="icon-right" (click)="selectSession(i.session)" *ngIf="i.hasSessionInfo" title="Session info">
-              <i class="fas fa-info-circle"></i>
+              <!-- <i class="fas fa-info-circle"></i> -->
+              <span class="icon-info-circle"></span>
             </a>
           </h5>
           <h6 *ngIf="i.speakers">{{i.speakers.join(", ")}}</h6>

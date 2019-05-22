@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import speakerList from '../../../assets/data/speakers.json';
 import { ActivatedRoute } from '@angular/router';
 import { PageService } from '../../services/page.service';
 import { Location } from '@angular/common';
 import { environment } from '../../../environments/environment';
-import profileIcons from '../../../assets/data/profile-url-icons.json';
 import { IModal } from '../../shared/modal/modal.component.js';
+import speakerList from '../../../assets/data/speakers.json';
+import profileIcons from '../../../assets/data/profile-url-icons.json';
 
 @Component({
   selector: 'my-speakers-page',
