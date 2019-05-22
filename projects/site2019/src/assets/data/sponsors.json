@@ -1,0 +1,168 @@
+[
+  {
+    "level": "ultimate",
+    "title": "Ultimate Sponsors",
+    "list": [
+      {
+        "image": "pulsifi",
+        "name": "pulsifi",
+        "url": "https://pulsifi.me/"
+      },
+      {
+        "image": "nativescript",
+        "name": "nativescript",
+        "url": "https://www.nativescript.org/"
+      },
+      {
+        "image": "appspace",
+        "name": "appspace",
+        "url": "https://www.appspace.com/"
+      },
+      {
+        "image": "exxonmobil",
+        "name": "ExxonMobil",
+        "url": "https://corporate.exxonmobil.com/"
+      }
+    ]
+  },
+  {
+    "level": "silver",
+    "title": "Silver Sponsors",
+    "list": [
+      {
+        "image": "seek-asia",
+        "name": "seek asia",
+        "url": "https://www.seekasia.com/"
+      },
+      {
+        "image": "ambition",
+        "name": "ambition",
+        "url": "http://www.ambition.com.my/"
+      },
+      {
+        "image": "microsoft",
+        "name": "microsoft",
+        "url": "https://www.microsoft.com/"
+      }
+    ]
+  },
+  {
+    "level": "misc",
+    "title": "Special Sponsors",
+    "list": [
+      {
+        "image": "jp-associates",
+        "name": "jp associates",
+        "url": "https://www.jp-associates.asia",
+        "type": "coffee"
+      },
+      {
+        "image": "scotch",
+        "name": "scotch",
+        "url": "https://scotch.io/",
+        "type": "meal"
+      },
+      {
+        "image": "nrwl",
+        "name": "nrwl",
+        "url": "https://nrwl.io/",
+        "type": "meal"
+      },
+      {
+        "image": "cypress",
+        "name": "cypress",
+        "url": "https://cypress.io/",
+        "type": "scholarship"
+      },
+      {
+        "image": "egghead",
+        "name": "egghead.io",
+        "url": "https://egghead.io/",
+        "type": "gift"
+      }
+    ]
+  },
+  {
+    "level": "bronze",
+    "title": "Bronze Sponsors",
+    "list": [
+      {
+        "image": "pulsifi",
+        "name": "pulsifi",
+        "url": "https://pulsifi.me/"
+      },
+      {
+        "image": "nativescript",
+        "name": "nativescript",
+        "url": "https://www.nativescript.org/"
+      },
+      {
+        "image": "appspace",
+        "name": "appspace",
+        "url": "https://www.appspace.com/"
+      },
+      {
+        "image": "exxonmobil",
+        "name": "ExxonMobil",
+        "url": "https://corporate.exxonmobil.com/"
+      }
+    ]
+  },
+  {
+    "level": "misc",
+    "title": "Media Partners",
+    "list": [
+      {
+        "image": "ghim",
+        "name": "ghim",
+        "url": "https://www.facebook.com/GhimPictures"
+      }
+    ]
+  },
+  {
+    "level": "community",
+    "title": "Community Partners",
+    "list": [
+      {
+        "image": "nestjs",
+        "name": "nestjs",
+        "url": "https://nestjs.com/"
+      },
+      {
+        "image": "wwcodekl",
+        "name": "Women Who Code KL",
+        "url": "https://www.facebook.com/womenwhocodekl/"
+      },
+      {
+        "image": "stc",
+        "name": "Sunway Tech Club",
+        "url": "https://www.facebook.com/sunwaytechclub/"
+      },
+      {
+        "image": "acat",
+        "name": "acat penang",
+        "url": "https://acatpenang.com/"
+      },
+      {
+        "image": "gdgkl",
+        "name": "Google Developers Group KL",
+        "url": "https://www.facebook.com/GDGKualaLumpur/"
+      },
+      {
+        "image": "kljs",
+        "name": "Kuala Lumpur JS",
+        "url": "https://www.facebook.com/groups/kualalumpurjs/"
+      },
+      {
+        "image": "angular-malaysia",
+        "name": "Angular Malaysia",
+        "url": "https://www.facebook.com/groups/angular.malaysia/"
+      },
+      {
+        "image": "tfmy",
+        "name": "the Frontend Malaysia",
+        "url": "https://www.facebook.com/frontendmalaysia/"
+      }
+    ]
+  }
+]

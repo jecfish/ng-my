@@ -24,14 +24,14 @@ export class HomeTicketPageComponent implements OnInit {
   @ViewChild('subscribe') subscribeElement: any;
   subscribe: any;
 
-  shouldShowSection = {
-    stats: false,
-    mailing: false,
-    speakers: false,
-    agenda: false,
-    posts: false,
-    sponsors: false
-  };
+  // shouldShowSection = {
+  //   stats: false,
+  //   mailing: false,
+  //   speakers: false,
+  //   agenda: false,
+  //   posts: false,
+  //   sponsors: false
+  // };
 
   sponsors = [
     {
