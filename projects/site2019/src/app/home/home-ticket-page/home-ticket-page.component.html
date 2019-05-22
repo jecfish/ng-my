@@ -274,17 +274,17 @@
           Articles
         </h2>
         <div class="row post-list">
-          <div class="col" *ngFor="let p of fewPosts">
+          <div class="col" *ngFor="let p of posts | keyvalue | slice:0:3">
             <article class="post-card">
               <figure class="post-pic">
                 <picture>
-                  <source srcset="../../assets/imgs/posts/{{ p.img }}.webp" type="image/webp">
-                  <img src="../../assets/imgs/posts/{{ p.img }}.jpg" [alt]="p.title">
+                  <source srcset="../../assets/imgs/posts/{{ p.value.img }}.webp" type="image/webp">
+                  <img src="../../assets/imgs/posts/{{ p.value.img }}.jpg" [alt]="p.value.title">
                 </picture>
               </figure>
-              <h5 class="post-title">{{ p.title }}</h5>
-              <p class="post-desc">{{ p.desc }}</p>
-              <a routerLink="/post/{{ p.url }}" class="btn btn-secondary">
+              <h5 class="post-title">{{ p.value.title }}</h5>
+              <p class="post-desc">{{ p.value.desc }}</p>
+              <a routerLink="/post/{{ p.key }}" class="btn btn-secondary">
                 <span class="btn-inner">Read more</span>
               </a>
             </article>
@@ -319,7 +319,7 @@
           </div>
           <ul class="sponsors-list">
             <li class="sponsors-item" *ngFor="let s of sponsor.list">
-              <p class="sponsors-item-label" *ngIf="sponsor.level === 'misc' && sponsor.title !== 'Media partners'">
+              <p class="sponsors-item-label" *ngIf="sponsor.level === 'misc' && sponsor.title !== 'Media Partners'">
                 {{ s.type }}
               </p>
               <a [href]="s.url" target="_blank" rel="noreferer">
