@@ -1022,9 +1022,9 @@
     min-height: 120px;
     margin: 20px;
 
-    @include mobile {
-      flex-wrap: wrap;
-    }
+    // @include mobile {
+    flex-wrap: wrap;
+    // }
   }
 
   &-item {
@@ -1033,6 +1033,7 @@
     border: 2px solid $black;
     padding: 0 $space;
     box-shadow: 4px 4px $black;
+    margin: $space;
 
     &+& {
       margin-left: $space;
@@ -1040,7 +1041,6 @@
 
     @include mobile {
       width: 100px;
-      margin: $space;
       padding: 0 $space-xs;
     }
 
