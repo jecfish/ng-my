@@ -4,24 +4,35 @@
     "title": "Ultimate Sponsors",
     "list": [
       {
-        "image": "pulsifi",
-        "name": "pulsifi",
-        "url": "https://pulsifi.me/"
+        "image": "sunwayuniversity",
+        "name": "sunway university",
+        "url": "https://university.sunway.edu.my/"
+      }
+    ]
+  },
+  {
+    "level": "gold",
+    "title": "Gold Sponsors",
+    "list": [
+      {
+        "image": "firebase",
+        "name": "firebase",
+        "url": "https://firebase.google.com/"
       },
       {
-        "image": "nativescript",
-        "name": "nativescript",
-        "url": "https://www.nativescript.org/"
+        "image": "apigate",
+        "name": "apigate",
+        "url": "https://www.apigate.com"
       },
       {
-        "image": "appspace",
-        "name": "appspace",
-        "url": "https://www.appspace.com/"
+        "image": "nintex",
+        "name": "nintex",
+        "url": "https://www.nintex.com/"
       },
       {
-        "image": "exxonmobil",
-        "name": "ExxonMobil",
-        "url": "https://corporate.exxonmobil.com/"
+        "image": "airasia",
+        "name": "airasia",
+        "url": "https://careers.airasia.com/"
       }
     ]
   },
