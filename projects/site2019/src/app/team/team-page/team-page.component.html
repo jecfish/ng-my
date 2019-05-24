@@ -23,13 +23,13 @@
   <section class="main">
     <div class="container">
       <div class="team-list">
-        <div class="team-list-item" *ngFor="let m of teamMembers; let i = index">
-          <article class="team-card --{{ m.gender }}" [class.--selected]="selectedMemberId === m.id" (click)="selectMember(m.id)">
+        <div class="team-list-item" *ngFor="let m of members; let i = index">
+          <article class="team-card" [class.--selected]="selectedMemberId === m.id" (click)="selectMember(m.id)">
             <div class="team-card-profile">
               <figure class="team-card-pic">
                 <picture>
-                    <source srcset="../../assets/imgs/team/{{ m.photo.normal }}.webp" type="image/webp">
-                    <img src="../../assets/imgs/team/{{ m.photo.normal }}.jpg" alt="{{ m.name }}" class="team-card-img" />
+                    <source srcset="../../assets/imgs/team/{{ m.photo }}.webp" type="image/webp">
+                    <img src="../../assets/imgs/team/{{ m.photo }}.jpg" alt="{{ m.name }}" class="team-card-img" />
                 </picture>
               </figure>
               <picture class="team-card-food">
@@ -54,12 +54,12 @@
         </div>
       </div>
       <div class="team-list">
-        <div class="team-list-item" *ngFor="let m of organizerMembers;">
-          <article class="team-card --{{ m.gender }}" [class.--selected]="selectedMemberId === m.id" (click)="selectMember(m.id)">
+        <div class="team-list-item" *ngFor="let m of organizers;">
+          <article class="team-card" [class.--selected]="selectedMemberId === m.id" (click)="selectMember(m.id)">
             <div class="team-card-profile">
               <figure class="team-card-pic">
-                <source srcset="../../assets/imgs/team/{{ m.photo.normal }}.webp" type="image/webp">
-                <img src="../../assets/imgs/team/{{ m.photo.normal }}.jpg" alt="{{ m.name }}" class="team-card-img" />
+                <source srcset="../../assets/imgs/team/{{ m.photo }}.webp" type="image/webp">
+                <img src="../../assets/imgs/team/{{ m.photo }}.jpg" alt="{{ m.name }}" class="team-card-img" />
               </figure>
               
               <img class="team-card-food" src="../../assets/imgs/speaker-food/{{ m.food }}.png" alt="">

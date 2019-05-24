@@ -5018,7 +5018,8 @@ prepend-http@^2.0.0:
 
 prerender-spa-plugin@^3.4.0:
   version "3.4.0"
-  resolved "https://registry.npmjs.org/prerender-spa-plugin/-/prerender-spa-plugin-3.4.0.tgz#332f55e68e1bba68bcf176d8c8dfc8380c5dee8a"
+  resolved "https://registry.yarnpkg.com/prerender-spa-plugin/-/prerender-spa-plugin-3.4.0.tgz#332f55e68e1bba68bcf176d8c8dfc8380c5dee8a"
+  integrity sha512-4Gtu7XIz5p0VBi1527c/ogu0NNcM5kJPG9q3F26SioeeURVbIJ11B6fuK8pxTmlPqffKPR/2TRRf4o020r4Fqw==
   dependencies:
     "@prerenderer/prerenderer" "^0.7.2"
     "@prerenderer/renderer-puppeteer" "^0.2.0"
