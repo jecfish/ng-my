@@ -342,6 +342,22 @@
     flex: 1;
     margin: $space-l;
   }
+
+  &-item:nth-child(even) > .team-card {
+    background: $red;
+
+    &:hover {
+      background: $red-dark;
+    }
+  }
+
+  &-item:nth-child(odd) > .team-card {
+    background: $blue;
+
+    &:hover {
+      background: $blue-dark;
+    }
+  }
 }
 
 .team-card {
@@ -355,24 +371,6 @@
   cursor: pointer;
   transition: background 0.1s ease;
   height: 100%;
-
-  &.--red,
-  &.--boy {
-    background: $red;
-
-    &:hover {
-      background: $red-dark;
-    }
-  }
-
-  &.--blue,
-  &.--girl {
-    background: $blue;
-
-    &:hover {
-      background: $blue-dark;
-    }
-  }
 
   &.--selected {
     background: $yellow;

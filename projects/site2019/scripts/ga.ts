@@ -4,6 +4,7 @@ export class GoogleAnalytics {
         const tag = document.createElement('script');
         tag.async = true;
         tag.src = `https://www.googletagmanager.com/gtag/js?id=${config.trackingID}`;
+        tag.setAttribute('defer','');
 
         document.documentElement.firstChild.appendChild(tag);
 

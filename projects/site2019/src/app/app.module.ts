@@ -10,9 +10,6 @@ import { ModalComponent } from './shared/modal/modal.component';
 @NgModule({
   declarations: [
     AppComponent,
-    // PlaceholderPageComponent,
-    // HomePageComponent,
-    // HomeEarlyPageComponent,
     HeaderComponent,
     FooterComponent,
   ],

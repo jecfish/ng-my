@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import memberList from '../../../assets/data/members.json';
+import team from '../../../assets/data/members.json';
 import { ActivatedRoute } from '@angular/router';
 import { PageService } from '../../services/page.service';
 import { Location } from '@angular/common';
@@ -13,22 +13,14 @@ import profileIcons from '../../../assets/data/profile-url-icons.json';
   styleUrls: ['./team-page.component.scss']
 })
 export class TeamPageComponent implements OnInit {
-  memberList = [];
-  organizers = ['jecelyn-yeen'];
+  members = team.members;
+  organizers = team.organizers;
   selectedMemberId = null;
 
   profileIconsModel = profileIcons;
 
-  get organizerMembers() {
-    return this.memberList.filter(x => this.organizers.includes(x.id));
-  }
-
-  get teamMembers() {
-    return this.memberList.filter(x => !this.organizers.includes(x.id));
-  }
-
   get selectedMember() {
-    return this.memberList.find(x => x.id === this.selectedMemberId);
+    return this.members.find(x => x.id === this.selectedMemberId) || this.organizers.find(x => x.id === this.selectedMemberId);
   }
 
   get selectedItem() {
@@ -40,7 +32,7 @@ export class TeamPageComponent implements OnInit {
       thumbnails: [
         {
           url: `/team/${member.id}`,
-          img: `../../assets/imgs/team/${member.photo.normal }`,
+          img: `../../assets/imgs/team/${member.photo}`,
           name: member.name,
           links: [member.profile].map(p => {
             return {
@@ -63,18 +55,11 @@ export class TeamPageComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.memberList = memberList.map(x => ({
-      ...x,
-      ...{
-        food: this.pageSvc.randomFoodIcon()
-      }
-    }));
-
     const selectedMemberId = this.route.snapshot.paramMap.get('id');
     this.selectMember(selectedMemberId);
   }
 
-  selectMember(id) {
+  selectMember(id: string) {
     this.selectedMemberId = id;
 
     const path = id ? `/team/${id}` : '/team';
@@ -87,7 +72,7 @@ export class TeamPageComponent implements OnInit {
     this.pageSvc.setPage({
       title,
       metaDesc: 'The team behind NG-MY 2019.',
-      metaImg: `${environment.baseUrl}/assets/imgs/team/${id ? this.selectedMember.photo.normal : 'team-meta'}.jpg`,
+      metaImg: `${environment.baseUrl}/assets/imgs/team/${id ? this.selectedMember.photo : 'team-meta'}.jpg`,
       skipTitlePostfix: true
     });
   }

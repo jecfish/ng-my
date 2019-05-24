@@ -20,7 +20,6 @@
           <li class="hero-misc-item">
             <a href="http://www.google.com/calendar/event?action=TEMPLATE&dates=20190706T000000Z%2F20190707T100000Z&text=NG-MY%202019&location=Sunway%20University&details=Refer%20to%20website%20for%20agenda%20https%3A%2F%2Fng-my.org"
               target="_blank" rel="noreferer">
-              <!-- <i class="fas fa-calendar-alt icon-left text-primary"></i>July -->
               <span class="icon-calendar icon-left text-primary"></span>
               6th & 7th
             </a>
@@ -28,7 +27,6 @@
           </li>
           <li class="hero-misc-item">
             <a href="https://goo.gl/maps/aWtc7L7J3yN2" target="_blank" rel="noreferer">
-              <!-- <i class="fas fa-map-marker-alt icon-left text-primary"></i> -->
               <span class="icon-map-marker icon-left text-primary"></span>
               Sunway University
             </a>
@@ -37,13 +35,11 @@
         <div class="btn-group hero-btns">
           <a class="btn btn-primary" href="https://ti.to/ng-my/ng-my-2019" target="_blank" rel="noreferer">
             <span class="btn-inner">
-              <!-- <i class="fas fa-ticket-alt icon-left"></i> -->
               <span class="icon-ticket icon-left"></span>
               Get your tickets!</span>
           </a>
           <button class="btn btn-secondary" (click)="scrollTo('subscribeEl')">
             <span class="btn-inner">
-              <!-- <i class="fas fa-envelope icon-left"></i> -->
               <span class="icon-envelope icon-left"></span>
               Subscribe &amp; stay up to date</span>
           </button>
@@ -61,8 +57,6 @@
   </picture>
 </div>
 <main class="main home-main">
-  <!-- stats -->
-  <!-- <div (deferLoad)="shouldShowSection.stats = true"></div> -->
   <ng-container>
     <section class="stats" #stats>
       <picture class="food-roti-canai">
@@ -107,8 +101,6 @@
       </div>
     </section>
   </ng-container>
-  <!-- mailing -->
-  <!-- <div (deferLoad)="shouldShowSection.mailing = true"></div> -->
   <ng-container>
     <div class="mailing-deco mailing-deco-up slant"></div>
     <section id="mc_embed_signup" class="mailing-section" #subscribe>
@@ -156,12 +148,9 @@
     </section>
     <div class="mailing-deco mailing-deco-down slant"></div>
   </ng-container>
-  <!-- speakers -->
-  <!-- <div (deferLoad)="shouldShowSection.speakers = true"></div> -->
   <ng-container>
     <section class="speakers-section">
       <h2 class="home-section-title --decorated">
-        <!-- Our <span class="text-primary text-shadow">FEATURED</span> speaker -->
         Our <span class="text-primary text-shadow">Speakers</span>
       </h2>
       <div class="speakers-carousel">
@@ -182,12 +171,6 @@
                   </div>
                 </div>
                 <p class="speakers-name">{{ speaker.name }}</p>
-                <!-- <ul class="speakers-links">
-                  <li class="speakers-links-item">
-                    <a [href]="speaker.profile?.url" class="speakers-links-url">
-                      <i class="fab fa-{{ speaker.profile?.type }}"></i></a>
-                  </li>
-                </ul> -->
               </div>
               <div class="speakers-description">
                 <div class="speakers-title">{{ speaker.title }}</div>
@@ -265,8 +248,6 @@
     </section>
     <div class="sessions-deco slant"></div>
   </ng-container>
-  <!-- posts -->
-  <!-- <div (deferLoad)="shouldShowSection.posts = true"></div> -->
   <ng-container>
     <div class="posts-section">
       <div class="container">
@@ -305,8 +286,6 @@
       </picture>
     </div>
   </ng-container>
-  <!-- sponsors -->
-  <!-- <div (deferLoad)="shouldShowSection.sponsors = true"></div> -->
   <ng-container>
     <section class="sponsors-section">
       <div class="container">
