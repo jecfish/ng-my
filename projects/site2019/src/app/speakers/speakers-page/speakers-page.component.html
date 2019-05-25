@@ -18,7 +18,7 @@
   <section class="main">
     <div class="container">
       <div class="team-list">
-        <div class="team-list-item" *ngFor="let m of speakerList; let i = index; trackBy: m.id">
+        <div class="team-list-item" *ngFor="let m of speakerList; let i = index; trackBy: m?.id">
           <article class="team-card --{{ m.color }}" [class.--selected]="selectedSpeakerId === m.id" (click)="selectSpeaker(m.id)">
             <div class="team-card-profile">
               <figure class="team-card-pic">
