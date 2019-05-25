@@ -297,7 +297,7 @@
             <h3 class="sponsors-title">{{ sponsor.title }}</h3>
           </div>
           <ul class="sponsors-list">
-            <li class="sponsors-item" *ngFor="let s of sponsor.list; trackBy: s?.name">
+            <li class="sponsors-item" *ngFor="let s of sponsor.list">
               <p class="sponsors-item-label" *ngIf="sponsor.level === 'misc' && sponsor.title !== 'Media Partners'">
                 {{ s.type }}
               </p>
