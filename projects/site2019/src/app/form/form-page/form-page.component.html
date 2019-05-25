@@ -1,4 +1,4 @@
-<div *ngIf="selectedForm.id">
+<ng-container *ngIf="selectedForm.id">
     <iframe [src]="selectedForm.url"
     width="640" [height]="selectedForm.height" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-</div>
+</ng-container>
