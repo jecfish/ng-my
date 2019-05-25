@@ -16,7 +16,7 @@
         </div>
         <div class="footer-social">
           <ul class="footer-social-list">
-            <li class="footer-social-item" *ngFor="let s of socialMediaList">
+            <li class="footer-social-item" *ngFor="let s of socialMediaList; trackBy: s.icon">
               <a target="_blank" rel="noreferrer" [href]="s.url" class="footer-social-link" [attr.aria-label]="s.icon">
                 <!-- <i class="fab fa-{{ s.icon }}"></i> -->
                 <span class="icon-{{ s.icon }}"></span>

@@ -5,7 +5,7 @@
       <div class="team-highlight-info-container">
         <div class="team-highlight-info">
           <ul class="team-highlight-speakers-list" *ngIf="item.thumbnails.length > 1">
-            <li class="team-highlight-speakers-item" *ngFor="let s of item.thumbnails">
+            <li class="team-highlight-speakers-item" *ngFor="let s of item.thumbnails; trackBy: s.name">
               <!-- <a [routerLink]="s.url" class="team-highlight-speakers-link"> -->
                 <figure class="team-highlight-speakers-pic">
                   <picture>
@@ -18,7 +18,7 @@
                 {{ s.name }}
 
                 <ul class="team-highlight-speakers-misc">
-                  <li class="team-highlight-speakers-misc-item" *ngFor="let p of s.links">
+                  <li class="team-highlight-speakers-misc-item" *ngFor="let p of s.links; trackBy: p.type">
                     <a [href]="p.url" target="_blank" rel="noreferrer" class="team-highlight-speakers-misc-link">
                       <i [class]="p.type"></i>
                     </a>
@@ -28,7 +28,7 @@
             </li>
           </ul>
           <ng-container *ngIf="item.thumbnails.length === 1">
-            <ng-container *ngFor="let s of item.thumbnails">
+            <ng-container *ngFor="let s of item.thumbnails; trackBy: s.name">
               <!-- <a [routerLink]="s.url"> -->
                 <figure class="team-highlight-pic">
                   <picture>
@@ -41,7 +41,7 @@
                 {{ s.name }}
               </div>
               <ul class="team-highlight-misc">
-                <li class="team-highlight-misc-item" *ngFor="let p of s.links">
+                <li class="team-highlight-misc-item" *ngFor="let p of s.links; trackBy: p.type">
                   <a [href]="p.url" target="_blank" rel="noreferrer" class="team-highlight-misc-link">
                     <i [class]="p.type"></i>
                   </a>
