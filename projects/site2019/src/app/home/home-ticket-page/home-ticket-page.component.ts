@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
+import { Component, OnInit, ViewChild, HostListener, ChangeDetectionStrategy } from '@angular/core';
 import { PageService } from '../../services/page.service';
 
 import sponsors from '../../../assets/data/sponsors.json';
@@ -11,9 +11,9 @@ import postList from '../../../assets/data/posts.json';
   styleUrls: ['./home-ticket-page.component.scss']
 })
 export class HomeTicketPageComponent implements OnInit {
-  @ViewChild('stats') statsEl: any;
+  @ViewChild('stats', { static: true }) statsEl: any;
 
-  @ViewChild('subscribe') subscribeEl: any;
+  @ViewChild('subscribe', { static: true }) subscribeEl: any;
 
   sponsors = sponsors;
   posts = postList;
