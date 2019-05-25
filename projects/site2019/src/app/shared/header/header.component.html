@@ -7,13 +7,13 @@
       </a>
       <nav class="header-nav">
         <ul class="header-nav-list">
-          <li class="header-nav-item" *ngFor="let n of navList">
+          <li class="header-nav-item" *ngFor="let n of navList; trackBy: n?.name">
             <a [routerLink]="n.link" class="header-nav-link" (click)="trackEvent(n.name)">{{ n.name }}</a>
           </li>
         </ul>
 
         <ul class="header-social">
-          <li class="header-social-item" *ngFor="let s of socialMediaList">
+          <li class="header-social-item" *ngFor="let s of socialMediaList; trackBy: s?.icon">
             <a target="_blank" rel="noreferrer" [href]="s.url" class="header-social-link" [attr.aria-label]="s.icon" (click)="trackEvent(s.icon)">
               <!-- <i class="fab fa-{{ s.icon }}"></i> -->
               <span class="icon-{{ s.icon }}"></span>

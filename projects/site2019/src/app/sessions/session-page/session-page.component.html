@@ -14,12 +14,12 @@
         <h2 class="section-title">Presentations</h2>
       </div>
       <ul class="session-list">
-        <li class="session-item" *ngFor="let s of mainSession" [class.--selected]="selectedSession?.id === s.id">
+        <li class="session-item" *ngFor="let s of mainSession; trackBy: s?.title" [class.--selected]="selectedSession?.id === s.id">
           <div class="row">
             <div class="col">
               <h5 class="session-topic">{{ s.title }}
                 <div class="session-speaker-list">
-                  <a routerLink="/speakers/{{ p.id }}" class="session-speaker-item" *ngFor="let p of s.speakers">
+                  <a routerLink="/speakers/{{ p.id }}" class="session-speaker-item" *ngFor="let p of s.speakers; trackBy: p?.id">
                     <img src="../../assets/imgs/speakers/{{ p.id }}.jpg" [alt]="p.name" [title]="p.name"
                       class="session-speaker-icon"></a>
                 </div>
@@ -42,12 +42,12 @@
         <h2 class="section-title">Lightning talks</h2>
       </div>
       <ul class="session-list">
-        <li class="session-item" *ngFor="let s of lightningSession" [class.--selected]="selectedSession?.id === s.id">
+        <li class="session-item" *ngFor="let s of lightningSession; trackBy: s?.title" [class.--selected]="selectedSession?.id === s.id">
           <div class="row">
             <div class="col">
               <h5 class="session-topic">{{ s.title }}
                 <div class="session-speaker-list">
-                  <a routerLink="/speakers/{{ p.id }}" class="session-speaker-item" *ngFor="let p of s.speakers">
+                  <a routerLink="/speakers/{{ p.id }}" class="session-speaker-item" *ngFor="let p of s.speakers; trackBy: p?.id">
                     <picture>
                         <source srcset="../../assets/imgs/speakers/{{ p.id }}.webp" type="image/webp">
                         <img src="../../assets/imgs/speakers/{{ p.id }}.jpg" [alt]="p.name" [title]="p.name"
@@ -74,19 +74,19 @@
         <h2 class="section-title">Workshops</h2>
       </div>
       <ul class="session-list">
-        <li class="session-item" *ngFor="let s of workshopSession" [class.--selected]="selectedSession?.id === s.id">
+        <li class="session-item" *ngFor="let s of workshopSession; trackBy: s?.title" [class.--selected]="selectedSession?.id === s.id">
           <div class="row">
             <div class="col">
               <h5 class="session-topic">{{ s.title }}
                 <div class="session-speaker-list">
-                  <a routerLink="/speakers/{{ p.id }}" class="session-speaker-item" *ngFor="let p of s.speakers">
+                  <a routerLink="/speakers/{{ p.id }}" class="session-speaker-item" *ngFor="let p of s.speakers; trackBy: p?.id">
                     <img src="../../assets/imgs/speakers/{{ p.id }}.jpg" [alt]="p.name" [title]="p.name"
                       class="session-speaker-icon"></a>
                 </div>
               </h5>
               <p class="session-desc" [innerHTML]="s.description.short"></p>
               <div class="session-tag-list" *ngIf="!!s.tags.length">
-                <div class="session-tag-item" *ngFor="let t of s.tags">{{ t }}</div>
+                <div class="session-tag-item" *ngFor="let t of s.tags;">{{ t }}</div>
               </div>
               <button class="btn btn-secondary" (click)="selectSession(s.id)">
                 <div class="btn-inner">More info</div>

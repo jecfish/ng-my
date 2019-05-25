@@ -7,7 +7,7 @@
   <section class="main">
     <div class="container">
       <div class="post-list">
-        <article class="post-card" *ngFor="let p of posts">
+        <article class="post-card" *ngFor="let p of posts; trackBy: p.url">
           <figure class="post-pic">
             <picture>
               <source srcset="../../assets/imgs/posts/{{ p.img }}.webp" type='image/webp'>
