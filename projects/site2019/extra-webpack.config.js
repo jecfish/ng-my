@@ -31,6 +31,20 @@ module.exports = {
                   timeout: 0
                 }
               }),
+            postProcess (renderedRoute) {
+                if (renderedRoute.html.includes('<script src="main./')) {
+                    renderedRoute.outputPath = path.join(__dirname, '../../dist/ignore', renderedRoute.route);  
+                    return renderedRoute;
+                }
+
+                renderedRoute.route = renderedRoute.originalRoute;
+                renderedRoute.html = renderedRoute.html.split(/>[\s]+</gmi).join('><');
+                if (renderedRoute.route.endsWith('.html')) {
+                  renderedRoute.outputPath = path.join(__dirname, '../../dist/site2019', renderedRoute.route)
+                }
+        
+                return renderedRoute;
+            },
             // Required - Routes to render.
             routes: [
                 '/', 
