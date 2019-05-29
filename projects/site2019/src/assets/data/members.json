@@ -78,17 +78,6 @@
             "food": "limao-ice-ikat-tepi"
         },
         {
-            "id": "jam-long",
-            "name": "Jam Long",
-            "description": "Jam works in UI/UX and is based in Malaysia, Kuala Lumpur. Love doing design with code.",
-            "photo": "jam_long-normal",
-            "profile": {
-                "url": "http://jaminpie.me",
-                "type": "website"
-            },
-            "food": "tosai"
-        },
-        {
             "id": "hong-tat",
             "name": "Yew Hong Tat",
             "description": "Hong Tat has been working with angular and c# in the past. A man with spec, and someone who loves marathon.",
