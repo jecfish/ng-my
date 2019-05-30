@@ -1,4 +1,16 @@
-[{
+[
+  {
+    "id": "mamak-chat",
+    "type": "chat",
+    "duration": "30 min",
+    "description": "<p>Mamak is the Malaysian version of cafe, the place where conversation happens. There will be <strong>Mamak Chat</strong> after each session. You can discuss topics of your interest further with other participants and also the speakers! Good ideas come from conversation, so let's have a chat or... join and listen what's others have in mind.</p>",
+    "title": "Mamak Chat: Office Hours",
+    "speakers": [
+      "all-speakers"
+    ],
+    "tags": []
+  },
+  {
     "id": "5-tips-to-improve-user-experience-with-ngrx",
     "type": "main",
     "duration": "30 min",

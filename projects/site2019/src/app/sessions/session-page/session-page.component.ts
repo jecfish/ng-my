@@ -56,6 +56,10 @@ export class SessionPageComponent implements OnInit {
     return this.sessions.filter(x => x.type === 'main');
   }
 
+  get chatSession() {
+    return this.sessions.filter(x => x.type === 'chat');
+  }
+
   get lightningSession() {
     return this.sessions.filter(x => x.type === 'lightning');
   }
