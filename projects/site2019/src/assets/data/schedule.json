@@ -47,7 +47,8 @@
         "speakers": [
           "Keen Yee",
           "Jecelyn Yeen"
-        ]
+        ],
+        "session": "mamak-chat"
       }
     ],
     "1040 - 1110": [
@@ -70,7 +71,8 @@
         "speakers": [
           "Mike Ryan",
           "Jerry Kurata"
-        ]
+        ],
+        "session": "mamak-chat"
       }
     ],
     "1120 - 1150": [
@@ -93,7 +95,8 @@
         "speakers": [
           "Ng Tong Sheng",
           "Kevin Yang"
-        ]
+        ],
+        "session": "mamak-chat"
       }
     ],
     "1200 - 1300": [
@@ -121,7 +124,8 @@
         "speakers": [
           "Kamil Mysliwiec",
           "Deborah Kurata"
-        ]
+        ],
+        "session": "mamak-chat"
       }
     ],
     "1340 - 1410": [
@@ -146,7 +150,8 @@
         "speakers": [
           "Jia Li",
           "Tomas Trajan"
-        ]
+        ],
+        "session": "mamak-chat"
       }
     ],
     "1420 - 1450": [
@@ -169,7 +174,8 @@
           "Adrian Yeong",
           "Jenning Ho",
           "Jecelyn Yeen"
-        ]
+        ],
+        "session": "mamak-chat"
       }
     ],
     "1500 - 1520": [
@@ -252,7 +258,8 @@
           "Michael Hladky",
           "Gerard Sans",
           "Jennifer Shehane"
-        ]
+        ],
+        "session": "mamak-chat"
       }
     ],
     "1040 - 1110": [
@@ -276,7 +283,8 @@
           "Amadou Sall",
           "Tom Suijkerbuijk",
           "Mart Ganzevles"
-        ]
+        ],
+        "session": "mamak-chat"
       }
     ],
     "1120 - 1150": [
@@ -299,12 +307,23 @@
         "speakers": [
           "Erin Zimmer",
           "Will Huang"
-        ]
+        ],
+        "session": "mamak-chat"
       }
     ],
     "1200 - 1300": [
       {
         "title": "NG-Makan-Tengah-Hari (Lunch)"
+      }
+    ],
+    "1300 - 1330": [
+      {
+        "title": "Mamak Chat: Office Hours",
+        "speakers": [
+          "Alex Lakatos",
+          "Alex Okrushko"
+        ],
+        "session": "mamak-chat"
       }
     ],
     "1300 - 1310": [
@@ -321,13 +340,6 @@
           "Zachary Ng"
         ],
         "session": "zachary-ng"
-      },
-      {
-        "title": "Mamak Chat: Office Hours",
-        "speakers": [
-          "Alex Lakatos",
-          "Alex Okrushko"
-        ]
       }
     ],
     "1310 - 1320": [
@@ -344,13 +356,6 @@
           "Yew Hong Tat"
         ],
         "session": "yew-hong-tat"
-      },
-      {
-        "title": "Mamak Chat: Office Hours",
-        "speakers": [
-          "Alex Lakatos",
-          "Alex Okrushko"
-        ]
       }
     ],
     "1320 - 1330": [
@@ -367,13 +372,6 @@
           "Sujono"
         ],
         "session": "sujono"
-      },
-      {
-        "title": "Mamak Chat: Office Hours",
-        "speakers": [
-          "Alex Lakatos",
-          "Alex Okrushko"
-        ]
       }
     ],
     "1340 - 1410": [
@@ -401,7 +399,8 @@
           "Zachary Ng",
           "Siwat Kaoleung",
           "Sujono"
-        ]
+        ],
+        "session": "mamak-chat"
       }
     ],
     "1420 - 1450": [
@@ -424,7 +423,8 @@
         "speakers": [
           "Kamil Kisiela",
           "Mashhood Rastgar"
-        ]
+        ],
+        "session": "mamak-chat"
       }
     ],
     "1500 - 1545": [

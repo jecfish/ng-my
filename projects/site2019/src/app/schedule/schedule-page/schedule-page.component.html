@@ -58,7 +58,7 @@
         {{ s.time }}
       </div>
       <div>
-        <div [class.schedule-talk]="i.speakers?.length" *ngFor="let i of s.items">
+        <div [class.schedule-talk]="i.speakers?.length" [class.schedule-talk-mamak]="i.title.startsWith('Mamak')" *ngFor="let i of s.items">
           <h5>{{i.title}}
             <a class="icon-right" (click)="selectSession(i.session)" *ngIf="i.hasSessionInfo" title="Session info">
               <!-- <i class="fas fa-info-circle"></i> -->

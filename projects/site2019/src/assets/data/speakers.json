@@ -516,5 +516,19 @@
             }
         ]
 
+    },
+    {
+        "id": "all-speakers",
+        "name": "All Speakers",
+        "title": "Awesome Speakers",
+        "color": "blue",
+        "description": "<p>All awesome NG-MY 2019 speakers!</p>",
+        "profile": [
+            {
+                "url": "https://twitter.com/ngmyconf",
+                "type": "twitter"
+            }
+        ]
+
     }
 ]
