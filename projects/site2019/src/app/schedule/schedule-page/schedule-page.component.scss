@@ -47,6 +47,10 @@
     h6 {
       font-style: italic;
     }
+
+    @include mobile {
+      grid-template-columns: initial;
+    }
   }
 
   &-title {
@@ -89,23 +93,30 @@
     // }
 
     &:first-child:before {
-      content: 'HALL A';
+      content: 'JC 1';
       background: $red;
     }
 
     &:nth-child(2):before {
-      content: 'HALL B';
+      content: 'JC 3';
       background: $blue;
     }
 
     &:nth-child(3):before {
-      content: 'HALL C';
-      background: $black;
+      content: 'LT 7';
+      background: #eb9a06;
     }
 
     &:nth-child(4):before {
-      content: 'HALL D';
-      background: $gray;
+      content: 'LT 8';
+      background: #1aab09;
+    }
+
+    &-mamak {
+      &:before {
+        content: 'Gallery' !important;
+        background: $black !important;
+      }
     }
 
     @include mobile {
@@ -132,7 +143,7 @@
 
   &-section {
     height: 120px;
-    margin: -100px 0 $space-l;
+    // margin: -100px 0 $space-l;
     overflow: hidden;
   }
 

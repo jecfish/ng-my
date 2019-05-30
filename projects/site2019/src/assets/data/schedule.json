@@ -13,13 +13,18 @@
         ]
       }
     ],
-    "0910 - 0950": [
+    "0910 - 0940": [
       {
         "title": "Keynote",
         "speakers": [
           "Keen Yee",
           "Jecelyn Yeen"
         ]
+      }
+    ],
+    "0940 - 0950": [
+      {
+        "title": "Air Asia, Nintex"
       }
     ],
     "1000 - 1030": [
@@ -36,6 +41,13 @@
           "Jerry Kurata"
         ],
         "session": "jerry-kurata"
+      },
+      {
+        "title": "Mamak Chat: Office Hours",
+        "speakers": [
+          "Keen Yee",
+          "Jecelyn Yeen"
+        ]
       }
     ],
     "1040 - 1110": [
@@ -52,6 +64,13 @@
           "Kevin Yang"
         ],
         "session": "kevin-yang"
+      },
+      {
+        "title": "Mamak Chat: Office Hours",
+        "speakers": [
+          "Mike Ryan",
+          "Jerry Kurata"
+        ]
       }
     ],
     "1120 - 1150": [
@@ -68,6 +87,13 @@
           "Deborah Kurata"
         ],
         "session": "deborah-kurata"
+      },
+      {
+        "title": "Mamak Chat: Office Hours",
+        "speakers": [
+          "Ng Tong Sheng",
+          "Kevin Yang"
+        ]
       }
     ],
     "1200 - 1300": [
@@ -89,6 +115,13 @@
           "Tomas Trajan"
         ],
         "session": "tomas-trajan"
+      },
+      {
+        "title": "Mamak Chat: Office Hours",
+        "speakers": [
+          "Kamil Mysliwiec",
+          "Deborah Kurata"
+        ]
       }
     ],
     "1340 - 1410": [
@@ -107,6 +140,13 @@
           "Jenning Ho"
         ],
         "session": "how-we-build-ng-my-website"
+      },
+      {
+        "title": "Mamak Chat: Office Hours",
+        "speakers": [
+          "Jia Li",
+          "Tomas Trajan"
+        ]
       }
     ],
     "1420 - 1450": [
@@ -121,14 +161,34 @@
         "title": "Large Scale Angular Applications",
         "speakers": ["Tom Suijkerbuijk", "Mart Ganzevles"],
         "session": "large-scale-angular-applications"
+      },
+      {
+        "title": "Mamak Chat: Office Hours",
+        "speakers": [
+          "Sebastian Witalec",
+          "Adrian Yeong",
+          "Jenning Ho",
+          "Jecelyn Yeen"
+        ]
       }
     ],
-    "1500 - 1530": [
+    "1500 - 1520": [
+      {
+        "title": "NG-FUN Closing Day 1",
+        "speakers": ["Surprise!"]
+      }
+    ],
+    "1520 - 1530": [
+      {
+        "title": "Seek Asia, Microsoft, Ambition"
+      }
+    ],
+    "1530-1550": [
       {
         "title": "NG-Teatime"
       }
     ],
-    "1530 - 1830": [
+    "1550 - 1850": [
       {
         "title": "Workshop A: Deploy Dockerized Angular Application to Azure",
         "speakers": ["Anil Kumar Menon"],
@@ -157,21 +217,18 @@
         "title": "NG-Sarapan (Breakfast)"
       }
     ],
-    "0900 - 0910": [
-      {
-        "title": "Opening Remarks",
-        "speakers": [
-          "Emcees"
-        ]
-      }
-    ],
-    "0910 - 0950": [
+    "0900 - 0940": [
       {
         "title": "Advanced patterns in RxJS - Operating heavily dynamic UI’s with RxJS",
         "speakers": [
           "Michael Hladky"
         ],
         "session": "michael-hladky"
+      }
+    ],
+    "0940 - 0950": [
+      {
+        "title": "Firebase, Apigate"
       }
     ],
     "1000 - 1030": [
@@ -188,6 +245,14 @@
           "Amadou Sall"
         ],
         "session": "amadou-sall"
+      },
+      {
+        "title": "Mamak Chat: Office Hours",
+        "speakers": [
+          "Michael Hladky",
+          "Gerard Sans",
+          "Jennifer Shehane"
+        ]
       }
     ],
     "1040 - 1110": [
@@ -203,6 +268,15 @@
           "Erin Zimmer"
         ],
         "session": "erin-zimmer"
+      },
+      {
+        "title": "Mamak Chat: Office Hours",
+        "speakers": [
+          "Arjay Elbore",
+          "Amadou Sall",
+          "Tom Suijkerbuijk",
+          "Mart Ganzevles"
+        ]
       }
     ],
     "1120 - 1150": [
@@ -219,6 +293,13 @@
           "Alex Okrushko"
         ],
         "session": "alex-okrushko"
+      },
+      {
+        "title": "Mamak Chat: Office Hours",
+        "speakers": [
+          "Erin Zimmer",
+          "Will Huang"
+        ]
       }
     ],
     "1200 - 1300": [
@@ -240,6 +321,13 @@
           "Zachary Ng"
         ],
         "session": "zachary-ng"
+      },
+      {
+        "title": "Mamak Chat: Office Hours",
+        "speakers": [
+          "Alex Lakatos",
+          "Alex Okrushko"
+        ]
       }
     ],
     "1310 - 1320": [
@@ -256,6 +344,13 @@
           "Yew Hong Tat"
         ],
         "session": "yew-hong-tat"
+      },
+      {
+        "title": "Mamak Chat: Office Hours",
+        "speakers": [
+          "Alex Lakatos",
+          "Alex Okrushko"
+        ]
       }
     ],
     "1320 - 1330": [
@@ -272,6 +367,13 @@
           "Sujono"
         ],
         "session": "sujono"
+      },
+      {
+        "title": "Mamak Chat: Office Hours",
+        "speakers": [
+          "Alex Lakatos",
+          "Alex Okrushko"
+        ]
       }
     ],
     "1340 - 1410": [
@@ -288,6 +390,18 @@
           "Mashhood Rastgar"
         ],
         "session": "scaling-frontend-development-using-micro-frontends"
+      },
+
+      {
+        "title": "Mamak Chat: Office Hours",
+        "speakers": [
+          "Wendy Kong",
+          "Yew Hong Tat",
+          "Azizi Yazit",
+          "Zachary Ng",
+          "Siwat Kaoleung",
+          "Sujono"
+        ]
       }
     ],
     "1420 - 1450": [
@@ -304,6 +418,13 @@
           "Keen Yee"
         ],
         "session": "keen-yee"
+      },
+      {
+        "title": "Mamak Chat: Office Hours",
+        "speakers": [
+          "Kamil Kisiela",
+          "Mashhood Rastgar"
+        ]
       }
     ],
     "1500 - 1545": [
