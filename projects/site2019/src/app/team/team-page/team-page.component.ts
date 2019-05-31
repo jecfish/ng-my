@@ -66,7 +66,7 @@ export class TeamPageComponent implements OnInit {
     this.location.go(path);
 
     const title = id
-      ? this.selectMember.name + this.pageSvc.postfix.replace('|', '| Team')
+      ? this.selectedMember.name + this.pageSvc.postfix.replace('|', '| Team')
       : `Team${this.pageSvc.postfix}`;
 
     this.pageSvc.setPage({

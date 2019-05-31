@@ -9,27 +9,11 @@
       </div>
     </div>
   </article>
+  <!-- day 1 -->
   <section class="container schedule-container">
     <h2 class="schedule-title">Day 1</h2>
-    <div class="schedule-item" *ngFor="let s of day1">
-      <div>
-        {{ s.time }}
-      </div>
-      <div>
-        <ng-container *ngFor="let i of s.items">
-          <div [class.schedule-talk]="i.speakers?.length" [class.schedule-talk-mamak]="i.title.startsWith('Mamak')">
-            <h5>{{i.title}}
-              <a class="icon-right" (click)="selectSession(i.session)" *ngIf="i.hasSessionInfo" title="Session info">
-                <!-- <i class="fas fa-info-circle"></i> -->
-                <span class="icon-info-circle"></span>
-              </a>
-            </h5>
-            <h6 *ngIf="i.speakers">{{i.speakers.join(", ")}}</h6>
-          </div>
-
-        </ng-container>
-      </div>
-    </div>
+    <ng-container [ngTemplateOutlet]="schedule" [ngTemplateOutletContext]="{day:day1}">
+    </ng-container>
   </section>
   <div class="food-section">
     <div class="food container schedule-container">
@@ -51,14 +35,24 @@
       </picture>
     </div>
   </div>
+  <!-- day 2 -->
   <section class="container schedule-container">
     <h2 class="schedule-title">Day 2</h2>
-    <div class="schedule-item" *ngFor="let s of day2">
-      <div>
-        {{ s.time }}
-      </div>
-      <div>
-        <div [class.schedule-talk]="i.speakers?.length" [class.schedule-talk-mamak]="i.title.startsWith('Mamak')" *ngFor="let i of s.items">
+    <ng-container [ngTemplateOutlet]="schedule" [ngTemplateOutletContext]="{day:day2}">
+    </ng-container>
+  </section>
+  <my-modal *ngIf="selectedItem" [item]="selectedItem" (unselect)="unselectSession()"></my-modal>
+</main>
+
+<!-- template -->
+<ng-template let-day="day" #schedule>
+  <div class="schedule-item" *ngFor="let s of day">
+    <div>
+      {{ s.time }}
+    </div>
+    <div>
+      <ng-container *ngFor="let i of s.items">
+        <div [class.schedule-talk]="i.speakers?.length" [class.schedule-talk-mamak]="i.title.startsWith('Mamak')">
           <h5>{{i.title}}
             <a class="icon-right" (click)="selectSession(i.session)" *ngIf="i.hasSessionInfo" title="Session info">
               <!-- <i class="fas fa-info-circle"></i> -->
@@ -67,8 +61,8 @@
           </h5>
           <h6 *ngIf="i.speakers">{{i.speakers.join(", ")}}</h6>
         </div>
-      </div>
+
+      </ng-container>
     </div>
-  </section>
-  <my-modal *ngIf="selectedItem" [item]="selectedItem" (unselect)="unselectSession()"></my-modal>
-</main>
+  </div>
+</ng-template>
