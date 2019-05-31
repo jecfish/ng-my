@@ -1,12 +1,14 @@
 <picture>
-    <source media="(max-width: 600px)" srcset="../../assets/imgs/team/team-600w.webp" type="image/webp">
-    <source media="(max-width: 1200px)" srcset="../../assets/imgs/team/team-1200w.webp" type="image/webp">
-    <source srcset="../../assets/imgs/team/team.webp" type="image/webp">
-    <img src="../../assets/imgs/team/team.jpg" alt="NG-MY team photo" title="NG-MY 2019 team">
+  <source media="(max-width: 600px)" srcset="../../assets/imgs/team/team-600w.webp" type="image/webp">
+  <source media="(max-width: 1200px)" srcset="../../assets/imgs/team/team-1200w.webp" type="image/webp">
+  <source srcset="../../assets/imgs/team/team.webp" type="image/webp">
+  <img src="../../assets/imgs/team/team.jpg" alt="NG-MY team photo" title="NG-MY 2019 team">
 </picture>
 <main id="team">
-  <div class="page-header">
-    <div class="container">
+
+  <!-- team -->
+  <div class="container">
+    <div class="page-header">
       <h1 class="page-title">CORE TEAM</h1>
       <div class="page-description article-section">
         <p>
@@ -20,48 +22,42 @@
       </div>
     </div>
   </div>
-  <section class="main">
-    <div class="container">
-      <div class="team-list">
-        <div class="team-list-item" *ngFor="let m of members; let i = index">
-          <article class="team-card" [class.--selected]="selectedMemberId === m.id" (click)="selectMember(m.id)">
-            <div class="team-card-profile">
-              <figure class="team-card-pic">
-                <picture>
-                    <source srcset="../../assets/imgs/team/{{ m.photo }}.webp" type="image/webp">
-                    <img src="../../assets/imgs/team/{{ m.photo }}.jpg" alt="{{ m.name }}" class="team-card-img" />
-                </picture>
-              </figure>
-              <picture class="team-card-food">
-                  <source srcset="../../assets/imgs/speaker-food/{{ m.food }}.webp" type='image/webp'>
-                  <img src="../../assets/imgs/speaker-food/{{ m.food }}.png" [alt]="m.food">
-              </picture>
-            </div>
-            <div class="team-card-name">{{ m.name }}</div>
-          </article>
+  <ng-container [ngTemplateOutlet]="list" [ngTemplateOutletContext]="{list:members}">
+  </ng-container>
+
+  <!-- organizer -->
+  <div class="container">
+    <div class="page-header">
+      <div class="container">
+        <h2 class="page-title">ORGANIZER</h2>
+        <div class="page-description">
+          <p>
+            NG-MY is organized by Jecelyn Yeen, with the incredible help and support of the entire NG-MY Core Team!
+          </p>
         </div>
       </div>
     </div>
+  </div>
+  <ng-container [ngTemplateOutlet]="list" [ngTemplateOutletContext]="{list:organizers}">
+  </ng-container>
+
+  <!-- dialog -->
+  <my-modal *ngIf="selectedItem" [item]="selectedItem" (unselect)="unselectMember()"></my-modal>
+</main>
+
+<!-- list template -->
+<ng-template #list let-list="list">
+  <section class="main">
     <div class="container">
-      <div class="page-header">
-        <div class="container">
-          <h2 class="page-title">ORGANIZER</h2>
-          <div class="page-description">
-            <p>
-              NG-MY is organized by Jecelyn Yeen, with the incredible help and support of the entire NG-MY Core Team!
-            </p>
-          </div>
-        </div>
-      </div>
       <div class="team-list">
-        <div class="team-list-item" *ngFor="let m of organizers">
+        <div class="team-list-item" *ngFor="let m of list">
           <article class="team-card" [class.--selected]="selectedMemberId === m.id" (click)="selectMember(m.id)">
             <div class="team-card-profile">
               <figure class="team-card-pic">
                 <source srcset="../../assets/imgs/team/{{ m.photo }}.webp" type="image/webp">
                 <img src="../../assets/imgs/team/{{ m.photo }}.jpg" alt="{{ m.name }}" class="team-card-img" />
               </figure>
-              
+
               <img class="team-card-food" src="../../assets/imgs/speaker-food/{{ m.food }}.png" alt="">
             </div>
             <div class="team-card-name">{{ m.name }}</div>
@@ -70,5 +66,4 @@
       </div>
     </div>
   </section>
-  <my-modal *ngIf="selectedItem" [item]="selectedItem" (unselect)="unselectMember()"></my-modal>
-</main>
+</ng-template>
