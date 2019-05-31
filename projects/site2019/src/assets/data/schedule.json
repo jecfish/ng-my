@@ -1,11 +1,11 @@
 {
   "one": {
-    "0815 - 0900": [
+    "08.15 - 09.00": [
       {
         "title": "NG-Registration-And-Breakfast"
       }
     ],
-    "0900 - 0910": [
+    "09.00 - 09.10": [
       {
         "title": "Opening Remarks",
         "speakers": [
@@ -13,7 +13,7 @@
         ]
       }
     ],
-    "0910 - 0940": [
+    "09.10 - 09.40": [
       {
         "title": "Keynote",
         "speakers": [
@@ -22,12 +22,12 @@
         ]
       }
     ],
-    "0940 - 0950": [
+    "09.40 - 09.50": [
       {
         "title": "Air Asia, Nintex"
       }
     ],
-    "1000 - 1030": [
+    "10.00 - 10.30": [
       {
         "title": "Complexity Management with NgRx",
         "speakers": [
@@ -51,7 +51,7 @@
         "session": "mamak-chat"
       }
     ],
-    "1040 - 1110": [
+    "10.40 - 11.10": [
       {
         "title": "Cool Interaction Made Simple with Angular Material CDK",
         "speakers": [
@@ -75,7 +75,7 @@
         "session": "mamak-chat"
       }
     ],
-    "1120 - 1150": [
+    "11.20 - 11.50": [
       {
         "title": "Beyond TypeScript Metadata: Dependency Injection in Angular and Nest",
         "speakers": [
@@ -99,12 +99,12 @@
         "session": "mamak-chat"
       }
     ],
-    "1200 - 1300": [
+    "12.00 - 13.00": [
       {
         "title": "NG-Lunch"
       }
     ],
-    "1300 - 1330": [
+    "13.00 - 13.30": [
       {
         "title": "From NgRx to NgRx-entity to NgRx-data",
         "speakers": [
@@ -128,7 +128,7 @@
         "session": "mamak-chat"
       }
     ],
-    "1340 - 1410": [
+    "13.40 - 14.10": [
       {
         "title": "Building Mobile Apps with Angular and NativeScript",
         "speakers": [
@@ -154,7 +154,7 @@
         "session": "mamak-chat"
       }
     ],
-    "1420 - 1450": [
+    "14.20 - 14.50": [
       {
         "title": "Automated Testing for the Modern Web",
         "speakers": [
@@ -178,23 +178,23 @@
         "session": "mamak-chat"
       }
     ],
-    "1500 - 1520": [
+    "15.00 - 15.20": [
       {
         "title": "NG-FUN Closing Day 1",
         "speakers": ["Surprise!"]
       }
     ],
-    "1520 - 1530": [
+    "15.20 - 15.30": [
       {
         "title": "Seek Asia, Microsoft, Ambition"
       }
     ],
-    "1530-1550": [
+    "15.30 - 15.50": [
       {
         "title": "NG-Teatime"
       }
     ],
-    "1550 - 1850": [
+    "15.50 - 18.50": [
       {
         "title": "Workshop A: Deploy Dockerized Angular Application to Azure",
         "speakers": ["Anil Kumar Menon"],
@@ -218,12 +218,12 @@
     ]
   },
   "two": {
-    "0815 - 0900": [
+    "08.15 - 09.00": [
       {
         "title": "NG-Sarapan (Breakfast)"
       }
     ],
-    "0900 - 0940": [
+    "09.00 - 09.40": [
       {
         "title": "Advanced patterns in RxJS - Operating heavily dynamic UI’s with RxJS",
         "speakers": [
@@ -232,12 +232,12 @@
         "session": "michael-hladky"
       }
     ],
-    "0940 - 0950": [
+    "09.40 - 09.50": [
       {
         "title": "Firebase, Apigate"
       }
     ],
-    "1000 - 1030": [
+    "10.00 - 10.30": [
       {
         "title": "Build Web Components with Angular Elements",
         "speakers": [
@@ -262,7 +262,7 @@
         "session": "mamak-chat"
       }
     ],
-    "1040 - 1110": [
+    "10.40 - 11.10": [
       {
         "title": "Protractor: The Hacker Way",
         "speakers": [
@@ -287,7 +287,7 @@
         "session": "mamak-chat"
       }
     ],
-    "1120 - 1150": [
+    "11.20 - 11.50": [
       {
         "title": "Comparing Angular Forms",
         "speakers": [
@@ -311,12 +311,12 @@
         "session": "mamak-chat"
       }
     ],
-    "1200 - 1300": [
+    "12.00 - 13.00": [
       {
         "title": "NG-Makan-Tengah-Hari (Lunch)"
       }
     ],
-    "1300 - 1330": [
+    "13.00 - 13.30": [
       {
         "title": "Mamak Chat: Office Hours",
         "speakers": [
@@ -326,7 +326,7 @@
         "session": "mamak-chat"
       }
     ],
-    "1300 - 1310": [
+    "13.00 - 13.10": [
       {
         "title": "Writing Compound Components in Angular",
         "speakers": [
@@ -342,7 +342,7 @@
         "session": "zachary-ng"
       }
     ],
-    "1310 - 1320": [
+    "13.10 - 13.20": [
       {
         "title": "Fun and Games with Angular",
         "speakers": [
@@ -358,7 +358,7 @@
         "session": "yew-hong-tat"
       }
     ],
-    "1320 - 1330": [
+    "13.20 - 13.30": [
       {
         "title": "Using Nx: Angular CLI Power-ups for Modern Development",
         "speakers": [
@@ -374,7 +374,7 @@
         "session": "sujono"
       }
     ],
-    "1340 - 1410": [
+    "13.40 - 14.10": [
       {
         "title": "GraphQL at Any Level of Your Stack",
         "speakers": [
@@ -403,7 +403,7 @@
         "session": "mamak-chat"
       }
     ],
-    "1420 - 1450": [
+    "14.20 - 14.50": [
       {
         "title": "Ivy Renderer for Dummies",
         "speakers": [
@@ -427,7 +427,7 @@
         "session": "mamak-chat"
       }
     ],
-    "1500 - 1545": [
+    "15.00 - 15.45": [
       {
         "title": "AMA - Ask Me Anything",
         "speakers": [
@@ -435,7 +435,7 @@
         ]
       }
     ],
-    "1545 - 1600": [
+    "15.45 - 16.00": [
       {
         "title": "NG-Tutup (Closing)"
       }

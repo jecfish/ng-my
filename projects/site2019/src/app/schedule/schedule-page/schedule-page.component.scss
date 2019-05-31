@@ -4,15 +4,15 @@
 .page-title {
   position: relative;
 
-  &:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: calc(50% - 100px);
-    height: 20px;
-    width: 200px;
-    background: url('/assets/imgs/home/white-pattern.svg') left/contain repeat-x;
-  }
+  // &:before {
+  //   content: '';
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: calc(50% - 100px);
+  //   height: 20px;
+  //   width: 200px;
+  //   background: url('/assets/imgs/home/white-pattern.svg') left/contain repeat-x;
+  // }
 }
 
 .page-description {
@@ -24,6 +24,7 @@
     width: 1000px;
     max-width: calc(100% - #{$space});
     background: $white;
+    border: 3px solid black;
     box-shadow: 8px 8px $black;
     padding-top: $space-l;
     padding-bottom: $space-l;
@@ -62,7 +63,7 @@
   &-main {
     margin-top: -$header-h;
     padding-top: $space-l + $header-h;
-    background: $yellow;
+    background: $gray-lightest;
     padding-bottom: 200px + $space-l;
     margin-bottom: -200px;
   }
@@ -140,6 +141,8 @@
   z-index: 1;
   background: none;
   box-shadow: none;
+  width: 1000px;
+  max-width: calc(100% - #{$space});
 
   &-section {
     height: 120px;
