@@ -2,7 +2,6 @@
     {
         "id": "keen-yee",
         "name": "Keen Yee",
-        "color": "red",
         "description": "Keen is a member of the Angular Tooling team. He has worked on Universal (server-side rendering) for Google Shopping Express, Angular language service, and most recently Bazel + CLI.",
         "title": "Software Engineer, Angular team @ Google",
         "profile": [
@@ -10,13 +9,13 @@
                 "url": "https://twitter.com/liauky",
                 "type": "twitter"
             }
-        ]
+        ],
+        "food": "abc"
     },
     {
         "id": "mike-ryan",
         "name": "Mike Ryan",
         "title": "GDE, Builder of NgRx, Staff Software Engineer @ Synapse",
-        "color": "blue",
         "description": "<p>Mike is a software engineer at Synapse building user interfaces for industrial Internet of Things applications. </p><p>He is a Google Developer Expert and a core team member of NgRx, an open source organization building high quality reactive libraries for Angular.<p>",
         "profile": [
             {
@@ -27,26 +26,26 @@
                 "url": "https://github.com/mikeryandev",
                 "type": "github"
             }
-        ]
+        ],
+        "food": "bandung"
     },
     {
         "id": "deborah-kurata",
         "name": "Deborah Kurata",
         "title": "Pluralsight author, GDE, MVP",
-        "color": "red",
         "description": "<p>Deborah Kurata is a software developer, consultant, conference speaker, and Pluralsight author. Her courses include: \"Angular: Getting Started\", “Angular Routing”, and “Angular Reactive Forms”. </p><p>For her work in support of software developers, she has been recognized with the Microsoft Most Valuable Professional (MVP) award and is a Google Developer Expert (GDE). She enjoys talking to other developers about Angular!</p>",
         "profile": [
             {
                 "url": "https://twitter.com/deborahkurata",
                 "type": "twitter"
             }
-        ]
+        ],
+        "food": "cendol"
     },
     {
         "id": "kamil-mysliwiec",
         "name": "Kamil Mysliwiec",
         "title": "Creator of NestJS, Co-Founder of Trilon.io",
-        "color": "blue",
         "description": "Kamil Mysliwiec is an enthusiastic software engineer truly passionate about the web technologies. Creator of NestJS, Co-Founder of Trilon.io, international speaker, trainer, open source contributor mainly focused on the web-related things.",
         "profile": [
             {
@@ -57,13 +56,13 @@
                 "url": "https://github.com/kamilmysliwiec",
                 "type": "github"
             }
-        ]
+        ],
+        "food": "curry-pup"
     },
     {
         "id": "will-huang",
         "name": "Will Huang (保哥)",
         "title": "CTO @ Duotify, GDE, MVP",
-        "color": "red",
         "description": "<p>Will is a teacher, book author, blogger, speaker, youtuber, Microsoft MVP from 2008, Angular/Web GDE (Google Developer Expert) from 2018. </p><p>He likes to share knowledge in many area such as Angular, JavaScript, .NET Core, ASP.NET MVC, Entity Framework, Docker and Kubernetes.  He is always a approachable person. You can find him and talk to him anytime.</p>",
         "profile": [
             {
@@ -74,26 +73,26 @@
                 "url": "https://twitter.com/Will_Huang",
                 "type": "twitter"
             }
-        ]
+        ],
+        "food": "nasi-lemak-ikan"
     },
     {
         "id": "sebastian-witalec",
         "name": "Sebastian Witalec",
         "title": "Sr. Developer Advocate, NativeScript @ Progress",
-        "color": "blue",
         "description": "<p>Sebastian Witalec is a Senior Developer Advocate for Progress who specialises in Angular and NativeScript. He loves working on both serious and fun projects and one day he will use his robot army to conquer the world.</p> <p>He is always happy to learn about the new stuff and to pass the knowledge as far as his voice (or the wire) can take him. Sebastian is based in London actively working with various Dev communities in Europe. When not acting techie he is a massive football fan/player (probably bigger at heart than skills).</p>",
         "profile": [
             {
                 "url": "https://twitter.com/sebawita",
                 "type": "twitter"
             }
-        ]
+        ],
+        "food": "kopi-o"
     },
     {
         "id": "jecelyn-yeen",
         "name": "Jecelyn Yeen",
         "title": "Software Architect, GDE",
-        "color": "red",
         "description": "<p>Jecelyn speaks English, Mandarin, C#, Typescript, JavaScript and Angular. She is a Google Developer Expert (GDE) in Angular & director of Women Who Code KL.</p><p>She funnels her passion in tech into publishing articles as well as sharing her knowledge via workshops and conferences and meet-ups. </p><p>Ironically her favourite past time away from work involves travelling to remote islands without WiFi for deep sea diving expeditions and reading books with tangible covers.</p>",
         "profile": [
             {
@@ -104,26 +103,26 @@
                 "url": "https://www.facebook.com/jecelyn",
                 "type": "facebook"
             }
-        ]
+        ],
+        "food": "limao-ice-ikat-tepi"
     },
     {
         "id": "alex-okrushko",
         "name": "Alex Okrushko",
         "title": "Software Engineer, Firebase @ Google",
-        "color": "blue",
         "description": "<p>Alex is a software engineer at Google working on Firebase Console. He is also a contributor to NgRx and a passionate maintainer of this library at Google. </p><p>At his free time, he contributes and reviews articles at blog.angularindepth.com and provides NgRx workshops. Alex is from Toronto where enjoys his weekends with his wife and 3 little kids.</p>",
         "profile": [
             {
                 "url": "https://twitter.com/AlexOkrushko",
                 "type": "twitter"
             }
-        ]
+        ],
+        "food": "nasi-lemak"
     },
     {
         "id": "mashhood-rastgar",
         "name": "Mashhood Rastgar",
         "title": "CTO @ Sastaticket.pk, GDE",
-        "color": "red",
         "description": "Mashhood leads the engineering team at Sastaticket.pk. He specializes in using the latest web technologies available to develop the best travel platform in the country. He is also an active developer community member, is currently serving as a Google Developer Expert and is speaking at several international conferences during the year.",
         "profile": [
             {
@@ -138,13 +137,13 @@
                 "url": "https://facebook.com/mashhoodr",
                 "type": "facebook"
             }
-        ]
+        ],
+        "food": "roti-canai"
     },
     {
         "id": "jia-li",
         "name": "Jia Li",
         "title": "Angular collaborator, angular/zone.js core contributor",
-        "color": "blue",
         "description": "Jia Li is a frontend developer with passion, he is the collaborator of angular/zone.js, now he basically take care of everything of zone.js. He love Angular and now developer Angular enterprise application, also write articles for Angular in Depth. ",
         "profile": [
             {
@@ -155,13 +154,13 @@
                 "url": "https://github.com/JiaLiPassion",
                 "type": "github"
             }
-        ]
+        ],
+        "food": "teh-tarik"
     },
     {
         "id": "tomas-trajan",
         "name": "Tomas Trajan",
         "title": "Software Architect @ Schaltstelle, GDE",
-        "color": "red",
         "description": "<p>Tomas Trajan (@tomastrajan) - I am Google Developer Expert for Angular, writing and speaking mostly about Angular, RxJS and many exciting frontend technologies.</p><p>I love sharing know-how and working on open source with most popular project being Angular NgRx Material Starter (1200+ Stars on GitHub), Release Butler - a Twitter bot that tweets change logs of popular frameworks and libraries and Medium Enhanced Stats a Chrome extension which enhances Medium stats screen.</p><p>Professionally I am currently living and working in the lovely Switzerland and company Die Mobiliar as a Frontend Architect where we are trying to help improve more than 40 Angular SPAs and a whole universe of libraries by introducing best practices, maintainable architecture, coaching other developers, and building tool to help us achieve this goals.</p><p>Stay tuned for an upcoming release of a Code Butler - a node CLI tool to automate code transformations to multiple projects in enterprise environment.</p>",
         "profile": [
             {
@@ -176,13 +175,13 @@
                 "url": "https://medium.com/@tomastrajan",
                 "type": "medium"
             }
-        ]
+        ],
+        "food": "ikat-semua"
     },
     {
         "id": "kevin-yang",
         "name": "Kevin Yang",
         "title": "GDE, MVP",
-        "color": "blue",
         "description": "Kevin Yang is an Angular/Web GDE, Microsoft MVP, Angular Taiwan community organizer, GDG Taichung co-organizer. He loves to talk and share about anything related to Angular.",
         "profile": [
             {
@@ -193,26 +192,26 @@
                 "url": "https://twitter.com/yoKevinYang",
                 "type": "twitter"
             }
-        ]
+        ],
+        "food": "tosai"
     },
     {
         "id": "jerry-kurata",
         "name": "Jerry Kurata",
         "title": "Machine Learning GDE, Pluralsight author",
-        "color": "red",
         "description": "<p>Jerry is a Consultant at InStep Technologies and any author on Pluralsight.com. On Pluralsight he has a number courses including Understanding Machine Learning with Python, TensorFlow:Getting Started, and Deep Learning with Keras.</p>",
         "profile": [
             {
                 "url": "https://twitter.com/jerrykur",
                 "type": "twitter"
             }
-        ]
+        ],
+        "food": "abc"
     },
     {
         "id": "kamil-kisiela",
         "name": "Kamil Kisiela",
         "title": "Apollo-Angular Author, Developer @ The Guild, GraphQL Contributor",
-        "color": "blue",
         "description": "<p>Member of The Guild, author of Apollo-Angular library that brings GraphQL into Angular and many other open source libraries. He calls himself an Open Source enthusiast and actively contributes to the GraphQL and the Meteor Communities. Kamil is passionate about cycling and other outdoor activities.</p>",
         "profile": [
             {
@@ -223,65 +222,65 @@
                 "url": "http://github.com/kamilkisiela",
                 "type": "github"
             }
-        ]
+        ],
+        "food": "curry-pup"
     },
     {
         "id": "gerard-sans",
         "name": "Gerard Sans",
         "title": "Senior Developer Advocate @ AWS, GDE",
-        "color": "red",
         "description": "<p>Gerard is very excited about the future of the Web and JavaScript. Always happy Computer Science Engineer and humble Google Developer Expert (GDE). He loves to share his learnings by giving talks, trainings and blogging about cool technologies. He loves running AngularZone and GraphQL London, mentoring students and giving back to the community.</p>",
         "profile": [
             {
                 "url": "https://twitter.com/gerardsans",
                 "type": "twitter"
             }
-        ]
+        ],
+        "food": "bandung"
     },
     {
         "id": "ng-tong-sheng",
         "name": "Ng Tong Sheng",
         "title": "Principal Engineer @ Cheetah Digital",
-        "color": "blue",
         "description": "<p>Tong Sheng is a front end developer for years, but with a real passion for design and UX. He is also the organiser for Google Cloud Developer Community Kuala Lumpur.</p>",
         "profile": [
             {
                 "url": "https://www.facebook.com/ngtongsheng",
                 "type": "facebook"
             }
-        ]
+        ],
+        "food": "nasi-lemak-ikan"
     },
     {
         "id": "erin-zimmer",
         "name": "Erin Zimmer",
         "title": "Senior Developer & Thought Leader @ Shine Solutions",
-        "color": "red",
         "description": "<p>Erin is a software developer with over ten years experience in a variety of languages, from JavaScript to Model204. She is currently a senior web developer at Shine Solutions. She is an active member of the Melbourne JavaScript and Angular communities, and has spoken at conferences around the world. If you see her at a conference, she'll be the one knitting.</p>",
         "profile": [
             {
                 "url": "https://twitter.com/erinjzimmer",
                 "type": "twitter"
             }
-        ]
+        ],
+        "food": "cendol"
     },
     {
         "id": "arjay-elbore",
         "name": "Arjay Elbore",
         "title": "Frontend Developer @ DBS Bank Singapore",
-        "color": "blue",
         "description": "<p>Jay is a Frontend Developer in a Bank, who has experience on building large scale applications. He likes to code and contributing to open source projects. </p>",
         "profile": [
             {
                 "url": "https://twitter.com/VirtualOverride",
                 "type": "twitter"
             }
-        ]
+        ],
+        "food": "roti-canai"
     },
     {
         "id": "yew-hong-tat",
         "name": "Yew Hong Tat",
         "title": "Senior Software Engineer @ ViewPoint",
-        "color": "red",
         "description": "<p>HongTat is a happy developer who is very excited about web development from backend using C# to frontend Angular.</p><p>He is a senior software engineer @ ViewPoint working on a web application.</p>",
         "profile": [
             {
@@ -292,26 +291,26 @@
                 "url": "https://twitter.com/hongtat88",
                 "type": "twitter"
             }
-        ]
+        ],
+        "food": "kopi-o"
     },
     {
         "id": "wendy-kong",
         "name": "Wendy Kong",
         "title": "Women Who Code KL Lead, Software Engineer",
-        "color": "blue",
         "description": "<p>Wendy is a banker-turned-software engineer who develops web products. She’s also on the community organising team of Women Who Code KL. In her spare time she lurks around Twitter and Slack communities and finds any excuse to draw something.</p>",
         "profile": [
             {
                 "url": "https://www.linkedin.com/in/wendykongmy",
                 "type": "linkedin"
             }
-        ]
+        ],
+        "food": "tosai"
     },
     {
         "id": "azizi-yazit",
         "name": "Azizi Yazit",
         "title": "Senior Web Developer @ Esri",
-        "color": "red",
         "description": "<p>Azizi is an experienced UI developer who love developing web and love the web technologies. Azizi started his career in UI development as Junior UI developer at Hewlett Packard Malaysia. He accepting senior role at British Telecom and provide solution for UI in Portal based application. Currently worked in WebMap and developing UI libraries at Esri Malaysia.</p>",
         "profile": [
             {
@@ -326,26 +325,26 @@
                 "url": "https://my.linkedin.com/in/aziziyazit",
                 "type": "linkedin"
             }
-        ]
+        ],
+        "food": "ikat-semua"
     },
     {
         "id": "sujono",
         "name": "Sujono",
         "title": "Front End Engineer @ Dathena",
-        "color": "blue",
         "description": "<p>Jack of all trades before, but now specialized in front-end development. Angular and React is my specialization, and also passionate in hybrid dev (Ionic and RN). DevOps is my new interest recently.</p>",
         "profile": [
             {
                 "url": "https://www.facebook.com/starcokz",
                 "type": "facebook"
             }
-        ]
+        ],
+        "food": "teh-tarik"
     },
     {
         "id": "siwat-kaolueng",
         "name": "Siwat Kaolueng",
         "title": "Developer @ 7 Peaks Software",
-        "color": "red",
         "description": "<p>Siwat is the Angular & Web enthusiast who passionating front-end architecture. He has experienced in enterprise softwares such as bank and energy companies. He does open source the project who-use-angular-in-thailand - https://angularthailand.github.io/who-use-angular-in-thailand. He  is also Angular Thailand speaker and organizer.</p>",
         "profile": [
             {
@@ -364,13 +363,13 @@
                 "url": "https://github.com/perjerz3434",
                 "type": "github"
             }
-        ]
+        ],
+        "food": "tosai"
     },
     {
         "id": "zachary-ng",
         "name": "Zachary Ng",
         "title": "Software Engineer @ Pulsifi",
-        "color": "blue",
         "description": "<p>Zac is a born-again software engineer at Pulsifi. He came from a finance background 2 years ago and can now masterfully center a div in another div. He in an enthusiast of meaningful UX and Serverless architecture, and together with his team and the platform they’ve built, has helped empower thousands of fresh grads with careers that inspire them. On the side, he's loves video games and his 2 cats. </p>",
         "profile": [
             {
@@ -381,13 +380,13 @@
                 "url": "https://www.linkedin.com/in/zachary-ng",
                 "type": "linkedin"
             }
-        ]
+        ],
+        "food": "abc"
     },
     {
         "id": "jennifer-shehane",
         "name": "Jennifer Shehane",
         "title": "Software Developer @ Cypress",
-        "color": "red",
         "description": "<p>Jennifer is a self-taught, front-end developer. After starting her career in web and print design in Atlanta, she moved into web development where she became a passionate advocate of test driven development. She currently wears many hats at Cypress.io where she codes and tests in JavaScript, writes documentation, manages their open source projects, and designs user interfaces. In her free time, she travels and explores Myanmar, her current home.</p>",
         "profile": [
             {
@@ -406,39 +405,39 @@
                 "url": "https://www.linkedin.com/in/jennifer-shehane",
                 "type": "linkedin"
             }
-        ]
+        ],
+        "food": "curry-pup"
     },
     {
         "id": "tom-suijkerbuijk",
         "name": "Tom Suijkerbuijk",
         "title": "Software Engineer @ KLM Royal Dutch Airlines",
-        "color": "blue",
         "description": "<p>Tom is an airplane enthusiast and works as a front-end engineer at KLM Royal Dutch Airlines in Amsterdam. He's always been interested in technology and web-development but wanted to become a pilot. Becoming a software engineer in aviation was the best of both worlds.</p>",
         "profile": [
             {
                 "url": "https://twitter.com/tomsuykerbuyk",
                 "type": "twitter"
             }
-        ]
+        ],
+        "food": "cendol"
     },
     {
         "id": "adrian-yeong",
         "name": "Adrian Yeong",
         "title": "Senior Software Developer",
-        "color": "red",
         "description": "<p>Adrian is a front end developer who does Angular web application and mobile application. He is always passionate about making great products.</p><p>He regularly joins and contributes to the tech community, which enables him to meet new people, share knowledge and have fun. He is also one of the community organising members of Google Cloud Developer Community Kuala Lumpur.</p>",
         "profile": [
             {
                 "url": "https://web.facebook.com/wwyeong",
                 "type": "twitter"
             }
-        ]
+        ],
+        "food": "bandung"
     },
     {
         "id": "amadou-sall",
         "name": "Amadou Sall",
         "title": "Frontend Software Engineer @ Air France KLM",
-        "color": "blue",
         "description": "<p>Amadou Sall is a Frontend Software Engineer from Senegal 🇸🇳 based in Toulouse, France 🇫🇷. He's passionate about web, and mobile technologies, and currently specializes in Angular. Amadou works for Air France KLM where he helps developers build better Angular applications. He regularly speaks, presents, and writes about Angular and its ecosystem. You can find his blog at www.amadousall.com, and follow him on Twitter at @ahasall.</p>",
         "profile": [
             {
@@ -449,86 +448,85 @@
                 "url": "https://www.linkedin.com/in/ahasall",
                 "type": "linkedin"
             }
-        ]
+        ],
+        "food": "nasi-lemak-ikan"
     },
     {
         "id": "michael-hladky",
         "name": "Michael Hladky",
         "title": "GDE, Trainer/Consultant",
-        "color": "red",
         "description": "<p>Angular by heart and code. Michael is a full-stack developer located in Vienna, Austria. He is a Google Developer Expert (GDE) and an active part of the community. As founder of the Angular-Austria association, organizer of Angular-Vienna and NestJS-Vienna Meetup he grows the Austrian community. He is a developer, trainer and consultant with the focus on Angular as well as ionic and surrounding technologies, and gives workshops on Angular, RxJs and Typescript. He regularly speaks at conferences and meetups and enjoys participating in the dev community and OSS.</p>",
         "profile": [
             {
                 "url": "https://twitter.com/Michael_Hladky",
                 "type": "twitter"
             }
-        ]
+        ],
+        "food": "teh-tarik"
     },
     {
         "id": "ho-jen-ning",
         "name": "Ho Jen Ning",
         "title": "Senior Web Developer",
-        "color": "blue",
         "description": "<p>Jen Ning is a web developer that primarily works in the front-end, and has been in the industry for more than 5 years. He enjoys developing product that delights its users.</p><p>He performs CSS wizardry daily in his work to achieve that.</p>",
         "profile": [
             {
                 "url": "https://www.linkedin.com/in/jenning-ho/",
                 "type": "linkedin"
             }
-        ]
+        ],
+        "food": "roti-canai"
     },
     {
         "id": "mart-ganzevles",
         "name": "Mart Ganzevles",
         "title": "Software Engineer @ KLM Royal Dutch Airlines",
-        "color": "red",
         "description": "<p>Mart is a 24 year old front-end engineer at KLM Royal Dutch Airlines in Amsterdam by day. He’s passionate about web technologies and tech in general. By night you can find him behind the decks of a DJ set.</p>",
         "profile": [
             {
                 "url": "https://twitter.com/martyganz",
                 "type": "twitter"
             }
-        ]
+        ],
+        "food": "limao-ice-ikat-tepi"
     },
     {
         "id": "alex-lakatos",
         "name": "Alex Lakatos",
         "title": "JavaScript Developer Advocate @ Nexmo",
-        "color": "blue",
         "description": "<p>Alex Lakatos is a JavaScript Developer Advocate for Nexmo. In his spare time he is a Mozilla Tech Speaker and has been a contributor to the Mozilla project for the past six years, based in London. JavaScript developer building on the open web, he has been pushing its boundaries every day. You can check out his github profile or get in touch on twitter. When he’s not programming, he likes to travel the world, so it’s likely you’ll bump into him in an airport lounge.</p>",
         "profile": [
             {
                 "url": "https://twitter.com/lakatos88",
                 "type": "twitter"
             }
-        ]
+        ],
+        "food": "tosai"
     },
     {
         "id": "anil-kumar-menon",
         "name": "Anil Kumar Menon",
         "title": "Solution Specialist for Data and AI @ Microsoft",
-        "color": "red",
         "description": "<p>Anil is a Solution Sales Specialist for Data and AI at Microsoft, helping customers implement Data and AI solutions using the Microsoft stack.</p>",
         "profile": [
             {
                 "url": "https://linkedin.com/in/anil-kumar-menon",
                 "type": "linkedin"
             }
-        ]
-
+        ],
+        "food": "bandung"
     },
     {
         "id": "all-speakers",
         "name": "All Speakers",
-        "title": "Awesome Speakers",
-        "color": "blue",
-        "description": "<p>All awesome NG-MY 2019 speakers!</p>",
+        "title": "Awesome Speakers @ NG-MY 2019",
+        "description": "<p>Orangutan & all awesome speakers!</p>",
         "profile": [
             {
                 "url": "https://twitter.com/ngmyconf",
                 "type": "twitter"
             }
-        ]
-
+        ],
+        "food": "curry-pup"
     }
 ]

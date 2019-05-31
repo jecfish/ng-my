@@ -51,12 +51,7 @@ export class SpeakersPageComponent implements OnInit {
 
   ngOnInit() {
     this.profileIconsModel = profileIcons;
-    this.speakerList = speakerList.map(x => ({
-      ...x,
-      ...{
-        food: this.pageSvc.randomFoodIcon()
-      }
-    }));
+    this.speakerList = speakerList;
     const selected = this.route.snapshot.paramMap.get('id');
     this.selectSpeaker(selected, false);
   }
