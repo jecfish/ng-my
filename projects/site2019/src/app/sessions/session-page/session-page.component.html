@@ -9,122 +9,54 @@
         </p>
       </div>
     </div>
-    <section class="session-section">
-      <div class="page-header">
-        <h2 class="section-title">Meet & Greet</h2>
-      </div>
-      <ul class="session-list">
-        <li class="session-item" *ngFor="let s of chatSession" [class.--selected]="selectedSessionId === s.id">
-          <div class="row">
-            <div class="col">
-              <h5 class="session-topic">{{ s.title }}
-                <div class="session-speaker-list">
-                  <a routerLink="/speakers/{{ p.id }}" class="session-speaker-item" *ngFor="let p of s.speakers">
-                    <img src="../../assets/imgs/speakers/{{ p.id }}.jpg" [alt]="p.name" [title]="p.name"
-                      class="session-speaker-icon"></a>
-                </div>
-              </h5>
-              <p class="session-desc" [innerHTML]="s.description.full"></p>
-              <div class="session-tag-list" *ngIf="!!s.tags.length">
-                <div class="session-tag-item" *ngFor="let t of s.tags">{{ t }}</div>
-              </div>
-              <!-- <button class="btn btn-secondary" (click)="selectSession(s.id)">
-                <div class="btn-inner">More info</div>
-              </button> -->
-            </div>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <section class="session-section">
-      <div class="page-header">
-        <h2 class="section-title">Presentations</h2>
-      </div>
-      <ul class="session-list">
-        <li class="session-item" *ngFor="let s of mainSession" [class.--selected]="selectedSessionId === s.id">
-          <div class="row">
-            <div class="col">
-              <h5 class="session-topic">{{ s.title }}
-                <div class="session-speaker-list">
-                  <a routerLink="/speakers/{{ p.id }}" class="session-speaker-item" *ngFor="let p of s.speakers">
-                    <img src="../../assets/imgs/speakers/{{ p.id }}.jpg" [alt]="p.name" [title]="p.name"
-                      class="session-speaker-icon"></a>
-                </div>
-              </h5>
-              <p class="session-desc" [innerHTML]="s.description.short"></p>
-              <div class="session-tag-list" *ngIf="!!s.tags.length">
-                <div class="session-tag-item" *ngFor="let t of s.tags">{{ t }}</div>
-              </div>
-              <button class="btn btn-secondary" (click)="selectSession(s.id)">
-                <div class="btn-inner">More info</div>
-              </button>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </section>
 
-    <section class="session-section" *ngIf="lightningSession.length">
-      <div class="page-header">
-        <h2 class="section-title">Lightning talks</h2>
-      </div>
-      <ul class="session-list">
-        <li class="session-item" *ngFor="let s of lightningSession" [class.--selected]="selectedSessionId === s.id">
-          <div class="row">
-            <div class="col">
-              <h5 class="session-topic">{{ s.title }}
-                <div class="session-speaker-list">
-                  <a routerLink="/speakers/{{ p.id }}" class="session-speaker-item" *ngFor="let p of s.speakers">
-                    <picture>
-                        <source srcset="../../assets/imgs/speakers/{{ p.id }}.webp" type="image/webp">
-                        <img src="../../assets/imgs/speakers/{{ p.id }}.jpg" [alt]="p.name" [title]="p.name"
-                        class="session-speaker-icon">
-                    </picture>
-                  </a>
-                </div>
-              </h5>
-              <p class="session-desc" [innerHTML]="s.description.short"></p>
-              <div class="session-tag-list" *ngIf="!!s.tags.length">
-                <div class="session-tag-item" *ngFor="let t of s.tags">{{ t }}</div>
-              </div>
-              <button class="btn btn-secondary" (click)="selectSession(s.id)">
-                <div class="btn-inner">More info</div>
-              </button>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </section>
+    <ng-container [ngTemplateOutlet]="sessionContainer" 
+      [ngTemplateOutletContext]="{list:chatSession, title: 'Meet & Chat'}">
+    </ng-container>
 
-    <section class="session-section" *ngIf="workshopSession.length">
-      <div class="page-header">
-        <h2 class="section-title">Workshops</h2>
-      </div>
-      <ul class="session-list">
-        <li class="session-item" *ngFor="let s of workshopSession" [class.--selected]="selectedSessionId === s.id">
-          <div class="row">
-            <div class="col">
-              <h5 class="session-topic">{{ s.title }}
-                <div class="session-speaker-list">
-                  <a routerLink="/speakers/{{ p.id }}" class="session-speaker-item" *ngFor="let p of s.speakers">
-                    <img src="../../assets/imgs/speakers/{{ p.id }}.jpg" [alt]="p.name" [title]="p.name"
-                      class="session-speaker-icon"></a>
-                </div>
-              </h5>
-              <p class="session-desc" [innerHTML]="s.description.short"></p>
-              <div class="session-tag-list" *ngIf="!!s.tags.length">
-                <div class="session-tag-item" *ngFor="let t of s.tags;">{{ t }}</div>
-              </div>
-              <button class="btn btn-secondary" (click)="selectSession(s.id)">
-                <div class="btn-inner">More info</div>
-              </button>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </section>
+    <ng-container [ngTemplateOutlet]="sessionContainer" 
+      [ngTemplateOutletContext]="{list:mainSession, title: 'Presentations'}">
+    </ng-container>
+
+    <ng-container [ngTemplateOutlet]="sessionContainer" 
+      [ngTemplateOutletContext]="{list:lightningSession, title: 'Lightning Talks'}">
+    </ng-container>
+
+    <ng-container [ngTemplateOutlet]="sessionContainer" 
+      [ngTemplateOutletContext]="{list:workshopSession, title: 'Workshop'}">
+    </ng-container>
 
     <my-modal *ngIf="selectedItem" [item]="selectedItem" (unselect)="unselectSession()"></my-modal>
 
   </article>
 </main>
+
+<ng-template let-title="title" let-list="list" #sessionContainer>
+    <section class="session-section">
+        <div class="page-header">
+          <h2 class="section-title">{{ title }}</h2>
+        </div>
+        <ul class="session-list">
+          <li class="session-item" *ngFor="let s of list" [class.--selected]="selectedSessionId === s.id">
+            <div class="row">
+              <div class="col">
+                <h5 class="session-topic">{{ s.title }}
+                  <div class="session-speaker-list">
+                    <a routerLink="/speakers/{{ p.id }}" class="session-speaker-item" *ngFor="let p of s.speakers">
+                      <img src="../../assets/imgs/speakers/{{ p.id }}.jpg" [alt]="p.name" [title]="p.name"
+                        class="session-speaker-icon"></a>
+                  </div>
+                </h5>
+                <p class="session-desc" [innerHTML]="s.description.short"></p>
+                <div class="session-tag-list" *ngIf="!!s.tags.length">
+                  <div class="session-tag-item" *ngFor="let t of s.tags;">{{ t }}</div>
+                </div>
+                <button class="btn btn-secondary" (click)="selectSession(s.id)">
+                  <div class="btn-inner">More info</div>
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+</ng-template>
