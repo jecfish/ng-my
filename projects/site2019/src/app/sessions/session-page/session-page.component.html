@@ -47,7 +47,7 @@
                         class="session-speaker-icon"></a>
                   </div>
                 </h5>
-                <p class="session-desc" [innerHTML]="s.description.short"></p>
+                <p class="session-desc" innerHTML="{{ s.type === 'chat' ? s.description.full : s.description.short}}"></p>
                 <div class="session-tag-list" *ngIf="!!s.tags.length">
                   <div class="session-tag-item" *ngFor="let t of s.tags;">{{ t }}</div>
                 </div>
