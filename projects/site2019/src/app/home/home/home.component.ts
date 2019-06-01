@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
   speaker: any;
   shouldShowStats = false;
 
-  readonly TOTAL_SPEAKER = 33;
+  readonly TOTAL_SPEAKER = 32;
 
   constructor(private pageSvc: PageService) { }
 

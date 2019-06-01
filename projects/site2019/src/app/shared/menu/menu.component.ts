@@ -3,11 +3,11 @@ import { PageService } from '../../services/page.service';
 import socialMediaList from '../../../assets/data/social-media.json';
 
 @Component({
-  selector: 'my-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  selector: 'my-menu',
+  templateUrl: './menu.component.html',
+  styleUrls: ['./menu.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class MenuComponent implements OnInit {
   isShowMobileNav = false;
 
   navList = [
