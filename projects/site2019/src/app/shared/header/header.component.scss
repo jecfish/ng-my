@@ -1,0 +1,31 @@
+@import 'variables';
+@import 'mixins';
+
+.page {
+  &-header {
+    padding: $space 0;
+
+    @include mobile {
+      padding: $space-s 0;
+    }
+  }
+
+  &-title {
+    text-align: center;
+    margin: 0;
+    color: $red;
+    font-size: $font-size-xxxl;
+    font-weight: bold;
+    text-shadow: 0.05em 0.05em $black;
+
+    @include mobile {
+      font-size: $font-size-xxl;
+    }
+  }
+
+  &-description {
+    margin: $space auto 0;
+    text-align: center;
+    padding: 0 $space;
+  }
+}

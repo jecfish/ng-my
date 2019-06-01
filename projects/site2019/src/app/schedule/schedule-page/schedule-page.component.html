@@ -1,13 +1,10 @@
 <main class="main schedule-main">
   <article class="container">
-    <div class="page-header">
-      <h1 class="page-title">{{ title | uppercase }}</h1>
-      <div class="page-description article-section">
-        <p>
-          (time is subject to change)
-        </p>
-      </div>
-    </div>
+    <my-header [title]="title">
+      <p>
+        (time is subject to change)
+      </p>
+    </my-header>
   </article>
   <!-- day 1 -->
   <section class="container schedule-container">

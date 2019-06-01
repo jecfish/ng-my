@@ -16,9 +16,16 @@
 }
 
 .session {
+  &-header {
+    padding: $space 0;
+
+    @include mobile {
+      padding: $space-s 0;
+    }
+  }
 
   &-section {
-    margin-top: $space-l;
+    margin-top: $space;
   }
 
   &-duration {

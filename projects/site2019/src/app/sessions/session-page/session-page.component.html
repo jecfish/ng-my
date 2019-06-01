@@ -1,28 +1,26 @@
 <main class="main">
   <article class="container">
-    <div class="page-header">
-      <h1 class="page-title">SESSIONS</h1>
-      <div class="page-description article-section">
-        <p>
-          Learn about the latest trends in Angular and frontend web technologies in an inspiring, open meet and connect
-          with our speakers and other like-minded, passionate developers.
-        </p>
-      </div>
-    </div>
 
-    <ng-container [ngTemplateOutlet]="sessionContainer" 
+    <my-header title="Sessions">
+      <p>
+        Learn about the latest trends in Angular and frontend web technologies in an inspiring, open meet and connect
+        with our speakers and other like-minded, passionate developers.
+      </p>
+    </my-header>
+
+    <ng-container [ngTemplateOutlet]="sessionContainer"
       [ngTemplateOutletContext]="{list:chatSession, title: 'Meet & Chat'}">
     </ng-container>
 
-    <ng-container [ngTemplateOutlet]="sessionContainer" 
+    <ng-container [ngTemplateOutlet]="sessionContainer"
       [ngTemplateOutletContext]="{list:mainSession, title: 'Presentations'}">
     </ng-container>
 
-    <ng-container [ngTemplateOutlet]="sessionContainer" 
+    <ng-container [ngTemplateOutlet]="sessionContainer"
       [ngTemplateOutletContext]="{list:lightningSession, title: 'Lightning Talks'}">
     </ng-container>
 
-    <ng-container [ngTemplateOutlet]="sessionContainer" 
+    <ng-container [ngTemplateOutlet]="sessionContainer"
       [ngTemplateOutletContext]="{list:workshopSession, title: 'Workshop'}">
     </ng-container>
 
@@ -32,31 +30,31 @@
 </main>
 
 <ng-template let-title="title" let-list="list" #sessionContainer>
-    <section class="session-section">
-        <div class="page-header">
-          <h2 class="section-title">{{ title }}</h2>
-        </div>
-        <ul class="session-list">
-          <li class="session-item" *ngFor="let s of list" [class.--selected]="selectedSessionId === s.id">
-            <div class="row">
-              <div class="col">
-                <h5 class="session-topic">{{ s.title }}
-                  <div class="session-speaker-list">
-                    <a routerLink="/speakers/{{ p.id }}" class="session-speaker-item" *ngFor="let p of s.speakers">
-                      <img src="../../assets/imgs/speakers/{{ p.id }}.jpg" [alt]="p.name" [title]="p.name"
-                        class="session-speaker-icon"></a>
-                  </div>
-                </h5>
-                <p class="session-desc" innerHTML="{{ s.type === 'chat' ? s.description.full : s.description.short}}"></p>
-                <div class="session-tag-list" *ngIf="!!s.tags.length">
-                  <div class="session-tag-item" *ngFor="let t of s.tags;">{{ t }}</div>
-                </div>
-                <button class="btn btn-secondary" (click)="selectSession(s.id)">
-                  <div class="btn-inner">More info</div>
-                </button>
+  <section class="session-section">
+    <div class="session-header">
+      <h2 class="section-title">{{ title }}</h2>
+    </div>
+    <ul class="session-list">
+      <li class="session-item" *ngFor="let s of list" [class.--selected]="selectedSessionId === s.id">
+        <div class="row">
+          <div class="col">
+            <h5 class="session-topic">{{ s.title }}
+              <div class="session-speaker-list">
+                <a routerLink="/speakers/{{ p.id }}" class="session-speaker-item" *ngFor="let p of s.speakers">
+                  <img src="../../assets/imgs/speakers/{{ p.id }}.jpg" [alt]="p.name" [title]="p.name"
+                    class="session-speaker-icon"></a>
               </div>
+            </h5>
+            <p class="session-desc" innerHTML="{{ s.type === 'chat' ? s.description.full : s.description.short}}"></p>
+            <div class="session-tag-list" *ngIf="!!s.tags.length">
+              <div class="session-tag-item" *ngFor="let t of s.tags;">{{ t }}</div>
             </div>
-          </li>
-        </ul>
-      </section>
+            <button class="btn btn-secondary" (click)="selectSession(s.id)">
+              <div class="btn-inner">More info</div>
+            </button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
 </ng-template>
