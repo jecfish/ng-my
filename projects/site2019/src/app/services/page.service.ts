@@ -84,29 +84,4 @@ export class PageService {
 
     animateScroll();
   }
-
-  randomNumber(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1) + min);
-  }
-
-  randomFoodIcon() {
-    const foodIconsModel = [
-      'abc',
-      'bandung',
-      'cendol',
-      'curry-pup',
-      'nasi-lemak-ikan',
-      'kopi-o',
-      'limao-ice-ikat-tepi',
-      'nasi-lemak',
-      'roti-canai',
-      'teh-tarik',
-      'ikat-semua',
-      'tosai'
-    ];
-
-    return foodIconsModel[this.randomNumber(foodIconsModel.length, 0)];
-  }
 }

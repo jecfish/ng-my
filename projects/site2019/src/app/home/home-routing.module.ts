@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeTicketPageComponent } from './home-ticket-page/home-ticket-page.component';
+import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes = [
     {
         path: '',
-        component: HomeTicketPageComponent,
+        component: HomeComponent,
         pathMatch: 'prefix'
     }
 ];
