@@ -1,19 +1,17 @@
 <main id="team">
-  <div class="page-header">
-    <div class="container">
-      <h1 class="page-title">SPEAKERS</h1>
-      <div class="page-description article-section">
-        <p>
-          Get inspired by our passionate speakers and learn about the latest trends in Angular and frontend web
-          technologies.
-        </p>
-        <p>
-          With Angular team members, Google Developer Experts (GDE), Microsoft Most Valuable Professionals (MVP) and
-          legendary international speakers onboard, NG-MY 2019 Conference guarantees an excellent program - technically
-          in-depth and 100% useful.
-        </p>
-      </div>
-    </div>
+
+  <div class="container">
+    <my-header title="Speakers">
+      <p>
+        Get inspired by our passionate speakers and learn about the latest trends in Angular and frontend web
+        technologies.
+      </p>
+      <p>
+        With Angular team members, Google Developer Experts (GDE), Microsoft Most Valuable Professionals (MVP) and
+        legendary international speakers onboard, NG-MY 2019 Conference guarantees an excellent program - technically
+        in-depth and 100% useful.
+      </p>
+    </my-header>
   </div>
   <section class="main">
     <div class="container">
@@ -28,8 +26,8 @@
                 </picture>
               </figure>
               <picture class="team-card-food">
-                  <source srcset="../../assets/imgs/speaker-food/{{ m.food }}.webp" type='image/webp'>
-                  <img src="../../assets/imgs/speaker-food/{{ m.food }}.png" [alt]="m.food">
+                <source srcset="../../assets/imgs/speaker-food/{{ m.food }}.webp" type='image/webp'>
+                <img src="../../assets/imgs/speaker-food/{{ m.food }}.png" [alt]="m.food">
               </picture>
             </div>
             <div class="team-card-name">{{ m.name }}</div>

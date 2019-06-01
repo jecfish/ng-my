@@ -8,35 +8,27 @@
 
   <!-- team -->
   <div class="container">
-    <div class="page-header">
-      <h1 class="page-title">CORE TEAM</h1>
-      <div class="page-description article-section">
-        <p>
-          NG-MY would not be possible without the help of its fantastic Core Team.
-        </p>
-        <p>
-          Every Core Team member is always stand-by to help out where needed. If you require special assistance of any
-          kind, please don't hesitate to reach out for help. If you notice somebody not following our code of conduct,
-          please let us know immediately so we can take appropriate action.
-        </p>
-      </div>
-    </div>
+    <my-header title="Core team">
+      <p>
+        NG-MY would not be possible without the help of its fantastic Core Team.
+      </p>
+      <p>
+        Every Core Team member is always stand-by to help out where needed. If you require special assistance of any
+        kind, please don't hesitate to reach out for help. If you notice somebody not following our code of conduct,
+        please let us know immediately so we can take appropriate action.
+      </p>
+    </my-header>
   </div>
   <ng-container [ngTemplateOutlet]="list" [ngTemplateOutletContext]="{list:members}">
   </ng-container>
 
   <!-- organizer -->
   <div class="container">
-    <div class="page-header">
-      <div class="container">
-        <h2 class="page-title">ORGANIZER</h2>
-        <div class="page-description">
-          <p>
-            NG-MY is organized by Jecelyn Yeen, with the incredible help and support of the entire NG-MY Core Team!
-          </p>
-        </div>
-      </div>
-    </div>
+    <my-header title="Organizers">
+      <p>
+        NG-MY is organized by Jecelyn Yeen, with the incredible help and support of the entire NG-MY Core Team!
+      </p>
+    </my-header>
   </div>
   <ng-container [ngTemplateOutlet]="list" [ngTemplateOutletContext]="{list:organizers}">
   </ng-container>

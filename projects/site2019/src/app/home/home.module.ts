@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
-import { HomeTicketPageComponent } from './home-ticket-page/home-ticket-page.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
-    HomeTicketPageComponent
+    HomeComponent
   ],
   imports: [
     CommonModule,

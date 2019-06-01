@@ -1,0 +1,10 @@
+@import 'variables';
+@import 'mixins';
+
+.section {
+    padding: $space 0;
+
+    @include mobile {
+      padding: $space-s 0;
+    }
+  }

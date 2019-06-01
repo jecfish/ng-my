@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Meta } from '@angular/platform-browser';
 import { PageService } from '../../services/page.service';
 
 @Component({

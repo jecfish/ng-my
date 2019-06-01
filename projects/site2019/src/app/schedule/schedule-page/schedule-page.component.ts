@@ -69,12 +69,6 @@ export class SchedulePageComponent implements OnInit {
       }))
       .map(session => {
         const speakers = speakerList
-          .map(x => ({
-            ...x,
-            ...{
-              food: this.pageSvc.randomFoodIcon()
-            }
-          }))
           .filter(x => session.speakers.includes(x.id));
         return { ...session, speakers };
       })

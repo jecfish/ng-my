@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, HostListener, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
 import { PageService } from '../../services/page.service';
 
 import sponsors from '../../../assets/data/sponsors.json';
@@ -6,13 +6,12 @@ import speakerList from '../../../assets/data/speakers.json';
 import postList from '../../../assets/data/posts.json';
 
 @Component({
-  selector: 'my-home-ticket-page',
-  templateUrl: './home-ticket-page.component.html',
-  styleUrls: ['./home-ticket-page.component.scss']
+  selector: 'my-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss']
 })
-export class HomeTicketPageComponent implements OnInit {
+export class HomeComponent implements OnInit {
   @ViewChild('stats', { static: true }) statsEl: any;
-
   @ViewChild('subscribe', { static: true }) subscribeEl: any;
 
   sponsors = sponsors;
@@ -20,7 +19,7 @@ export class HomeTicketPageComponent implements OnInit {
   speaker: any;
   shouldShowStats = false;
 
-  readonly TOTAL_SPEAKER = 33;
+  readonly TOTAL_SPEAKER = 32;
 
   constructor(private pageSvc: PageService) { }
 
@@ -51,7 +50,7 @@ export class HomeTicketPageComponent implements OnInit {
   }
 
   private randomSpeaker() {
-    const num = this.pageSvc.randomNumber(this.TOTAL_SPEAKER, 0);
+    const num = this.randomNumber(this.TOTAL_SPEAKER);
     const selected = speakerList[num];
     const description = `${selected.description.substr(0, 300)}${
       selected.description.length > 300 ? '...' : ''
@@ -60,8 +59,13 @@ export class HomeTicketPageComponent implements OnInit {
     this.speaker = {
       ...selected,
       description,
-      food: this.pageSvc.randomFoodIcon()
     };
+  }
+
+  private randomNumber(max: number, min = 0) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) + min);
   }
 
   @HostListener('window:scroll', [])

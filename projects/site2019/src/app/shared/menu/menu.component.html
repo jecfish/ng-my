@@ -1,0 +1,37 @@
+<header class="header" [class.--open]="isShowMobileNav">
+  <div class="header-bar">
+    <div class="container">
+      <a routerLink="/home" class="header-logo">
+        <img src="../../../assets/imgs/logo.svg" alt="NG-MY logo" class="header-logo-img">
+        NG-MY
+      </a>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-item" *ngFor="let n of navList">
+            <a [routerLink]="n.link" class="header-nav-link" (click)="trackEvent(n.name)">{{ n.name }}</a>
+          </li>
+        </ul>
+
+        <ul class="header-social">
+          <li class="header-social-item" *ngFor="let s of socialMediaList">
+            <a target="_blank" rel="noreferrer" [href]="s.url" class="header-social-link" [attr.aria-label]="s.icon" (click)="trackEvent(s.icon)">
+              <!-- <i class="fab fa-{{ s.icon }}"></i> -->
+              <span class="icon-{{ s.icon }}"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a class="btn btn-primary header-ticket" href="https://ti.to/ng-my/ng-my-2019" target="_blank" rel="noreferrer">
+        <span class="btn-inner">
+          <!-- <i class="fas fa-ticket-alt icon-left"></i> -->
+          <span class="icon-ticket icon-left"></span>
+          Buy ticket</span>
+      </a>
+      <button class="header-nav-toggle" aria-label="nav" (click)="toggleMobileNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
