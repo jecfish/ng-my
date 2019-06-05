@@ -24,8 +24,8 @@
       [ngTemplateOutletContext]="{list:workshopSession, title: 'Workshop'}">
     </ng-container>
 
-    <my-modal *ngIf="selectedItem" [item]="selectedItem" (unselect)="unselectSession()"></my-modal>
-
+    <my-modal [item]="selectedItem" (unselect)="unselectSession()"></my-modal>
+    <my-modal [item]="selectedSpeaker" (unselect)="unselectSpeaker()"></my-modal>
   </article>
 </main>
 
@@ -40,7 +40,7 @@
           <div class="col">
             <h5 class="session-topic">{{ s.title }}
               <div class="session-speaker-list">
-                <a routerLink="/speakers/{{ p.id }}" class="session-speaker-item" *ngFor="let p of s.speakers">
+                <a (click)="selectSpeaker(p.id)" class="session-speaker-item" *ngFor="let p of s.speakers">
                   <img src="../../assets/imgs/speakers/{{ p.id }}.jpg" [alt]="p.name" [title]="p.name"
                     class="session-speaker-icon"></a>
               </div>

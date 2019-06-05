@@ -17,6 +17,7 @@ import { IModal } from '../../shared/modal/modal.component.js';
 export class SessionPageComponent implements OnInit {
   sessions = [];
   selectedSessionId = null;
+  selectedSpeakerId = null;
 
   profileIconsModel = null;
 
@@ -48,6 +49,31 @@ export class SessionPageComponent implements OnInit {
       }),
       title: session.title,
       desc: session.description.full
+    };
+    return item;
+  }
+
+  get selectedSpeaker() {
+    const speaker = speakerList.find(x => x.id === this.selectedSpeakerId);
+
+    if (!speaker) return null;
+
+    const item: IModal = {
+      thumbnails: [
+        {
+          url: `/speakers/${speaker.id}`,
+          img: `../../assets/imgs/speakers/${speaker.id}`,
+          name: speaker.name,
+          links: speaker.profile.map(p => {
+            return {
+              url: p.url,
+              type: this.profileIconsModel[p.type]
+            };
+          })
+        }
+      ],
+      title: speaker.title,
+      desc: speaker.description
     };
     return item;
   }
@@ -113,5 +139,13 @@ export class SessionPageComponent implements OnInit {
 
   unselectSession() {
     this.selectSession(null);
+  }
+
+  selectSpeaker(id: string) {
+    this.selectedSpeakerId = id;
+  }
+
+  unselectSpeaker() {
+    this.selectSpeaker(null);
   }
 }

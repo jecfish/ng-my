@@ -91,7 +91,6 @@ export class SchedulePageComponent implements OnInit {
   }
 
   selectSession(id) {
-    console.log(id);
     this.selectedSessionId = id;
   }
 

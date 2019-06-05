@@ -38,7 +38,7 @@
     <ng-container [ngTemplateOutlet]="schedule" [ngTemplateOutletContext]="{day:day2}">
     </ng-container>
   </section>
-  <my-modal *ngIf="selectedItem" [item]="selectedItem" (unselect)="unselectSession()"></my-modal>
+  <my-modal [item]="selectedItem" (unselect)="unselectSession()"></my-modal>
 </main>
 
 <!-- template -->
