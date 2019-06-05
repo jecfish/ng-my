@@ -53,14 +53,14 @@ export class SpeakersPageComponent implements OnInit {
     this.profileIconsModel = profileIcons;
     this.speakerList = speakerList;
     const selected = this.route.snapshot.paramMap.get('id');
-    this.selectSpeaker(selected, false);
+    this.selectSpeaker(selected);
   }
 
-  selectSpeaker(id, shouldRedirect = true) {
+  selectSpeaker(id: string) {
     this.selectedSpeakerId = id;
 
     const path = id ? `/speakers/${id}` : '/speakers';
-    if (shouldRedirect) this.location.go(path);
+    this.location.go(path);
 
     const title = id
       ? this.selectedItem.thumbnails[0].name +

@@ -4,7 +4,7 @@
     <div class="container">
       <div class="team-highlight-info-container">
         <div class="team-highlight-info">
-          <ul class="team-highlight-speakers-list" *ngIf="item.thumbnails.length > 1">
+          <ul class="team-highlight-speakers-list" *ngIf="item?.thumbnails.length > 1">
             <li class="team-highlight-speakers-item" *ngFor="let s of item.thumbnails">
               <!-- <a [routerLink]="s.url" class="team-highlight-speakers-link"> -->
                 <figure class="team-highlight-speakers-pic">
@@ -27,7 +27,7 @@
               </div>
             </li>
           </ul>
-          <ng-container *ngIf="item.thumbnails.length === 1">
+          <ng-container *ngIf="item?.thumbnails.length === 1">
             <ng-container *ngFor="let s of item.thumbnails">
               <!-- <a [routerLink]="s.url"> -->
                 <figure class="team-highlight-pic">
@@ -51,8 +51,8 @@
           </ng-container>
         </div>
         <div class="team-highlight-description-container">
-          <div class="team-highlight-title">{{  item.title }}</div>
-          <div class="team-highlight-description article-section" [innerHTML]="item.desc">
+          <div class="team-highlight-title">{{  item?.title }}</div>
+          <div class="team-highlight-description article-section" [innerHTML]="item?.desc">
           </div>
         </div>
       </div>
