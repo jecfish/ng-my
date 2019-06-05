@@ -87,6 +87,17 @@
                 "type": "linkedin"
             },
             "food": "nasi-lemak"
+        },
+        {
+            "id": "henry-lim",
+            "name": "Henry Lim",
+            "description": "<p>Henry is a front-end web developer from Kuala Lumpur. He’s also a community co-organizer of Google Developer Group Kuala Lumpur.</p><p>He’s a big fan of Google’s cutting-edge technologies, including Polymer, Progressive Web Apps, and Firebase. He will stop at nothing to educate everyone around him about them.</p><p>While he’s not coding, he likes to play piano and listen to his favorite band - Mayday.</p>",
+            "photo": "henry_lim-normal",
+            "profile": {
+                "url": "https://twitter.com/henrylim96",
+                "type": "twitter"
+            },
+            "food": "tosai"
         }
     ],
     "organizers": [
