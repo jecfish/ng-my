@@ -41,6 +41,19 @@
 
     @include mobile {
       grid-template-columns: initial;
+      padding: $space-s $space-s;
+    }
+
+    &-time {
+      @include mobile {
+        font-size: large;
+      }
+    }
+
+    &-list {
+      @include mobile {
+        padding-left: $space-s;
+      }
     }
   }
 
@@ -48,6 +61,10 @@
     font-size: $font-size-l;
     font-weight: bold;
     padding-left: $space;
+
+    @include mobile {
+      padding-left: $space-s;
+    }
   }
 
   &-main {

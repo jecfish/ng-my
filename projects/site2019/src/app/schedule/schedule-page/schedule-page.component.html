@@ -44,10 +44,10 @@
 <!-- template -->
 <ng-template let-day="day" #schedule>
   <div class="schedule-item" *ngFor="let s of day">
-    <div>
+    <div class="schedule-item-time">
       {{ s.time }}
     </div>
-    <div>
+    <div class="schedule-item-list">
       <ng-container *ngFor="let i of s.items">
         <div [class.schedule-talk]="i.speakers?.length" [class.schedule-talk-mamak]="i.title.startsWith('Mamak')">
           <h5>{{i.title}}
