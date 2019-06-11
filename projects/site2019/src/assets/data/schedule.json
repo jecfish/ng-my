@@ -197,7 +197,7 @@
     "15.50 - 18.50": [
       {
         "title": "Workshop A: Deploy Dockerized Angular Application to Azure",
-        "speakers": ["Anil Kumar Menon"],
+        "speakers": ["Anil Kumar Menon", "Chan Ming Man"],
         "session": "docker-azure-angular"
       },
       {

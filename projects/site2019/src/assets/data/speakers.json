@@ -517,6 +517,23 @@
         "food": "bandung"
     },
     {
+        "id": "chan-ming-man",
+        "name": "Chan Ming Man",
+        "title": "MVP, Senior Manager @ Port of Tanjung Pelepas",
+        "description": "<p>Ming Man is Microsoft MVP since year 2006. He is a software development manager for a multinational company. With 29 years of experience in the IT field, he has developed system using Clipper, COBOL, VB5, VB6, VB.NET, Java and C #. He has been using Visual Studio (.NET) since the Beta back in year 2000.  He and the team have developed many projects using .NET platform supporting different key functional areas in the organizations such as engineering, sales, and marketing. He is familiar with the architecture design of business application and is also an expert with database experience in MS SQL, Oracle and AS 400. He is familiar Application Life Cycle Management using the Agile and CMMI methodology.</p>",
+        "profile": [
+            {
+                "url": "https://www.linkedin.com/in/ming-man-chan-3a84099/",
+                "type": "linkedin"
+            },
+            {
+                "url": "http://chanmingman.wordpress.com",
+                "type": "website"
+            }
+        ],
+        "food": "cendol"
+    },
+    {
         "id": "all-speakers",
         "name": "Speakers",
         "title": "Awesome Speakers @ NG-MY 2019",
