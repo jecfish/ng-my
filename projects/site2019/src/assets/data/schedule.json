@@ -110,7 +110,7 @@
         "speakers": [
           "Jia Li"
         ],
-        "session": "jia-li"
+        "session": "from-ngrx-to-ngrx-entity-to-ngrx-data"
       },
       {
         "title": "Leverage Angular Schematics to Empower Developers of Frontend App & Libraries",
@@ -267,7 +267,8 @@
         "title": "Protractor: The Hacker Way",
         "speakers": [
           "Will Huang"
-        ]
+        ],
+        "session": "will-huang"
       },
       {
         "title": "Upgrading your AngularJS App, Without the Tears",
@@ -300,7 +301,7 @@
         "speakers": [
           "Alex Okrushko"
         ],
-        "session": "alex-okrushko"
+        "session": "5-tips-to-improve-user-experience-with-ngrx"
       },
       {
         "title": "Mamak Chat: Office Hours",
