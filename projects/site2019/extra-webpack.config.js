@@ -35,6 +35,7 @@ const routes = [
   // team members
   '/team',
   ...teamRouteList,
+  '/food',
 ];
 
 const routePriority100 = ['/'];
