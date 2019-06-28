@@ -39,6 +39,10 @@ const routes: Routes = [
     loadChildren: () => import('./post/post.module').then(m => m.PostModule)
   },
   {
+    path: 'food',
+    loadChildren: () => import('./food/food.module').then(m => m.FoodModule)
+  },
+  {
     path: 'home',
     redirectTo: '/'
   },

@@ -13,7 +13,8 @@ export class MenuComponent implements OnInit {
   navList = [
     { link: '/schedule', name: 'Schedule' },
     { link: '/speakers', name: 'Speakers' },
-    { link: '/sessions', name: 'Sessions' },
+    { link: '/food', name: 'Food' },
+    // { link: '/sessions', name: 'Sessions' },
     // { link: '/posts', name: 'Articles' },
     // { link: '/form/speaker-training', name: 'Speaking Up!' },
     // { link: '/form/call-for-presenters', name: 'Submit CFP' },
