@@ -211,6 +211,29 @@ small {
   }
 }
 
+.tab {
+  background: $gray-light;
+  box-shadow: 4px 4px $black;
+
+  &+& {
+    margin-left: $space;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: center;
+
+    .tab {
+      background: $gray-lightest;
+
+      &.--selected {
+        background: $red;
+        color: $white;
+      }
+    }
+  }
+}
+
 @import 'components/buttons';
 @import 'components/input';
 
