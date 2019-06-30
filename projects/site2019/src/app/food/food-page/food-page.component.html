@@ -3,60 +3,6 @@
     <p>NG-MY is not just about the Angular talks but also delicious Malaysian food!</p>
   </my-header>
 
-  <!-- <div class="background">
-    <div class="background-deco"></div>
-    <picture class="food-nasi-lemak">
-      <source media="(max-width: 800px)" srcset="./../assets/imgs/home/nasilemak-800w.webp" type="image/webp">
-      <source srcset="../../assets/imgs/home/nasilemak.webp" type="image/webp">
-      <img src="../../assets/imgs/home/nasilemak.png" alt="mamak">
-    </picture>
-    <picture class="food-teh-ais-limau">
-      <source media="(max-width: 800px)" srcset="./../assets/imgs/home/tehaislimau-800w.webp" type="image/webp">
-      <source srcset="../../assets/imgs/home/tehaislimau.webp" type="image/webp">
-      <img src="../../assets/imgs/home/tehaislimau.png" alt="mamak">
-    </picture>
-    <picture class="food-teh-tarik">
-      <source media="(max-width: 800px)" srcset="./../assets/imgs/home/tehtarik-800w.webp" type="image/webp">
-      <source srcset="../../assets/imgs/home/tehtarik.webp" type="image/webp">
-      <img src="../../assets/imgs/home/tehtarik.png" alt="mamak">
-    </picture>
-    <div class="food-mini">
-      <picture>
-        <source srcset="../../assets/imgs/speaker-food/bandung.webp" type="image/webp">
-        <img src="../../assets/imgs/speaker-food/bandung.png" alt="mamak">
-      </picture>
-      <picture>
-        <source srcset="../../assets/imgs/speaker-food/kopi-o.webp" type="image/webp">
-        <img src="../../assets/imgs/speaker-food/kopi-o.png" alt="mamak">
-      </picture>
-      <picture>
-        <source media="(max-width: 800px)" srcset="./../assets/imgs/home/roti-canai-800w.webp" type="image/webp">
-        <source srcset="../../assets/imgs/speaker-food/roti-canai.webp" type="image/webp">
-        <img src="../../assets/imgs/speaker-food/roti-canai.png" alt="mamak">
-      </picture>
-      <picture>
-        <source srcset="../../assets/imgs/speaker-food/tosai.webp" type="image/webp">
-        <img src="../../assets/imgs/speaker-food/tosai.png" alt="mamak">
-      </picture>
-      <picture>
-        <source srcset="../../assets/imgs/speaker-food/nasi-lemak.webp" type="image/webp">
-        <img src="../../assets/imgs/speaker-food/bandung.png" alt="mamak">
-      </picture>
-      <picture>
-        <source srcset="../../assets/imgs/speaker-food/cendol.webp" type="image/webp">
-        <img src="../../assets/imgs/speaker-food/cendol.png" alt="mamak">
-      </picture>
-      <picture>
-        <source srcset="../../assets/imgs/speaker-food/curry-pup.webp" type="image/webp">
-        <img src="../../assets/imgs/speaker-food/curry-pup.png" alt="mamak">
-      </picture>
-      <picture>
-        <source srcset="../../assets/imgs/speaker-food/ikat-semua.webp" type="image/webp">
-        <img src="../../assets/imgs/speaker-food/ikat-semua.png" alt="mamak">
-      </picture>
-    </div>
-  </div> -->
-
   <div class="container food-container" [@switchAnim]="state" (@switchAnim.done)="handleSwitch($event)">
     <div class="tab-list">
       <button class="btn tab" (click)="switchDay()" [class.--selected]="day === 1">
@@ -402,5 +348,24 @@
         </div>
       </section>
     </article>
+    <div class="deco deco-bottom">
+      <picture>
+        <source srcset="../../assets/imgs/speaker-food/bandung.webp" type="image/webp">
+        <img src="../../assets/imgs/speaker-food/bandung.png" alt="mamak">
+      </picture>
+      <picture>
+        <source media="(max-width: 800px)" srcset="./../assets/imgs/home/roti-canai-800w.webp" type="image/webp">
+        <source srcset="../../assets/imgs/speaker-food/roti-canai.webp" type="image/webp">
+        <img src="../../assets/imgs/speaker-food/roti-canai.png" alt="mamak">
+      </picture>
+      <picture>
+        <source srcset="../../assets/imgs/speaker-food/kopi-o.webp" type="image/webp">
+        <img src="../../assets/imgs/speaker-food/kopi-o.png" alt="mamak">
+      </picture>
+      <picture>
+        <source srcset="../../assets/imgs/speaker-food/tosai.webp" type="image/webp">
+        <img src="../../assets/imgs/speaker-food/tosai.png" alt="mamak">
+      </picture>
+    </div>
   </div>
 </main>

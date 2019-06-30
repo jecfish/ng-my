@@ -6,8 +6,10 @@
   margin-top: -$header-h;
   padding-top: $space-l + $header-h;
   background: $gray-lightest;
-  padding-bottom: 200px + $space-l;
+  padding-bottom: 200px + $space-xl;
   margin-bottom: -200px;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .background {
@@ -44,103 +46,6 @@
       bottom: 0;
       transform-origin: top right;
       transform: skewY(-5deg);
-    }
-  }
-
-  .food {
-    &-nasi-lemak {
-      position: absolute;
-      width: 24vw;
-      right: -4vw;
-      top: 8vw;
-      transform: rotate(-5deg);
-
-      @include mobile {
-        width: 32vw;
-        top: 24vw;
-      }
-    }
-
-    &-teh-ais-limau {
-      position: absolute;
-      width: 24vw;
-      right: -8vw;
-      bottom: 24vw;
-
-      @include mobile {
-        width: 32vw;
-        bottom: 16vw;
-      }
-    }
-
-    &-teh-tarik {
-      position: absolute;
-      width: 18vw;
-      left: -8vw;
-      top: 8vw;
-      transform: rotate(-5deg);
-
-      @include mobile {
-        width: 26vw;
-        top: 20vw;
-      }
-    }
-
-    &-mini {
-      picture {
-        img {
-          height: 120px;
-          position: absolute;
-        }
-
-        &:first-child img {
-          top: 12vw;
-          left: 4vw;
-          transform: rotate(15deg);
-        }
-
-        &:nth-child(2) img {
-          top: 52vw;
-          left: -10px;
-          transform: rotate(-15deg);
-        }
-
-        &:nth-child(3) img {
-          top: 55vw;
-          left: -10px;
-          transform: rotate(5deg);
-        }
-
-        &:nth-child(4) img {
-          top: 41vw;
-          right: -24px;
-          transform: rotate(-5deg);
-        }
-
-        &:nth-child(5) img {
-          top: 38vw;
-          right: 5px;
-          transform: rotate(15deg);
-        }
-
-        &:nth-child(6) img {
-          bottom: 24vw;
-          right: 4vw;
-          transform: rotate(-8deg);
-        }
-
-        &:nth-child(7) img {
-          bottom: 10vw;
-          left: -5vw;
-          transform: rotate(-15deg);
-        }
-
-        &:last-child img {
-          bottom: 12vw;
-          left: -2vw;
-          transform: rotate(15deg);
-        }
-      }
     }
   }
 }
@@ -184,14 +89,6 @@
 
     .row {
       margin: 0 -$space;
-
-      &.--special {
-        justify-content: center;
-
-        .col {
-          flex: 0 1 auto;
-        }
-      }
     }
 
     .col {
@@ -252,6 +149,70 @@
         letter-spacing: 0.4px;
         display: block;
         font-size: $font-size-xs;
+      }
+    }
+  }
+}
+
+.deco {
+  position: absolute;
+  left: 0;
+  width: 100%;
+
+  picture {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+  }
+}
+
+.deco-bottom {
+  bottom: 0;
+
+  picture {
+    &:first-child {
+      top: calc(50% - 90px);
+      left: -70px;
+      transform: rotate(15deg);
+      z-index: 1;
+    }
+
+    &:nth-child(2) {
+      top: calc(50% - 70px);
+      left: 0;
+      transform: rotate(-5deg);
+    }
+
+    &:nth-child(3) {
+      top: calc(50% - 90px);
+      right: -70px;
+      transform: rotate(15deg);
+    }
+
+    &:nth-child(4) {
+      top: calc(50% - 70px);
+      right: 0;
+      transform: rotate(-5deg);
+    }
+  }
+
+  @include mobile {
+
+    picture {
+      &:first-child {
+        top: calc(50% - 70px);
+      }
+
+      &:nth-child(2) {
+        top: calc(50% - 50px);
+      }
+
+      &:nth-child(3) {
+        top: calc(50% - 70px);
+      }
+
+      &:nth-child(4) {
+        top: calc(50% - 50px);
       }
     }
   }
