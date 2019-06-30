@@ -57,14 +57,14 @@
     </div>
   </div>
 
-  <div class="container food-container">
+  <div class="container food-container" [@switchAnim]="state" (@switchAnim.done)="handleSwitch($event)">
     <div class="tab-list">
-      <button class="btn tab" (click)="selectDay(1)" [class.--selected]="day === 1">
+      <button class="btn tab" (click)="switchDay()" [class.--selected]="day === 1">
         <span class="btn-inner">
           DAY 1
         </span>
       </button>
-      <button class="btn tab" (click)="selectDay(2)" [class.--selected]="day === 2">
+      <button class="btn tab" (click)="switchDay()" [class.--selected]="day === 2">
         <span class="btn-inner">
           DAY 2
         </span>
