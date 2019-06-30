@@ -3,6 +3,11 @@
 
 .main {
   position: relative;
+  margin-top: -$header-h;
+  padding-top: $space-l + $header-h;
+  background: $gray-lightest;
+  padding-bottom: 200px + $space-l;
+  margin-bottom: -200px;
 }
 
 .background {
