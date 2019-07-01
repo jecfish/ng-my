@@ -2,9 +2,52 @@
 @import 'mixins';
 
 .main {
-  background: $blue-dark;
-  padding-bottom: 200px + $space-l;
+  position: relative;
+  margin-top: -$header-h;
+  padding-top: $space-l + $header-h;
+  background: $gray-lightest;
+  padding-bottom: 200px + $space-xl;
   margin-bottom: -200px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  &-deco {
+    background: $yellow;
+    height: 50vmin;
+    width: 100%;
+    position: absolute;
+    top: 50vmin;
+    left: 0;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: $yellow;
+    }
+
+    &:before {
+      top: 0;
+      transform-origin: bottom right;
+      transform: skewY(5deg);
+    }
+
+    &:after {
+      bottom: 0;
+      transform-origin: top right;
+      transform: skewY(-5deg);
+    }
+  }
 }
 
 .food {
@@ -17,69 +60,160 @@
     padding-top: $space-l;
     padding-bottom: $space-l;
     position: relative;
+    z-index: 1;
 
     &+& {
       margin-top: $space-xl;
     }
   }
+
+  &-list {
+    margin-top: $space;
+    padding: $space-l;
+
+    @include mobile {
+      padding: $space;
+    }
+
+    &-section {
+      &+& {
+        margin-top: $space-xl;
+      }
+
+      @include mobile {
+        &+& {
+          margin-top: $space-l;
+        }
+      }
+    }
+
+    .row {
+      margin: 0 -$space;
+    }
+
+    .col {
+      padding: $space;
+    }
+
+    &-title {
+      font-size: $font-size-xxl;
+      font-weight: $font-weight-l;
+      text-align: center;
+      position: relative;
+      margin: 0 auto $space-xl;
+
+      @include mobile {
+        font-size: $font-size-xl;
+        margin-bottom: $space-l;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: calc(50% - 100px);
+        height: 20px;
+        width: 200px;
+        background: url('/assets/imgs/home/red-pattern.svg') left/contain repeat-x;
+      }
+    }
+  }
+
+  &-group {
+    &+& {
+      margin-top: $space-l;
+    }
+
+    &-title {
+      font-size: $font-size-xl;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      @include mobile {
+        font-size: $font-size-l;
+      }
+    }
+
+    &-list {
+      margin-top: $space;
+    }
+
+    &-item {
+      &+& {
+        margin-top: $space-s;
+      }
+
+      small {
+        color: $gray;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+        display: block;
+        font-size: $font-size-xs;
+      }
+    }
+  }
 }
 
-  .sub-section {
-    text-align: center;
-    padding: $space-s 0;
+.deco {
+  position: absolute;
+  left: 0;
+  width: 100%;
 
-    h4 {
-      font-weight: bold;
-      font-size: large;
+  picture {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+  }
+}
+
+.deco-bottom {
+  bottom: 0;
+
+  picture {
+    &:first-child {
+      top: calc(50% - 90px);
+      left: -70px;
+      transform: rotate(15deg);
+      z-index: 1;
+    }
+
+    &:nth-child(2) {
+      top: calc(50% - 70px);
+      left: 0;
+      transform: rotate(-5deg);
+    }
+
+    &:nth-child(3) {
+      top: calc(50% - 90px);
+      right: -70px;
+      transform: rotate(15deg);
+    }
+
+    &:nth-child(4) {
+      top: calc(50% - 70px);
+      right: 0;
+      transform: rotate(-5deg);
     }
   }
 
-  h3 {
-    text-align: center;
-    font-weight: bold;
-    font-size: larger;
-    text-decoration: underline;
-  }
+  @include mobile {
 
-  .food {
-    position: relative;
-    pointer-events: none;
-    user-select: none;
-    z-index: 1;
-    background: none;
-    box-shadow: none;
-    width: 1000px;
-    max-width: calc(100% - #{$space});
-  
-    &-section {
-      height: 120px;
-      // margin: -100px 0 $space-l;
-      overflow: hidden;
-    }
-  
     picture {
-      img {
-        height: 120px;
-        position: absolute;
-        top: 0;
+      &:first-child {
+        top: calc(50% - 70px);
       }
-  
-      &:first-child img {
-        left: -60px;
-        transform: rotate(15deg);
+
+      &:nth-child(2) {
+        top: calc(50% - 50px);
       }
-  
-      &:nth-child(2) img {
-        left: 0;
-        transform: rotate(-15deg);
+
+      &:nth-child(3) {
+        top: calc(50% - 70px);
       }
-  
-      &:nth-child(3) img {
-        right: 0;
-      }
-  
-      &:last-child img {
-        right: -60px;
+
+      &:nth-child(4) {
+        top: calc(50% - 50px);
       }
     }
   }
+}

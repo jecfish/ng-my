@@ -1,214 +1,371 @@
 <main class="main">
   <my-header title="Food Menu">
+    <p>NG-MY is not just about the Angular talks but also delicious Malaysian food!</p>
   </my-header>
-  <article class="container food-container">
-    <h3>Day 1</h3>
-    <section class="article-section">
-      <div class="section">
-        <h2 class="section-title">Breakfast</h2>
-      </div>
-      <div class="sub-section">
-        <h4>Malaysian</h4>
-        <ul>
-          <li>Nasi Lemak (Malay fragrant rice)</li>
-          <li>Mee Siam (Thai style vermicelli, spicy)</li>
-          <li>Mee Hoon Goreng (Fried vermicelli)</li>
-          <li>Mee Goreng (Fried yellow noodle)</li>
-        </ul>
-      </div>
-      <div class="sub-section">
-        <h4>Vegetarian</h4>
-        <ul>
-          <li>Mee Goreng (Fried yellow noodle)</li>
-          <li>Mee Hoon Goreng (Fried vermicelli)</li>
-        </ul>
-      </div>
-      <div class="sub-section">
-        <h4>Dessert Soups</h4>
-        <ul>
-          <li>Red Dates, Snow Fungus, Peach Gum</li>
-          <li>Green Bean</li>
-        </ul>
-      </div>
-    </section>
-    <section class="article-section">
-      <div class="section">
-        <h2 class="section-title">Lunch</h2>
-      </div>
-      <div class="sub-section">
-        <h4>Malaysian</h4>
-        <ul>
-          <li>Nasi Kerabu Ayam Percik (Blue-colored herbs rice with chicken)</li>
-          <li>Nasi Dagang Ayam Gulai (Coconut milk steam rice with curry chicken)</li>
-          <li>Nasi Ulam Ikan Kembung (Mixed herbs rice with chub mackerels fish)</li>
-        </ul>
-      </div>
-      <div class="sub-section">
-        <h4>Western</h4>
-        <ul>
-          <li>Burger Turkeynizer (Chicken)</li>
-          <li>Burger Beaconizer (Beef)</li>
-        </ul>
-      </div>
-      <div class="sub-section">
-        <h4>Indian</h4>
-        <ul>
-          <li>Ayam Biryani (Biryani rice with chicken)</li>
-          <li>Ayam Tandoori Naan (Flatbread with tandoori chicken)</li>
-          <li>Kambing Biryani (Biryani rice with mutton)</li>
-        </ul>
-      </div>
-      <div class="sub-section">
-        <h4>Fusion</h4>
-        <ul>
-          <li>Honey Chicken Poke Bowl</li>
-          <li>Shoyu Salmon Poke Bowl</li>
-        </ul>
-      </div>
-      <div class="sub-section">
-        <h4>Vegetarian</h4>
-        <ul>
-          <li>Burger Portabello</li>
-          <li>Tofu Poke Bowl</li>
-          <li>Vegetable Naan</li>
-          <li>Vegetable Biryani</li>
-        </ul>
-      </div>
-      <div class="sub-section">
-        <h4>Drinks</h4>
-        <ul>
-          <li>Fragrance Coconut</li>
-          <li>Various Boba Tea & Tea</li>
-        </ul>
-      </div>
-    </section>
-    <section class="article-section">
-      <div class="section">
-        <h2 class="section-title">Teatime</h2>
-      </div>
-      <div class="sub-section">
-        <h4>Handmade Malaysian Specialties</h4>
-        <ul>
-          <li>Nyonya Kuih & Pastries</li>
-          <li>Tea & Coffee</li>
-        </ul>
-      </div>
-    </section>
-  </article>
-  <div class="food-section">
-    <div class="food container">
+
+  <div class="container food-container" [@switchAnim]="state" (@switchAnim.done)="handleSwitch($event)">
+    <div class="tab-list">
+      <button class="btn tab" (click)="switchDay()" [class.--selected]="day === 1">
+        <span class="btn-inner">
+          DAY 1
+        </span>
+      </button>
+      <button class="btn tab" (click)="switchDay()" [class.--selected]="day === 2">
+        <span class="btn-inner">
+          DAY 2
+        </span>
+      </button>
+    </div>
+    <article class="food-list" *ngIf="day === 1">
+      <section class="food-list-section">
+        <h3 class="food-list-title">BREAKFAST</h3>
+        <div class="row">
+          <div class="col">
+            <article class="food-group">
+              <h4 class="food-group-title">
+                Malaysian
+              </h4>
+              <ul class="food-group-list">
+                <li class="food-group-item">
+                  Nasi Lemak <small>Malay fragrant rice</small>
+                </li>
+                <li class="food-group-item">
+                  Mee Siam <small>Thai style vermicelli, spicy</small>
+                </li>
+                <li class="food-group-item">
+                  Mee Hoon Goreng <small>Fried vermicelli</small>
+                </li>
+                <li class="food-group-item">
+                  Mee Goreng <small>Fried yellow noodle</small>
+                </li>
+              </ul>
+            </article>
+          </div>
+          <div class="col">
+            <article class="food-group">
+              <h4 class="food-group-title">
+                Vegetarian
+              </h4>
+              <ul class="food-group-list">
+                <li class="food-group-item">
+                  Mee Goreng <small>Fried yellow noodle</small>
+                </li>
+                <li class="food-group-item">
+                  Mee Hoon Goreng <small>Fried vermicelli</small>
+                </li>
+              </ul>
+            </article>
+            <article class="food-group">
+              <h4 class="food-group-title">
+                Dessert Soups
+              </h4>
+              <ul class="food-group-list">
+                <li class="food-group-item">
+                  Red Dates, Snow Fungus, Peach Gum
+                </li>
+                <li class="food-group-item">
+                  Green Bean
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="food-list-section">
+        <h3 class="food-list-title">LUNCH</h3>
+        <div class="row">
+          <div class="col">
+            <article class="food-group">
+              <h4 class="food-group-title">
+                Malaysian
+              </h4>
+              <ul class="food-group-list">
+                <li class="food-group-item">
+                  Nasi Kerabu Ayam Percik <small>Blue-colored herbs rice with chicken</small>
+                </li>
+                <li class="food-group-item">
+                  Nasi Dagang Ayam Gulai <small>Coconut milk steam rice with curry chicken</small>
+                </li>
+                <li class="food-group-item">
+                  Nasi Ulam Ikan Kembung <small>Mixed herbs rice with chub mackerels fish</small>
+                </li>
+              </ul>
+            </article>
+            <article class="food-group">
+              <h4 class="food-group-title">
+                Vegetarian
+              </h4>
+              <ul class="food-group-list">
+                <li class="food-group-item">
+                  Burger Portabello
+                </li>
+                <li class="food-group-item">
+                  Tofu Poke Bowl
+                </li>
+                <li class="food-group-item">
+                  Vegetable Naan
+                </li>
+                <li class="food-group-item">
+                  Vegetable Biryani
+                </li>
+              </ul>
+            </article>
+          </div>
+          <div class="col">
+            <article class="food-group">
+              <h4 class="food-group-title">
+                Western
+              </h4>
+              <ul class="food-group-list">
+                <li class="food-group-item">
+                  Burger Turkeynizer <small>Chicken</small>
+                </li>
+                <li class="food-group-item">
+                  Burger Beaconizer <small>Beef</small>
+                </li>
+              </ul>
+            </article>
+            <article class="food-group">
+              <h4 class="food-group-title">
+                Indian
+              </h4>
+              <ul class="food-group-list">
+                <li class="food-group-item">
+                  Ayam Biryani <small>Biryani rice with chicken</small>
+                </li>
+                <li class="food-group-item">
+                  Ayam Tandoori Naan <small>Flatbread with tandoori chicken</small>
+                </li>
+                <li class="food-group-item">
+                  Kambing Biryani <small>Biryani rice with mutton</small>
+                </li>
+              </ul>
+            </article>
+            <article class="food-group">
+              <h4 class="food-group-title">
+                Fusion
+              </h4>
+              <ul class="food-group-list">
+                <li class="food-group-item">
+                  Honey Chicken Poke Bowl
+                </li>
+                <li class="food-group-item">
+                  Shoyu Salmon Poke Bowl
+                </li>
+              </ul>
+            </article>
+            <article class="food-group">
+              <h4 class="food-group-title">
+                Drinks
+              </h4>
+              <ul class="food-group-list">
+                <li class="food-group-item">
+                  Fragrance Coconut
+                </li>
+                <li class="food-group-item">
+                  Various Boba Tea & Tea
+                </li>
+                <li class="food-group-item">
+                  Tea & Coffee
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="food-list-section">
+        <h3 class="food-list-title">TEATIME</h3>
+        <div class="row">
+          <div class="col">
+            <article class="food-group">
+              <h4 class="food-group-title">
+                Handmade Specialties
+              </h4>
+              <ul class="food-group-list">
+                <li class="food-group-item">
+                  Nyonya Kuih & Pastries
+                </li>
+                <li class="food-group-item">
+                  Tea & Coffee
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <article class="food-list" *ngIf="day === 2">
+      <section class="food-list-section">
+        <h3 class="food-list-title">BREAKFAST</h3>
+        <div class="row">
+          <div class="col">
+            <article class="food-group">
+              <h4 class="food-group-title">Malaysian</h4>
+              <ul class="food-group-list">
+                <li class="food-group-item">
+                  Nasi Lemak <small>Malay fragrant rice</small>
+                </li>
+                <li class="food-group-item">
+                  Mee Siam <small>Thai style vermicelli, spicy</small>
+                </li>
+                <li class="food-group-item">
+                  Mee Hoon Goreng <small>Fried vermicelli</small>
+                </li>
+                <li class="food-group-item">
+                  Mee Goreng <small>Fried yellow noodle</small>
+                </li>
+              </ul>
+            </article>
+          </div>
+          <div class="col">
+            <article class="food-group">
+              <h4 class="food-group-title">Vegetarian</h4>
+              <ul class="food-group-list">
+                <li class="food-group-item">
+                  Mee Goreng <small>Fried yellow noodle</small>
+                </li>
+                <li class="food-group-item">
+                  Mee Hoon Goreng <small>Fried vermicelli</small>
+                </li>
+              </ul>
+            </article>
+            <article class="food-group">
+              <h4 class="food-group-title">Dessert Soups</h4>
+              <ul class="food-group-list">
+                <li class="food-group-item">
+                  Bubur Cha Cha <small>Yam, Sweet Potatoes</small>
+                </li>
+                <li class="food-group-item">
+                  Dried Beancurb, Sweet Barley, Ginko Nuts
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="food-list-section">
+        <h3 class="food-list-title">LUNCH</h3>
+        <div class="row">
+          <div class="col">
+            <article class="food-group">
+              <h4 class="food-group-title">Malaysian</h4>
+              <ul class="food-group-list">
+                <li class="food-group-item">
+                  Nasi Kerabu Ayam Percik <small>Blue-colored herbs rice with chicken</small>
+                </li>
+                <li class="food-group-item">
+                  Nasi Kukus Ayam Berempah <small>Steam rice with gravy chicken</small>
+                </li>
+                <li class="food-group-item">
+                  Nasi Dagang Ikan Tongkol <small>Coconut milk steam rice with curry mackerel tuna fish</small>
+                </li>
+              </ul>
+            </article>
+            <article class="food-group">
+              <h4 class="food-group-title">Vegetarian</h4>
+              <ul class="food-group-list">
+                <li class="food-group-item">
+                  Burger Portabello
+                </li>
+                <li class="food-group-item">
+                  Tofu Poke Bowl
+                </li>
+                <li class="food-group-item">
+                  Vegetable Naan
+                </li>
+                <li class="food-group-item">
+                  Vegetable Biryani
+                </li>
+              </ul>
+            </article>
+          </div>
+          <div class="col">
+            <article class="food-group">
+              <h4 class="food-group-title">Western</h4>
+              <ul class="food-group-list">
+                <li class="food-group-item">
+                  Burger Ayam Cajun Cheese <small>Chicken</small>
+                </li>
+                <li class="food-group-item">
+                  Burger Smokynizer <small>Beef</small>
+                </li>
+              </ul>
+            </article>
+            <article class="food-group">
+              <h4 class="food-group-title">Indian</h4>
+              <ul class="food-group-list">
+                <li class="food-group-item">
+                  Ayam Biryani <small>Biryani rice with chicken</small>
+                </li>
+                <li class="food-group-item">
+                  Ayam Tandoori Naan <small>Flatbread with tandoori chicken</small>
+                </li>
+                <li class="food-group-item">
+                  Kambing Biryani <small>Biryani rice with mutton</small>
+                </li>
+              </ul>
+            </article>
+            <article class="food-group">
+              <h4 class="food-group-title">Fusion</h4>
+              <ul class="food-group-list">
+                <li class="food-group-item">
+                  Honey Chicken Poke Bowl
+                </li>
+                <li class="food-group-item">
+                  Shoyu Tuna Poke Bowl
+                </li>
+              </ul>
+            </article>
+            <article class="food-group">
+              <h4 class="food-group-title">Drinks</h4>
+              <ul class="food-group-list">
+                <li class="food-group-item">
+                  Cendol <small>Green rice flour jelly, coconut milk and palm sugar syrup</small>
+                </li>
+                <li class="food-group-item">
+                  Honey Lemon
+                </li>
+                <li class="food-group-item">
+                  Calamansi <small>Sour plum juice</small>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="food-list-section">
+        <h3 class="food-list-title">LUNCH SPECIAL</h3>
+        <div class="row --special">
+          <div class="col">
+            <h4 class="food-group-title">Kajang Satay</h4>
+            <ul class="food-group-list">
+              <li class="food-group-item">Satay Ayam <small>Chicken skewer</small></li>
+              <li class="food-group-item">Stay Daging <small>Beef skewer</small></li>
+              <li class="food-group-item">Satay Perut <small>Beef brisket skewer</small></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </article>
+    <div class="deco deco-bottom">
       <picture>
-        <source srcset="../../../assets/imgs/home/tehtarik.webp" type='image/webp'>
-        <img src="../../../assets/imgs/home/tehtarik.png" alt="mamak">
+        <source srcset="../../assets/imgs/speaker-food/bandung.webp" type="image/webp">
+        <img src="../../assets/imgs/speaker-food/bandung.png" alt="mamak">
       </picture>
       <picture>
-        <source srcset="../../../assets/imgs/home/aiskacang.webp" type='image/webp'>
-        <img src="../../../assets/imgs/home/aiskacang.png" alt="mamak">
+        <source media="(max-width: 800px)" srcset="./../assets/imgs/home/roti-canai-800w.webp" type="image/webp">
+        <source srcset="../../assets/imgs/speaker-food/roti-canai.webp" type="image/webp">
+        <img src="../../assets/imgs/speaker-food/roti-canai.png" alt="mamak">
       </picture>
       <picture>
-        <source srcset="../../../assets/imgs/home/nasilemak.webp" type='image/webp'>
-        <img src="../../../assets/imgs/home/nasilemak.png" alt="mamak">
+        <source srcset="../../assets/imgs/speaker-food/kopi-o.webp" type="image/webp">
+        <img src="../../assets/imgs/speaker-food/kopi-o.png" alt="mamak">
       </picture>
       <picture>
-        <source srcset="../../../assets/imgs/home/tehaislimau.webp" type='image/webp'>
-        <img src="../../../assets/imgs/home/tehaislimau.png" alt="mamak">
+        <source srcset="../../assets/imgs/speaker-food/tosai.webp" type="image/webp">
+        <img src="../../assets/imgs/speaker-food/tosai.png" alt="mamak">
       </picture>
     </div>
   </div>
-  <article class="container food-container">
-    <h3>Day 2</h3>
-    <section class="article-section">
-      <div class="section">
-        <h2 class="section-title">Breakfast</h2>
-      </div>
-      <div class="sub-section">
-        <h4>Malaysian</h4>
-        <ul>
-          <li>Nasi Lemak (Malay fragrant rice)</li>
-          <li>Mee Siam (Thai style vermicelli, spicy)</li>
-          <li>Mee Hoon Goreng (Fried vermicelli)</li>
-          <li>Mee Goreng (Fried yellow noodle)</li>
-        </ul>
-      </div>
-      <div class="sub-section">
-        <h4>Vegetarian</h4>
-        <ul>
-          <li>Mee Goreng (Fried yellow noodle)</li>
-          <li>Mee Hoon Goreng (Fried vermicelli)</li>
-        </ul>
-      </div>
-      <div class="sub-section">
-        <h4>Dessert Soups</h4>
-        <ul>
-          <li>Bubur Cha Cha (Yam, Sweet Potatoes)</li>
-          <li>Dried Beancurb, Sweet Barley, Ginko Nuts</li>
-        </ul>
-      </div>
-    </section>
-    <section class="article-section">
-      <div class="section">
-        <h2 class="section-title">Lunch</h2>
-      </div>
-      <div class="sub-section">
-        <h4>Malaysian</h4>
-        <ul>
-          <li>Nasi Kerabu Ayam Percik (Blue-colored herbs rice with chicken)</li>
-          <li>Nasi Kukus Ayam Berempah (Steam rice with gravy chicken)</li>
-          <li>Nasi Dagang Ikan Tongkol (Coconut milk steam rice with curry mackerel tuna fish)</li>
-        </ul>
-      </div>
-      <div class="sub-section">
-        <h4>Western</h4>
-        <ul>
-          <li>Burger Ayam Cajun Cheese (Chicken)</li>
-          <li>Burger Smokynizer (Beef)</li>
-        </ul>
-      </div>
-      <div class="sub-section">
-        <h4>Indian</h4>
-        <ul>
-          <li>Ayam Biryani (Biryani rice with chicken)</li>
-          <li>Ayam Tandoori Naan (Flatbread with tandoori chicken)</li>
-          <li>Kambing Biryani (Biryani rice with mutton)</li>
-        </ul>
-      </div>
-      <div class="sub-section">
-        <h4>Fusion</h4>
-        <ul>
-          <li>Honey Chicken Poke Bowl</li>
-          <li>Shoyu Tuna Poke Bowl</li>
-        </ul>
-      </div>
-      <div class="sub-section">
-        <h4>Vegetarian</h4>
-        <ul>
-          <li>Burger Portabello</li>
-          <li>Tofu Poke Bowl</li>
-          <li>Vegetable Naan</li>
-          <li>Vegetable Biryani</li>
-        </ul>
-      </div>
-      <div class="sub-section">
-        <h4>Drinks</h4>
-        <ul>
-          <li>Cendol (Green rice flour jelly, coconut milk and palm sugar syrup)</li>
-          <li>Honey Lemon</li>
-          <li>Calamansi (Sour plum juice)</li>
-        </ul>
-      </div>
-    </section>
-    <section class="article-section">
-      <div class="section">
-        <h2 class="section-title">Lunch Special</h2>
-      </div>
-      <div class="sub-section">
-        <h4>Kajang Satay</h4>
-        <ul>
-          <li>Satay Ayam (Chicken skewer)</li>
-          <li>Stay Daging (Beef skewer)</li>
-          <li>Satay Perut (Beef brisket skewer)</li>
-        </ul>
-      </div>
-    </section>
-  </article>
 </main>
