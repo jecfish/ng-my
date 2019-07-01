@@ -7,6 +7,7 @@ import {
   animate,
   style
 } from '@angular/animations';
+import { environment } from 'projects/site2019/src/environments/environment';
 
 @Component({
   selector: 'my-food-page',
@@ -48,7 +49,9 @@ export class FoodPageComponent implements OnInit {
   ngOnInit() {
     this.pageSvc.setPage({
       title: this.title,
-      metaDesc: 'NG-MY is about the conference and also food!'
+      metaDesc:
+        'NG-MY is not just about the Angular talks but also delicious Malaysian food!',
+      metaImg: `${environment.baseUrl}/assets/imgs/food-menu.jpg`
     });
   }
 
