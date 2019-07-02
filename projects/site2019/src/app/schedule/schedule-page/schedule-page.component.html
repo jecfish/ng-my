@@ -49,9 +49,9 @@
     </div>
     <div class="schedule-item-list">
       <ng-container *ngFor="let i of s.items">
-        <div [class.schedule-talk]="i.speakers?.length" [class.schedule-talk-mamak]="i.title.startsWith('Mamak')">
+        <div (click)="selectSession(i.session)" [class.schedule-talk]="i.speakers?.length" [class.schedule-talk-mamak]="i.title.startsWith('Mamak')">
           <h5>{{i.title}}
-            <a class="icon-right" (click)="selectSession(i.session)" *ngIf="i.hasSessionInfo" title="Session info">
+            <a class="icon-right" *ngIf="i.hasSessionInfo" title="Session info">
               <!-- <i class="fas fa-info-circle"></i> -->
               <span class="icon-info-circle"></span>
             </a>

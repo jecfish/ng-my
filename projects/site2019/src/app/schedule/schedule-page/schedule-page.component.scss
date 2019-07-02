@@ -78,6 +78,7 @@
   &-talk {
     padding-right: 70px;
     position: relative;
+    cursor: pointer;
 
     &:before {
       @include one-height(20px, 4px);
