@@ -18,7 +18,7 @@ export class MenuComponent implements OnInit {
     // { link: '/posts', name: 'Articles' },
     // { link: '/form/speaker-training', name: 'Speaking Up!' },
     // { link: '/form/call-for-presenters', name: 'Submit CFP' },
-    // { link: '/coc', name: 'Code of Conduct' },
+    { link: '/coc', name: 'COC' },
     { link: '/team', name: 'Team' },
     // { link: '/form/scholarship', name: 'Scholarship' }
   ];
