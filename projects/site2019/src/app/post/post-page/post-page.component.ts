@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PageService } from '../../services/page.service';
 import posts from '../../../assets/data/posts.json';
@@ -8,7 +8,8 @@ import { environment } from '../../../environments/environment';
 @Component({
   selector: 'my-post-page',
   templateUrl: './post-page.component.html',
-  styleUrls: ['./post-page.component.scss']
+  styleUrls: ['./post-page.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class PostPageComponent implements OnInit {
 
