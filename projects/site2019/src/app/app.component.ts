@@ -3,7 +3,8 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
 @Component({
   selector: 'my-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {
 }
