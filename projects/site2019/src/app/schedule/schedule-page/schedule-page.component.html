@@ -8,8 +8,8 @@
   </article>
   <!-- day 1 -->
   <section class="container schedule-container">
-    <h2 class="schedule-title">Day 1</h2>
-    <ng-container [ngTemplateOutlet]="schedule" [ngTemplateOutletContext]="{day:day1}">
+    
+    <ng-container [ngTemplateOutlet]="schedule" [ngTemplateOutletContext]="{day:day1, title: 'Day 1'}">
     </ng-container>
   </section>
   <div class="food-section">
@@ -34,15 +34,15 @@
   </div>
   <!-- day 2 -->
   <section class="container schedule-container">
-    <h2 class="schedule-title">Day 2</h2>
-    <ng-container [ngTemplateOutlet]="schedule" [ngTemplateOutletContext]="{day:day2}">
+    <ng-container [ngTemplateOutlet]="schedule" [ngTemplateOutletContext]="{day:day2,title: 'Day 2'}">
     </ng-container>
   </section>
   <my-modal [item]="selectedItem" (unselect)="unselectSession()"></my-modal>
 </main>
 
 <!-- template -->
-<ng-template let-day="day" #schedule>
+<ng-template let-title="title" let-day="day" #schedule>
+  <h2 class="schedule-title">{{ title }}</h2>
   <div class="schedule-item" *ngFor="let s of day">
     <div class="schedule-item-time">
       {{ s.time }}
