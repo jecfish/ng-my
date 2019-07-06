@@ -41,7 +41,7 @@ import { environment } from 'projects/site2019/src/environments/environment';
 export class FoodPageComponent implements OnInit {
   title = 'Food Menu';
 
-  day = 1;
+  day = 2;
   state = 'idle';
 
   constructor(private pageSvc: PageService) {}
