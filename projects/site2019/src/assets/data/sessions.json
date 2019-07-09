@@ -19,7 +19,8 @@
     "speakers": [
       "alex-okrushko"
     ],
-    "tags": []
+    "tags": [],
+    "slides": ""
   },
   {
     "id": "scaling-frontend-development-using-micro-frontends",
@@ -30,7 +31,8 @@
     "speakers": [
       "mashhood-rastgar"
     ],
-    "tags": []
+    "tags": [],
+    "slides": "https://drive.google.com/open?id=1psirurJre6DiQjJ53KLYZ3vo-l3K51zt"
   },
   {
     "id": "from-ngrx-to-ngrx-entity-to-ngrx-data",
@@ -41,7 +43,8 @@
     "speakers": [
       "jia-li"
     ],
-    "tags": []
+    "tags": [],
+    "slides": "https://slides.com/jiali/deck-5"
   },
   {
     "id": "sebastian-witalec",
@@ -52,7 +55,8 @@
     "speakers": [
       "sebastian-witalec"
     ],
-    "tags": []
+    "tags": [],
+    "slides": "https://drive.google.com/open?id=13vQMb9TmO0XtGXA3aSB4lioCBOJNf1jw"
   },
   {
     "id": "tomas-trajan",
@@ -63,7 +67,8 @@
     "speakers": [
       "tomas-trajan"
     ],
-    "tags": []
+    "tags": [],
+    "slides": "https://slides.com/tomastrajan/angular-schematics-ng-my "
   },
   {
     "id": "how-we-build-ng-my-website",
@@ -76,7 +81,8 @@
       "adrian-yeong",
       "ho-jen-ning"
     ],
-    "tags": []
+    "tags": [],
+    "slides": ""
   },
   {
     "id": "jerry-kurata",
@@ -87,7 +93,8 @@
     "speakers": [
       "jerry-kurata"
     ],
-    "tags": []
+    "tags": [],
+    "slides": "https://drive.google.com/open?id=1pJpsTKb-9p9dtE4hEXJQo-5GELySvHRz"
   },
   {
     "id": "kevin-yang",
@@ -98,7 +105,8 @@
     "speakers": [
       "kevin-yang"
     ],
-    "tags": []
+    "tags": [],
+    "slides": "https://drive.google.com/open?id=1Mi_M8TgJ5MWYiY2z-qf5ZSklBOXtfCBe"
   },
   {
     "id": "mike-ryan",
@@ -109,7 +117,8 @@
     "speakers": [
       "mike-ryan"
     ],
-    "tags": []
+    "tags": [],
+    "slides": "https://drive.google.com/open?id=1eEP1-MEe7Uk-Tsf9mciycVliQ00lRV8J"
   },
   {
     "id": "kamil-mysliwiec",
@@ -120,7 +129,8 @@
     "speakers": [
       "kamil-mysliwiec"
     ],
-    "tags": []
+    "tags": [],
+    "slides": "https://drive.google.com/open?id=1J2GkcMF8VwCvCYMR5Mk6rfg4vD08y3qW"
   },
   {
     "id": "deborah-kurata",
@@ -131,7 +141,8 @@
     "speakers": [
       "deborah-kurata"
     ],
-    "tags": []
+    "tags": [],
+    "slides": "https://drive.google.com/open?id=1GaFc_qrhrfg0hzc4dhwBR4vYS-AapCbu"
   },
   {
     "id": "gerard-sans",
@@ -142,7 +153,8 @@
     "speakers": [
       "gerard-sans"
     ],
-    "tags": []
+    "tags": [],
+    "slides": "https://slides.com/gerardsans/ng-my-ivy-renderer"
   },
   {
     "id": "kamil-kisiela",
@@ -153,7 +165,8 @@
     "speakers": [
       "kamil-kisiela"
     ],
-    "tags": []
+    "tags": [],
+    "slides": "https://drive.google.com/open?id=13fxmEAEaxD-PmbDuAzUcETZVnO0R-NsJ"
   },
   {
     "id": "arjay-elbore",
@@ -164,7 +177,8 @@
     "speakers": [
       "arjay-elbore"
     ],
-    "tags": []
+    "tags": [],
+    "slides": "https://slides.com/aelbore/build-web-components-with-angular-elements"
   },
   {
     "id": "erin-zimmer",
@@ -175,7 +189,8 @@
     "speakers": [
       "erin-zimmer"
     ],
-    "tags": []
+    "tags": [],
+    "slides": "https://ng-upgrade.ez.codes/#/"
   },
   {
     "id": "ng-tong-sheng",
@@ -186,7 +201,8 @@
     "speakers": [
       "ng-tong-sheng"
     ],
-    "tags": []
+    "tags": [],
+    "slides": "https://drive.google.com/open?id=1y9Rt9vGxk25io_r55DEn9CXTQVijTcYm"
   },
   {
     "id": "yew-hong-tat",
@@ -197,7 +213,8 @@
     "speakers": [
       "yew-hong-tat"
     ],
-    "tags": []
+    "tags": [],
+    "slides": "https://drive.google.com/open?id=1mB_NOiblSTjrl2-inzHH0fwWGiZN-G4N"
   },
   {
     "id": "wendy-kong",
@@ -208,7 +225,8 @@
     "speakers": [
       "wendy-kong"
     ],
-    "tags": []
+    "tags": [],
+    "slides": "https://wendko.github.io/slides/ng-fun-and-games"
   },
   {
     "id": "azizi-yazit",
@@ -219,7 +237,8 @@
     "speakers": [
       "azizi-yazit"
     ],
-    "tags": []
+    "tags": [],
+    "slides": "http://ngatomicpresentation.surge.sh"
   },
   {
     "id": "sujono",
@@ -230,7 +249,8 @@
     "speakers": [
       "sujono"
     ],
-    "tags": []
+    "tags": [],
+    "slides": "https://drive.google.com/open?id=1VL4JdXNymLRU-rlF5oMw_y4gvpxqSmHQ"
   },
   {
     "id": "siwat-kaolueng",
@@ -241,7 +261,8 @@
     "speakers": [
       "siwat-kaolueng"
     ],
-    "tags": []
+    "tags": [],
+    "slides": "https://drive.google.com/open?id=14GsfH4XZ-IxOqbnsi_uWJLajGwIBKg-2"
   },
   {
     "id": "zachary-ng",
@@ -252,7 +273,8 @@
     "speakers": [
       "zachary-ng"
     ],
-    "tags": []
+    "tags": [],
+    "slides": "https://drive.google.com/open?id=1SoHkRzt5X1adyB7E-CmY1gr1eoqIRamt"
   },
   {
     "id": "jennifer-shehane",
@@ -263,7 +285,8 @@
     "speakers": [
       "jennifer-shehane"
     ],
-    "tags": []
+    "tags": [],
+    "slides": "https://drive.google.com/open?id=1V29lKjXGqRvkDn-1Y3sZq5PT3iqnWTjV"
   },
   {
     "id": "amadou-sall",
@@ -274,7 +297,8 @@
     "speakers": [
       "amadou-sall"
     ],
-    "tags": []
+    "tags": [],
+    "slides": "https://drive.google.com/open?id=1zrRwA1DhJUXzQMNrFsrNHOdHrXwzooot"
   },
   {
     "id": "large-scale-angular-applications",
@@ -286,7 +310,8 @@
       "tom-suijkerbuijk",
       "mart-ganzevles"
     ],
-    "tags": []
+    "tags": [],
+    "slides": "https://drive.google.com/open?id=12angGMyyk_0yRu53wo-3-YXjILXOb1HY"
   },
   {
     "id": "alex-lakatos",
@@ -297,7 +322,8 @@
     "speakers": [
       "alex-lakatos"
     ],
-    "tags": []
+    "tags": [],
+    "slides": "https://drive.google.com/open?id=1nLU7BscpEeI4bThWcj-TDuzgeLBQZ_tC"
   },
   {
     "id": "will-huang",
@@ -308,7 +334,8 @@
     "speakers": [
       "will-huang"
     ],
-    "tags": []
+    "tags": [],
+    "slides": "https://www.slideshare.net/WillHuangTW/protractor-the-hacker-way-ngmy-2019/"
   },
   {
     "id": "keen-yee",
@@ -319,7 +346,8 @@
     "speakers": [
       "keen-yee"
     ],
-    "tags": []
+    "tags": [],
+    "slides": "https://drive.google.com/open?id=1_yXLrF2R4OjLSzG1zQ8Q84r-jFCsx4jz"
   },
   {
     "id": "michael-hladky",
@@ -330,7 +358,8 @@
     "speakers": [
       "michael-hladky"
     ],
-    "tags": []
+    "tags": [],
+    "slides": "https://drive.google.com/open?id=1WHQaHS9vRFGlC0Jv8YBUjOg4MQTUdDzd"
   },
   {
     "id": "docker-azure-angular",
