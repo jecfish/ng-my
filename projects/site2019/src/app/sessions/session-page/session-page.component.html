@@ -52,7 +52,7 @@
             <!-- <button class="btn btn-secondary" (click)="selectSession(s.id)">
               <div class="btn-inner">More info</div>
             </button> -->
-            <a class="btn btn-secondary" href="{{s.slides}}" target="_blank" rel="noreferrer" *ngIf="s.slides">
+            <a class="btn btn-secondary" [href]="s.slides" target="_blank" rel="noreferrer" *ngIf="s.slides">
               <div class="btn-inner">Slides</div>
             </a>
           </div>
