@@ -9,7 +9,7 @@
   <!-- day 1 -->
   <section class="container schedule-container">
     
-    <ng-container [ngTemplateOutlet]="schedule" [ngTemplateOutletContext]="{day:day2, title: 'Day 2'}">
+    <ng-container [ngTemplateOutlet]="schedule" [ngTemplateOutletContext]="{day:day1, title: 'Day 1'}">
     </ng-container>
   </section>
   <div class="food-section">
@@ -34,7 +34,7 @@
   </div>
   <!-- day 2 -->
   <section class="container schedule-container">
-    <ng-container [ngTemplateOutlet]="schedule" [ngTemplateOutletContext]="{day:day1,title: 'Day 1'}">
+    <ng-container [ngTemplateOutlet]="schedule" [ngTemplateOutletContext]="{day:day2,title: 'Day 2'}">
     </ng-container>
   </section>
   <my-modal [item]="selectedItem" (unselect)="unselectSession()"></my-modal>

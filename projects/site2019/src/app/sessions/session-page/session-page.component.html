@@ -9,15 +9,15 @@
     </my-header>
 
     <ng-container [ngTemplateOutlet]="sessionContainer"
-      [ngTemplateOutletContext]="{list:chatSession, title: 'Meet & Chat'}">
-    </ng-container>
-
-    <ng-container [ngTemplateOutlet]="sessionContainer"
       [ngTemplateOutletContext]="{list:mainSession, title: 'Presentations'}">
     </ng-container>
 
     <ng-container [ngTemplateOutlet]="sessionContainer"
       [ngTemplateOutletContext]="{list:lightningSession, title: 'Lightning Talks'}">
+    </ng-container>
+
+    <ng-container [ngTemplateOutlet]="sessionContainer"
+      [ngTemplateOutletContext]="{list:chatSession, title: 'Meet & Chat'}">
     </ng-container>
 
     <ng-container [ngTemplateOutlet]="sessionContainer"
@@ -38,20 +38,23 @@
       <li class="session-item" *ngFor="let s of list" [class.--selected]="selectedSessionId === s.id">
         <div class="row">
           <div class="col">
-            <h5 class="session-topic">{{ s.title }}
+            <h5 class="session-topic" (click)="selectSession(s.id)">{{ s.title }}
               <div class="session-speaker-list">
                 <a (click)="selectSpeaker(p.id)" class="session-speaker-item" *ngFor="let p of s.speakers">
                   <img src="../../assets/imgs/speakers/{{ p.id }}.jpg" [alt]="p.name" [title]="p.name"
                     class="session-speaker-icon"></a>
               </div>
             </h5>
-            <p class="session-desc" innerHTML="{{ s.type === 'chat' ? s.description.full : s.description.short}}"></p>
+            <p class="session-desc" [innerHTML]="s.description.full"></p>
             <div class="session-tag-list" *ngIf="!!s.tags.length">
               <div class="session-tag-item" *ngFor="let t of s.tags;">{{ t }}</div>
             </div>
-            <button class="btn btn-secondary" (click)="selectSession(s.id)">
+            <!-- <button class="btn btn-secondary" (click)="selectSession(s.id)">
               <div class="btn-inner">More info</div>
-            </button>
+            </button> -->
+            <a class="btn btn-secondary" href="{{s.slides}}" target="_blank" rel="noreferrer" *ngIf="s.slides">
+              <div class="btn-inner">Slides</div>
+            </a>
           </div>
         </div>
       </li>
