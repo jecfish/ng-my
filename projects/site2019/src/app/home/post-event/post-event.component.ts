@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { PageService } from '../../services/page.service';
 
 import sponsors from '../../../assets/data/sponsors.json';
@@ -17,7 +17,6 @@ export class PostEventComponent implements OnInit {
   sponsors = sponsors;
   posts = postList;
   speaker: any;
-  shouldShowStats = false;
   photos = Array.from({ length: 25 }).map((_, i) => i + 1);
 
   readonly TOTAL_SPEAKER = 32;
