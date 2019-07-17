@@ -11,7 +11,6 @@ import postList from '../../../assets/data/posts.json';
   styleUrls: ['./post-event.component.scss']
 })
 export class PostEventComponent implements OnInit {
-  @ViewChild('stats', { static: true }) statsEl: any;
   @ViewChild('subscribe', { static: true }) subscribeEl: any;
 
   sponsors = sponsors;
