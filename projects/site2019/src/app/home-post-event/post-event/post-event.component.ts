@@ -11,6 +11,7 @@ import postList from '../../../assets/data/posts.json';
   styleUrls: ['./post-event.component.scss']
 })
 export class PostEventComponent implements OnInit {
+  @ViewChild('lookback', { static: true }) lookbackEl: any;
   @ViewChild('subscribe', { static: true }) subscribeEl: any;
 
   sponsors = sponsors;
@@ -30,6 +31,7 @@ export class PostEventComponent implements OnInit {
   }
 
   scrollTo(location: string) {
+    console.log('TCL: PostEventComponent -> scrollTo -> location', location);
     const getTop = (e: any) => e.getBoundingClientRect().top;
 
     const el = (this[location] as any).nativeElement;
