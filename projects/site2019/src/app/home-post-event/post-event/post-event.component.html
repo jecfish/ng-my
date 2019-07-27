@@ -77,14 +77,20 @@
           <p><strong class="text-primary">#ngMY2019</strong> has come and gone, we had an amazing time connecting with
             like-minded and learning Angular!</p>
         </article>
-        <ul class="lookback-photos">
-          <li class="lookback-item" *ngFor="let p of photos">
-            <picture class="lookback-pic">
-              <source srcset="../../assets/imgs/lookback/webp/{{ p }}.webp" type="image/webp">
-              <img src="../../assets/imgs/lookback/jpg/{{ p }}.jpg" [alt]="p">
-            </picture>
-          </li>
-        </ul>
+        <div class="lookback-content">
+          <div class="lookback-video">
+            <iframe src="https://www.youtube.com/embed/GpckCAcAgMk" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <ul class="lookback-photos">
+            <li class="lookback-item" *ngFor="let p of photos">
+              <picture class="lookback-pic">
+                <source srcset="../../assets/imgs/lookback/webp/{{ p }}.webp" type="image/webp">
+                <img src="../../assets/imgs/lookback/jpg/{{ p }}.jpg" [alt]="p">
+              </picture>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </ng-container>
