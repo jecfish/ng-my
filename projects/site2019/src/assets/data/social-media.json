@@ -17,5 +17,9 @@
   {
     "icon": "youtube",
     "url": "https://www.youtube.com/channel/UCbL5knlP-lZN5O3KxLDHoOA"
+  },
+  {
+    "icon": "github",
+    "url": "https://github.com/chybie/ng-my"
   }
 ]
