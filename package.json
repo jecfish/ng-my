@@ -9,14 +9,14 @@
     "build": "ng build",
     "predeploy": "yarn build --prod",
     "deploy": "firebase deploy",
-    "prepush": "yarn lint",
     "lint": "ng lint",
     "stats": "webpack-bundle-analyzer dist/site2019/stats.json"
   },
   "private": true,
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint"
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint"
     }
   },
   "dependencies": {
