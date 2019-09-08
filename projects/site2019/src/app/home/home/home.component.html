@@ -12,7 +12,7 @@
         <p class="hero-subtitle">
           <strong class="text-primary">#ngMY2019</strong> is the labour-of-love conference for the Angular
           community
-          in Malaysia. The is the very <strong class="text-primary">first</strong> Angular conference in <strong
+          in Malaysia. This is the very <strong class="text-primary">first</strong> Angular conference in <strong
             class="text-primary">Southeast
             Asia</strong>!
         </p>
@@ -21,7 +21,7 @@
             <a href="http://www.google.com/calendar/event?action=TEMPLATE&dates=20190706T000000Z%2F20190707T100000Z&text=NG-MY%202019&location=Sunway%20University&details=Refer%20to%20website%20for%20agenda%20https%3A%2F%2Fng-my.org"
               target="_blank" rel="noreferrer">
               <span class="icon-calendar icon-left text-primary"></span>
-              6th & 7th
+              6th & 7th July
             </a>
 
           </li>
@@ -41,7 +41,7 @@
           <a class="btn btn-primary" routerLink="/sessions">
             <span class="btn-inner">
               <span class="icon-ticket icon-left"></span>
-              Get all session slides!</span>
+              Get session videos & slides</span>
           </a>
           <button class="btn btn-secondary" (click)="scrollTo('subscribeEl')">
             <span class="btn-inner">
@@ -165,13 +165,13 @@
               <div class="speakers-profile">
                 <div class="speakers-profile-pic">
                   <picture>
-                    <source srcset="../../assets/imgs/speakers/{{ speaker.id }}.webp" type="image/webp">
-                    <img class="speakers-profile-img" src="../../assets/imgs/speakers/{{ speaker.id }}.jpg" alt="">
+                    <source srcset="../../assets/imgs/speakers/{{ speaker.id }}.webp" type="image/webp" loading="lazy">
+                    <img class="speakers-profile-img" loading="lazy" src="../../assets/imgs/speakers/{{ speaker.id }}.jpg" alt="">
                   </picture>
                   <div class="speakers-profile-food">
                     <picture>
-                      <source srcset="../../assets/imgs/speaker-food/{{ speaker.food }}.webp" type="image/webp">
-                      <img src="../../assets/imgs/speaker-food/{{ speaker.food }}.png" [alt]="speaker.food">
+                      <source srcset="../../assets/imgs/speaker-food/{{ speaker.food }}.webp" type="image/webp" loading="lazy">
+                      <img src="../../assets/imgs/speaker-food/{{ speaker.food }}.png" loading="lazy" [alt]="speaker.food">
                     </picture>
                   </div>
                 </div>
@@ -216,37 +216,37 @@
         </div>
         <div class="sessions-food">
           <picture>
-            <source srcset="../../assets/imgs/speaker-food/bandung.webp" type="image/webp">
+            <source srcset="../../assets/imgs/speaker-food/bandung.webp" type="image/webp" loading="lazy">
+            <img src="../../assets/imgs/speaker-food/bandung.png" loading="lazy" alt="mamak">
+          </picture>
+          <picture>
+            <source srcset="../../assets/imgs/speaker-food/kopi-o.webp" type="image/webp" loading="lazy">
+            <img src="../../assets/imgs/speaker-food/kopi-o.png" loading="lazy" alt="mamak">
+          </picture>
+          <picture>
+            <source srcset="../../assets/imgs/speaker-food/nasi-lemak.webp" type="image/webp" loading="lazy">
             <img src="../../assets/imgs/speaker-food/bandung.png" alt="mamak">
           </picture>
           <picture>
-            <source srcset="../../assets/imgs/speaker-food/kopi-o.webp" type="image/webp">
-            <img src="../../assets/imgs/speaker-food/kopi-o.png" alt="mamak">
+            <source srcset="../../assets/imgs/speaker-food/cendol.webp" type="image/webp" loading="lazy">
+            <img src="../../assets/imgs/speaker-food/cendol.png" loading="lazy" alt="mamak">
           </picture>
           <picture>
-            <source srcset="../../assets/imgs/speaker-food/nasi-lemak.webp" type="image/webp">
-            <img src="../../assets/imgs/speaker-food/bandung.png" alt="mamak">
+            <source srcset="../../assets/imgs/speaker-food/curry-pup.webp" type="image/webp" loading="lazy">
+            <img src="../../assets/imgs/speaker-food/curry-pup.png" loading="lazy" alt="mamak">
           </picture>
           <picture>
-            <source srcset="../../assets/imgs/speaker-food/cendol.webp" type="image/webp">
-            <img src="../../assets/imgs/speaker-food/cendol.png" alt="mamak">
+            <source srcset="../../assets/imgs/speaker-food/ikat-semua.webp" type="image/webp" loading="lazy">
+            <img src="../../assets/imgs/speaker-food/ikat-semua.png" loading="lazy" alt="mamak">
           </picture>
           <picture>
-            <source srcset="../../assets/imgs/speaker-food/curry-pup.webp" type="image/webp">
-            <img src="../../assets/imgs/speaker-food/curry-pup.png" alt="mamak">
-          </picture>
-          <picture>
-            <source srcset="../../assets/imgs/speaker-food/ikat-semua.webp" type="image/webp">
-            <img src="../../assets/imgs/speaker-food/ikat-semua.png" alt="mamak">
-          </picture>
-          <picture>
-            <source media="(max-width: 800px)" srcset="./../assets/imgs/home/roti-canai-800w.webp" type="image/webp">
+            <source media="(max-width: 800px)" srcset="./../assets/imgs/home/roti-canai-800w.webp" type="image/webp" loading="lazy">
             <source srcset="../../assets/imgs/speaker-food/roti-canai.webp" type="image/webp">
-            <img src="../../assets/imgs/speaker-food/roti-canai.png" alt="mamak">
+            <img src="../../assets/imgs/speaker-food/roti-canai.png" loading="lazy" alt="mamak">
           </picture>
           <picture>
             <source srcset="../../assets/imgs/speaker-food/tosai.webp" type="image/webp">
-            <img src="../../assets/imgs/speaker-food/tosai.png" alt="mamak">
+            <img src="../../assets/imgs/speaker-food/tosai.png" loading="lazy" alt="mamak">
           </picture>
         </div>
       </div>
@@ -264,8 +264,8 @@
             <article class="post-card">
               <figure class="post-pic">
                 <picture>
-                  <source srcset="../../assets/imgs/posts/{{ p.value.img }}.webp" type="image/webp">
-                  <img src="../../assets/imgs/posts/{{ p.value.img }}.jpg" [alt]="p.value.title">
+                  <source srcset="../../assets/imgs/posts/{{ p.value.img }}.webp" type="image/webp" loading="lazy">
+                  <img src="../../assets/imgs/posts/{{ p.value.img }}.jpg" loading="lazy" [alt]="p.value.title">
                 </picture>
               </figure>
               <h5 class="post-title">{{ p.value.title }}</h5>
@@ -286,8 +286,8 @@
     <div class="posts-deco slant">
       <picture>
         <source media="(max-width: 800px)" srcset="./../assets/imgs/home/teh-tarik-bottom-800w.webp" type="image/webp">
-        <source srcset="../../assets/imgs/home/teh-tarik-bottom.webp" type="image/webp">
-        <img src="../../assets/imgs/home/teh-tarik-bottom.png" class="posts-deco-img" alt="mamak">
+        <source srcset="../../assets/imgs/home/teh-tarik-bottom.webp" type="image/webp" loading="lazy">
+        <img src="../../assets/imgs/home/teh-tarik-bottom.png" class="posts-deco-img" loading="lazy" alt="mamak">
       </picture>
     </div>
   </ng-container>
@@ -308,10 +308,10 @@
               </p>
               <a [href]="s.url" target="_blank" rel="noreferrer">
                 <picture>
-                  <source srcset="{{ '../../assets/imgs/sponsors/'+ sponsor.level +'/' + s.image }}.webp"
+                  <source srcset="{{ '../../assets/imgs/sponsors/'+ sponsor.level +'/' + s.image }}.webp" loading="lazy"
                     type='image/webp'>
                   <img src="{{ '../../assets/imgs/sponsors/'+ sponsor.level +'/' + s.image }}.jpg" class="sponsors-img"
-                    [alt]="s.name" [title]="s.name" />
+                    [alt]="s.name" [title]="s.name" loading="lazy" />
                 </picture>
               </a>
             </li>
