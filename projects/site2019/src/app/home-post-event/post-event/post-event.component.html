@@ -1,0 +1,311 @@
+<div class="main-bg"></div>
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <article class="hero-text">
+        <h1 class="hero-title">
+          <span class="text-primary text-shadow">
+            NG-MY
+          </span>
+          2019
+        </h1>
+        <p class="hero-subtitle">
+          <strong class="text-primary">#ngMY2019</strong> is the labour-of-love conference for the Angular
+          community
+          in Malaysia. The is the very <strong class="text-primary">first</strong> Angular conference in <strong
+            class="text-primary">Southeast
+            Asia</strong>!
+        </p>
+        <ul class="hero-misc">
+          <li class="hero-misc-item">
+            <a href="http://www.google.com/calendar/event?action=TEMPLATE&dates=20190706T000000Z%2F20190707T100000Z&text=NG-MY%202019&location=Sunway%20University&details=Refer%20to%20website%20for%20agenda%20https%3A%2F%2Fng-my.org"
+              target="_blank" rel="noreferrer">
+              <span class="icon-calendar icon-left text-primary"></span>
+              6th & 7th
+            </a>
+
+          </li>
+          <li class="hero-misc-item">
+            <a href="https://goo.gl/maps/aWtc7L7J3yN2" target="_blank" rel="noreferrer">
+              <span class="icon-map-marker icon-left text-primary"></span>
+              Sunway University
+            </a>
+          </li>
+        </ul>
+        <div class="btn-group hero-btns">
+          <!-- <a class="btn btn-primary" href="https://ti.to/ng-my/ng-my-2019" target="_blank" rel="noreferrer">
+            <span class="btn-inner">
+              <span class="icon-ticket icon-left"></span>
+              Get your tickets!</span>
+          </a> -->
+          <a class="btn btn-primary" routerLink="/sessions">
+            <span class="btn-inner">
+              <span class="icon-ticket icon-left"></span>
+              Get all session slides!</span>
+          </a>
+          <button class="btn btn-secondary" (click)="scrollTo('subscribeEl')">
+            <span class="btn-inner">
+              <span class="icon-envelope icon-left"></span>
+              Subscribe &amp; stay up to date</span>
+          </button>
+        </div>
+      </article>
+    </div>
+  </div>
+  <button class="hero-scroll" (click)="scrollTo('lookbackEl')"></button>
+</section>
+<div class="hero-deco slant">
+  <picture>
+    <source media="(max-width: 800px)" srcset="./../assets/imgs/home/teh-tarik-top-800w.webp" type="image/webp">
+    <source srcset="../../assets/imgs/home/teh-tarik-top.webp" type="image/webp">
+    <img src="../../assets/imgs/home/teh-tarik-top.png" class="hero-deco-teh" alt="mamak">
+  </picture>
+</div>
+<main class="main home-main">
+  <ng-container>
+    <section class="lookback">
+      <picture class="food-roti-canai">
+        <source media="(max-width: 800px)" srcset="./../assets/imgs/home/roti-canai-800w.webp" type="image/webp">
+        <source srcset="../../assets/imgs/home/roti-canai.webp" type="image/webp">
+        <img src="../../assets/imgs/home/roti-canai.png" alt="mamak">
+      </picture>
+      <div class="container">
+        <article class="article-section lookback-title" #lookback>
+          <h2 class="home-section-title">
+            A look back at <span class="text-primary text-shadow">NG-MY</span> 2019!
+          </h2>
+          <p><strong class="text-primary">#ngMY2019</strong> has come and gone, we had an amazing time connecting with
+            like-minded and learning Angular!</p>
+        </article>
+        <div class="lookback-content">
+          <div class="lookback-video">
+            <iframe src="https://www.youtube.com/embed/GpckCAcAgMk" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <ul class="lookback-photos">
+            <li class="lookback-item" *ngFor="let p of photos">
+              <picture class="lookback-pic">
+                <source srcset="../../assets/imgs/lookback/webp/{{ p }}.webp" type="image/webp">
+                <img src="../../assets/imgs/lookback/jpg/{{ p }}.jpg" [alt]="p">
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </ng-container>
+  <ng-container>
+    <div class="mailing-deco mailing-deco-up slant"></div>
+    <section id="mc_embed_signup" class="mailing-section" #subscribe>
+      <picture class="food-nasi-lemak">
+        <source media="(max-width: 800px)" srcset="./../assets/imgs/home/nasilemak-800w.webp" type="image/webp">
+        <source srcset="../../assets/imgs/home/nasilemak.webp" type="image/webp">
+        <img src="../../assets/imgs/home/nasilemak.png" alt="mamak">
+      </picture>
+      <picture class="food-teh-ais-limau">
+        <source media="(max-width: 800px)" srcset="./../assets/imgs/home/tehaislimau-800w.webp" type="image/webp">
+        <source srcset="../../assets/imgs/home/tehaislimau.webp" type="image/webp">
+        <img src="../../assets/imgs/home/tehaislimau.png" alt="mamak">
+      </picture>
+      <picture class="food-teh-tarik">
+        <source media="(max-width: 800px)" srcset="./../assets/imgs/home/tehtarik-800w.webp" type="image/webp">
+        <source srcset="../../assets/imgs/home/tehtarik.webp" type="image/webp">
+        <img src="../../assets/imgs/home/tehtarik.png" alt="mamak">
+      </picture>
+      <div class="container">
+        <form action="https://ng-my.us20.list-manage.com/subscribe/post?u=18c8aa300b78c9a24177d5215&amp;id=eccdbe44f7"
+          method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+          target="_blank" novalidate>
+          <label for="mce-EMAIL" class="mailing-label">SUBSCRIBE &amp; STAY UP TO DATE</label>
+          <div id="mc_embed_signup_scroll" class="mailing">
+            <div class="input-group">
+              <input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL"
+                placeholder="Enter Your Email" />
+              <div class="input-group-append">
+                <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-secondary">
+                  <span class="btn-inner">Get updates</span>
+                </button>
+              </div>
+            </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="b_18c8aa300b78c9a24177d5215_eccdbe44f7" tabindex="-1" value="" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <div class="mailing-deco mailing-deco-down slant"></div>
+  </ng-container>
+  <ng-container>
+    <section class="speakers-section">
+      <h2 class="home-section-title --decorated">
+        Our <span class="text-primary text-shadow">Speakers</span>
+      </h2>
+      <div class="speakers-carousel">
+        <ul class="carousel-inner">
+          <li class="carousel-item">
+            <div class="speakers-card">
+              <div class="speakers-profile">
+                <div class="speakers-profile-pic">
+                  <picture>
+                    <source srcset="../../assets/imgs/speakers/{{ speaker.id }}.webp" type="image/webp">
+                    <img class="speakers-profile-img" src="../../assets/imgs/speakers/{{ speaker.id }}.jpg" alt="">
+                  </picture>
+                  <div class="speakers-profile-food">
+                    <picture>
+                      <source srcset="../../assets/imgs/speaker-food/{{ speaker.food }}.webp" type="image/webp">
+                      <img src="../../assets/imgs/speaker-food/{{ speaker.food }}.png" [alt]="speaker.food">
+                    </picture>
+                  </div>
+                </div>
+                <p class="speakers-name">{{ speaker.name }}</p>
+              </div>
+              <div class="speakers-description">
+                <div class="speakers-title">{{ speaker.title }}</div>
+                <article class="article-section" [innerHTML]="speaker?.description"></article>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="speakers-more">
+        <a routerLink="/speakers" class="btn btn-secondary">
+          <div class="btn-inner">
+            View all speakers
+          </div>
+        </a>
+      </div>
+    </section>
+    <div class="speakers-deco slant"></div>
+    <section class="sessions">
+      <div class="container">
+        <h2 class="home-section-title">Our <span class="text-primary text-shadow">Sessions</span>
+        </h2>
+        <p class="sessions-text">
+          Learn about the latest trends in Angular and frontend web
+          technologies, meet and connect with our speakers and other like-minded, passionate developers.
+        </p>
+        <div class="btn-group">
+          <a routerLink="/sessions" class="btn btn-primary">
+            <div class="btn-inner">
+              View all sessions
+            </div>
+          </a>
+          <a routerLink="/schedule" class="btn btn-secondary">
+            <div class="btn-inner">
+              View NG-MY schedule
+            </div>
+          </a>
+        </div>
+        <div class="sessions-food">
+          <picture>
+            <source srcset="../../assets/imgs/speaker-food/bandung.webp" type="image/webp">
+            <img src="../../assets/imgs/speaker-food/bandung.png" alt="mamak">
+          </picture>
+          <picture>
+            <source srcset="../../assets/imgs/speaker-food/kopi-o.webp" type="image/webp">
+            <img src="../../assets/imgs/speaker-food/kopi-o.png" alt="mamak">
+          </picture>
+          <picture>
+            <source srcset="../../assets/imgs/speaker-food/nasi-lemak.webp" type="image/webp">
+            <img src="../../assets/imgs/speaker-food/bandung.png" alt="mamak">
+          </picture>
+          <picture>
+            <source srcset="../../assets/imgs/speaker-food/cendol.webp" type="image/webp">
+            <img src="../../assets/imgs/speaker-food/cendol.png" alt="mamak">
+          </picture>
+          <picture>
+            <source srcset="../../assets/imgs/speaker-food/curry-pup.webp" type="image/webp">
+            <img src="../../assets/imgs/speaker-food/curry-pup.png" alt="mamak">
+          </picture>
+          <picture>
+            <source srcset="../../assets/imgs/speaker-food/ikat-semua.webp" type="image/webp">
+            <img src="../../assets/imgs/speaker-food/ikat-semua.png" alt="mamak">
+          </picture>
+          <picture>
+            <source media="(max-width: 800px)" srcset="./../assets/imgs/home/roti-canai-800w.webp" type="image/webp">
+            <source srcset="../../assets/imgs/speaker-food/roti-canai.webp" type="image/webp">
+            <img src="../../assets/imgs/speaker-food/roti-canai.png" alt="mamak">
+          </picture>
+          <picture>
+            <source srcset="../../assets/imgs/speaker-food/tosai.webp" type="image/webp">
+            <img src="../../assets/imgs/speaker-food/tosai.png" alt="mamak">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <div class="sessions-deco slant"></div>
+  </ng-container>
+  <ng-container>
+    <div class="posts-section">
+      <div class="container">
+        <h2 class="home-section-title --decorated">
+          Articles
+        </h2>
+        <div class="row post-list">
+          <div class="col" *ngFor="let p of posts | keyvalue | slice:0:3">
+            <article class="post-card">
+              <figure class="post-pic">
+                <picture>
+                  <source srcset="../../assets/imgs/posts/{{ p.value.img }}.webp" type="image/webp">
+                  <img src="../../assets/imgs/posts/{{ p.value.img }}.jpg" [alt]="p.value.title">
+                </picture>
+              </figure>
+              <h5 class="post-title">{{ p.value.title }}</h5>
+              <p class="post-desc">{{ p.value.desc }}</p>
+              <a routerLink="/post/{{ p.key }}" class="btn btn-secondary">
+                <span class="btn-inner">Read more</span>
+              </a>
+            </article>
+          </div>
+        </div>
+        <a routerLink="/posts" class="btn btn-primary">
+          <div class="btn-inner">
+            Read all the articles
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="posts-deco slant">
+      <picture>
+        <source media="(max-width: 800px)" srcset="./../assets/imgs/home/teh-tarik-bottom-800w.webp" type="image/webp">
+        <source srcset="../../assets/imgs/home/teh-tarik-bottom.webp" type="image/webp">
+        <img src="../../assets/imgs/home/teh-tarik-bottom.png" class="posts-deco-img" alt="mamak">
+      </picture>
+    </div>
+  </ng-container>
+  <ng-container>
+    <section class="sponsors-section">
+      <div class="container">
+        <h2 class="home-section-title">Our <span class="text-primary text-shadow">Sponsors</span></h2>
+      </div>
+      <div *ngFor="let sponsor of sponsors">
+        <div class="sponsors-block --{{ sponsor.level }}" *ngIf="sponsor.list.length">
+          <div class="container">
+            <h3 class="sponsors-title">{{ sponsor.title }}</h3>
+          </div>
+          <ul class="sponsors-list">
+            <li class="sponsors-item" *ngFor="let s of sponsor.list">
+              <p class="sponsors-item-label" *ngIf="sponsor.level === 'misc' && sponsor.title !== 'Media Partners'">
+                {{ s.type }}
+              </p>
+              <a [href]="s.url" target="_blank" rel="noreferrer">
+                <picture>
+                  <source srcset="{{ '../../assets/imgs/sponsors/'+ sponsor.level +'/' + s.image }}.webp"
+                    type='image/webp'>
+                  <img src="{{ '../../assets/imgs/sponsors/'+ sponsor.level +'/' + s.image }}.jpg" class="sponsors-img"
+                    [alt]="s.name" [title]="s.name" />
+                </picture>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </ng-container>
+</main>
