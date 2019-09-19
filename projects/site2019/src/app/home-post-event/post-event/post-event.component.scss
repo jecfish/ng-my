@@ -396,6 +396,10 @@
   &-more {
     text-align: center;
     margin-top: $space-l;
+
+    .btn {
+      margin: $space-s;
+    }
   }
 
   &-carousel {
@@ -489,7 +493,7 @@
   }
 
   &-deco {
-    background: $gray-lightest;
+    background: $white; // $gray-lightest
 
     &:before {
       top: 0;
@@ -501,332 +505,332 @@
   }
 }
 
-.sessions {
-  background: $gray-lightest;
-  padding: $space-xxl 0;
-  text-align: center;
-  overflow: hidden;
-  position: relative;
-  z-index: 2;
+// .sessions {
+//   background: $gray-lightest;
+//   padding: $space-xxl 0;
+//   text-align: center;
+//   overflow: hidden;
+//   position: relative;
+//   z-index: 2;
 
-  .container {
-    position: relative;
-  }
+//   .container {
+//     position: relative;
+//   }
 
-  &-text {
-    max-width: 800px;
-    margin: 0 auto $space-l;
-  }
+//   &-text {
+//     max-width: 800px;
+//     margin: 0 auto $space-l;
+//   }
 
-  &-deco {
-    background: $blue-darkest;
+//   &-deco {
+//     background: $blue-darkest;
 
-    &:before {
-      top: 0;
-      left: 0;
-      background: $gray-lightest;
-      transform-origin: bottom right;
-      transform: skewY(5deg);
-    }
-  }
+//     &:before {
+//       top: 0;
+//       left: 0;
+//       background: $gray-lightest;
+//       transform-origin: bottom right;
+//       transform: skewY(5deg);
+//     }
+//   }
 
-  &-food {
-    position: absolute;
-    pointer-events: none;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
+//   &-food {
+//     position: absolute;
+//     pointer-events: none;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 3;
 
-    picture {
-      position: absolute;
-      width: 120px;
+//     picture {
+//       position: absolute;
+//       width: 120px;
 
-      &:first-child {
-        top: -60px;
-        left: -60px;
-        transform: rotate(15deg);
-      }
+//       &:first-child {
+//         top: -60px;
+//         left: -60px;
+//         transform: rotate(15deg);
+//       }
 
-      &:nth-child(2) {
-        top: -80px;
-        right: -50px;
-      }
+//       &:nth-child(2) {
+//         top: -80px;
+//         right: -50px;
+//       }
 
-      &:nth-child(3) {
-        top: -20px;
-        right: -70px;
-      }
+//       &:nth-child(3) {
+//         top: -20px;
+//         right: -70px;
+//       }
 
-      &:nth-child(4) {
-        bottom: -80px;
-        right: -40px;
-        transform: rotate(-15deg);
-      }
+//       &:nth-child(4) {
+//         bottom: -80px;
+//         right: -40px;
+//         transform: rotate(-15deg);
+//       }
 
-      &:nth-child(5) {
-        bottom: -40px;
-        left: -60px;
-      }
+//       &:nth-child(5) {
+//         bottom: -40px;
+//         left: -60px;
+//       }
 
-      &:nth-child(6) {
-        bottom: -80px;
-        left: -60px;
-      }
+//       &:nth-child(6) {
+//         bottom: -80px;
+//         left: -60px;
+//       }
 
-      &:nth-child(7) {
-        bottom: -120px;
-        right: 0px;
-        transform: rotate(15deg);
-      }
+//       &:nth-child(7) {
+//         bottom: -120px;
+//         right: 0px;
+//         transform: rotate(15deg);
+//       }
 
-      &:nth-child(8) {
-        top: -20px;
-        left: -40px;
-      }
-    }
-  }
-}
+//       &:nth-child(8) {
+//         top: -20px;
+//         left: -40px;
+//       }
+//     }
+//   }
+// }
 
-.agenda {
-  padding: $space;
-  width: 800px;
-  max-width: calc(100% - #{$space});
-  margin: $space-l auto;
-  background: $white;
-  box-shadow: 8px 8px $black;
-  position: relative;
-  z-index: 2;
+// .agenda {
+//   padding: $space;
+//   width: 800px;
+//   max-width: calc(100% - #{$space});
+//   margin: $space-l auto;
+//   background: $white;
+//   box-shadow: 8px 8px $black;
+//   position: relative;
+//   z-index: 2;
 
-  &-section {
-    text-align: center;
-    padding: $space-xl 0;
-    background: $yellow;
-    overflow: hidden;
-  }
+//   &-section {
+//     text-align: center;
+//     padding: $space-xl 0;
+//     background: $yellow;
+//     overflow: hidden;
+//   }
 
-  &-note {
-    font-size: $font-size-s;
-    margin-bottom: $space-s;
-  }
+//   &-note {
+//     font-size: $font-size-s;
+//     margin-bottom: $space-s;
+//   }
 
-  &-table {
-    text-align: left;
-    margin: $space auto $space-l;
-    width: 320px;
-    max-width: 100%;
-    table-layout: fixed;
+//   &-table {
+//     text-align: left;
+//     margin: $space auto $space-l;
+//     width: 320px;
+//     max-width: 100%;
+//     table-layout: fixed;
 
-    &-title {
-      font-size: $font-size-l;
-      font-weight: $font-weight-l;
-    }
+//     &-title {
+//       font-size: $font-size-l;
+//       font-weight: $font-weight-l;
+//     }
 
-    td {
-      padding: $space-xs $space-s;
+//     td {
+//       padding: $space-xs $space-s;
 
-      &:first-child {
-        width: 120px;
-      }
-    }
-  }
+//       &:first-child {
+//         width: 120px;
+//       }
+//     }
+//   }
 
-  &-food {
-    position: absolute;
-    top: calc(100% - 100px);
-    left: 0;
-    width: 100%;
-    pointer-events: none;
-    user-select: none;
+//   &-food {
+//     position: absolute;
+//     top: calc(100% - 100px);
+//     left: 0;
+//     width: 100%;
+//     pointer-events: none;
+//     user-select: none;
 
-    picture {
-      img {
-        height: 120px;
-        position: absolute;
-        top: 0;
-      }
+//     picture {
+//       img {
+//         height: 120px;
+//         position: absolute;
+//         top: 0;
+//       }
 
-      &:first-child img {
-        left: -60px;
-        transform: rotate(15deg);
-      }
+//       &:first-child img {
+//         left: -60px;
+//         transform: rotate(15deg);
+//       }
 
-      &:nth-child(2) img {
-        left: 0;
-        transform: rotate(-15deg);
-      }
+//       &:nth-child(2) img {
+//         left: 0;
+//         transform: rotate(-15deg);
+//       }
 
-      &:nth-child(3) img {
-        right: 0;
-      }
+//       &:nth-child(3) img {
+//         right: 0;
+//       }
 
-      &:last-child img {
-        right: -60px;
-      }
+//       &:last-child img {
+//         right: -60px;
+//       }
 
-      @include mobile {
-        img {
-          height: 80px;
-        }
+//       @include mobile {
+//         img {
+//           height: 80px;
+//         }
 
-        &:first-child img {
-          left: -40px;
-        }
+//         &:first-child img {
+//           left: -40px;
+//         }
 
-        &:last-child img {
-          right: -40px;
-        }
-      }
-    }
+//         &:last-child img {
+//           right: -40px;
+//         }
+//       }
+//     }
 
-    @include mobile {
-      top: calc(100% - 40px);
-    }
-  }
+//     @include mobile {
+//       top: calc(100% - 40px);
+//     }
+//   }
 
-  &-deco {
-    background: $white;
+//   &-deco {
+//     background: $white;
 
-    &:before {
-      background: $blue-darkest;
-      transform-origin: top right;
-      transform: skewY(5deg);
-    }
-  }
-}
+//     &:before {
+//       background: $blue-darkest;
+//       transform-origin: top right;
+//       transform: skewY(5deg);
+//     }
+//   }
+// }
 
 
-.posts {
-  &-section {
-    min-height: 100vh;
-    background: $blue-darkest;
-    padding: $space-xl 0;
-    display: flex;
+// .posts {
+//   &-section {
+//     min-height: 100vh;
+//     background: $blue-darkest;
+//     padding: $space-xl 0;
+//     display: flex;
 
-    .container {
-      margin: auto;
-    }
+//     .container {
+//       margin: auto;
+//     }
 
-    .home-section-title {
-      color: $white;
-      text-align: center;
-    }
+//     .home-section-title {
+//       color: $white;
+//       text-align: center;
+//     }
 
-    .btn {
-      margin-top: $space-l;
-      z-index: 2;
+//     .btn {
+//       margin-top: $space-l;
+//       z-index: 2;
 
-      @include mobile {
-        display: block;
-      }
-    }
-  }
+//       @include mobile {
+//         display: block;
+//       }
+//     }
+//   }
 
-  &-deco {
-    &:before {
-      background: $blue-darkest;
-      transform-origin: top right;
-      transform: skewY(5deg);
-      box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
-    }
+//   &-deco {
+//     &:before {
+//       background: $blue-darkest;
+//       transform-origin: top right;
+//       transform: skewY(5deg);
+//       box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+//     }
 
-    &-img {
-      z-index: 0;
-      position: absolute;
-      top: 0;
-      left: -12vw;
-      height: 32vw;
+//     &-img {
+//       z-index: 0;
+//       position: absolute;
+//       top: 0;
+//       left: -12vw;
+//       height: 32vw;
 
-      @include mobile {
-        top: 50px;
-      }
-    }
-  }
-}
+//       @include mobile {
+//         top: 50px;
+//       }
+//     }
+//   }
+// }
 
-.post {
+// .post {
 
-  &-list {
-    position: relative;
-    z-index: 2;
+//   &-list {
+//     position: relative;
+//     z-index: 2;
 
-    &.row {
-      margin: 0 -#{$space};
-    }
+//     &.row {
+//       margin: 0 -#{$space};
+//     }
 
-    .col {
-      padding: 0 $space;
+//     .col {
+//       padding: 0 $space;
 
-      @include mobile {
-        &+.col {
-          margin-top: $space;
-        }
-      }
+//       @include mobile {
+//         &+.col {
+//           margin-top: $space;
+//         }
+//       }
 
-      &:nth-child(2) {
-        transform: translateY(#{$space-l});
-      }
+//       &:nth-child(2) {
+//         transform: translateY(#{$space-l});
+//       }
 
-      &:nth-child(3) {
-        transform: translateY(#{$space-xl});
-      }
+//       &:nth-child(3) {
+//         transform: translateY(#{$space-xl});
+//       }
 
-      @include mobile {
-        &:nth-child(2) {
-          transform: none;
-        }
+//       @include mobile {
+//         &:nth-child(2) {
+//           transform: none;
+//         }
 
-        &:nth-child(3) {
-          transform: none;
-        }
-      }
-    }
-  }
+//         &:nth-child(3) {
+//           transform: none;
+//         }
+//       }
+//     }
+//   }
 
-  &-card {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 $space $space;
-    background: $white;
-    box-shadow: 8px 8px $black;
+//   &-card {
+//     height: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     padding: 0 $space $space;
+//     background: $white;
+//     box-shadow: 8px 8px $black;
 
-    .btn {
-      margin-top: auto;
+//     .btn {
+//       margin-top: auto;
 
-      @include mobile {
-        width: 100%;
-      }
-    }
-  }
+//       @include mobile {
+//         width: 100%;
+//       }
+//     }
+//   }
 
-  &-body {
-    padding: 0 $space-s;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
+//   &-body {
+//     padding: 0 $space-s;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//   }
 
-  &-title {
-    font-weight: bold;
-    font-size: $font-size-l;
-    margin-bottom: $space-s;
-  }
+//   &-title {
+//     font-weight: bold;
+//     font-size: $font-size-l;
+//     margin-bottom: $space-s;
+//   }
 
-  &-pic {
-    margin: 0 -#{$space} $space-s;
-  }
+//   &-pic {
+//     margin: 0 -#{$space} $space-s;
+//   }
 
-  &-img {
-    object-fit: cover;
-  }
+//   &-img {
+//     object-fit: cover;
+//   }
 
-  &-desc {
-    margin-bottom: $space-s;
-  }
-}
+//   &-desc {
+//     margin-bottom: $space-s;
+//   }
+// }
 
 .sponsors {
   &-section {

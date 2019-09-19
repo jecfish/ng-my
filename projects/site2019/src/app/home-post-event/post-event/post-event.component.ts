@@ -2,8 +2,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { PageService } from '../../services/page.service';
 
 import sponsors from '../../../assets/data/sponsors.json';
-import speakerList from '../../../assets/data/speakers.json';
-import postList from '../../../assets/data/posts.json';
+import speaker from '../../../assets/data/speaker-home.json';
+// import postList from '../../../assets/data/posts.json';
 
 @Component({
   selector: 'my-post-event',
@@ -15,11 +15,9 @@ export class PostEventComponent implements OnInit {
   @ViewChild('subscribe', { static: true }) subscribeEl: any;
 
   sponsors = sponsors;
-  posts = postList;
+  // posts = postList;
   speaker: any;
   photos = Array.from({ length: 33 }).map((_, i) => i + 1);
-
-  readonly TOTAL_SPEAKER = 32;
 
   constructor(private pageSvc: PageService) {}
 
@@ -31,7 +29,7 @@ export class PostEventComponent implements OnInit {
   }
 
   scrollTo(location: string) {
-    console.log('TCL: PostEventComponent -> scrollTo -> location', location);
+    // console.log('TCL: PostEventComponent -> scrollTo -> location', location);
     const getTop = (e: any) => e.getBoundingClientRect().top;
 
     const el = (this[location] as any).nativeElement;
@@ -51,8 +49,7 @@ export class PostEventComponent implements OnInit {
   }
 
   private randomSpeaker() {
-    const num = this.randomNumber(this.TOTAL_SPEAKER);
-    const selected = speakerList[num];
+    const selected = speaker;
     const description = `${selected.description.substr(0, 300)}${
       selected.description.length > 300 ? '...' : ''
     }`;
@@ -61,11 +58,5 @@ export class PostEventComponent implements OnInit {
       ...selected,
       description
     };
-  }
-
-  private randomNumber(max: number, min = 0) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1) + min);
   }
 }
