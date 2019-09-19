@@ -3,7 +3,7 @@ import { PageService } from '../../services/page.service';
 
 import sponsors from '../../../assets/data/sponsors.json';
 import speaker from '../../../assets/data/speaker-home.json';
-import { fromEvent } from 'rxjs';
+import { fromEvent, timer } from 'rxjs';
 import { take } from 'rxjs/operators';
 // import postList from '../../../assets/data/posts.json';
 
@@ -14,11 +14,11 @@ import { take } from 'rxjs/operators';
 })
 export class PostEventComponent implements OnInit {
   @ViewChild('lookback', { static: true }) lookbackEl: any;
-  @ViewChild('subscribe', { static: true }) subscribeEl: any;
+  @ViewChild('subscribe', { static: false }) subscribeEl: any;
 
   sponsors = sponsors;
   // posts = postList;
-  speaker: any;
+  speaker = speaker;
   photos = Array.from({ length: 33 }).map((_, i) => i + 1);
   showBody = false;
 
@@ -33,20 +33,21 @@ export class PostEventComponent implements OnInit {
     ).subscribe(() => {
       this.showBody = true;
     });
-
-    this.randomSpeaker();
   }
 
   scrollTo(location: string) {
+    if (!this.showBody) this.showBody = true;
     // console.log('TCL: PostEventComponent -> scrollTo -> location', location);
-    const getTop = (e: any) => e.getBoundingClientRect().top;
+    timer(1).pipe(take(1)).subscribe(() => {
+      const getTop = (e: any) => e.getBoundingClientRect().top;
 
-    const el = (this[location] as any).nativeElement;
-    const headerHeight = 60;
-    const target = getTop(el) + window.scrollY - headerHeight;
+      const el = (this[location] as any).nativeElement;
+      const headerHeight = 60;
+      const target = getTop(el) + window.scrollY - headerHeight;
 
-    this.trackEvent(location);
-    this.pageSvc.scrollWindowTo(target, 1000);
+      this.trackEvent(location);
+      this.pageSvc.scrollWindowTo(target, 1000);
+    });
   }
 
   private trackEvent(event: string) {
@@ -55,17 +56,5 @@ export class PostEventComponent implements OnInit {
       event_label: event,
       value: event
     });
-  }
-
-  private randomSpeaker() {
-    const selected = speaker;
-    const description = `${selected.description.substr(0, 300)}${
-      selected.description.length > 300 ? '...' : ''
-    }`;
-
-    this.speaker = {
-      ...selected,
-      description
-    };
   }
 }
