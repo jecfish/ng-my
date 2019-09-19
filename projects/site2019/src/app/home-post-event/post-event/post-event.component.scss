@@ -273,6 +273,7 @@
   &-video {
     position: relative;
     padding-bottom: 56.25%;
+    margin-bottom: 8px;
 
     iframe {
       width: 100%;
@@ -290,6 +291,7 @@
     grid-template-columns: repeat(5, 200px);
     grid-template-rows: repeat(12, 200px);
     grid-auto-flow: row dense;
+    grid-gap: 4px;
 
     @include mobile {
       margin-top: $space;
