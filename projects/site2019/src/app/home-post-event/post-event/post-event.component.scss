@@ -396,6 +396,10 @@
   &-more {
     text-align: center;
     margin-top: $space-l;
+
+    .btn {
+      margin: $space-s;
+    }
   }
 
   &-carousel {
@@ -489,7 +493,7 @@
   }
 
   &-deco {
-    background: $gray-lightest;
+    background: $white; // $gray-lightest
 
     &:before {
       top: 0;

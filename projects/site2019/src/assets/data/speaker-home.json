@@ -1,0 +1,13 @@
+{
+    "id": "deborah-kurata",
+    "name": "Deborah Kurata",
+    "title": "Pluralsight author, GDE, MVP",
+    "description": "<p>Deborah Kurata is a software developer, consultant, conference speaker, and Pluralsight author. Her courses include: \"Angular: Getting Started\", “Angular Routing”, and “Angular Reactive Forms”. </p><p>For her work in support of software developers, she has been recognized with the... </p>",
+    "profile": [
+        {
+            "url": "https://twitter.com/deborahkurata",
+            "type": "twitter"
+        }
+    ],
+    "food": "cendol"
+}
