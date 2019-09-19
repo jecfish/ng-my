@@ -78,8 +78,8 @@
             like-minded and learning Angular!</p>
         </article>
         <div class="lookback-content">
-          <div class="lookback-video">
-            <iframe loading="lazy" src="https://www.youtube.com/embed/GpckCAcAgMk" frameborder="0"
+          <div class="lookback-video" *ngIf="video">
+            <iframe frameborder="0" [src]="video"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <ul class="lookback-photos">

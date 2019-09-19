@@ -1,5 +1,4 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import { PageService } from '../../services/page.service';
 import socialMediaList from '../../../assets/data/social-media.json';
 
 @Component({
@@ -38,7 +37,7 @@ export class MenuComponent implements OnInit {
     );
   }
 
-  constructor(private pageSvc: PageService) {}
+  constructor() {}
 
   toggleMobileNav() {
     this.isShowMobileNav = !this.isShowMobileNav;
