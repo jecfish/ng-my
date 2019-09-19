@@ -61,7 +61,7 @@
     <img src="../../assets/imgs/home/teh-tarik-top.png" class="hero-deco-teh" alt="mamak">
   </picture>
 </div>
-<main class="main home-main">
+<main class="main home-main" *ngIf="showBody">
   <ng-container>
     <section class="lookback">
       <picture class="food-roti-canai">
@@ -79,7 +79,7 @@
         </article>
         <div class="lookback-content">
           <div class="lookback-video" *ngIf="video">
-            <iframe frameborder="0" [src]="video"
+            <iframe loading="lazy" frameborder="0" src="https://www.youtube.com/embed/GpckCAcAgMk?controls=0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <ul class="lookback-photos">

@@ -3,7 +3,6 @@ import { PageService } from '../../services/page.service';
 
 import sponsors from '../../../assets/data/sponsors.json';
 import speaker from '../../../assets/data/speaker-home.json';
-import { DomSanitizer, SafeUrl, SafeResourceUrl } from '@angular/platform-browser';
 import { fromEvent } from 'rxjs';
 import { take } from 'rxjs/operators';
 // import postList from '../../../assets/data/posts.json';
@@ -21,9 +20,9 @@ export class PostEventComponent implements OnInit {
   // posts = postList;
   speaker: any;
   photos = Array.from({ length: 33 }).map((_, i) => i + 1);
-  video: SafeResourceUrl;
+  showBody = false;
 
-  constructor(private pageSvc: PageService, private domSanitizer: DomSanitizer) {}
+  constructor(private pageSvc: PageService) {}
 
   ngOnInit() {
     const title = 'July 06-07';
@@ -32,7 +31,7 @@ export class PostEventComponent implements OnInit {
     fromEvent(window, 'scroll').pipe(
       take(1),
     ).subscribe(() => {
-      this.video = this.domSanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/GpckCAcAgMk?controls=0');
+      this.showBody = true;
     });
 
     this.randomSpeaker();
