@@ -1,5 +1,11 @@
 {
-  "projects": {
-    "default": "ng-my-con"
+  "targets": {
+    "ng-my-con": {
+      "hosting": {
+        "site2019": [
+          "ng-my-con"
+        ]
+      }
+    }
   }
 }
