@@ -12,7 +12,7 @@ class Server {
     start() {
         const app = new express();
         app.get('*', express.static(join(this.options.staticDir), { dotfiles: 'allow' }));
-        app.get('*', (_, res) => res.sendFile(join(this.options.staticDir, 'index.html')));
+        app.get('*', (_, res) => this.options.indexHtml ? res.send(this.options.indexHtml) : res.sendFile(join(this.options.staticDir, 'index.html')));
 
         this.instance = app.listen(0);
         this.port = this.instance.address().port;
@@ -71,10 +71,10 @@ async function handleRequestInterception(options, page, baseURL) {
     })
 }
 
-async function prerenderer({ routes, staticDir, renderAfterDocumentEvent, skipThirdPartyRequests = false, maxConcurrentRoutes = 0 }) {
+async function prerenderer({ routes, staticDir, indexHtml, renderAfterDocumentEvent, skipThirdPartyRequests = false, maxConcurrentRoutes = 0 }) {
     console.log('[prerendering] prerendering started');
     // start server
-    const server = new Server({ staticDir });
+    const server = new Server({ staticDir, indexHtml });
     server.start();
 
     const baseURL = `http://localhost:${server.port}`;
@@ -109,13 +109,14 @@ async function prerenderer({ routes, staticDir, renderAfterDocumentEvent, skipTh
                 writeContent({ outputDir: staticDir, route, html });
                 console.log(`[prerendering] completed route ${route}`)
                 await page.close();
-                return;
+                return { route, html };
             })
         })
-    ).then(() => {
+    ).then((data) => {
         browser.close();
         server.destroy();
         console.log('[prerendering] prerendering completed');
+        return data;
     });
 }
 

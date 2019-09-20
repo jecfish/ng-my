@@ -6,7 +6,6 @@
     "start": "ng serve",
     "prebuild": "npm run lint",
     "build": "ng build",
-    "postbuild": "node projects/site2019/run-prerender.js",
     "predeploy": "npm run build -- --prod",
     "deploy": "firebase deploy",
     "lint": "ng lint",

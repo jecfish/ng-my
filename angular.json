@@ -40,6 +40,7 @@
             "customWebpackConfig": {
               "path": "projects/site2019/extra-webpack.config.js"
             },
+            "indexTransform": "projects/site2019/index-html-transform.js",
             "outputPath": "dist/site2019",
             "index": "projects/site2019/src/index.html",
             "main": "projects/site2019/src/main.ts",

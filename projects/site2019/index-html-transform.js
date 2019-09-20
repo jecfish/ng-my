@@ -1,3 +1,4 @@
+
 const prerenderer = require('../../prerender');
 const path = require('path');
 
@@ -10,7 +11,10 @@ const options = {
     staticDir: outputDir,
     renderAfterDocumentEvent: 'prerender-ready',
     skipThirdPartyRequests: true,
-    maxConcurrentRoutes: 4
+    maxConcurrentRoutes: 10
 }
 
-prerenderer(options);
+module.exports = async (_, indexHtml) => {
+    const data = await prerenderer({ ...options, indexHtml });
+    return data.find(x => x.route === '/').html;
+}
