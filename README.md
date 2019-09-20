@@ -1,4 +1,6 @@
-[![Build Status](https://travis-ci.com/chybie/ng-my.svg?branch=master)](https://travis-ci.com/chybie/ng-my)
+<!-- [![Build Status](https://travis-ci.com/chybie/ng-my.svg?branch=master)](https://travis-ci.com/chybie/ng-my) -->
+
+![](https://github.com/chybie/ng-my/workflows/CI/badge.svg)
 
 # NG-MY official website
 
