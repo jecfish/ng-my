@@ -36,6 +36,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
+            "aot": true,
             "customWebpackConfig": {
               "path": "projects/site2019/extra-webpack.config.js"
             },
