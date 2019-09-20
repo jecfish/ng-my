@@ -1,9 +1,9 @@
-const prerenderer = require('./prerender');
+const prerenderer = require('../../prerender');
 const path = require('path');
 
-const routes = require('./projects/site2019/routes');
+const routes = require('./routes');
 
-const outputDir = path.join(__dirname, './dist/site2019');
+const outputDir = path.join(__dirname, '../../dist/site2019');
 
 const options = {
     routes: routes.all,
