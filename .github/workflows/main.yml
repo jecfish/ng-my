@@ -24,3 +24,4 @@ jobs:
       run: npm run deploy
       env:
         CI: true
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
