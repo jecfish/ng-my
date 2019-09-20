@@ -68,33 +68,33 @@ const generateSitemap = function (paths) {
 // ... add in your webpack plugins
 module.exports = {
   plugins: [
-    new PrerenderSPAPlugin({
-      // Required - The path to the webpack-outputted app to prerender.
-      staticDir: outputDir,
-      renderAfterDocumentEvent: 'prerender-ready',
-      skipThirdPartyRequests: true,
-      // addtional puppeteer options
-      // dumpio: true,
-      args: ['--disable-setuid-sandbox', '--no-sandbox'],
-      renderer: new Renderer({
-        timeout: 0,
-        maxConcurrentRoutes: 1,
-        navigationParams: {
-          timeout: 0
-        }
-      }),
-      postProcess(renderedRoute) {
-        renderedRoute.route = renderedRoute.originalRoute;
-        renderedRoute.html = renderedRoute.html.split(/>[\s]+</gmi).join('><');
-        if (renderedRoute.route.endsWith('.html')) {
-          renderedRoute.outputPath = path.join(__dirname, '../../dist/site2019', renderedRoute.route)
-        }
+    // new PrerenderSPAPlugin({
+    //   // Required - The path to the webpack-outputted app to prerender.
+    //   staticDir: outputDir,
+    //   renderAfterDocumentEvent: 'prerender-ready',
+    //   skipThirdPartyRequests: true,
+    //   // addtional puppeteer options
+    //   // dumpio: true,
+    //   args: ['--disable-setuid-sandbox', '--no-sandbox'],
+    //   renderer: new Renderer({
+    //     timeout: 0,
+    //     maxConcurrentRoutes: 1,
+    //     navigationParams: {
+    //       timeout: 0
+    //     }
+    //   }),
+    //   postProcess(renderedRoute) {
+    //     renderedRoute.route = renderedRoute.originalRoute;
+    //     renderedRoute.html = renderedRoute.html.split(/>[\s]+</gmi).join('><');
+    //     if (renderedRoute.route.endsWith('.html')) {
+    //       renderedRoute.outputPath = path.join(__dirname, '../../dist/site2019', renderedRoute.route)
+    //     }
 
-        return renderedRoute;
-      },
-      // Required - Routes to render.
-      routes
-    }),
+    //     return renderedRoute;
+    //   },
+    //   // Required - Routes to render.
+    //   routes
+    // }),
     new CreateFileWebpack({
       path: outputDir,
       // file name
