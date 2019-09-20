@@ -6,8 +6,7 @@
     "start": "ng serve",
     "prebuild": "npm run lint",
     "build": "ng build",
-    "predeploy": "npm run build -- --prod",
-    "deploy": "ng deploy",
+    "deploy": "ng deploy site2019",
     "lint": "ng lint",
     "stats": "webpack-bundle-analyzer dist/site2019/stats.json"
   },
