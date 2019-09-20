@@ -64,14 +64,16 @@
           },
           "configurations": {
             "production": {
-              "fileReplacements": [{
-                "replace": "projects/site2019/src/environments/environment.ts",
-                "with": "projects/site2019/src/environments/environment.prod.ts"
-              },
-              {
-                "replace": "projects/site2019/src/robots.txt",
-                "with": "projects/site2019/src/robots/robots.prod.txt"
-              }],
+              "fileReplacements": [
+                {
+                  "replace": "projects/site2019/src/environments/environment.ts",
+                  "with": "projects/site2019/src/environments/environment.prod.ts"
+                },
+                {
+                  "replace": "projects/site2019/src/robots.txt",
+                  "with": "projects/site2019/src/robots/robots.prod.txt"
+                }
+              ],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -81,11 +83,13 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
-              "budgets": [{
-                "type": "initial",
-                "maximumWarning": "2mb",
-                "maximumError": "5mb"
-              }]
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
             }
           }
         },
@@ -138,5 +142,8 @@
       }
     }
   },
-  "defaultProject": "site2019"
+  "defaultProject": "site2019",
+  "cli": {
+    "analytics": "cdf8a891-297a-411d-b00f-d87f2e876ae5"
+  }
 }
