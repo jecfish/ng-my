@@ -1,5 +1,6 @@
 
-const prerenderer = require('../../prerender');
+// const prerenderer = require('../../prerender');
+const { prerenderer } = require('prerender-xs');
 const path = require('path');
 
 const routes = require('./routes');
@@ -11,7 +12,7 @@ const options = {
     staticDir: outputDir,
     renderAfterDocumentEvent: 'prerender-ready',
     skipThirdPartyRequests: true,
-    maxConcurrentRoutes: 10
+    maxConcurrentRoutes: 5
 }
 
 module.exports = async (_, indexHtml) => {
