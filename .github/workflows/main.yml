@@ -18,7 +18,7 @@ jobs:
         node-version: 12.8
     - name: Install dependencies
       run: npm install
-    - name: Lint
+    - name: Linting
       run: npm run lint
     - name: Build & deploy
       run: npm run deploy
