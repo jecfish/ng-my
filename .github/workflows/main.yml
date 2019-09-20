@@ -15,7 +15,7 @@ jobs:
     - name: Use Node.js 12.8
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 12.8
     - name: Install dependencies
       run: npm install
     - name: Lint
