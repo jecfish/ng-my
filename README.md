@@ -8,14 +8,14 @@ Working on project:
 3. Travis will triggered when PR is merged, auto deploy to ng-my production
 
 To start the project:
-1. Install yarn
-2. run "yarn"
-3. run "yarn start"
+1. Install nodejs v10 and above
+2. run "npm"
+3. run "npm start"
 
 To deploy the project manually:
 1. run "npm install -g firebase-tools"
 2. run "firebase login" then login with your google account
-3. run "yarn deploy"
+3. run "npm run deploy"
 
 ## How to create a new post
 1. Create a PR
