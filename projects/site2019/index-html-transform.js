@@ -10,7 +10,7 @@ const options = {
     routes: routes.all,
     staticDir: outputDir,
     renderOptions: {
-        maxConcurrentRoutes: 6,
+        maxConcurrentRoutes: 12,
         renderAfterDocumentEvent: 'prerender-ready',
         skipThirdPartyRequests: true,
     }
