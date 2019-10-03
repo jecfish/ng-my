@@ -1,6 +1,6 @@
 {
   "name": "ng-my",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -17,15 +17,15 @@
     }
   },
   "dependencies": {
-    "@angular/animations": "~9.0.0-next.7",
-    "@angular/common": "~9.0.0-next.7",
-    "@angular/compiler": "~9.0.0-next.7",
-    "@angular/core": "~9.0.0-next.7",
+    "@angular/animations": "~9.0.0-next.9",
+    "@angular/common": "~9.0.0-next.9",
+    "@angular/compiler": "~9.0.0-next.9",
+    "@angular/core": "~9.0.0-next.9",
     "@angular/fire": "^5.2.1",
-    "@angular/forms": "~9.0.0-next.7",
-    "@angular/platform-browser": "~9.0.0-next.7",
-    "@angular/platform-browser-dynamic": "~9.0.0-next.7",
-    "@angular/router": "~9.0.0-next.7",
+    "@angular/forms": "~9.0.0-next.9",
+    "@angular/platform-browser": "~9.0.0-next.9",
+    "@angular/platform-browser-dynamic": "~9.0.0-next.9",
+    "@angular/router": "~9.0.0-next.9",
     "core-js": "^2.5.4",
     "marked": "^0.7.0",
     "rxjs": "~6.5.2",
@@ -35,11 +35,11 @@
   },
   "devDependencies": {
     "@angular-builders/custom-webpack": "^8.2.0",
-    "@angular-devkit/architect": "<0.900 || ^0.900.0-0 || ^9.0.0-0",
-    "@angular-devkit/build-angular": "~0.900.0-next.5",
-    "@angular/cli": "~9.0.0-next.5",
-    "@angular/compiler-cli": "~9.0.0-next.7",
-    "@angular/language-service": "~9.0.0-next.7",
+    "@angular-devkit/architect": "^0.900.0-next.7",
+    "@angular-devkit/build-angular": "^0.900.0-next.7",
+    "@angular/cli": "~9.0.0-next.7",
+    "@angular/compiler-cli": "~9.0.0-next.9",
+    "@angular/language-service": "~9.0.0-next.9",
     "@types/googlemaps": "^3.30.16",
     "@types/marked": "^0.6.1",
     "@types/node": "~8.9.4",
@@ -47,13 +47,13 @@
     "create-file-webpack": "^1.0.2",
     "firebase-tools": "^6.10.0",
     "fuzzy": "^0.1.3",
-    "husky": "^3.0.0",
+    "husky": "^3.0.8",
     "inquirer": "^6.2.2",
     "inquirer-autocomplete-prompt": "^1.0.1",
-    "prerender-xs": "^1.0.0",
+    "prerender-xs": "^1.0.1",
     "ts-node": "~7.0.0",
     "tslint": "~5.13.1",
     "typescript": "~3.5.3",
-    "webpack-bundle-analyzer": "^3.3.2"
+    "webpack-bundle-analyzer": "^3.5.2"
   }
 }
