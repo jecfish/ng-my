@@ -13,7 +13,7 @@ import { take } from 'rxjs/operators';
   styleUrls: ['./post-event.component.scss']
 })
 export class PostEventComponent implements OnInit {
-  @ViewChild('lookback', { static: true }) lookbackEl: any;
+  @ViewChild('lookback', { static: false }) lookbackEl: any;
   @ViewChild('subscribe', { static: false }) subscribeEl: any;
 
   sponsors = sponsors;
